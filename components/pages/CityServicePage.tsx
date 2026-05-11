@@ -515,7 +515,7 @@ function makeLaborOnlyEntry(city: string, citySlug: string): CityServiceData {
       "Licensed HG-064180 | USDOT# 2120054 | Fully insured",
     ],
     [
-      { q: `How much does labor-only moving cost in ${city}?`, a: `Labor-only moving in ${city} typically costs $100–$140 per hour for a 2-person crew with a 2-hour minimum. Loading a 1-bedroom home takes 1.5–3 hours. A 3-bedroom home takes 3–5 hours.` },
+      { q: `How much does labor-only moving cost in ${city}?`, a: `Labor-only moving in ${city} typically costs $100–$140 per hour for a 2-person crew. Call us about our minimums. Loading a 1-bedroom home takes 1.5–3 hours. A 3-bedroom home takes 3–5 hours.` },
       { q: "What types of trucks and containers do you work with?", a: "We work with all rental trucks (U-Haul, Penske, Budget), PODS, 1-800-Pack-Rat, and any other moving container or rental truck." },
       { q: "Do you provide equipment for labor-only moves?", a: "Yes. Our crews bring dollies, moving blankets, straps, and floor runners — everything needed to load your truck or container safely." },
       { q: "Can you just unload my truck?", a: "Yes. We offer unloading-only services. Just let us know when you're arriving and we'll be there to unload." },
@@ -930,7 +930,7 @@ export default function CityServicePage({ slug }: CityServicePageProps) {
         areaServed: { "@type": "City", name: data.city, containedInPlace: { "@type": "State", name: "Washington" } },
         aggregateRating: { "@type": "AggregateRating", ratingValue: "4.8", reviewCount: "1562", bestRating: "5" },
         priceRange: "$$",
-        openingHours: ["Mo-Sa 07:00-19:00", "Su 08:00-17:00"],
+        openingHours: ["Mo-Su 07:00-19:00"],
       },
       {
         "@context": "https://schema.org",
@@ -1122,11 +1122,7 @@ export default function CityServicePage({ slug }: CityServicePageProps) {
                 <div className="mt-4 pt-4 border-t border-gray-100 space-y-2">
                   <div className="flex items-center gap-2 text-gray-500 text-xs">
                     <Clock className="w-3.5 h-3.5" />
-                    Mon–Sat: 7:00 AM – 7:00 PM
-                  </div>
-                  <div className="flex items-center gap-2 text-gray-500 text-xs">
-                    <Clock className="w-3.5 h-3.5" />
-                    Sunday: 8:00 AM – 5:00 PM
+                    Every day: 7:00 AM – 7:00 PM
                   </div>
                   <div className="flex items-center gap-2 text-gray-500 text-xs">
                     <Shield className="w-3.5 h-3.5" />

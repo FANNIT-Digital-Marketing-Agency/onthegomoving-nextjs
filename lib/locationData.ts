@@ -60,7 +60,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       hourlyRate: "$125\u2013$165/hr (2-person crew)",
     },
     faqs: [
-      { q: "How much does it cost to hire movers in Seattle?", a: "Most local Seattle moves cost $125\u2013$165 per hour for a 2-person crew with a 2-hour minimum. A studio apartment typically runs $320\u2013$520. A 2-bedroom home move usually costs $750\u2013$1,300. We provide flat-rate quotes so you know the final price before we start." },
+      { q: "How much does it cost to hire movers in Seattle?", a: "Most local Seattle moves cost $125\u2013$165 per hour for a 2-person crew. Call us about our minimums. A studio apartment typically runs $320\u2013$520. A 2-bedroom home move usually costs $750\u2013$1,300. We provide flat-rate quotes so you know the final price before we start." },
       { q: "Do you move in and out of South Lake Union apartments?", a: "Yes. We regularly move in and out of South Lake Union high-rises, including buildings near Amazon's headquarters. We coordinate elevator reservations and work within your building's move-in window. Let us know your building when you request a quote." },
       { q: "Do you handle the SDOT parking permit process for Seattle moves?", a: "Yes. For moves in areas with limited street parking \u2014 Capitol Hill, Belltown, First Hill, and other dense neighborhoods \u2014 we handle the SDOT temporary no-parking permit process on your behalf." },
       { q: "Are you licensed and insured to move in Seattle?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
@@ -100,7 +100,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       hourlyRate: "$120\u2013$160/hr (2-person crew)",
     },
     faqs: [
-      { q: "How much does it cost to hire movers in Bellevue?", a: "Most local Bellevue moves cost $120\u2013$160 per hour for a 2-person crew with a 2-hour minimum. A studio apartment typically runs $300\u2013$500. A 2-bedroom home move usually costs $700\u2013$1,200. We provide flat-rate quotes so you know the final price before we start." },
+      { q: "How much does it cost to hire movers in Bellevue?", a: "Most local Bellevue moves cost $120\u2013$160 per hour for a 2-person crew. Call us about our minimums. A studio apartment typically runs $300\u2013$500. A 2-bedroom home move usually costs $700\u2013$1,200. We provide flat-rate quotes so you know the final price before we start." },
       { q: "Do you move in and out of Downtown Bellevue high-rises?", a: "Yes. We regularly move in and out of The Bravern, Cirrus, Bellevue Towers, and other Downtown Bellevue high-rises. We coordinate elevator reservations and work within your building's move-in window. Let us know your building when you request a quote." },
       { q: "Are you licensed and insured to move in Bellevue?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "How far in advance should I book Bellevue movers?", a: "We recommend booking 2\u20134 weeks in advance, especially for summer moves (May\u2013September) and end-of-month dates. We accommodate last-minute moves regularly \u2014 call us to check availability." },
@@ -140,7 +140,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       hourlyRate: "$115\u2013$155/hr (2-person crew)",
     },
     faqs: [
-      { q: "How much does it cost to hire movers in Redmond?", a: "Most local Redmond moves cost $115\u2013$155 per hour for a 2-person crew with a 2-hour minimum. A studio apartment typically runs $280\u2013$480. A 2-bedroom home move usually costs $650\u2013$1,100. As a Redmond-based company, we have no travel time surcharge for Redmond moves." },
+      { q: "How much does it cost to hire movers in Redmond?", a: "Most local Redmond moves cost $115\u2013$155 per hour for a 2-person crew. Call us about our minimums. A studio apartment typically runs $280\u2013$480. A 2-bedroom home move usually costs $650\u2013$1,100. As a Redmond-based company, we have no travel time surcharge for Redmond moves." },
       { q: "Where is On The Go Moving & Storage located in Redmond?", a: "Our warehouse and main office are on Redmond Way in Redmond, WA 98052. We are centrally located in the city, which means faster response times and no travel surcharges for Redmond moves." },
       { q: "Are you licensed and insured to move in Redmond?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "Do you move near Microsoft's campus in Overlake?", a: "Yes. We regularly move in and out of the apartment complexes near Microsoft's Redmond campus in Overlake. We know the elevator policies and move-in windows for the major buildings in that area." },
@@ -180,7 +180,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       hourlyRate: "$120\u2013$160/hr (2-person crew)",
     },
     faqs: [
-      { q: "How much does it cost to hire movers in Kirkland?", a: "Most local Kirkland moves cost $120\u2013$160 per hour for a 2-person crew with a 2-hour minimum. A studio apartment typically runs $300\u2013$500. A 2-bedroom home move usually costs $700\u2013$1,200. We provide flat-rate quotes so you know the final price before we start." },
+      { q: "How much does it cost to hire movers in Kirkland?", a: "Most local Kirkland moves cost $120\u2013$160 per hour for a 2-person crew. Call us about our minimums. A studio apartment typically runs $300\u2013$500. A 2-bedroom home move usually costs $700\u2013$1,200. We provide flat-rate quotes so you know the final price before we start." },
       { q: "Do you move near Google's campus in Totem Lake?", a: "Yes. We regularly move in and out of the apartment complexes near Google's Kirkland campus in Totem Lake. We coordinate elevator reservations and work within building move-in windows." },
       { q: "Can you handle moves in Downtown Kirkland near the waterfront?", a: "Yes. We handle the parking logistics for waterfront moves in Downtown Kirkland, including securing temporary no-parking permits when needed. We scout access points before move day." },
       { q: "Are you licensed and insured to move in Kirkland?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
@@ -220,7 +220,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       hourlyRate: "$120\u2013$160/hr (2-person crew)",
     },
     faqs: [
-      { q: "How much does it cost to hire movers in Sammamish?", a: "Most local Sammamish moves cost $120\u2013$160 per hour for a 2-person crew with a 2-hour minimum. Sammamish homes tend to be larger than average, so most 3-bedroom moves run $1,200\u2013$2,000. We provide flat-rate quotes so you know the final price before we start." },
+      { q: "How much does it cost to hire movers in Sammamish?", a: "Most local Sammamish moves cost $120\u2013$160 per hour for a 2-person crew. Call us about our minimums. Sammamish homes tend to be larger than average, so most 3-bedroom moves run $1,200\u2013$2,000. We provide flat-rate quotes so you know the final price before we start." },
       { q: "Do you handle HOA move-in requirements in Sammamish communities?", a: "Yes. We are familiar with the HOA move-in rules in Klahanie, Trossachs, Sahalee, and other Sammamish planned communities. We provide certificates of insurance and work within designated move-in windows." },
       { q: "Are you licensed and insured to move in Sammamish?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "How far in advance should I book Sammamish movers?", a: "We recommend booking 3\u20134 weeks in advance for Sammamish moves, especially in summer. Sammamish has a high volume of moves due to its growing population. Call us early to secure your preferred date." },
@@ -260,7 +260,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       hourlyRate: "$120\u2013$160/hr (2-person crew)",
     },
     faqs: [
-      { q: "How much does it cost to hire movers in Issaquah?", a: "Most local Issaquah moves cost $120\u2013$160 per hour for a 2-person crew with a 2-hour minimum. A 2-bedroom home move typically runs $700\u2013$1,200. We provide flat-rate quotes so you know the final price before we start." },
+      { q: "How much does it cost to hire movers in Issaquah?", a: "Most local Issaquah moves cost $120\u2013$160 per hour for a 2-person crew. Call us about our minimums. A 2-bedroom home move typically runs $700\u2013$1,200. We provide flat-rate quotes so you know the final price before we start." },
       { q: "Do you handle moves in Issaquah Highlands?", a: "Yes. We regularly move in and out of Issaquah Highlands. Our drivers know the best access routes for large moving trucks on the steep internal roads. We also handle HOA move-in coordination for Highlands communities." },
       { q: "Are you licensed and insured to move in Issaquah?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "How far in advance should I book Issaquah movers?", a: "We recommend booking 2\u20134 weeks in advance, especially for summer moves. We accommodate last-minute moves regularly \u2014 call us to check availability." },
@@ -300,7 +300,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       hourlyRate: "$120\u2013$160/hr (2-person crew)",
     },
     faqs: [
-      { q: "How much does it cost to hire movers in Woodinville?", a: "Most local Woodinville moves cost $120\u2013$160 per hour for a 2-person crew with a 2-hour minimum. Woodinville homes tend to be larger than average, so most 3-bedroom moves run $1,200\u2013$2,100. We provide flat-rate quotes so you know the final price before we start." },
+      { q: "How much does it cost to hire movers in Woodinville?", a: "Most local Woodinville moves cost $120\u2013$160 per hour for a 2-person crew. Call us about our minimums. Woodinville homes tend to be larger than average, so most 3-bedroom moves run $1,200\u2013$2,100. We provide flat-rate quotes so you know the final price before we start." },
       { q: "Can you access properties on Hollywood Hill?", a: "Yes. We regularly move on Hollywood Hill and know the access challenges well. For very steep or narrow driveways, we use our smaller trucks for the initial approach and stage the larger truck at a safe distance." },
       { q: "Are you licensed and insured to move in Woodinville?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "Do you move wine collections in Woodinville?", a: "Yes. We handle wine collections with care \u2014 proper padding, temperature-aware transport, and careful handling. For large collections, we recommend our full packing service to ensure every bottle is properly protected." },
@@ -340,7 +340,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       hourlyRate: "$120\u2013$160/hr (2-person crew)",
     },
     faqs: [
-      { q: "How much does it cost to hire movers in Kenmore?", a: "Most local Kenmore moves cost $120\u2013$160 per hour for a 2-person crew with a 2-hour minimum. A 2-bedroom home move typically runs $700\u2013$1,200. We provide flat-rate quotes so you know the final price before we start." },
+      { q: "How much does it cost to hire movers in Kenmore?", a: "Most local Kenmore moves cost $120\u2013$160 per hour for a 2-person crew. Call us about our minimums. A 2-bedroom home move typically runs $700\u2013$1,200. We provide flat-rate quotes so you know the final price before we start." },
       { q: "Do you handle waterfront property moves in Kenmore?", a: "Yes. We regularly move in and out of waterfront properties on Lake Washington in Kenmore. We assess access points in advance and bring the right equipment for challenging carries." },
       { q: "Are you licensed and insured to move in Kenmore?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "How far in advance should I book Kenmore movers?", a: "We recommend booking 2\u20134 weeks in advance, especially for summer moves. We accommodate last-minute moves regularly \u2014 call us to check availability." },
@@ -380,7 +380,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       hourlyRate: "$120\u2013$160/hr (2-person crew)",
     },
     faqs: [
-      { q: "How much does it cost to hire movers in Bothell?", a: "Most local Bothell moves cost $120\u2013$160 per hour for a 2-person crew with a 2-hour minimum. A 2-bedroom home move typically runs $700\u2013$1,200. We provide flat-rate quotes so you know the final price before we start." },
+      { q: "How much does it cost to hire movers in Bothell?", a: "Most local Bothell moves cost $120\u2013$160 per hour for a 2-person crew. Call us about our minimums. A 2-bedroom home move typically runs $700\u2013$1,200. We provide flat-rate quotes so you know the final price before we start." },
       { q: "Do you serve both the King County and Snohomish County parts of Bothell?", a: "Yes. We serve all of Bothell regardless of which county the address falls in. Our license covers both King and Snohomish counties." },
       { q: "Are you licensed and insured to move in Bothell?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "How far in advance should I book Bothell movers?", a: "We recommend booking 2\u20134 weeks in advance, especially for summer moves. We accommodate last-minute moves regularly \u2014 call us to check availability." },
@@ -420,7 +420,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       hourlyRate: "$130\u2013$170/hr (2-person crew)",
     },
     faqs: [
-      { q: "How much does it cost to hire movers on Mercer Island?", a: "Most local Mercer Island moves cost $130\u2013$170 per hour for a 2-person crew with a 2-hour minimum. A 2-bedroom home move typically runs $800\u2013$1,400. We provide flat-rate quotes so you know the final price before we start." },
+      { q: "How much does it cost to hire movers on Mercer Island?", a: "Most local Mercer Island moves cost $130\u2013$170 per hour for a 2-person crew. Call us about our minimums. A 2-bedroom home move typically runs $800\u2013$1,400. We provide flat-rate quotes so you know the final price before we start." },
       { q: "How do you access Mercer Island for moves?", a: "All access to Mercer Island is via I-90. We plan our routes carefully to avoid peak congestion and ensure on-time arrival. We factor I-90 traffic into our scheduling." },
       { q: "Do you handle high-value item moves on Mercer Island?", a: "Yes. We regularly move fine art, antiques, grand pianos, and other high-value items on Mercer Island. Our specialty moving crews have the equipment and training for white-glove handling." },
       { q: "Are you licensed and insured to move on Mercer Island?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
@@ -460,7 +460,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       hourlyRate: "$120\u2013$160/hr (2-person crew)",
     },
     faqs: [
-      { q: "How much does it cost to hire movers in Renton?", a: "Most local Renton moves cost $120\u2013$160 per hour for a 2-person crew with a 2-hour minimum. A 2-bedroom home move typically runs $700\u2013$1,200. We provide flat-rate quotes so you know the final price before we start." },
+      { q: "How much does it cost to hire movers in Renton?", a: "Most local Renton moves cost $120\u2013$160 per hour for a 2-person crew. Call us about our minimums. A 2-bedroom home move typically runs $700\u2013$1,200. We provide flat-rate quotes so you know the final price before we start." },
       { q: "Do you handle moves at The Landing in Renton?", a: "Yes. We regularly move in and out of The Landing apartment buildings. We coordinate elevator reservations and work within building move-in windows." },
       { q: "Are you licensed and insured to move in Renton?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "How far in advance should I book Renton movers?", a: "We recommend booking 2\u20134 weeks in advance, especially for summer moves. We accommodate last-minute moves regularly \u2014 call us to check availability." },
@@ -500,7 +500,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       hourlyRate: "$120\u2013$160/hr (2-person crew)",
     },
     faqs: [
-      { q: "How much does it cost to hire movers in Shoreline?", a: "Most local Shoreline moves cost $120\u2013$160 per hour for a 2-person crew with a 2-hour minimum. A 2-bedroom home move typically runs $700\u2013$1,200. We provide flat-rate quotes so you know the final price before we start." },
+      { q: "How much does it cost to hire movers in Shoreline?", a: "Most local Shoreline moves cost $120\u2013$160 per hour for a 2-person crew. Call us about our minimums. A 2-bedroom home move typically runs $700\u2013$1,200. We provide flat-rate quotes so you know the final price before we start." },
       { q: "Do you handle moves near the new light rail stations in Shoreline?", a: "Yes. We regularly move in and out of the new apartment buildings near Shoreline's 145th and 185th Street light rail stations. We coordinate elevator reservations and work within building move-in windows." },
       { q: "Are you licensed and insured to move in Shoreline?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "How far in advance should I book Shoreline movers?", a: "We recommend booking 2\u20134 weeks in advance, especially for summer moves. We accommodate last-minute moves regularly \u2014 call us to check availability." },
@@ -540,7 +540,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       hourlyRate: "$125\u2013$165/hr (2-person crew)",
     },
     faqs: [
-      { q: "How much does it cost to hire movers in Newcastle?", a: "Most local Newcastle moves cost $125\u2013$165 per hour for a 2-person crew with a 2-hour minimum. Newcastle homes tend to be larger than average, so most 3-bedroom moves run $1,200\u2013$2,100. We provide flat-rate quotes so you know the final price before we start." },
+      { q: "How much does it cost to hire movers in Newcastle?", a: "Most local Newcastle moves cost $125\u2013$165 per hour for a 2-person crew. Call us about our minimums. Newcastle homes tend to be larger than average, so most 3-bedroom moves run $1,200\u2013$2,100. We provide flat-rate quotes so you know the final price before we start." },
       { q: "Can you access properties with narrow wooded driveways in Newcastle?", a: "Yes. We regularly move on Newcastle's wooded properties. For very narrow driveways, we use our smaller trucks for the initial approach and stage the larger truck at a safe distance." },
       { q: "Are you licensed and insured to move in Newcastle?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "Do you handle high-value item moves in Newcastle?", a: "Yes. We regularly move fine art, antiques, and specialty items in Newcastle. Our specialty moving crews have the equipment and training for white-glove handling." },
@@ -580,7 +580,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       hourlyRate: "$120\u2013$160/hr (2-person crew)",
     },
     faqs: [
-      { q: "How much does it cost to hire movers in Lake Forest Park?", a: "Most local Lake Forest Park moves cost $120\u2013$160 per hour for a 2-person crew with a 2-hour minimum. A 2-bedroom home move typically runs $700\u2013$1,200. We provide flat-rate quotes so you know the final price before we start." },
+      { q: "How much does it cost to hire movers in Lake Forest Park?", a: "Most local Lake Forest Park moves cost $120\u2013$160 per hour for a 2-person crew. Call us about our minimums. A 2-bedroom home move typically runs $700\u2013$1,200. We provide flat-rate quotes so you know the final price before we start." },
       { q: "Do you handle waterfront property moves in Lake Forest Park?", a: "Yes. We regularly move in and out of waterfront properties on Lake Washington in Lake Forest Park. We assess access points in advance and bring the right equipment." },
       { q: "Are you licensed and insured to move in Lake Forest Park?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Lake Forest Park movers?", a: "We recommend booking 2\u20134 weeks in advance, especially for summer moves. We accommodate last-minute moves regularly \u2014 call us to check availability." },
@@ -620,7 +620,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       hourlyRate: "$115\u2013$155/hr (2-person crew)",
     },
     faqs: [
-      { q: "How much does it cost to hire movers in Tukwila?", a: "Most local Tukwila moves cost $115\u2013$155 per hour for a 2-person crew with a 2-hour minimum. A 2-bedroom home move typically runs $680\u2013$1,150. We provide flat-rate quotes so you know the final price before we start." },
+      { q: "How much does it cost to hire movers in Tukwila?", a: "Most local Tukwila moves cost $115\u2013$155 per hour for a 2-person crew. Call us about our minimums. A 2-bedroom home move typically runs $680\u2013$1,150. We provide flat-rate quotes so you know the final price before we start." },
       { q: "Do you handle moves near Southcenter in Tukwila?", a: "Yes. We regularly move in and out of the apartment buildings near Westfield Southcenter and the light rail stations. We coordinate elevator reservations and work within building move-in windows." },
       { q: "Are you licensed and insured to move in Tukwila?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Tukwila movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly \u2014 call us to check availability." },
@@ -660,7 +660,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       hourlyRate: "$120\u2013$160/hr (2-person crew)",
     },
     faqs: [
-      { q: "How much does it cost to hire movers in Mountlake Terrace?", a: "Most local Mountlake Terrace moves cost $120\u2013$160 per hour for a 2-person crew with a 2-hour minimum. A 2-bedroom home move typically runs $700\u2013$1,200. We provide flat-rate quotes." },
+      { q: "How much does it cost to hire movers in Mountlake Terrace?", a: "Most local Mountlake Terrace moves cost $120\u2013$160 per hour for a 2-person crew. Call us about our minimums. A 2-bedroom home move typically runs $700\u2013$1,200. We provide flat-rate quotes." },
       { q: "Do you handle moves near the new light rail station in Mountlake Terrace?", a: "Yes. We regularly move in and out of the new apartment buildings near Mountlake Terrace's light rail station. We coordinate elevator reservations and work within building move-in windows." },
       { q: "Are you licensed and insured to move in Mountlake Terrace?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Mountlake Terrace movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
@@ -700,7 +700,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       hourlyRate: "$120\u2013$160/hr (2-person crew)",
     },
     faqs: [
-      { q: "How much does it cost to hire movers in Lynnwood?", a: "Most local Lynnwood moves cost $120\u2013$160 per hour for a 2-person crew with a 2-hour minimum. A 2-bedroom home move typically runs $700\u2013$1,200. We provide flat-rate quotes." },
+      { q: "How much does it cost to hire movers in Lynnwood?", a: "Most local Lynnwood moves cost $120\u2013$160 per hour for a 2-person crew. Call us about our minimums. A 2-bedroom home move typically runs $700\u2013$1,200. We provide flat-rate quotes." },
       { q: "Do you handle moves near the Lynnwood City Center light rail station?", a: "Yes. We regularly move in and out of the new apartment buildings near Lynnwood's City Center light rail station. We coordinate elevator reservations and work within building move-in windows." },
       { q: "Are you licensed and insured to move in Lynnwood?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Lynnwood movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
@@ -740,7 +740,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       hourlyRate: "$120\u2013$160/hr (2-person crew)",
     },
     faqs: [
-      { q: "How much does it cost to hire movers in Mukilteo?", a: "Most local Mukilteo moves cost $120\u2013$160 per hour for a 2-person crew with a 2-hour minimum. A 2-bedroom home move typically runs $750\u2013$1,300. We provide flat-rate quotes." },
+      { q: "How much does it cost to hire movers in Mukilteo?", a: "Most local Mukilteo moves cost $120\u2013$160 per hour for a 2-person crew. Call us about our minimums. A 2-bedroom home move typically runs $750\u2013$1,300. We provide flat-rate quotes." },
       { q: "Do you handle HOA move-in requirements in Harbour Pointe?", a: "Yes. We are familiar with Harbour Pointe's HOA move-in rules. We provide certificates of insurance and work within designated move-in windows." },
       { q: "Are you licensed and insured to move in Mukilteo?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Mukilteo movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
@@ -780,7 +780,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       hourlyRate: "$115\u2013$155/hr (2-person crew)",
     },
     faqs: [
-      { q: "How much does it cost to hire movers in Burien?", a: "Most local Burien moves cost $115\u2013$155 per hour for a 2-person crew with a 2-hour minimum. A 2-bedroom home move typically runs $680\u2013$1,150. We provide flat-rate quotes." },
+      { q: "How much does it cost to hire movers in Burien?", a: "Most local Burien moves cost $115\u2013$155 per hour for a 2-person crew. Call us about our minimums. A 2-bedroom home move typically runs $680\u2013$1,150. We provide flat-rate quotes." },
       { q: "Do you handle waterfront property moves in Burien?", a: "Yes. We regularly move in and out of waterfront properties in Three Tree Point and Seahurst. We assess access points in advance." },
       { q: "Are you licensed and insured to move in Burien?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Burien movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
@@ -820,7 +820,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       hourlyRate: "$120\u2013$160/hr (2-person crew)",
     },
     faqs: [
-      { q: "How much does it cost to hire movers in Snoqualmie?", a: "Most local Snoqualmie moves cost $120\u2013$160 per hour for a 2-person crew with a 2-hour minimum. A 2-bedroom home move typically runs $750\u2013$1,300. We provide flat-rate quotes." },
+      { q: "How much does it cost to hire movers in Snoqualmie?", a: "Most local Snoqualmie moves cost $120\u2013$160 per hour for a 2-person crew. Call us about our minimums. A 2-bedroom home move typically runs $750\u2013$1,300. We provide flat-rate quotes." },
       { q: "Do you handle HOA move-in requirements in Snoqualmie Ridge?", a: "Yes. We are familiar with Snoqualmie Ridge's HOA move-in rules. We provide certificates of insurance and work within designated move-in windows." },
       { q: "Are you licensed and insured to move in Snoqualmie?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Snoqualmie movers?", a: "We recommend booking 3\u20134 weeks in advance for Snoqualmie Ridge moves. We accommodate last-minute moves regularly." },
@@ -860,7 +860,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       hourlyRate: "$120\u2013$160/hr (2-person crew)",
     },
     faqs: [
-      { q: "How much does it cost to hire movers in North Bend?", a: "Most local North Bend moves cost $120\u2013$160 per hour for a 2-person crew with a 2-hour minimum. A 2-bedroom home move typically runs $750\u2013$1,300. We provide flat-rate quotes." },
+      { q: "How much does it cost to hire movers in North Bend?", a: "Most local North Bend moves cost $120\u2013$160 per hour for a 2-person crew. Call us about our minimums. A 2-bedroom home move typically runs $750\u2013$1,300. We provide flat-rate quotes." },
       { q: "Do you handle moves on rural roads in North Bend?", a: "Yes. We regularly move on rural roads in the North Bend area. We assess access points in advance and use the right size truck for each property." },
       { q: "Are you licensed and insured to move in North Bend?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "Do you move in North Bend during winter?", a: "Yes. We move year-round in North Bend. For winter moves near Snoqualmie Pass, we monitor road conditions and may adjust scheduling if I-90 is affected by snow or ice." },
@@ -900,7 +900,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       hourlyRate: "$120\u2013$160/hr (2-person crew)",
     },
     faqs: [
-      { q: "How much does it cost to hire movers in Duvall?", a: "Most local Duvall moves cost $120\u2013$160 per hour for a 2-person crew with a 2-hour minimum. A 2-bedroom home move typically runs $750\u2013$1,300. We provide flat-rate quotes." },
+      { q: "How much does it cost to hire movers in Duvall?", a: "Most local Duvall moves cost $120\u2013$160 per hour for a 2-person crew. Call us about our minimums. A 2-bedroom home move typically runs $750\u2013$1,300. We provide flat-rate quotes." },
       { q: "Do you handle moves on rural roads in Duvall?", a: "Yes. We regularly move on rural roads in the Duvall area. We assess access points in advance and use the right size truck for each property." },
       { q: "Are you licensed and insured to move in Duvall?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Duvall movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
@@ -940,7 +940,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       hourlyRate: "$120\u2013$160/hr (2-person crew)",
     },
     faqs: [
-      { q: "How much does it cost to hire movers in Carnation?", a: "Most local Carnation moves cost $120\u2013$160 per hour for a 2-person crew with a 2-hour minimum. A 2-bedroom home move typically runs $750\u2013$1,300. We provide flat-rate quotes." },
+      { q: "How much does it cost to hire movers in Carnation?", a: "Most local Carnation moves cost $120\u2013$160 per hour for a 2-person crew. Call us about our minimums. A 2-bedroom home move typically runs $750\u2013$1,300. We provide flat-rate quotes." },
       { q: "Do you handle moves on rural roads in Carnation?", a: "Yes. We regularly move on rural roads and farm lanes in the Carnation area. We assess access points in advance." },
       { q: "Are you licensed and insured to move in Carnation?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Carnation movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
@@ -980,7 +980,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       hourlyRate: "$120\u2013$160/hr (2-person crew)",
     },
     faqs: [
-      { q: "How much does it cost to hire movers in Fall City?", a: "Most local Fall City moves cost $120\u2013$160 per hour for a 2-person crew with a 2-hour minimum. A 2-bedroom home move typically runs $750\u2013$1,300. We provide flat-rate quotes." },
+      { q: "How much does it cost to hire movers in Fall City?", a: "Most local Fall City moves cost $120\u2013$160 per hour for a 2-person crew. Call us about our minimums. A 2-bedroom home move typically runs $750\u2013$1,300. We provide flat-rate quotes." },
       { q: "Do you handle moves on rural properties in Fall City?", a: "Yes. We regularly move on rural properties in Fall City. We assess access points in advance and use the right size truck for each property." },
       { q: "Are you licensed and insured to move in Fall City?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Fall City movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
@@ -1020,7 +1020,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       hourlyRate: "$120\u2013$160/hr (2-person crew)",
     },
     faqs: [
-      { q: "How much does it cost to hire movers in Maple Valley?", a: "Most local Maple Valley moves cost $120\u2013$160 per hour for a 2-person crew with a 2-hour minimum. A 2-bedroom home move typically runs $750\u2013$1,300. We provide flat-rate quotes." },
+      { q: "How much does it cost to hire movers in Maple Valley?", a: "Most local Maple Valley moves cost $120\u2013$160 per hour for a 2-person crew. Call us about our minimums. A 2-bedroom home move typically runs $750\u2013$1,300. We provide flat-rate quotes." },
       { q: "Do you handle HOA move-in requirements in Maple Valley?", a: "Yes. We are familiar with HOA move-in rules in Maple Valley's planned communities. We provide certificates of insurance and work within designated move-in windows." },
       { q: "Are you licensed and insured to move in Maple Valley?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Maple Valley movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
@@ -1060,7 +1060,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       hourlyRate: "$120\u2013$160/hr (2-person crew)",
     },
     faqs: [
-      { q: "How much does it cost to hire movers in Covington?", a: "Most local Covington moves cost $120\u2013$160 per hour for a 2-person crew with a 2-hour minimum. A 2-bedroom home move typically runs $750\u2013$1,300. We provide flat-rate quotes." },
+      { q: "How much does it cost to hire movers in Covington?", a: "Most local Covington moves cost $120\u2013$160 per hour for a 2-person crew. Call us about our minimums. A 2-bedroom home move typically runs $750\u2013$1,300. We provide flat-rate quotes." },
       { q: "Do you handle HOA move-in requirements in Covington?", a: "Yes. We are familiar with HOA move-in rules in Covington's planned communities. We provide certificates of insurance and work within designated move-in windows." },
       { q: "Are you licensed and insured to move in Covington?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Covington movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },

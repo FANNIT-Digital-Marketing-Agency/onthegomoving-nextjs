@@ -319,7 +319,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
           worstRating: "1",
         },
         priceRange: "$$",
-        openingHours: ["Mo-Sa 07:00-19:00", "Su 08:00-17:00"],
+        openingHours: ["Mo-Su 07:00-19:00"],
         hasMap: `https://www.google.com/maps/search/On+The+Go+Moving+Redmond+WA`,
         sameAs: [
           "https://www.facebook.com/onthegomoving",
@@ -809,8 +809,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
                   <Clock className="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="font-semibold text-brand-forest text-sm">Hours</p>
-                    <p className="text-gray-600 text-sm">Mon–Sat: 7:00 AM – 7:00 PM</p>
-                    <p className="text-gray-600 text-sm">Sunday: 8:00 AM – 5:00 PM</p>
+                    <p className="text-gray-600 text-sm">Every day: 7:00 AM – 7:00 PM</p>
                   </div>
                 </div>
               </div>

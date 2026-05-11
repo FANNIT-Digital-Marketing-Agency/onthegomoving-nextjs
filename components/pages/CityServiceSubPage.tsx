@@ -457,7 +457,7 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
     intro: (city, cityData) =>
       `Renting your own truck in ${city} saves money on the vehicle — but loading it wrong means damaged furniture and wasted space. Our labor-only crews are the same professional movers who work our full-service jobs. We load your U-Haul, PODS, or ABF trailer efficiently, wrap every piece of furniture, and stack the truck so nothing shifts in transit. Loading only, unloading only, or both — we work around your rental window.`,
     pricing: (city) =>
-      `$120–$160/hr for 2-person crew · 2-hour minimum · Loading or unloading only available`,
+      `$120–$160/hr for 2-person crew · Call us about our minimums · Loading or unloading only available`,
     steps: (city) => [
       `Book your ${city} labor-only crew for your move date`,
       "Crew arrives on time at your loading or unloading location",
@@ -475,7 +475,7 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
       "Licensed HG-064180 | USDOT# 2120054 | Fully insured",
     ],
     faqs: (city) => [
-      { q: `How much does labor-only moving cost in ${city}?`, a: `Labor-only moving in ${city} costs $120–$160 per hour for a 2-person crew with a 2-hour minimum. We can provide loading only, unloading only, or both.` },
+      { q: `How much does labor-only moving cost in ${city}?`, a: `Labor-only moving in ${city} costs $120–$160 per hour for a 2-person crew. Call us about our minimums. We can provide loading only, unloading only, or both.` },
       { q: `Do you bring moving equipment for labor-only jobs in ${city}?`, a: `Yes. Our crews bring furniture dollies, moving straps, and furniture pads on every labor-only job. You don't need to provide any equipment.` },
       { q: `Can you load a PODS or U-Haul container in ${city}?`, a: `Yes. We regularly load and unload PODS, U-Haul U-Boxes, and other portable storage containers throughout ${city} and the Greater Seattle area.` },
       { q: `How many movers do I need for my ${city} labor-only job?`, a: `Most labor-only jobs in ${city} use a 2-person crew. For larger homes or heavy items like pianos and safes, we recommend a 3-person crew. We'll advise during quoting.` },
@@ -714,7 +714,7 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
         areaServed: { "@type": "City", name: city, containedInPlace: { "@type": "State", name: "Washington" } },
         aggregateRating: { "@type": "AggregateRating", ratingValue: "4.8", reviewCount: "1562", bestRating: "5" },
         priceRange: "$$",
-        openingHours: ["Mo-Sa 07:00-19:00", "Su 08:00-17:00"],
+        openingHours: ["Mo-Su 07:00-19:00"],
       },
       {
         "@context": "https://schema.org",
@@ -964,11 +964,7 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
                 <div className="mt-4 pt-4 border-t border-gray-100 space-y-2">
                   <div className="flex items-center gap-2 text-gray-500 text-xs">
                     <Clock className="w-3.5 h-3.5" />
-                    Mon–Sat: 7:00 AM – 7:00 PM
-                  </div>
-                  <div className="flex items-center gap-2 text-gray-500 text-xs">
-                    <Clock className="w-3.5 h-3.5" />
-                    Sunday: 8:00 AM – 5:00 PM
+                    Every day: 7:00 AM – 7:00 PM
                   </div>
                   <div className="flex items-center gap-2 text-gray-500 text-xs">
                     <Shield className="w-3.5 h-3.5" />
