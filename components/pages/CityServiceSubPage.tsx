@@ -311,7 +311,7 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
     tagline: (city) => `Furniture Movers in ${city}`,
     subtitle: (city) => `Professional furniture moving in ${city}, WA — heavy items, specialty pieces, in-home rearranging.`,
     intro: (city, cityData) =>
-      `That sectional that seemed like a good idea when you bought it is now wedged in a ${city} stairwell at 10am on a Saturday. We've seen it. Our furniture crews carry the right equipment for every scenario — piano boards, furniture dollies, stair-climbing hand trucks, and enough moving straps to handle anything from a single dresser to a full home's worth of furniture. Single-item moves, in-home rearranging, or full furniture relocation — we do all of it.`,
+      `That sectional that seemed like a good idea when you bought it is now wedged in a ${city} stairwell at 10am on a Saturday. We've seen it. Our furniture crews carry the right equipment for every scenario — furniture boards, furniture dollies, stair-climbing hand trucks, and enough moving straps to handle anything from a single dresser to a full home's worth of furniture. Single-item moves, in-home rearranging, or full furniture relocation — we do all of it.`,
     pricing: (city) =>
       `Single item: $150–$350 · Full home furniture: $480–$1,500+ · In-home rearranging: $120–$160/hr`,
     steps: (city) => [
@@ -323,7 +323,6 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
       "Final inspection to confirm no damage",
     ],
     benefits: [
-      "Heavy item specialists — pianos, safes, hot tubs, and more",
       "In-home rearranging available — no full move required",
       "Furniture pads and protective wrapping on every piece",
       "Stair and elevator carries handled safely",
@@ -334,47 +333,12 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
       { q: `How much does furniture moving cost in ${city}?`, a: `A single furniture item move in ${city} typically costs $150–$350 depending on size, weight, and distance. Full home furniture moves run $480–$1,500+. We provide flat-rate quotes for all furniture jobs.` },
       { q: `Can you move just one piece of furniture in ${city}?`, a: `Yes. We offer single-item furniture moves throughout ${city} and the Greater Seattle area. Common single-item moves include sofas, beds, dressers, and dining tables.` },
       { q: `Do you move furniture within the same home in ${city}?`, a: `Yes. We offer in-home furniture rearranging services. Our crews bring dollies and moving equipment to safely move heavy furniture within your home without damaging floors or walls.` },
-      { q: `Can you move specialty items like a piano or safe in ${city}?`, a: `Yes. We have specialized equipment for heavy and awkward items including pianos, gun safes, and large appliances. See our piano moving and appliance moving pages for details.` },
+      { q: `Can you move heavy or awkward items in ${city}?`, a: `Yes. We have specialized equipment for heavy and oversized items including large appliances, safes, and oversized furniture. Ask us about your specific items when you request a quote.` },
     ],
     heroImage: BRAND_IMAGES.threeCrewLoadingTruck,
     icon: "🛋️",
   },
 
-  piano: {
-    key: "piano",
-    label: "Piano Moving",
-    hubSlug: "/piano-moving/",
-    tagline: (city) => `Piano Movers in ${city}`,
-    subtitle: (city) => `Specialist piano moving in ${city}, WA — upright, grand, and baby grand pianos moved safely.`,
-    intro: (city, cityData) =>
-      `A piano move in ${city} goes wrong when someone underestimates the weight, the staircase, or the doorway clearance — and those mistakes are expensive. Our piano crews use dedicated piano boards, heavy-duty moving straps, and protective padding on every surface. We assess the staircase, the doorways, and the access points before we start, and we provide a flat-rate quote so you know the full cost upfront. We move uprights, baby grands, and concert grands throughout ${city} and the Greater Seattle area.`,
-    pricing: (city) =>
-      `Upright piano: $250-$450 | Baby grand: $400-$700 | Concert grand: $600-$1,200`,
-    steps: (city) => [
-      `Free quote for your ${city} piano move — we assess size, stairs, and access`,
-      "Crew arrives with piano board, heavy-duty straps, and protective padding",
-      "Piano is secured to the board and carefully navigated through your home",
-      "Safe transport in our padded truck — no risk of shifting",
-      "Piano placed in your new location and leveled",
-      "Final inspection to confirm no damage",
-    ],
-    benefits: [
-      "Specialized piano boards and heavy-duty moving straps",
-      "Upright, baby grand, and concert grand experience",
-      "Stair carries handled safely with proper equipment",
-      "Protective padding on all surfaces",
-      "Flat-rate pricing — quoted before we start",
-      "Licensed HG-064180 | USDOT# 2120054 | Fully insured",
-    ],
-    faqs: (city) => [
-      { q: `How much does piano moving cost in ${city}?`, a: `Piano moving in ${city} costs $250–$450 for an upright piano and $400–$700 for a baby grand. Concert grands run $600–$1,200. Pricing depends on stairs, distance, and access. We provide flat-rate quotes.` },
-      { q: `Can you move a piano up or down stairs in ${city}?`, a: `Yes. Stair carries are included in our piano moving service. We use specialized piano boards and heavy-duty straps to safely navigate stairs. We assess the staircase during quoting.` },
-      { q: `Do you tune the piano after moving it in ${city}?`, a: `We don't offer tuning, but we recommend waiting 2–4 weeks after a move before tuning to allow the piano to acclimate to its new environment. We can recommend local ${city} piano tuners.` },
-      { q: `How do I prepare my piano for moving in ${city}?`, a: `Close and latch the keyboard lid. If it's a grand piano, we'll handle disassembly of the legs and lid. Remove any items stored on top of or inside the piano. That's all you need to do — we handle the rest.` },
-    ],
-    heroImage: BRAND_IMAGES.threeCrewLoadingTruck,
-    icon: "🎹",
-  },
 
   condo: {
     key: "condo",
@@ -453,9 +417,9 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
     label: "Labor Only Moving",
     hubSlug: "/labor-only-moving/",
     tagline: (city) => `Labor Only Movers in ${city}`,
-    subtitle: (city) => `Professional moving labor in ${city}, WA — you provide the truck, we provide the muscle.`,
+    subtitle: (city) => `Professional moving labor in ${city}, WA — loading, unloading, and furniture rearranging.`,
     intro: (city, cityData) =>
-      `Renting your own truck in ${city} saves money on the vehicle — but loading it wrong means damaged furniture and wasted space. Our labor-only crews are the same professional movers who work our full-service jobs. We load your U-Haul, PODS, or ABF trailer efficiently, wrap every piece of furniture, and stack the truck so nothing shifts in transit. Loading only, unloading only, or both — we work around your rental window.`,
+      `Labor-only moving in ${city} is a practical option for PODS, portable containers, and same-building moves — but many customers find that upgrading to a full-service truck and crew costs only a small amount more per hour. Our labor-only crews are the same professional movers who work our full-service jobs. Ask us about adding a truck when you call — it's often closer in price than you'd expect, and you skip the rental, the driving, and the liability.`,
     pricing: (city) =>
       `$120–$160/hr for 2-person crew · Call us about our minimums · Loading or unloading only available`,
     steps: (city) => [
@@ -463,8 +427,7 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
       "Crew arrives on time at your loading or unloading location",
       "Professional loading with proper furniture protection and stacking",
       "Or professional unloading and placement in your new space",
-      "We work efficiently to maximize your rental truck time",
-      "Final walkthrough to confirm everything is in order",
+            "Final walkthrough to confirm everything is in order",
     ],
     benefits: [
       "Same professional crews as our full-service moves",
@@ -478,7 +441,7 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
       { q: `How much does labor-only moving cost in ${city}?`, a: `Labor-only moving in ${city} costs $120–$160 per hour for a 2-person crew. Call us about our minimums. We can provide loading only, unloading only, or both.` },
       { q: `Do you bring moving equipment for labor-only jobs in ${city}?`, a: `Yes. Our crews bring furniture dollies, moving straps, and furniture pads on every labor-only job. You don't need to provide any equipment.` },
       { q: `Can you load a PODS or U-Haul container in ${city}?`, a: `Yes. We regularly load and unload PODS, U-Haul U-Boxes, and other portable storage containers throughout ${city} and the Greater Seattle area.` },
-      { q: `How many movers do I need for my ${city} labor-only job?`, a: `Most labor-only jobs in ${city} use a 2-person crew. For larger homes or heavy items like pianos and safes, we recommend a 3-person crew. We'll advise during quoting.` },
+      { q: `How many movers do I need for my ${city} labor-only job?`, a: `Most labor-only jobs in ${city} use a 2-person crew. For larger homes or heavy items, we recommend a 3-person crew. We'll advise during quoting.` },
     ],
     heroImage: BRAND_IMAGES.crewEntryway2,
     icon: "💪",
@@ -520,40 +483,6 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
     icon: "🧊",
   },
 
-  "moving-supplies": {
-    key: "moving-supplies",
-    label: "Moving Supplies",
-    hubSlug: "/moving-supplies/",
-    tagline: (city) => `Moving Supplies in ${city}`,
-    subtitle: (city) => `Professional-grade moving boxes and packing supplies delivered to ${city}, WA.`,
-    intro: (city, cityData) =>
-      `The boxes from the liquor store are free but they're also the reason things break. Our professional-grade boxes are built for stacking under weight — the same boxes our crews use on every job. ${city} residents can pick them up at our Redmond warehouse (minutes from most Eastside locations) or have them delivered with your moving crew on move day. Unused boxes are fully returnable.`,
-    pricing: (city) =>
-      `Small box: $2.50 · Medium box: $3.50 · Large box: $4.50 · Wardrobe box: $12 · Packing paper: $18/bundle`,
-    steps: (city) => [
-      "Order supplies online or call us to place an order",
-      "Pick up at our Redmond warehouse (minutes from most Eastside cities)",
-      "Or have supplies delivered with your moving crew on move day",
-      "All materials are professional-grade — same as our crews use",
-      "Unused boxes can be returned for a refund",
-    ],
-    benefits: [
-      "Professional-grade boxes — stronger than retail store boxes",
-      "Full range: small, medium, large, wardrobe, dish packs, picture boxes",
-      "Packing paper, bubble wrap, tape, and markers available",
-      "Pickup at our Redmond warehouse or delivery with your move",
-      "Unused boxes returnable for refund",
-      "Licensed HG-064180 | USDOT# 2120054 | Fully insured",
-    ],
-    faqs: (city) => [
-      { q: `Where can I get moving boxes in ${city}?`, a: `You can pick up professional-grade moving boxes at our Redmond warehouse, which is just minutes from most ${city} locations. We also deliver supplies with your moving crew on move day.` },
-      { q: `How many boxes do I need for my ${city} move?`, a: `A 1-bedroom home typically needs 30–50 boxes. A 2-bedroom home needs 50–80 boxes. A 3-bedroom home needs 80–120 boxes. We can provide a detailed supply list during your quote.` },
-      { q: `Can I return unused boxes after my ${city} move?`, a: `Yes. We accept returns of unused, undamaged boxes for a refund. Bring them to our Redmond warehouse within 30 days of your move.` },
-      { q: `Are your moving boxes better than boxes from U-Haul or Home Depot?`, a: `Our boxes are professional-grade and designed for repeated use. They're stronger and more uniform than retail boxes, which makes packing and stacking more efficient and safer.` },
-    ],
-    heroImage: BRAND_IMAGES.truckKirklandHouse,
-    icon: "📫",
-  },
 
   unpacking: {
     key: "unpacking",
@@ -631,8 +560,8 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
 // Ordered list of services for the sidebar navigation
 const SERVICE_ORDER: string[] = [
   "residential", "apartment", "packing", "storage", "office", "commercial",
-  "senior", "furniture", "piano", "condo", "corporate-relocation",
-  "labor-only", "appliance", "moving-supplies", "unpacking", "warehousing",
+  "senior", "furniture", "condo", "corporate-relocation",
+  "appliance", "unpacking", "warehousing",
 ];
 
 // ---------------------------------------------------------------------------

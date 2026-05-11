@@ -14,7 +14,7 @@ import { BRAND_IMAGES } from "@/lib/brandImages";
 import {
   ArrowRight, Shield, Clock, CheckCircle, Star,
   Home as HomeIcon, Building2, Package, Archive,
-  Dumbbell, Gem, Users, Briefcase, Phone,
+  Dumbbell, Users, Briefcase, Phone, Layers,
 } from "lucide-react";
 
 // Full service data with descriptions, images, and icons
@@ -40,16 +40,6 @@ const ALL_SERVICES = [
     cta: "Get a Commercial Quote",
   },
   {
-    title: "Packing Services",
-    href: "/packing-services/",
-    icon: Package,
-    popular: false,
-    description:
-      "Professional packing using quality materials. We protect your fragile items, electronics, and valuables so everything arrives safely.",
-    image: BRAND_IMAGES.packingCrew,
-    cta: "Learn About Packing",
-  },
-  {
     title: "Storage Services",
     href: "/storage-services/",
     icon: Archive,
@@ -58,26 +48,6 @@ const ALL_SERVICES = [
       "Secure vaulted storage at our Redmond, WA facility. Dedicated vaults managed by our team — not a self-serve unit. First month free with any move.",
     image: BRAND_IMAGES.storageForklift,
     cta: "Learn About Storage",
-  },
-  {
-    title: "Labor Only Moving",
-    href: "/labor-only-moving/",
-    icon: Dumbbell,
-    popular: false,
-    description:
-      "Have your own truck or container? Hire our professional crew for loading, unloading, or furniture rearranging. You supply the truck, we supply the muscle.",
-    image: BRAND_IMAGES.laborOnlyCrew,
-    cta: "Book Labor Only",
-  },
-  {
-    title: "Specialty Moving",
-    href: "/specialty-moving/",
-    icon: Gem,
-    popular: false,
-    description:
-      "Pianos, antiques, fine art, safes, and hot tubs. Our specialty crews are trained and equipped to handle your most valuable and difficult-to-move items.",
-    image: BRAND_IMAGES.specialtyMover,
-    cta: "Learn About Specialty Moves",
   },
   {
     title: "Apartment Moving",
@@ -100,14 +70,34 @@ const ALL_SERVICES = [
     cta: "Learn About Senior Moves",
   },
   {
-    title: "Moving Supplies",
-    href: "/moving-supplies/",
-    icon: Briefcase,
+    title: "Staging Professionals",
+    href: "/staging-professionals/",
+    icon: Layers,
     popular: false,
     description:
-      "Boxes, tape, bubble wrap, wardrobe boxes, and more. Purchase quality packing materials directly from On The Go Moving — delivered or available for pickup.",
-    image: BRAND_IMAGES.packingBoxes,
-    cta: "Shop Moving Supplies",
+      "Moving and storage services tailored for home stagers. Fast turnaround, flexible scheduling, and secure vault storage between staging projects.",
+    image: BRAND_IMAGES.storageWarehouse,
+    cta: "Learn About Staging Services",
+  },
+  {
+    title: "Packing Services",
+    href: "/packing-services/",
+    icon: Package,
+    popular: false,
+    description:
+      "Professional packing using quality materials — all supplies included. Full-pack, partial-pack, or fragile-only options available.",
+    image: BRAND_IMAGES.packingCrew,
+    cta: "Learn About Packing",
+  },
+  {
+    title: "Labor Only Moving",
+    href: "/labor-only-moving/",
+    icon: Dumbbell,
+    popular: false,
+    description:
+      "Need professional loading or unloading help? Our crews bring the same care and equipment as a full-service move — ask us about upgrading to a full-service truck for a small hourly increase.",
+    image: BRAND_IMAGES.laborOnlyCrew,
+    cta: "Learn About Labor Only",
   },
 ];
 
@@ -133,7 +123,7 @@ export default function Services() {
       if (!el) { el = document.createElement("meta"); el.setAttribute("name", name); document.head.appendChild(el); }
       el.setAttribute("content", content);
     };
-    setMeta("description", "On The Go Moving & Storage offers residential, commercial, packing, storage, labor-only, specialty, apartment, senior moving, and moving supplies in Greater Seattle, WA.");
+    setMeta("description", "On The Go Moving & Storage offers residential, commercial, storage, apartment, senior moving, packing, and staging services in Greater Seattle, WA. Serving the area since 2009.");
 
     let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
     if (!canonical) { canonical = document.createElement("link"); canonical.rel = "canonical"; document.head.appendChild(canonical); }
@@ -158,7 +148,7 @@ export default function Services() {
         <div className="container text-center">
           <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-green-300 text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5">
             <Package className="w-3.5 h-3.5" />
-            9 Services · Greater Seattle, WA
+            8 Services · Greater Seattle, WA
           </div>
           <h1 className="font-display text-4xl lg:text-5xl font-black text-white mb-4">
             Moving &amp; Storage Services

@@ -111,6 +111,7 @@ function makePackingEntry(city: string, citySlug: string): CityServiceData {
       [`${city} Movers`, `/${citySlug}/`],
       ["Packing Services", "/packing-services/"],
       ["Unpacking Services", "/unpacking-services/"],
+      ["Moving Supplies", "/moving-supplies/"],
     ],
     BRAND_IMAGES.truckSeattleSkyline
   );
@@ -147,6 +148,7 @@ function makeStorageEntry(city: string, citySlug: string): CityServiceData {
       [`${city} Movers`, `/${citySlug}/`],
       ["Storage Services", "/storage-services/"],
       ["Warehousing Services", "/warehousing-services/"],
+      ["Moving Supplies", "/moving-supplies/"],
     ],
     BRAND_IMAGES.storageWarehouse
   );
@@ -341,6 +343,44 @@ function makeWarehouseEntry(city: string, citySlug: string): CityServiceData {
   );
 }
 
+function makePianoEntry(city: string, citySlug: string): CityServiceData {
+  return entry(
+    city, citySlug,
+    "Piano Moving", "piano-movers",
+    `On The Go Moving & Storage provides professional piano moving services in ${city}, WA. We move upright pianos, baby grands, and grand pianos safely using specialized equipment and trained crews. Whether you're moving across ${city} or anywhere within Washington State, we handle your piano with the care it deserves.`,
+    `Our ${city} piano moving crews use piano boards, skid boards, and heavy-duty straps specifically designed for piano transport. We assess stair count, doorway widths, and access points before every move to ensure a safe, damage-free experience.`,
+    [
+      "We assess your piano type, stair count, and access points",
+      "The piano is wrapped in moving blankets and secured to a piano board",
+      "Careful loading onto our truck using a ramp",
+      "Safe transport to your new " + city + " location",
+      "Placement exactly where you want it",
+      "Final inspection before we leave",
+    ],
+    [
+      "Specialized piano boards and skid boards",
+      "Experienced crews trained specifically for piano moves",
+      "Full-value protection coverage on every piano",
+      "Available for standalone piano-only moves",
+      "All piano types: upright, spinet, baby grand, grand",
+      "Licensed HG-064180 | USDOT# 2120054 | Fully insured",
+    ],
+    [
+      { q: `How much does piano moving cost in ${city}?`, a: `Upright piano moves in ${city} typically cost $200–$400. Baby grand and grand piano moves run $350–$700 depending on stairs and distance. We provide exact quotes after assessing your specific situation.` },
+      { q: "Can you move a grand piano up stairs?", a: "Yes. We have the equipment and experience to move grand pianos up and down stairs. We assess the staircase and doorway widths before committing to ensure a safe move." },
+      { q: "Do I need to tune my piano after moving?", a: "Yes — pianos typically need tuning 2–4 weeks after a move to allow the instrument to acclimate to its new environment." },
+      { q: "Is my piano insured during the move?", a: "Yes. We carry full-value protection coverage on all moves including pianos." },
+    ],
+    [
+      [`${city} Movers`, `/${citySlug}/`],
+      ["Piano Moving", "/piano-moving/"],
+      ["Specialty Moving", "/specialty-moving/"],
+      ["Residential Moving", "/residential-moving/"],
+    ],
+    BRAND_IMAGES.crewEntryway3
+  );
+}
+
 function makeApplianceEntry(city: string, citySlug: string): CityServiceData {
   return entry(
     city, citySlug,
@@ -372,8 +412,45 @@ function makeApplianceEntry(city: string, citySlug: string): CityServiceData {
       [`${city} Movers`, `/${citySlug}/`],
       ["Appliance Moving", "/appliance-moving/"],
       ["Residential Moving", "/residential-moving/"],
+      ["Specialty Moving", "/specialty-moving/"],
     ],
     BRAND_IMAGES.crewCarryingUpRamp
+  );
+}
+
+function makeMovingSuppliesEntry(city: string, citySlug: string): CityServiceData {
+  return entry(
+    city, citySlug,
+    "Moving Supplies", "moving-supplies",
+    `On The Go Moving & Storage provides professional-grade moving supplies for ${city} residents and businesses. From boxes and tape to bubble wrap and specialty containers, we have everything you need for a successful move — available for pickup at our Redmond warehouse or delivered to your ${city} home.`,
+    `We use the same high-quality packing materials on every move that we sell to our customers. Our supplies are professional-grade — stronger boxes, better tape, and more protective wrap than what you'll find at a hardware store. Our Redmond warehouse is close to ${city} for easy pickup.`,
+    [
+      "Browse our supply list online or call to discuss your needs",
+      "Order for pickup at our Redmond warehouse",
+      "Or add supplies to your moving service for delivery on move day",
+      "Our crew can pack for you or you can use the supplies yourself",
+    ],
+    [
+      "Professional-grade boxes — stronger than retail options",
+      "Specialty boxes for dishes, mirrors, and wardrobes",
+      "Bubble wrap, packing paper, and stretch wrap",
+      "Moving blankets available for rent",
+      "Tape, markers, and labels included",
+      "Available for pickup or delivery with your move",
+    ],
+    [
+      { q: `Where can I get moving supplies near ${city}?`, a: `Our Redmond warehouse is close to ${city} and stocks professional-grade moving supplies. You can pick up supplies at our warehouse or have them delivered on move day when you book our moving service.` },
+      { q: "What types of boxes do you carry?", a: "We carry standard boxes (small, medium, large), dish packs, mirror/picture boxes, wardrobe boxes, and specialty boxes for electronics. All are professional-grade and stronger than retail options." },
+      { q: "Can I rent moving blankets?", a: "Yes. Moving blankets are included with every move. If you need them for a DIY move, contact us about rental options." },
+      { q: "Do you deliver supplies to " + city + "?", a: "Yes. We can deliver supplies to your " + city + " home as part of your moving service. Contact us to discuss options." },
+    ],
+    [
+      [`${city} Movers`, `/${citySlug}/`],
+      ["Moving Supplies", "/moving-supplies/"],
+      ["Packing Services", "/packing-services/"],
+      ["Unpacking Services", "/unpacking-services/"],
+    ],
+    BRAND_IMAGES.truckSeattleSkyline
   );
 }
 
@@ -419,8 +496,8 @@ function makeLaborOnlyEntry(city: string, citySlug: string): CityServiceData {
   return entry(
     city, citySlug,
     "Labor Only Moving", "labor-only-moving",
-    `On The Go Moving & Storage provides labor-only moving services in ${city}, WA. If you have your own truck or container, our professional movers provide the muscle — loading, unloading, and furniture rearrangement. Many customers find that upgrading to a full-service truck and crew costs only a small amount more per hour and removes all the hassle of renting a truck.`,
-    `Our ${city} labor-only crews are the same professional movers who work our full-service moves. Ask us about adding a truck and crew — it's often closer in price than you'd expect, and you skip the rental, the driving, and the liability.`,
+    `On The Go Moving & Storage provides labor-only moving services in ${city}, WA. If you have your own truck or container, our professional movers provide the muscle — loading, unloading, and furniture rearrangement without the truck. Perfect for PODS, U-Haul, and storage container moves.`,
+    `Our ${city} labor-only crews are the same professional movers who work our full-service moves. They bring all the equipment — dollies, moving blankets, straps, and floor runners — and the expertise to load your truck or container efficiently and safely.`,
     [
       "Book our labor-only service for your " + city + " move",
       "Our crew arrives with all equipment — no truck",
@@ -445,6 +522,7 @@ function makeLaborOnlyEntry(city: string, citySlug: string): CityServiceData {
     ],
     [
       [`${city} Movers`, `/${citySlug}/`],
+      ["Labor Only Moving", "/labor-only-moving/"],
       ["Residential Moving", "/residential-moving/"],
       ["Packing Services", "/packing-services/"],
     ],
@@ -559,6 +637,7 @@ function makeFurnitureEntry(city: string, citySlug: string): CityServiceData {
       [`${city} Movers`, `/${citySlug}/`],
       ["Furniture Moving", "/furniture-moving/"],
       ["Residential Moving", "/residential-moving/"],
+      ["Specialty Moving", "/specialty-moving/"],
     ],
     BRAND_IMAGES.threeCrewRampLoading
   );
@@ -675,6 +754,11 @@ for (const [city, citySlug] of CITIES) {
   CITY_SERVICE_DATA[corp.slug] = corp;
 }
 
+// Piano entries
+for (const [city, citySlug] of CITIES) {
+  const piano = makePianoEntry(city, citySlug);
+  CITY_SERVICE_DATA[piano.slug] = piano;
+}
 
 // Appliance entries
 for (const [city, citySlug] of CITIES) {
@@ -786,6 +870,7 @@ CITY_SERVICE_DATA["bellevue-commercial-moving"] = { ...makeBusinessEntry("Bellev
 // Kirkland missing pages
 CITY_SERVICE_DATA["kirkland-commercial-moving"] = { ...makeBusinessEntry("Kirkland", "kirkland", "Commercial Moving", "commercial-moving"), slug: "kirkland-commercial-moving" };
 CITY_SERVICE_DATA["kirkland-labor-only-moving"] = { ...makeLaborOnlyEntry("Kirkland", "kirkland"), slug: "kirkland-labor-only-moving" };
+CITY_SERVICE_DATA["kirkland-moving-supplies"] = { ...makeMovingSuppliesEntry("Kirkland", "kirkland"), slug: "kirkland-moving-supplies" };
 CITY_SERVICE_DATA["kirkland-unpacking-services"] = { ...makeUnpackingEntry("Kirkland", "kirkland"), slug: "kirkland-unpacking-services" };
 CITY_SERVICE_DATA["kirkland-office-moving"] = { ...makeOfficeEntry("Kirkland", "kirkland"), slug: "kirkland-office-moving" };
 // Redmond commercial

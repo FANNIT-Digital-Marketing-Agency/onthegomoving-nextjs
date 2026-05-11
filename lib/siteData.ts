@@ -23,13 +23,11 @@ export const COMPANY = {
 export const NAV_SERVICES = [
   { label: "Residential Moving", href: "/residential-moving/" },
   { label: "Commercial Moving", href: "/commercial-moving/" },
-  { label: "Packing Services", href: "/packing-services/" },
   { label: "Storage Services", href: "/storage-services/" },
-  { label: "Labor Only Moving", href: "/labor-only-moving/" },
-  { label: "Specialty Moving", href: "/specialty-moving/" },
+  { label: "Packing Services", href: "/packing-services/" },
   { label: "Apartment Moving", href: "/apartment-moving/" },
   { label: "Senior Moving", href: "/senior-moving/" },
-  { label: "Moving Supplies", href: "/moving-supplies/" },
+  { label: "Staging Professionals", href: "/staging-professionals/" },
 ];
 
 // Top 12 shown in nav dropdown — links to all 26 location pages
@@ -132,15 +130,6 @@ export const SERVICES = [
     image: BRAND_IMAGES.commercialFleet,
   },
   {
-    title: "Packing Services",
-    slug: "packing-services",
-    href: "/packing-services/",
-    icon: "📦",
-    description:
-      "Professional packing using quality materials. We protect your fragile items, electronics, and valuables so everything arrives safely.",
-    image: BRAND_IMAGES.packingCrew,
-  },
-  {
     title: "Storage Services",
     slug: "storage-services",
     href: "/storage-services/",
@@ -150,22 +139,31 @@ export const SERVICES = [
     image: BRAND_IMAGES.storageForklift,
   },
   {
-    title: "Labor Only Moving",
-    slug: "labor-only-moving",
-    href: "/labor-only-moving/",
-    icon: "💪",
+    title: "Apartment Moving",
+    slug: "apartment-moving",
+    href: "/apartment-moving/",
+    icon: "🏢",
     description:
-      "Have your own truck or container? Hire our professional crew for loading, unloading, or furniture rearranging.",
-    image: BRAND_IMAGES.laborOnlyCrew,
+      "Elevator coordination, HOA certificates, and flat-rate pricing. We handle every building requirement so your move day runs without surprises.",
+    image: BRAND_IMAGES.threeCrewLoadingTruck,
   },
   {
-    title: "Specialty Moving",
-    slug: "specialty-moving",
-    href: "/specialty-moving/",
-    icon: "🎹",
+    title: "Senior Moving",
+    slug: "senior-moving",
+    href: "/senior-moving/",
+    icon: "👴",
     description:
-      "Pianos, antiques, fine art, safes, and hot tubs. Our specialty moving crews are trained and equipped to handle your most valuable and difficult-to-move items.",
-    image: BRAND_IMAGES.specialtyMover,
+      "Patient, compassionate crews trained for senior moves. We work at your pace, coordinate with family members, and handle assisted living transitions.",
+    image: BRAND_IMAGES.crewEntryway2,
+  },
+  {
+    title: "Staging Professionals",
+    slug: "staging-professionals",
+    href: "/staging-professionals/",
+    icon: "🏡",
+    description:
+      "Moving and storage services tailored for home stagers. Fast turnaround, flexible scheduling, and secure vault storage between staging projects.",
+    image: BRAND_IMAGES.storageWarehouse,
   },
 ];
 

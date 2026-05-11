@@ -84,12 +84,9 @@ const CANONICAL_SERVICES: { label: string; key: string; icon: string }[] = [
   { label: "Commercial Moving", key: "commercial", icon: "🏗️" },
   { label: "Senior Moving", key: "senior", icon: "👴" },
   { label: "Furniture Moving", key: "furniture", icon: "🛋️" },
-  { label: "Piano Moving", key: "piano", icon: "🎹" },
   { label: "Condo Moving", key: "condo", icon: "🏙️" },
   { label: "Corporate Relocation", key: "corporate-relocation", icon: "🤝" },
-  { label: "Labor Only Moving", key: "labor-only", icon: "💪" },
   { label: "Appliance Moving", key: "appliance", icon: "🧊" },
-  { label: "Moving Supplies", key: "moving-supplies", icon: "📫" },
   { label: "Unpacking Services", key: "unpacking", icon: "📂" },
   { label: "Warehousing", key: "warehousing", icon: "🏭" },
 ];
@@ -108,11 +105,8 @@ const CITY_SERVICE_LINKS: Record<string, { label: string; slug: string }[]> = {
     { label: "Furniture Moving", slug: "redmond-furniture-moving" },
     { label: "Condo Moving", slug: "redmond-condo-moving" },
     { label: "Corporate Relocation", slug: "redmond-corporate-relocation" },
-    { label: "Piano Movers", slug: "redmond-piano-movers" },
     { label: "Appliance Moving", slug: "redmond-appliance-moving" },
-    { label: "Moving Supplies", slug: "redmond-moving-supplies" },
     { label: "Unpacking Services", slug: "redmond-unpacking-services" },
-    { label: "Labor Only Moving", slug: "redmond-labor-only-moving" },
   ],
   "bellevue": [
     { label: "Packing Services", slug: "bellevue-packing-services" },
@@ -126,11 +120,8 @@ const CITY_SERVICE_LINKS: Record<string, { label: string; slug: string }[]> = {
     { label: "Furniture Moving", slug: "bellevue-furniture-moving" },
     { label: "Condo Moving", slug: "bellevue-condo-moving" },
     { label: "Corporate Relocation", slug: "bellevue-corporate-relocation" },
-    { label: "Piano Movers", slug: "bellevue-piano-movers" },
     { label: "Appliance Moving", slug: "bellevue-appliance-moving" },
-    { label: "Moving Supplies", slug: "bellevue-moving-supplies" },
     { label: "Unpacking Services", slug: "bellevue-unpacking-services" },
-    { label: "Labor Only Moving", slug: "bellevue-labor-only-moving" },
   ],
   "kirkland": [
     { label: "Packing Services", slug: "kirkland-packing-services" },
@@ -144,7 +135,6 @@ const CITY_SERVICE_LINKS: Record<string, { label: string; slug: string }[]> = {
     { label: "Furniture Moving", slug: "kirkland-furniture-moving" },
     { label: "Condo Moving", slug: "kirkland-condo-moving" },
     { label: "Corporate Relocation", slug: "kirkland-corporate-relocation" },
-    { label: "Piano Movers", slug: "kirkland-piano-movers" },
     { label: "Appliance Moving", slug: "kirkland-appliance-moving" },
   ],
   "seattle": [
@@ -158,7 +148,6 @@ const CITY_SERVICE_LINKS: Record<string, { label: string; slug: string }[]> = {
     { label: "Furniture Moving", slug: "seattle-furniture-moving" },
     { label: "Condo Moving", slug: "seattle-condo-moving" },
     { label: "Corporate Relocation", slug: "seattle-corporate-relocation" },
-    { label: "Piano Movers", slug: "seattle-piano-movers" },
     { label: "Appliance Moving", slug: "seattle-appliance-moving" },
   ],
   "sammamish": [
@@ -535,8 +524,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
               { icon: Building2, title: "Commercial Moving", desc: `Office and business relocations in ${data.city} with minimal downtime. We work around your schedule.`, href: `/${slug}/commercial/` },
               { icon: Package, title: "Packing Services", desc: `Professional packing in ${data.city} — all materials included, full-pack or fragile-only.`, href: `/${slug}/packing/` },
               { icon: Truck, title: "Storage Services", desc: `Secure storage vaults at our climate-controlled Redmond facility. Full-service pickup and delivery for ${data.city} residents. First month free with any move.`, href: `/${slug}/storage/` },
-              { icon: Truck, title: "Labor Only Moving", desc: `Have your own truck or PODS container? Hire our professional ${data.city} crew for loading and unloading.`, href: `/${slug}/labor-only/` },
-              { icon: Truck, title: "Piano & Specialty Moving", desc: `Piano, safe, antique, and furniture moving in ${data.city}. Specialized equipment and trained crews.`, href: `/${slug}/piano/` },
+              { icon: Truck, title: "Staging Professionals", desc: `Real estate staging services in ${data.city}. We work with staging professionals to make your home show-ready.`, href: `/staging-professionals/` },
             ].map((service, i) => (
               <a key={i} href={service.href}>
                 <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-brand-green hover:shadow-md transition-all group cursor-pointer h-full">

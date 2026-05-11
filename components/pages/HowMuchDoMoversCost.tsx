@@ -40,7 +40,7 @@ const COST_FACTORS_UP = [
   { factor: "Peak season (June–September)", impact: "+10–20% rate" },
   { factor: "Weekend or holiday", impact: "+10–15% rate" },
   { factor: "Last-minute booking (<7 days)", impact: "Limited availability" },
-  { factor: "Piano, safe, or specialty items", impact: "+$150–$500 flat" },
+  { factor: "Heavy or oversized items (safes, appliances)", impact: "+$150–$500 flat" },
 ];
 
 const COST_FACTORS_DOWN = [

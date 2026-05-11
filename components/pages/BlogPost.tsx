@@ -26,10 +26,8 @@ const KEYWORD_MAP: Array<{ pattern: RegExp; url: string; label: string }> = [
   { pattern: /\bcommercial moving\b|\boffice movers?\b|\bbusiness movers?\b/i, url: "/commercial-moving/", label: "commercial moving" },
   { pattern: /\bsenior moving\b|\bsenior movers?\b|\bsenior relocation\b/i, url: "/senior-moving/", label: "senior moving" },
   { pattern: /\bapartment moving\b|\bapartment movers?\b/i, url: "/apartment-moving/", label: "apartment moving" },
-  { pattern: /\bpiano moving\b|\bpiano movers?\b/i, url: "/piano-moving/", label: "piano moving" },
-  { pattern: /\bspecialty moving\b|\bspecialty movers?\b/i, url: "/specialty-moving/", label: "specialty moving" },
   { pattern: /\bunpacking services?\b/i, url: "/unpacking-services/", label: "unpacking services" },
-  { pattern: /\blabor[- ]only moving\b|\blabor[- ]only movers?\b/i, url: "/labor-only-moving/", label: "labor-only moving" },
+  { pattern: /\bstaging professionals?\b|\breal estate staging\b/i, url: "/staging-professionals/", label: "staging professionals" },
   // Location pages — top cities
   { pattern: /\bSeattle movers?\b|\bmovers? in Seattle\b/i, url: "/seattle-movers/", label: "Seattle movers" },
   { pattern: /\bBellevue movers?\b|\bmovers? in Bellevue\b/i, url: "/bellevue-movers/", label: "Bellevue movers" },
@@ -542,7 +540,7 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
                       { label: "Packing Services", href: "/packing-services/" },
                       { label: "Storage Services", href: "/storage-services/" },
                       { label: "Senior Moving", href: "/senior-moving/" },
-                      { label: "Specialty Moving", href: "/specialty-moving/" },
+                      { label: "Staging Professionals", href: "/staging-professionals/" },
                     ].map(s => (
                       <a key={s.href} href={s.href} className="flex items-center justify-between text-sm text-gray-700 hover:text-[#75aa11] transition-colors py-1 border-b border-gray-100 last:border-0">
                         {s.label} <ChevronRight size={13} className="text-gray-400" />

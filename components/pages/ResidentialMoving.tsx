@@ -43,8 +43,8 @@ const FAQS = [
     answer: "Yes. On The Go Moving & Storage is fully licensed (WA HG-064180) and insured with USDOT# 2120054. All crew members are background-checked and professionally trained. We carry full liability coverage on every move.",
   },
   {
-    question: "Can you move heavy or specialty items like a piano or safe?",
-    answer: "Yes. We have specialized equipment and trained crews for pianos, safes, pool tables, gun safes, and other oversized or heavy items. Please mention these items when requesting your quote so we can bring the right equipment.",
+    question: "Can you move heavy or oversized items?",
+    answer: "Yes. We have specialized equipment and trained crews for heavy and oversized items including large appliances, safes, pool tables, and oversized furniture. Please mention these items when requesting your quote so we can bring the right equipment.",
   },
   {
     question: "Do you move condos and high-rise apartments in Seattle?",

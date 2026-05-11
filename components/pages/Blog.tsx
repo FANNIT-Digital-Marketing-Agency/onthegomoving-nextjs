@@ -187,7 +187,7 @@ export default function Blog() {
                 { label: "Commercial Moving", href: "/commercial-moving/" },
                 { label: "Packing Services", href: "/packing-services/" },
                 { label: "Storage Services", href: "/storage-services/" },
-                { label: "Specialty Moving", href: "/specialty-moving/" },
+                { label: "Staging Professionals", href: "/staging-professionals/" },
               ].map(s => (
                 <a key={s.href} href={s.href} className="bg-[#f5f5f3] rounded-lg px-3 py-3 text-xs font-semibold text-gray-700 hover:shadow-md border border-gray-200 transition-all text-center block">
                   {s.label}
