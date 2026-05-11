@@ -124,6 +124,8 @@ export default function Home() {
             title="On The Go Moving crew video background"
             aria-hidden="true"
           />
+          {/* Transparent overlay blocks YouTube UI controls from showing */}
+          <div className="absolute inset-0 z-[5]" style={{ background: 'transparent' }} />
         </div>
 
 
