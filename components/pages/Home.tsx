@@ -102,56 +102,35 @@ export default function Home() {
             backgroundImage: `linear-gradient(to right, rgba(10,30,6,0.88) 48%, rgba(10,30,6,0.50) 100%), url(${BRAND_IMAGES.threeCrewLoadingTruck})`,
           }}
         />
-        {/* YouTube autoplay muted video — desktop only */}
-        {/*
-         * CSS-only control hiding: the iframe is sized to cover the hero at native
-         * 16:9 aspect ratio with NO scaling (preserves full sharpness). The wrapper
-         * has overflow:hidden and a negative bottom margin equal to the YouTube
-         * control bar height (~60px at 1080p, proportionally ~5.5% of player height).
-         * The iframe is shifted UP by the same amount so the video content stays
-         * centred while the control bar is permanently clipped below the fold.
-         * A transparent pointer-events overlay on top prevents any click-through.
+        {/* Self-hosted hero video — desktop only, PageSpeed optimised
+         *  - preload="none": browser does NOT fetch video bytes until page is
+         *    interactive — static background image is the LCP element instead
+         *  - autoPlay muted loop playsInline: standard autoplay requirements
+         *  - object-fit cover: fills the container at any aspect ratio
+         *  - No YouTube iframe = no third-party JS, no control flash, no 429s
+         *  - 4.5 MB H.264 720p, audio stripped, moov atom at front (faststart)
          */}
-        <div className="absolute inset-0 hidden lg:block pointer-events-none" style={{ overflow: 'hidden' }}>
+        <div className="absolute inset-0 hidden lg:block overflow-hidden pointer-events-none">
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a1e06]/90 via-[#0a1e06]/60 to-[#0a1e06]/30 z-10" />
-          {/* Clip wrapper: extends 80px below the section so the control bar is hidden */}
-          <div style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: '-80px',   /* extra 80px below clips the YT control bar */
-            overflow: 'hidden',
-          }}>
-            <iframe
-              src="https://www.youtube.com/embed/g6ZapaNmB1o?autoplay=1&mute=1&loop=1&playlist=g6ZapaNmB1o&controls=0&disablekb=1&playsinline=1&rel=0&showinfo=0&modestbranding=1&iv_load_policy=3&vq=hd1080"
-              allow="autoplay; encrypted-media"
-              allowFullScreen={false}
-              style={{
-                border: 0,
-                position: 'absolute',
-                /*
-                 * Size the iframe so it covers the full width at 16:9.
-                 * 56.25vw = 100vw * (9/16) gives the correct height for full-width.
-                 * We make it slightly taller than the section by adding the 80px
-                 * clip offset so the video content stays vertically centred.
-                 */
-                width: '100vw',
-                height: 'calc(56.25vw + 80px)',
-                minHeight: '100%',
-                /* Centre horizontally and shift up 40px so equal amounts are
-                   clipped top and bottom, keeping the action in frame */
-                top: '50%',
-                left: '50%',
-                transform: 'translate(-50%, calc(-50% - 40px))',
-                opacity: 0.9,
-              }}
-              title="On The Go Moving crew video background"
-              aria-hidden="true"
-            />
-          </div>
-          {/* Pointer-events overlay prevents any YouTube UI click-through */}
-          <div className="absolute inset-0 z-[5]" style={{ background: 'transparent', pointerEvents: 'all' }} />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="none"
+            aria-hidden="true"
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              opacity: 0.9,
+            }}
+          >
+            <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663327875635/fyzLoYjGXntZpltH.mp4" type="video/mp4" />
+          </video>
         </div>
 
 
