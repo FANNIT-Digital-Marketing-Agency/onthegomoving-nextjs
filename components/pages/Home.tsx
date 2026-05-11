@@ -112,15 +112,24 @@ export default function Home() {
             allowFullScreen={false}
             width="1920"
             height="1080"
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            className="absolute top-1/2 left-1/2"
             style={{
               border: 0,
               opacity: 0.9,
-              /* Scale 120% larger so YouTube's control UI is pushed outside the clipped viewport */
-              width: "calc(100vh * 16 / 9 * 1.2)",
-              height: "calc(100vw * 9 / 16 * 1.2)",
-              minWidth: "120%",
-              minHeight: "120%",
+              /*
+               * Consistent vw-based sizing keeps the 16:9 aspect ratio intact.
+               * 177.78vw = 100vw * (16/9) — makes the iframe exactly fill the
+               * viewport height when the viewport is wider than tall (landscape).
+               * The extra scale(1.4) adds 40% headroom so the YouTube control bar
+               * (~8% of player height) is always well below the overflow-hidden
+               * container boundary regardless of viewport aspect ratio.
+               */
+              width: "177.78vw",
+              height: "100vw",
+              minWidth: "177.78vw",
+              minHeight: "100vw",
+              transform: "translate(-50%, -50%) scale(1.4)",
+              transformOrigin: "center center",
             }}
             title="On The Go Moving crew video background"
             aria-hidden="true"
