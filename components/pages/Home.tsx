@@ -107,7 +107,7 @@ export default function Home() {
         <div className="absolute inset-0 hidden lg:block overflow-hidden pointer-events-none">
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a1e06]/90 via-[#0a1e06]/60 to-[#0a1e06]/30 z-10" />
           <iframe
-            src="https://www.youtube.com/embed/tzbLryXHMrU?autoplay=1&mute=1&loop=1&playlist=tzbLryXHMrU&controls=0&disablekb=1&playsinline=1&rel=0&showinfo=0&modestbranding=1&iv_load_policy=3&vq=hd1080"
+            src="https://www.youtube.com/embed/g6ZapaNmB1o?autoplay=1&mute=1&loop=1&playlist=g6ZapaNmB1o&controls=0&disablekb=1&playsinline=1&rel=0&showinfo=0&modestbranding=1&iv_load_policy=3&vq=hd1080"
             allow="autoplay; encrypted-media"
             allowFullScreen={false}
             width="1920"
