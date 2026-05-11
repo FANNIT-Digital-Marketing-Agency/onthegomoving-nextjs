@@ -75,38 +75,6 @@ const TOP_LOCATIONS = ALL_LOCATIONS.slice(0, 12);
 
 export default function Home() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [videoReady, setVideoReady] = useState(false);
-  const iframeRef = useRef<HTMLIFrameElement>(null);
-
-  // Listen for YouTube postMessage events — reveal iframe only when player
-  // state = 1 (playing), at which point controls=0 is already in effect.
-  // Also add a 2.5s hard fallback in case postMessage never fires (e.g. ad blockers).
-  useEffect(() => {
-    let fallback: ReturnType<typeof setTimeout>;
-
-    const handleMessage = (e: MessageEvent) => {
-      try {
-        const data = typeof e.data === "string" ? JSON.parse(e.data) : e.data;
-        // YouTube sends {event:"infoDelivery", info:{playerState:1}} when playing
-        if (
-          data?.event === "infoDelivery" &&
-          data?.info?.playerState === 1
-        ) {
-          setVideoReady(true);
-          clearTimeout(fallback);
-        }
-      } catch {}
-    };
-
-    window.addEventListener("message", handleMessage);
-    // Hard fallback: show video after 2.5s regardless
-    fallback = setTimeout(() => setVideoReady(true), 2500);
-
-    return () => {
-      window.removeEventListener("message", handleMessage);
-      clearTimeout(fallback);
-    };
-  }, []);
 
   useSEO({
     title: "On The Go Moving & Storage | Seattle Movers Since 2009",
@@ -135,35 +103,55 @@ export default function Home() {
           }}
         />
         {/* YouTube autoplay muted video — desktop only */}
-        {/* Starts invisible; fades in after a 900ms delay on load to hide the brief
-            YouTube control flash that appears before controls=0 takes effect */}
-        <div className="absolute inset-0 hidden lg:block overflow-hidden pointer-events-none">
+        {/*
+         * CSS-only control hiding: the iframe is sized to cover the hero at native
+         * 16:9 aspect ratio with NO scaling (preserves full sharpness). The wrapper
+         * has overflow:hidden and a negative bottom margin equal to the YouTube
+         * control bar height (~60px at 1080p, proportionally ~5.5% of player height).
+         * The iframe is shifted UP by the same amount so the video content stays
+         * centred while the control bar is permanently clipped below the fold.
+         * A transparent pointer-events overlay on top prevents any click-through.
+         */}
+        <div className="absolute inset-0 hidden lg:block pointer-events-none" style={{ overflow: 'hidden' }}>
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a1e06]/90 via-[#0a1e06]/60 to-[#0a1e06]/30 z-10" />
-          <iframe
-            ref={iframeRef}
-            src="https://www.youtube.com/embed/g6ZapaNmB1o?autoplay=1&mute=1&loop=1&playlist=g6ZapaNmB1o&controls=0&disablekb=1&playsinline=1&rel=0&showinfo=0&modestbranding=1&iv_load_policy=3&vq=hd1080&enablejsapi=1"
-            allow="autoplay; encrypted-media"
-            allowFullScreen={false}
-            width="1920"
-            height="1080"
-            className="absolute top-1/2 left-1/2"
-            style={{
-              border: 0,
-              width: "177.78vw",
-              height: "100vw",
-              minWidth: "177.78vw",
-              minHeight: "100vw",
-              transform: "translate(-50%, -50%) scale(1.2)",
-              transformOrigin: "center center",
-              // Hidden until player is actually playing (controls already suppressed)
-              opacity: videoReady ? 0.9 : 0,
-              transition: "opacity 1s ease-in",
-            }}
-            title="On The Go Moving crew video background"
-            aria-hidden="true"
-          />
-          {/* Pointer-events overlay prevents any YouTube UI interaction */}
-          <div className="absolute inset-0 z-[5]" style={{ background: 'rgba(0,0,0,0)', pointerEvents: 'all' }} />
+          {/* Clip wrapper: extends 80px below the section so the control bar is hidden */}
+          <div style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: '-80px',   /* extra 80px below clips the YT control bar */
+            overflow: 'hidden',
+          }}>
+            <iframe
+              src="https://www.youtube.com/embed/g6ZapaNmB1o?autoplay=1&mute=1&loop=1&playlist=g6ZapaNmB1o&controls=0&disablekb=1&playsinline=1&rel=0&showinfo=0&modestbranding=1&iv_load_policy=3&vq=hd1080"
+              allow="autoplay; encrypted-media"
+              allowFullScreen={false}
+              style={{
+                border: 0,
+                position: 'absolute',
+                /*
+                 * Size the iframe so it covers the full width at 16:9.
+                 * 56.25vw = 100vw * (9/16) gives the correct height for full-width.
+                 * We make it slightly taller than the section by adding the 80px
+                 * clip offset so the video content stays vertically centred.
+                 */
+                width: '100vw',
+                height: 'calc(56.25vw + 80px)',
+                minHeight: '100%',
+                /* Centre horizontally and shift up 40px so equal amounts are
+                   clipped top and bottom, keeping the action in frame */
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, calc(-50% - 40px))',
+                opacity: 0.9,
+              }}
+              title="On The Go Moving crew video background"
+              aria-hidden="true"
+            />
+          </div>
+          {/* Pointer-events overlay prevents any YouTube UI click-through */}
+          <div className="absolute inset-0 z-[5]" style={{ background: 'transparent', pointerEvents: 'all' }} />
         </div>
 
 
