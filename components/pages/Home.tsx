@@ -116,16 +116,17 @@ export default function Home() {
             style={{
               border: 0,
               opacity: 0.9,
-              minWidth: "100%",
-              minHeight: "100%",
-              width: "calc(100vh * 16 / 9)",
-              height: "calc(100vw * 9 / 16)",
+              /* Scale 120% larger so YouTube's control UI is pushed outside the clipped viewport */
+              width: "calc(100vh * 16 / 9 * 1.2)",
+              height: "calc(100vw * 9 / 16 * 1.2)",
+              minWidth: "120%",
+              minHeight: "120%",
             }}
             title="On The Go Moving crew video background"
             aria-hidden="true"
           />
-          {/* Transparent overlay blocks YouTube UI controls from showing */}
-          <div className="absolute inset-0 z-[5]" style={{ background: 'transparent' }} />
+          {/* Pointer-events overlay prevents any YouTube UI interaction */}
+          <div className="absolute inset-0 z-[5]" style={{ background: 'rgba(0,0,0,0)', pointerEvents: 'all' }} />
         </div>
 
 
