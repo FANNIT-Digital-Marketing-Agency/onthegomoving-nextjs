@@ -154,7 +154,7 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2 mb-6">
               {[
-                { label: "About Us", href: "/about/" },
+                { label: "About Us", href: "/about-us/" },
                 { label: "Our Team", href: "/about-us/#team" },
                 { label: "Community", href: "/community/" },
                 { label: "Partners", href: "/partners/" },

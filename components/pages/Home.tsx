@@ -360,7 +360,7 @@ export default function Home() {
               </div>
 
               <div className="flex flex-wrap gap-3">
-                <a href="/about/" className="btn-primary">
+                <a href="/about-us/" className="btn-primary">
                   About Our Company
                 </a>
                 <a href={COMPANY.phoneHref} className="btn-gold">
