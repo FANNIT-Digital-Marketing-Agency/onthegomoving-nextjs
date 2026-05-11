@@ -76,6 +76,37 @@ const TOP_LOCATIONS = ALL_LOCATIONS.slice(0, 12);
 export default function Home() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [videoReady, setVideoReady] = useState(false);
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+
+  // Listen for YouTube postMessage events — reveal iframe only when player
+  // state = 1 (playing), at which point controls=0 is already in effect.
+  // Also add a 2.5s hard fallback in case postMessage never fires (e.g. ad blockers).
+  useEffect(() => {
+    let fallback: ReturnType<typeof setTimeout>;
+
+    const handleMessage = (e: MessageEvent) => {
+      try {
+        const data = typeof e.data === "string" ? JSON.parse(e.data) : e.data;
+        // YouTube sends {event:"infoDelivery", info:{playerState:1}} when playing
+        if (
+          data?.event === "infoDelivery" &&
+          data?.info?.playerState === 1
+        ) {
+          setVideoReady(true);
+          clearTimeout(fallback);
+        }
+      } catch {}
+    };
+
+    window.addEventListener("message", handleMessage);
+    // Hard fallback: show video after 2.5s regardless
+    fallback = setTimeout(() => setVideoReady(true), 2500);
+
+    return () => {
+      window.removeEventListener("message", handleMessage);
+      clearTimeout(fallback);
+    };
+  }, []);
 
   useSEO({
     title: "On The Go Moving & Storage | Seattle Movers Since 2009",
@@ -109,16 +140,13 @@ export default function Home() {
         <div className="absolute inset-0 hidden lg:block overflow-hidden pointer-events-none">
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a1e06]/90 via-[#0a1e06]/60 to-[#0a1e06]/30 z-10" />
           <iframe
-            src="https://www.youtube.com/embed/g6ZapaNmB1o?autoplay=1&mute=1&loop=1&playlist=g6ZapaNmB1o&controls=0&disablekb=1&playsinline=1&rel=0&showinfo=0&modestbranding=1&iv_load_policy=3&vq=hd1080"
+            ref={iframeRef}
+            src="https://www.youtube.com/embed/g6ZapaNmB1o?autoplay=1&mute=1&loop=1&playlist=g6ZapaNmB1o&controls=0&disablekb=1&playsinline=1&rel=0&showinfo=0&modestbranding=1&iv_load_policy=3&vq=hd1080&enablejsapi=1"
             allow="autoplay; encrypted-media"
             allowFullScreen={false}
             width="1920"
             height="1080"
             className="absolute top-1/2 left-1/2"
-            onLoad={() => {
-              // Delay reveal so YouTube finishes suppressing its control UI
-              setTimeout(() => setVideoReady(true), 900);
-            }}
             style={{
               border: 0,
               width: "177.78vw",
@@ -127,9 +155,9 @@ export default function Home() {
               minHeight: "100vw",
               transform: "translate(-50%, -50%) scale(1.2)",
               transformOrigin: "center center",
-              // Hidden until ready; transition fades it in smoothly
+              // Hidden until player is actually playing (controls already suppressed)
               opacity: videoReady ? 0.9 : 0,
-              transition: "opacity 0.8s ease-in",
+              transition: "opacity 1s ease-in",
             }}
             title="On The Go Moving crew video background"
             aria-hidden="true"
