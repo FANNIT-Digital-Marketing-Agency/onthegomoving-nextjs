@@ -396,7 +396,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
             <div>
               <div className="inline-flex items-center gap-2 bg-brand-green/20 border border-brand-green/40 text-brand-green-light text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5">
                 <MapPin className="w-3.5 h-3.5" />
-                Serving {data.city}, {data.state} · {data.drive} from Redmond
+                Serving {data.city}, {data.state} · {data.drive} from {data.dispatchFrom ?? "Redmond"}
               </div>
               <h1 className="font-display text-4xl lg:text-5xl font-black text-white leading-tight mb-4">
                 {data.heroTagline}
@@ -783,17 +783,17 @@ export default function LocationPage({ slug }: LocationPageProps) {
             <div>
               <p className="text-brand-green font-semibold text-sm uppercase tracking-widest mb-3">Our Location</p>
               <h2 className="font-display text-3xl font-black text-brand-forest mb-4">
-                {data.miles} Miles from Our Redmond Warehouse
+                {data.miles} Miles from Our {data.dispatchFrom ?? "Redmond"} Warehouse
               </h2>
               <p className="text-gray-600 mb-6">
-                Our main facility is located in Redmond, WA — just {data.drive} from {data.city}. This proximity means faster crew dispatch, lower travel time, and more competitive pricing for your {data.city} move.
+                Our {data.dispatchFrom === "Seattle" ? "Seattle" : "Redmond"} facility is just {data.drive} from {data.city}. This proximity means faster crew dispatch, lower travel time, and more competitive pricing for your {data.city} move.
               </p>
               <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm space-y-4">
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="font-semibold text-brand-forest text-sm">Address</p>
-                    <p className="text-gray-600 text-sm">Redmond, WA 98052</p>
+                    <p className="text-gray-600 text-sm">{data.dispatchFrom === "Seattle" ? "Seattle, WA 98119" : "Redmond, WA 98052"}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
