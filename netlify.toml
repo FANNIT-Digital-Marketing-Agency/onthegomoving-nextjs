@@ -1291,7 +1291,7 @@
   from = "/ballard-movers"
   to = "/ballard-movers/"
   status = 301
-  force = true
+  force = false
 
 [[redirects]]
   from = "/business-moving/"
@@ -1551,5 +1551,139 @@
 [[redirects]]
   from = "/packrat-panic-tips-to-moving-when-youre-a-packrat/"
   to = "/packing-services/"
+  status = 301
+  force = true
+
+# Additional missing WP blog/page redirects - intent mapped
+
+[[redirects]]
+  from = "/declutter-your-home-7-items-you-need-to-ditch-before-your-move/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/declutter-your-home-checklist-for-moving/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/decluttering-tricks-before-you-move/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-to-downsize-your-home/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-to-help-a-hoarder-move/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/why-moving-is-the-worst-and-what-to-do-about-it/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/the-role-of-professional-movers-in-reducing-moving-stress/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/what-to-expect-when-moving-during-the-off-season/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/moving-during-the-holidays-tips-for-reducing-stress/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/are-you-hiring-a-certified-moving-company/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/make-moving-in-with-your-partner-easy/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/3-unexpected-challenges-of-moving-across-town/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/moving-with-kids/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/move-in-date/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/6-helpful-house-moving-tips-for-people-with-disabilities/"
+  to = "/senior-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/benefits-of-using-professional-warehousing-services-during-your-move/"
+  to = "/warehousing-distribution/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/storage-services-bellevue/"
+  to = "/bellevue-movers/storage/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/shoreline-senior-moving-services/"
+  to = "/shoreline-movers/senior/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/what-is-seattle-known-for-food-sights/"
+  to = "/seattle-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/white-glove-delivery/"
+  to = "/commercial-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/covid-19-on-the-go-ensures-your-move-is-healthy-and-safe/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/7-of-the-best-places-to-live-in-the-u-s/"
+  to = "/blog/"
   status = 301
   force = true
