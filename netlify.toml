@@ -1442,3 +1442,88 @@
   to = "/kirkland-movers/"
   status = 301
   force = true
+
+# lynnwood-moving-services → lynnwood-movers (duplicate city hub)
+[[redirects]]
+  from = "/lynnwood-moving-services/"
+  to = "/lynnwood-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lynnwood-moving-services/residential/"
+  to = "/lynnwood-movers/residential/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lynnwood-moving-services/apartment/"
+  to = "/lynnwood-movers/apartment/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lynnwood-moving-services/packing/"
+  to = "/lynnwood-movers/packing/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lynnwood-moving-services/storage/"
+  to = "/lynnwood-movers/storage/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lynnwood-moving-services/office/"
+  to = "/lynnwood-movers/office/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lynnwood-moving-services/commercial/"
+  to = "/lynnwood-movers/commercial/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lynnwood-moving-services/senior/"
+  to = "/lynnwood-movers/senior/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lynnwood-moving-services/furniture/"
+  to = "/lynnwood-movers/furniture/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lynnwood-moving-services/condo/"
+  to = "/lynnwood-movers/condo/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lynnwood-moving-services/appliance/"
+  to = "/lynnwood-movers/appliance/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lynnwood-moving-services/unpacking/"
+  to = "/lynnwood-movers/unpacking/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lynnwood-moving-services/warehousing/"
+  to = "/lynnwood-movers/warehousing/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lynnwood-moving-services/corporate-relocation/"
+  to = "/lynnwood-movers/corporate-relocation/"
+  status = 301
+  force = true
