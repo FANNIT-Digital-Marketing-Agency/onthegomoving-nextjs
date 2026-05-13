@@ -2950,8 +2950,8 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
       { q: `Does moving a piano affect its tuning?`, a: `Yes — moving a piano almost always requires retuning afterward. Changes in temperature, humidity, and the physical stress of the move cause the strings to shift. Plan to have your piano tuned 2–4 weeks after the move (not immediately — give it time to acclimate to its new environment first).` },
       { q: `What equipment is needed to move a piano?`, a: `Essential piano moving equipment: a piano dolly (4-wheel dolly rated for 800+ lbs), heavy-duty moving straps, thick moving blankets (at least 4–6), stretch wrap to secure the blankets, furniture sliders for hardwood floors, and ramp boards for loading into the truck. For grand pianos, you also need a piano skid board and tools to remove the legs.` }
     ],
-    relatedService: "Specialty Moving",
-    relatedServiceHref: "/specialty-moving/"
+    relatedService: "Residential Moving",
+    relatedServiceHref: "/residential-moving/"
   },
       "when-is-the-best-time-to-move-into-an-apartment": {
     slug: "when-is-the-best-time-to-move-into-an-apartment",

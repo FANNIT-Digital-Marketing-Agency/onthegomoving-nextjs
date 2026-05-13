@@ -27,7 +27,6 @@ const SERVICE_ICONS: Record<string, React.ReactNode> = {
   "/packing-services/":     <Package size={16} />,
   "/storage-services/":     <Archive size={16} />,
   "/labor-only-moving/":    <Dumbbell size={16} />,
-  "/specialty-moving/":     <Gem size={16} />,
   "/apartment-moving/":     <HomeIcon size={16} />,
   "/senior-moving/":        <Users size={16} />,
 };
@@ -38,7 +37,6 @@ const SERVICE_DESCRIPTIONS: Record<string, string> = {
   "/packing-services/":     "Full or partial packing",
   "/storage-services/":     "Portable storage bins & vaults",
   "/labor-only-moving/":    "Loading & unloading crews",
-  "/specialty-moving/":     "Pianos, antiques & safes",
   "/apartment-moving/":     "Studio to multi-bedroom",
   "/senior-moving/":        "Careful, patient service",
 };
