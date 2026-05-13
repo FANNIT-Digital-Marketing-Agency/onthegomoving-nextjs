@@ -1527,3 +1527,29 @@
   to = "/lynnwood-movers/corporate-relocation/"
   status = 301
   force = true
+
+# Old WP blog posts - redirected to relevant service/city pages
+
+[[redirects]]
+  from = "/4-ways-professional-movers-can-make-relocation-breeze/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/5-best-reasons-to-move-to-redmond/"
+  to = "/redmond-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/moving-over-the-holidays-how-to-be-successful-during-holiday-relocation-2/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/packrat-panic-tips-to-moving-when-youre-a-packrat/"
+  to = "/packing-services/"
+  status = 301
+  force = true
