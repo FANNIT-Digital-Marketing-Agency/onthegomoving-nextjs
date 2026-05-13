@@ -56,7 +56,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     state: "WA",
     miles: 12,
     drive: "15 min",
-    dispatchFrom: "Seattle"
+    dispatchFrom: "Seattle",
     metaTitle: "Seattle Movers & Storage",
     metaDescription: "Local movers in Seattle, WA. Serving Capitol Hill, Ballard, Queen Anne, Fremont & nearby areas. Licensed & insured, 4.8 stars. Free quote.",
     heroTagline: "Seattle's Trusted Local Moving Company",
@@ -517,7 +517,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     state: "WA",
     miles: 16,
     drive: "18 min",
-    dispatchFrom: "Seattle"
+    dispatchFrom: "Seattle",
     metaTitle: "Shoreline Movers & Storage",
     metaDescription: "Local movers in Shoreline, WA. Serving Richmond Beach, Ridgecrest, Echo Lake & nearby areas. Licensed & insured, 4.8 stars. Free quote.",
     heroTagline: "Shoreline's Most Trusted Local Movers",
@@ -638,7 +638,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     state: "WA",
     miles: 16,
     drive: "22 min",
-    dispatchFrom: "Seattle"
+    dispatchFrom: "Seattle",
     metaTitle: "Tukwila Movers & Storage",
     metaDescription: "Local movers in Tukwila, WA. Serving Southcenter, Foster, Riverton Heights & nearby areas. Licensed & insured, 4.8 stars. Free quote.",
     heroTagline: "Tukwila's Most Trusted Local Movers",
@@ -679,7 +679,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     state: "WA",
     miles: 17,
     drive: "22 min",
-    dispatchFrom: "Seattle"
+    dispatchFrom: "Seattle",
     metaTitle: "Mountlake Terrace Movers",
     metaDescription: "Local movers in Mountlake Terrace, WA. Serving Downtown Mountlake Terrace, Ballinger & nearby areas. Licensed & insured, 4.8 stars. Free quote.",
     heroTagline: "Mountlake Terrace's Most Trusted Local Movers",
@@ -800,7 +800,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     state: "WA",
     miles: 18,
     drive: "20 min",
-    dispatchFrom: "Seattle"
+    dispatchFrom: "Seattle",
     metaTitle: "Burien Movers & Storage",
     metaDescription: "Local movers in Burien, WA. Serving Downtown Burien, Three Tree Point, Gregory Heights & nearby areas. Licensed & insured, 4.8 stars. Free quote.",
     heroTagline: "Burien's Most Trusted Local Movers",
@@ -1200,7 +1200,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     state: "WA",
     miles: 14,
     drive: "5 min",
-    dispatchFrom: "Seattle"
+    dispatchFrom: "Seattle",
     metaTitle: "Ballard Movers & Storage",
     metaDescription: "Professional moving services in Ballard, Seattle, WA. Trusted local movers for Ballard's apartments, condos, and homes. Licensed, insured, 4.8 stars. Free quote.",
     heroTagline: "Ballard's Trusted Local Moving Company",
@@ -1240,7 +1240,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     state: "WA",
     miles: 13,
     drive: "12 min",
-    dispatchFrom: "Seattle"
+    dispatchFrom: "Seattle",
     metaTitle: "Capitol Hill Movers & Storage",
     metaDescription: "On The Go Moving & Storage serves Capitol Hill, WA. Licensed & insured local movers with 4.8 stars and 1,562 reviews. Get a free quote today.",
     heroTagline: "Capitol Hill's Trusted Local Moving Company",
@@ -1280,7 +1280,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     state: "WA",
     miles: 13,
     drive: "5 min",
-    dispatchFrom: "Seattle"
+    dispatchFrom: "Seattle",
     metaTitle: "Queen Anne Movers & Storage",
     metaDescription: "Professional moving services in Queen Anne, Seattle, WA. Expert movers for Queen Anne's homes, apartments, and condos. Licensed, insured, 4.8 stars. Free quote.",
     heroTagline: "Queen Anne's Trusted Local Moving Company",
@@ -1320,7 +1320,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     state: "WA",
     miles: 13,
     drive: "6 min",
-    dispatchFrom: "Seattle"
+    dispatchFrom: "Seattle",
     metaTitle: "Fremont Movers & Storage",
     metaDescription: "Professional moving services in Fremont, Seattle, WA. Trusted local movers for Fremont's apartments, condos, and homes. Licensed, insured, 4.8 stars. Free quote.",
     heroTagline: "Fremont's Trusted Local Moving Company",
