@@ -183,26 +183,23 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Mobile CTA — phone only; form renders directly below hero */}
-              <a href={COMPANY.phoneHref} className="btn-primary text-base justify-center lg:hidden w-full sm:w-auto">
-                <Phone size={16} /> {COMPANY.phone}
-              </a>
+              {/* Mobile CTA — phone button + inline form */}
+              <div className="lg:hidden space-y-4">
+                <a href={COMPANY.phoneHref} className="btn-primary text-base justify-center w-full sm:w-auto">
+                  <Phone size={16} /> {COMPANY.phone}
+                </a>
+                <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
+                  <QuoteForm variant="hero" defaultMoveType="house" />
+                </div>
+              </div>
             </div>
-
-            {/* ── Right: Quote form ── */}
+            {/* ── Right: Quote form (desktop only) ── */}
             <div className="hidden lg:block">
               <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
                 <QuoteForm variant="hero" defaultMoveType="house" />
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Mobile quote form */}
-      <section className="lg:hidden bg-[#f5f5f3] py-8">
-        <div className="container">
-          <QuoteForm variant="inline" defaultMoveType="house" />
         </div>
       </section>
 
