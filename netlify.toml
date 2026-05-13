@@ -2142,3 +2142,119 @@
   status = 301
   force = true
 
+# 404 fix redirects — community, refer-us, everett, corporate-relocation city sub-pages
+
+[[redirects]]
+  from = "/community/"
+  to = "/about-us/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/refer-us/"
+  to = "/about-us/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/everett-movers/"
+  to = "/seattle-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/burien-movers/corporate-relocation/"
+  to = "/burien-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/newcastle-movers/corporate-relocation/"
+  to = "/newcastle-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/renton-movers/corporate-relocation/"
+  to = "/renton-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/redmond-movers/corporate-relocation/"
+  to = "/redmond-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/bellevue-movers/corporate-relocation/"
+  to = "/bellevue-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/bothell-movers/corporate-relocation/"
+  to = "/bothell-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/sammamish-movers/corporate-relocation/"
+  to = "/sammamish-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mukilteo-movers/corporate-relocation/"
+  to = "/mukilteo-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/north-bend-movers/corporate-relocation/"
+  to = "/north-bend-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/shoreline-movers/corporate-relocation/"
+  to = "/shoreline-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mountlake-terrace-movers/corporate-relocation/"
+  to = "/mountlake-terrace-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/lake-forest-park-movers/corporate-relocation/"
+  to = "/lake-forest-park-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/maple-valley-movers/corporate-relocation/"
+  to = "/maple-valley-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/covington-movers/corporate-relocation/"
+  to = "/covington-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/duvall-movers/corporate-relocation/"
+  to = "/duvall-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fall-city-movers/corporate-relocation/"
+  to = "/fall-city-movers/"
+  status = 301
+  force = true
+
