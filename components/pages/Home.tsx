@@ -160,8 +160,8 @@ export default function Home() {
              Flat-rate pricing, professional crews, and 1 free month of storage — trusted by 25,000+ Seattle families since 2009.
               </p>
 
-              {/* Single consolidated trust strip */}
-              <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-8 text-sm">
+              {/* Single consolidated trust strip — single row on mobile */}
+              <div className="flex flex-nowrap items-center gap-x-3 sm:gap-x-5 mb-8 text-xs sm:text-sm overflow-x-auto">
                 <div className="flex items-center gap-1.5 text-white">
                   <div className="flex">
                     {[1, 2, 3, 4, 5].map((i) => (

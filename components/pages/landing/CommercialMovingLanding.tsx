@@ -116,11 +116,11 @@ export default function CommercialMovingLanding() {
                 </a>
               </div>
 
-              {/* Trust badges */}
-              <div className="grid grid-cols-2 gap-3 mt-2">
-                {TRUST_ITEMS.map(({ icon: Icon, text }) => (
-                  <div key={text} className="flex items-center gap-2 text-sm text-gray-200">
-                    <Icon size={15} className="text-[#75aa11] flex-shrink-0" />
+              {/* Trust badges — single row on mobile */}
+              <div className="flex flex-nowrap gap-x-3 mt-2 overflow-x-auto">
+                {TRUST_ITEMS.slice(0, 2).map(({ icon: Icon, text }) => (
+                  <div key={text} className="flex items-center gap-2 text-xs sm:text-sm text-gray-200 flex-shrink-0 whitespace-nowrap">
+                    <Icon size={14} className="text-[#75aa11] flex-shrink-0" />
                     <span>{text}</span>
                   </div>
                 ))}

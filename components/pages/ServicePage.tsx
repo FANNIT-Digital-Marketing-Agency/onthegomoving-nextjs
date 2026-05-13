@@ -974,21 +974,21 @@ export default function ServicePage({ slug }: ServicePageProps) {
               <p className="text-green-100 text-lg leading-relaxed mb-6 max-w-lg">
                 {data.intro}
               </p>
-              <div className="flex flex-wrap gap-3 mb-6">
-                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg px-3 py-2">
+              <div className="flex flex-nowrap gap-2 mb-6 overflow-x-auto">
+                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg px-3 py-2 flex-shrink-0">
                   <div className="flex">
                     {[1,2,3,4,5].map(i => <Star key={i} size={13} fill="#fbc319" color="#fbc319" />)}
                   </div>
                   <span className="text-white font-bold text-sm">4.8</span>
-                  <span className="text-white/60 text-xs">(1,562 reviews)</span>
+                  <span className="text-white/60 text-xs">(1,562)</span>
                 </div>
-                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg px-3 py-2">
+                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg px-3 py-2 flex-shrink-0">
                   <Shield size={13} style={{ color: "#75aa11" }} />
-                  <span className="text-white text-sm font-medium">Licensed & Insured</span>
+                  <span className="text-white text-sm font-medium whitespace-nowrap">Licensed & Insured</span>
                 </div>
-                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg px-3 py-2">
+                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg px-3 py-2 flex-shrink-0">
                   <CheckCircle size={13} style={{ color: "#fbc319" }} />
-                  <span className="text-white text-sm font-medium">Since 2009</span>
+                  <span className="text-white text-sm font-medium whitespace-nowrap">Since 2009</span>
                 </div>
               </div>
               {/* Mobile: phone + form inline in hero */}
