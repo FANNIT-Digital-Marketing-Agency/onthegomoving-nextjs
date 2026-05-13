@@ -12,36 +12,6 @@
 # on the new site, preserving link equity and preventing 404s at domain cutover.
 
 [[redirects]]
-  from = "/10-moving-tips-for-making-your-family/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/10-things-to-know-for-moving-during-covid/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/10-things-to-remember-when-moving/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/10-tips-things-most-families-forget-during-move/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/12-modern-interior-design-tips-for-decorating-small-spaces/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/12-seattle-moving-tasks-that-are-easily-forgotten/"
   to = "/seattle-movers/"
   status = 301
@@ -54,32 +24,8 @@
   force = true
 
 [[redirects]]
-  from = "/3-unexpected-challenges-of-moving-across-town/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/4-common-moving-mistakes/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/4-things-you-didnt-know-about-kirkland/"
   to = "/kirkland-movers/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/5-easy-ways-to-reduce-moving-stress/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/5-helpful-tips-for-moving-with-kids/"
-  to = "/blog/"
   status = 301
   force = true
 
@@ -114,20 +60,8 @@
   force = true
 
 [[redirects]]
-  from = "/7-tips-for-moving-with-pets/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/8-tips-for-moving-on-a-budget/"
   to = "/how-much-do-movers-cost/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/a-guide-to-moving-during-winter/"
-  to = "/blog/"
   status = 301
   force = true
 
@@ -204,12 +138,6 @@
   force = true
 
 [[redirects]]
-  from = "/best-time-of-year-to-move/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/business-moving-hacks-tips-on-how-to-successfully-move-your-office-space/"
   to = "/commercial-moving/"
   status = 301
@@ -252,36 +180,6 @@
   force = true
 
 [[redirects]]
-  from = "/covid-19-on-the-go-ensures-your-move-is-healthy-and-safe/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/declutter-your-home-7-items-you-need-to-ditch-before-your-move/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/declutter-your-home-checklist-for-moving/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/decluttering-tricks-before-you-move/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/easily-declutter-house/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/easing-transition-when-moving-senior/"
   to = "/senior-moving/"
   status = 301
@@ -290,24 +188,6 @@
 [[redirects]]
   from = "/fill-two-needs-with-one-deed-moving-and-storage/"
   to = "/storage-services/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/first-time-moving-tips/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/forgetting-something-5-things-moving/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/get-your-security-deposit-back/"
-  to = "/blog/"
   status = 301
   force = true
 
@@ -324,12 +204,6 @@
   force = true
 
 [[redirects]]
-  from = "/homeward-bound-moving-with-pets/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/how-can-you-prepare-your-items-for-long-term-storage/"
   to = "/storage-services/"
   status = 301
@@ -342,38 +216,8 @@
   force = true
 
 [[redirects]]
-  from = "/how-to-downsize-your-home/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/how-to-handle-last-minute-moves-successfully/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/how-to-help-a-hoarder-move/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/how-to-keep-your-identity-safe-when-moving-to-bellevue/"
   to = "/bellevue-movers/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/how-to-make-a-new-apartment-feel-like-home/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/how-to-move-efficiently-with-pets/"
-  to = "/blog/"
   status = 301
   force = true
 
@@ -396,18 +240,6 @@
   force = true
 
 [[redirects]]
-  from = "/how-to-throw-a-housewarming-party-in-15-easy-steps/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/importance-of-knowing-where-to-get-fast-moving-services/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/innovative-commercial-movers-seattle/"
   to = "/commercial-moving/"
   status = 301
@@ -420,20 +252,8 @@
   force = true
 
 [[redirects]]
-  from = "/know-moving-rental/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/living-in-kirkland-little-known-facts/"
   to = "/kirkland-movers/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/make-moving-in-with-your-partner-easy/"
-  to = "/blog/"
   status = 301
   force = true
 
@@ -450,44 +270,14 @@
   force = true
 
 [[redirects]]
-  from = "/move-in-date/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/movers-guide-sammamish/"
   to = "/sammamish-movers/"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/moving-during-the-holidays-tips-for-reducing-stress/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/moving-over-the-holidays-how-to-be-successful-during-holiday-relocation-2/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/moving-tips-the-right-way-to-pack-your-kids-room/"
   to = "/packing-services/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/moving-with-kids/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/moving-with-pets-7-tips/"
-  to = "/blog/"
   status = 301
   force = true
 
@@ -506,12 +296,6 @@
 [[redirects]]
   from = "/on-the-go-moving-what-we-do-and-why/"
   to = "/about-us/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/our-new-ultimate-moving-guide-is-now-available/"
-  to = "/blog/"
   status = 301
   force = true
 
@@ -536,12 +320,6 @@
 [[redirects]]
   from = "/packing-tips-easy-steps-to-packing-your-kitchen/"
   to = "/packing-services/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/packrat-panic-tips-to-moving-when-youre-a-packrat/"
-  to = "/blog/"
   status = 301
   force = true
 
@@ -576,18 +354,6 @@
   force = true
 
 [[redirects]]
-  from = "/successful-yard-sale/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/taking-back-your-house-9-organizational-tips-for-small-spaces/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/temporary-storage-for-your-small-business/"
   to = "/storage-services/"
   status = 301
@@ -606,38 +372,8 @@
   force = true
 
 [[redirects]]
-  from = "/the-first-10-things-you-need-to-do-when-youve-moved-into-a-new-place/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/the-role-of-professional-movers-in-reducing-moving-stress/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/tips-for-getting-comfortable-in-your-new-home/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/tips-to-choosing-the-best-student-moving-services-in-seattle/"
   to = "/seattle-movers/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/top-tips-on-how-to-make-a-house-a-home/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/what-to-expect-when-moving-during-the-off-season/"
-  to = "/blog/"
   status = 301
   force = true
 
@@ -648,20 +384,8 @@
   force = true
 
 [[redirects]]
-  from = "/white-glove-delivery/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/why-climate-controlled-storage-is-a-winning-choice/"
   to = "/storage-services/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/why-moving-is-the-worst-and-what-to-do-about-it/"
-  to = "/blog/"
   status = 301
   force = true
 
@@ -678,12 +402,6 @@
   force = true
 
 [[redirects]]
-  from = "/would-you-trust-a-stranger-with-everything-you-own/"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/your-belongings-need-climate-controlled-storage/"
   to = "/storage-services/"
   status = 301
@@ -691,176 +409,8 @@
 # Missing 301 redirects — generated from sitemap comparison
 
 [[redirects]]
-  from = "/10-expert-tips-to-make-your-winter-move-an-easier-mission/"
-  to = "/blog/10-expert-tips-to-make-your-winter-move-an-easier-mission/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/10-things-to-know-about-living-in-ballard/"
-  to = "/blog/10-things-to-know-about-living-in-ballard/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/10-things-you-need-when-moving-into-your-new-home/"
-  to = "/blog/10-things-you-need-when-moving-into-your-new-home/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/10-things-you-should-know-about-living-in-redmond-washington/"
-  to = "/blog/10-things-you-should-know-about-living-in-redmond-washington/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/11-tips-for-an-easy-diy-move/"
-  to = "/blog/11-tips-for-an-easy-diy-move/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/15-signs-of-a-worst-moving-company/"
-  to = "/blog/15-signs-of-a-worst-moving-company/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/4-ways-professional-movers-can-make-relocation-breeze/"
-  to = "/blog/4-ways-professional-movers-can-make-relocation-breeze/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/5-best-reasons-to-move-to-redmond/"
-  to = "/blog/5-best-reasons-to-move-to-redmond/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/5-moving-mistakes-seattle-families/"
-  to = "/blog/5-moving-mistakes-seattle-families/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/5-questions-before-hiring-commercial-moving-company/"
-  to = "/blog/5-questions-before-hiring-commercial-moving-company/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/5-reasons-to-use-climate-controlled-storage/"
   to = "/storage-services/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/5-small-space-decorating-tips/"
-  to = "/blog/5-small-space-decorating-tips/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/5-tips-to-go-green-for-your-upcoming-kirkland-move/"
-  to = "/blog/5-tips-to-go-green-for-your-upcoming-kirkland-move/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/5-ways-to-maximize-space-in-your-small-home/"
-  to = "/blog/5-ways-to-maximize-space-in-your-small-home/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/6-helpful-house-moving-tips-for-people-with-disabilities/"
-  to = "/blog/6-helpful-house-moving-tips-for-people-with-disabilities/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/6-simple-ways-to-make-sure-you-get-your-rental-deposit-returned/"
-  to = "/blog/6-simple-ways-to-make-sure-you-get-your-rental-deposit-returned/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/6-tips-for-meeting-your-neighbors-after-a-move/"
-  to = "/blog/6-tips-for-meeting-your-neighbors-after-a-move/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/7-helpful-tips-when-moving-with-pets/"
-  to = "/blog/7-helpful-tips-when-moving-with-pets/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/7-of-the-best-places-to-live-in-the-u-s/"
-  to = "/blog/7-of-the-best-places-to-live-in-the-u-s/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/7-reasons-why-never-use-a-moving-company/"
-  to = "/blog/7-reasons-why-never-use-a-moving-company/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/7-terrible-mistakes-to-avoid-when-moving/"
-  to = "/blog/7-terrible-mistakes-to-avoid-when-moving/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/7-tips-make-move-less-stressful/"
-  to = "/blog/7-tips-make-move-less-stressful/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/7-tips-relocating-small-business-office/"
-  to = "/blog/7-tips-relocating-small-business-office/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/8-tips-for-organizing-small-spaces-and-creating-a-comfortable-home/"
-  to = "/blog/8-tips-for-organizing-small-spaces-and-creating-a-comfortable-home/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/8-tips-move-bad-weather/"
-  to = "/blog/8-tips-move-bad-weather/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/9-common-moving-mistakes-and-tips-on-how-to-avoid-them/"
-  to = "/blog/9-common-moving-mistakes-and-tips-on-how-to-avoid-them/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/9-moving-lessons-dont-have-to-learn-hard-way/"
-  to = "/blog/9-moving-lessons-dont-have-to-learn-hard-way/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/9-smart-seattle-packing-tips/"
-  to = "/blog/9-smart-seattle-packing-tips/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/9-tips-you-will-want-to-know-for-your-next-redmond-move/"
-  to = "/blog/9-tips-you-will-want-to-know-for-your-next-redmond-move/"
   status = 301
   force = true
 
@@ -873,30 +423,6 @@
 [[redirects]]
   from = "/affordable-expert-office-movers/"
   to = "/commercial-moving/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/apartment-moving-tips/"
-  to = "/blog/apartment-moving-tips/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/apartment-vs-house/"
-  to = "/blog/apartment-vs-house/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/are-you-hiring-a-certified-moving-company/"
-  to = "/blog/are-you-hiring-a-certified-moving-company/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/attractions-in-seattle/"
-  to = "/blog/attractions-in-seattle/"
   status = 301
   force = true
 
@@ -985,12 +511,6 @@
   force = true
 
 [[redirects]]
-  from = "/bellevue-or-seattle-where-to-live/"
-  to = "/blog/bellevue-or-seattle-where-to-live/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/bellevue-packing-services/"
   to = "/bellevue-movers/"
   status = 301
@@ -1041,54 +561,6 @@
 [[redirects]]
   from = "/benefits-of-climate-controlled-storage/"
   to = "/storage-services/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/benefits-of-using-professional-warehousing-services-during-your-move/"
-  to = "/blog/benefits-of-using-professional-warehousing-services-during-your-move/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/best-office-organization-systems/"
-  to = "/blog/best-office-organization-systems/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/best-places-to-live-in-seattle-neighborhoods-near-the-area/"
-  to = "/blog/best-places-to-live-in-seattle-neighborhoods-near-the-area/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/best-restaurants-in-seattle/"
-  to = "/blog/best-restaurants-in-seattle/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/best-things-to-do-in-everett-wa/"
-  to = "/blog/best-things-to-do-in-everett-wa/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/best-things-to-do-in-redmond/"
-  to = "/blog/best-things-to-do-in-redmond/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/best-time-to-rent-an-apartment-guide/"
-  to = "/blog/best-time-to-rent-an-apartment-guide/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/best-tips-for-winter-moving/"
-  to = "/blog/best-tips-for-winter-moving/"
   status = 301
   force = true
 
@@ -1147,170 +619,8 @@
   force = true
 
 [[redirects]]
-  from = "/changing-your-address-essential-checklist/"
-  to = "/blog/changing-your-address-essential-checklist/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/clyde-hill-storage-services/"
   to = "/clyde-hill-movers/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/eco-friendly-moving-sustainable-practices-for-your-next-move/"
-  to = "/blog/eco-friendly-moving-sustainable-practices-for-your-next-move/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/essential-tools-needed-for-a-smooth-move/"
-  to = "/blog/essential-tools-needed-for-a-smooth-move/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/first-time-moving-heres-simple-checklist/"
-  to = "/blog/first-time-moving-heres-simple-checklist/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/fun-things-to-do-in-bothell-wa/"
-  to = "/blog/fun-things-to-do-in-bothell-wa/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/furniture-storage-units/"
-  to = "/blog/furniture-storage-units/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/green-moving-eco-friendly-10-tips/"
-  to = "/blog/green-moving-eco-friendly-10-tips/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/hiring-professional-movers-vs-moving-yourself/"
-  to = "/blog/hiring-professional-movers-vs-moving-yourself/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/housewarming-party-ideas-and-food/"
-  to = "/blog/housewarming-party-ideas-and-food/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/how-many-trips-does-a-local-move-really-take/"
-  to = "/blog/how-many-trips-does-a-local-move-really-take/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/how-much-do-you-tip-movers/"
-  to = "/blog/how-much-do-you-tip-movers/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/how-to-announce-your-office-relocation-5-great-tips/"
-  to = "/blog/how-to-announce-your-office-relocation-5-great-tips/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/how-to-choose-the-best-neighborhood-when-moving-to-a-new-city/"
-  to = "/blog/how-to-choose-the-best-neighborhood-when-moving-to-a-new-city/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/how-to-efficiently-pack-a-storage-container/"
-  to = "/blog/how-to-efficiently-pack-a-storage-container/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/how-to-find-the-best-temporary-storage-units-in-your-area/"
-  to = "/blog/how-to-find-the-best-temporary-storage-units-in-your-area/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/how-to-fold-for-packing/"
-  to = "/blog/how-to-fold-for-packing/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/how-to-meet-your-neighbors/"
-  to = "/blog/how-to-meet-your-neighbors/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/how-to-move-a-piano/"
-  to = "/blog/how-to-move-a-piano/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/how-to-move-large-furniture-safely-and-efficiently/"
-  to = "/blog/how-to-move-large-furniture-safely-and-efficiently/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/how-to-pack-a-car-for-moving/"
-  to = "/blog/how-to-pack-a-car-for-moving/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/how-to-pack-a-storage-unit/"
-  to = "/blog/how-to-pack-a-storage-unit/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/how-to-pack-clothes-for-moving/"
-  to = "/blog/how-to-pack-clothes-for-moving/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/how-to-pack-dishes/"
-  to = "/blog/how-to-pack-dishes/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/how-to-pack-shoes-for-moving-8-tips/"
-  to = "/blog/how-to-pack-shoes-for-moving-8-tips/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/how-to-pack-tv-for-moving/"
-  to = "/blog/how-to-pack-tv-for-moving/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/how-to-prepare-for-movers/"
-  to = "/blog/how-to-prepare-for-movers/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/how-to-protect-fragile-items-during-a-move/"
-  to = "/blog/how-to-protect-fragile-items-during-a-move/"
   status = 301
   force = true
 
@@ -1435,152 +745,14 @@
   force = true
 
 [[redirects]]
-  from = "/kirkland-waterfront/"
-  to = "/blog/kirkland-waterfront/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/lake-sammamish-parks/"
-  to = "/blog/lake-sammamish-parks/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/leave-behind-moving-5-ways-declutter-house/"
-  to = "/blog/leave-behind-moving-5-ways-declutter-house/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/living-in-beacon-hill-seattle/"
-  to = "/blog/living-in-beacon-hill-seattle/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/living-in-bellevue-wa/"
-  to = "/blog/living-in-bellevue-wa/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/living-in-belltown-seattle-wa/"
-  to = "/blog/living-in-belltown-seattle-wa/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/living-in-bothell-wa/"
-  to = "/blog/living-in-bothell-wa/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/living-in-capitol-hill-seattle/"
-  to = "/blog/living-in-capitol-hill-seattle/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/living-in-downtown-seattle/"
-  to = "/blog/living-in-downtown-seattle/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/living-in-everett-wa-you-need-to-know/"
-  to = "/blog/living-in-everett-wa-you-need-to-know/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/living-in-fremont-seattle/"
-  to = "/blog/living-in-fremont-seattle/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/living-in-kirkland-wa/"
-  to = "/blog/living-in-kirkland-wa/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/living-in-queen-anne-seattle/"
-  to = "/blog/living-in-queen-anne-seattle/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/living-in-renton-wa/"
-  to = "/blog/living-in-renton-wa/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/living-in-west-bellevue-washington/"
-  to = "/blog/living-in-west-bellevue-washington/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/living-in-west-seattle/"
-  to = "/blog/living-in-west-seattle/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/living-in-woodinville-wa/"
-  to = "/blog/living-in-woodinville-wa/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/living-on-mercer-island/"
-  to = "/blog/living-on-mercer-island/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/medina-storage-services/"
   to = "/medina-movers/"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/mercer-island-restaurants/"
-  to = "/blog/mercer-island-restaurants/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/mercer-island-storage-service/"
   to = "/mercer-island-movers/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/moving-101-how-to-pack-your-electronics-for-moving/"
-  to = "/blog/moving-101-how-to-pack-your-electronics-for-moving/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/moving-elderly-parents-out-of-their-home/"
-  to = "/blog/moving-elderly-parents-out-of-their-home/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/moving-hacks/"
-  to = "/blog/moving-hacks/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/moving-into-new-house/"
-  to = "/blog/moving-into-new-house/"
   status = 301
   force = true
 
@@ -1593,36 +765,6 @@
 [[redirects]]
   from = "/moving-supplies/"
   to = "/residential-moving/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/moving-tips-how-to-pack-up-your-garage-for-moving/"
-  to = "/blog/moving-tips-how-to-pack-up-your-garage-for-moving/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/moving-tips-the-right-way-to-pack-a-bathroom/"
-  to = "/blog/moving-tips-the-right-way-to-pack-a-bathroom/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/moving-to-a-new-city-alone/"
-  to = "/blog/moving-to-a-new-city-alone/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/moving-to-seattle-after-graduation/"
-  to = "/blog/moving-to-seattle-after-graduation/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/moving-to-seattle/"
-  to = "/blog/moving-to-seattle/"
   status = 301
   force = true
 
@@ -1653,48 +795,6 @@
 [[redirects]]
   from = "/north-bend-storage-services/"
   to = "/north-bend-movers/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/office-moving-tips/"
-  to = "/blog/office-moving-tips/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/organizing-small-spaces/"
-  to = "/blog/organizing-small-spaces/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/packing-fragile-items/"
-  to = "/blog/packing-fragile-items/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/parks-in-bellevue/"
-  to = "/blog/parks-in-bellevue/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/parks-in-lynnwood/"
-  to = "/blog/parks-in-lynnwood/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/parks-in-redmond-wa/"
-  to = "/blog/parks-in-redmond-wa/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/parks-near-downtown-seattle/"
-  to = "/blog/parks-near-downtown-seattle/"
   status = 301
   force = true
 
@@ -1819,12 +919,6 @@
   force = true
 
 [[redirects]]
-  from = "/renting-a-house-for-the-first-time/"
-  to = "/blog/renting-a-house-for-the-first-time/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/renton-apartment-moving-services/"
   to = "/renton-movers/"
   status = 301
@@ -1851,12 +945,6 @@
 [[redirects]]
   from = "/residential-moving-services-guide/"
   to = "/residential-moving/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/restaurant-in-redmond/"
-  to = "/blog/restaurant-in-redmond/"
   status = 301
   force = true
 
@@ -1999,12 +1087,6 @@
   force = true
 
 [[redirects]]
-  from = "/simplify-move-turn-move-road-trip/"
-  to = "/blog/simplify-move-turn-move-road-trip/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/storage-unit-prices/"
   to = "/storage-services/"
   status = 301
@@ -2023,116 +1105,8 @@
   force = true
 
 [[redirects]]
-  from = "/things-to-do-in-bellevue/"
-  to = "/blog/things-to-do-in-bellevue/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/things-to-do-in-downtown-seattle-washington/"
-  to = "/blog/things-to-do-in-downtown-seattle-washington/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/things-to-do-in-edmonds-wa/"
-  to = "/blog/things-to-do-in-edmonds-wa/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/things-to-do-in-issaquah/"
-  to = "/blog/things-to-do-in-issaquah/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/things-to-do-in-kirkland-wa/"
-  to = "/blog/things-to-do-in-kirkland-wa/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/things-to-do-in-lynnwood-wa/"
-  to = "/blog/things-to-do-in-lynnwood-wa/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/things-to-do-in-sammamish/"
-  to = "/blog/things-to-do-in-sammamish/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/things-to-do-in-seattle-in-summer/"
-  to = "/blog/things-to-do-in-seattle-in-summer/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/things-to-do-in-seattle-in-winter/"
-  to = "/blog/things-to-do-in-seattle-in-winter/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/things-to-do-in-shoreline-wa/"
-  to = "/blog/things-to-do-in-shoreline-wa/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/things-to-do-in-woodinville/"
-  to = "/blog/things-to-do-in-woodinville/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/things-to-do-on-mercer-island/"
-  to = "/blog/things-to-do-on-mercer-island/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/top-7-tips-for-a-smooth-move-a-moving-companys-recommendations-for-your-moving-day/"
-  to = "/blog/top-7-tips-for-a-smooth-move-a-moving-companys-recommendations-for-your-moving-day/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/tricks-to-unpack-your-home-in-2-days/"
-  to = "/blog/tricks-to-unpack-your-home-in-2-days/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/web-stories/moving-to-seattle/"
   to = "/seattle-movers/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/what-is-seattle-known-for-food-sights/"
-  to = "/blog/what-is-seattle-known-for-food-sights/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/what-not-to-pack-when-moving-non-allowable-items-explained/"
-  to = "/blog/what-not-to-pack-when-moving-non-allowable-items-explained/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/what-to-pack-first-moving/"
-  to = "/blog/what-to-pack-first-moving/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/when-is-the-best-time-to-move-into-an-apartment/"
-  to = "/blog/when-is-the-best-time-to-move-into-an-apartment/"
   status = 301
   force = true
 
