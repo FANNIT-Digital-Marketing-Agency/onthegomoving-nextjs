@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Private vault storage at our secured Redmond, WA facility. We pick up, store, and deliver. 1 free month with any move. Call (425) 761-8500.",
   robots: {
     index: false,
-    follow: false,
+    follow: true,
   },
 };
 

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Get a free flat-rate moving quote from On The Go Moving & Storage. Serving Greater Seattle since 2009. Licensed & insured. Call (425) 761-8500.",
   robots: {
     index: false,
-    follow: false,
+    follow: true,
   },
 };
 

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Family-owned residential movers serving Greater Seattle since 2009. Flat-rate pricing, 4.8★ rated, licensed & insured. Call (425) 761-8500.",
   robots: {
     index: false,
-    follow: false,
+    follow: true,
   },
 };
 

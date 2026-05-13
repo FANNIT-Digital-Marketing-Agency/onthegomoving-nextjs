@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Need to move today or tomorrow? On The Go Moving has crews available for last-minute and same-day moves across Greater Seattle. Call (425) 761-8500.",
   robots: {
     index: false,
-    follow: false,
+    follow: true,
   },
 };
 
