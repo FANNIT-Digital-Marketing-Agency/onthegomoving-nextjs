@@ -391,12 +391,12 @@ export default function LocationPage({ slug }: LocationPageProps) {
             <span className="text-white">{data.city} Movers</span>
           </nav>
 
-          <div className="grid lg:grid-cols-2 gap-10 items-start">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
             {/* Left: Hero copy */}
             <div>
               <div className="inline-flex items-center gap-2 bg-brand-green/20 border border-brand-green/40 text-brand-green-light text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5">
                 <MapPin className="w-3.5 h-3.5" />
-                Serving {data.city}, {data.state} · {data.drive} from {data.dispatchFrom ?? "Redmond"}
+                Serving {data.city}, {data.state}{data.city !== (data.dispatchFrom ?? "Redmond") ? ` · ${data.drive} from ${data.dispatchFrom ?? "Redmond"}` : " · Local Dispatch"}
               </div>
               <h1 className="font-display text-4xl lg:text-5xl font-black text-white leading-tight mb-4">
                 {data.heroTagline}
