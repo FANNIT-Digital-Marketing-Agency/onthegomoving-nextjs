@@ -895,8 +895,8 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
             {/* ── SIDEBAR ── */}
             <div className="space-y-6">
 
-              {/* Quote CTA */}
-              <div className="bg-white border border-gray-200 rounded-2xl p-6 sticky top-24">
+              {/* Quote CTA — desktop only; mobile uses the hero form */}
+              <div className="hidden lg:block bg-white border border-gray-200 rounded-2xl p-6 sticky top-24">
                 <h3 className="font-display font-bold text-xl mb-1 text-brand-forest">Get a Free Quote</h3>
                 <p className="text-gray-500 text-sm mb-4">
                   Free, no-obligation estimate. We respond within 1 hour.
@@ -967,23 +967,6 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── BOTTOM CTA ── */}
-      <section className="py-16 bg-gray-50">
-        <div className="container">
-          <div className="max-w-2xl mx-auto text-center mb-8">
-            <h2 className="font-display text-3xl lg:text-4xl font-black mb-4 text-brand-forest">
-              Ready for {serviceDef.label} in {city}?
-            </h2>
-            <p className="text-gray-500 text-lg">
-              Get your free, no-obligation quote in minutes. We respond within 1 hour.
-            </p>
-          </div>
-          <div className="max-w-xl mx-auto">
-            <QuoteForm variant="inline" defaultFreeStorage={serviceKey === "storage" || serviceKey === "warehousing"} />
           </div>
         </div>
       </section>
