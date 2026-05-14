@@ -168,6 +168,7 @@ export default function Home() {
                 <span className="text-white font-semibold">{COMPANY.googleRating}</span>
                 <span className="text-white/50">({COMPANY.googleReviewCount.toLocaleString()} reviews)</span>
                 <span className="text-white/30 mx-1">·</span>
+                <Shield size={12} className="text-[#75aa11] flex-shrink-0" />
                 <span>Licensed &amp; Insured</span>
                 <span className="text-white/30 mx-1 hidden sm:inline">·</span>
                 <span className="hidden sm:inline">1 Mo. Free Storage</span>
