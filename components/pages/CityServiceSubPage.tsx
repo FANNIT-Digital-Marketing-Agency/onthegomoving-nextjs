@@ -685,6 +685,32 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
   const steps = serviceDef.steps(city);
   const nearbySlug = NEARBY_CITIES[citySlug] || [];
 
+  // Pick the most relevant challenge(s) from cityData based on service type
+  const CHALLENGE_KEYWORDS: Record<string, string[]> = {
+    residential: ["driveway", "hoa", "parking", "permit", "steep", "narrow", "traffic", "access", "street"],
+    apartment: ["elevator", "coi", "certificate", "move-in", "window", "high-rise", "building", "floor"],
+    packing: ["hoa", "parking", "permit", "access", "driveway", "narrow", "stairs"],
+    storage: ["traffic", "access", "distance", "facility"],
+    office: ["freight", "loading", "dock", "elevator", "permit", "parking", "traffic"],
+    commercial: ["freight", "loading", "dock", "elevator", "permit", "parking", "traffic"],
+    senior: ["stairs", "narrow", "access", "driveway", "hoa", "elevator"],
+    furniture: ["stairs", "narrow", "elevator", "driveway", "access"],
+    condo: ["elevator", "coi", "certificate", "hoa", "move-in", "window", "building"],
+    "corporate-relocation": ["traffic", "permit", "parking", "freight", "loading", "dock"],
+    appliance: ["stairs", "narrow", "driveway", "access", "elevator"],
+    unpacking: ["hoa", "parking", "access", "elevator", "building"],
+    warehousing: ["traffic", "access", "distance", "facility"],
+  };
+  const relevantKeywords = CHALLENGE_KEYWORDS[serviceKey] || [];
+  const allChallenges: string[] = cityData?.challenges || [];
+  const relevantChallenges = allChallenges
+    .filter(c => relevantKeywords.some(kw => c.toLowerCase().includes(kw)))
+    .slice(0, 2);
+  const fallbackChallenge = allChallenges.slice(0, 1);
+  const localChallenges = relevantChallenges.length > 0 ? relevantChallenges : fallbackChallenge;
+
+  const neighborhoods: string[] = cityData?.neighborhoods || [];
+
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -794,6 +820,14 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
                 </h2>
                 <p className="text-gray-700 leading-relaxed text-lg mb-5">
                   {serviceDef.intro(city, cityData)}
+                  {localChallenges.length > 0 && (
+                    <span className="block mt-3 text-gray-600">
+                      {localChallenges.length === 1
+                        ? `One thing to know about moving in ${city}: ${localChallenges[0].charAt(0).toLowerCase() + localChallenges[0].slice(1)}.`
+                        : `A few things to know about moving in ${city}: ${localChallenges[0].charAt(0).toLowerCase() + localChallenges[0].slice(1)}; ${localChallenges[1].charAt(0).toLowerCase() + localChallenges[1].slice(1)}.`
+                      }
+                    </span>
+                  )}
                 </p>
                 {/* Cross-link to service hub — differentiates content intent */}
                 <div className="flex items-center gap-2 p-4 bg-green-50 border border-green-200 rounded-xl">
@@ -808,6 +842,26 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
                   </p>
                 </div>
               </div>
+
+              {/* Neighborhoods We Serve */}
+              {neighborhoods.length > 0 && (
+                <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+                  <h2 className="font-display text-2xl font-bold text-brand-forest mb-4">
+                    {serviceDef.label} Across {city} Neighborhoods
+                  </h2>
+                  <p className="text-gray-600 mb-5">
+                    Our crews serve every neighborhood in {city} — from the most accessible suburbs to the trickiest urban streets. Here are some of the areas we cover regularly:
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {neighborhoods.map((n, i) => (
+                      <span key={i} className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-green-50 border border-green-200 rounded-full text-sm font-medium text-brand-forest">
+                        <MapPin className="w-3 h-3 text-brand-green flex-shrink-0" />
+                        {n}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               {/* What to Expect */}
               <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
