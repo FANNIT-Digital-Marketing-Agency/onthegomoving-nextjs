@@ -711,6 +711,58 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
 
   const neighborhoods: string[] = cityData?.neighborhoods || [];
 
+  // Option 1 — City-specific pricing
+  const cityPricing = cityData?.pricing;
+  const pricingLine = cityPricing
+    ? (() => {
+        const serviceType = ["apartment", "condo"].includes(serviceKey) ? "apartment" :
+          ["office", "commercial", "corporate-relocation", "warehousing"].includes(serviceKey) ? "business" :
+          "residential";
+        if (serviceType === "apartment") {
+          return `Studio: ${cityPricing.studio} · 1-bed: ${cityPricing.oneBed} · 2-bed: ${cityPricing.twoBed} · ${cityPricing.hourlyRate}`;
+        } else if (serviceType === "business") {
+          return `Commercial rates from ${cityPricing.hourlyRate} · Free on-site estimate · Flat-rate quotes available`;
+        } else {
+          return `1-bed: ${cityPricing.oneBed} · 2-bed: ${cityPricing.twoBed} · 3-bed: ${cityPricing.threeBed} · ${cityPricing.hourlyRate}`;
+        }
+      })()
+    : serviceDef.pricing(city);
+
+  // Option 2 — City-specific context paragraph based on service type
+  const cityContextHeading = ["apartment", "condo"].includes(serviceKey)
+    ? `${serviceDef.label} in ${city} — What to Know`
+    : ["office", "commercial", "corporate-relocation", "warehousing"].includes(serviceKey)
+    ? `Business Moves in ${city}`
+    : `${city} Home Moves — Local Expertise`;
+  const cityContextBody: string | null = ["apartment", "condo"].includes(serviceKey)
+    ? (cityData?.apartment || null)
+    : ["office", "commercial", "corporate-relocation", "warehousing"].includes(serviceKey)
+    ? (cityData?.business || null)
+    : (cityData?.home || null);
+
+  // Option 3 — Blend city-level FAQs into the FAQ section
+  // Pick up to 2 city FAQs that are relevant to the current service type
+  const SERVICE_FAQ_KEYWORDS: Record<string, string[]> = {
+    residential: ["home", "house", "residential", "cost", "price", "how much", "driveway", "permit", "hoa"],
+    apartment: ["apartment", "elevator", "coi", "move-in", "building", "high-rise", "floor"],
+    packing: ["pack", "box", "wrap", "supply", "material"],
+    storage: ["storage", "store", "unit", "facility"],
+    office: ["office", "business", "commercial", "it", "equipment", "workstation"],
+    commercial: ["office", "business", "commercial", "it", "equipment"],
+    senior: ["senior", "elder", "retirement", "assisted", "downsiz"],
+    furniture: ["furniture", "couch", "sofa", "bed", "table", "heavy"],
+    condo: ["condo", "elevator", "hoa", "building", "move-in"],
+    "corporate-relocation": ["corporate", "relocation", "office", "business", "commercial"],
+    appliance: ["appliance", "washer", "dryer", "fridge", "refrigerator", "stove"],
+    unpacking: ["unpack", "set up", "organize", "arrange"],
+    warehousing: ["warehouse", "storage", "distribution", "logistics"],
+  };
+  const cityFaqKeywords = SERVICE_FAQ_KEYWORDS[serviceKey] || [];
+  const allCityFaqs: { q: string; a: string }[] = cityData?.faqs || [];
+  const blendedCityFaqs = allCityFaqs
+    .filter(f => cityFaqKeywords.some(kw => f.q.toLowerCase().includes(kw) || f.a.toLowerCase().includes(kw)))
+    .slice(0, 2);
+
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -798,7 +850,7 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
         <div className="container">
           <div className="flex flex-wrap items-center gap-2 text-sm">
             <span className="text-brand-gold font-bold uppercase tracking-wide text-xs">Pricing Guide:</span>
-            <span className="text-green-100">{serviceDef.pricing(city)}</span>
+            <span className="text-green-100">{pricingLine}</span>
             <span className="text-green-500 mx-2">·</span>
             <span className="text-green-200 text-xs">Free quote · No obligation · Response within 1 hour</span>
           </div>
@@ -863,6 +915,16 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
                 </div>
               )}
 
+              {/* City-specific context — Option 2 */}
+              {cityContextBody && (
+                <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+                  <h2 className="font-display text-2xl font-bold text-brand-forest mb-4">
+                    {cityContextHeading}
+                  </h2>
+                  <p className="text-gray-700 leading-relaxed">{cityContextBody}</p>
+                </div>
+              )}
+
               {/* What to Expect */}
               <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
                 <h2 className="font-display text-2xl font-bold text-brand-forest mb-6">
@@ -901,7 +963,7 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
                   {serviceDef.label} in {city} — Common Questions
                 </h2>
                 <div className="space-y-3">
-                  {faqs.map((faq, i) => (
+                  {[...faqs, ...blendedCityFaqs].map((faq, i) => (
                     <div key={i} className="border border-gray-200 rounded-xl overflow-hidden">
                       <button
                         onClick={() => setOpenFaq(openFaq === i ? null : i)}
