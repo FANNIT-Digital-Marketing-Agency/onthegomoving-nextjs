@@ -53,6 +53,16 @@ const MOVE_SIZES = [
   "6+ Bedrooms",
 ];
 
+/** Format phone digits as (425) 333-3333 for display.
+ *  Raw digits are extracted before sending to SuperMove / Netlify Forms. */
+function formatPhoneDisplay(value: string): string {
+  const digits = value.replace(/\D/g, "").slice(0, 10);
+  if (digits.length === 0) return "";
+  if (digits.length <= 3) return `(${digits}`;
+  if (digits.length <= 6) return `(${digits.slice(0, 3)}) ${digits.slice(3)}`;
+  return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
+}
+
 /** Push a GTM phone_click event. Call from onClick on any phone <a> tag. */
 export function pushPhoneClickEvent(source?: string) {
   if (typeof window !== "undefined" && (window as any).dataLayer) {
@@ -102,7 +112,9 @@ export default function QuoteForm({
     setFormData((prev) => {
       const updated = {
         ...prev,
-        [name]: type === "checkbox" ? (e.target as HTMLInputElement).checked : value,
+        [name]: name === "phone"
+          ? formatPhoneDisplay(value)
+          : type === "checkbox" ? (e.target as HTMLInputElement).checked : value,
       };
       // Reset dependent fields when move type changes
       if (name === "moveType") {
@@ -137,7 +149,7 @@ export default function QuoteForm({
       const netlifyFormData = new URLSearchParams();
       netlifyFormData.append("form-name", "quote-request");
       netlifyFormData.append("fullName", formData.fullName);
-      netlifyFormData.append("phone", formData.phone);
+      netlifyFormData.append("phone", formData.phone.replace(/\D/g, "")); // raw digits only
       netlifyFormData.append("email", formData.email);
       netlifyFormData.append("moveDate", formData.moveDate || "");
       netlifyFormData.append("zipFrom", formData.zipFrom || "");
@@ -156,7 +168,7 @@ export default function QuoteForm({
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             fullName: formData.fullName,
-            phone: formData.phone,
+            phone: formData.phone.replace(/\D/g, ""), // raw digits only
             email: formData.email,
             moveDate: formData.moveDate || undefined,
             moveType: formData.moveType || undefined,
