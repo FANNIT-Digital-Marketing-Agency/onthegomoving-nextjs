@@ -1941,3 +1941,215 @@
   to = "/residential-moving/"
   status = 301
   force = true
+
+# Piano city subpages — redirected to parent city page (no piano content)
+[[redirects]]
+  from = "/seattle-movers/piano/"
+  to   = "/seattle-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/bellevue-movers/piano/"
+  to   = "/bellevue-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/redmond-movers/piano/"
+  to   = "/redmond-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/kirkland-movers/piano/"
+  to   = "/kirkland-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/sammamish-movers/piano/"
+  to   = "/sammamish-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/issaquah-movers/piano/"
+  to   = "/issaquah-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/woodinville-movers/piano/"
+  to   = "/woodinville-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/kenmore-movers/piano/"
+  to   = "/kenmore-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/bothell-movers/piano/"
+  to   = "/bothell-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/mercer-island-movers/piano/"
+  to   = "/mercer-island-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/renton-movers/piano/"
+  to   = "/renton-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/shoreline-movers/piano/"
+  to   = "/shoreline-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/newcastle-movers/piano/"
+  to   = "/newcastle-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/lake-forest-park-movers/piano/"
+  to   = "/lake-forest-park-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/tukwila-movers/piano/"
+  to   = "/tukwila-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/mountlake-terrace-movers/piano/"
+  to   = "/mountlake-terrace-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/lynnwood-movers/piano/"
+  to   = "/lynnwood-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/mukilteo-movers/piano/"
+  to   = "/mukilteo-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/burien-movers/piano/"
+  to   = "/burien-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/snoqualmie-movers/piano/"
+  to   = "/snoqualmie-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/north-bend-movers/piano/"
+  to   = "/north-bend-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/duvall-movers/piano/"
+  to   = "/duvall-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/carnation-movers/piano/"
+  to   = "/carnation-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/fall-city-movers/piano/"
+  to   = "/fall-city-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/maple-valley-movers/piano/"
+  to   = "/maple-valley-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/covington-movers/piano/"
+  to   = "/covington-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/medina-movers/piano/"
+  to   = "/medina-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/clyde-hill-movers/piano/"
+  to   = "/clyde-hill-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/ballard-movers/piano/"
+  to   = "/ballard-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/capitol-hill-movers/piano/"
+  to   = "/capitol-hill-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/queen-anne-movers/piano/"
+  to   = "/queen-anne-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/fremont-movers/piano/"
+  to   = "/fremont-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/juanita-movers/piano/"
+  to   = "/juanita-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/olympia-movers/piano/"
+  to   = "/olympia-movers/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/piano-moving/"
+  to   = "/specialty-moving/"
+  status = 301
+  force  = true
+
