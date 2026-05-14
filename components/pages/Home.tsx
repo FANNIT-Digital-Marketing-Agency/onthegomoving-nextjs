@@ -161,7 +161,7 @@ export default function Home() {
               </p>
 
               {/* Single consolidated trust strip — single row on mobile */}
-              <div className="flex flex-nowrap items-center gap-x-3 sm:gap-x-5 mb-8 text-xs sm:text-sm overflow-x-auto">
+              <div className="flex flex-nowrap items-center gap-x-3 sm:gap-x-5 mb-8 text-xs sm:text-sm overflow-hidden">
                 <div className="flex items-center gap-1.5 text-white">
                   <div className="flex">
                     {[1, 2, 3, 4, 5].map((i) => (

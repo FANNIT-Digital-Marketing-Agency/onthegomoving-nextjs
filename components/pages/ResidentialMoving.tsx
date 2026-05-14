@@ -268,7 +268,7 @@ export default function ResidentialMoving() {
               <p className="text-green-100 text-lg leading-relaxed mb-6 max-w-lg">
                 On The Go Moving & Storage provides professional residential moving services for homes, apartments, and condos across Seattle, Bellevue, Redmond, Kirkland, and the Greater Seattle Eastside. Flat-rate pricing and 1 free month of storage included.
               </p>
-              <div className="flex flex-nowrap gap-2 mb-6 overflow-x-auto">
+              <div className="flex flex-nowrap gap-2 mb-6 overflow-hidden">
                 <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg px-3 py-2 flex-shrink-0">
                   <div className="flex">
                     {[1,2,3,4,5].map(i => <Star key={i} size={13} fill="#fbc319" color="#fbc319" />)}
