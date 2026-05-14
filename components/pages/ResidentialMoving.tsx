@@ -277,8 +277,8 @@ export default function ResidentialMoving() {
                 <span className="text-white/50">(1,562 reviews)</span>
                 <span className="text-white/30 mx-1">·</span>
                 <span>Licensed &amp; Insured</span>
-                <span className="text-white/30 mx-1">·</span>
-                <span>1 Mo. Free Storage</span>
+                <span className="text-white/30 mx-1 hidden sm:inline">·</span>
+                <span className="hidden sm:inline">1 Mo. Free Storage</span>
               </div>
               {/* Mobile: phone + form inline in hero */}
               <div className="lg:hidden space-y-4">
