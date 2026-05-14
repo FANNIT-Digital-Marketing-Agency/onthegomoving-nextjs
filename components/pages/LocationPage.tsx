@@ -413,6 +413,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
                 <span className="text-white font-semibold">4.8</span>
                 <span className="text-white/50">(1,562 reviews)</span>
                 <span className="text-white/30 mx-1">·</span>
+                <Shield size={12} className="text-[#75aa11] flex-shrink-0" />
                 <span>Licensed &amp; Insured</span>
                 <span className="text-white/30 mx-1 hidden sm:inline">·</span>
                 <span className="hidden sm:inline">Since 2009</span>
