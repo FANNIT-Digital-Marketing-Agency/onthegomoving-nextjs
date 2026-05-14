@@ -130,9 +130,18 @@ const MOVE_SIZES = [
   "5+ Bedrooms",
 ];
 
+// Format phone for display: (425) 333-3333
+// Raw digits are extracted before sending to SuperMove
+function formatPhoneDisplay(value: string): string {
+  const digits = value.replace(/\D/g, "").slice(0, 10);
+  if (digits.length <= 3) return digits.length ? `(${digits}` : "";
+  if (digits.length <= 6) return `(${digits.slice(0, 3)}) ${digits.slice(3)}`;
+  return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
+}
+
 function FbQuoteForm() {
   const [fullName, setFullName] = useState("");
-  const [phone, setPhone] = useState("");
+  const [phone, setPhone] = useState(""); // stored as formatted display string
   const [email, setEmail] = useState("");
   const [moveDate, setMoveDate] = useState("");
   const [fromZip, setFromZip] = useState("");
@@ -157,7 +166,7 @@ function FbQuoteForm() {
 
     const payload = {
       fullName,
-      phone,
+      phone: phone.replace(/\D/g, ""), // send raw digits to SuperMove
       email,
       moveDate,
       fromZip,
@@ -221,7 +230,7 @@ function FbQuoteForm() {
             type="tel"
             required
             value={phone}
-            onChange={(e) => setPhone(e.target.value)}
+            onChange={(e) => setPhone(formatPhoneDisplay(e.target.value))}
             placeholder="(425) 555-0100"
             className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm text-gray-900 bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#75aa11] focus:border-transparent"
           />
