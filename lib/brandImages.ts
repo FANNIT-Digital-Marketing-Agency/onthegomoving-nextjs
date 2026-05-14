@@ -11,21 +11,31 @@
 
 const CDN = "https://d2xsxph8kpxj0f.cloudfront.net/310519663327875635/AXcVm6gUw3wWRnzjKLx4pb";
 
+/**
+ * Wraps a CDN image URL through Netlify's image CDN for automatic WebP conversion.
+ * Netlify serves WebP to supporting browsers and falls back to the original format.
+ * Quality 82 balances visual fidelity with file size reduction (~30-60% smaller).
+ * Only use for above-the-fold / LCP images where format matters most.
+ */
+export function netlifyImg(url: string, quality = 82): string {
+  return `/.netlify/images?url=${encodeURIComponent(url)}&fm=webp&q=${quality}`;
+}
+
 export const BRAND_IMAGES = {
   // ---- Logo ----
   logo: `${CDN}/logo-1_2b575a68.png`,
 
   // ---- Hero / Primary Photos ----
   /** Crew unloading truck — best hero image, bright daylight, branded truck */
-  heroMovingCrew: `${CDN}/moving-scaled-1_bc87e2e0.jpeg`,
+  heroMovingCrew: netlifyImg(`${CDN}/moving-scaled-1_bc87e2e0.jpeg`),
   /** Full team in front of fleet of branded trucks */
-  teamFleet: `${CDN}/otgmteam-3-scaled_558bddff.jpg`,
+  teamFleet: netlifyImg(`${CDN}/otgmteam-3-scaled_558bddff.jpg`),
   /** Crew carrying furniture up ramp */
-  crewRamp: `${CDN}/00019081-1-scaled_03f770cc.jpg`,
+  crewRamp: netlifyImg(`${CDN}/00019081-1-scaled_03f770cc.jpg`),
   /** Crew working at truck — close action shot */
-  crewAction: `${CDN}/00019098-1_222cda83.jpg`,
+  crewAction: netlifyImg(`${CDN}/00019098-1_222cda83.jpg`),
   /** Office moving — transporting equipment */
-  officeMoveAction: `${CDN}/office-moving-transporting-4-scaled_4e84f8b9.jpg`,
+  officeMoveAction: netlifyImg(`${CDN}/office-moving-transporting-4-scaled_4e84f8b9.jpg`),
   /** Office moving — smaller web-optimized version */
   officeMoveWeb: `${CDN}/office-moving-transporting-4-scaled-1024x684-1_2f2bcd32.jpg`,
   /** Branded OTGM truck — side view */
@@ -37,18 +47,18 @@ export const BRAND_IMAGES = {
   /** Seattle moving company — city + truck */
   seattleMovingCompany: `${CDN}/seattle-moving-company_58b6726f.png`,
   /** Storage/warehouse interior */
-  storageWarehouse: `${CDN}/image2_dd236ebf.jpg`,
+  storageWarehouse: netlifyImg(`${CDN}/image2_dd236ebf.jpg`),
   /** Packing/boxes service image — OTGM crew wrapping furniture with plastic film */
-  packingBoxes: `${CDN}/28_ltg_-0988_copy_644ef179.jpg`,
+  packingBoxes: netlifyImg(`${CDN}/28_ltg_-0988_copy_644ef179.jpg`),
   /** Packing supplies close-up — OTGM crew wrapping furniture with plastic in entryway */
-  packingSupplies: `${CDN}/25_ltg_-0963_copy_b2d8c9e7.jpg`,
+  packingSupplies: netlifyImg(`${CDN}/25_ltg_-0963_copy_b2d8c9e7.jpg`),
   /** Map background for service areas */
   mapBackground: `${CDN}/bg-map-1_d237af86.png`,
   /** Moving crew — alternate shot (same as heroMovingCrew, slightly different crop) */
-  movingCrewAlt: `${CDN}/moving-scaled_dac14e85.jpeg`,
+  movingCrewAlt: netlifyImg(`${CDN}/moving-scaled_dac14e85.jpeg`),
 
   // ---- Review / Social Proof Badges ----
-  googleReviewsBadge: `${CDN}/on-the-go-moving-reviews-1_a3059665.jpg`,
+  googleReviewsBadge: netlifyImg(`${CDN}/on-the-go-moving-reviews-1_a3059665.jpg`),
   googleLogo: `${CDN}/on-the-go-google-logo-1_6b37f963.png`,
   angiLogo: `${CDN}/on-the-go-angi-logo-1_7fe145ee.png`,
   yelpLogo: `${CDN}/on-the-go-yelp-logo-1_1e3c8cc9.png`,

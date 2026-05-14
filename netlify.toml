@@ -7,6 +7,12 @@
   NODE_VERSION = "20"
   PNPM_VERSION = "9"
 
+# ─── Netlify Image CDN ────────────────────────────────────────────────────────
+# Allow /.netlify/images to transform images from our CloudFront CDN.
+# This enables automatic WebP conversion and resizing without re-uploading files.
+[images]
+  remote_images = ["https://d2xsxph8kpxj0f.cloudfront.net/.*"]
+
 # ─── 301 Redirects for pruned blog posts ──────────────────────────────────────
 # These redirect old WordPress blog post URLs to the most relevant page
 # on the new site, preserving link equity and preventing 404s at domain cutover.
