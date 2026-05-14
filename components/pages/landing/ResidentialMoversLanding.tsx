@@ -28,8 +28,8 @@ const MOVE_TYPES = [
   },
   {
     icon: Clock,
-    title: "Long-Distance Moves",
-    desc: "Moves anywhere within Washington State — same flat-rate pricing, same trusted crew.",
+    title: "Senior Moves",
+    desc: "Patient, careful crews experienced with downsizing, assisted living transitions, and fragile heirlooms.",
   },
 ];
 
