@@ -212,7 +212,7 @@ function FbQuoteForm() {
             value={fullName}
             onChange={(e) => setFullName(e.target.value)}
             placeholder="Jane Smith"
-            className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#75aa11] focus:border-transparent"
+            className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm text-gray-900 bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#75aa11] focus:border-transparent"
           />
         </div>
         <div>
@@ -223,7 +223,7 @@ function FbQuoteForm() {
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             placeholder="(425) 555-0100"
-            className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#75aa11] focus:border-transparent"
+            className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm text-gray-900 bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#75aa11] focus:border-transparent"
           />
         </div>
       </div>
@@ -235,7 +235,7 @@ function FbQuoteForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="jane@email.com"
-          className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#75aa11] focus:border-transparent"
+          className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm text-gray-900 bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#75aa11] focus:border-transparent"
         />
       </div>
       <div className="grid sm:grid-cols-2 gap-3">
@@ -245,7 +245,7 @@ function FbQuoteForm() {
             type="date"
             value={moveDate}
             onChange={(e) => setMoveDate(e.target.value)}
-            className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#75aa11] focus:border-transparent"
+            className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm text-gray-900 bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#75aa11] focus:border-transparent"
           />
         </div>
         <div>
@@ -253,7 +253,7 @@ function FbQuoteForm() {
           <select
             value={moveSize}
             onChange={(e) => setMoveSize(e.target.value)}
-            className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#75aa11] focus:border-transparent bg-white"
+            className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm text-gray-900 bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#75aa11] focus:border-transparent"
           >
             <option value="">Select size</option>
             {MOVE_SIZES.map((s) => (
@@ -271,7 +271,7 @@ function FbQuoteForm() {
             onChange={(e) => setFromZip(e.target.value)}
             placeholder="98052"
             maxLength={10}
-            className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#75aa11] focus:border-transparent"
+            className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm text-gray-900 bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#75aa11] focus:border-transparent"
           />
         </div>
         <div>
@@ -282,7 +282,7 @@ function FbQuoteForm() {
             onChange={(e) => setToZip(e.target.value)}
             placeholder="98004"
             maxLength={10}
-            className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#75aa11] focus:border-transparent"
+            className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm text-gray-900 bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#75aa11] focus:border-transparent"
           />
         </div>
       </div>
