@@ -1724,3 +1724,220 @@
   to = "/tukwila-movers/commercial/"
   status = 301
   force = true
+
+# ─── Dead blog post redirects — 43 orphaned WP posts (404 fix) ───────────────
+[[redirects]]
+  from = "/10-moving-tips-for-making-your-family/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/10-things-to-know-for-moving-during-covid/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/10-things-to-remember-when-moving/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/10-tips-things-most-families-forget-during-move/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/12-modern-interior-design-tips-for-decorating-small-spaces/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/4-common-moving-mistakes/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/5-moving-mistakes-seattle-families/"
+  to = "/seattle-movers/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/5-small-space-decorating-tips/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/5-tips-to-go-green-for-your-upcoming-kirkland-move/"
+  to = "/kirkland-movers/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/5-ways-to-maximize-space-in-your-small-home/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/6-simple-ways-to-make-sure-you-get-your-rental-deposit-returned/"
+  to = "/apartment-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/6-tips-for-meeting-your-neighbors-after-a-move/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/7-helpful-tips-when-moving-with-pets/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/7-reasons-why-never-use-a-moving-company/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/7-terrible-mistakes-to-avoid-when-moving/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/7-tips-make-move-less-stressful/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/7-tips-relocating-small-business-office/"
+  to = "/commercial-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/8-tips-for-organizing-small-spaces-and-creating-a-comfortable-home/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/9-common-moving-mistakes-and-tips-on-how-to-avoid-them/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/9-moving-lessons-dont-have-to-learn-hard-way/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/9-smart-seattle-packing-tips/"
+  to = "/seattle-movers/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/9-tips-you-will-want-to-know-for-your-next-redmond-move/"
+  to = "/redmond-movers/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/apartment-vs-house/"
+  to = "/apartment-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/best-time-of-year-to-move/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/easily-declutter-house/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/first-time-moving-tips/"
+  to = "/apartment-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/forgetting-something-5-things-moving/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/get-your-security-deposit-back/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/homeward-bound-moving-with-pets/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/how-to-handle-last-minute-moves-successfully/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/how-to-make-a-new-apartment-feel-like-home/"
+  to = "/apartment-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/how-to-move-efficiently-with-pets/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/how-to-throw-a-housewarming-party-in-15-easy-steps/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/importance-of-knowing-where-to-get-fast-moving-services/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/know-moving-rental/"
+  to = "/apartment-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/moving-with-pets-7-tips/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/our-new-ultimate-moving-guide-is-now-available/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/successful-yard-sale/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/taking-back-your-house-9-organizational-tips-for-small-spaces/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/the-first-10-things-you-need-to-do-when-youve-moved-into-a-new-place/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/tips-for-getting-comfortable-in-your-new-home/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/top-tips-on-how-to-make-a-house-a-home/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/would-you-trust-a-stranger-with-everything-you-own/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
