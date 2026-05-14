@@ -524,8 +524,8 @@ export default function Header() {
           scrolled ? "bg-white shadow-md" : "bg-white/95 backdrop-blur-sm"
         }`}
       >
-        {/* Top bar */}
-        <div style={{ backgroundColor: "#1e3a0f" }} className="py-1.5 px-4">
+        {/* Top bar — hidden on mobile, visible sm+ */}
+        <div style={{ backgroundColor: "#1e3a0f" }} className="hidden sm:block py-1.5 px-4">
           <div className="container flex items-center justify-between">
             <p className="text-white/80 text-xs hidden sm:block">
               Seattle's Most Trusted Movers — Licensed &amp; Insured | HG-064180 | USDOT# 2120054
