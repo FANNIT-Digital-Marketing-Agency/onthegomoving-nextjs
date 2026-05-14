@@ -9,7 +9,7 @@
 // ==========================================================================
 
 import { useEffect, useRef, useState } from "react";
-import { useSEO, MOVING_COMPANY_SCHEMA, buildFAQSchema } from "@/hooks/useSEO";
+import { useSEO } from "@/hooks/useSEO";
 import {
   Star, CheckCircle, ArrowRight, Phone, ChevronDown, ChevronUp,
   MapPin, Shield, Award, Clock, Users, Package, Truck, Home as HomeIcon,
@@ -76,15 +76,12 @@ const TOP_LOCATIONS = ALL_LOCATIONS.slice(0, 12);
 export default function Home() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
+  // Schema is injected server-side in app/(main)/page.tsx for static HTML inclusion
   useSEO({
     title: "On The Go Moving & Storage | Seattle Movers Since 2009",
     description: "Seattle's most trusted movers since 2009. Residential, commercial, packing & storage across Greater Seattle & the Eastside. Licensed, insured, 4.8 stars. Free quote.",
     canonical: "https://onthegomoving.com/",
     ogType: "website",
-    schema: [
-      MOVING_COMPANY_SCHEMA,
-      buildFAQSchema(FAQS.map((f) => ({ question: f.question, answer: f.answer }))),
-    ],
   });
 
   return (
