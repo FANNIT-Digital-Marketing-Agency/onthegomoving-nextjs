@@ -720,24 +720,36 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
               {serviceDef.subtitle(city)}
             </p>
 
-            {/* Trust strip */}
-            <div className="flex flex-wrap items-center gap-4 mb-8">
-              <div className="flex items-center gap-1.5 bg-white/10 rounded-full px-3 py-1.5">
-                {[1,2,3,4,5].map(i => <Star key={i} className="w-3.5 h-3.5 fill-brand-gold text-brand-gold" />)}
-                <span className="text-white text-xs font-semibold ml-1">4.8 (1,562 reviews)</span>
+            {/* Trust strip — single line, plain text style */}
+            <div className="flex items-center gap-1.5 mb-8 text-xs sm:text-sm text-white/80">
+              <div className="flex items-center gap-1">
+                {[1,2,3,4,5].map(i => <Star key={i} size={12} fill="#fbc319" color="#fbc319" />)}
               </div>
-              <div className="flex items-center gap-1.5 bg-white/10 rounded-full px-3 py-1.5">
-                <Shield className="w-3.5 h-3.5 text-brand-gold" />
-                <span className="text-white text-xs font-semibold">Licensed & Insured</span>
-              </div>
-              <div className="flex items-center gap-1.5 bg-white/10 rounded-full px-3 py-1.5">
-                <CheckCircle className="w-3.5 h-3.5 text-brand-gold" />
-                <span className="text-white text-xs font-semibold">Serving {city} since 2009</span>
-              </div>
+              <span className="text-white font-semibold">4.8</span>
+              <span className="text-white/50">(1,562 reviews)</span>
+              <span className="text-white/30 mx-1">·</span>
+              <Shield size={12} className="text-[#75aa11] flex-shrink-0" />
+              <span>Licensed &amp; Insured</span>
+              <span className="text-white/30 mx-1 hidden sm:inline">·</span>
+              <span className="hidden sm:inline">Since 2009</span>
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            {/* Mobile: phone + inline form */}
+            <div className="lg:hidden space-y-4">
+              <a
+                href={COMPANY.phoneHref}
+                className="inline-flex items-center justify-center gap-3 bg-brand-gold hover:bg-brand-gold-dark text-brand-forest font-bold text-base px-5 py-3 rounded-lg transition-all hover:scale-105 shadow-lg w-full sm:w-auto"
+              >
+                <Phone className="w-5 h-5" />
+                Call {COMPANY.phone}
+              </a>
+              <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border-t-4 border-brand-green">
+                <QuoteForm variant="hero" />
+              </div>
+            </div>
+            {/* Desktop: phone + quote link */}
+            <div className="hidden lg:flex flex-row gap-4">
               <a
                 href={COMPANY.phoneHref}
                 className="inline-flex items-center justify-center gap-3 bg-brand-gold hover:bg-brand-gold-dark text-brand-forest font-bold text-lg px-8 py-4 rounded-lg transition-all hover:scale-105 shadow-lg"
