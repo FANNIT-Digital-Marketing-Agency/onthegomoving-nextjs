@@ -126,6 +126,13 @@ export default function QuoteForm({
     setLoading(true);
 
     try {
+      // Generate a unique event_id for FB Pixel + CAPI deduplication
+      // Same ID is sent to CAPI server-side and stored for the pixel browser-side
+      const fbEventId = `lead_${Date.now()}_${Math.random().toString(36).slice(2, 9)}`;
+      if (typeof window !== "undefined") {
+        sessionStorage.setItem("fb_lead_event_id", fbEventId);
+      }
+
       // Build the Netlify Forms payload (URL-encoded, browser-native)
       const netlifyFormData = new URLSearchParams();
       netlifyFormData.append("form-name", "quote-request");
@@ -160,6 +167,10 @@ export default function QuoteForm({
             wantsStorage: formData.freeStorage,
             sourcePage: window.location.pathname,
             sourceLabel: sourceLabel,
+            fbEventId,
+            clientIp: undefined, // server will use Netlify's x-forwarded-for header
+            clientUserAgent: navigator.userAgent,
+            pageUrl: window.location.href,
           }),
         }),
         // Silent Netlify Forms capture — browser POST so it's accepted

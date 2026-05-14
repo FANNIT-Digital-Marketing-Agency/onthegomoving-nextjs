@@ -10,14 +10,31 @@ import { CheckCircle, Phone, Clock, Star, ArrowRight } from "lucide-react";
 import { COMPANY } from "@/lib/siteData";
 
 export default function ThankYouLanding() {
-  // Fire GTM conversion event on mount — Google Ads conversion tag listens for this
+  // Fire GTM conversion events on mount:
+  //   1. paid_lead_conversion  — Google Ads conversion tag
+  //   2. fb_lead               — Facebook Pixel Lead event (with event_id for CAPI deduplication)
   useEffect(() => {
     if (typeof window !== "undefined" && (window as any).dataLayer) {
+      // Retrieve the event_id that QuoteForm stored in sessionStorage at submission time
+      const fbEventId = sessionStorage.getItem("fb_lead_event_id") || undefined;
+
+      // Google Ads conversion
       (window as any).dataLayer.push({
         event: "paid_lead_conversion",
         conversionSource: "landing_page_form",
         pagePath: window.location.pathname,
       });
+
+      // Facebook Pixel Lead event — GTM tag listens for 'fb_lead' and calls
+      // fbq('track', 'Lead', {}, { eventID: fbEventId }) for browser-side pixel
+      (window as any).dataLayer.push({
+        event: "fb_lead",
+        fb_event_id: fbEventId,
+        fb_pixel_id: "129153980771695",
+      });
+
+      // Clean up so it doesn't re-fire on a back-navigation
+      sessionStorage.removeItem("fb_lead_event_id");
     }
   }, []);
 
