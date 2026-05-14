@@ -1,13 +1,16 @@
 "use client";
 // ==========================================================================
 // ON THE GO MOVING — Facebook Ads Thank You Page
-// Fires GTM event: fb_lead on mount — used for Facebook Pixel Lead tracking
+// Fires fbq('track', 'Lead') directly on mount for Facebook Pixel Lead tracking
+// Also fires GTM event for any GTM-based pixel tags (deduplication via event_id)
 // Separate from /get/thank-you/ which fires paid_lead_conversion for Google Ads
 // noindex: paid traffic only
 // ==========================================================================
 import { useEffect } from "react";
 import { CheckCircle, Phone, Clock, Star, ArrowRight } from "lucide-react";
 import { COMPANY } from "@/lib/siteData";
+
+const FB_PIXEL_ID = "129153980771695";
 
 export default function FbThankYouLanding() {
   useEffect(() => {
@@ -16,7 +19,36 @@ export default function FbThankYouLanding() {
     // Read the event_id stored by FbQuoteForm for pixel/CAPI deduplication
     const fbEventId = sessionStorage.getItem("fb_event_id") || "";
 
-    // Fire GTM event — GTM tag should call fbq('track', 'Lead', {}, {eventID: fb_event_id})
+    // Helper to fire the Lead event (used whether pixel was pre-loaded or just injected)
+    const fireLeadEvent = () => {
+      const fbq = (window as any).fbq;
+      if (!fbq) return;
+      fbq("track", "Lead", {}, { eventID: fbEventId });
+    };
+
+    // If fbq is already available (pixel was loaded on the landing page), fire immediately
+    if ((window as any).fbq) {
+      fireLeadEvent();
+    } else {
+      // Pixel not yet loaded — inject base code and fire Lead after it loads
+      const script = document.createElement("script");
+      script.innerHTML = `
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '${FB_PIXEL_ID}');
+      `;
+      document.head.appendChild(script);
+      // Fire Lead after a short delay to allow fbevents.js to load
+      setTimeout(fireLeadEvent, 1500);
+    }
+
+    // Also push GTM event for any GTM-based pixel tags (deduplication)
     if ((window as any).dataLayer) {
       (window as any).dataLayer.push({
         event: "fb_lead",

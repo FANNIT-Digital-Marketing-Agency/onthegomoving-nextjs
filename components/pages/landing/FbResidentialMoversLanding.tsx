@@ -6,7 +6,7 @@
 // Form submits to /.netlify/functions/submit-fb-lead (includes CAPI)
 // Redirects to /get/fb-thank-you/ on success
 // ==========================================================================
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { COMPANY } from "@/lib/siteData";
 import { BRAND_IMAGES } from "@/lib/brandImages";
 import {
@@ -21,6 +21,9 @@ import {
   ChevronDown,
   ChevronUp,
 } from "lucide-react";
+
+// ── Facebook Pixel ID ─────────────────────────────────────────────────────
+const FB_PIXEL_ID = "129153980771695";
 
 // ── Static data ────────────────────────────────────────────────────────────
 
@@ -320,6 +323,29 @@ function FbQuoteForm() {
 // ── Page ───────────────────────────────────────────────────────────────────
 
 export default function FbResidentialMoversLanding() {
+  // Inject Facebook Pixel base code on mount (bypasses GTM dependency)
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    // Avoid double-init if pixel already loaded (e.g. from GTM)
+    if ((window as any).fbq) return;
+
+    // Inject the FB Pixel base code script
+    const script = document.createElement("script");
+    script.innerHTML = `
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '${FB_PIXEL_ID}');
+      fbq('track', 'PageView');
+    `;
+    document.head.appendChild(script);
+  }, []);
+
   return (
     <div className="bg-white">
       {/* ── Hero ── */}
