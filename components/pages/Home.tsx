@@ -160,27 +160,17 @@ export default function Home() {
              Flat-rate pricing, professional crews, and 1 free month of storage — trusted by 25,000+ Seattle families since 2009.
               </p>
 
-              {/* Single consolidated trust strip — single row on mobile */}
-              <div className="flex flex-nowrap items-center gap-x-3 sm:gap-x-5 mb-8 text-xs sm:text-sm overflow-hidden">
-                <div className="flex items-center gap-1.5 text-white">
-                  <div className="flex">
-                    {[1, 2, 3, 4, 5].map((i) => (
-                      <Star key={i} size={13} fill="#fbc319" color="#fbc319" />
-                    ))}
-                  </div>
-                  <span className="font-bold">{COMPANY.googleRating}</span>
-                  <span className="text-white/60">({COMPANY.googleReviewCount.toLocaleString()} reviews)</span>
+              {/* Trust strip — single line, plain text style */}
+              <div className="flex items-center gap-1.5 mb-8 text-xs sm:text-sm text-white/80 flex-wrap">
+                <div className="flex items-center gap-1">
+                  {[1,2,3,4,5].map(i => <Star key={i} size={12} fill="#fbc319" color="#fbc319" />)}
                 </div>
-                <div className="w-px h-4 bg-white/20 hidden sm:block" />
-                <div className="flex items-center gap-1.5 text-white/80">
-                  <Shield size={13} className="text-[#75aa11]" />
-                  Licensed &amp; Insured
-                </div>
-                <div className="w-px h-4 bg-white/20 hidden sm:block" />
-                <div className="flex items-center gap-1.5 text-white/80">
-                  <CheckCircle size={13} className="text-[#fbc319]" />
-                  1 Month Free Storage
-                </div>
+                <span className="text-white font-semibold">{COMPANY.googleRating}</span>
+                <span className="text-white/50">({COMPANY.googleReviewCount.toLocaleString()} reviews)</span>
+                <span className="text-white/30 mx-1">·</span>
+                <span>Licensed &amp; Insured</span>
+                <span className="text-white/30 mx-1">·</span>
+                <span>1 Mo. Free Storage</span>
               </div>
 
               {/* Mobile CTA — phone button + inline form */}
