@@ -402,46 +402,69 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
                 ))}
 
                 {/* Internal CTA — prominent mid-article conversion block */}
-                {post.relatedService && (
-                  <div className="my-10 rounded-2xl overflow-hidden shadow-md" style={{ background: "linear-gradient(135deg, #1e3a0f 0%, #2d5a1b 100%)" }}>
-                    <div className="p-6 sm:p-8">
-                      <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-                        <div className="flex-1">
-                          <p className="text-white font-extrabold text-xl mb-1" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-                            Ready to Move in the Seattle Area?
-                          </p>
-                          <p className="text-white/80 text-sm">
-                            On The Go Moving serves Redmond, Bellevue, Kirkland, Seattle &amp; 20+ Eastside cities. Licensed, insured, 4.8★ rated.
-                          </p>
-                        </div>
-                        <div className="flex flex-col gap-2 sm:items-end flex-shrink-0">
-                          <a href="/contact-us/" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-bold text-sm text-white" style={{ backgroundColor: "#75aa11" }}>
-                            Get a Free Quote <ArrowRight size={14} />
-                          </a>
-                          <a href="tel:+14257618500" className="text-white/70 text-xs text-center hover:text-white transition-colors">
-                            Or call (425) 761-8500
-                          </a>
-                        </div>
-                      </div>
-                      <div className="mt-4 pt-4 border-t border-white/20">
-                        <p className="text-white/60 text-xs mb-2">Explore our services:</p>
-                        <div className="flex flex-wrap gap-2">
-                          {[
-                            { label: "Residential Moving", href: "/residential-moving/" },
-                            { label: "Packing Services", href: "/packing-services/" },
-                            { label: "Storage", href: "/storage-services/" },
-                            { label: "Commercial Moving", href: "/commercial-moving/" },
-                            { label: "Senior Moving", href: "/senior-moving/" },
-                          ].map(s => (
-                            <a key={s.href} href={s.href} className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold text-white/90 hover:text-white transition-colors" style={{ backgroundColor: "rgba(255,255,255,0.12)" }}>
-                              {s.label}
+                {(post.relatedService || post.relatedCity) && (() => {
+                  // Build city-specific links when relatedCity is set
+                  const cityName = post.relatedCity
+                    ? post.relatedCity.charAt(0).toUpperCase() + post.relatedCity.slice(1)
+                    : null;
+                  const citySlug = post.relatedCity ?? null;
+                  const cityLinks = citySlug ? [
+                    { label: `${cityName} Movers`, href: `/${citySlug}-movers/` },
+                    { label: `${cityName} Residential Moving`, href: `/${citySlug}-movers/residential/` },
+                    { label: `${cityName} Apartment Moving`, href: `/${citySlug}-movers/apartment/` },
+                    { label: `${cityName} Packing Services`, href: `/${citySlug}-movers/packing/` },
+                    { label: `${cityName} Storage Services`, href: `/${citySlug}-movers/storage/` },
+                    { label: `${cityName} Commercial Moving`, href: `/${citySlug}-movers/commercial/` },
+                    { label: `${cityName} Senior Moving`, href: `/${citySlug}-movers/senior/` },
+                    { label: `${cityName} Office Moving`, href: `/${citySlug}-movers/office/` },
+                  ] : [
+                    { label: "Residential Moving", href: "/residential-moving/" },
+                    { label: "Packing Services", href: "/packing-services/" },
+                    { label: "Storage", href: "/storage-services/" },
+                    { label: "Commercial Moving", href: "/commercial-moving/" },
+                    { label: "Senior Moving", href: "/senior-moving/" },
+                  ];
+                  const ctaHeading = cityName
+                    ? `Ready to Move to ${cityName}?`
+                    : `Ready to Move in the Seattle Area?`;
+                  const ctaSubtext = cityName
+                    ? `On The Go Moving & Storage has served the ${cityName} area since 2007. Licensed, insured, 4.8★ rated.`
+                    : `On The Go Moving serves Redmond, Bellevue, Kirkland, Seattle & 20+ Eastside cities. Licensed, insured, 4.8★ rated.`;
+                  return (
+                    <div className="my-10 rounded-2xl overflow-hidden shadow-md" style={{ background: "linear-gradient(135deg, #1e3a0f 0%, #2d5a1b 100%)" }}>
+                      <div className="p-6 sm:p-8">
+                        <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+                          <div className="flex-1">
+                            <p className="text-white font-extrabold text-xl mb-1" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
+                              {ctaHeading}
+                            </p>
+                            <p className="text-white/80 text-sm">{ctaSubtext}</p>
+                          </div>
+                          <div className="flex flex-col gap-2 sm:items-end flex-shrink-0">
+                            <a href="/contact-us/" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-bold text-sm text-white" style={{ backgroundColor: "#75aa11" }}>
+                              Get a Free Quote <ArrowRight size={14} />
                             </a>
-                          ))}
+                            <a href="tel:+14257618500" className="text-white/70 text-xs text-center hover:text-white transition-colors">
+                              Or call (425) 761-8500
+                            </a>
+                          </div>
+                        </div>
+                        <div className="mt-4 pt-4 border-t border-white/20">
+                          <p className="text-white/60 text-xs mb-2">
+                            {cityName ? `Explore ${cityName} moving services:` : `Explore our services:`}
+                          </p>
+                          <div className="flex flex-wrap gap-2">
+                            {cityLinks.map(s => (
+                              <a key={s.href} href={s.href} className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold text-white/90 hover:text-white transition-colors" style={{ backgroundColor: "rgba(255,255,255,0.12)" }}>
+                                {s.label}
+                              </a>
+                            ))}
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                )}
+                  );
+                })()}
 
                 {/* FAQ Section */}
                 {post.faqs.length > 0 && (

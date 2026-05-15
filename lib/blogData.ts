@@ -32,6 +32,7 @@ export interface BlogPostData {
   faqs: BlogFAQ[];
   relatedService?: string;
   relatedServiceHref?: string;
+  relatedCity?: string;  // e.g. "seattle" — triggers city-specific CTA box
 }
 
 export const POSTS_DATA: Record<string, BlogPostData> = {
@@ -2513,6 +2514,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     category: "Local Guides",
     readTime: "10 min read",
     author: "Jason Sexton",
+    relatedCity: "seattle",
     heroImage: BRAND_IMAGES.truckSeattleSkyline,
     intro: `Every week on Reddit, someone asks the same question: "Is Seattle actually worth it?" The answers are always honest, sometimes brutal, and almost always more useful than anything a relocation guide will tell you. We read hundreds of those threads so you don't have to. Here's what living in Seattle is actually like in 2026 — the good, the frustrating, and the things that make people stay for decades.`,
     sections: [
@@ -3295,6 +3297,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     category: "Local Guides",
     readTime: "9 min read",
     author: "Jason Sexton",
+    relatedCity: "bellevue",
     heroImage: BRAND_IMAGES.truckBellevueSkyline,
     intro: `Bellevue has transformed from a quiet Seattle suburb into one of the most significant tech cities in the country. It's now home to T-Mobile's headquarters, Expedia Group, Paccar, and a growing roster of Amazon and Microsoft offices. But what is it actually like to live here? We dug into Reddit's r/BellevueWA and r/eastside threads to get the honest picture — the things locals love, the things that frustrate them, and the things they wish they'd known before moving.`,
     sections: [
@@ -3334,6 +3337,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     category: "Local Guides",
     readTime: "9 min read",
     author: "Jason Sexton",
+    relatedCity: "kirkland",
     heroImage: BRAND_IMAGES.truckKirklandHouse,
     intro: `Kirkland is the city that people on the Eastside consistently recommend when someone asks "where should I actually live?" It has the waterfront that Bellevue lacks, the walkability that Redmond lacks, and a genuine small-town feel that somehow coexists with Google's major engineering campus and a median household income over $150,000. But it's also expensive, the traffic on 405 is genuinely awful, and making friends takes effort. Here's what living in Kirkland is actually like in 2026, based on what Reddit locals actually say.`,
     sections: [
@@ -3371,6 +3375,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     category: "Local Guides",
     readTime: "9 min read",
     author: "Jason Sexton",
+    relatedCity: "redmond",
     heroImage: BRAND_IMAGES.truckResidentialStreet,
     intro: `Redmond is best known as the home of Microsoft — but the people who actually live here will tell you it's much more than a company town. It's one of the most bikeable cities in Washington State, has a genuinely walkable downtown, hosts the beloved Derby Days festival every July, and sits at the gateway to some of the best trail systems in the Pacific Northwest. Here's what living in Redmond is actually like in 2026, based on what Reddit locals actually say.`,
     sections: [
@@ -3408,6 +3413,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     category: "Local Guides",
     readTime: "9 min read",
     author: "Jason Sexton",
+    relatedCity: "sammamish",
     heroImage: BRAND_IMAGES.crewCarryingFurniture,
     intro: `Sammamish is consistently ranked as one of the safest and most family-friendly cities in Washington State. It's also consistently described on Reddit as a "bubble" — a place of million-dollar cul-de-sacs, elite schools, and a monoculture of tech workers' families that some people love and others find suffocating. Here's the honest picture of what living in Sammamish is actually like in 2026.`,
     sections: [
@@ -3445,6 +3451,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     category: "Local Guides",
     readTime: "9 min read",
     author: "Jason Sexton",
+    relatedCity: "bothell",
     heroImage: BRAND_IMAGES.threeCrewRampLoading,
     intro: `Bothell doesn't get the attention that Kirkland or Bellevue do, and that might be exactly why it's worth considering. It offers more house for your money than almost anywhere else on the Eastside, a downtown that has genuinely improved over the past decade, and a location that puts you five minutes from the Woodinville wine district. Here's what living in Bothell is actually like in 2026, based on what Reddit locals actually say.`,
     sections: [
@@ -3481,6 +3488,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     category: "Local Guides",
     readTime: "9 min read",
     author: "Jason Sexton",
+    relatedCity: "issaquah",
     heroImage: BRAND_IMAGES.crewHoodieAtTruck,
     intro: `Issaquah is the kind of place that people describe as "feels like a small town but has bigger town amenities." It has a salmon hatchery in the middle of town, three mountains you can hike from your backyard, and Snoqualmie Pass for skiing 30 minutes away. It also has a reputation for being expensive, car-dependent, and not particularly exciting for singles. Here's what living in Issaquah is actually like in 2026, based on what Reddit locals actually say.`,
     sections: [
