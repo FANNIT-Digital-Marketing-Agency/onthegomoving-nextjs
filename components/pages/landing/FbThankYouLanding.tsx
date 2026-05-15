@@ -18,12 +18,16 @@ export default function FbThankYouLanding() {
 
     // Read the event_id stored by FbQuoteForm for pixel/CAPI deduplication
     const fbEventId = sessionStorage.getItem("fb_event_id") || "";
+    // Read test event code (stored by landing page if in test mode)
+    const testEventCode = sessionStorage.getItem("fb_test_event_code") || undefined;
 
     // Helper to fire the Lead event (used whether pixel was pre-loaded or just injected)
     const fireLeadEvent = () => {
       const fbq = (window as any).fbq;
       if (!fbq) return;
-      fbq("track", "Lead", {}, { eventID: fbEventId });
+      const eventOptions: Record<string, string> = { eventID: fbEventId };
+      if (testEventCode) eventOptions.test_event_code = testEventCode;
+      fbq("track", "Lead", {}, eventOptions);
     };
 
     // If fbq is already available (pixel was loaded on the landing page), fire immediately
@@ -60,6 +64,7 @@ export default function FbThankYouLanding() {
 
     // Clean up sessionStorage
     sessionStorage.removeItem("fb_event_id");
+    sessionStorage.removeItem("fb_test_event_code");
   }, []);
 
   return (

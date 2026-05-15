@@ -72,7 +72,7 @@ function buildSupermovePayload(lead) {
   };
 }
 
-function buildCAPIPayload(lead, eventHeaders) {
+function buildCAPIPayload(lead, eventHeaders, testEventCode) {
   const nameParts = (lead.fullName || "").trim().split(/\s+/);
   const firstName = nameParts[0] || "";
   const lastName = nameParts.slice(1).join(" ") || "";
@@ -86,7 +86,7 @@ function buildCAPIPayload(lead, eventHeaders) {
     "";
   const userAgent = lead.clientUserAgent || eventHeaders["user-agent"] || "";
 
-  return {
+  const payload = {
     data: [
       {
         event_name: "Lead",
@@ -112,6 +112,11 @@ function buildCAPIPayload(lead, eventHeaders) {
       },
     ],
   };
+  // Include test_event_code when testing via Meta Events Manager
+  if (testEventCode) {
+    payload.test_event_code = testEventCode;
+  }
+  return payload;
 }
 
 export const handler = async (event) => {
@@ -144,7 +149,7 @@ export const handler = async (event) => {
   }
 
   const supermovePayload = buildSupermovePayload(lead);
-  const capiPayload = buildCAPIPayload(lead, event.headers || {});
+  const capiPayload = buildCAPIPayload(lead, event.headers || {}, lead.testEventCode);
   const fbToken = process.env.FB_CAPI_ACCESS_TOKEN;
 
   // Fire SuperMove and CAPI in parallel

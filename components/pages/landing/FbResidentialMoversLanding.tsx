@@ -122,6 +122,13 @@ function FaqItem({ q, a }: { q: string; a: string }) {
   );
 }
 
+// ── Read Meta test_event_code from URL (for Test Events panel) ─────────────
+function getTestEventCode(): string | undefined {
+  if (typeof window === "undefined") return undefined;
+  const params = new URLSearchParams(window.location.search);
+  return params.get("_fb_test_event_code") || undefined;
+}
+
 // ── Inline quote form (calls submit-fb-lead) ───────────────────────────────
 
 const MOVE_SIZES = [
@@ -182,7 +189,12 @@ function FbQuoteForm() {
       clientUserAgent: navigator.userAgent,
       fbc: getCookie("_fbc"),
       fbp: getCookie("_fbp"),
+      testEventCode: getTestEventCode(),
     };
+
+    // Persist test event code to sessionStorage so thank-you page can use it
+    const testCode = getTestEventCode();
+    if (testCode) sessionStorage.setItem("fb_test_event_code", testCode);
 
     try {
       const res = await fetch("/.netlify/functions/submit-fb-lead", {
@@ -326,8 +338,27 @@ export default function FbResidentialMoversLanding() {
   // Inject Facebook Pixel base code on mount (bypasses GTM dependency)
   useEffect(() => {
     if (typeof window === "undefined") return;
-    // Avoid double-init if pixel already loaded (e.g. from GTM)
-    if ((window as any).fbq) return;
+
+    const testCode = getTestEventCode();
+
+    const initAndTrack = () => {
+      const fbq = (window as any).fbq;
+      if (!fbq) return;
+      // Re-init with test code if in test mode
+      if (testCode) {
+        fbq('init', FB_PIXEL_ID);
+        fbq('track', 'PageView', {}, { test_event_code: testCode });
+      } else {
+        fbq('init', FB_PIXEL_ID);
+        fbq('track', 'PageView');
+      }
+    };
+
+    if ((window as any).fbq) {
+      // Pixel already loaded (e.g. from GTM) — just track
+      initAndTrack();
+      return;
+    }
 
     // Inject the FB Pixel base code script
     const script = document.createElement("script");
@@ -341,7 +372,7 @@ export default function FbResidentialMoversLanding() {
       s.parentNode.insertBefore(t,s)}(window, document,'script',
       'https://connect.facebook.net/en_US/fbevents.js');
       fbq('init', '${FB_PIXEL_ID}');
-      fbq('track', 'PageView');
+      ${testCode ? `fbq('track', 'PageView', {}, { test_event_code: '${testCode}' });` : `fbq('track', 'PageView');`}
     `;
     document.head.appendChild(script);
   }, []);
