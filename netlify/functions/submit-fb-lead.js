@@ -68,7 +68,7 @@ function buildSupermovePayload(lead) {
     ],
     referral_source: "Custom Website via A Supermove-Managed Integration",
     referral_details: "Facebook Ads",
-    tags: ["WEBSITE_LEAD", "FACEBOOK_ADS"],
+    tags: ["WEBSITE_LEAD", "FACEBOOK_LEAD_ADS_LEAD"],
     values: { PROJECT_SIZE: projectSize },
   };
 }
