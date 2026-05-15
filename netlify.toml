@@ -434,25 +434,25 @@
 
 [[redirects]]
   from = "/ballard-apartment-movers/"
-  to = "/ballard-movers/"
+  to = "/ballard-movers/apartment/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/ballard-business-moving/"
-  to = "/ballard-movers/"
+  to = "/ballard-movers/commercial/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/ballard-senior-moving/"
-  to = "/ballard-movers/"
+  to = "/ballard-movers/senior/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/ballard-storage-services/"
-  to = "/ballard-movers/"
+  to = "/ballard-movers/storage/"
   status = 301
   force = true
 
@@ -464,25 +464,25 @@
 
 [[redirects]]
   from = "/bellevue-appliance-moving/"
-  to = "/bellevue-movers/"
+  to = "/bellevue-movers/appliance/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/bellevue-business-moving/"
-  to = "/bellevue-movers/"
+  to = "/bellevue-movers/commercial/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/bellevue-commercial-moving/"
-  to = "/bellevue-movers/"
+  to = "/bellevue-movers/commercial/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/bellevue-condo-moving/"
-  to = "/bellevue-movers/"
+  to = "/bellevue-movers/condo/"
   status = 301
   force = true
 
@@ -494,7 +494,7 @@
 
 [[redirects]]
   from = "/bellevue-furniture-moving/"
-  to = "/bellevue-movers/"
+  to = "/bellevue-movers/furniture/"
   status = 301
   force = true
 
@@ -512,13 +512,13 @@
 
 [[redirects]]
   from = "/bellevue-office-movers/"
-  to = "/bellevue-movers/"
+  to = "/bellevue-movers/office/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/bellevue-packing-services/"
-  to = "/bellevue-movers/"
+  to = "/bellevue-movers/packing/"
   status = 301
   force = true
 
@@ -530,7 +530,7 @@
 
 [[redirects]]
   from = "/bellevue-residential-movers/"
-  to = "/bellevue-movers/"
+  to = "/bellevue-movers/residential/"
   status = 301
   force = true
 
@@ -542,19 +542,19 @@
 
 [[redirects]]
   from = "/bellevue-storage-services/"
-  to = "/bellevue-movers/"
+  to = "/bellevue-movers/storage/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/bellevue-unpacking-services/"
-  to = "/bellevue-movers/"
+  to = "/bellevue-movers/unpacking/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/bellevue-warehousing-and-logistics/"
-  to = "/bellevue-movers/"
+  to = "/bellevue-movers/warehousing/"
   status = 301
   force = true
 
@@ -578,31 +578,31 @@
 
 [[redirects]]
   from = "/bothell-office-movers/"
-  to = "/bothell-movers/"
+  to = "/bothell-movers/office/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/bothell-packing-services/"
-  to = "/bothell-movers/"
+  to = "/bothell-movers/packing/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/bothell-residential-moving/"
-  to = "/bothell-movers/"
+  to = "/bothell-movers/residential/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/bothell-senior-moving/"
-  to = "/bothell-movers/"
+  to = "/bothell-movers/senior/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/bothell-storage-services/"
-  to = "/bothell-movers/"
+  to = "/bothell-movers/storage/"
   status = 301
   force = true
 
@@ -620,31 +620,31 @@
 
 [[redirects]]
   from = "/capitol-hill-storage-services/"
-  to = "/capitol-hill-movers/"
+  to = "/capitol-hill-movers/storage/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/clyde-hill-storage-services/"
-  to = "/clyde-hill-movers/"
+  to = "/clyde-hill-movers/storage/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/issaquah-business-moving/"
-  to = "/issaquah-movers/"
+  to = "/issaquah-movers/commercial/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/issaquah-residential-moving-services/"
-  to = "/issaquah-movers/"
+  to = "/issaquah-movers/residential/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/issaquah-storage-services/"
-  to = "/issaquah-movers/"
+  to = "/issaquah-movers/storage/"
   status = 301
   force = true
 
@@ -656,25 +656,25 @@
 
 [[redirects]]
   from = "/kirkland-appliance-moving/"
-  to = "/kirkland-movers/"
+  to = "/kirkland-movers/appliance/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/kirkland-business-movers/"
-  to = "/kirkland-movers/"
+  to = "/kirkland-movers/commercial/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/kirkland-commercial-moving/"
-  to = "/kirkland-movers/"
+  to = "/kirkland-movers/commercial/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/kirkland-condo-moving/"
-  to = "/kirkland-movers/"
+  to = "/kirkland-movers/condo/"
   status = 301
   force = true
 
@@ -686,7 +686,7 @@
 
 [[redirects]]
   from = "/kirkland-furniture-moving/"
-  to = "/kirkland-movers/"
+  to = "/kirkland-movers/furniture/"
   status = 301
   force = true
 
@@ -704,13 +704,13 @@
 
 [[redirects]]
   from = "/kirkland-office-moving/"
-  to = "/kirkland-movers/"
+  to = "/kirkland-movers/office/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/kirkland-packing-services/"
-  to = "/kirkland-movers/"
+  to = "/kirkland-movers/packing/"
   status = 301
   force = true
 
@@ -722,7 +722,7 @@
 
 [[redirects]]
   from = "/kirkland-residential-moving/"
-  to = "/kirkland-movers/"
+  to = "/kirkland-movers/residential/"
   status = 301
   force = true
 
@@ -734,31 +734,31 @@
 
 [[redirects]]
   from = "/kirkland-storage-services/"
-  to = "/kirkland-movers/"
+  to = "/kirkland-movers/storage/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/kirkland-unpacking-services/"
-  to = "/kirkland-movers/"
+  to = "/kirkland-movers/unpacking/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/kirkland-warehousing-and-logistics-services/"
-  to = "/kirkland-movers/"
+  to = "/kirkland-movers/warehousing/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/medina-storage-services/"
-  to = "/medina-movers/"
+  to = "/medina-movers/storage/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/mercer-island-storage-service/"
-  to = "/mercer-island-movers/"
+  to = "/mercer-island-movers/storage/"
   status = 301
   force = true
 
@@ -776,37 +776,37 @@
 
 [[redirects]]
   from = "/north-bend-apartment-moving/"
-  to = "/north-bend-movers/"
+  to = "/north-bend-movers/apartment/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/north-bend-business-moving/"
-  to = "/north-bend-movers/"
+  to = "/north-bend-movers/commercial/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/north-bend-residential-moving-services/"
-  to = "/north-bend-movers/"
+  to = "/north-bend-movers/residential/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/north-bend-senior-moving/"
-  to = "/north-bend-movers/"
+  to = "/north-bend-movers/senior/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/north-bend-storage-services/"
-  to = "/north-bend-movers/"
+  to = "/north-bend-movers/storage/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/queen-anne-storage-services/"
-  to = "/queen-anne-movers/"
+  to = "/queen-anne-movers/storage/"
   status = 301
   force = true
 
@@ -818,31 +818,31 @@
 
 [[redirects]]
   from = "/redmond-apartment-mover/"
-  to = "/redmond-movers/"
+  to = "/redmond-movers/apartment/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/redmond-appliance-moving/"
-  to = "/redmond-movers/"
+  to = "/redmond-movers/appliance/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/redmond-business-movers/"
-  to = "/redmond-movers/"
+  to = "/redmond-movers/commercial/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/redmond-commercial-moving/"
-  to = "/redmond-movers/"
+  to = "/redmond-movers/commercial/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/redmond-condo-moving/"
-  to = "/redmond-movers/"
+  to = "/redmond-movers/condo/"
   status = 301
   force = true
 
@@ -854,7 +854,7 @@
 
 [[redirects]]
   from = "/redmond-furniture-moving/"
-  to = "/redmond-movers/"
+  to = "/redmond-movers/furniture/"
   status = 301
   force = true
 
@@ -872,13 +872,13 @@
 
 [[redirects]]
   from = "/redmond-office-movers/"
-  to = "/redmond-movers/"
+  to = "/redmond-movers/office/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/redmond-packing-services/"
-  to = "/redmond-movers/"
+  to = "/redmond-movers/packing/"
   status = 301
   force = true
 
@@ -890,55 +890,55 @@
 
 [[redirects]]
   from = "/redmond-residential-movers/"
-  to = "/redmond-movers/"
+  to = "/redmond-movers/residential/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/redmond-senior-movers/"
-  to = "/redmond-movers/"
+  to = "/redmond-movers/senior/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/redmond-storage-services/"
-  to = "/redmond-movers/"
+  to = "/redmond-movers/storage/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/redmond-unpacking-services/"
-  to = "/redmond-movers/"
+  to = "/redmond-movers/unpacking/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/redmond-warehousing-and-logistics/"
-  to = "/redmond-movers/"
+  to = "/redmond-movers/warehousing/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/renton-apartment-moving-services/"
-  to = "/renton-movers/"
+  to = "/renton-movers/apartment/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/renton-business-moving-service/"
-  to = "/renton-movers/"
+  to = "/renton-movers/commercial/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/renton-senior-moving/"
-  to = "/renton-movers/"
+  to = "/renton-movers/senior/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/renton-storage-services/"
-  to = "/renton-movers/"
+  to = "/renton-movers/storage/"
   status = 301
   force = true
 
@@ -950,25 +950,25 @@
 
 [[redirects]]
   from = "/sammamish-business-moving/"
-  to = "/sammamish-movers/"
+  to = "/sammamish-movers/commercial/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/sammamish-residential-moving-services/"
-  to = "/sammamish-movers/"
+  to = "/sammamish-movers/residential/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/sammamish-senior-moving/"
-  to = "/sammamish-movers/"
+  to = "/sammamish-movers/senior/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/sammamish-storage-services/"
-  to = "/sammamish-movers/"
+  to = "/sammamish-movers/storage/"
   status = 301
   force = true
 
@@ -980,37 +980,37 @@
 
 [[redirects]]
   from = "/seattle-appliance-moving/"
-  to = "/seattle-movers/"
+  to = "/seattle-movers/appliance/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/seattle-business-movers/"
-  to = "/seattle-movers/"
+  to = "/seattle-movers/commercial/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/seattle-commercial-moving/"
-  to = "/seattle-movers/"
+  to = "/seattle-movers/commercial/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/seattle-condo-moving/"
-  to = "/seattle-movers/"
+  to = "/seattle-movers/condo/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/seattle-office-movers/"
-  to = "/seattle-movers/"
+  to = "/seattle-movers/office/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/seattle-packing-services/"
-  to = "/seattle-movers/"
+  to = "/seattle-movers/packing/"
   status = 301
   force = true
 
@@ -1028,7 +1028,7 @@
 
 [[redirects]]
   from = "/seattle-residential-movers/"
-  to = "/seattle-movers/"
+  to = "/seattle-movers/residential/"
   status = 301
   force = true
 
@@ -1046,7 +1046,7 @@
 
 [[redirects]]
   from = "/seattle-storage-services/"
-  to = "/seattle-movers/"
+  to = "/seattle-movers/storage/"
   status = 301
   force = true
 
@@ -1058,31 +1058,31 @@
 
 [[redirects]]
   from = "/shoreline-apartment-movers/"
-  to = "/shoreline-movers/"
+  to = "/shoreline-movers/apartment/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/shoreline-business-moving/"
-  to = "/shoreline-movers/"
+  to = "/shoreline-movers/commercial/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/shoreline-residential-moving-services/"
-  to = "/shoreline-movers/"
+  to = "/shoreline-movers/residential/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/shoreline-senior-moving/"
-  to = "/shoreline-movers/"
+  to = "/shoreline-movers/senior/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/shoreline-storage-service/"
-  to = "/shoreline-movers/"
+  to = "/shoreline-movers/storage/"
   status = 301
   force = true
 
@@ -1112,7 +1112,7 @@
 
 [[redirects]]
   from = "/woodinville-storage-services/"
-  to = "/woodinville-movers/"
+  to = "/woodinville-movers/storage/"
   status = 301
   force = true
 
@@ -1289,7 +1289,7 @@
 
 [[redirects]]
   from = "/bellevue-movers-storage-service/"
-  to = "/bellevue-movers/"
+  to = "/bellevue-movers/storage/"
   status = 301
   force = true
 
@@ -1307,7 +1307,7 @@
 
 [[redirects]]
   from = "/redmond-movers-storage-service/"
-  to = "/redmond-movers/"
+  to = "/redmond-movers/storage/"
   status = 301
   force = true
 
@@ -1325,13 +1325,13 @@
 
 [[redirects]]
   from = "/kirkland-movers-storage-service/"
-  to = "/kirkland-movers/"
+  to = "/kirkland-movers/storage/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/sammamish-movers-storage-service/"
-  to = "/sammamish-movers/"
+  to = "/sammamish-movers/storage/"
   status = 301
   force = true
 
@@ -1397,7 +1397,7 @@
 
 [[redirects]]
   from = "/woodinville-movers-storage-service/"
-  to = "/woodinville-movers/"
+  to = "/woodinville-movers/storage/"
   status = 301
   force = true
 
@@ -1409,31 +1409,31 @@
 
 [[redirects]]
   from = "/renton-business-moving-services/"
-  to = "/renton-movers/"
+  to = "/renton-movers/commercial/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/north-bend-business-moving-services/"
-  to = "/north-bend-movers/"
+  to = "/north-bend-movers/commercial/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/redmond-business-moving-services/"
-  to = "/redmond-movers/"
+  to = "/redmond-movers/commercial/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/bothell-senior-moving-services/"
-  to = "/bothell-movers/"
+  to = "/bothell-movers/senior/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/kirkland-business-moving-services/"
-  to = "/kirkland-movers/"
+  to = "/kirkland-movers/commercial/"
   status = 301
   force = true
 
@@ -1445,7 +1445,7 @@
 
 [[redirects]]
   from = "/kirkland-wa-residential-moving-services/"
-  to = "/kirkland-movers/"
+  to = "/kirkland-movers/residential/"
   status = 301
   force = true
 
