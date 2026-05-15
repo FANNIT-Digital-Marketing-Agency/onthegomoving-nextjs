@@ -16,7 +16,7 @@ import { POSTS_DATA } from "@/lib/blogData";
 
 // ── INTERNAL LINK INJECTION ──────────────────────────────────────────────────
 // Maps keyword patterns → service/location URLs.
-// Rules: first occurrence only per post, max 4 links per post, case-insensitive,
+// Rules: first occurrence only per post, max 6 links per post, case-insensitive,
 // skip if the post's own relatedService matches the target (avoid self-links).
 const KEYWORD_MAP: Array<{ pattern: RegExp; url: string; label: string }> = [
   // Service pages — highest commercial intent first
@@ -40,7 +40,7 @@ const KEYWORD_MAP: Array<{ pattern: RegExp; url: string; label: string }> = [
   { pattern: /\bRenton movers?\b|\bmovers? in Renton\b/i, url: "/renton-movers/", label: "Renton movers" },
 ];
 
-const MAX_LINKS_PER_POST = 4;
+const MAX_LINKS_PER_POST = 6;
 
 /**
  * Injects contextual internal links into a plain-text string.
