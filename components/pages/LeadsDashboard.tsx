@@ -24,6 +24,9 @@ import {
   ChevronUp,
   ExternalLink,
   Download,
+  Trash2,
+  AlertTriangle,
+  Filter,
 } from "lucide-react";
 
 interface Lead {
@@ -74,6 +77,26 @@ function moveTypeBadge(type: string) {
   return map[type] || "bg-gray-100 text-gray-600";
 }
 
+/** Returns true if a lead is a test entry (name or email contains "test") */
+function isTestLead(lead: Lead): boolean {
+  const lower = (s: string) => (s || "").toLowerCase();
+  return lower(lead.fullName).includes("test") || lower(lead.email).includes("test");
+}
+
+/** Convert a YYYY-MM-DD string to start-of-day Date */
+function dateFromInput(val: string): Date | null {
+  if (!val) return null;
+  const d = new Date(val + "T00:00:00");
+  return isNaN(d.getTime()) ? null : d;
+}
+
+/** Convert a YYYY-MM-DD string to end-of-day Date */
+function dateToInput(val: string): Date | null {
+  if (!val) return null;
+  const d = new Date(val + "T23:59:59");
+  return isNaN(d.getTime()) ? null : d;
+}
+
 export default function LeadsDashboard() {
   const [adminKey, setAdminKey] = useState("");
   const [keyInput, setKeyInput] = useState("");
@@ -87,6 +110,15 @@ export default function LeadsDashboard() {
   const [sortDir, setSortDir] = useState<"asc" | "desc">("desc");
   const [filterMoveType, setFilterMoveType] = useState("");
 
+  // Date-range filter state (YYYY-MM-DD strings for <input type="date">)
+  const [dateFrom, setDateFrom] = useState("");
+  const [dateTo, setDateTo] = useState("");
+
+  // Auto-delete test leads state
+  const [deletingTests, setDeletingTests] = useState(false);
+  const [deleteResult, setDeleteResult] = useState<{ deleted: number; failed: number } | null>(null);
+  const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
+
   // Load saved key from sessionStorage
   useEffect(() => {
     const saved = sessionStorage.getItem(ADMIN_KEY_STORAGE);
@@ -96,6 +128,7 @@ export default function LeadsDashboard() {
   const fetchLeads = useCallback(async (key: string) => {
     setLoading(true);
     setError("");
+    setDeleteResult(null);
     try {
       const res = await fetch(`/.netlify/functions/get-leads?key=${encodeURIComponent(key)}&per_page=100`);
       if (res.status === 401) {
@@ -126,10 +159,23 @@ export default function LeadsDashboard() {
     setAdminKey(keyInput);
   };
 
-  // Group leads by source page
+  // ── Date-range filtering ──────────────────────────────────────────────────
+  const applyDateRange = (lead: Lead): boolean => {
+    const created = new Date(lead.createdAt);
+    const from = dateFromInput(dateFrom);
+    const to = dateToInput(dateTo);
+    if (from && created < from) return false;
+    if (to && created > to) return false;
+    return true;
+  };
+
+  // All leads after date-range filter (used for stats, source groups, CSV)
+  const dateFilteredLeads = leads.filter(applyDateRange);
+
+  // Group leads by source page (date-filtered)
   const sourceGroups: SourceGroup[] = (() => {
     const map = new Map<string, Lead[]>();
-    leads.forEach((lead) => {
+    dateFilteredLeads.forEach((lead) => {
       const key = lead.sourcePage || "/";
       if (!map.has(key)) map.set(key, []);
       map.get(key)!.push(lead);
@@ -139,9 +185,9 @@ export default function LeadsDashboard() {
       .sort((a, b) => b.count - a.count);
   })();
 
-  // Stats
-  const totalLeads = leads.length;
-  const thisWeek = leads.filter((l) => {
+  // Stats (date-filtered)
+  const totalLeads = dateFilteredLeads.length;
+  const thisWeek = dateFilteredLeads.filter((l) => {
     const d = new Date(l.createdAt);
     const now = new Date();
     const diff = (now.getTime() - d.getTime()) / (1000 * 60 * 60 * 24);
@@ -150,11 +196,11 @@ export default function LeadsDashboard() {
   const moveTypes = ["apartment", "house", "commercial"];
   const moveTypeCounts = moveTypes.map((t) => ({
     type: t,
-    count: leads.filter((l) => l.moveType === t).length,
+    count: dateFilteredLeads.filter((l) => l.moveType === t).length,
   }));
 
-  // Filtered + sorted leads for the all-leads tab
-  const filteredLeads = leads
+  // Filtered + sorted leads for the all-leads tab (date-filtered + move type filter)
+  const filteredLeads = dateFilteredLeads
     .filter((l) => !filterMoveType || l.moveType === filterMoveType)
     .sort((a, b) => {
       const va = a[sortField] || "";
@@ -167,9 +213,10 @@ export default function LeadsDashboard() {
     else { setSortField(field); setSortDir("desc"); }
   };
 
+  // Export CSV — scoped to current date-range filter
   const exportCSV = () => {
     const headers = ["Date", "Name", "Phone", "Email", "Move Date", "From", "To", "Type", "Size", "Source Page", "Source Label"];
-    const rows = leads.map((l) => [
+    const rows = dateFilteredLeads.map((l) => [
       formatDate(l.createdAt),
       l.fullName,
       l.phone,
@@ -187,9 +234,47 @@ export default function LeadsDashboard() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `otgm-leads-${new Date().toISOString().slice(0, 10)}.csv`;
+    // Include date range in filename if set
+    const suffix = dateFrom || dateTo
+      ? `_${dateFrom || "start"}_to_${dateTo || "end"}`
+      : `_${new Date().toISOString().slice(0, 10)}`;
+    a.download = `otgm-leads${suffix}.csv`;
     a.click();
     URL.revokeObjectURL(url);
+  };
+
+  // ── Auto-delete test leads ────────────────────────────────────────────────
+  const testLeads = leads.filter(isTestLead);
+
+  const handleDeleteTestLeads = async () => {
+    setShowDeleteConfirm(false);
+    setDeletingTests(true);
+    setDeleteResult(null);
+
+    let deleted = 0;
+    let failed = 0;
+
+    for (const lead of testLeads) {
+      try {
+        const res = await fetch(
+          `/.netlify/functions/delete-lead?key=${encodeURIComponent(adminKey)}&id=${encodeURIComponent(lead.id)}`,
+          { method: "POST" }
+        );
+        if (res.ok) {
+          deleted++;
+        } else {
+          failed++;
+        }
+      } catch {
+        failed++;
+      }
+    }
+
+    setDeleteResult({ deleted, failed });
+    setDeletingTests(false);
+
+    // Refresh leads list after deletion
+    await fetchLeads(adminKey);
   };
 
   // ── Login Screen ──────────────────────────────────────────────────────────
@@ -240,7 +325,7 @@ export default function LeadsDashboard() {
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <div className="bg-[#1e3a0f] text-white px-6 py-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
+        <div className="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-3">
           <div className="flex items-center gap-3">
             <BarChart2 size={22} />
             <div>
@@ -248,7 +333,7 @@ export default function LeadsDashboard() {
               <p className="text-xs text-green-300">On The Go Moving & Storage</p>
             </div>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 flex-wrap">
             {lastFetched && (
               <span className="text-xs text-green-300 hidden sm:block">
                 Updated {formatTime(lastFetched.toISOString())}
@@ -265,9 +350,10 @@ export default function LeadsDashboard() {
             <button
               onClick={exportCSV}
               className="flex items-center gap-1.5 px-3 py-1.5 bg-[#75aa11] hover:bg-[#5e8a0d] rounded-lg text-sm transition-colors"
+              title={dateFrom || dateTo ? `Export ${totalLeads} leads for selected date range` : "Export all leads as CSV"}
             >
               <Download size={14} />
-              CSV
+              {dateFrom || dateTo ? `CSV (${totalLeads})` : "CSV"}
             </button>
           </div>
         </div>
@@ -281,6 +367,128 @@ export default function LeadsDashboard() {
             {error}
           </div>
         )}
+
+        {/* Delete result notification */}
+        {deleteResult && (
+          <div className={`p-4 rounded-xl text-sm border ${deleteResult.failed === 0 ? "bg-green-50 border-green-200 text-green-800" : "bg-yellow-50 border-yellow-200 text-yellow-800"}`}>
+            {deleteResult.deleted > 0 && (
+              <span>✓ Deleted {deleteResult.deleted} test lead{deleteResult.deleted !== 1 ? "s" : ""}. </span>
+            )}
+            {deleteResult.failed > 0 && (
+              <span>⚠ {deleteResult.failed} deletion{deleteResult.failed !== 1 ? "s" : ""} failed (Netlify may not support deletion via API for all submission types).</span>
+            )}
+          </div>
+        )}
+
+        {/* ── Date Range Filter + Test Lead Cleanup ── */}
+        <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
+          <div className="flex flex-wrap items-end gap-4">
+            {/* Date range */}
+            <div className="flex items-end gap-3 flex-wrap">
+              <div className="flex items-center gap-2 text-sm font-semibold text-gray-600">
+                <Filter size={14} />
+                Date Range
+              </div>
+              <div className="flex flex-col gap-1">
+                <label className="text-xs text-gray-400 font-medium">From</label>
+                <input
+                  type="date"
+                  value={dateFrom}
+                  onChange={(e) => setDateFrom(e.target.value)}
+                  className="border border-gray-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#75aa11]/30 focus:border-[#75aa11]"
+                />
+              </div>
+              <div className="flex flex-col gap-1">
+                <label className="text-xs text-gray-400 font-medium">To</label>
+                <input
+                  type="date"
+                  value={dateTo}
+                  onChange={(e) => setDateTo(e.target.value)}
+                  className="border border-gray-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#75aa11]/30 focus:border-[#75aa11]"
+                />
+              </div>
+              {(dateFrom || dateTo) && (
+                <button
+                  onClick={() => { setDateFrom(""); setDateTo(""); }}
+                  className="text-xs text-gray-400 hover:text-red-500 underline pb-1.5 transition-colors"
+                >
+                  Clear
+                </button>
+              )}
+              {(dateFrom || dateTo) && (
+                <div className="text-xs text-[#75aa11] font-semibold pb-1.5">
+                  {totalLeads} lead{totalLeads !== 1 ? "s" : ""} in range
+                </div>
+              )}
+            </div>
+
+            {/* Spacer */}
+            <div className="flex-1" />
+
+            {/* Auto-delete test leads */}
+            <div className="flex items-center gap-3">
+              {testLeads.length > 0 ? (
+                <>
+                  <span className="text-xs text-amber-600 font-medium flex items-center gap-1">
+                    <AlertTriangle size={13} />
+                    {testLeads.length} test lead{testLeads.length !== 1 ? "s" : ""} detected
+                  </span>
+                  {!showDeleteConfirm ? (
+                    <button
+                      onClick={() => setShowDeleteConfirm(true)}
+                      disabled={deletingTests}
+                      className="flex items-center gap-1.5 px-3 py-1.5 bg-red-50 hover:bg-red-100 text-red-700 border border-red-200 rounded-lg text-sm font-medium transition-colors disabled:opacity-50"
+                    >
+                      <Trash2 size={13} />
+                      Delete Test Leads
+                    </button>
+                  ) : (
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs text-red-600 font-medium">Delete {testLeads.length} test leads?</span>
+                      <button
+                        onClick={handleDeleteTestLeads}
+                        className="px-3 py-1.5 bg-red-600 hover:bg-red-700 text-white rounded-lg text-xs font-semibold transition-colors"
+                      >
+                        Yes, delete
+                      </button>
+                      <button
+                        onClick={() => setShowDeleteConfirm(false)}
+                        className="px-3 py-1.5 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg text-xs font-semibold transition-colors"
+                      >
+                        Cancel
+                      </button>
+                    </div>
+                  )}
+                </>
+              ) : (
+                <span className="text-xs text-gray-400 flex items-center gap-1">
+                  <Trash2 size={12} />
+                  No test leads found
+                </span>
+              )}
+              {deletingTests && (
+                <span className="text-xs text-gray-500 flex items-center gap-1">
+                  <RefreshCw size={12} className="animate-spin" />
+                  Deleting…
+                </span>
+              )}
+            </div>
+          </div>
+
+          {/* Test leads preview */}
+          {testLeads.length > 0 && (
+            <div className="mt-3 pt-3 border-t border-gray-100">
+              <p className="text-xs text-gray-400 mb-2">Test leads to be deleted:</p>
+              <div className="flex flex-wrap gap-2">
+                {testLeads.map((l) => (
+                  <span key={l.id} className="text-xs bg-amber-50 border border-amber-200 text-amber-700 px-2 py-0.5 rounded-full">
+                    {l.fullName || l.email || l.id}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
 
         {/* Loading skeleton */}
         {loading && leads.length === 0 && (
@@ -300,9 +508,12 @@ export default function LeadsDashboard() {
             <div className="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
               <div className="flex items-center gap-2 text-gray-500 text-xs font-semibold mb-2">
                 <Users size={14} />
-                TOTAL LEADS
+                {dateFrom || dateTo ? "LEADS IN RANGE" : "TOTAL LEADS"}
               </div>
               <div className="text-3xl font-bold text-gray-900">{totalLeads}</div>
+              {(dateFrom || dateTo) && (
+                <div className="text-xs text-gray-400 mt-1">{leads.length} total</div>
+              )}
             </div>
             <div className="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
               <div className="flex items-center gap-2 text-gray-500 text-xs font-semibold mb-2">
@@ -334,7 +545,7 @@ export default function LeadsDashboard() {
         ) : null}
 
         {/* Move type breakdown */}
-        {leads.length > 0 && (
+        {dateFilteredLeads.length > 0 && (
           <div className="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
             <h2 className="text-sm font-semibold text-gray-700 mb-4">Leads by Move Type</h2>
             <div className="flex flex-wrap gap-3">
@@ -349,13 +560,13 @@ export default function LeadsDashboard() {
                   </span>
                 </div>
               ))}
-              {leads.filter((l) => !l.moveType).length > 0 && (
+              {dateFilteredLeads.filter((l) => !l.moveType).length > 0 && (
                 <div className="flex items-center gap-2">
                   <span className="px-3 py-1 rounded-full text-xs font-semibold bg-gray-100 text-gray-500">
                     unknown
                   </span>
                   <span className="text-sm font-bold text-gray-800">
-                    {leads.filter((l) => !l.moveType).length}
+                    {dateFilteredLeads.filter((l) => !l.moveType).length}
                   </span>
                 </div>
               )}
@@ -364,7 +575,7 @@ export default function LeadsDashboard() {
         )}
 
         {/* Tabs */}
-        {leads.length > 0 && (
+        {dateFilteredLeads.length > 0 && (
           <>
             <div className="flex gap-1 bg-gray-100 rounded-xl p-1 w-fit">
               <button
@@ -457,9 +668,14 @@ export default function LeadsDashboard() {
                           {group.leads
                             .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
                             .map((lead) => (
-                              <div key={lead.id} className="px-4 py-3 flex flex-wrap items-start gap-x-6 gap-y-1.5 bg-gray-50/50">
+                              <div key={lead.id} className={`px-4 py-3 flex flex-wrap items-start gap-x-6 gap-y-1.5 ${isTestLead(lead) ? "bg-amber-50/60" : "bg-gray-50/50"}`}>
                                 <div className="min-w-0">
-                                  <div className="font-semibold text-sm text-gray-900">{lead.fullName || "—"}</div>
+                                  <div className="font-semibold text-sm text-gray-900 flex items-center gap-2">
+                                    {lead.fullName || "—"}
+                                    {isTestLead(lead) && (
+                                      <span className="text-xs bg-amber-100 text-amber-700 px-1.5 py-0.5 rounded font-medium">TEST</span>
+                                    )}
+                                  </div>
                                   <div className="text-xs text-gray-400">
                                     {formatDate(lead.createdAt)} at {formatTime(lead.createdAt)}
                                   </div>
@@ -549,13 +765,18 @@ export default function LeadsDashboard() {
                     </thead>
                     <tbody className="divide-y divide-gray-50">
                       {filteredLeads.map((lead) => (
-                        <tr key={lead.id} className="hover:bg-gray-50/50 transition-colors">
+                        <tr key={lead.id} className={`hover:bg-gray-50/50 transition-colors ${isTestLead(lead) ? "bg-amber-50/40" : ""}`}>
                           <td className="px-4 py-3 text-xs text-gray-500 whitespace-nowrap">
                             <div>{formatDate(lead.createdAt)}</div>
                             <div className="text-gray-400">{formatTime(lead.createdAt)}</div>
                           </td>
                           <td className="px-4 py-3">
-                            <div className="font-medium text-gray-900">{lead.fullName || "—"}</div>
+                            <div className="font-medium text-gray-900 flex items-center gap-2">
+                              {lead.fullName || "—"}
+                              {isTestLead(lead) && (
+                                <span className="text-xs bg-amber-100 text-amber-700 px-1.5 py-0.5 rounded font-medium">TEST</span>
+                              )}
+                            </div>
                             {lead.moveDate && (
                               <div className="text-xs text-gray-400">Move: {lead.moveDate}</div>
                             )}
@@ -616,13 +837,24 @@ export default function LeadsDashboard() {
         )}
 
         {/* Empty state */}
-        {!loading && leads.length === 0 && !error && (
+        {!loading && dateFilteredLeads.length === 0 && !error && (
           <div className="bg-white rounded-xl p-12 text-center shadow-sm border border-gray-100">
             <Users size={40} className="mx-auto text-gray-300 mb-3" />
-            <h3 className="text-lg font-semibold text-gray-700 mb-1">No leads yet</h3>
-            <p className="text-sm text-gray-400">
-              Form submissions will appear here once the site receives traffic.
-            </p>
+            {leads.length > 0 && (dateFrom || dateTo) ? (
+              <>
+                <h3 className="text-lg font-semibold text-gray-700 mb-1">No leads in this date range</h3>
+                <p className="text-sm text-gray-400">
+                  Try adjusting the From / To dates, or clear the filter to see all {leads.length} leads.
+                </p>
+              </>
+            ) : (
+              <>
+                <h3 className="text-lg font-semibold text-gray-700 mb-1">No leads yet</h3>
+                <p className="text-sm text-gray-400">
+                  Form submissions will appear here once the site receives traffic.
+                </p>
+              </>
+            )}
           </div>
         )}
 
