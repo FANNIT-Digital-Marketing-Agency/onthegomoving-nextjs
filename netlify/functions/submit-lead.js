@@ -62,7 +62,7 @@ function buildSupermovePayload(lead) {
       primary_contact: {
         full_name: lead.fullName,
         email: lead.email,
-        phone_number: (lead.phone || "").replace(/\D/g, ""),
+        phone_number: "+1" + (lead.phone || "").replace(/\D/g, "").replace(/^1/, ""),
       },
     },
     jobs: [
