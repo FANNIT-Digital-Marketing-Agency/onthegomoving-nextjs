@@ -812,7 +812,7 @@
 
 [[redirects]]
   from = "/reasons-in-moving-to-bellevue-wa/"
-  to = "/bellevue-movers/"
+  to = "/moving-to-bellevue/"
   status = 301
   force = true
 
@@ -2166,3 +2166,117 @@
   status = 301
   force  = true
 
+
+[[redirects]]
+  from = "/living-in-bellevue-wa/"
+  to = "/moving-to-bellevue/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/living-in-west-bellevue-washington/"
+  to = "/moving-to-bellevue/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/living-in-bothell-wa/"
+  to = "/moving-to-bothell/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/living-in-kirkland-wa/"
+  to = "/moving-to-kirkland/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/10-things-you-should-know-about-living-in-redmond-washington/"
+  to = "/moving-to-redmond/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/moving-to-seattle-after-graduation/"
+  to = "/moving-to-seattle/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/living-in-downtown-seattle/"
+  to = "/moving-to-seattle/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/best-places-to-live-in-seattle-neighborhoods-near-the-area/"
+  to = "/moving-to-seattle/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/bellevue-or-seattle-where-to-live/"
+  to = "/moving-to-seattle/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/living-in-west-seattle/"
+  to = "/moving-to-seattle/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/10-things-to-know-about-living-in-ballard/"
+  to = "/moving-to-seattle/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/living-in-fremont-seattle/"
+  to = "/moving-to-seattle/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/living-in-beacon-hill-seattle/"
+  to = "/moving-to-seattle/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/living-in-capitol-hill-seattle/"
+  to = "/moving-to-seattle/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/living-in-belltown-seattle-wa/"
+  to = "/moving-to-seattle/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/living-in-queen-anne-seattle/"
+  to = "/moving-to-seattle/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/living-in-woodinville-wa/"
+  to = "/woodinville-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/living-in-everett-wa-you-need-to-know/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mercer-island-movers/"
+  to = "/mercer-island-movers/"
+  status = 301
+  force = true
