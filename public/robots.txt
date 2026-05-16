@@ -3,7 +3,6 @@ Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /thank-you-get-a-quote-services/
-Disallow: /get/
 
 Sitemap: https://onthegomoving.com/sitemap.xml
 Host: https://onthegomoving.com
