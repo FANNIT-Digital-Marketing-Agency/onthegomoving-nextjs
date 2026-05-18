@@ -58,8 +58,9 @@ const MOVE_SIZES = [
  *  Raw digits are extracted before sending to SuperMove / Netlify Forms. */
 function formatPhoneDisplay(value: string): string {
   let digits = value.replace(/\D/g, "");
-  // Strip leading 1 (country code) if user accidentally types it
-  if (digits.length === 11 && digits.startsWith("1")) digits = digits.slice(1);
+  // Always strip a leading 1 — the +1 country code is already shown as a static prefix,
+  // so typing 1 as the first digit is always a mistake. Strip immediately at any length.
+  if (digits.startsWith("1")) digits = digits.slice(1);
   digits = digits.slice(0, 10);
   if (digits.length === 0) return "";
   if (digits.length <= 3) return `(${digits}`;
