@@ -163,6 +163,13 @@ function FbQuoteForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
+
+    // Require bedroom size before submitting
+    if (!moveSize) {
+      setError("Please select your home size (number of bedrooms).");
+      return;
+    }
+
     setSubmitting(true);
 
     // Generate unique event_id for pixel/CAPI deduplication

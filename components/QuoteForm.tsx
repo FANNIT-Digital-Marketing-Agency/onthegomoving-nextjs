@@ -136,6 +136,13 @@ export default function QuoteForm({
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Require bedroom/unit size for residential moves before proceeding
+    if ((formData.moveType === "house" || formData.moveType === "apartment") && !formData.moveSize) {
+      toast.error("Please select your move size (number of bedrooms).");
+      return;
+    }
+
     setLoading(true);
 
     try {
