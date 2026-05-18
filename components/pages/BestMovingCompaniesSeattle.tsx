@@ -338,7 +338,7 @@ const COMPANIES = [
     hourlyRate: "~$110–$145/hr (2-person crew)",
     threeHourMin: "~$330–$435",
     twoBedEstimate: "$450–$850",
-    bestFor: "Small Loads & Studio Moves",
+    bestFor: "Small Loads",
     pros: [
       "Lower hourly rate than most Seattle competitors",
       "Good for studio and 1-bedroom moves",
@@ -366,6 +366,95 @@ const COMPANIES = [
         "@type": "AggregateRating",
         ratingValue: "4.4",
         reviewCount: "150",
+      },
+    },
+  },
+  {
+    rank: 9,
+    name: "College HUNKS Hauling Junk & Moving",
+    badge: "Best for Junk Removal + Moving",
+    badgeColor: "bg-red-600 text-white",
+    url: "https://www.collegehunkshaulingjunk.com",
+    phone: "N/A — book online",
+    founded: "2003",
+    googleRating: 4.6,
+    reviewCount: "250+",
+    hourlyRate: "~$130–$175/hr (2-person crew)",
+    threeHourMin: "~$390–$525",
+    twoBedEstimate: "$520–$1,000",
+    bestFor: "Junk Removal + Moving",
+    pros: [
+      "Unique combo of moving AND junk removal in one booking",
+      "National brand with local Seattle franchise presence",
+      "Uniformed, background-checked crews",
+      "Useful for downsizing, estate cleanouts, and decluttering moves",
+    ],
+    cons: [
+      "Franchise model means quality can vary by location and crew",
+      "Not the best choice for a straightforward local move without junk removal",
+      "Pricing can be less transparent than hourly-only competitors",
+    ],
+    description: `College HUNKS is a national franchise that combines moving services with junk hauling — making them uniquely useful if you're downsizing, clearing out an estate, or need to dispose of furniture and appliances before or during your move. Their Seattle-area franchise has solid reviews and uniformed, background-checked crews. For a standard local move without junk removal needs, they are not the most cost-efficient option. But if you're combining a move with a cleanout, the ability to handle both in one booking is a genuine convenience that saves you from coordinating two separate vendors.`,
+    internalLinks: [],
+    schema: {
+      "@type": "LocalBusiness",
+      name: "College HUNKS Hauling Junk & Moving",
+      url: "https://www.collegehunkshaulingjunk.com",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Seattle",
+        addressRegion: "WA",
+        addressCountry: "US",
+      },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.6",
+        reviewCount: "250",
+      },
+    },
+  },
+  {
+    rank: 10,
+    name: "Bellhops Moving",
+    badge: "Best App-Based Experience",
+    badgeColor: "bg-indigo-600 text-white",
+    url: "https://www.bellhops.com",
+    phone: "N/A — app/online only",
+    founded: "2011",
+    googleRating: 4.5,
+    reviewCount: "180+",
+    hourlyRate: "~$125–$165/hr (2-person crew)",
+    threeHourMin: "~$375–$495",
+    twoBedEstimate: "$500–$950",
+    bestFor: "App-Based Booking",
+    pros: [
+      "Slick app-based booking with upfront pricing",
+      "Real-time crew tracking on move day",
+      "Nationwide availability — good for interstate moves",
+      "Transparent pricing with no surprise charges",
+    ],
+    cons: [
+      "Gig-economy crew model — workers are independent contractors, not W-2 employees",
+      "Crew consistency varies more than with employee-based companies",
+      "Customer service is app/chat-based — limited phone support",
+      "Less local knowledge than Seattle-native companies",
+    ],
+    description: `Bellhops is a tech-forward moving platform that offers upfront pricing, real-time crew tracking, and a smooth app-based booking experience. They operate nationwide and serve the Seattle market with competitive rates. The key tradeoff is their crew model: Bellhops uses independent contractors rather than W-2 employees, which means crew quality and experience can vary more than with a company like On The Go Moving that trains and employs its own crews. For tech-savvy renters who prioritize booking convenience and price transparency, Bellhops is worth considering. For moves involving high-value items or complex logistics, an employee-based local company is generally the safer choice.`,
+    internalLinks: [],
+    schema: {
+      "@type": "LocalBusiness",
+      name: "Bellhops Moving",
+      url: "https://www.bellhops.com",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Seattle",
+        addressRegion: "WA",
+        addressCountry: "US",
+      },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.5",
+        reviewCount: "180",
       },
     },
   },
@@ -520,7 +609,7 @@ export default function BestMovingCompaniesSeattle() {
                     <td className="px-4 py-3">{c.hourlyRate}</td>
                     <td className="px-4 py-3">{c.twoBedEstimate}</td>
                     <td className="px-4 py-3">
-                      <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${c.badgeColor}`}>
+                      <span className={`text-xs font-semibold px-2 py-1 rounded-full whitespace-nowrap inline-block ${c.badgeColor}`}>
                         {c.bestFor}
                       </span>
                     </td>
@@ -580,33 +669,70 @@ export default function BestMovingCompaniesSeattle() {
             <div
               key={company.name}
               id={`company-${company.rank}`}
-              className={`mb-8 rounded-xl border ${company.rank === 1 ? "border-[#75aa11] shadow-md" : "border-gray-200"} overflow-hidden`}
+              className={`mb-8 rounded-xl overflow-hidden shadow-sm ${
+                company.rank === 1
+                  ? "border-2 border-[#75aa11] shadow-[#75aa11]/20 shadow-lg"
+                  : "border border-gray-200"
+              }`}
             >
+              {/* Rank accent bar */}
+              <div className={`h-1.5 w-full ${company.rank === 1 ? "bg-[#75aa11]" : "bg-gray-200"}`} />
+
               {/* Company header */}
-              <div className={`px-6 py-4 flex flex-col sm:flex-row sm:items-center gap-3 ${company.rank === 1 ? "bg-[#1e3a0f]" : "bg-gray-50"}`}>
-                <div className="flex-1">
-                  <div className="flex items-center gap-2 flex-wrap">
-                    <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${company.rank === 1 ? "bg-[#75aa11] text-white" : "bg-gray-200 text-gray-700"}`}>
-                      #{company.rank}
-                    </span>
-                    <h3 className={`text-xl font-bold ${company.rank === 1 ? "text-white" : "text-[#1e3a0f]"}`} style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
+              <div className={`px-6 py-5 flex flex-col sm:flex-row sm:items-start gap-4 ${
+                company.rank === 1 ? "bg-[#1e3a0f]" : "bg-white"
+              }`}>
+                {/* Rank circle */}
+                <div className={`shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-black text-lg ${
+                  company.rank === 1 ? "bg-[#75aa11] text-white" : "bg-gray-100 text-gray-500"
+                }`}>
+                  #{company.rank}
+                </div>
+
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-start gap-2 flex-wrap">
+                    <h3 className={`text-xl font-bold leading-tight ${
+                      company.rank === 1 ? "text-white" : "text-[#1e3a0f]"
+                    }`} style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
                       {company.name}
                     </h3>
-                    <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${company.badgeColor}`}>
+                    <span className={`text-xs font-semibold px-2.5 py-1 rounded-full whitespace-nowrap mt-0.5 ${company.badgeColor}`}>
                       {company.badge}
                     </span>
                   </div>
-                  <div className={`flex items-center gap-3 mt-1 text-sm ${company.rank === 1 ? "text-gray-300" : "text-gray-500"}`}>
-                    <span className="flex items-center gap-1">
-                      <Star size={13} className="text-yellow-400 fill-yellow-400" />
-                      {company.googleRating} Google · {company.reviewCount} reviews
+                  <div className={`flex items-center gap-1 mt-1.5 ${
+                    company.rank === 1 ? "text-gray-300" : "text-gray-500"
+                  }`}>
+                    {[1,2,3,4,5].map((s) => (
+                      <Star
+                        key={s}
+                        size={13}
+                        className={s <= Math.round(company.googleRating)
+                          ? "text-yellow-400 fill-yellow-400"
+                          : "text-gray-300 fill-gray-300"
+                        }
+                      />
+                    ))}
+                    <span className="text-sm ml-1">
+                      {company.googleRating} · {company.reviewCount} Google reviews
                     </span>
-                    {company.founded !== "N/A" && <span>Est. {company.founded}</span>}
+                    {company.founded !== "N/A" && (
+                      <span className={`ml-3 text-xs ${
+                        company.rank === 1 ? "text-gray-400" : "text-gray-400"
+                      }`}>Est. {company.founded}</span>
+                    )}
                   </div>
                 </div>
-                <div className="text-right">
-                  <p className={`text-xs ${company.rank === 1 ? "text-gray-400" : "text-gray-500"}`}>2BR estimate</p>
-                  <p className={`font-bold text-lg ${company.rank === 1 ? "text-[#75aa11]" : "text-[#1e3a0f]"}`}>{company.twoBedEstimate}</p>
+
+                <div className={`shrink-0 text-right sm:text-right ${
+                  company.rank === 1 ? "" : ""
+                }`}>
+                  <p className={`text-xs uppercase tracking-wide font-semibold ${
+                    company.rank === 1 ? "text-gray-400" : "text-gray-400"
+                  }`}>2BR Estimate</p>
+                  <p className={`font-black text-2xl mt-0.5 ${
+                    company.rank === 1 ? "text-[#75aa11]" : "text-[#1e3a0f]"
+                  }`}>{company.twoBedEstimate}</p>
                 </div>
               </div>
 
@@ -615,23 +741,27 @@ export default function BestMovingCompaniesSeattle() {
                 <p className="text-gray-700 text-sm leading-relaxed mb-5">{company.description}</p>
 
                 <div className="grid sm:grid-cols-2 gap-4 mb-5">
-                  <div>
-                    <p className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Pros</p>
-                    <ul className="space-y-1">
+                  <div className="bg-green-50 rounded-lg p-4 border border-green-100">
+                    <p className="text-xs font-bold text-green-700 uppercase tracking-wide mb-2.5 flex items-center gap-1">
+                      <CheckCircle size={13} className="text-green-600" /> Pros
+                    </p>
+                    <ul className="space-y-1.5">
                       {company.pros.map((pro) => (
                         <li key={pro} className="flex items-start gap-2 text-sm text-gray-700">
-                          <CheckCircle size={14} className="text-[#75aa11] mt-0.5 shrink-0" />
+                          <CheckCircle size={13} className="text-green-500 mt-0.5 shrink-0" />
                           {pro}
                         </li>
                       ))}
                     </ul>
                   </div>
-                  <div>
-                    <p className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Cons</p>
-                    <ul className="space-y-1">
+                  <div className="bg-orange-50 rounded-lg p-4 border border-orange-100">
+                    <p className="text-xs font-bold text-orange-700 uppercase tracking-wide mb-2.5 flex items-center gap-1">
+                      <AlertCircle size={13} className="text-orange-500" /> Cons
+                    </p>
+                    <ul className="space-y-1.5">
                       {company.cons.map((con) => (
                         <li key={con} className="flex items-start gap-2 text-sm text-gray-700">
-                          <AlertCircle size={14} className="text-orange-400 mt-0.5 shrink-0" />
+                          <AlertCircle size={13} className="text-orange-400 mt-0.5 shrink-0" />
                           {con}
                         </li>
                       ))}
