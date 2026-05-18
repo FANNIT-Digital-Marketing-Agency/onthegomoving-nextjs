@@ -686,7 +686,7 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
   const steps = serviceDef.steps(city);
 
   // Tier A deep content lookup
-  // Maps service keys to the 4 canonical Tier A service slugs
+  // Maps service keys to Tier A content slugs
   const TIER_A_SERVICE_MAP: Record<string, string> = {
     residential: "residential",
     apartment: "apartment",
@@ -695,6 +695,12 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
     office: "commercial",
     "corporate-relocation": "commercial",
     packing: "packing",
+    storage: "storage",
+    senior: "senior",
+    furniture: "furniture",
+    appliance: "appliance",
+    unpacking: "unpacking",
+    warehousing: "warehousing",
   };
   const tierAServiceKey = TIER_A_SERVICE_MAP[serviceKey];
   const tierAEntry = tierAServiceKey

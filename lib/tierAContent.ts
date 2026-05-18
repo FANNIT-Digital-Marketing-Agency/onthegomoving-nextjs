@@ -424,6 +424,525 @@ export const TIER_A_CONTENT: Record<string, TierAEntry> = {
     ],
   },
 
+  // ──────────────────────────────────────────────────────────────────────────
+  // STORAGE — all 5 cities
+  // ──────────────────────────────────────────────────────────────────────────
+
+  "seattle-storage": {
+    intro: `Seattle's storage market is shaped by its high cost of living and the frequency with which residents downsize, stage homes for sale, or need temporary storage between leases. Our storage vaults are held at our Redmond facility — 12 miles from central Seattle — and we handle the entire process: we pack your items, load them into a vault, transport them to our facility, and return them when you're ready. For Capitol Hill and South Lake Union residents staging apartments for sale, we can clear a unit in a single morning. For Magnolia and Madison Park homeowners downsizing, we offer partial-load vaults so you only pay for the space you use.`,
+    buildingCalloutsHeading: "Seattle Storage Scenarios We Handle Regularly",
+    buildingCallouts: `Our Seattle storage clients come from a wide range of situations: Capitol Hill and First Hill apartment residents staging for sale (we clear and vault in one trip), South Lake Union tech workers on international assignments (long-term vault storage, flexible return scheduling), Magnolia and Madison Park homeowners downsizing (partial-load vaults, inventory provided), Queen Anne homes under renovation (furniture vaulted and returned room-by-room), and Ballard and Fremont craftsman homeowners with antique furniture requiring climate-sensitive storage. All vaults are stored at our Redmond facility in a secure, climate-controlled environment.`,
+    extraFaqs: [
+      {
+        q: "How does vault storage work for a Seattle apartment?",
+        a: "We bring a portable vault to your Seattle apartment, load your items directly into it, seal it, and transport it to our Redmond facility. Your belongings stay in the same vault the entire time — nothing is transferred to a shared warehouse shelf. When you're ready for delivery, we schedule a return window and bring the vault back. Most Seattle apartment vaults are loaded and transported in a single morning.",
+      },
+      {
+        q: "Can you store furniture for a Seattle home renovation?",
+        a: "Yes. Home renovation storage is one of our most common requests from Seattle homeowners in Magnolia, Madison Park, and Queen Anne. We can vault your furniture room by room — clearing the kitchen first while you renovate, then returning it before moving on to the next room. We provide a detailed inventory of every item in storage so you know exactly what's in your vault.",
+      },
+    ],
+    pricingNote: "Seattle storage rates: $95–$145/month per vault depending on size. First month free with any move.",
+  },
+
+  "bellevue-storage": {
+    intro: `Bellevue's storage needs are driven by its active real estate market and the frequency of corporate relocations among its tech-sector workforce. When a Microsoft or Expedia employee accepts an international assignment, they need a trusted partner to vault their belongings and hold them securely until they return. When a Bellevue homeowner lists their Somerset or Newport Hills home, staging often means clearing 30–50% of the furniture. Our storage vaults at our Redmond facility — 5 miles from central Bellevue — are the closest professional vault storage option to Downtown Bellevue, and our crews can mobilize faster than any other storage provider in the area.`,
+    buildingCalloutsHeading: "Bellevue Storage Scenarios We Handle Regularly",
+    buildingCallouts: `Our Bellevue storage clients include: Downtown Bellevue high-rise residents at The Bravern and Cirrus staging for sale (we coordinate elevator access and clear units in one trip), Somerset and Newport Hills homeowners downsizing to smaller homes (partial-load vaults, room-by-room inventory), Microsoft and Expedia employees on international assignments (long-term vault storage, flexible return scheduling), Crossroads and Eastgate apartment residents between leases (short-term storage, 1–3 months), and West Bellevue and Medina estate homeowners with high-value art and antiques requiring climate-controlled vaults.`,
+    extraFaqs: [
+      {
+        q: "How quickly can you pick up and vault furniture from a Bellevue home?",
+        a: "For most Bellevue homes, we can schedule a vault pickup within 3–5 business days. For urgent requests — such as a seller who just accepted an offer and needs to stage quickly — we often have next-day availability. Our Redmond warehouse is 5 miles from central Bellevue, so mobilization is fast. Call us with your timeline and we'll confirm availability.",
+      },
+      {
+        q: "Do you provide an inventory of what's in my Bellevue storage vault?",
+        a: "Yes. We provide a written inventory of every item loaded into your vault, including photos of high-value items. This inventory is your reference for insurance purposes and for scheduling returns. When you're ready to retrieve specific items, you can request individual pieces from your vault — we'll retrieve them and deliver them to your Bellevue address.",
+      },
+    ],
+    pricingNote: "Bellevue storage rates: $90–$140/month per vault. First month free with any move.",
+  },
+
+  "redmond-storage": {
+    intro: `Redmond is home to our storage facility, which means Redmond customers get the fastest service and the lowest transport costs of any city we serve. Our vaults are stored on Redmond Way — the same address as our main warehouse — and our crews can load, transport, and vault a Redmond home's contents in a single morning. For Overlake tech workers between leases, for Education Hill homeowners staging for sale, and for Bear Creek families downsizing, our Redmond storage operation is the most convenient option on the Eastside. No long hauls, no third-party facilities, no uncertainty about where your belongings are stored.`,
+    buildingCalloutsHeading: "Redmond Storage Scenarios We Handle Regularly",
+    buildingCallouts: `Our Redmond storage clients include: Overlake apartment residents near Microsoft's campus staging for sale or between leases (we coordinate building access and vault in one trip), Education Hill homeowners downsizing to smaller homes (partial-load vaults, room-by-room inventory), Bear Creek and Grass Lawn families renovating (furniture vaulted room-by-room, returned on schedule), Redmond Ridge HOA communities with strict move-out requirements (we document condition before vaulting), and Downtown Redmond mixed-use residents needing short-term storage between leases. All vaults are stored on-site at our Redmond Way facility.`,
+    extraFaqs: [
+      {
+        q: "Where is your Redmond storage facility located?",
+        a: "Our storage facility is on Redmond Way in Redmond, WA 98052 — the same location as our main warehouse. Vaults are stored in a secure, climate-controlled environment on-site. Because we own and operate the facility directly, there are no third-party handling fees and no uncertainty about the condition of your belongings. Redmond customers can visit the facility by appointment.",
+      },
+      {
+        q: "Can I access my stored items in Redmond without scheduling a full delivery?",
+        a: "Yes. Redmond customers can schedule a facility visit to access their vault by appointment. We'll have your vault staged and accessible within 24 hours of your request. If you need specific items returned to your Redmond address, we can deliver individual pieces from your vault — you don't have to retrieve everything at once.",
+      },
+    ],
+    pricingNote: "Redmond storage rates: $85–$135/month per vault. First month free with any move. No travel surcharge — facility is on-site.",
+  },
+
+  "kirkland-storage": {
+    intro: `Kirkland's waterfront real estate market creates a consistent demand for staging storage — sellers clearing Downtown Kirkland homes and Moss Bay waterfront properties to maximize sale price. Our storage vaults at our Redmond facility are 5 miles from central Kirkland, and our crews can load and transport a Kirkland home's contents in a single trip. For Totem Lake apartment residents between leases and for Juanita and Lakeview homeowners downsizing, our vault storage offers a simpler alternative to self-storage: we do all the heavy lifting, and your belongings stay in a sealed vault rather than being handled multiple times.`,
+    buildingCalloutsHeading: "Kirkland Storage Scenarios We Handle Regularly",
+    buildingCallouts: `Our Kirkland storage clients include: Downtown Kirkland and Moss Bay homeowners staging for sale (we coordinate parking logistics and clear homes in one trip), Totem Lake apartment residents near Google's campus between leases (short-term vault storage, 1–3 months), Juanita and Lakeview hillside homeowners downsizing (partial-load vaults, inventory provided), Parkplace complex residents staging apartments (elevator coordination, single-morning vault loading), and Bridle Trails and Kingsgate homeowners with large furniture collections requiring climate-controlled storage.`,
+    extraFaqs: [
+      {
+        q: "How does vault storage work for a Kirkland waterfront home staging?",
+        a: "For Kirkland home staging, we typically work with your real estate agent to identify which furniture pieces should be removed. We bring vaults to your home, load the designated items, and transport them to our Redmond facility. The process usually takes one morning for a 3-bedroom home. When your home sells and you're ready for delivery, we schedule a return window and bring everything back — or deliver directly to your new address.",
+      },
+      {
+        q: "Can you store items from a Kirkland apartment while I'm between leases?",
+        a: "Yes. Short-term vault storage between leases is one of our most common requests from Kirkland apartment residents. We can vault your belongings from your old apartment and hold them for 30–90 days while you're in temporary housing, then deliver to your new address when you're ready. We'll coordinate elevator access at both buildings and handle all the logistics.",
+      },
+    ],
+    pricingNote: "Kirkland storage rates: $90–$140/month per vault. First month free with any move.",
+  },
+
+  "sammamish-storage": {
+    intro: `Sammamish's large planned-community homes create a specific storage dynamic: when families downsize or stage for sale, the volume of furniture is substantial. A typical 4-bedroom Klahanie or Trossachs home has enough furniture to fill two or three vaults. Our storage operation handles this scale efficiently — we bring multiple vaults, load them in sequence, and transport everything to our Redmond facility in a single trip. For Sammamish families on extended travel or military deployment, long-term vault storage provides peace of mind that their belongings are secure and climate-controlled while they're away.`,
+    buildingCalloutsHeading: "Sammamish Storage Scenarios We Handle Regularly",
+    buildingCallouts: `Our Sammamish storage clients include: Klahanie and Trossachs homeowners staging for sale (large homes, multiple vaults, HOA move-out compliance), Pine Lake and Beaver Lake families downsizing (wooded-lot homes, large garages, outdoor equipment vaulted separately), Sahalee estate homeowners with high-value art and antiques (climate-controlled vaults, custom crating available), Sammamish families on military deployment or extended international assignments (long-term storage, flexible return scheduling), and Aldarra and Inglewood Hill homeowners renovating (room-by-room vaulting and scheduled returns).`,
+    extraFaqs: [
+      {
+        q: "How many vaults does a typical Sammamish home require?",
+        a: "A typical 3-bedroom Sammamish home fills 1–2 vaults. A 4-bedroom home with a large garage typically fills 2–3 vaults. We assess your home's contents during the quote process and give you an accurate vault count before move day. You only pay for the vaults you use — we don't charge for unused space within a vault.",
+      },
+      {
+        q: "Do you offer long-term storage for Sammamish families on military deployment?",
+        a: "Yes. We offer long-term vault storage with no minimum commitment beyond the first month. Military families receive priority scheduling for both vault pickup and delivery. We can coordinate with a family member or designated contact for access to the vault if needed during the deployment period. Our Redmond facility is secure, climate-controlled, and monitored 24/7.",
+      },
+    ],
+    pricingNote: "Sammamish storage rates: $90–$145/month per vault. First month free with any move. Multi-vault discounts available.",
+  },
+
+  // ──────────────────────────────────────────────────────────────────────────
+  // SENIOR MOVING — all 5 cities
+  // ──────────────────────────────────────────────────────────────────────────
+
+  "seattle-senior": {
+    intro: `Senior moves in Seattle require a different pace and a different kind of crew. Many of Seattle's senior residents are leaving homes they've lived in for 20–40 years — in Magnolia, Madison Park, Madrona, or Leschi — and the emotional weight of the move is as real as the physical one. Our senior moving crews are selected for patience and communication skills, not just physical ability. We work at a pace that's comfortable for the client, we label boxes clearly so unpacking is intuitive, and we take the time to place furniture exactly where it's wanted in the new home. For moves to senior living communities in Seattle — including Aegis Living Queen Anne, Sunrise of Bellevue, and Merrill Gardens at First Hill — we know the building policies and elevator requirements.`,
+    buildingCalloutsHeading: "Seattle Senior Living Communities We Move Regularly",
+    buildingCallouts: `We have direct experience moving residents into and out of the following Seattle-area senior living communities: Aegis Living Queen Anne (elevator reservation required, 4-hour window), Merrill Gardens at First Hill (COI required, weekday moves only), Emerald City Senior Living in Northgate (ground-floor units, no elevator required), Horizon House in First Hill (strict move-in window, building coordinator contact required), and Sunrise Senior Living locations in the greater Seattle area (standard COI and elevator coordination). For any senior community not on this list, we call the community directly before move day.`,
+    extraFaqs: [
+      {
+        q: "Do you help seniors downsize before a Seattle move?",
+        a: "Yes. Many of our Seattle senior clients need help deciding what to take, what to donate, and what to discard before the move. We work at a pace that's comfortable and can coordinate with estate sale companies, donation pickups (Goodwill, Habitat for Humanity ReStore), and junk removal services. We don't rush the process — a senior move done right takes more time than a standard residential move, and we plan for that.",
+      },
+      {
+        q: "Can you move a senior from a Seattle home into an assisted living community?",
+        a: "Yes. We regularly move seniors from Seattle homes into assisted living and memory care communities throughout the region. We coordinate directly with the community's move-in coordinator to confirm elevator access, move-in windows, and any COI requirements. We also work with families who are managing the move on behalf of a parent — we can take direction from a family member and keep them updated throughout the day.",
+      },
+    ],
+    pricingNote: "Senior move rates reflect smaller crew sizes and longer time allowances. Flat-rate quotes available.",
+  },
+
+  "bellevue-senior": {
+    intro: `Bellevue has one of the highest concentrations of senior living communities on the Eastside, and many of our most meaningful moves involve helping long-time Bellevue residents transition from Somerset or Newport Hills homes they've owned for decades into communities like Sunrise of Bellevue, Aegis Living Bellevue, or The Chateau at Bothell Landing. Our senior moving crews understand that the physical move is only part of the job — the other part is making the transition feel manageable. We work at a pace set by the client, we handle furniture placement with care, and we make sure every box is labeled so unpacking is as easy as possible.`,
+    buildingCalloutsHeading: "Bellevue Senior Living Communities We Move Regularly",
+    buildingCallouts: `We have direct experience with the following Bellevue-area senior living communities: Sunrise of Bellevue (elevator reservation, COI required, weekday moves preferred), Aegis Living Bellevue (move-in coordinator contact required, 4-hour window), Bellevue Club Residences (strict move-in window, building security escort), The Watermark at Bellevue (ground-floor and elevator units, standard COI), and Emerald Heights in Redmond (close to Bellevue, elevator coordination, COI required). For any community not on this list, we contact the move-in coordinator directly before scheduling.`,
+    extraFaqs: [
+      {
+        q: "How do you handle a Bellevue senior move when the family is coordinating remotely?",
+        a: "Remote family coordination is common for Bellevue senior moves. We work directly with a designated family contact — by phone, email, or text — and provide updates throughout the move day. We can take direction from the family contact for furniture placement and box labeling, and we'll call when we arrive at the destination so the family knows the move is on track. We've coordinated dozens of Bellevue senior moves with out-of-state family members.",
+      },
+      {
+        q: "Do you provide packing services for Bellevue senior moves?",
+        a: "Yes. Full packing is strongly recommended for senior moves in Bellevue. Our packers label every box clearly by room and contents, which makes unpacking in the new community much easier. For seniors moving from large Somerset or Newport Hills homes, we offer a 2-day packing schedule — packing the main living areas on day one and completing the remaining rooms on day two — so the process isn't rushed.",
+      },
+    ],
+    pricingNote: "Bellevue senior move rates include extra time allowance. Flat-rate quotes available.",
+  },
+
+  "redmond-senior": {
+    intro: `Redmond's senior population is served by a growing number of senior living communities, and our proximity — our warehouse is on Redmond Way — means we can respond faster to Redmond senior moves than any other company in the area. Many of our Redmond senior clients are leaving Education Hill or Bear Creek homes they've owned for 20–30 years, and the move to Emerald Heights, Sunrise of Redmond, or a family member's home requires the kind of careful, unhurried service that our senior crews specialize in. We work at the client's pace, we handle every item with care, and we make sure the new space feels like home before we leave.`,
+    buildingCalloutsHeading: "Redmond Senior Living Communities We Move Regularly",
+    buildingCallouts: `We have direct experience with the following Redmond-area senior living communities: Emerald Heights in Redmond (elevator coordination, COI required, move-in coordinator contact), Sunrise of Redmond (standard COI, elevator reservation, weekday moves preferred), Vineyard Park of Redmond (ground-floor and elevator units, standard move-in process), Cogir of Redmond (move-in window coordination, COI required), and Aljoya Thornton Place in nearby Northgate (for Redmond seniors moving closer to family in Seattle). For any community not listed, we call the move-in coordinator before scheduling.`,
+    extraFaqs: [
+      {
+        q: "How far in advance should I book a senior move from a Redmond home?",
+        a: "We recommend booking senior moves 3–4 weeks in advance to allow time for packing coordination, community move-in scheduling, and any downsizing decisions. For Redmond clients, we often have more flexibility than other areas because our warehouse is local — but senior moves benefit from extra planning time regardless. Call us early and we'll walk you through the full process.",
+      },
+      {
+        q: "Can you move a piano or antique furniture from a Redmond senior's home?",
+        a: "Yes. Many Redmond senior clients have pianos, antique furniture, and heirloom pieces that require special handling. We have specialized equipment for upright and grand pianos, and our crews are trained on antique furniture wrapping and carrying techniques. For items that won't fit in the new community, we can vault them at our Redmond facility or coordinate donation or estate sale pickup.",
+      },
+    ],
+    pricingNote: "Redmond senior move rates include extra time allowance. No travel surcharge — our warehouse is local.",
+  },
+
+  "kirkland-senior": {
+    intro: `Kirkland's senior community is well-served by several high-quality senior living facilities, and many of our most thoughtful moves involve helping long-time Kirkland residents leave waterfront homes or hillside properties in Juanita and Lakeview to transition into communities like Aegis Living Kirkland or Sunrise of Kirkland. Our senior moving crews are trained to work at a pace that's comfortable for the client, to communicate clearly about what's happening at each stage of the move, and to handle every item — from everyday furniture to irreplaceable family heirlooms — with the same level of care.`,
+    buildingCalloutsHeading: "Kirkland Senior Living Communities We Move Regularly",
+    buildingCallouts: `We have direct experience with the following Kirkland-area senior living communities: Aegis Living Kirkland (elevator reservation, COI required, move-in coordinator contact), Sunrise of Kirkland (standard COI, elevator coordination, weekday moves preferred), Emerald City Senior Living locations in the Kirkland area (ground-floor and elevator units), Lakeview Senior Living in Kirkland (move-in window coordination, COI required), and The Gardens at Town Square in Bellevue (close to Kirkland, standard COI and elevator coordination). For any community not listed, we contact the move-in coordinator directly.`,
+    extraFaqs: [
+      {
+        q: "Do you help with furniture placement at the Kirkland senior living community?",
+        a: "Yes. Furniture placement is one of the most important parts of a senior move. Our crews take direction from the client — or from a family member if the client prefers — and place every piece of furniture exactly where it's wanted before we leave. We also reassemble any furniture that was disassembled for the move. We don't consider the job done until the new space feels settled and comfortable.",
+      },
+      {
+        q: "Can you coordinate a Kirkland senior move when the senior has limited mobility?",
+        a: "Yes. We regularly move seniors with limited mobility, including those who use walkers, wheelchairs, or require assistance. Our crews work around the client's needs — we don't ask seniors to move out of the way or rush through areas they're occupying. For clients with significant mobility limitations, we recommend scheduling the move on a weekday when building staff are available to assist with any needs that fall outside our scope.",
+      },
+    ],
+    pricingNote: "Kirkland senior move rates include extra time allowance. Flat-rate quotes available.",
+  },
+
+  "sammamish-senior": {
+    intro: `Sammamish's senior residents are often leaving large planned-community homes in Klahanie, Trossachs, or Pine Lake — homes they've owned for 15–25 years and filled with a lifetime of belongings. The move to a senior living community or a smaller home is a significant transition, and our senior moving crews approach it with the patience and care it deserves. We work at the client's pace, we handle downsizing decisions with sensitivity, and we make sure every item that's coming to the new home arrives safely and is placed exactly where it's wanted.`,
+    buildingCalloutsHeading: "Sammamish Senior Living Communities We Move Regularly",
+    buildingCallouts: `We have direct experience with the following senior living communities serving Sammamish residents: Sunrise of Issaquah (close to Sammamish, elevator coordination, COI required), Aegis Living Issaquah (standard COI, move-in window coordination), Emerald Heights in Redmond (7 miles from Sammamish, elevator coordination, COI required), Sunrise of Sammamish (newer community, standard move-in process), and Cogir of Redmond (for Sammamish seniors moving closer to family in Redmond). For any community not listed, we contact the move-in coordinator before scheduling.`,
+    extraFaqs: [
+      {
+        q: "How do you handle the large volume of belongings in a Sammamish senior move?",
+        a: "Large Sammamish homes often have 20–30 years of accumulated belongings, and sorting through everything before a senior move is one of the biggest challenges. We work with families to identify what's coming to the new home, what's going to family members, what's being donated, and what needs to be discarded. We can coordinate donation pickups and junk removal on the same day as the move to minimize the number of trips and decisions required.",
+      },
+      {
+        q: "Can you move a senior from Sammamish to a community in another city?",
+        a: "Yes. We regularly move Sammamish seniors to communities throughout the greater Seattle area — Bellevue, Redmond, Kirkland, Issaquah, and beyond. Distance within the region doesn't affect our service level. We'll coordinate with the destination community's move-in coordinator regardless of location and handle all the logistics from start to finish.",
+      },
+    ],
+    pricingNote: "Sammamish senior move rates include extra time allowance for large homes. Flat-rate quotes available.",
+  },
+
+  // ──────────────────────────────────────────────────────────────────────────
+  // FURNITURE MOVING — all 5 cities
+  // ──────────────────────────────────────────────────────────────────────────
+
+  "seattle-furniture": {
+    intro: `Seattle's furniture moving market is shaped by the city's dense apartment stock and the frequency with which residents rearrange, upgrade, or move single pieces between homes. Capitol Hill and South Lake Union apartments often have narrow hallways and tight stairwells that make large sectionals and bed frames a real challenge. Magnolia and Madison Park homes frequently have oversized furniture — large dining tables, California king beds, and sectional sofas — that require disassembly before they can be moved. Our furniture-only crews are equipped with the same tools as our full-service crews: furniture dollies, stair rollers, moving blankets, and disassembly tools. We move single pieces or entire rooms.`,
+    buildingCalloutsHeading: "Seattle Furniture Moving Scenarios We Handle Regularly",
+    buildingCallouts: `We handle furniture moves throughout Seattle with specific experience in: Capitol Hill and First Hill apartments (narrow hallways, tight stairwells, furniture disassembly required for large pieces), South Lake Union high-rises (elevator coordination, strict move-in windows for building access), Magnolia and Madison Park homes (oversized dining tables, large sectionals, California king beds), Queen Anne hillside homes (steep stairways, large furniture requiring 3-person carries), and Ballard and Fremont craftsman homes (narrow doorways, vintage furniture requiring extra padding). We move single pieces, room sets, or full homes.`,
+    extraFaqs: [
+      {
+        q: "Can you move a single piece of furniture within Seattle — not a full move?",
+        a: "Yes. Single-item furniture moves are one of our most common requests in Seattle. Whether it's a sectional sofa from Capitol Hill to Ballard, a dining table from South Lake Union to Queen Anne, or a dresser from a storage unit to a new apartment, we handle it. We have a 2-hour minimum for furniture-only moves. Call us with the item, the pickup address, and the delivery address and we'll give you a flat-rate quote.",
+      },
+      {
+        q: "Do you disassemble and reassemble furniture for Seattle apartment moves?",
+        a: "Yes. Furniture disassembly and reassembly is included in our furniture moving service. For Capitol Hill and South Lake Union apartments with narrow hallways, we often need to disassemble bed frames, sectionals, and large bookshelves to get them through doorways. We bring all necessary tools and reassemble everything at the destination. There's no additional charge for standard disassembly and reassembly.",
+      },
+    ],
+  },
+
+  "bellevue-furniture": {
+    intro: `Bellevue's furniture moving market reflects the city's affluent demographics — large sectionals, California king beds, solid-wood dining sets, and high-end home office furniture are the norm in Somerset, Newport Hills, and West Bellevue. Moving these pieces requires more than a pickup truck and a friend: it requires proper moving blankets, furniture dollies, stair rollers, and crews trained in disassembly and reassembly. Our Bellevue furniture moving crews handle everything from single-piece deliveries to full-room rearrangements, and our Redmond warehouse is 5 miles away — which means fast response times and no travel surcharges for Bellevue furniture moves.`,
+    buildingCalloutsHeading: "Bellevue Furniture Moving Scenarios We Handle Regularly",
+    buildingCallouts: `We handle furniture moves throughout Bellevue with specific experience in: Downtown Bellevue high-rises at The Bravern and Cirrus (elevator coordination, strict move-in windows, COI required), Somerset and Newport Hills homes (large furniture, steep driveways, long carry distances), Crossroads and Eastgate apartments (limited truck access, furniture disassembly for narrow hallways), West Bellevue and Medina estates (oversized furniture, long carries, gated access), and Factoria and Wilburton townhomes (narrow stairways, furniture disassembly required for upper floors).`,
+    extraFaqs: [
+      {
+        q: "Can you move furniture between two Bellevue addresses — not a full household move?",
+        a: "Yes. We regularly move furniture between Bellevue addresses — from a home to a storage unit, from one room to another in the same house, or from a furniture store delivery to a specific room. We have a 2-hour minimum for furniture-only moves. Call us with the details and we'll provide a flat-rate quote. Our Redmond warehouse is 5 miles from central Bellevue, so we can often schedule furniture moves within 2–3 business days.",
+      },
+      {
+        q: "Do you move high-end furniture in Bellevue without damaging it?",
+        a: "Yes. High-end furniture protection is a priority for our Bellevue crews. We use thick moving blankets on every piece, furniture dollies to avoid dragging, and corner protectors on doorways and walls. For particularly valuable pieces — antique furniture, custom-built pieces, or designer sofas — we use additional padding and carry by hand rather than using dollies. If you have specific concerns about a piece, mention it when you request a quote and we'll plan accordingly.",
+      },
+    ],
+  },
+
+  "redmond-furniture": {
+    intro: `Redmond's furniture moving market is driven by its active real estate market and the frequency with which Microsoft and tech-sector employees upgrade their home offices and living spaces. Education Hill and Bear Creek homes often have large, heavy furniture — solid-wood desks, California king beds, and large sectionals — that require professional handling. Our Redmond furniture crews are based at our Redmond Way warehouse, which means zero travel time and no fuel surcharge for Redmond furniture moves. We move single pieces, room sets, or full homes, and we handle disassembly and reassembly as part of the service.`,
+    buildingCalloutsHeading: "Redmond Furniture Moving Scenarios We Handle Regularly",
+    buildingCallouts: `We handle furniture moves throughout Redmond with specific experience in: Overlake apartments near Microsoft's campus (elevator coordination, furniture disassembly for narrow hallways), Education Hill homes (large furniture, steep driveways, long carry distances), Bear Creek and Grass Lawn homes (wooded-lot properties, long carries, oversized furniture), Downtown Redmond mixed-use buildings (elevator coordination, standard COI), and Redmond Ridge HOA communities (move-in window coordination, COI required for building access). We move single pieces or full rooms.`,
+    extraFaqs: [
+      {
+        q: "Can you move a home office setup in Redmond — desk, monitors, and all?",
+        a: "Yes. Home office furniture moves are one of our most common requests in Redmond, given the high concentration of remote tech workers. We move desks, monitor stands, ergonomic chairs, and filing cabinets. We do not disconnect or reconnect electronics, but we work alongside you and can move equipment to a staging area while you handle the cables. For large standing desks, we disassemble the frame for safe transport and reassemble at the destination.",
+      },
+      {
+        q: "How quickly can you schedule a furniture move in Redmond?",
+        a: "Because our warehouse is in Redmond, we often have same-week availability for furniture-only moves. For urgent requests, we sometimes have next-day availability. Call us with your timeline and we'll confirm. Furniture moves are typically scheduled for 2–4 hours depending on the number of pieces and the access at both locations.",
+      },
+    ],
+  },
+
+  "kirkland-furniture": {
+    intro: `Kirkland's waterfront location and its mix of historic downtown homes and newer developments in Totem Lake and Kingsgate create a diverse furniture moving market. Moss Bay and Highlands waterfront properties often have large, heavy furniture that's been in place for years — solid-wood dining sets, oversized sofas, and antique pieces that require careful handling. Totem Lake apartments near Google's campus have the typical high-rise challenges: elevator coordination, narrow hallways, and strict move-in windows. Our Kirkland furniture crews handle all of it, and our Redmond warehouse is 5 miles east — which means fast response and no travel surcharge.`,
+    buildingCalloutsHeading: "Kirkland Furniture Moving Scenarios We Handle Regularly",
+    buildingCallouts: `We handle furniture moves throughout Kirkland with specific experience in: Downtown Kirkland waterfront homes (large furniture, limited truck parking, permit coordination), Moss Bay and Highlands homes (steep hillside lots, large furniture, long carry distances), Totem Lake apartments near Google's campus (elevator coordination, COI required, strict move-in windows), Parkplace complex in downtown (elevator coordination, standard move-in process), and Juanita and Lakeview hillside homes (steep stairways, furniture disassembly for large pieces, 3-person carries).`,
+    extraFaqs: [
+      {
+        q: "Can you move antique furniture from a Kirkland waterfront home?",
+        a: "Yes. Antique furniture moves are a specialty for our Kirkland crews. We use thick moving blankets, hand-carry techniques, and custom padding for fragile antique pieces. For particularly valuable items, we recommend a pre-move walkthrough so we can assess the best approach for each piece. We've moved antique furniture from Kirkland waterfront homes and Highlands estates many times — call us to discuss your specific pieces.",
+      },
+      {
+        q: "Do you move furniture up and down steep stairs in Kirkland hillside homes?",
+        a: "Yes. Steep stairways are one of the most common challenges in Kirkland's Juanita and Lakeview neighborhoods. We use stair rollers for large pieces, carry in teams of 2–3 for heavy items, and disassemble furniture when necessary to navigate tight turns. There's no additional charge for stair carries — it's part of our standard service for Kirkland hillside homes.",
+      },
+    ],
+  },
+
+  "sammamish-furniture": {
+    intro: `Sammamish's large planned-community homes are filled with large furniture — 4-bedroom homes in Klahanie and Trossachs typically have California king beds, large sectionals, solid-wood dining sets, and fully equipped home offices. Moving these pieces requires professional equipment and experienced crews. Our Sammamish furniture moving service handles single pieces, room sets, or full homes, and we bring all necessary equipment: furniture dollies, stair rollers, moving blankets, and disassembly tools. For HOA communities like Klahanie and Trossachs, we coordinate move-in windows and provide COIs as needed.`,
+    buildingCalloutsHeading: "Sammamish Furniture Moving Scenarios We Handle Regularly",
+    buildingCallouts: `We handle furniture moves throughout Sammamish with specific experience in: Klahanie and Trossachs homes (large furniture, HOA move-in coordination, COI required), Pine Lake and Beaver Lake properties (wooded-lot homes, long carry distances, large furniture), Sahalee gated community (advance access coordination, high-value furniture, custom padding), Sammamish Town Center mixed-use buildings (elevator coordination, standard move-in process), and Aldarra and Inglewood Hill homes (large single-family homes, oversized furniture, long carries).`,
+    extraFaqs: [
+      {
+        q: "Can you move a large sectional sofa in a Sammamish home?",
+        a: "Yes. Large sectionals are one of the most common furniture moving challenges in Sammamish. We assess the sofa dimensions and doorway/hallway measurements before the move to determine whether disassembly is needed. Most large sectionals can be moved in sections without full disassembly. For sectionals that are too large to fit through doorways even in sections, we can remove door frames temporarily to create the necessary clearance — and reinstall them afterward.",
+      },
+      {
+        q: "Do you move furniture within the same Sammamish home — room rearrangements?",
+        a: "Yes. In-home furniture rearrangements are a common request in Sammamish, especially when homeowners are staging for sale or redecorating. We have a 2-hour minimum for in-home moves. Our crews can rearrange an entire floor of a large Sammamish home in 2–3 hours. Call us with the number of pieces and the rooms involved and we'll provide a flat-rate quote.",
+      },
+    ],
+  },
+
+  // ──────────────────────────────────────────────────────────────────────────
+  // APPLIANCE MOVING — all 5 cities
+  // ──────────────────────────────────────────────────────────────────────────
+
+  "seattle-appliance": {
+    intro: `Appliance moves in Seattle present challenges that go beyond weight and size. Capitol Hill and First Hill apartments often have narrow hallways and tight elevator dimensions that make refrigerator and washer/dryer moves a precise operation. Queen Anne hillside homes have steep stairways where appliance dollies require experienced operators. South Lake Union high-rises have strict elevator weight limits and move-in windows that constrain scheduling. Our appliance moving crews use professional appliance dollies, stair walkers, and furniture straps rated for 1,000+ lbs, and they're trained on the specific challenges of Seattle's building stock. We do not disconnect or reconnect appliances — that requires a licensed plumber or electrician — but we handle all the heavy lifting.`,
+    buildingCalloutsHeading: "Seattle Appliance Moving Scenarios We Handle Regularly",
+    buildingCallouts: `We handle appliance moves throughout Seattle with specific experience in: Capitol Hill and First Hill apartments (narrow hallways, elevator dimensions, refrigerator and washer/dryer moves), South Lake Union high-rises (elevator weight limits, strict move-in windows, appliance dollies required), Queen Anne hillside homes (steep stairways, appliance stair walkers, 2-person minimum for heavy appliances), Magnolia and Madison Park homes (large appliances, long carries, oversized refrigerators), and Ballard and Fremont craftsman homes (narrow doorways, appliance disassembly for door removal when needed).`,
+    extraFaqs: [
+      {
+        q: "Do you disconnect and reconnect appliances for Seattle moves?",
+        a: "We do not disconnect or reconnect appliances — gas lines, water lines, and electrical connections require licensed plumbers and electricians. However, we coordinate with your utility contractors and handle all the moving once appliances are disconnected. For refrigerators, we defrost and drain them before moving. For washers, we install shipping bolts if available. We move the appliance from point A to point B — your contractors handle the connections.",
+      },
+      {
+        q: "Can you move a refrigerator up stairs in a Seattle home?",
+        a: "Yes. Refrigerator stair moves are one of the most common appliance challenges in Seattle's hillside neighborhoods — Queen Anne, Capitol Hill, and Beacon Hill homes frequently have appliances on upper floors. We use professional stair walkers (motorized stair-climbing dollies) for refrigerators and other large appliances. For particularly steep or narrow stairways, we assess the route before committing and will tell you honestly if the appliance cannot be safely moved without modification to the space.",
+      },
+    ],
+  },
+
+  "bellevue-appliance": {
+    intro: `Bellevue's appliance moving market is shaped by its high rate of kitchen and laundry room upgrades among homeowners in Somerset, Newport Hills, and West Bellevue. When a homeowner replaces a built-in refrigerator or a stacked washer/dryer unit, the old appliance needs to go out and the new one needs to come in — often through narrow kitchen corridors or up flights of stairs. Our Bellevue appliance crews use professional appliance dollies and stair walkers, and they're trained on the specific access challenges of Bellevue's housing stock. We also handle appliance moves for Downtown Bellevue high-rises, coordinating elevator access and working within building move-in windows.`,
+    buildingCalloutsHeading: "Bellevue Appliance Moving Scenarios We Handle Regularly",
+    buildingCallouts: `We handle appliance moves throughout Bellevue with specific experience in: Downtown Bellevue high-rises at The Bravern and Cirrus (elevator coordination, appliance dollies, strict move-in windows), Somerset and Newport Hills homes (large appliances, steep driveways, long carry distances), Crossroads and Eastgate apartments (limited truck access, elevator coordination, standard appliance moves), West Bellevue and Medina estates (oversized built-in refrigerators, stacked washer/dryer units, long carries), and Factoria and Wilburton townhomes (narrow stairways, appliance stair walkers required).`,
+    extraFaqs: [
+      {
+        q: "Can you move a built-in refrigerator from a Bellevue kitchen?",
+        a: "Yes. Built-in and counter-depth refrigerators are common in Bellevue's higher-end homes, and moving them requires removing the surrounding cabinetry trim or door panels to create clearance. We assess the installation before the move and bring the right tools. For refrigerators that are truly built-in (integrated panel fronts), we recommend having a carpenter or cabinet installer present to remove and reinstall the panels — we handle the moving portion.",
+      },
+      {
+        q: "How much does it cost to move an appliance in Bellevue?",
+        a: "Appliance moves in Bellevue are quoted at our standard 2-hour minimum rate, which covers most single-appliance moves. For multiple appliances or moves requiring stair walkers, the job typically runs 2–3 hours. We provide flat-rate quotes so you know the final price before we start. Call us with the appliance type, the pickup and delivery addresses, and any access challenges (stairs, elevators, narrow hallways) and we'll give you an accurate quote.",
+      },
+    ],
+  },
+
+  "redmond-appliance": {
+    intro: `Redmond's appliance moving market is driven by the city's active real estate turnover and the frequency with which homeowners upgrade appliances before listing or after purchasing. Education Hill and Bear Creek homes often have large appliances on upper floors — refrigerators, washer/dryer units, and chest freezers that were moved in when the home was first furnished and haven't moved since. Our Redmond appliance crews are based at our Redmond Way warehouse, which means zero travel time and fast scheduling. We use professional appliance dollies and stair walkers, and we're trained on the specific access challenges of Redmond's housing stock.`,
+    buildingCalloutsHeading: "Redmond Appliance Moving Scenarios We Handle Regularly",
+    buildingCallouts: `We handle appliance moves throughout Redmond with specific experience in: Overlake apartments near Microsoft's campus (elevator coordination, standard appliance moves), Education Hill homes (large appliances on upper floors, stair walkers required, steep driveways), Bear Creek and Grass Lawn homes (wooded-lot properties, long carry distances, large appliances), Downtown Redmond mixed-use buildings (elevator coordination, standard move-in process), and Redmond Ridge HOA communities (move-in window coordination, COI required for building access).`,
+    extraFaqs: [
+      {
+        q: "Can you move a chest freezer from a Redmond garage?",
+        a: "Yes. Chest freezers are one of the most common appliance move requests in Redmond, especially for Education Hill and Bear Creek homeowners who are downsizing or moving. We recommend emptying and defrosting the freezer 24 hours before the move. We use appliance dollies rated for the weight and can navigate garage steps and narrow doorways. For freezers going into storage, we ensure they're fully dry before loading.",
+      },
+      {
+        q: "How quickly can you schedule an appliance move in Redmond?",
+        a: "Because our warehouse is in Redmond, we often have same-week availability for appliance moves. For urgent requests — such as a new appliance delivery arriving and the old one needing to be removed — we sometimes have next-day availability. Call us with your timeline and we'll confirm. Most Redmond appliance moves are completed in 1–2 hours.",
+      },
+    ],
+  },
+
+  "kirkland-appliance": {
+    intro: `Kirkland's appliance moving market is shaped by its mix of waterfront homes, hillside properties, and apartment complexes near Google's campus. Moss Bay and Highlands waterfront homes often have large appliances on upper floors — refrigerators and washer/dryer units that were moved in during construction and haven't been touched since. Totem Lake apartments have standard elevator access but strict move-in windows that constrain scheduling. Our Kirkland appliance crews handle all of it, and our Redmond warehouse is 5 miles east — which means fast response and no travel surcharge for Kirkland appliance moves.`,
+    buildingCalloutsHeading: "Kirkland Appliance Moving Scenarios We Handle Regularly",
+    buildingCallouts: `We handle appliance moves throughout Kirkland with specific experience in: Downtown Kirkland waterfront homes (large appliances, limited truck parking, permit coordination), Moss Bay and Highlands homes (steep hillside lots, stair walkers required, large appliances on upper floors), Totem Lake apartments near Google's campus (elevator coordination, COI required, strict move-in windows), Juanita and Lakeview hillside homes (steep stairways, appliance stair walkers, 2-person minimum), and Kingsgate and Finn Hill homes (standard residential appliance moves, large refrigerators and washer/dryer units).`,
+    extraFaqs: [
+      {
+        q: "Can you move a washer and dryer in a Kirkland apartment building?",
+        a: "Yes. Washer/dryer moves in Kirkland apartment buildings require elevator coordination and, in some buildings, a COI naming the building as additional insured. We handle both. For stacked washer/dryer units, we separate the units for transport and restabilize them at the destination. For front-load units on pedestals, we remove the pedestals for transport and reinstall them. We do not disconnect or reconnect water lines — that requires a licensed plumber.",
+      },
+      {
+        q: "How do you move a large refrigerator down a steep Kirkland hillside driveway?",
+        a: "Steep driveways in Kirkland's Juanita and Lakeview neighborhoods require careful planning for appliance moves. We use appliance dollies with wheel locks and carry in teams of 2–3 on steep grades. For very steep driveways, we may use a smaller vehicle to stage the appliance at the street level before loading onto the main truck. We assess every steep-driveway appliance move before committing and will tell you honestly if additional equipment or crew is needed.",
+      },
+    ],
+  },
+
+  "sammamish-appliance": {
+    intro: `Sammamish's large planned-community homes frequently have large appliances — oversized refrigerators, side-by-side washer/dryer units, and chest freezers — that require professional equipment to move safely. Klahanie and Trossachs homes often have appliances on upper floors, and the HOA move-in rules in these communities require COIs and move-in window coordination even for appliance-only moves. Our Sammamish appliance crews use professional appliance dollies and stair walkers, and they're familiar with the HOA requirements in Sammamish's major planned communities.`,
+    buildingCalloutsHeading: "Sammamish Appliance Moving Scenarios We Handle Regularly",
+    buildingCallouts: `We handle appliance moves throughout Sammamish with specific experience in: Klahanie and Trossachs homes (HOA move-in coordination, COI required, large appliances on upper floors), Pine Lake and Beaver Lake properties (wooded-lot homes, long carry distances, large appliances), Sahalee gated community (advance access coordination, large appliances, stair walkers required), Sammamish Town Center mixed-use buildings (elevator coordination, standard move-in process), and Aldarra and Inglewood Hill homes (large single-family homes, oversized refrigerators, chest freezers).`,
+    extraFaqs: [
+      {
+        q: "Do Sammamish HOA communities require a COI for appliance moves?",
+        a: "Yes — many Sammamish HOA communities, including Klahanie and Trossachs, require a certificate of insurance (COI) naming the HOA as additional insured even for appliance-only moves. We carry general liability insurance and can provide a COI for any Sammamish HOA community. When you request a quote, let us know your community and we'll confirm the COI requirements and have the paperwork ready before move day.",
+      },
+      {
+        q: "Can you move a large refrigerator up stairs in a Sammamish home?",
+        a: "Yes. Upper-floor refrigerator moves are common in Sammamish's multi-story homes. We use professional stair walkers (motorized stair-climbing dollies) for refrigerators and other large appliances. For particularly narrow stairways or tight turns, we assess the route before committing and will tell you if door frame removal is needed to create clearance. Most Sammamish stair appliance moves are completed without any structural modification.",
+      },
+    ],
+  },
+
+  // ──────────────────────────────────────────────────────────────────────────
+  // UNPACKING SERVICES — all 5 cities
+  // ──────────────────────────────────────────────────────────────────────────
+
+  "seattle-unpacking": {
+    intro: `Unpacking services in Seattle are most in demand among South Lake Union tech workers who move frequently and don't have time to unpack between jobs, and among Capitol Hill and Belltown residents who are moving into smaller spaces and need help deciding what goes where. Our unpacking crews work systematically — kitchen first, then bedrooms, then living areas — and they don't just pull items out of boxes; they place everything in a logical location and break down all the boxes before they leave. For moves into Seattle high-rises with strict move-in windows, we can schedule unpacking for the day after move day so the elevator reservation doesn't constrain the unpacking timeline.`,
+    buildingCalloutsHeading: "Seattle Unpacking Scenarios We Handle Regularly",
+    buildingCallouts: `Our unpacking crews work throughout Seattle and are experienced with the specific challenges of each area: South Lake Union high-rises (unpacking scheduled day after move to avoid elevator window conflicts), Capitol Hill and First Hill apartments (smaller spaces, strategic placement to maximize storage), Magnolia and Madison Park homes (large homes, full-house unpacking over 1–2 days), Ballard and Fremont craftsman homes (kitchen unpacking with vintage cabinetry, careful placement), and Queen Anne homes (multiple floors, systematic room-by-room unpacking with box breakdown included).`,
+    extraFaqs: [
+      {
+        q: "How long does unpacking take for a Seattle apartment?",
+        a: "A 1-bedroom Seattle apartment typically takes 3–5 hours to unpack with a 2-person crew. A 2-bedroom apartment takes 5–8 hours. We work systematically — kitchen first, then bedrooms, then living areas — and we break down all boxes before we leave. For South Lake Union high-rises with strict elevator windows, we recommend scheduling unpacking for the day after move day so we're not racing against a building deadline.",
+      },
+      {
+        q: "Do you put items away in cabinets and drawers, or just unbox them?",
+        a: "We put everything away — dishes in cabinets, clothes in drawers, books on shelves. We take direction from you on where things should go, and if you're not sure, we suggest logical placements based on how kitchens and bedrooms are typically organized. We don't just pull items out of boxes and stack them on counters. The goal is for your new Seattle home to feel functional and settled when we leave.",
+      },
+    ],
+  },
+
+  "bellevue-unpacking": {
+    intro: `Bellevue's unpacking service market is driven by its high concentration of corporate relocations — Microsoft, T-Mobile, and Expedia employees who arrive in Bellevue on tight timelines and need their homes functional as quickly as possible. Our unpacking crews work efficiently and systematically, prioritizing the rooms that make a home livable first: kitchen, master bedroom, and bathrooms. For moves into Downtown Bellevue high-rises, we coordinate with building management to ensure elevator access for the unpacking crew. For large Somerset and Newport Hills homes, we offer multi-day unpacking packages that work through the home room by room without rushing.`,
+    buildingCalloutsHeading: "Bellevue Unpacking Scenarios We Handle Regularly",
+    buildingCallouts: `Our unpacking crews work throughout Bellevue and are experienced with: Downtown Bellevue high-rises at The Bravern and Cirrus (elevator coordination for unpacking crew, COI required), Somerset and Newport Hills homes (large homes, multi-day unpacking packages, systematic room-by-room approach), Crossroads and Eastgate apartments (standard apartment unpacking, kitchen and bedroom priority), West Bellevue and Medina estates (high-value items, careful placement, custom shelving coordination), and Factoria and Wilburton townhomes (multi-floor unpacking, box breakdown included on all floors).`,
+    extraFaqs: [
+      {
+        q: "Can you unpack a Bellevue home after a corporate relocation?",
+        a: "Yes. Corporate relocation unpacking is one of our most common requests in Bellevue. We work with the relocating employee or their designated contact to prioritize rooms and placement. For employees on tight timelines, we can have a kitchen, master bedroom, and bathrooms fully unpacked and functional within a single day. We coordinate with the relocation management company if needed and provide a completion report at the end of the job.",
+      },
+      {
+        q: "How many people do you send for a Bellevue unpacking job?",
+        a: "For most Bellevue apartments and smaller homes, we send a 2-person unpacking crew. For large Somerset or Newport Hills homes with 4+ bedrooms, we recommend a 3-person crew to complete the job in a single day. We assess the scope during the quote process and recommend the right crew size. You can also request a specific crew size if you have a preference.",
+      },
+    ],
+  },
+
+  "redmond-unpacking": {
+    intro: `Redmond's unpacking service market is shaped by the high volume of Microsoft and tech-sector employees who move to Redmond on corporate timelines and need their homes functional quickly. Our unpacking crews are based at our Redmond Way warehouse, which means zero travel time and fast scheduling for Redmond unpacking jobs. We work systematically — kitchen, master bedroom, and bathrooms first — and we take direction from the homeowner or their designated contact on placement. For Overlake apartment residents and Education Hill homeowners, we offer same-week unpacking scheduling in most cases.`,
+    buildingCalloutsHeading: "Redmond Unpacking Scenarios We Handle Regularly",
+    buildingCallouts: `Our unpacking crews work throughout Redmond and are experienced with: Overlake apartments near Microsoft's campus (elevator coordination, standard apartment unpacking, kitchen and bedroom priority), Education Hill homes (large homes, multi-day unpacking packages, systematic room-by-room approach), Bear Creek and Grass Lawn homes (wooded-lot properties, large homes, full-house unpacking), Downtown Redmond mixed-use buildings (elevator coordination, standard apartment unpacking), and Redmond Ridge HOA communities (move-in window coordination, unpacking crew COI required in some communities).`,
+    extraFaqs: [
+      {
+        q: "Can you unpack a Redmond home the day after the move?",
+        a: "Yes. Same-day or next-day unpacking is one of the most popular options for Redmond homeowners. We can schedule the unpacking crew to arrive the morning after your move day, when you've had a chance to sleep and think about where things should go. Because our warehouse is in Redmond, we have more scheduling flexibility than companies coming from Seattle or Bellevue. Call us when you book your move and we'll reserve an unpacking slot for the following day.",
+      },
+      {
+        q: "Do you unpack boxes from a Redmond storage vault delivery?",
+        a: "Yes. When we deliver your vault from our Redmond storage facility, we can schedule an unpacking crew to arrive at the same time or the following day. This is a popular option for Redmond residents who have been in temporary housing while waiting for their new home to be ready — we deliver the vault and unpack everything in one coordinated visit.",
+      },
+    ],
+  },
+
+  "kirkland-unpacking": {
+    intro: `Kirkland's unpacking service market is driven by its active real estate market and the frequency with which families move into larger homes in Moss Bay, Highlands, and Kingsgate. Moving into a new home is exciting, but unpacking is exhausting — and for Kirkland families with young children or demanding work schedules, professional unpacking is often the difference between feeling settled in a week and living out of boxes for a month. Our Kirkland unpacking crews work systematically, prioritize the rooms that matter most, and break down every box before they leave.`,
+    buildingCalloutsHeading: "Kirkland Unpacking Scenarios We Handle Regularly",
+    buildingCallouts: `Our unpacking crews work throughout Kirkland and are experienced with: Downtown Kirkland waterfront homes (large homes, multi-day unpacking, kitchen and master bedroom priority), Moss Bay and Highlands homes (steep hillside properties, multi-floor unpacking, box breakdown on all floors), Totem Lake apartments near Google's campus (elevator coordination for unpacking crew, standard apartment unpacking), Juanita and Lakeview homes (hillside properties, systematic room-by-room approach), and Kingsgate and Finn Hill homes (newer construction, large homes, full-house unpacking packages).`,
+    extraFaqs: [
+      {
+        q: "How long does unpacking take for a Kirkland family home?",
+        a: "A typical 3-bedroom Kirkland home takes 6–10 hours to unpack with a 2-person crew. A 4-bedroom home in Moss Bay or Highlands takes 8–12 hours. For large homes, we recommend a 2-day unpacking schedule — completing the kitchen, master bedroom, and bathrooms on day one, and finishing the remaining rooms on day two. This gives you time to review placement after day one and make adjustments before we complete the rest of the home.",
+      },
+      {
+        q: "Can you unpack a Kirkland home while I'm at work?",
+        a: "Yes. Many Kirkland clients prefer to have unpacking done while they're at work so they come home to a settled house. We work with a designated contact — a family member, a neighbor with a key, or a property manager — and provide updates throughout the day. We take direction in advance on placement priorities and call if we have questions. At the end of the job, we send a completion summary so you know exactly what was done.",
+      },
+    ],
+  },
+
+  "sammamish-unpacking": {
+    intro: `Sammamish's large planned-community homes present a significant unpacking challenge — a 4-bedroom Klahanie or Trossachs home can have 150–200 boxes, and unpacking them without professional help can take weeks. Our Sammamish unpacking crews are experienced with large homes and work efficiently: kitchen first, then master bedroom, then children's rooms, then living areas. We take direction from the homeowner on placement, we label shelves and drawers before filling them, and we break down every box before we leave. For Sammamish families with young children, we prioritize getting the kids' rooms functional first so the transition is as smooth as possible.`,
+    buildingCalloutsHeading: "Sammamish Unpacking Scenarios We Handle Regularly",
+    buildingCallouts: `Our unpacking crews work throughout Sammamish and are experienced with: Klahanie and Trossachs homes (large homes, 150–200 boxes, multi-day unpacking packages), Pine Lake and Beaver Lake properties (wooded-lot homes, large garages, outdoor equipment unpacking), Sahalee estate homes (high-value items, careful placement, custom shelving coordination), Sammamish Town Center mixed-use buildings (standard apartment unpacking, kitchen and bedroom priority), and Aldarra and Inglewood Hill homes (large single-family homes, full-house unpacking, box breakdown included).`,
+    extraFaqs: [
+      {
+        q: "How long does it take to unpack a large Sammamish home?",
+        a: "A typical 4-bedroom Sammamish home takes 10–16 hours to fully unpack with a 2-person crew. For large homes with 150+ boxes, we recommend a 2-day unpacking schedule. On day one, we complete the kitchen, master bedroom, and bathrooms — the rooms that make the home livable. On day two, we finish the remaining bedrooms, living areas, and garage. This approach lets you sleep in a functional home after day one without waiting for the entire house to be done.",
+      },
+      {
+        q: "Do you unpack the garage and outdoor storage in Sammamish homes?",
+        a: "Yes. Garage and outdoor storage unpacking is often the last priority but one of the most time-consuming parts of a Sammamish move. We unpack and organize garage items — tools, sports equipment, seasonal items — and place them in logical locations. For large garages with workshop equipment, we recommend discussing the layout in advance so we can place heavy items in their final positions before organizing smaller items around them.",
+      },
+    ],
+  },
+
+  // ──────────────────────────────────────────────────────────────────────────
+  // WAREHOUSING / STORAGE VAULTS — all 5 cities
+  // ──────────────────────────────────────────────────────────────────────────
+
+  "seattle-warehousing": {
+    intro: `Seattle businesses and residents needing warehousing and distribution services have a direct line to our Redmond facility — 12 miles from central Seattle — where we operate secure, climate-controlled vault storage for both commercial and residential clients. For Seattle businesses managing inventory overflow, staging furniture for model units, or storing equipment between projects, our warehousing operation provides a professional alternative to self-storage. We handle receiving, inventory tracking, and scheduled distribution. For residential clients, our vault storage service is the same operation described under storage — portable vaults, full inventory, and scheduled delivery.`,
+    buildingCalloutsHeading: "Seattle Warehousing Clients We Serve Regularly",
+    buildingCallouts: `Our Seattle warehousing clients include: South Lake Union tech companies storing office furniture and equipment during office renovations, Capitol Hill property management companies staging furniture for model apartment units, Downtown Seattle law firms and professional services offices storing archived files and equipment, Seattle real estate developers staging furniture for model homes and show units, and residential clients from Magnolia, Madison Park, and Queen Anne storing high-value furniture and art during home renovations. All items are inventoried on intake and tracked throughout the storage period.`,
+    extraFaqs: [
+      {
+        q: "Can you receive and store furniture deliveries for a Seattle business?",
+        a: "Yes. We offer receiving and warehousing services for Seattle businesses that need a local receiving address for furniture and equipment deliveries. We receive the delivery at our Redmond facility, inspect for damage, photograph and inventory every item, and store it until you're ready for delivery to your Seattle address. This is a popular service for businesses renovating offices or staging model units who need a staging location between the vendor and the final destination.",
+      },
+      {
+        q: "What is the difference between vault storage and warehousing at your Redmond facility?",
+        a: "Vault storage is our residential service — your belongings are loaded into a sealed portable vault and stored as a unit. Warehousing is our commercial service — items are received individually, inventoried, and stored on shelving or in designated floor space. Warehousing allows for individual item retrieval without accessing an entire vault. Both services are available to Seattle clients, and both are stored at our Redmond facility in a climate-controlled environment.",
+      },
+    ],
+    pricingNote: "Seattle warehousing rates quoted based on volume and service level. Contact us for commercial rates.",
+  },
+
+  "bellevue-warehousing": {
+    intro: `Bellevue's commercial warehousing needs are driven by its concentration of tech companies, professional services firms, and real estate developers who need a reliable local warehousing partner. Our Redmond facility — 5 miles from central Bellevue — provides climate-controlled vault and warehousing storage with full inventory tracking and scheduled distribution. For Bellevue businesses staging furniture for the Spring District's new office buildings, for property managers staging model units in Downtown Bellevue high-rises, and for corporate relocation managers coordinating employee moves, our warehousing operation provides the professional infrastructure that self-storage cannot.`,
+    buildingCalloutsHeading: "Bellevue Warehousing Clients We Serve Regularly",
+    buildingCallouts: `Our Bellevue warehousing clients include: Spring District tech companies storing office furniture and equipment during fit-outs, Downtown Bellevue property managers staging furniture for model units at The Bravern and Cirrus, Bellevue real estate developers storing model home furniture between projects, Microsoft and Expedia corporate relocation managers coordinating employee household goods storage, and West Bellevue and Medina estate homeowners storing high-value art and antiques during renovations. All items are inventoried on intake with photographs of high-value pieces.`,
+    extraFaqs: [
+      {
+        q: "Do you offer warehousing for Bellevue office furniture during a renovation?",
+        a: "Yes. Office furniture warehousing during renovation is one of our most common commercial requests from Bellevue businesses. We coordinate the pickup from your Bellevue office, transport everything to our Redmond facility, inventory every item, and store it until your renovation is complete. When you're ready, we deliver and reinstall furniture in your renovated space. We work weekends and after hours to minimize disruption to your business operations.",
+      },
+      {
+        q: "Can you distribute furniture from your Redmond facility to multiple Bellevue addresses?",
+        a: "Yes. Multi-stop distribution from our Redmond facility to Bellevue addresses is a standard service. This is commonly used by property managers staging multiple units in the same building, by real estate developers furnishing model homes across multiple projects, and by corporate relocation managers delivering household goods to employees at different Bellevue addresses. We provide a delivery schedule and confirmation for each stop.",
+      },
+    ],
+    pricingNote: "Bellevue warehousing rates quoted based on volume and service level. Contact us for commercial rates.",
+  },
+
+  "redmond-warehousing": {
+    intro: `Redmond is home to our warehousing and storage facility on Redmond Way, which means Redmond clients get the most direct and cost-effective warehousing service we offer. Microsoft's campus, Nintendo of America, and the growing number of tech companies in Overlake and the Redmond Town Center area create consistent demand for commercial warehousing — office furniture storage during renovations, equipment staging for new office fit-outs, and model unit furniture management for Redmond's new residential developments. Our facility is climate-controlled, fully inventoried, and staffed by the same crews who handle our moving operations.`,
+    buildingCalloutsHeading: "Redmond Warehousing Clients We Serve Regularly",
+    buildingCallouts: `Our Redmond warehousing clients include: Microsoft campus facilities teams storing office furniture and equipment during building renovations, Nintendo of America and other Overlake tech companies staging equipment for office moves, Redmond Town Center retail and restaurant operators storing fixtures and equipment during renovations, Redmond residential developers storing model home furniture between projects, and Education Hill and Bear Creek homeowners storing high-value furniture and art during major renovations. Our facility is 5 minutes from Microsoft's main campus.`,
+    extraFaqs: [
+      {
+        q: "Can you warehouse and then deliver furniture to Microsoft's Redmond campus?",
+        a: "Yes. We regularly receive, warehouse, and deliver furniture and equipment to Microsoft's Redmond campus. We're familiar with the campus's receiving dock procedures and security requirements. For large deliveries, we coordinate with the facilities team in advance to confirm dock availability and access credentials. Our Redmond Way facility is approximately 5 minutes from Microsoft's main campus, which makes same-day and next-day delivery straightforward.",
+      },
+      {
+        q: "Do you offer inventory management for Redmond warehousing clients?",
+        a: "Yes. Every item received at our Redmond facility is photographed, tagged, and logged in our inventory system. You receive a copy of the intake inventory with photos of high-value items. When you request delivery of specific items, we locate them in our system and stage them for your delivery window. For ongoing warehousing relationships, we provide monthly inventory reports so you always know exactly what's in storage.",
+      },
+    ],
+    pricingNote: "Redmond warehousing rates: no travel surcharge. Facility is on-site. Contact us for commercial rates.",
+  },
+
+  "kirkland-warehousing": {
+    intro: `Kirkland's warehousing needs are shaped by its growing tech sector — Google's major campus in Totem Lake, plus a growing number of startups and professional services firms — and by its active real estate market. Our Redmond facility is 5 miles from central Kirkland, making it the closest professional warehousing option for Kirkland businesses. For Google's facilities team managing office furniture during campus renovations, for Kirkland property managers staging model units in Totem Lake apartment buildings, and for Downtown Kirkland retailers storing seasonal inventory, our warehousing operation provides professional infrastructure at Eastside proximity.`,
+    buildingCalloutsHeading: "Kirkland Warehousing Clients We Serve Regularly",
+    buildingCallouts: `Our Kirkland warehousing clients include: Google Kirkland campus facilities teams storing office furniture during renovations, Totem Lake apartment property managers staging furniture for model units, Downtown Kirkland retailers storing seasonal inventory and fixtures, Kirkland real estate developers storing model home furniture between projects, and Moss Bay and Highlands homeowners storing high-value furniture and art during renovations. All items are inventoried on intake and tracked throughout the storage period.`,
+    extraFaqs: [
+      {
+        q: "Can you warehouse and deliver furniture to Google's Kirkland campus?",
+        a: "Yes. We regularly warehouse and deliver furniture and equipment to Google's Kirkland campus in Totem Lake. We're familiar with the campus's receiving procedures and coordinate with the facilities team in advance for large deliveries. Our Redmond facility is approximately 10 minutes from Google's Kirkland campus, which makes same-day and next-day delivery straightforward. We work with Google's facilities team directly or through their designated moving coordinator.",
+      },
+      {
+        q: "Do you offer short-term warehousing for Kirkland real estate staging?",
+        a: "Yes. Short-term staging warehousing is one of our most common requests from Kirkland real estate agents and developers. We receive staging furniture at our Redmond facility, hold it between projects, and deliver to Kirkland addresses on your schedule. For agents who stage multiple properties simultaneously, we track each property's furniture inventory separately so you always know which pieces are assigned to which listing.",
+      },
+    ],
+    pricingNote: "Kirkland warehousing rates quoted based on volume and service level. Contact us for commercial rates.",
+  },
+
+  "sammamish-warehousing": {
+    intro: `Sammamish's warehousing needs are primarily residential — large planned-community homes whose owners need professional storage during renovations, staging for sale, or downsizing. Our Redmond facility is 7 miles from central Sammamish, and our vault storage operation is the most convenient professional option for Sammamish homeowners who need more than a self-storage unit. For Sammamish businesses along SE 8th Street and near Sammamish Town Center, we offer commercial warehousing with inventory tracking and scheduled distribution. All items are stored in our climate-controlled Redmond facility.`,
+    buildingCalloutsHeading: "Sammamish Warehousing Clients We Serve Regularly",
+    buildingCallouts: `Our Sammamish warehousing clients include: Klahanie and Trossachs homeowners storing furniture during major renovations (multiple vaults, room-by-room inventory), Sahalee estate homeowners storing high-value art and antiques during renovations (climate-controlled vaults, custom crating available), Sammamish real estate developers storing model home furniture between projects, SE 8th Street businesses storing equipment and inventory during office renovations, and Pine Lake and Beaver Lake homeowners storing outdoor furniture and equipment during winter months.`,
+    extraFaqs: [
+      {
+        q: "Can you warehouse furniture from a Sammamish home during a major renovation?",
+        a: "Yes. Home renovation warehousing is one of our most common requests from Sammamish homeowners. We vault your furniture room by room as the renovation progresses — clearing the kitchen before the kitchen renovation, then returning it when the work is done before moving on to the next room. We provide a detailed inventory of every item in storage and can return specific pieces on request without requiring a full vault delivery.",
+      },
+      {
+        q: "How far is your warehousing facility from Sammamish?",
+        a: "Our warehousing and storage facility is on Redmond Way in Redmond, WA — approximately 7 miles from central Sammamish, a 12-minute drive via SE 8th Street and 228th Ave SE. For Sammamish clients, we handle all transportation between your home and our facility — you never need to drive to the warehouse. We pick up your items, store them, and deliver them back when you're ready.",
+      },
+    ],
+    pricingNote: "Sammamish warehousing rates quoted based on volume and service level. Contact us for commercial rates.",
+  },
+
   "sammamish-packing": {
     intro: `Sammamish is defined by its large single-family homes in planned communities, and packing these homes is a significant undertaking. Klahanie and Trossachs homes tend to be large and well-furnished, with extensive contents that benefit from professional packing. Pine Lake and Beaver Lake properties often have large garages, workshop equipment, and outdoor furniture that requires weatherproofing for storage. The HOA move-out inspection requirements in Klahanie and Trossachs mean that every item needs to be properly wrapped and padded before it leaves your home. Our Sammamish packing crews bring all materials and are experienced with the full range of packing scenarios for large Eastside homes.`,
     buildingCalloutsHeading: "Packing Services Across Sammamish Neighborhoods",
