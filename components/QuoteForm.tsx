@@ -434,6 +434,7 @@ export default function QuoteForm({
             type="button"
             onClick={handleSwapZip}
             aria-label="Swap zip codes"
+            tabIndex={-1}
             className="absolute left-1/2 -translate-x-1/2 bottom-2 z-10 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110"
             style={{ backgroundColor: "#fbc319", color: "#1a1a1a" }}
           >
