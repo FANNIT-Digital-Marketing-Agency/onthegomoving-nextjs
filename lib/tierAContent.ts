@@ -1664,4 +1664,824 @@ export const TIER_A_CONTENT: Record<string, TierAEntry> = {
       },
     ],
   },
+
+// ===================================================================
+// KENMORE
+// ===================================================================
+
+  "kenmore-residential": {
+    intro: `Kenmore sits at the north end of Lake Washington, and its residential moving landscape reflects that geography. Waterfront properties along the lake often have steep paths to the water and limited truck access on narrow shoreline roads — our crews assess every waterfront property in advance and bring the right equipment for challenging carries. Moorlands and Inglemoor are Kenmore's newer residential areas, with larger homes and standard access. The SR-522 corridor is Kenmore's main artery, and we plan every move to avoid peak congestion windows. Our Redmond warehouse is 10 miles southeast — a 15-minute drive that keeps our costs and your price low.`,
+    buildingCalloutsHeading: "Kenmore Neighborhoods We Know Best",
+    buildingCallouts: `Our residential crews serve all Kenmore neighborhoods: Kenmore waterfront (Lake Washington shoreline properties, steep access paths, limited truck parking, advance assessment required), Moorlands (newer large-lot homes, standard access, long carries common), Inglemoor (established residential, mix of older and newer homes, standard access), Log Boom Park area (waterfront-adjacent, narrow roads, advance planning required), Kenmore Village (mixed residential, standard access, compact homes), and Arrowhead (established neighborhood, standard access, mix of home sizes).`,
+    extraFaqs: [
+      {
+        q: "How do you handle waterfront property moves in Kenmore?",
+        a: "We assess every Kenmore waterfront property before move day. We identify the best truck parking position, the safest carry path to the water, and any equipment we need. For very steep or narrow access, we use a smaller vehicle for the final approach and stage the larger truck at the nearest safe position.",
+      },
+      {
+        q: "What's the best time to schedule a Kenmore move to avoid SR-522 traffic?",
+        a: "We recommend starting before 8 a.m. or after 10 a.m. to avoid the SR-522 morning rush, and before 3 p.m. or after 7 p.m. to avoid the evening rush. For large moves, we often start at 7 a.m. to maximize the available window before afternoon traffic builds.",
+      },
+    ],
+  },
+
+  "kenmore-apartment": {
+    intro: `Kenmore's apartment market is a mix of older complexes near the waterfront and newer buildings along the SR-522 corridor. Most Kenmore apartment buildings have standard move-in requirements — elevator reservations where applicable, designated move-in windows, and parking coordination. Waterfront apartment buildings may have additional access considerations. Our crews coordinate directly with building management before move day so there are no surprises. Most Kenmore apartment moves complete in 2–3 hours, and we provide flat-rate quotes so you know the final price before we start.`,
+    buildingCalloutsHeading: "Apartment Buildings We Serve in Kenmore",
+    buildingCallouts: `Our apartment moving crews serve Kenmore's major complexes: SR-522 corridor apartments (newer construction, standard elevator and move-in window requirements, ample parking), Kenmore waterfront apartments (additional access coordination, limited parking, advance assessment recommended), Kenmore Village apartments (standard access, compact units, efficient moves), and Moorlands area apartments (newer construction, standard requirements, ample parking).`,
+    extraFaqs: [
+      {
+        q: "How far in advance should I book a Kenmore apartment move?",
+        a: "We recommend booking 2–3 weeks in advance for Kenmore apartment moves. End-of-month dates and summer weekends fill quickly. We accommodate last-minute moves when availability allows — call us to check.",
+      },
+      {
+        q: "Do Kenmore apartment buildings require a certificate of insurance?",
+        a: "Some Kenmore apartment buildings require a COI from your moving company. We provide certificates of insurance at no charge — just send us your building's requirements and we'll issue the COI within 24 hours.",
+      },
+    ],
+  },
+
+  "kenmore-packing": {
+    intro: `Kenmore homes range from compact older properties near the waterfront to large newer construction in Moorlands and Inglemoor. Our packing crews bring all materials and are experienced with the full range of Kenmore home types. Waterfront properties often contain outdoor furniture, water sports equipment, and other items that require weatherproof packing. Moorlands and Inglemoor homes tend to be larger and well-furnished, making full-pack service a popular choice. We provide flat-rate packing quotes so you know the final price before we start.`,
+    buildingCalloutsHeading: "Packing Services Across Kenmore Neighborhoods",
+    buildingCallouts: `Our packing crews serve all Kenmore neighborhoods: Kenmore waterfront (outdoor furniture, water sports equipment, weatherproof packing, challenging carry paths), Moorlands (large homes, extensive contents, full-pack service common), Inglemoor (established homes, mix of contents, partial and full-pack available), Log Boom Park area (waterfront-adjacent, outdoor equipment, standard packing), and Kenmore Village (compact homes, efficient packing, standard materials).`,
+    extraFaqs: [
+      {
+        q: "How long does it take to pack a Kenmore home?",
+        a: "A typical 2-bedroom Kenmore home takes 4–6 hours to pack with a 2-person crew. A larger Moorlands or Inglemoor home with 4 bedrooms takes 8–14 hours. We recommend a free walkthrough quote for larger homes so we can give you an accurate time and cost estimate.",
+      },
+      {
+        q: "Do you pack outdoor and water sports equipment for Kenmore waterfront moves?",
+        a: "Yes. We pack kayaks, paddleboards, outdoor furniture, and water sports equipment using weatherproof wrapping and custom crating where needed. For large or unusually shaped items, we recommend a walkthrough so we can plan the right packing approach.",
+      },
+    ],
+  },
+
+  "kenmore-commercial": {
+    intro: `Kenmore's business community is concentrated along the SR-522 corridor, with a mix of retail, professional services, and light industrial. Our commercial crews handle office and retail moves with minimal disruption — we work after hours and on weekends, and our project managers coordinate directly with your facilities team. For businesses near the SR-522 corridor, we plan truck access and parking in advance to avoid congestion. Flat-rate quotes available for all Kenmore commercial moves.`,
+    buildingCalloutsHeading: "Commercial Moving in Kenmore's Business Areas",
+    buildingCallouts: `We serve Kenmore's major commercial areas: SR-522 corridor (retail and office moves, standard access, flexible scheduling, traffic-aware routing), Kenmore Village commercial (retail and service businesses, standard access, compact spaces), waterfront commercial (marine businesses, outdoor equipment, advance access planning required), and North Kenmore business areas (standard access, ample parking, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Can you move our Kenmore office on a weekend?",
+        a: "Yes. Weekend moves are our most common request for Kenmore commercial relocations. We work Saturday and Sunday and can start as early as 6 a.m. to maximize your available window. Most Kenmore commercial buildings allow weekend access with advance notice.",
+      },
+      {
+        q: "Do you handle IT equipment moves for Kenmore businesses?",
+        a: "Yes. We use anti-static bags, custom crating, and careful handling for all IT equipment. For large server rooms or sensitive equipment, we recommend a free on-site walkthrough to plan the move sequence.",
+      },
+    ],
+  },
+
+  "kenmore-storage": {
+    intro: `Our climate-controlled storage facility in Redmond is just 10 miles from Kenmore — a 15-minute drive via SR-522. We offer month-to-month storage with no long-term contracts, and your first month is free with any Kenmore move. Kenmore customers commonly use our storage for waterfront property transitions, home staging, and between-home storage during real estate transactions. All items are stored in individually locked units with 24/7 security monitoring.`,
+    buildingCalloutsHeading: "Storage Solutions for Kenmore Residents and Businesses",
+    buildingCallouts: `Our Redmond storage facility serves all Kenmore neighborhoods: waterfront property storage (seasonal equipment, outdoor furniture, water sports gear, climate-controlled units), Moorlands and Inglemoor home storage (between-home storage, staging storage, renovation storage), SR-522 corridor business storage (retail inventory overflow, office equipment, document storage), and general household storage (month-to-month, no long-term contracts, first month free with any move).`,
+    extraFaqs: [
+      {
+        q: "How far is your storage facility from Kenmore?",
+        a: "Our Redmond storage facility is 10 miles from Kenmore — about 15 minutes via SR-522. We can pick up items from your Kenmore home and deliver them directly to storage, or hold them in storage during a move.",
+      },
+      {
+        q: "Can I store seasonal waterfront equipment at your facility?",
+        a: "Yes. We store kayaks, paddleboards, outdoor furniture, and other seasonal equipment. Our climate-controlled units protect items from the Pacific Northwest's wet winters. Month-to-month contracts mean you can retrieve items when the season changes.",
+      },
+    ],
+  },
+
+  "kenmore-senior": {
+    intro: `Kenmore has a significant senior population in its established neighborhoods, and we have extensive experience with senior moves in the area. Our senior moving crews work at a pace that's comfortable for you — we never rush, we communicate clearly about what we're doing, and we take extra care with items that have sentimental value. We coordinate with family members, senior living facilities, and downsizing specialists as needed. For moves from Kenmore waterfront properties, we handle the challenging access so you don't have to worry about it.`,
+    buildingCalloutsHeading: "Senior Moving Services Across Kenmore",
+    buildingCallouts: `Our senior moving crews serve all Kenmore neighborhoods and destinations: Kenmore waterfront homes (careful access planning, no rushing, family coordination available), Moorlands and Inglemoor (larger home downsizing, full packing available, estate coordination), senior living facilities in and near Kenmore (direct coordination with facility management, move-in window compliance), and in-Kenmore downsizing moves (from larger home to smaller home or apartment, partial-pack available).`,
+    extraFaqs: [
+      {
+        q: "Do you help with downsizing moves from large Kenmore homes?",
+        a: "Yes. We work with seniors and families downsizing from larger Kenmore homes. We can pack, move, and help coordinate donation pickups or estate sale logistics. We move at your pace and communicate clearly throughout the process.",
+      },
+      {
+        q: "Can you coordinate directly with a Kenmore senior living facility?",
+        a: "Yes. We coordinate directly with senior living facility management to confirm move-in windows, elevator reservations, and any COI requirements. We handle all the logistics so you and your family can focus on the transition.",
+      },
+    ],
+  },
+
+  "kenmore-furniture": {
+    intro: `Kenmore's waterfront properties and larger Moorlands homes often contain oversized furniture — sectional sofas, king beds, dining sets, and outdoor furniture — that requires careful handling and sometimes disassembly for doorways and stairwells. Our furniture moving crews are experienced with all furniture types and bring the tools for disassembly and reassembly. For waterfront properties with challenging access paths, we plan the carry route in advance to protect both your furniture and the property.`,
+    buildingCalloutsHeading: "Furniture Moving Across Kenmore Neighborhoods",
+    buildingCallouts: `Our furniture moving crews serve all Kenmore neighborhoods: Kenmore waterfront (oversized outdoor furniture, challenging carry paths, advance access planning), Moorlands (large sectionals, king beds, dining sets, disassembly available), Inglemoor (established homes, standard furniture, efficient moves), Kenmore Village (compact homes, careful maneuvering, narrow doorways common in older properties), and SR-522 corridor apartments (elevator coordination, standard furniture, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Can you move large outdoor furniture from a Kenmore waterfront property?",
+        a: "Yes. We regularly move large outdoor furniture — teak sets, Adirondack chairs, fire pits, and patio sectionals — from Kenmore waterfront properties. We assess the carry path in advance and bring the right equipment for challenging access.",
+      },
+      {
+        q: "Do you disassemble and reassemble furniture for Kenmore moves?",
+        a: "Yes. We disassemble and reassemble bed frames, sectional sofas, dining tables, and other furniture as needed. We bring the tools and hardware bags to keep everything organized. Reassembly is included in our standard service.",
+      },
+    ],
+  },
+
+  "kenmore-appliance": {
+    intro: `Moving appliances in Kenmore requires the right equipment and experience — refrigerators, washers, dryers, and ranges are heavy, awkward, and easy to damage without proper technique. Our appliance moving crews use appliance dollies, furniture pads, and straps to protect both the appliance and your floors. For waterfront properties with challenging access, we plan the carry route in advance. We also disconnect and reconnect standard appliance hookups as part of our service.`,
+    buildingCalloutsHeading: "Appliance Moving Across Kenmore",
+    buildingCallouts: `Our appliance moving crews serve all Kenmore neighborhoods: Kenmore waterfront (challenging carry paths, advance planning, outdoor appliances common), Moorlands (large homes with multiple appliances, standard access, efficient moves), Inglemoor (established homes, standard appliances, efficient moves), Kenmore Village (compact homes, narrow doorways, careful maneuvering), and SR-522 corridor apartments (elevator coordination, standard appliances, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Do you disconnect and reconnect appliances for Kenmore moves?",
+        a: "Yes. We disconnect and reconnect standard appliance hookups — water lines for refrigerators and dishwashers, gas or electric connections for ranges (gas disconnection requires a licensed plumber, which we can coordinate). We bring the tools and supplies needed.",
+      },
+      {
+        q: "Can you move a large refrigerator from a Kenmore waterfront home?",
+        a: "Yes. We regularly move large refrigerators and other appliances from Kenmore waterfront properties with challenging access. We assess the carry path in advance and bring the right equipment — appliance dollies, furniture pads, and straps — to protect the appliance and your property.",
+      },
+    ],
+  },
+
+  "kenmore-unpacking": {
+    intro: `After a Kenmore move, our unpacking crews can set up your new home so you're living comfortably from day one. We unpack boxes, place items in their designated rooms, and remove all packing materials. For waterfront properties, we're experienced with setting up outdoor living spaces and water-adjacent storage. We work at your pace and follow your instructions for where everything goes. Unpacking service is available as a standalone booking or as an add-on to any Kenmore move.`,
+    buildingCalloutsHeading: "Unpacking Services Across Kenmore",
+    buildingCallouts: `Our unpacking crews serve all Kenmore neighborhoods and home types: Kenmore waterfront (indoor and outdoor setup, water sports equipment placement, patio furniture arrangement), Moorlands and Inglemoor (large homes, full unpacking service, room-by-room setup), Kenmore Village (compact homes, efficient unpacking, standard setup), and SR-522 corridor apartments (standard apartment setup, efficient unpacking, all materials removed).`,
+    extraFaqs: [
+      {
+        q: "How long does unpacking take for a Kenmore home?",
+        a: "A typical 2-bedroom Kenmore home takes 3–5 hours to unpack with a 2-person crew. A larger Moorlands or Inglemoor home takes 6–10 hours. We remove all boxes and packing materials when we're done.",
+      },
+      {
+        q: "Can I book unpacking service separately from the move?",
+        a: "Yes. We offer unpacking as a standalone service — you don't have to use us for the move itself. We can schedule unpacking the day after your move or whenever works best for you.",
+      },
+    ],
+  },
+
+  "kenmore-warehousing": {
+    intro: `Our Redmond warehouse is 10 miles from Kenmore and offers flexible warehousing and distribution services for Kenmore businesses. We handle receiving, storage, inventory management, and last-mile delivery. For businesses along the SR-522 corridor, our location provides efficient access for both inbound and outbound freight. Month-to-month contracts available — no long-term commitment required.`,
+    buildingCalloutsHeading: "Warehousing and Distribution for Kenmore Businesses",
+    buildingCallouts: `Our warehousing services support Kenmore businesses of all types: SR-522 corridor retail (inventory storage, seasonal overflow, last-mile delivery), waterfront businesses (marine equipment storage, seasonal inventory, flexible terms), professional services (document storage, equipment storage, month-to-month), and light industrial (pallet storage, receiving and distribution, cross-docking available).`,
+    extraFaqs: [
+      {
+        q: "How far is your warehouse from Kenmore businesses?",
+        a: "Our Redmond warehouse is 10 miles from Kenmore — about 15 minutes via SR-522. We offer pickup and delivery from your Kenmore location, or you can drop off and pick up directly at our facility.",
+      },
+      {
+        q: "Do you offer month-to-month warehousing for Kenmore businesses?",
+        a: "Yes. All our warehousing contracts are month-to-month — no long-term commitment required. We scale storage space up or down as your needs change.",
+      },
+    ],
+  },
+
+// ===================================================================
+// MERCER ISLAND
+// ===================================================================
+
+  "mercer-island-residential": {
+    intro: `Mercer Island is one of the most distinctive moving markets in the Seattle area — an island city accessible only via I-90, with a mix of luxury waterfront estates, mid-century homes, and newer construction. All truck access is via I-90, and we plan every Mercer Island move around traffic patterns to ensure on-time arrival. Waterfront properties on the north and south ends often have steep paths to the water and limited truck parking. Town Center has newer mixed-use buildings with elevator requirements. Our crews have been moving Mercer Island homes since 2009 and know every neighborhood's specific logistics.`,
+    buildingCalloutsHeading: "Mercer Island Neighborhoods We Know Best",
+    buildingCallouts: `Our residential crews serve all Mercer Island neighborhoods: North End (luxury waterfront estates, steep access paths, high-value items, advance assessment required), South End (large residential properties, waterfront access, estate homes), Town Center (mixed-use buildings, elevator coordination, limited truck parking), Island Crest (established mid-century homes, standard access, long carries common), West Mercer (newer construction, standard access, large homes), Clarke Beach (waterfront-adjacent, narrow roads, advance planning), and Roanoke (established residential, standard access, mix of home sizes).`,
+    extraFaqs: [
+      {
+        q: "How do you plan truck access for Mercer Island moves?",
+        a: "All access to Mercer Island is via I-90. We schedule moves to avoid peak I-90 congestion — typically starting before 8 a.m. or after 10 a.m. for morning moves, and completing before 3 p.m. to avoid afternoon traffic. For large estate moves, we sometimes use two smaller trucks rather than one large truck to improve maneuverability on island roads.",
+      },
+      {
+        q: "Do you have experience moving high-value items on Mercer Island?",
+        a: "Yes. Mercer Island is one of our most active markets for high-value item moves — fine art, antiques, grand pianos, and custom furniture. Our specialty moving crews use custom crating, white-glove handling, and climate-controlled transport for valuable items.",
+      },
+    ],
+  },
+
+  "mercer-island-apartment": {
+    intro: `Mercer Island's Town Center has newer mixed-use apartment buildings with standard elevator and move-in window requirements. These buildings are well-managed and our crews coordinate directly with building management before move day. Most Mercer Island apartment moves complete in 2–4 hours. We provide flat-rate quotes so you know the final price before we start, and our Redmond warehouse is just 9 miles away via I-90.`,
+    buildingCalloutsHeading: "Apartment Buildings We Serve on Mercer Island",
+    buildingCallouts: `Our apartment moving crews serve Mercer Island's residential buildings: Town Center mixed-use apartments (elevator reservations required, COI required, standard move-in windows, limited street parking), Island Crest apartments (standard access, efficient moves, ample parking), and smaller residential buildings throughout the island (standard requirements, direct building coordination, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Do Mercer Island apartment buildings require a certificate of insurance?",
+        a: "Most Mercer Island Town Center buildings require a COI from your moving company. We provide certificates of insurance at no charge — just send us your building's requirements and we'll issue the COI within 24 hours.",
+      },
+      {
+        q: "How far in advance should I book a Mercer Island apartment move?",
+        a: "We recommend booking 2–3 weeks in advance. Town Center buildings have limited elevator reservation windows, especially on weekends and end-of-month dates.",
+      },
+    ],
+  },
+
+  "mercer-island-packing": {
+    intro: `Mercer Island homes are among the most well-appointed in the Seattle area — fine art, antiques, custom furniture, and extensive wine collections are common. Our packing crews bring all materials and are experienced with white-glove packing for high-value contents. For waterfront estates, we pack outdoor furniture, water sports equipment, and dock accessories. We provide flat-rate packing quotes and recommend a walkthrough for large estates so we can give you an accurate estimate.`,
+    buildingCalloutsHeading: "Packing Services Across Mercer Island",
+    buildingCallouts: `Our packing crews serve all Mercer Island neighborhoods: North End estates (fine art, antiques, custom crating, white-glove service, full-pack common), South End homes (large residential, extensive contents, full-pack available), Town Center apartments (standard packing, efficient turnaround), Island Crest (mid-century homes, vintage contents, specialty wrapping available), and waterfront properties (outdoor furniture, water sports equipment, weatherproof packing).`,
+    extraFaqs: [
+      {
+        q: "Do you pack fine art and antiques for Mercer Island moves?",
+        a: "Yes. We regularly pack fine art, antiques, and custom furniture for Mercer Island estate moves. We use acid-free tissue, custom crating, and white-glove handling. For very high-value items, we recommend a walkthrough so we can plan the right packing approach.",
+      },
+      {
+        q: "How much does it cost to pack a large Mercer Island estate?",
+        a: "A large Mercer Island estate (4–6 bedrooms) typically requires 2–3 days of packing with a 3-person crew. We provide flat-rate quotes after a walkthrough so you know the final price before we start. All packing materials are included.",
+      },
+    ],
+  },
+
+  "mercer-island-commercial": {
+    intro: `Mercer Island's business community is centered in Town Center, with professional services, retail, and medical offices. Our commercial crews handle office moves with minimal disruption — we work after hours and on weekends, and our project managers coordinate directly with your facilities team. For Town Center buildings with limited truck parking, we plan access in advance. Flat-rate quotes available for all Mercer Island commercial moves.`,
+    buildingCalloutsHeading: "Commercial Moving on Mercer Island",
+    buildingCallouts: `We serve Mercer Island's commercial areas: Town Center office buildings (limited truck parking, elevator coordination, after-hours available), Town Center retail (standard access, flexible scheduling, weekend moves available), medical and professional offices (sensitive equipment handling, after-hours preferred, COI required by most buildings), and Island Crest commercial (standard access, ample parking, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Can you move our Mercer Island office on a weekend?",
+        a: "Yes. Weekend moves are our most common request for Mercer Island commercial relocations. We work Saturday and Sunday and can start as early as 6 a.m. Most Town Center buildings allow weekend access with advance notice.",
+      },
+      {
+        q: "Do you handle medical equipment moves on Mercer Island?",
+        a: "Yes. We handle medical office moves including examination tables, medical equipment, and sensitive electronics. We use proper padding and handling techniques and can coordinate with your equipment vendors for specialized items.",
+      },
+    ],
+  },
+
+  "mercer-island-storage": {
+    intro: `Our climate-controlled storage facility in Redmond is 9 miles from Mercer Island — a 15-minute drive via I-90. We offer month-to-month storage with no long-term contracts, and your first month is free with any Mercer Island move. Mercer Island customers commonly use our storage for estate transitions, home staging, renovation projects, and seasonal waterfront equipment. All items are stored in individually locked units with 24/7 security monitoring.`,
+    buildingCalloutsHeading: "Storage Solutions for Mercer Island Residents and Businesses",
+    buildingCallouts: `Our Redmond storage facility serves all Mercer Island neighborhoods: estate and luxury home storage (fine art, antiques, custom furniture, climate-controlled units), waterfront property storage (seasonal equipment, outdoor furniture, water sports gear), renovation and staging storage (between-home storage, staging furniture, construction period storage), and business storage (document storage, office equipment, retail inventory).`,
+    extraFaqs: [
+      {
+        q: "Can you store fine art and antiques from a Mercer Island estate?",
+        a: "Yes. Our climate-controlled storage facility protects fine art, antiques, and high-value items from temperature and humidity fluctuations. We use proper padding and racking to keep items secure. For very high-value items, we recommend a walkthrough to plan the right storage approach.",
+      },
+      {
+        q: "How far is your storage facility from Mercer Island?",
+        a: "Our Redmond facility is 9 miles from Mercer Island — about 15 minutes via I-90. We offer pickup and delivery from your Mercer Island property, or you can drop off and pick up directly at our facility.",
+      },
+    ],
+  },
+
+  "mercer-island-senior": {
+    intro: `Mercer Island has a significant senior population in its established neighborhoods, and we have extensive experience with senior moves on the island. Our senior moving crews work at a pace that's comfortable for you — we never rush, we communicate clearly, and we take extra care with items that have sentimental value. For estate downsizing moves, we coordinate with family members, estate sale specialists, and senior living facilities. We handle the I-90 logistics so you don't have to worry about access.`,
+    buildingCalloutsHeading: "Senior Moving Services on Mercer Island",
+    buildingCallouts: `Our senior moving crews serve all Mercer Island neighborhoods and destinations: North End and South End estates (downsizing from large properties, full packing available, estate coordination), Island Crest and West Mercer (established homes, standard downsizing, partial-pack available), Town Center apartments (move-in coordination, elevator reservation, COI handling), and senior living facilities near Mercer Island (direct facility coordination, move-in window compliance, family communication).`,
+    extraFaqs: [
+      {
+        q: "Do you help with estate downsizing moves from large Mercer Island homes?",
+        a: "Yes. We work with seniors and families downsizing from large Mercer Island estates. We can pack, move, and help coordinate donation pickups or estate sale logistics. We move at your pace and communicate clearly throughout the process.",
+      },
+      {
+        q: "Can you coordinate with a senior living facility near Mercer Island?",
+        a: "Yes. We coordinate directly with senior living facility management to confirm move-in windows, elevator reservations, and COI requirements. We handle all the logistics so you and your family can focus on the transition.",
+      },
+    ],
+  },
+
+  "mercer-island-furniture": {
+    intro: `Mercer Island homes regularly contain high-end furniture — custom pieces, antiques, grand pianos, and oversized outdoor furniture for waterfront properties. Our furniture moving crews are experienced with white-glove handling for valuable pieces and bring the tools for disassembly and reassembly. For waterfront properties with challenging access paths, we plan the carry route in advance. We use furniture pads, custom crating, and floor runners to protect both your furniture and your property.`,
+    buildingCalloutsHeading: "Furniture Moving Across Mercer Island",
+    buildingCallouts: `Our furniture moving crews serve all Mercer Island neighborhoods: North End estates (antiques, custom pieces, grand pianos, white-glove handling, advance access planning), South End homes (large furniture, waterfront access, careful handling), Town Center apartments (elevator coordination, standard furniture, efficient moves), Island Crest (mid-century furniture, vintage pieces, careful handling), and waterfront properties (outdoor furniture, teak sets, patio sectionals, weatherproof handling).`,
+    extraFaqs: [
+      {
+        q: "Do you move grand pianos on Mercer Island?",
+        a: "Yes. Grand piano moves are one of our specialties on Mercer Island. We use piano boards, skid boards, and proper padding to protect the instrument. For waterfront properties with challenging access, we assess the carry path in advance and bring the right equipment.",
+      },
+      {
+        q: "Can you move custom or antique furniture from a Mercer Island estate?",
+        a: "Yes. We regularly move custom and antique furniture for Mercer Island estate moves. We use acid-free padding, custom crating for fragile pieces, and white-glove handling throughout. We recommend a walkthrough for large estates so we can plan the right handling approach.",
+      },
+    ],
+  },
+
+  "mercer-island-appliance": {
+    intro: `Mercer Island homes often have high-end appliances — Sub-Zero refrigerators, Wolf ranges, Miele dishwashers — that require careful handling and proper technique. Our appliance moving crews use appliance dollies, furniture pads, and straps to protect both the appliance and your floors. For waterfront properties with challenging access, we plan the carry route in advance. We disconnect and reconnect standard appliance hookups as part of our service.`,
+    buildingCalloutsHeading: "Appliance Moving Across Mercer Island",
+    buildingCallouts: `Our appliance moving crews serve all Mercer Island neighborhoods: North End and South End estates (high-end appliances, Sub-Zero, Wolf, Miele, careful handling, advance access planning), Town Center apartments (standard appliances, elevator coordination, efficient moves), Island Crest (established homes, standard appliances, efficient moves), and waterfront properties (outdoor appliances, BBQ grills, outdoor kitchens, weatherproof handling).`,
+    extraFaqs: [
+      {
+        q: "Do you move high-end appliances like Sub-Zero and Wolf on Mercer Island?",
+        a: "Yes. We regularly move high-end appliances on Mercer Island. We use appliance dollies, furniture pads, and careful handling to protect expensive appliances. For very large or unusual appliances, we recommend a walkthrough to plan the right approach.",
+      },
+      {
+        q: "Do you disconnect and reconnect appliances for Mercer Island moves?",
+        a: "Yes. We disconnect and reconnect standard appliance hookups — water lines for refrigerators and dishwashers, electric connections for ranges. Gas disconnection requires a licensed plumber, which we can coordinate.",
+      },
+    ],
+  },
+
+  "mercer-island-unpacking": {
+    intro: `After a Mercer Island move, our unpacking crews can set up your new home so you're living comfortably from day one. We unpack boxes, place items in their designated rooms, and remove all packing materials. For estate moves with fine art and antiques, we work carefully and follow your instructions for placement. We work at your pace and can coordinate with interior designers or decorators if needed. Unpacking service is available as a standalone booking or as an add-on to any Mercer Island move.`,
+    buildingCalloutsHeading: "Unpacking Services Across Mercer Island",
+    buildingCallouts: `Our unpacking crews serve all Mercer Island neighborhoods and home types: North End and South End estates (fine art placement, antique arrangement, full unpacking service), Town Center apartments (standard apartment setup, efficient unpacking, all materials removed), Island Crest (established homes, standard unpacking, room-by-room setup), and waterfront properties (indoor and outdoor setup, patio furniture arrangement, water sports equipment placement).`,
+    extraFaqs: [
+      {
+        q: "Can you coordinate with an interior designer for a Mercer Island unpacking?",
+        a: "Yes. We work with interior designers and decorators on Mercer Island estate moves. We follow placement instructions, handle art hanging coordination, and work carefully around designer-specified arrangements.",
+      },
+      {
+        q: "How long does unpacking take for a large Mercer Island estate?",
+        a: "A large Mercer Island estate (4–6 bedrooms) typically takes 2–3 days to fully unpack with a 3-person crew. We remove all boxes and packing materials when we're done.",
+      },
+    ],
+  },
+
+  "mercer-island-warehousing": {
+    intro: `Our Redmond warehouse is 9 miles from Mercer Island and offers flexible warehousing and distribution services for island businesses. We handle receiving, storage, inventory management, and last-mile delivery. For businesses in Town Center with limited on-site storage, our facility provides a convenient overflow solution. Month-to-month contracts available — no long-term commitment required.`,
+    buildingCalloutsHeading: "Warehousing and Distribution for Mercer Island Businesses",
+    buildingCallouts: `Our warehousing services support Mercer Island businesses: Town Center retail (inventory storage, seasonal overflow, last-mile delivery to island), professional services (document storage, equipment storage, month-to-month), medical offices (medical supply storage, equipment storage, secure units), and general business storage (flexible terms, pickup and delivery available, 9 miles via I-90).`,
+    extraFaqs: [
+      {
+        q: "How far is your warehouse from Mercer Island businesses?",
+        a: "Our Redmond warehouse is 9 miles from Mercer Island — about 15 minutes via I-90. We offer pickup and delivery from your Mercer Island location, or you can drop off and pick up directly at our facility.",
+      },
+      {
+        q: "Do you offer last-mile delivery to Mercer Island from your warehouse?",
+        a: "Yes. We deliver from our Redmond warehouse to any Mercer Island address. We plan deliveries to avoid peak I-90 congestion and provide accurate delivery windows.",
+      },
+    ],
+  },
+
+// ===================================================================
+// TUKWILA
+// ===================================================================
+
+  "tukwila-residential": {
+    intro: `Tukwila's residential neighborhoods — Foster, Riverton Heights, Allentown, and Tukwila Village — offer a mix of older and newer housing at accessible price points. The city's location at the junction of I-5, I-405, and SR-99 makes it one of the most accessible cities in the region for moving trucks, but peak traffic on these corridors requires careful scheduling. Our crews have been serving Tukwila since 2009 and know the neighborhood-specific access considerations, from the older homes in Foster to the newer construction near Southcenter.`,
+    buildingCalloutsHeading: "Tukwila Neighborhoods We Know Best",
+    buildingCallouts: `Our residential crews serve all Tukwila neighborhoods: Foster (established residential, older homes, standard access, mix of home sizes), Riverton Heights (established neighborhood, standard access, efficient moves), Allentown (mixed residential, standard access, compact homes), Tukwila Village (newer development, standard access, larger homes), and Southcenter area (newer construction near light rail, standard access, apartment-heavy).`,
+    extraFaqs: [
+      {
+        q: "What's the best time to schedule a Tukwila move to avoid I-5 traffic?",
+        a: "We recommend starting before 8 a.m. or after 10 a.m. to avoid the I-5 morning rush, and completing before 3 p.m. to avoid afternoon congestion. For large moves, we often start at 7 a.m. to maximize the available window.",
+      },
+      {
+        q: "Do you serve all Tukwila neighborhoods including Riverton Heights and Foster?",
+        a: "Yes. We serve all Tukwila neighborhoods — Foster, Riverton Heights, Allentown, Tukwila Village, and the Southcenter area. Our crews know the specific access considerations for each area.",
+      },
+    ],
+  },
+
+  "tukwila-apartment": {
+    intro: `Tukwila's apartment market is concentrated near Southcenter and the light rail corridor, with newer buildings that have standard elevator and move-in window requirements. Our crews coordinate directly with building management before move day to secure elevator reservations and confirm parking. Most Tukwila apartment moves complete in 2–3 hours, and we provide flat-rate quotes so you know the final price before we start.`,
+    buildingCalloutsHeading: "Apartment Buildings We Serve in Tukwila",
+    buildingCallouts: `Our apartment moving crews serve Tukwila's major complexes: Southcenter light rail apartments (elevator reservations required, COI required, standard move-in windows, limited street parking), Tukwila Village apartments (newer construction, standard requirements, ample parking), Foster area apartments (older buildings, standard access, efficient moves), and Riverton Heights apartments (established buildings, standard requirements, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Do Tukwila Southcenter apartment buildings require a certificate of insurance?",
+        a: "Most newer Southcenter area apartment buildings require a COI from your moving company. We provide certificates of insurance at no charge — just send us your building's requirements and we'll issue the COI within 24 hours.",
+      },
+      {
+        q: "How far in advance should I book a Tukwila apartment move?",
+        a: "We recommend booking 2–3 weeks in advance for Tukwila apartment moves. Southcenter area buildings fill quickly on weekends and end-of-month dates. We accommodate last-minute moves when availability allows.",
+      },
+    ],
+  },
+
+  "tukwila-packing": {
+    intro: `Tukwila homes range from compact older properties in Foster and Riverton Heights to newer construction near Southcenter. Our packing crews bring all materials and are experienced with the full range of Tukwila home types. For older homes with vintage contents, we use specialty wrapping for fragile items. For newer construction with large kitchens and extensive contents, full-pack service is a popular choice. We provide flat-rate packing quotes so you know the final price before we start.`,
+    buildingCalloutsHeading: "Packing Services Across Tukwila Neighborhoods",
+    buildingCallouts: `Our packing crews serve all Tukwila neighborhoods: Foster (older homes, vintage contents, specialty wrapping available), Riverton Heights (established homes, standard packing, efficient turnaround), Allentown (compact homes, efficient packing, standard materials), Tukwila Village (newer construction, large kitchens, full-pack service common), and Southcenter area (apartments, standard packing, efficient turnaround).`,
+    extraFaqs: [
+      {
+        q: "How long does it take to pack a Tukwila home?",
+        a: "A typical 2-bedroom Tukwila home takes 4–6 hours to pack with a 2-person crew. A larger newer construction home with 3–4 bedrooms takes 6–10 hours. We recommend a free walkthrough quote for larger homes.",
+      },
+      {
+        q: "Do you bring packing materials for Tukwila moves?",
+        a: "Yes. We bring all packing materials — boxes, tape, bubble wrap, packing paper, and specialty materials for fragile items. There are no surprise supply charges; materials are included in our flat-rate packing quotes.",
+      },
+    ],
+  },
+
+  "tukwila-commercial": {
+    intro: `Tukwila is a major commercial hub in South King County, with Westfield Southcenter, significant warehouse and distribution activity, and a growing office market near I-5 and I-405. Our commercial crews handle office, retail, and warehouse moves with minimal disruption. We work after hours and on weekends, and our project managers coordinate directly with your facilities team. For Southcenter area businesses, we plan truck access and parking in advance. Flat-rate quotes available for all Tukwila commercial moves.`,
+    buildingCalloutsHeading: "Commercial Moving in Tukwila's Business Districts",
+    buildingCallouts: `We serve Tukwila's major commercial areas: Southcenter retail corridor (retail and restaurant moves, Westfield Southcenter area, standard access, flexible scheduling), I-5/I-405 corridor office parks (office moves, after-hours available, IT equipment handling), warehouse and distribution (pallet moves, equipment relocation, loading dock coordination), and light industrial (machinery moves, equipment relocation, specialized handling available).`,
+    extraFaqs: [
+      {
+        q: "Do you handle warehouse and distribution moves in Tukwila?",
+        a: "Yes. We regularly move warehouse and distribution operations in Tukwila. We handle pallet moves, equipment relocation, and loading dock coordination. For large warehouse moves, we recommend a free on-site walkthrough to plan the move sequence.",
+      },
+      {
+        q: "Can you move our Tukwila retail store on a weekend?",
+        a: "Yes. Weekend retail moves are common in Tukwila. We work Saturday and Sunday and can coordinate with Westfield Southcenter or other retail management for after-hours access.",
+      },
+    ],
+  },
+
+  "tukwila-storage": {
+    intro: `Our climate-controlled storage facility in Redmond is 16 miles from Tukwila — about 24 minutes via I-405. We offer month-to-month storage with no long-term contracts, and your first month is free with any Tukwila move. Tukwila customers commonly use our storage for between-home transitions, home staging, and business inventory overflow. All items are stored in individually locked units with 24/7 security monitoring.`,
+    buildingCalloutsHeading: "Storage Solutions for Tukwila Residents and Businesses",
+    buildingCallouts: `Our Redmond storage facility serves all Tukwila neighborhoods: residential storage (between-home storage, staging storage, renovation storage, first month free with any move), Southcenter business storage (retail inventory overflow, seasonal storage, month-to-month), warehouse overflow (pallet storage, equipment storage, flexible terms), and general household storage (month-to-month, no long-term contracts).`,
+    extraFaqs: [
+      {
+        q: "How far is your storage facility from Tukwila?",
+        a: "Our Redmond storage facility is 16 miles from Tukwila — about 24 minutes via I-405. We offer pickup and delivery from your Tukwila location, or you can drop off and pick up directly at our facility.",
+      },
+      {
+        q: "Do you offer business storage for Tukwila retail businesses?",
+        a: "Yes. We offer flexible month-to-month storage for retail inventory, seasonal overflow, and equipment. Many Tukwila businesses use our Redmond facility for seasonal inventory management.",
+      },
+    ],
+  },
+
+  "tukwila-senior": {
+    intro: `Tukwila has established residential neighborhoods with a significant senior population, and we have extensive experience with senior moves in the area. Our senior moving crews work at a pace that's comfortable for you — we never rush, we communicate clearly, and we take extra care with items that have sentimental value. We coordinate with family members, senior living facilities, and downsizing specialists as needed. Our I-5 and I-405 access makes us efficient for Tukwila senior moves.`,
+    buildingCalloutsHeading: "Senior Moving Services Across Tukwila",
+    buildingCallouts: `Our senior moving crews serve all Tukwila neighborhoods and destinations: Foster and Riverton Heights (established homes, downsizing moves, full packing available), Allentown and Tukwila Village (standard moves, partial-pack available, family coordination), senior living facilities in and near Tukwila (direct facility coordination, move-in window compliance, COI handling), and in-Tukwila downsizing moves (from larger home to smaller home or apartment).`,
+    extraFaqs: [
+      {
+        q: "Do you help with downsizing moves from Tukwila homes?",
+        a: "Yes. We work with seniors and families downsizing from Tukwila homes. We can pack, move, and help coordinate donation pickups. We move at your pace and communicate clearly throughout the process.",
+      },
+      {
+        q: "Can you coordinate with a senior living facility near Tukwila?",
+        a: "Yes. We coordinate directly with senior living facility management to confirm move-in windows, elevator reservations, and COI requirements.",
+      },
+    ],
+  },
+
+  "tukwila-furniture": {
+    intro: `Moving furniture in Tukwila requires the right equipment and experience — from older homes in Foster with narrow doorways to newer construction near Southcenter with oversized pieces. Our furniture moving crews bring the tools for disassembly and reassembly, and use furniture pads and floor runners to protect both your furniture and your property. We handle the full range — sectional sofas, king beds, dining sets, and outdoor furniture.`,
+    buildingCalloutsHeading: "Furniture Moving Across Tukwila Neighborhoods",
+    buildingCallouts: `Our furniture moving crews serve all Tukwila neighborhoods: Foster (older homes, narrow doorways, careful maneuvering), Riverton Heights (established homes, standard furniture, efficient moves), Tukwila Village (newer construction, oversized pieces, disassembly available), Southcenter area apartments (elevator coordination, standard furniture, efficient moves), and Allentown (compact homes, standard furniture, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Do you disassemble and reassemble furniture for Tukwila moves?",
+        a: "Yes. We disassemble and reassemble bed frames, sectional sofas, dining tables, and other furniture as needed. We bring the tools and hardware bags to keep everything organized.",
+      },
+      {
+        q: "Can you move large furniture through narrow doorways in older Tukwila homes?",
+        a: "Yes. Older homes in Foster and Riverton Heights often have narrow doorways and tight stairwells. Our crews are experienced with maneuvering large furniture through challenging spaces — we assess access before move day and plan accordingly.",
+      },
+    ],
+  },
+
+  "tukwila-appliance": {
+    intro: `Moving appliances in Tukwila requires the right equipment — refrigerators, washers, dryers, and ranges are heavy and easy to damage without proper technique. Our appliance moving crews use appliance dollies, furniture pads, and straps to protect both the appliance and your floors. We disconnect and reconnect standard appliance hookups as part of our service, and we're experienced with the full range of Tukwila home types.`,
+    buildingCalloutsHeading: "Appliance Moving Across Tukwila",
+    buildingCallouts: `Our appliance moving crews serve all Tukwila neighborhoods: Foster (older homes, standard appliances, narrow access in some properties), Riverton Heights (established homes, standard appliances, efficient moves), Tukwila Village (newer construction, large appliances, standard access), Southcenter area apartments (elevator coordination, standard appliances, efficient moves), and Allentown (compact homes, standard appliances, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Do you disconnect and reconnect appliances for Tukwila moves?",
+        a: "Yes. We disconnect and reconnect standard appliance hookups — water lines for refrigerators and dishwashers, electric connections for ranges. Gas disconnection requires a licensed plumber, which we can coordinate.",
+      },
+      {
+        q: "Can you move appliances through narrow doorways in older Tukwila homes?",
+        a: "Yes. We're experienced with moving appliances through challenging spaces in older Tukwila homes. We assess doorway and stairwell dimensions before move day and plan accordingly.",
+      },
+    ],
+  },
+
+  "tukwila-unpacking": {
+    intro: `After a Tukwila move, our unpacking crews can set up your new home so you're living comfortably from day one. We unpack boxes, place items in their designated rooms, and remove all packing materials. We work at your pace and follow your instructions for where everything goes. Unpacking service is available as a standalone booking or as an add-on to any Tukwila move.`,
+    buildingCalloutsHeading: "Unpacking Services Across Tukwila",
+    buildingCallouts: `Our unpacking crews serve all Tukwila neighborhoods and home types: Foster and Riverton Heights (established homes, standard unpacking, room-by-room setup), Tukwila Village (newer construction, full unpacking service, all materials removed), Southcenter area apartments (standard apartment setup, efficient unpacking), and Allentown (compact homes, efficient unpacking, standard setup).`,
+    extraFaqs: [
+      {
+        q: "How long does unpacking take for a Tukwila home?",
+        a: "A typical 2-bedroom Tukwila home takes 3–5 hours to unpack with a 2-person crew. A larger 3–4 bedroom home takes 5–8 hours. We remove all boxes and packing materials when we're done.",
+      },
+      {
+        q: "Can I book unpacking service separately from the move in Tukwila?",
+        a: "Yes. We offer unpacking as a standalone service — you don't have to use us for the move itself. We can schedule unpacking the day after your move or whenever works best for you.",
+      },
+    ],
+  },
+
+  "tukwila-warehousing": {
+    intro: `Our Redmond warehouse is 16 miles from Tukwila and offers flexible warehousing and distribution services for South King County businesses. We handle receiving, storage, inventory management, and last-mile delivery. Tukwila's position at the I-5/I-405/SR-99 junction makes it a natural distribution hub, and our facility provides efficient access for both inbound and outbound freight. Month-to-month contracts available.`,
+    buildingCalloutsHeading: "Warehousing and Distribution for Tukwila Businesses",
+    buildingCallouts: `Our warehousing services support Tukwila businesses: Southcenter retail (inventory storage, seasonal overflow, last-mile delivery), warehouse and distribution operations (pallet storage, cross-docking, receiving and distribution), light industrial (equipment storage, machinery storage, flexible terms), and general business storage (month-to-month, pickup and delivery available).`,
+    extraFaqs: [
+      {
+        q: "Do you offer cross-docking services for Tukwila distribution businesses?",
+        a: "Yes. We offer cross-docking at our Redmond facility for Tukwila distribution businesses. We receive inbound freight, sort, and redistribute for last-mile delivery.",
+      },
+      {
+        q: "How far is your warehouse from Tukwila?",
+        a: "Our Redmond warehouse is 16 miles from Tukwila — about 24 minutes via I-405. We offer pickup and delivery from your Tukwila location.",
+      },
+    ],
+  },
+
+// ===================================================================
+// MOUNTLAKE TERRACE
+// ===================================================================
+
+  "mountlake-terrace-residential": {
+    intro: `Mountlake Terrace is experiencing a significant transformation around its new Lynnwood Link light rail station, with new apartment development alongside established mid-century residential neighborhoods. Our crews have been serving Mountlake Terrace since 2009 and know the mix of older homes in Ballinger and Terrace Creek alongside the newer construction near the City Center station. I-5 provides the main access route from our Redmond warehouse, 17 miles southeast — a 22-minute drive that keeps our response time fast.`,
+    buildingCalloutsHeading: "Mountlake Terrace Neighborhoods We Know Best",
+    buildingCallouts: `Our residential crews serve all Mountlake Terrace neighborhoods: Downtown Mountlake Terrace (newer development, standard access, mixed housing), Ballinger (established residential, mid-century homes, standard access), Terrace Creek (established neighborhood, mix of home sizes, standard access), Lakeview (residential, lake-adjacent properties, standard access), North Mountlake Terrace (established residential, standard access, efficient moves), and light rail corridor (new apartment development, elevator requirements, standard move-in windows).`,
+    extraFaqs: [
+      {
+        q: "Do you serve the new apartments near Mountlake Terrace's light rail station?",
+        a: "Yes. We regularly move in and out of the new apartment buildings near Mountlake Terrace's light rail station. We coordinate elevator reservations and work within building move-in windows.",
+      },
+      {
+        q: "What's the best time to schedule a Mountlake Terrace move to avoid I-5 traffic?",
+        a: "We recommend starting before 8 a.m. or after 10 a.m. to avoid the I-5 morning rush, and completing before 3 p.m. to avoid afternoon congestion. For large moves, we often start at 7 a.m.",
+      },
+    ],
+  },
+
+  "mountlake-terrace-apartment": {
+    intro: `Mountlake Terrace's apartment market is growing rapidly around the new light rail station, with newer buildings that have standard elevator and move-in window requirements. Our crews coordinate directly with building management before move day to secure elevator reservations and confirm parking. Most Mountlake Terrace apartment moves complete in 2–3 hours, and we provide flat-rate quotes so you know the final price before we start.`,
+    buildingCalloutsHeading: "Apartment Buildings We Serve in Mountlake Terrace",
+    buildingCallouts: `Our apartment moving crews serve Mountlake Terrace's major complexes: light rail corridor apartments (elevator reservations required, COI required, standard move-in windows, newer construction), Downtown Mountlake Terrace apartments (standard requirements, mixed housing, efficient moves), Ballinger area apartments (established buildings, standard access, efficient moves), and Terrace Creek apartments (standard requirements, ample parking, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Do the new Mountlake Terrace light rail apartments require a certificate of insurance?",
+        a: "Most newer light rail corridor apartment buildings require a COI from your moving company. We provide certificates of insurance at no charge — just send us your building's requirements and we'll issue the COI within 24 hours.",
+      },
+      {
+        q: "How far in advance should I book a Mountlake Terrace apartment move?",
+        a: "We recommend booking 2–3 weeks in advance. Light rail corridor buildings fill quickly on weekends and end-of-month dates due to high turnover.",
+      },
+    ],
+  },
+
+  "mountlake-terrace-packing": {
+    intro: `Mountlake Terrace homes range from compact mid-century properties in Ballinger and Terrace Creek to newer construction near the light rail corridor. Our packing crews bring all materials and are experienced with the full range of home types. For mid-century homes with vintage contents, we use specialty wrapping for fragile items. For newer construction with large kitchens and extensive contents, full-pack service is a popular choice. We provide flat-rate packing quotes.`,
+    buildingCalloutsHeading: "Packing Services Across Mountlake Terrace",
+    buildingCallouts: `Our packing crews serve all Mountlake Terrace neighborhoods: Ballinger (mid-century homes, vintage contents, specialty wrapping available), Terrace Creek (established homes, standard packing, efficient turnaround), Downtown Mountlake Terrace (mixed housing, standard packing, efficient turnaround), light rail corridor apartments (standard packing, efficient turnaround, all materials included), and Lakeview (residential, standard packing, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "How long does it take to pack a Mountlake Terrace home?",
+        a: "A typical 2-bedroom Mountlake Terrace home takes 4–6 hours to pack with a 2-person crew. A larger 3–4 bedroom home takes 6–10 hours. We recommend a free walkthrough quote for larger homes.",
+      },
+      {
+        q: "Do you pack vintage and mid-century items for Mountlake Terrace moves?",
+        a: "Yes. We use specialty wrapping and careful handling for vintage furniture, mid-century modern pieces, and fragile collectibles. We bring acid-free tissue and custom padding for delicate items.",
+      },
+    ],
+  },
+
+  "mountlake-terrace-commercial": {
+    intro: `Mountlake Terrace's business community is growing around the new light rail station, with new retail and office development alongside established businesses along 236th Street SW. Our commercial crews handle office and retail moves with minimal disruption — we work after hours and on weekends. For businesses near the light rail corridor, we plan truck access and parking in advance. Flat-rate quotes available for all Mountlake Terrace commercial moves.`,
+    buildingCalloutsHeading: "Commercial Moving in Mountlake Terrace",
+    buildingCallouts: `We serve Mountlake Terrace's commercial areas: light rail corridor commercial (new retail and office, standard access, flexible scheduling), 236th Street SW corridor (established businesses, standard access, efficient moves), Downtown Mountlake Terrace (mixed commercial, standard access, weekend moves available), and Ballinger area commercial (established businesses, standard access, ample parking).`,
+    extraFaqs: [
+      {
+        q: "Can you move our Mountlake Terrace office on a weekend?",
+        a: "Yes. Weekend moves are our most common request for Mountlake Terrace commercial relocations. We work Saturday and Sunday and can start as early as 6 a.m.",
+      },
+      {
+        q: "Do you handle moves for businesses near the Mountlake Terrace light rail station?",
+        a: "Yes. We regularly move businesses near the Mountlake Terrace light rail station. We plan truck access and parking in advance to work efficiently in the busy corridor.",
+      },
+    ],
+  },
+
+  "mountlake-terrace-storage": {
+    intro: `Our climate-controlled storage facility in Redmond is 17 miles from Mountlake Terrace — about 22 minutes via I-5. We offer month-to-month storage with no long-term contracts, and your first month is free with any Mountlake Terrace move. Customers commonly use our storage for between-home transitions, home staging, and renovation projects. All items are stored in individually locked units with 24/7 security monitoring.`,
+    buildingCalloutsHeading: "Storage Solutions for Mountlake Terrace Residents and Businesses",
+    buildingCallouts: `Our Redmond storage facility serves all Mountlake Terrace neighborhoods: residential storage (between-home storage, staging storage, renovation storage, first month free with any move), light rail corridor business storage (retail inventory overflow, seasonal storage, month-to-month), established neighborhood storage (household goods, furniture, general storage), and general business storage (month-to-month, pickup and delivery available).`,
+    extraFaqs: [
+      {
+        q: "How far is your storage facility from Mountlake Terrace?",
+        a: "Our Redmond storage facility is 17 miles from Mountlake Terrace — about 22 minutes via I-5. We offer pickup and delivery from your Mountlake Terrace location.",
+      },
+      {
+        q: "Do you offer month-to-month storage for Mountlake Terrace residents?",
+        a: "Yes. All our storage contracts are month-to-month — no long-term commitment required. Your first month is free with any Mountlake Terrace move.",
+      },
+    ],
+  },
+
+  "mountlake-terrace-senior": {
+    intro: `Mountlake Terrace has established residential neighborhoods with a significant senior population, and we have extensive experience with senior moves in the area. Our senior moving crews work at a pace that's comfortable for you — we never rush, we communicate clearly, and we take extra care with items that have sentimental value. We coordinate with family members, senior living facilities, and downsizing specialists as needed.`,
+    buildingCalloutsHeading: "Senior Moving Services Across Mountlake Terrace",
+    buildingCallouts: `Our senior moving crews serve all Mountlake Terrace neighborhoods and destinations: Ballinger and Terrace Creek (established homes, downsizing moves, full packing available), Downtown Mountlake Terrace (standard moves, partial-pack available, family coordination), senior living facilities in and near Mountlake Terrace (direct facility coordination, move-in window compliance), and in-Mountlake Terrace downsizing moves (from larger home to smaller home or apartment).`,
+    extraFaqs: [
+      {
+        q: "Do you help with downsizing moves from Mountlake Terrace homes?",
+        a: "Yes. We work with seniors and families downsizing from Mountlake Terrace homes. We can pack, move, and help coordinate donation pickups. We move at your pace.",
+      },
+      {
+        q: "Can you coordinate with a senior living facility near Mountlake Terrace?",
+        a: "Yes. We coordinate directly with senior living facility management to confirm move-in windows, elevator reservations, and COI requirements.",
+      },
+    ],
+  },
+
+  "mountlake-terrace-furniture": {
+    intro: `Mountlake Terrace homes range from compact mid-century properties to newer construction near the light rail corridor. Our furniture moving crews bring the tools for disassembly and reassembly, and use furniture pads and floor runners to protect both your furniture and your property. For mid-century homes with narrow doorways, we assess access before move day and plan accordingly.`,
+    buildingCalloutsHeading: "Furniture Moving Across Mountlake Terrace",
+    buildingCallouts: `Our furniture moving crews serve all Mountlake Terrace neighborhoods: Ballinger (mid-century homes, narrow doorways, careful maneuvering), Terrace Creek (established homes, standard furniture, efficient moves), Downtown Mountlake Terrace (mixed housing, standard furniture, efficient moves), light rail corridor apartments (elevator coordination, standard furniture, efficient moves), and Lakeview (residential, standard furniture, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Do you disassemble and reassemble furniture for Mountlake Terrace moves?",
+        a: "Yes. We disassemble and reassemble bed frames, sectional sofas, dining tables, and other furniture as needed. We bring the tools and hardware bags to keep everything organized.",
+      },
+      {
+        q: "Can you move large furniture through narrow doorways in older Mountlake Terrace homes?",
+        a: "Yes. Mid-century homes in Ballinger and Terrace Creek often have narrow doorways. Our crews are experienced with maneuvering large furniture through challenging spaces.",
+      },
+    ],
+  },
+
+  "mountlake-terrace-appliance": {
+    intro: `Moving appliances in Mountlake Terrace requires the right equipment and experience. Our appliance moving crews use appliance dollies, furniture pads, and straps to protect both the appliance and your floors. We disconnect and reconnect standard appliance hookups as part of our service, and we're experienced with the full range of Mountlake Terrace home types — from compact mid-century homes to newer construction.`,
+    buildingCalloutsHeading: "Appliance Moving Across Mountlake Terrace",
+    buildingCallouts: `Our appliance moving crews serve all Mountlake Terrace neighborhoods: Ballinger (mid-century homes, standard appliances, narrow access in some properties), Terrace Creek (established homes, standard appliances, efficient moves), Downtown Mountlake Terrace (mixed housing, standard appliances, efficient moves), light rail corridor apartments (elevator coordination, standard appliances, efficient moves), and Lakeview (residential, standard appliances, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Do you disconnect and reconnect appliances for Mountlake Terrace moves?",
+        a: "Yes. We disconnect and reconnect standard appliance hookups — water lines for refrigerators and dishwashers, electric connections for ranges.",
+      },
+      {
+        q: "Can you move appliances through narrow doorways in older Mountlake Terrace homes?",
+        a: "Yes. We're experienced with moving appliances through challenging spaces in older Mountlake Terrace homes. We assess doorway dimensions before move day and plan accordingly.",
+      },
+    ],
+  },
+
+  "mountlake-terrace-unpacking": {
+    intro: `After a Mountlake Terrace move, our unpacking crews can set up your new home so you're living comfortably from day one. We unpack boxes, place items in their designated rooms, and remove all packing materials. We work at your pace and follow your instructions for where everything goes. Unpacking service is available as a standalone booking or as an add-on to any Mountlake Terrace move.`,
+    buildingCalloutsHeading: "Unpacking Services Across Mountlake Terrace",
+    buildingCallouts: `Our unpacking crews serve all Mountlake Terrace neighborhoods and home types: Ballinger and Terrace Creek (established homes, standard unpacking, room-by-room setup), Downtown Mountlake Terrace (mixed housing, standard unpacking, all materials removed), light rail corridor apartments (standard apartment setup, efficient unpacking), and Lakeview (residential, standard unpacking, efficient setup).`,
+    extraFaqs: [
+      {
+        q: "How long does unpacking take for a Mountlake Terrace home?",
+        a: "A typical 2-bedroom Mountlake Terrace home takes 3–5 hours to unpack with a 2-person crew. A larger 3–4 bedroom home takes 5–8 hours. We remove all boxes and packing materials when we're done.",
+      },
+      {
+        q: "Can I book unpacking service separately from the move in Mountlake Terrace?",
+        a: "Yes. We offer unpacking as a standalone service. We can schedule unpacking the day after your move or whenever works best for you.",
+      },
+    ],
+  },
+
+  "mountlake-terrace-warehousing": {
+    intro: `Our Redmond warehouse is 17 miles from Mountlake Terrace and offers flexible warehousing and distribution services for Snohomish County businesses. We handle receiving, storage, inventory management, and last-mile delivery. For businesses near the light rail corridor, our facility provides efficient access via I-5. Month-to-month contracts available.`,
+    buildingCalloutsHeading: "Warehousing and Distribution for Mountlake Terrace Businesses",
+    buildingCallouts: `Our warehousing services support Mountlake Terrace businesses: light rail corridor retail (inventory storage, seasonal overflow, last-mile delivery), professional services (document storage, equipment storage, month-to-month), established businesses (general storage, flexible terms, pickup and delivery available), and general business storage (month-to-month, no long-term commitment).`,
+    extraFaqs: [
+      {
+        q: "How far is your warehouse from Mountlake Terrace?",
+        a: "Our Redmond warehouse is 17 miles from Mountlake Terrace — about 22 minutes via I-5. We offer pickup and delivery from your Mountlake Terrace location.",
+      },
+      {
+        q: "Do you offer month-to-month warehousing for Mountlake Terrace businesses?",
+        a: "Yes. All our warehousing contracts are month-to-month — no long-term commitment required.",
+      },
+    ],
+  },
+
+// ===================================================================
+// LYNNWOOD
+// ===================================================================
+
+  "lynnwood-residential": {
+    intro: `Lynnwood is the commercial hub of South Snohomish County and the northern terminus of the Lynnwood Link light rail extension — a status that's driving significant new apartment development around the City Center station. Our crews have been serving Lynnwood since 2009 and know the established Alderwood and Meadowdale neighborhoods as well as the newer construction near the light rail corridor. I-5 provides the main access route from our Redmond warehouse, 18 miles southeast — a 28-minute drive.`,
+    buildingCalloutsHeading: "Lynnwood Neighborhoods We Know Best",
+    buildingCallouts: `Our residential crews serve all Lynnwood neighborhoods: Alderwood (established residential, mix of older and newer homes, standard access), Scriber Lake (residential, lake-adjacent properties, standard access), Lynnwood City Center (newer development, light rail corridor, mixed housing), Meadowdale (established neighborhood, standard access, efficient moves), Larch Way (residential, standard access, mix of home sizes), Lynnwood Crossing (newer development, standard access, larger homes), and North Lynnwood (established residential, standard access, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Do you serve the new apartments near Lynnwood's City Center light rail station?",
+        a: "Yes. We regularly move in and out of the new apartment buildings near Lynnwood's City Center light rail station. We coordinate elevator reservations and work within building move-in windows.",
+      },
+      {
+        q: "What's the best time to schedule a Lynnwood move to avoid I-5 traffic?",
+        a: "We recommend starting before 8 a.m. or after 10 a.m. to avoid the I-5 morning rush, and completing before 3 p.m. to avoid afternoon congestion. For large moves, we often start at 7 a.m.",
+      },
+    ],
+  },
+
+  "lynnwood-apartment": {
+    intro: `Lynnwood's apartment market is growing rapidly around the City Center light rail station, with newer buildings that have standard elevator and move-in window requirements. Our crews coordinate directly with building management before move day to secure elevator reservations and confirm parking. Most Lynnwood apartment moves complete in 2–3 hours, and we provide flat-rate quotes so you know the final price before we start.`,
+    buildingCalloutsHeading: "Apartment Buildings We Serve in Lynnwood",
+    buildingCallouts: `Our apartment moving crews serve Lynnwood's major complexes: City Center light rail apartments (elevator reservations required, COI required, standard move-in windows, newer construction), Alderwood area apartments (established buildings, standard access, efficient moves), Meadowdale apartments (standard requirements, ample parking, efficient moves), Larch Way apartments (standard requirements, efficient moves), and North Lynnwood apartments (established buildings, standard access, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Do the new Lynnwood City Center apartments require a certificate of insurance?",
+        a: "Most newer City Center light rail apartment buildings require a COI from your moving company. We provide certificates of insurance at no charge — just send us your building's requirements and we'll issue the COI within 24 hours.",
+      },
+      {
+        q: "How far in advance should I book a Lynnwood apartment move?",
+        a: "We recommend booking 2–3 weeks in advance. City Center buildings fill quickly on weekends and end-of-month dates due to high turnover near the light rail station.",
+      },
+    ],
+  },
+
+  "lynnwood-packing": {
+    intro: `Lynnwood homes range from compact older properties in Alderwood to newer construction near the City Center light rail corridor. Our packing crews bring all materials and are experienced with the full range of home types. For older Alderwood homes with vintage contents, we use specialty wrapping for fragile items. For newer construction with large kitchens and extensive contents, full-pack service is a popular choice. We provide flat-rate packing quotes.`,
+    buildingCalloutsHeading: "Packing Services Across Lynnwood Neighborhoods",
+    buildingCallouts: `Our packing crews serve all Lynnwood neighborhoods: Alderwood (established homes, vintage contents, specialty wrapping available), Scriber Lake (residential, standard packing, efficient turnaround), City Center (newer construction, full-pack service common, all materials included), Meadowdale (established homes, standard packing, efficient turnaround), Larch Way (residential, standard packing, efficient moves), and North Lynnwood (established homes, standard packing, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "How long does it take to pack a Lynnwood home?",
+        a: "A typical 2-bedroom Lynnwood home takes 4–6 hours to pack with a 2-person crew. A larger 3–4 bedroom home takes 6–10 hours. We recommend a free walkthrough quote for larger homes.",
+      },
+      {
+        q: "Do you bring packing materials for Lynnwood moves?",
+        a: "Yes. We bring all packing materials — boxes, tape, bubble wrap, packing paper, and specialty materials for fragile items. All materials are included in our flat-rate packing quotes.",
+      },
+    ],
+  },
+
+  "lynnwood-commercial": {
+    intro: `Lynnwood is the commercial hub of South Snohomish County, with Alderwood Mall, significant retail development, and a growing office market near the City Center light rail station. Our commercial crews handle office, retail, and restaurant moves with minimal disruption — we work after hours and on weekends. For Alderwood Mall area businesses, we plan truck access and parking in advance. Flat-rate quotes available for all Lynnwood commercial moves.`,
+    buildingCalloutsHeading: "Commercial Moving in Lynnwood's Business Districts",
+    buildingCallouts: `We serve Lynnwood's major commercial areas: Alderwood Mall corridor (retail and restaurant moves, standard access, flexible scheduling, after-hours available), City Center light rail corridor (new retail and office, standard access, elevator coordination), 44th Avenue W corridor (established businesses, standard access, efficient moves), and North Lynnwood commercial (standard access, ample parking, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Do you handle retail moves in the Alderwood Mall area?",
+        a: "Yes. We regularly move retail businesses in the Alderwood Mall corridor. We coordinate with mall management for after-hours access and plan truck parking in advance.",
+      },
+      {
+        q: "Can you move our Lynnwood office on a weekend?",
+        a: "Yes. Weekend moves are our most common request for Lynnwood commercial relocations. We work Saturday and Sunday and can start as early as 6 a.m.",
+      },
+    ],
+  },
+
+  "lynnwood-storage": {
+    intro: `Our climate-controlled storage facility in Redmond is 18 miles from Lynnwood — about 28 minutes via I-5. We offer month-to-month storage with no long-term contracts, and your first month is free with any Lynnwood move. Lynnwood customers commonly use our storage for between-home transitions, home staging, and business inventory overflow. All items are stored in individually locked units with 24/7 security monitoring.`,
+    buildingCalloutsHeading: "Storage Solutions for Lynnwood Residents and Businesses",
+    buildingCallouts: `Our Redmond storage facility serves all Lynnwood neighborhoods: residential storage (between-home storage, staging storage, renovation storage, first month free with any move), Alderwood Mall business storage (retail inventory overflow, seasonal storage, month-to-month), City Center business storage (new retail and office inventory, flexible terms), and general household storage (month-to-month, no long-term contracts).`,
+    extraFaqs: [
+      {
+        q: "How far is your storage facility from Lynnwood?",
+        a: "Our Redmond storage facility is 18 miles from Lynnwood — about 28 minutes via I-5. We offer pickup and delivery from your Lynnwood location.",
+      },
+      {
+        q: "Do you offer business storage for Lynnwood retail businesses?",
+        a: "Yes. We offer flexible month-to-month storage for retail inventory, seasonal overflow, and equipment. Many Lynnwood businesses use our Redmond facility for seasonal inventory management.",
+      },
+    ],
+  },
+
+  "lynnwood-senior": {
+    intro: `Lynnwood has established residential neighborhoods with a significant senior population, and we have extensive experience with senior moves in the area. Our senior moving crews work at a pace that's comfortable for you — we never rush, we communicate clearly, and we take extra care with items that have sentimental value. We coordinate with family members, senior living facilities, and downsizing specialists as needed.`,
+    buildingCalloutsHeading: "Senior Moving Services Across Lynnwood",
+    buildingCallouts: `Our senior moving crews serve all Lynnwood neighborhoods and destinations: Alderwood and Meadowdale (established homes, downsizing moves, full packing available), City Center (standard moves, partial-pack available, family coordination), senior living facilities in and near Lynnwood (direct facility coordination, move-in window compliance, COI handling), and in-Lynnwood downsizing moves (from larger home to smaller home or apartment).`,
+    extraFaqs: [
+      {
+        q: "Do you help with downsizing moves from Lynnwood homes?",
+        a: "Yes. We work with seniors and families downsizing from Lynnwood homes. We can pack, move, and help coordinate donation pickups. We move at your pace and communicate clearly throughout the process.",
+      },
+      {
+        q: "Can you coordinate with a senior living facility near Lynnwood?",
+        a: "Yes. We coordinate directly with senior living facility management to confirm move-in windows, elevator reservations, and COI requirements.",
+      },
+    ],
+  },
+
+  "lynnwood-furniture": {
+    intro: `Lynnwood homes range from compact older properties in Alderwood to newer construction near the City Center light rail corridor. Our furniture moving crews bring the tools for disassembly and reassembly, and use furniture pads and floor runners to protect both your furniture and your property. For older Alderwood homes with narrow doorways, we assess access before move day and plan accordingly.`,
+    buildingCalloutsHeading: "Furniture Moving Across Lynnwood Neighborhoods",
+    buildingCallouts: `Our furniture moving crews serve all Lynnwood neighborhoods: Alderwood (older homes, narrow doorways, careful maneuvering), Scriber Lake (residential, standard furniture, efficient moves), City Center (newer construction, oversized pieces, disassembly available), Meadowdale (established homes, standard furniture, efficient moves), Larch Way (residential, standard furniture, efficient moves), and North Lynnwood (established homes, standard furniture, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Do you disassemble and reassemble furniture for Lynnwood moves?",
+        a: "Yes. We disassemble and reassemble bed frames, sectional sofas, dining tables, and other furniture as needed. We bring the tools and hardware bags to keep everything organized.",
+      },
+      {
+        q: "Can you move large furniture through narrow doorways in older Lynnwood homes?",
+        a: "Yes. Older homes in Alderwood often have narrow doorways. Our crews are experienced with maneuvering large furniture through challenging spaces.",
+      },
+    ],
+  },
+
+  "lynnwood-appliance": {
+    intro: `Moving appliances in Lynnwood requires the right equipment and experience. Our appliance moving crews use appliance dollies, furniture pads, and straps to protect both the appliance and your floors. We disconnect and reconnect standard appliance hookups as part of our service, and we're experienced with the full range of Lynnwood home types — from compact older homes to newer construction.`,
+    buildingCalloutsHeading: "Appliance Moving Across Lynnwood",
+    buildingCallouts: `Our appliance moving crews serve all Lynnwood neighborhoods: Alderwood (older homes, standard appliances, narrow access in some properties), Scriber Lake (residential, standard appliances, efficient moves), City Center (newer construction, large appliances, standard access), Meadowdale (established homes, standard appliances, efficient moves), and North Lynnwood (established homes, standard appliances, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Do you disconnect and reconnect appliances for Lynnwood moves?",
+        a: "Yes. We disconnect and reconnect standard appliance hookups — water lines for refrigerators and dishwashers, electric connections for ranges.",
+      },
+      {
+        q: "Can you move appliances through narrow doorways in older Lynnwood homes?",
+        a: "Yes. We're experienced with moving appliances through challenging spaces in older Lynnwood homes. We assess doorway dimensions before move day and plan accordingly.",
+      },
+    ],
+  },
+
+  "lynnwood-unpacking": {
+    intro: `After a Lynnwood move, our unpacking crews can set up your new home so you're living comfortably from day one. We unpack boxes, place items in their designated rooms, and remove all packing materials. We work at your pace and follow your instructions for where everything goes. Unpacking service is available as a standalone booking or as an add-on to any Lynnwood move.`,
+    buildingCalloutsHeading: "Unpacking Services Across Lynnwood",
+    buildingCallouts: `Our unpacking crews serve all Lynnwood neighborhoods and home types: Alderwood and Meadowdale (established homes, standard unpacking, room-by-room setup), City Center (newer construction, full unpacking service, all materials removed), Scriber Lake (residential, standard unpacking, efficient setup), and North Lynnwood (established homes, standard unpacking, efficient setup).`,
+    extraFaqs: [
+      {
+        q: "How long does unpacking take for a Lynnwood home?",
+        a: "A typical 2-bedroom Lynnwood home takes 3–5 hours to unpack with a 2-person crew. A larger 3–4 bedroom home takes 5–8 hours. We remove all boxes and packing materials when we're done.",
+      },
+      {
+        q: "Can I book unpacking service separately from the move in Lynnwood?",
+        a: "Yes. We offer unpacking as a standalone service. We can schedule unpacking the day after your move or whenever works best for you.",
+      },
+    ],
+  },
+
+  "lynnwood-warehousing": {
+    intro: `Our Redmond warehouse is 18 miles from Lynnwood and offers flexible warehousing and distribution services for South Snohomish County businesses. We handle receiving, storage, inventory management, and last-mile delivery. For Alderwood Mall area businesses and the growing City Center corridor, our facility provides efficient access via I-5. Month-to-month contracts available.`,
+    buildingCalloutsHeading: "Warehousing and Distribution for Lynnwood Businesses",
+    buildingCallouts: `Our warehousing services support Lynnwood businesses: Alderwood Mall retail (inventory storage, seasonal overflow, last-mile delivery), City Center commercial (new retail and office storage, flexible terms), professional services (document storage, equipment storage, month-to-month), and general business storage (month-to-month, no long-term commitment, pickup and delivery available).`,
+    extraFaqs: [
+      {
+        q: "How far is your warehouse from Lynnwood?",
+        a: "Our Redmond warehouse is 18 miles from Lynnwood — about 28 minutes via I-5. We offer pickup and delivery from your Lynnwood location.",
+      },
+      {
+        q: "Do you offer last-mile delivery to Lynnwood from your warehouse?",
+        a: "Yes. We deliver from our Redmond warehouse to any Lynnwood address. We plan deliveries to avoid peak I-5 congestion and provide accurate delivery windows.",
+      },
+    ],
+  },
 };
