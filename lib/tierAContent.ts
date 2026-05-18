@@ -3304,4 +3304,824 @@ export const TIER_A_CONTENT: Record<string, TierAEntry> = {
       },
     ],
   },
+
+// ===================================================================
+// CARNATION
+// ===================================================================
+
+  "carnation-residential": {
+    intro: `Carnation is a small agricultural community in the Snoqualmie Valley, anchored by the Tolt River, historic dairy farms, and a tight-knit downtown. Our crews have been moving Carnation homes since 2009 and know every neighborhood's specific logistics. Downtown Carnation homes sit on compact lots with limited truck parking, while rural properties on Carnation Farm Road and Tolt River Road have long driveways and unpaved access that require right-sized trucks. SR-203 is the main corridor from our Redmond warehouse — 16 miles southeast, a 25-minute drive.`,
+    buildingCalloutsHeading: "Carnation Neighborhoods We Know Best",
+    buildingCallouts: `Our residential crews serve all Carnation neighborhoods: Downtown Carnation (compact lots, limited truck parking, older homes), Tolt River area (rural properties, long driveways, flood-plain awareness), Carnation Farm Road (agricultural properties, unpaved access, advance truck sizing required), Stillwater (rural residential, standard access, mix of home sizes), and Ames Lake adjacent (semi-rural, newer construction, standard access).`,
+    extraFaqs: [
+      {
+        q: "How do you handle rural road access for Carnation residential moves?",
+        a: "We assess every Carnation property's access in advance — driveway length, road surface, and truck turnaround space. For properties on unpaved roads or farm lanes, we bring a smaller truck and shuttle loads if needed. We've been doing this in the Snoqualmie Valley since 2009.",
+      },
+      {
+        q: "What does a residential move in Carnation typically cost?",
+        a: "Most Carnation residential moves run $120–$160 per hour for a 2-person crew. A 2-bedroom home typically costs $750–$1,300. Rural properties with long driveways or challenging access may take additional time. We provide flat-rate quotes after reviewing your specific move.",
+      },
+    ],
+  },
+
+  "carnation-apartment": {
+    intro: `Carnation has very limited apartment inventory — the community is primarily single-family residential. If you're moving from an apartment in a nearby city (Redmond, Woodinville, Duvall) to a Carnation home, we handle the full move seamlessly. Our crews know the SR-203 corridor well and can coordinate same-day moves from apartment to Carnation property. The Redmond warehouse is 16 miles away, allowing us to provide efficient service with no long travel delays.`,
+    buildingCalloutsHeading: "Apartment Move Logistics for Carnation",
+    buildingCallouts: `Most apartment moves to or from Carnation originate in nearby cities: Redmond (16 miles, 25 min via SR-202 and SR-203), Woodinville (12 miles, 20 min via SR-202), Duvall (6 miles, 10 min via SR-203), and Kirkland (18 miles, 30 min via SR-202). We coordinate elevator reservations and COI requirements at the origin apartment building and handle rural property access at the Carnation destination.`,
+    extraFaqs: [
+      {
+        q: "Can you move me from a Redmond apartment to a Carnation home?",
+        a: "Yes — this is a common move for us. We handle elevator reservations and COI requirements at the Redmond apartment, then manage rural road access at your Carnation property. We provide a flat-rate quote for the full move.",
+      },
+      {
+        q: "Are there any apartments in Carnation itself?",
+        a: "Carnation has very limited apartment inventory. Most housing is single-family residential. If you're looking for apartments near Carnation, Duvall (6 miles north) and Woodinville (12 miles west) have more options.",
+      },
+    ],
+  },
+
+  "carnation-packing": {
+    intro: `Carnation homes range from older farmhouses in downtown to rural properties with large outbuildings — and packing for a rural move requires a different approach than packing a city apartment. Our Carnation packing crews bring all materials on the truck: double-wall boxes, wardrobe boxes, mattress bags, furniture pads, and specialty wrapping for fragile items. We pack room by room, label everything clearly, and load in a sequence that makes unpacking logical. For rural Carnation properties with outbuildings, we pack and label separately so barn items, garage tools, and household goods don't get mixed.`,
+    buildingCalloutsHeading: "Packing Services for Carnation Homes",
+    buildingCallouts: `We offer full packing, partial packing, and packing supplies delivery for all Carnation property types: farmhouses (full-service packing including outbuildings and barn items), rural residential (specialty wrapping for antiques and farm equipment, labeled by room and building), downtown Carnation homes (standard full-service packing, compact lot logistics), and Tolt River area properties (flood-plain awareness, moisture-resistant packing for items stored near water).`,
+    extraFaqs: [
+      {
+        q: "Do you pack outbuildings and garages for Carnation farm properties?",
+        a: "Yes. We pack outbuildings, garages, and barns separately from household goods, with clear labeling so everything goes to the right place at your destination. Let us know about outbuildings when you request a quote so we can allocate enough time.",
+      },
+      {
+        q: "How much does packing service cost for a Carnation home?",
+        a: "Full packing for a 2-bedroom Carnation home typically adds $300–$600 to the move cost, depending on the volume of items. We provide an itemized quote that separates packing labor from move labor.",
+      },
+    ],
+  },
+
+  "carnation-commercial": {
+    intro: `Carnation has limited commercial development — primarily small businesses along Tolt Avenue and a handful of agricultural operations. Our commercial crews handle small office moves, retail relocations, and agricultural business moves with the same care and efficiency we bring to larger commercial jobs. We work after hours or on weekends to minimize disruption, and our Redmond warehouse is 16 miles away for any short-term storage needs during a commercial transition.`,
+    buildingCalloutsHeading: "Commercial Move Locations in Carnation",
+    buildingCallouts: `We serve all commercial locations in Carnation: Tolt Avenue businesses (small retail and office, limited truck parking, advance coordination required), agricultural operations (equipment moves, outbuilding contents, specialized handling), and home offices (full packing and move service, same as residential).`,
+    extraFaqs: [
+      {
+        q: "Can you move a small business in Carnation over a weekend?",
+        a: "Yes. We regularly schedule commercial moves on weekends to minimize business disruption. We provide a flat-rate quote and a guaranteed start time.",
+      },
+      {
+        q: "Do you move agricultural equipment in Carnation?",
+        a: "We move farm office contents, tools, and smaller agricultural equipment. For heavy machinery, we recommend a specialized agricultural equipment mover. Contact us and we'll advise on what we can handle.",
+      },
+    ],
+  },
+
+  "carnation-storage": {
+    intro: `Our secure, climate-controlled storage facility in Redmond is 16 miles from Carnation — a 25-minute drive via SR-202 and SR-203. Carnation residents use our storage during home sales, renovations, and seasonal moves. Rural Carnation properties often have outbuildings for storage, but when you need climate-controlled, secure storage for furniture, electronics, documents, or valuables, our Redmond facility provides the right environment. Your first month of storage is free with any Carnation move.`,
+    buildingCalloutsHeading: "Storage Options for Carnation Residents",
+    buildingCallouts: `Our Redmond storage facility serves Carnation residents with: climate-controlled units (furniture, electronics, documents, wine, antiques), standard units (tools, outdoor equipment, seasonal items), short-term storage (during home sales or renovations, first month free with move), and long-term storage (month-to-month, no long-term contracts required).`,
+    extraFaqs: [
+      {
+        q: "Is your storage facility close enough to Carnation to be practical?",
+        a: "Yes. Our Redmond facility is 16 miles from Carnation — a 25-minute drive via SR-202 and SR-203. We pick up from your Carnation property and deliver back when you're ready. Most clients access their storage 1–2 times per month.",
+      },
+      {
+        q: "Do you offer storage for farm equipment or large items from Carnation?",
+        a: "We store furniture, boxes, and standard household items. For large farm equipment, we recommend an agricultural storage facility. Contact us and we'll advise on the best solution for your specific items.",
+      },
+    ],
+  },
+
+  "carnation-senior": {
+    intro: `Carnation's senior community is small but tight-knit, with many long-time residents who have lived in their homes for decades. Moving after years in a Snoqualmie Valley farmhouse or rural property requires patience, careful planning, and crews who understand the emotional weight of leaving a longtime home. Our senior moving specialists take extra time, communicate clearly, and handle every item with care. We coordinate with family members, senior communities, and care facilities in Redmond, Kirkland, and Bellevue for Carnation seniors transitioning to assisted living.`,
+    buildingCalloutsHeading: "Senior Move Destinations from Carnation",
+    buildingCallouts: `We move Carnation seniors to destinations throughout the Eastside and beyond: Redmond senior communities (16 miles, 25 min), Kirkland senior communities (18 miles, 30 min), Bellevue senior communities (22 miles, 35 min), Woodinville senior communities (12 miles, 20 min), and in-Carnation downsizing (smaller home or cottage in the same community).`,
+    extraFaqs: [
+      {
+        q: "How do you handle a senior move from a longtime Carnation farmhouse?",
+        a: "We start with a detailed walkthrough to understand what's moving, what's being donated, and what family members are taking. We pack room by room, label everything clearly, and take extra care with sentimental items. We coordinate with the destination facility for move-in requirements.",
+      },
+      {
+        q: "Can you help coordinate donation pickups for items a Carnation senior isn't taking?",
+        a: "Yes. We work with local donation organizations and can coordinate pickup of items you're not taking. We can also help arrange estate sale services for larger volumes of items.",
+      },
+    ],
+  },
+
+  "carnation-furniture": {
+    intro: `Carnation homes — from historic farmhouses to newer rural builds — often contain large, heavy furniture that requires careful handling on rural roads and through narrow doorways. Our furniture moving crews bring the right equipment: furniture dollies, stair climbers, moving blankets, and straps. We disassemble and reassemble large pieces, protect hardwood floors and doorframes, and navigate the rural access challenges common to Carnation properties. For antique farm furniture or heirloom pieces, we use custom wrapping and extra padding.`,
+    buildingCalloutsHeading: "Furniture Moving Challenges in Carnation",
+    buildingCallouts: `Common furniture moving challenges in Carnation: farmhouse staircases (narrow, steep, often original construction), rural road access (right-sized truck selection, shuttle loads for very long driveways), antique and heirloom furniture (custom wrapping, extra padding, white-glove handling), large outbuilding furniture (barn furniture, workshop items, outdoor pieces), and tight downtown lots (limited staging space, careful truck positioning).`,
+    extraFaqs: [
+      {
+        q: "Can you move antique farm furniture from a Carnation property?",
+        a: "Yes. We use custom wrapping, extra padding, and white-glove handling for antique and heirloom furniture. We assess each piece before the move and use the appropriate protection materials.",
+      },
+      {
+        q: "How do you handle furniture moves on rural Carnation roads?",
+        a: "We assess the access route in advance — road surface, driveway length, and truck turnaround space. For very long or unpaved driveways, we use a smaller truck and shuttle loads. We've been doing this in the Snoqualmie Valley since 2009.",
+      },
+    ],
+  },
+
+  "carnation-appliance": {
+    intro: `Carnation homes often have older appliances in farmhouses or newer appliances in recently renovated rural properties. Our appliance moving crews handle refrigerators, washers, dryers, ranges, and dishwashers with the right equipment: appliance dollies, stair climbers, and moving straps. We disconnect and reconnect standard appliances, protect floors and doorframes, and navigate rural access challenges. For Carnation properties with outbuildings, we also move workshop equipment and outdoor appliances.`,
+    buildingCalloutsHeading: "Appliance Moving in Carnation",
+    buildingCallouts: `We move all standard appliances in Carnation homes: refrigerators (standard and French door, floor protection required), washers and dryers (disconnect and reconnect, stacked units handled), ranges and ovens (gas and electric, standard disconnect), dishwashers (standard disconnect), and outdoor appliances (grills, outdoor refrigerators, workshop equipment).`,
+    extraFaqs: [
+      {
+        q: "Do you disconnect and reconnect appliances for Carnation moves?",
+        a: "We disconnect and reconnect standard appliances (washer/dryer hookups, refrigerator water lines). For gas appliances, we recommend a licensed plumber for the final gas connection. We can refer you to a local plumber if needed.",
+      },
+      {
+        q: "Can you move a large chest freezer from a Carnation farmhouse?",
+        a: "Yes. We move chest freezers, upright freezers, and commercial-style refrigerators. We recommend emptying and defrosting freezers 24 hours before the move. We protect floors and doorframes throughout.",
+      },
+    ],
+  },
+
+  "carnation-unpacking": {
+    intro: `After a Carnation move — especially from a larger property or farmhouse — unpacking can feel overwhelming. Our unpacking crews work systematically: we unpack boxes room by room, place furniture where you want it, and remove all packing materials when we're done. For Carnation seniors or families moving into a new home, we can set up kitchens, make beds, and hang basic items so your new home feels livable from day one. We leave your home tidy, with all boxes broken down and removed.`,
+    buildingCalloutsHeading: "Unpacking Services for Carnation Homes",
+    buildingCallouts: `We offer full unpacking, partial unpacking, and kitchen setup for all Carnation home types: farmhouses (large volume, multiple rooms, outbuilding contents), rural residential (standard unpacking, furniture placement, box removal), downsizing moves (selective unpacking, donation coordination for excess items), and senior moves (full setup including kitchen, bedroom, and bathroom essentials).`,
+    extraFaqs: [
+      {
+        q: "Can you set up my kitchen and bedroom after a Carnation move?",
+        a: "Yes. Our full unpacking service includes kitchen setup (dishes, cookware, pantry items placed where you want them), bedroom setup (beds assembled and made, clothing hung), and bathroom setup (toiletries and towels placed). We remove all packing materials when we're done.",
+      },
+      {
+        q: "How long does unpacking take for a Carnation home?",
+        a: "A 2-bedroom home typically takes 3–5 hours to fully unpack. Larger homes or those with significant kitchen and closet contents take longer. We provide a time estimate when you book.",
+      },
+    ],
+  },
+
+  "carnation-warehousing": {
+    intro: `Our Redmond warehouse serves Carnation businesses and residents needing short- or long-term warehousing. Located 16 miles from Carnation via SR-202 and SR-203, our facility offers climate-controlled and standard storage bays, receiving and inventory management, and last-mile delivery back to Carnation. Agricultural businesses, small retailers, and homeowners in transition all use our warehousing services. We provide monthly inventory reports and flexible access scheduling.`,
+    buildingCalloutsHeading: "Warehousing Services for Carnation",
+    buildingCallouts: `Our Redmond warehouse provides: climate-controlled storage (furniture, electronics, documents, wine, antiques), standard storage bays (tools, equipment, inventory), receiving and inventory management (accept deliveries on your behalf, maintain inventory log), last-mile delivery to Carnation (scheduled delivery back to your Carnation property or business), and flexible access (schedule access appointments, monthly inventory reports).`,
+    extraFaqs: [
+      {
+        q: "Can you store business inventory for a Carnation small business?",
+        a: "Yes. We store business inventory, office furniture, and equipment for Carnation businesses. We provide monthly inventory reports and can deliver items back to your Carnation location on a scheduled basis.",
+      },
+      {
+        q: "How far is your warehouse from Carnation?",
+        a: "Our Redmond warehouse is 16 miles from Carnation — a 25-minute drive via SR-202 and SR-203. We pick up from your Carnation location and deliver back when you're ready.",
+      },
+    ],
+  },
+
+// ===================================================================
+// FALL CITY
+// ===================================================================
+
+  "fall-city-residential": {
+    intro: `Fall City is a small, rural community in the Snoqualmie Valley between Redmond and Snoqualmie, known for its equestrian properties, the Raging River, and a quiet rural character. Our crews have been moving Fall City homes since 2009 and know every neighborhood's specific logistics. Properties on Fall City Way and SE 43rd Street have standard residential access, while rural properties on Raging River Road and Ames Lake Road have long driveways and unpaved access that require right-sized trucks. Our Redmond warehouse is just 12 miles west — an 18-minute drive via SR-202.`,
+    buildingCalloutsHeading: "Fall City Neighborhoods We Know Best",
+    buildingCallouts: `Our residential crews serve all Fall City neighborhoods: Fall City Way (standard residential, mix of home sizes, good truck access), Raging River area (rural properties, long driveways, river proximity awareness), Preston (semi-rural, newer construction, standard access), Ames Lake adjacent (semi-rural, mix of older and newer homes, standard access), and equestrian properties (long driveways, outbuildings, specialized access planning).`,
+    extraFaqs: [
+      {
+        q: "How do you handle equestrian property moves in Fall City?",
+        a: "We assess every Fall City equestrian property's access in advance — driveway length, road surface, and truck turnaround space. We pack and label barn and tack room contents separately from household goods. We've been handling rural Snoqualmie Valley moves since 2009.",
+      },
+      {
+        q: "What does a residential move in Fall City typically cost?",
+        a: "Most Fall City residential moves run $120–$160 per hour for a 2-person crew. A 2-bedroom home typically costs $750–$1,300. Rural properties with long driveways or challenging access may take additional time. We provide flat-rate quotes after reviewing your specific move.",
+      },
+    ],
+  },
+
+  "fall-city-apartment": {
+    intro: `Fall City has very limited apartment inventory — the community is primarily single-family residential with a rural character. Most apartment moves involving Fall City are from nearby cities (Redmond, Issaquah, Sammamish) to a Fall City home, or from Fall City to an apartment in a larger city. Our crews handle the full move seamlessly, managing elevator reservations and COI requirements at the apartment building and rural access logistics at the Fall City property. The Redmond warehouse is 12 miles away for any storage needs during the transition.`,
+    buildingCalloutsHeading: "Apartment Move Logistics for Fall City",
+    buildingCallouts: `Most apartment moves to or from Fall City originate in nearby cities: Redmond (12 miles, 18 min via SR-202), Issaquah (8 miles, 15 min via SR-202), Sammamish (10 miles, 18 min via SR-202), and Bellevue (16 miles, 25 min via SR-202). We coordinate elevator reservations and COI requirements at the origin apartment and handle rural property access at the Fall City destination.`,
+    extraFaqs: [
+      {
+        q: "Can you move me from an Issaquah apartment to a Fall City home?",
+        a: "Yes — this is a common move for us. We handle elevator reservations and COI requirements at the Issaquah apartment, then manage rural road access at your Fall City property. We provide a flat-rate quote for the full move.",
+      },
+      {
+        q: "Are there any apartments in Fall City itself?",
+        a: "Fall City has very limited apartment inventory. Most housing is single-family residential. If you're looking for apartments near Fall City, Issaquah (8 miles east) and Redmond (12 miles west) have more options.",
+      },
+    ],
+  },
+
+  "fall-city-packing": {
+    intro: `Fall City homes — from equestrian properties to rural farmhouses — require a thoughtful packing approach. Our Fall City packing crews bring all materials on the truck: double-wall boxes, wardrobe boxes, mattress bags, furniture pads, and specialty wrapping for fragile items. We pack room by room, label everything clearly, and pack outbuildings and tack rooms separately from household goods. For equestrian properties, we have experience packing saddles, tack, and barn equipment with appropriate protection.`,
+    buildingCalloutsHeading: "Packing Services for Fall City Homes",
+    buildingCallouts: `We offer full packing, partial packing, and packing supplies delivery for all Fall City property types: equestrian properties (tack room packing, barn equipment, household goods packed and labeled separately), rural residential (specialty wrapping for antiques and valuables, labeled by room), Fall City Way homes (standard full-service packing, efficient loading), and Preston area homes (standard packing, newer construction, efficient access).`,
+    extraFaqs: [
+      {
+        q: "Do you pack tack rooms and barn contents for Fall City equestrian properties?",
+        a: "Yes. We pack tack rooms, barn contents, and equestrian equipment separately from household goods, with clear labeling so everything goes to the right place. Let us know about outbuildings and tack rooms when you request a quote.",
+      },
+      {
+        q: "How much does packing service cost for a Fall City home?",
+        a: "Full packing for a 2-bedroom Fall City home typically adds $300–$600 to the move cost, depending on the volume of items. Properties with outbuildings or tack rooms will take additional time. We provide an itemized quote.",
+      },
+    ],
+  },
+
+  "fall-city-commercial": {
+    intro: `Fall City has very limited commercial development — primarily small businesses along Fall City Way and a handful of agricultural operations. Our commercial crews handle small office moves, retail relocations, and agricultural business moves efficiently. We work after hours or on weekends to minimize disruption, and our Redmond warehouse is 12 miles away for any short-term storage needs during a commercial transition.`,
+    buildingCalloutsHeading: "Commercial Move Locations in Fall City",
+    buildingCallouts: `We serve all commercial locations in Fall City: Fall City Way businesses (small retail and office, limited truck parking, advance coordination required), agricultural operations (equipment moves, outbuilding contents, specialized handling), and home offices (full packing and move service, same as residential).`,
+    extraFaqs: [
+      {
+        q: "Can you move a small business in Fall City over a weekend?",
+        a: "Yes. We regularly schedule commercial moves on weekends to minimize business disruption. We provide a flat-rate quote and a guaranteed start time.",
+      },
+      {
+        q: "Do you move farm or equestrian business equipment in Fall City?",
+        a: "We move farm office contents, tools, and smaller equipment. For heavy machinery, we recommend a specialized equipment mover. Contact us and we'll advise on what we can handle.",
+      },
+    ],
+  },
+
+  "fall-city-storage": {
+    intro: `Our secure, climate-controlled storage facility in Redmond is 12 miles from Fall City — an 18-minute drive via SR-202. Fall City residents use our storage during home sales, renovations, and seasonal moves. Rural Fall City properties often have outbuildings, but when you need climate-controlled, secure storage for furniture, electronics, documents, or valuables, our Redmond facility provides the right environment. Your first month of storage is free with any Fall City move.`,
+    buildingCalloutsHeading: "Storage Options for Fall City Residents",
+    buildingCallouts: `Our Redmond storage facility serves Fall City residents with: climate-controlled units (furniture, electronics, documents, wine, antiques, tack and equestrian equipment), standard units (tools, outdoor equipment, seasonal items), short-term storage (during home sales or renovations, first month free with move), and long-term storage (month-to-month, no long-term contracts required).`,
+    extraFaqs: [
+      {
+        q: "Can you store equestrian equipment from a Fall City property?",
+        a: "Yes. We store saddles, tack, and equestrian equipment in our Redmond facility. Climate-controlled units are available for leather goods and sensitive equipment. We pick up from your Fall City property and deliver back when you're ready.",
+      },
+      {
+        q: "How far is your storage from Fall City?",
+        a: "Our Redmond facility is 12 miles from Fall City — an 18-minute drive via SR-202. We pick up and deliver on a scheduled basis.",
+      },
+    ],
+  },
+
+  "fall-city-senior": {
+    intro: `Fall City's senior community includes long-time residents who have lived in their rural properties for decades. Moving after years in a Snoqualmie Valley home requires patience, careful planning, and crews who understand the emotional weight of leaving a longtime property. Our senior moving specialists take extra time, communicate clearly, and handle every item with care. We coordinate with family members, senior communities, and care facilities in Redmond, Issaquah, and Bellevue for Fall City seniors transitioning to assisted living.`,
+    buildingCalloutsHeading: "Senior Move Destinations from Fall City",
+    buildingCallouts: `We move Fall City seniors to destinations throughout the Eastside: Redmond senior communities (12 miles, 18 min), Issaquah senior communities (8 miles, 15 min), Bellevue senior communities (20 miles, 30 min), Sammamish senior communities (10 miles, 18 min), and in-Fall City downsizing (smaller home in the same community).`,
+    extraFaqs: [
+      {
+        q: "How do you handle a senior move from a longtime Fall City rural property?",
+        a: "We start with a detailed walkthrough to understand what's moving, what's being donated, and what family members are taking. We pack room by room, label everything clearly, and take extra care with sentimental items. We coordinate with the destination facility for move-in requirements.",
+      },
+      {
+        q: "Can you help coordinate donation pickups for items a Fall City senior isn't taking?",
+        a: "Yes. We work with local donation organizations and can coordinate pickup of items you're not taking. We can also help arrange estate sale services for larger volumes of items.",
+      },
+    ],
+  },
+
+  "fall-city-furniture": {
+    intro: `Fall City homes — from equestrian properties to rural farmhouses — often contain large, heavy furniture that requires careful handling on rural roads and through narrow doorways. Our furniture moving crews bring the right equipment: furniture dollies, stair climbers, moving blankets, and straps. We disassemble and reassemble large pieces, protect hardwood floors and doorframes, and navigate the rural access challenges common to Fall City properties. For antique or heirloom furniture, we use custom wrapping and extra padding.`,
+    buildingCalloutsHeading: "Furniture Moving Challenges in Fall City",
+    buildingCallouts: `Common furniture moving challenges in Fall City: rural road access (right-sized truck selection, shuttle loads for very long driveways), equestrian property logistics (outbuilding furniture, tack room items, barn furniture), antique and heirloom furniture (custom wrapping, extra padding, white-glove handling), farmhouse staircases (narrow, steep, careful maneuvering), and limited staging space on rural lots.`,
+    extraFaqs: [
+      {
+        q: "Can you move large furniture from a Fall City equestrian property?",
+        a: "Yes. We handle all furniture types from Fall City properties, including barn furniture, workshop items, and outdoor pieces. We assess access in advance and bring the right equipment for each property.",
+      },
+      {
+        q: "How do you handle furniture moves on Fall City rural roads?",
+        a: "We assess the access route in advance — road surface, driveway length, and truck turnaround space. For very long or unpaved driveways, we use a smaller truck and shuttle loads. We've been doing this in the Snoqualmie Valley since 2009.",
+      },
+    ],
+  },
+
+  "fall-city-appliance": {
+    intro: `Fall City homes often have older appliances in farmhouses or newer appliances in recently renovated rural properties. Our appliance moving crews handle refrigerators, washers, dryers, ranges, and dishwashers with the right equipment: appliance dollies, stair climbers, and moving straps. We disconnect and reconnect standard appliances, protect floors and doorframes, and navigate rural access challenges. For Fall City properties with outbuildings, we also move workshop equipment and outdoor appliances.`,
+    buildingCalloutsHeading: "Appliance Moving in Fall City",
+    buildingCallouts: `We move all standard appliances in Fall City homes: refrigerators (standard and French door, floor protection required), washers and dryers (disconnect and reconnect, stacked units handled), ranges and ovens (gas and electric, standard disconnect), dishwashers (standard disconnect), and outdoor appliances (grills, outdoor refrigerators, workshop equipment, barn appliances).`,
+    extraFaqs: [
+      {
+        q: "Do you disconnect and reconnect appliances for Fall City moves?",
+        a: "We disconnect and reconnect standard appliances (washer/dryer hookups, refrigerator water lines). For gas appliances, we recommend a licensed plumber for the final gas connection. We can refer you to a local plumber if needed.",
+      },
+      {
+        q: "Can you move a large chest freezer from a Fall City farmhouse?",
+        a: "Yes. We move chest freezers, upright freezers, and commercial-style refrigerators. We recommend emptying and defrosting freezers 24 hours before the move. We protect floors and doorframes throughout.",
+      },
+    ],
+  },
+
+  "fall-city-unpacking": {
+    intro: `After a Fall City move — especially from a larger rural property — unpacking can feel overwhelming. Our unpacking crews work systematically: we unpack boxes room by room, place furniture where you want it, and remove all packing materials when we're done. For Fall City seniors or families moving into a new home, we can set up kitchens, make beds, and hang basic items so your new home feels livable from day one. We leave your home tidy, with all boxes broken down and removed.`,
+    buildingCalloutsHeading: "Unpacking Services for Fall City Homes",
+    buildingCallouts: `We offer full unpacking, partial unpacking, and kitchen setup for all Fall City home types: rural residential (large volume, multiple rooms, outbuilding contents), equestrian properties (tack room setup, barn items, household goods), downsizing moves (selective unpacking, donation coordination for excess items), and senior moves (full setup including kitchen, bedroom, and bathroom essentials).`,
+    extraFaqs: [
+      {
+        q: "Can you set up my kitchen and bedroom after a Fall City move?",
+        a: "Yes. Our full unpacking service includes kitchen setup, bedroom setup (beds assembled and made, clothing hung), and bathroom setup. We remove all packing materials when we're done.",
+      },
+      {
+        q: "How long does unpacking take for a Fall City home?",
+        a: "A 2-bedroom home typically takes 3–5 hours to fully unpack. Larger homes or those with significant outbuilding contents take longer. We provide a time estimate when you book.",
+      },
+    ],
+  },
+
+  "fall-city-warehousing": {
+    intro: `Our Redmond warehouse serves Fall City businesses and residents needing short- or long-term warehousing. Located 12 miles from Fall City via SR-202, our facility offers climate-controlled and standard storage bays, receiving and inventory management, and last-mile delivery back to Fall City. Agricultural businesses, small retailers, and homeowners in transition all use our warehousing services. We provide monthly inventory reports and flexible access scheduling.`,
+    buildingCalloutsHeading: "Warehousing Services for Fall City",
+    buildingCallouts: `Our Redmond warehouse provides: climate-controlled storage (furniture, electronics, documents, wine, antiques, equestrian equipment), standard storage bays (tools, equipment, inventory), receiving and inventory management (accept deliveries on your behalf, maintain inventory log), last-mile delivery to Fall City (scheduled delivery back to your Fall City property or business), and flexible access (schedule access appointments, monthly inventory reports).`,
+    extraFaqs: [
+      {
+        q: "Can you store business inventory for a Fall City small business?",
+        a: "Yes. We store business inventory, office furniture, and equipment for Fall City businesses. We provide monthly inventory reports and can deliver items back to your Fall City location on a scheduled basis.",
+      },
+      {
+        q: "How far is your warehouse from Fall City?",
+        a: "Our Redmond warehouse is 12 miles from Fall City — an 18-minute drive via SR-202. We pick up from your Fall City location and deliver back when you're ready.",
+      },
+    ],
+  },
+
+// ===================================================================
+// MAPLE VALLEY
+// ===================================================================
+
+  "maple-valley-residential": {
+    intro: `Maple Valley is one of the fastest-growing communities in King County, with significant new residential development in Lake Wilderness, Rock Creek, and Wilderness Village. Our crews have been moving Maple Valley homes since 2009 and know every neighborhood's specific logistics. Lake Wilderness and Rock Creek have HOA move-in rules — designated windows, COI requirements, and elevator reservations in multi-story buildings. SR-169 is the main corridor from our Redmond warehouse, 18 miles north — plan for peak-hour congestion on this route.`,
+    buildingCalloutsHeading: "Maple Valley Neighborhoods We Know Best",
+    buildingCallouts: `Our residential crews serve all Maple Valley neighborhoods: Lake Wilderness (HOA move-in rules, COI required, designated windows, newer planned community), Rock Creek (newer planned community, HOA coordination required, large home sizes), Wilderness Village (established planned community, standard access, mix of home sizes), Hobart (rural residential, standard access, older homes), Summit (established neighborhood, standard access), and Four Corners (commercial and residential mix, good truck access).`,
+    extraFaqs: [
+      {
+        q: "How do you handle HOA move-in requirements in Maple Valley's planned communities?",
+        a: "We are familiar with HOA move-in rules in Maple Valley's communities — Lake Wilderness, Rock Creek, and Wilderness Village all have specific requirements. We provide certificates of insurance, work within designated move-in windows, and coordinate with HOA management in advance.",
+      },
+      {
+        q: "What does a residential move in Maple Valley typically cost?",
+        a: "Most Maple Valley residential moves run $120–$160 per hour for a 2-person crew. A 3-bedroom home (common in Maple Valley's planned communities) typically costs $1,200–$2,000. We provide flat-rate quotes after reviewing your specific move.",
+      },
+    ],
+  },
+
+  "maple-valley-apartment": {
+    intro: `Maple Valley has limited apartment inventory compared to its large residential base. Most apartment moves involving Maple Valley are from Renton, Tukwila, or Kent apartments to a Maple Valley home, or from Maple Valley to a larger city. Our crews manage elevator reservations and COI requirements at apartment buildings and HOA coordination at Maple Valley planned communities. The Redmond warehouse is 18 miles away for any storage needs during the transition.`,
+    buildingCalloutsHeading: "Apartment Move Logistics for Maple Valley",
+    buildingCallouts: `Most apartment moves to or from Maple Valley originate in nearby cities: Renton (10 miles, 18 min via SR-169), Tukwila (14 miles, 22 min via SR-169 and I-405), Kent (8 miles, 15 min via SR-516), and Covington (4 miles, 8 min via SE 272nd St). We coordinate elevator reservations and COI requirements at the origin apartment and HOA coordination at the Maple Valley destination.`,
+    extraFaqs: [
+      {
+        q: "Can you move me from a Renton apartment to a Maple Valley home?",
+        a: "Yes — this is a common move for us. We handle elevator reservations and COI requirements at the Renton apartment, then manage HOA coordination at your Maple Valley planned community. We provide a flat-rate quote for the full move.",
+      },
+      {
+        q: "Are there apartments in Maple Valley itself?",
+        a: "Maple Valley has a growing apartment inventory, primarily near the Four Corners area along SR-169. If you're moving within Maple Valley, we handle the full move including any HOA requirements.",
+      },
+    ],
+  },
+
+  "maple-valley-packing": {
+    intro: `Maple Valley's large planned-community homes — often 2,500–4,000 square feet — require significant packing resources. Our Maple Valley packing crews bring all materials on the truck: double-wall boxes, wardrobe boxes, mattress bags, furniture pads, and specialty wrapping for fragile items. We pack room by room, label everything clearly, and load in a sequence that makes unpacking logical. For Maple Valley homes with large garages and outdoor storage, we pack and label separately so garage items don't get mixed with household goods.`,
+    buildingCalloutsHeading: "Packing Services for Maple Valley Homes",
+    buildingCallouts: `We offer full packing, partial packing, and packing supplies delivery for all Maple Valley home types: Lake Wilderness planned community homes (large volume, HOA coordination, full-service packing), Rock Creek homes (newer construction, large square footage, efficient packing), Wilderness Village homes (established community, standard full-service packing), Hobart rural properties (outbuilding contents, garage items, labeled separately), and Four Corners area homes (mix of residential types, standard packing).`,
+    extraFaqs: [
+      {
+        q: "How much does packing service cost for a large Maple Valley home?",
+        a: "Full packing for a 3-bedroom Maple Valley home typically adds $500–$900 to the move cost, depending on the volume of items. Larger homes (4+ bedrooms) will take additional time. We provide an itemized quote that separates packing labor from move labor.",
+      },
+      {
+        q: "Do you pack garages and outdoor storage for Maple Valley homes?",
+        a: "Yes. We pack garages, outdoor storage, and sheds separately from household goods, with clear labeling so everything goes to the right place at your destination. Let us know about garages and outbuildings when you request a quote.",
+      },
+    ],
+  },
+
+  "maple-valley-commercial": {
+    intro: `Maple Valley has a growing business community along SR-169, particularly near the Four Corners area. Our commercial crews handle office moves, retail relocations, and small business moves with minimal disruption. We work after hours or on weekends, provide flat-rate quotes, and coordinate with building management for loading dock access. Our Redmond warehouse is 18 miles away for any short-term storage needs during a commercial transition.`,
+    buildingCalloutsHeading: "Commercial Move Locations in Maple Valley",
+    buildingCallouts: `We serve all commercial locations in Maple Valley: Four Corners commercial corridor (retail and office, good truck access, loading dock coordination), SR-169 businesses (strip mall and standalone retail, standard access), Lake Wilderness business park (office and light industrial, HOA coordination may be required), and home offices (full packing and move service, same as residential).`,
+    extraFaqs: [
+      {
+        q: "Can you move a Maple Valley business over a weekend?",
+        a: "Yes. We regularly schedule commercial moves on weekends to minimize business disruption. We provide a flat-rate quote and a guaranteed start time.",
+      },
+      {
+        q: "Do you handle office moves in Maple Valley's business parks?",
+        a: "Yes. We handle office moves in all Maple Valley commercial areas, including HOA-managed business parks. We coordinate with property management for loading dock access and move-in windows.",
+      },
+    ],
+  },
+
+  "maple-valley-storage": {
+    intro: `Our secure, climate-controlled storage facility in Redmond is 18 miles from Maple Valley — a 28-minute drive via SR-169. Maple Valley residents use our storage during home sales, renovations, and seasonal moves. With Maple Valley's large planned-community homes, many residents need temporary storage when downsizing or staging a home for sale. Your first month of storage is free with any Maple Valley move.`,
+    buildingCalloutsHeading: "Storage Options for Maple Valley Residents",
+    buildingCallouts: `Our Redmond storage facility serves Maple Valley residents with: climate-controlled units (furniture, electronics, documents, wine, antiques), standard units (tools, outdoor equipment, seasonal items, garage overflow), short-term storage (during home sales or renovations, first month free with move), and long-term storage (month-to-month, no long-term contracts required).`,
+    extraFaqs: [
+      {
+        q: "Can you store furniture while I stage my Maple Valley home for sale?",
+        a: "Yes. Home staging storage is one of our most common requests from Maple Valley residents. We pick up the furniture you want removed, store it in our Redmond facility, and deliver it back after closing. Your first month is free with any move.",
+      },
+      {
+        q: "How far is your storage from Maple Valley?",
+        a: "Our Redmond facility is 18 miles from Maple Valley — a 28-minute drive via SR-169. We pick up and deliver on a scheduled basis.",
+      },
+    ],
+  },
+
+  "maple-valley-senior": {
+    intro: `Maple Valley's senior community is growing, with many retirees drawn to the community's family-friendly character and newer homes. Moving from a large Maple Valley planned-community home to a smaller residence or assisted living requires careful planning and crews who understand the emotional weight of the transition. Our senior moving specialists take extra time, communicate clearly, and handle every item with care. We coordinate with family members, senior communities, and care facilities in Renton, Bellevue, and Issaquah.`,
+    buildingCalloutsHeading: "Senior Move Destinations from Maple Valley",
+    buildingCallouts: `We move Maple Valley seniors to destinations throughout the region: Renton senior communities (10 miles, 18 min), Bellevue senior communities (22 miles, 35 min), Issaquah senior communities (12 miles, 20 min), Covington senior communities (4 miles, 8 min), and in-Maple Valley downsizing (smaller home or cottage in the same community).`,
+    extraFaqs: [
+      {
+        q: "How do you handle a senior move from a large Maple Valley planned-community home?",
+        a: "We start with a detailed walkthrough to understand what's moving, what's being donated, and what family members are taking. We pack room by room, label everything clearly, and take extra care with sentimental items. We coordinate with the destination facility for move-in requirements.",
+      },
+      {
+        q: "Can you help coordinate donation pickups for items a Maple Valley senior isn't taking?",
+        a: "Yes. We work with local donation organizations and can coordinate pickup of items you're not taking. We can also help arrange estate sale services for larger volumes of items.",
+      },
+    ],
+  },
+
+  "maple-valley-furniture": {
+    intro: `Maple Valley's large planned-community homes often contain substantial furniture — oversized sofas, sectionals, large dining sets, and bedroom suites that require careful handling through wide hallways and on staircases. Our furniture moving crews bring the right equipment: furniture dollies, stair climbers, moving blankets, and straps. We disassemble and reassemble large pieces, protect hardwood floors and doorframes, and coordinate with HOA management for move-in windows.`,
+    buildingCalloutsHeading: "Furniture Moving Challenges in Maple Valley",
+    buildingCallouts: `Common furniture moving challenges in Maple Valley: large planned-community homes (oversized furniture, wide hallways, HOA move-in windows), Lake Wilderness and Rock Creek HOA requirements (COI required, designated windows, elevator reservations in multi-story buildings), garage and outdoor furniture (patio sets, workshop furniture, labeled separately), and Hobart rural properties (rural road access, outbuilding furniture).`,
+    extraFaqs: [
+      {
+        q: "Can you move oversized sectional sofas in Maple Valley planned communities?",
+        a: "Yes. We handle oversized sectionals, large dining sets, and bedroom suites in all Maple Valley planned communities. We assess doorway and staircase dimensions in advance and disassemble pieces that won't fit through standard openings.",
+      },
+      {
+        q: "Do you coordinate with Maple Valley HOA management for furniture deliveries?",
+        a: "Yes. We contact HOA management in advance to confirm move-in windows, COI requirements, and elevator reservations. We arrive within the designated window and follow all HOA rules.",
+      },
+    ],
+  },
+
+  "maple-valley-appliance": {
+    intro: `Maple Valley's newer planned-community homes typically have modern appliances — large French door refrigerators, front-load washers and dryers, and built-in dishwashers. Our appliance moving crews handle all appliance types with the right equipment: appliance dollies, stair climbers, and moving straps. We disconnect and reconnect standard appliances, protect floors and doorframes, and coordinate with HOA management for move-in windows. For Maple Valley homes with outdoor kitchens, we also move outdoor appliances.`,
+    buildingCalloutsHeading: "Appliance Moving in Maple Valley",
+    buildingCallouts: `We move all standard appliances in Maple Valley homes: refrigerators (French door and standard, floor protection required), washers and dryers (front-load and top-load, disconnect and reconnect), ranges and ovens (gas and electric, standard disconnect), dishwashers (standard disconnect), outdoor appliances (outdoor refrigerators, grills, outdoor kitchen equipment), and garage appliances (chest freezers, workshop refrigerators).`,
+    extraFaqs: [
+      {
+        q: "Do you disconnect and reconnect appliances for Maple Valley moves?",
+        a: "We disconnect and reconnect standard appliances (washer/dryer hookups, refrigerator water lines). For gas appliances, we recommend a licensed plumber for the final gas connection. We can refer you to a local plumber if needed.",
+      },
+      {
+        q: "Can you move a large French door refrigerator in a Maple Valley planned community?",
+        a: "Yes. We handle large French door refrigerators in all Maple Valley planned communities. We protect floors and doorframes throughout and coordinate with HOA management for move-in windows.",
+      },
+    ],
+  },
+
+  "maple-valley-unpacking": {
+    intro: `After a Maple Valley move — especially from a large planned-community home — unpacking can feel overwhelming. Our unpacking crews work systematically: we unpack boxes room by room, place furniture where you want it, and remove all packing materials when we're done. For Maple Valley families moving into a new home, we can set up kitchens, make beds, and hang basic items so your new home feels livable from day one. We leave your home tidy, with all boxes broken down and removed.`,
+    buildingCalloutsHeading: "Unpacking Services for Maple Valley Homes",
+    buildingCallouts: `We offer full unpacking, partial unpacking, and kitchen setup for all Maple Valley home types: Lake Wilderness planned community homes (large volume, multiple rooms, full-service unpacking), Rock Creek homes (newer construction, large square footage, efficient unpacking), Wilderness Village homes (established community, standard unpacking), Hobart rural properties (outbuilding contents, garage items, household goods), and downsizing moves (selective unpacking, donation coordination).`,
+    extraFaqs: [
+      {
+        q: "Can you set up my kitchen and bedroom after a Maple Valley move?",
+        a: "Yes. Our full unpacking service includes kitchen setup (dishes, cookware, pantry items placed where you want them), bedroom setup (beds assembled and made, clothing hung), and bathroom setup. We remove all packing materials when we're done.",
+      },
+      {
+        q: "How long does unpacking take for a large Maple Valley home?",
+        a: "A 3-bedroom Maple Valley home typically takes 5–8 hours to fully unpack. Larger homes (4+ bedrooms) take longer. We provide a time estimate when you book.",
+      },
+    ],
+  },
+
+  "maple-valley-warehousing": {
+    intro: `Our Redmond warehouse serves Maple Valley businesses and residents needing short- or long-term warehousing. Located 18 miles from Maple Valley via SR-169, our facility offers climate-controlled and standard storage bays, receiving and inventory management, and last-mile delivery back to Maple Valley. Businesses along SR-169 and homeowners in transition use our warehousing services regularly. We provide monthly inventory reports and flexible access scheduling.`,
+    buildingCalloutsHeading: "Warehousing Services for Maple Valley",
+    buildingCallouts: `Our Redmond warehouse provides: climate-controlled storage (furniture, electronics, documents, wine, antiques), standard storage bays (tools, equipment, business inventory), receiving and inventory management (accept deliveries on your behalf, maintain inventory log), last-mile delivery to Maple Valley (scheduled delivery back to your Maple Valley property or business), and flexible access (schedule access appointments, monthly inventory reports).`,
+    extraFaqs: [
+      {
+        q: "Can you store business inventory for a Maple Valley small business?",
+        a: "Yes. We store business inventory, office furniture, and equipment for Maple Valley businesses. We provide monthly inventory reports and can deliver items back to your Maple Valley location on a scheduled basis.",
+      },
+      {
+        q: "How far is your warehouse from Maple Valley?",
+        a: "Our Redmond warehouse is 18 miles from Maple Valley — a 28-minute drive via SR-169. We pick up from your Maple Valley location and deliver back when you're ready.",
+      },
+    ],
+  },
+
+// ===================================================================
+// COVINGTON
+// ===================================================================
+
+  "covington-residential": {
+    intro: `Covington is a growing unincorporated community in southeast King County, known for its family-friendly neighborhoods and proximity to both Renton and Maple Valley. Our crews have been moving Covington homes since 2009 and know every neighborhood's specific logistics. Covington Meadows and Timberlane have HOA move-in rules — designated windows and COI requirements. SR-516 and SE 272nd Street are the main access routes from our Redmond warehouse, 18 miles north — plan for peak-hour congestion on SR-516.`,
+    buildingCalloutsHeading: "Covington Neighborhoods We Know Best",
+    buildingCallouts: `Our residential crews serve all Covington neighborhoods: Covington Way (main residential corridor, good truck access, mix of home sizes), Jenkins Creek (established neighborhood, standard access, older homes), Lake Morton (semi-rural, lake views, standard access), Covington Meadows (newer planned community, HOA coordination required), and Timberlane (established neighborhood, standard access, mix of home sizes).`,
+    extraFaqs: [
+      {
+        q: "How do you handle HOA move-in requirements in Covington's planned communities?",
+        a: "We are familiar with HOA move-in rules in Covington's communities — Covington Meadows and other newer developments have specific requirements. We provide certificates of insurance, work within designated move-in windows, and coordinate with HOA management in advance.",
+      },
+      {
+        q: "What does a residential move in Covington typically cost?",
+        a: "Most Covington residential moves run $120–$160 per hour for a 2-person crew. A 3-bedroom home typically costs $1,200–$2,000. We provide flat-rate quotes after reviewing your specific move.",
+      },
+    ],
+  },
+
+  "covington-apartment": {
+    intro: `Covington has limited apartment inventory compared to its large residential base. Most apartment moves involving Covington are from Renton, Kent, or Auburn apartments to a Covington home, or from Covington to a larger city. Our crews manage elevator reservations and COI requirements at apartment buildings and HOA coordination at Covington planned communities. The Redmond warehouse is 18 miles away for any storage needs during the transition.`,
+    buildingCalloutsHeading: "Apartment Move Logistics for Covington",
+    buildingCallouts: `Most apartment moves to or from Covington originate in nearby cities: Renton (12 miles, 20 min via SR-169 and SE 272nd St), Kent (8 miles, 15 min via SR-516), Auburn (12 miles, 20 min via SR-18), and Maple Valley (4 miles, 8 min via SE 272nd St). We coordinate elevator reservations and COI requirements at the origin apartment and HOA coordination at the Covington destination.`,
+    extraFaqs: [
+      {
+        q: "Can you move me from a Kent apartment to a Covington home?",
+        a: "Yes — this is a common move for us. We handle elevator reservations and COI requirements at the Kent apartment, then manage HOA coordination at your Covington planned community. We provide a flat-rate quote for the full move.",
+      },
+      {
+        q: "Are there apartments in Covington itself?",
+        a: "Covington has a growing apartment inventory near the Covington Way commercial corridor. If you're moving within Covington, we handle the full move including any HOA requirements.",
+      },
+    ],
+  },
+
+  "covington-packing": {
+    intro: `Covington's newer planned-community homes and established residential neighborhoods require thorough packing. Our Covington packing crews bring all materials on the truck: double-wall boxes, wardrobe boxes, mattress bags, furniture pads, and specialty wrapping for fragile items. We pack room by room, label everything clearly, and load in a sequence that makes unpacking logical. For Covington homes with large garages, we pack and label garage items separately from household goods.`,
+    buildingCalloutsHeading: "Packing Services for Covington Homes",
+    buildingCallouts: `We offer full packing, partial packing, and packing supplies delivery for all Covington home types: Covington Meadows planned community homes (full-service packing, HOA coordination), Jenkins Creek homes (standard full-service packing, efficient loading), Lake Morton homes (standard packing, lake-view properties), Timberlane homes (established neighborhood, standard packing), and Covington Way homes (mix of residential types, standard packing).`,
+    extraFaqs: [
+      {
+        q: "How much does packing service cost for a Covington home?",
+        a: "Full packing for a 3-bedroom Covington home typically adds $500–$900 to the move cost, depending on the volume of items. We provide an itemized quote that separates packing labor from move labor.",
+      },
+      {
+        q: "Do you pack garages for Covington homes?",
+        a: "Yes. We pack garages separately from household goods, with clear labeling so everything goes to the right place at your destination. Let us know about garages and outbuildings when you request a quote.",
+      },
+    ],
+  },
+
+  "covington-commercial": {
+    intro: `Covington has a growing business community along Covington Way, with retail, restaurants, and professional services. Our commercial crews handle office moves, retail relocations, and small business moves with minimal disruption. We work after hours or on weekends, provide flat-rate quotes, and coordinate with building management for loading dock access. Our Redmond warehouse is 18 miles away for any short-term storage needs during a commercial transition.`,
+    buildingCalloutsHeading: "Commercial Move Locations in Covington",
+    buildingCallouts: `We serve all commercial locations in Covington: Covington Way commercial corridor (retail and office, good truck access, loading dock coordination), SE 272nd Street businesses (strip mall and standalone retail, standard access), Covington business parks (office and light industrial, HOA coordination may be required), and home offices (full packing and move service, same as residential).`,
+    extraFaqs: [
+      {
+        q: "Can you move a Covington business over a weekend?",
+        a: "Yes. We regularly schedule commercial moves on weekends to minimize business disruption. We provide a flat-rate quote and a guaranteed start time.",
+      },
+      {
+        q: "Do you handle retail moves in Covington's commercial corridor?",
+        a: "Yes. We handle retail moves in all Covington commercial areas, including coordination with property management for loading dock access and move-in windows.",
+      },
+    ],
+  },
+
+  "covington-storage": {
+    intro: `Our secure, climate-controlled storage facility in Redmond is 18 miles from Covington — a 28-minute drive via SR-516 and I-405. Covington residents use our storage during home sales, renovations, and seasonal moves. With Covington's growing residential market, many residents need temporary storage when staging a home for sale or during a renovation. Your first month of storage is free with any Covington move.`,
+    buildingCalloutsHeading: "Storage Options for Covington Residents",
+    buildingCallouts: `Our Redmond storage facility serves Covington residents with: climate-controlled units (furniture, electronics, documents, wine, antiques), standard units (tools, outdoor equipment, seasonal items, garage overflow), short-term storage (during home sales or renovations, first month free with move), and long-term storage (month-to-month, no long-term contracts required).`,
+    extraFaqs: [
+      {
+        q: "Can you store furniture while I stage my Covington home for sale?",
+        a: "Yes. Home staging storage is a common request from Covington residents. We pick up the furniture you want removed, store it in our Redmond facility, and deliver it back after closing. Your first month is free with any move.",
+      },
+      {
+        q: "How far is your storage from Covington?",
+        a: "Our Redmond facility is 18 miles from Covington — a 28-minute drive via SR-516 and I-405. We pick up and deliver on a scheduled basis.",
+      },
+    ],
+  },
+
+  "covington-senior": {
+    intro: `Covington's senior community is growing, with many retirees drawn to the community's family-friendly character and newer homes. Moving from a large Covington home to a smaller residence or assisted living requires careful planning and crews who understand the emotional weight of the transition. Our senior moving specialists take extra time, communicate clearly, and handle every item with care. We coordinate with family members, senior communities, and care facilities in Renton, Kent, and Bellevue.`,
+    buildingCalloutsHeading: "Senior Move Destinations from Covington",
+    buildingCallouts: `We move Covington seniors to destinations throughout the region: Renton senior communities (12 miles, 20 min), Kent senior communities (8 miles, 15 min), Bellevue senior communities (25 miles, 38 min), Maple Valley senior communities (4 miles, 8 min), and in-Covington downsizing (smaller home or cottage in the same community).`,
+    extraFaqs: [
+      {
+        q: "How do you handle a senior move from a Covington home?",
+        a: "We start with a detailed walkthrough to understand what's moving, what's being donated, and what family members are taking. We pack room by room, label everything clearly, and take extra care with sentimental items. We coordinate with the destination facility for move-in requirements.",
+      },
+      {
+        q: "Can you help coordinate donation pickups for items a Covington senior isn't taking?",
+        a: "Yes. We work with local donation organizations and can coordinate pickup of items you're not taking. We can also help arrange estate sale services for larger volumes of items.",
+      },
+    ],
+  },
+
+  "covington-furniture": {
+    intro: `Covington's newer planned-community homes and established neighborhoods often contain substantial furniture — oversized sofas, sectionals, large dining sets, and bedroom suites. Our furniture moving crews bring the right equipment: furniture dollies, stair climbers, moving blankets, and straps. We disassemble and reassemble large pieces, protect hardwood floors and doorframes, and coordinate with HOA management for move-in windows in Covington's planned communities.`,
+    buildingCalloutsHeading: "Furniture Moving Challenges in Covington",
+    buildingCallouts: `Common furniture moving challenges in Covington: Covington Meadows HOA requirements (COI required, designated windows), large planned-community homes (oversized furniture, wide hallways), Jenkins Creek older homes (narrower doorways, careful maneuvering), garage and outdoor furniture (patio sets, workshop furniture, labeled separately), and Lake Morton properties (standard access, mix of furniture types).`,
+    extraFaqs: [
+      {
+        q: "Can you move oversized sectional sofas in Covington planned communities?",
+        a: "Yes. We handle oversized sectionals, large dining sets, and bedroom suites in all Covington planned communities. We assess doorway and staircase dimensions in advance and disassemble pieces that won't fit through standard openings.",
+      },
+      {
+        q: "Do you coordinate with Covington HOA management for furniture deliveries?",
+        a: "Yes. We contact HOA management in advance to confirm move-in windows and COI requirements. We arrive within the designated window and follow all HOA rules.",
+      },
+    ],
+  },
+
+  "covington-appliance": {
+    intro: `Covington's newer planned-community homes typically have modern appliances — large refrigerators, front-load washers and dryers, and built-in dishwashers. Our appliance moving crews handle all appliance types with the right equipment: appliance dollies, stair climbers, and moving straps. We disconnect and reconnect standard appliances, protect floors and doorframes, and coordinate with HOA management for move-in windows.`,
+    buildingCalloutsHeading: "Appliance Moving in Covington",
+    buildingCallouts: `We move all standard appliances in Covington homes: refrigerators (French door and standard, floor protection required), washers and dryers (front-load and top-load, disconnect and reconnect), ranges and ovens (gas and electric, standard disconnect), dishwashers (standard disconnect), outdoor appliances (grills, outdoor refrigerators), and garage appliances (chest freezers, workshop refrigerators).`,
+    extraFaqs: [
+      {
+        q: "Do you disconnect and reconnect appliances for Covington moves?",
+        a: "We disconnect and reconnect standard appliances (washer/dryer hookups, refrigerator water lines). For gas appliances, we recommend a licensed plumber for the final gas connection. We can refer you to a local plumber if needed.",
+      },
+      {
+        q: "Can you move a large refrigerator in a Covington planned community?",
+        a: "Yes. We handle large refrigerators in all Covington planned communities. We protect floors and doorframes throughout and coordinate with HOA management for move-in windows.",
+      },
+    ],
+  },
+
+  "covington-unpacking": {
+    intro: `After a Covington move, unpacking can feel overwhelming — especially in a large planned-community home. Our unpacking crews work systematically: we unpack boxes room by room, place furniture where you want it, and remove all packing materials when we're done. For Covington families moving into a new home, we can set up kitchens, make beds, and hang basic items so your new home feels livable from day one.`,
+    buildingCalloutsHeading: "Unpacking Services for Covington Homes",
+    buildingCallouts: `We offer full unpacking, partial unpacking, and kitchen setup for all Covington home types: Covington Meadows planned community homes (large volume, multiple rooms, full-service unpacking), Jenkins Creek homes (standard unpacking, efficient service), Lake Morton homes (standard unpacking, lake-view properties), Timberlane homes (established neighborhood, standard unpacking), and downsizing moves (selective unpacking, donation coordination).`,
+    extraFaqs: [
+      {
+        q: "Can you set up my kitchen and bedroom after a Covington move?",
+        a: "Yes. Our full unpacking service includes kitchen setup, bedroom setup (beds assembled and made, clothing hung), and bathroom setup. We remove all packing materials when we're done.",
+      },
+      {
+        q: "How long does unpacking take for a Covington home?",
+        a: "A 3-bedroom Covington home typically takes 5–8 hours to fully unpack. Larger homes take longer. We provide a time estimate when you book.",
+      },
+    ],
+  },
+
+  "covington-warehousing": {
+    intro: `Our Redmond warehouse serves Covington businesses and residents needing short- or long-term warehousing. Located 18 miles from Covington via SR-516 and I-405, our facility offers climate-controlled and standard storage bays, receiving and inventory management, and last-mile delivery back to Covington. Businesses along Covington Way and homeowners in transition use our warehousing services regularly.`,
+    buildingCalloutsHeading: "Warehousing Services for Covington",
+    buildingCallouts: `Our Redmond warehouse provides: climate-controlled storage (furniture, electronics, documents, wine, antiques), standard storage bays (tools, equipment, business inventory), receiving and inventory management (accept deliveries on your behalf, maintain inventory log), last-mile delivery to Covington (scheduled delivery back to your Covington property or business), and flexible access (schedule access appointments, monthly inventory reports).`,
+    extraFaqs: [
+      {
+        q: "Can you store business inventory for a Covington small business?",
+        a: "Yes. We store business inventory, office furniture, and equipment for Covington businesses. We provide monthly inventory reports and can deliver items back to your Covington location on a scheduled basis.",
+      },
+      {
+        q: "How far is your warehouse from Covington?",
+        a: "Our Redmond warehouse is 18 miles from Covington — a 28-minute drive via SR-516 and I-405. We pick up from your Covington location and deliver back when you're ready.",
+      },
+    ],
+  },
+
+// ===================================================================
+// MEDINA
+// ===================================================================
+
+  "medina-residential": {
+    intro: `Medina is one of the most exclusive communities on the Eastside, home to large waterfront estates, gated properties, and high-value residences that demand the highest level of care. Our crews have been serving Medina residents since 2009, with crews trained in the specific requirements of luxury home moves — from oversized furniture and art collections to gated entries and long driveways. Medina Park, Evergreen Point, and the Overlake Golf Club area each have distinct access requirements that our crews know well. Our Redmond warehouse is just 8 miles away — a 14-minute drive.`,
+    buildingCalloutsHeading: "Medina Neighborhoods We Know Best",
+    buildingCallouts: `Our residential crews serve all Medina neighborhoods: Medina Park (established luxury residential, gated entries, large lots), Evergreen Point (waterfront estates, limited truck access near lake, advance coordination required), Overlake Golf Club area (large estates, long driveways, standard truck access), Medina Beach (waterfront properties, multiple levels, narrow staircases), and Hunt's Point adjacent (ultra-high-value properties, maximum care protocols).`,
+    extraFaqs: [
+      {
+        q: "How do you handle gated entry access for Medina moves?",
+        a: "We coordinate gate access with your property manager or HOA in advance. Just provide us with the gate code or contact information when you book. We arrive at the scheduled time and follow all community protocols.",
+      },
+      {
+        q: "What does a residential move in Medina typically cost?",
+        a: "Medina moves typically run $140–$180 per hour for a 2-person crew. Most 3-bedroom estate moves cost $1,400–$2,500. We provide flat-rate quotes after reviewing your specific move requirements, including access logistics and high-value item inventory.",
+      },
+    ],
+  },
+
+  "medina-apartment": {
+    intro: `Medina has very few apartment buildings — the community is primarily single-family estates and luxury homes. Most apartment moves involving Medina are from high-end apartments in Bellevue or Kirkland to a Medina estate, or from Medina to a luxury apartment in Seattle or Bellevue. Our crews manage elevator reservations and COI requirements at apartment buildings and gated entry coordination at Medina properties. We bring white-glove handling protocols for all Medina moves, regardless of origin.`,
+    buildingCalloutsHeading: "Apartment Move Logistics for Medina",
+    buildingCallouts: `Most apartment moves to or from Medina originate in nearby luxury buildings: Bellevue (8 miles, 14 min via SR-520), Kirkland (6 miles, 12 min via 84th Ave NE), Seattle (10 miles, 18 min via SR-520), and Redmond (8 miles, 14 min via SR-520). We coordinate elevator reservations and COI requirements at the origin apartment and gated entry coordination at the Medina destination.`,
+    extraFaqs: [
+      {
+        q: "Can you move me from a Bellevue luxury apartment to a Medina estate?",
+        a: "Yes — this is a common move for us. We handle elevator reservations and COI requirements at the Bellevue apartment, then manage gated entry and long driveway logistics at your Medina estate. We bring white-glove handling protocols for all high-value items.",
+      },
+      {
+        q: "Are there any apartments in Medina itself?",
+        a: "Medina has very limited apartment inventory. The community is primarily single-family estates and luxury homes. If you're looking for apartments near Medina, Bellevue and Kirkland have extensive luxury apartment options.",
+      },
+    ],
+  },
+
+  "medina-packing": {
+    intro: `Packing a Medina estate requires a different level of care than a standard residential move. Our Medina packing specialists bring custom wrapping materials, specialty boxes for art and antiques, wine packing supplies, and the expertise to protect irreplaceable items. We inventory high-value items before packing, use custom crating for oversized art and sculptures, and label everything with a detailed manifest. For Medina clients with extensive art collections or wine cellars, we provide a dedicated packing team and a pre-move consultation.`,
+    buildingCalloutsHeading: "Specialty Packing for Medina Estates",
+    buildingCallouts: `We offer specialty packing services for all Medina property types: art and sculpture (custom crating, acid-free wrapping, detailed inventory), wine collections (specialty wine boxes, temperature-aware transport, cellar inventory), antiques and heirlooms (custom wrapping, extra padding, white-glove handling), oversized furniture (custom blanket wrapping, disassembly as needed), and standard household goods (full-service packing, room-by-room labeling).`,
+    extraFaqs: [
+      {
+        q: "Do you pack art collections and wine cellars for Medina estates?",
+        a: "Yes. We have experience packing extensive art collections and wine cellars. We provide a pre-move consultation to inventory and assess each item, then use appropriate packing materials — custom crating for large art, specialty wine boxes, and acid-free wrapping for antiques.",
+      },
+      {
+        q: "How much does packing service cost for a Medina estate?",
+        a: "Packing for a Medina estate varies significantly based on the volume and type of items. A 4-bedroom estate typically adds $1,000–$2,500 to the move cost. We provide an itemized quote after a pre-move consultation.",
+      },
+    ],
+  },
+
+  "medina-commercial": {
+    intro: `Medina has very limited commercial development — primarily home offices and a handful of small professional services. Our commercial crews handle home office moves, small professional office relocations, and corporate relocation services for Medina residents. For executives relocating to or from Medina, we offer white-glove corporate relocation services including full packing, storage, and coordinated delivery. Our Redmond warehouse is 8 miles away for any short-term storage needs.`,
+    buildingCalloutsHeading: "Commercial Move Services for Medina",
+    buildingCallouts: `We serve all commercial needs in Medina: home offices (full packing and move service, white-glove handling for high-value equipment), corporate relocation (executive moves to/from Medina, full-service packing and storage), small professional offices (standard commercial move, after-hours scheduling available), and estate office contents (art, antiques, high-value equipment from estate offices).`,
+    extraFaqs: [
+      {
+        q: "Do you handle corporate relocation for executives moving to Medina?",
+        a: "Yes. We offer white-glove corporate relocation services for executives moving to or from Medina. This includes full packing, storage, coordinated delivery, and unpacking. We work with corporate HR departments and relocation management companies.",
+      },
+      {
+        q: "Can you move a home office in a Medina estate?",
+        a: "Yes. We move home offices in Medina estates with the same white-glove care we bring to the rest of the estate. We handle high-value electronics, artwork, and custom furniture with appropriate protection.",
+      },
+    ],
+  },
+
+  "medina-storage": {
+    intro: `Our secure, climate-controlled storage facility in Redmond is 8 miles from Medina — a 14-minute drive via SR-520. Medina residents use our storage during estate renovations, home sales, and international relocations. For high-value furniture, art, and antiques, our climate-controlled units provide the right environment. We provide detailed inventory management, monthly reports, and white-glove pickup and delivery. Your first month of storage is free with any Medina move.`,
+    buildingCalloutsHeading: "Storage Options for Medina Residents",
+    buildingCallouts: `Our Redmond storage facility serves Medina residents with: climate-controlled units (furniture, electronics, art, antiques, wine, high-value items), secure access (24-hour security, access by appointment), detailed inventory management (itemized inventory, monthly reports, photo documentation available), white-glove pickup and delivery (Medina to Redmond and back, scheduled service), and short-term storage (during renovations or home sales, first month free with move).`,
+    extraFaqs: [
+      {
+        q: "Can you store high-value art and antiques from a Medina estate?",
+        a: "Yes. Our climate-controlled units are appropriate for high-value art, antiques, and furniture. We provide detailed inventory management with photos and monthly reports. For extremely high-value items, we recommend consulting with your insurance provider about coverage during storage.",
+      },
+      {
+        q: "How far is your storage from Medina?",
+        a: "Our Redmond facility is 8 miles from Medina — a 14-minute drive via SR-520. We provide white-glove pickup and delivery service on a scheduled basis.",
+      },
+    ],
+  },
+
+  "medina-senior": {
+    intro: `Medina's senior community includes long-time residents who have lived in their estates for decades, often with extensive collections of art, antiques, and heirlooms. Moving from a Medina estate to a smaller residence or assisted living requires exceptional care, discretion, and crews who understand the emotional weight of leaving a longtime luxury home. Our senior moving specialists take extra time, communicate clearly, and handle every item with white-glove care. We coordinate with family members, estate attorneys, and senior communities throughout the Eastside.`,
+    buildingCalloutsHeading: "Senior Move Destinations from Medina",
+    buildingCallouts: `We move Medina seniors to destinations throughout the region: Bellevue luxury senior communities (8 miles, 14 min), Kirkland senior communities (6 miles, 12 min), Seattle luxury senior communities (10 miles, 18 min), Redmond senior communities (8 miles, 14 min), and in-Medina or Eastside downsizing (smaller luxury home or estate cottage).`,
+    extraFaqs: [
+      {
+        q: "How do you handle a senior move from a longtime Medina estate?",
+        a: "We start with a detailed walkthrough and inventory to understand what's moving, what's going to family members, and what's being donated or sold. We pack room by room with white-glove care, coordinate with estate attorneys if needed, and take extra care with sentimental items. We coordinate with the destination facility for move-in requirements.",
+      },
+      {
+        q: "Can you help coordinate donation or auction of items a Medina senior isn't taking?",
+        a: "Yes. We work with estate sale companies, auction houses, and donation organizations familiar with high-value items. We can coordinate pickup and provide an inventory of items being donated or sold.",
+      },
+    ],
+  },
+
+  "medina-furniture": {
+    intro: `Medina estates contain some of the most valuable furniture on the Eastside — custom pieces, antiques, designer furniture, and oversized items that require exceptional care. Our furniture moving specialists bring custom wrapping materials, extra padding, furniture dollies, and stair climbers. We disassemble and reassemble large pieces, protect hardwood floors and doorframes, and navigate gated entries and long driveways. For irreplaceable antique or custom furniture, we provide a pre-move assessment and custom protection plan.`,
+    buildingCalloutsHeading: "Furniture Moving Challenges in Medina",
+    buildingCallouts: `Common furniture moving challenges in Medina: gated entries (advance coordination required, gate code or contact information needed), long driveways (right-sized truck selection, careful maneuvering), waterfront homes (multiple levels, narrow staircases, limited staging space), high-value antique furniture (custom wrapping, extra padding, white-glove handling), and oversized custom pieces (disassembly assessment, custom protection plan).`,
+    extraFaqs: [
+      {
+        q: "How do you protect high-value antique furniture during a Medina move?",
+        a: "We use custom wrapping materials, extra padding, and white-glove handling for all high-value antique furniture. We conduct a pre-move assessment of each piece and create a custom protection plan. For irreplaceable items, we recommend consulting with your insurance provider about coverage during the move.",
+      },
+      {
+        q: "Can you move oversized custom furniture through narrow Medina waterfront staircases?",
+        a: "Yes. We assess staircase dimensions and doorway widths in advance. For pieces that won't fit through standard openings, we disassemble and reassemble on-site. We protect all surfaces throughout the process.",
+      },
+    ],
+  },
+
+  "medina-appliance": {
+    intro: `Medina estates often feature high-end appliances — Sub-Zero refrigerators, Wolf ranges, Miele dishwashers, and custom wine coolers. Our appliance moving crews handle all appliance types with the right equipment and the care these premium appliances deserve. We disconnect and reconnect standard appliances, protect custom cabinetry and flooring, and coordinate with appliance technicians for complex installations. For Medina estates with outdoor kitchens, we also move high-end outdoor appliances.`,
+    buildingCalloutsHeading: "Appliance Moving in Medina",
+    buildingCallouts: `We move all appliance types in Medina estates: high-end refrigerators (Sub-Zero, French door, built-in, floor and cabinetry protection required), professional ranges (Wolf, Viking, gas and electric, standard disconnect), dishwashers (Miele, Bosch, standard disconnect), wine coolers and wine cellars (temperature-aware transport, careful handling), outdoor appliances (outdoor refrigerators, grills, outdoor kitchen equipment), and laundry appliances (front-load, stacked, disconnect and reconnect).`,
+    extraFaqs: [
+      {
+        q: "Do you move Sub-Zero refrigerators and Wolf ranges in Medina estates?",
+        a: "Yes. We handle high-end appliances including Sub-Zero, Wolf, Viking, Miele, and other premium brands. We use appropriate equipment and protection for each appliance type. For complex installations, we recommend coordinating with a certified appliance technician for the final hookup.",
+      },
+      {
+        q: "Can you move a wine cellar from a Medina estate?",
+        a: "Yes. We move wine coolers and wine cellar contents with temperature-aware transport and careful handling. We recommend emptying wine storage 24 hours before the move and keeping wine in a temperature-controlled environment during transport.",
+      },
+    ],
+  },
+
+  "medina-unpacking": {
+    intro: `After a Medina estate move, unpacking requires the same white-glove care as the move itself. Our unpacking specialists work systematically: we unpack boxes room by room, place furniture and art where you want them, and remove all packing materials when we're done. For Medina clients, we can set up kitchens, arrange art, make beds, and organize closets so your new home feels like home from day one. We leave your estate immaculate, with all boxes broken down and removed.`,
+    buildingCalloutsHeading: "Unpacking Services for Medina Estates",
+    buildingCallouts: `We offer full unpacking, partial unpacking, and room setup for all Medina property types: estate homes (large volume, multiple rooms, art placement, full-service unpacking), waterfront properties (careful unpacking on multiple levels, art and antique placement), downsizing moves (selective unpacking, coordination with estate sale company for excess items), and senior moves (full setup including kitchen, bedroom, bathroom, and art placement).`,
+    extraFaqs: [
+      {
+        q: "Can you arrange art and place high-value furniture after a Medina move?",
+        a: "Yes. Our full unpacking service includes furniture placement and basic art arrangement. For complex art installations (hanging large pieces, gallery walls), we recommend coordinating with an art installer. We can refer you to trusted art installation services in the area.",
+      },
+      {
+        q: "How long does unpacking take for a Medina estate?",
+        a: "A 4-bedroom Medina estate typically takes 8–12 hours to fully unpack, depending on the volume and type of items. We provide a time estimate after reviewing your specific move. For large estates, we can provide a multi-day unpacking service.",
+      },
+    ],
+  },
+
+  "medina-warehousing": {
+    intro: `Our Redmond warehouse serves Medina residents needing short- or long-term warehousing for high-value items. Located 8 miles from Medina via SR-520, our climate-controlled facility provides secure storage for furniture, art, antiques, wine, and other valuables during estate renovations, international relocations, or home sales. We provide detailed inventory management, monthly reports, and white-glove pickup and delivery. For Medina clients, we offer dedicated storage bays with enhanced security protocols.`,
+    buildingCalloutsHeading: "Warehousing Services for Medina",
+    buildingCallouts: `Our Redmond warehouse provides for Medina clients: climate-controlled storage (furniture, art, antiques, wine, high-value electronics), enhanced security protocols (24-hour security, access by appointment only), detailed inventory management (itemized inventory, photo documentation, monthly reports), white-glove pickup and delivery (Medina to Redmond and back, scheduled service), and flexible duration (short-term during renovations, long-term for international relocations).`,
+    extraFaqs: [
+      {
+        q: "Can you store high-value art and antiques from a Medina estate during a renovation?",
+        a: "Yes. Our climate-controlled units are appropriate for high-value art, antiques, and furniture during estate renovations. We provide detailed inventory management with photos and monthly reports. We recommend consulting with your insurance provider about coverage during storage.",
+      },
+      {
+        q: "Do you offer warehousing for Medina residents relocating internationally?",
+        a: "Yes. We offer long-term warehousing for Medina residents relocating internationally. We store your items securely, provide monthly inventory reports, and coordinate delivery back to Medina or to your new location when you return.",
+      },
+    ],
+  },
 };
