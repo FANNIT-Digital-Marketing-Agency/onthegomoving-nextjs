@@ -2484,4 +2484,824 @@ export const TIER_A_CONTENT: Record<string, TierAEntry> = {
       },
     ],
   },
+
+// ===================================================================
+// MUKILTEO
+// ===================================================================
+
+  "mukilteo-residential": {
+    intro: `Mukilteo is a scenic waterfront community anchored by the Mukilteo ferry terminal, Paine Field airport, and the large Harbour Pointe planned community — one of the largest HOA communities in Snohomish County. Our crews have been moving Mukilteo homes since 2009 and know every neighborhood's specific logistics. Harbour Pointe has strict HOA move-in rules: designated windows, COI requirements, and elevator reservations in multi-story buildings. Waterfront properties near the ferry terminal have limited truck access and require advance planning. Our Redmond warehouse is 18 miles southeast — a 28-minute drive via I-5 and SR-525.`,
+    buildingCalloutsHeading: "Mukilteo Neighborhoods We Know Best",
+    buildingCallouts: `Our residential crews serve all Mukilteo neighborhoods: Harbour Pointe (HOA move-in rules, COI required, designated windows, largest planned community in Snohomish County), Mukilteo waterfront (limited truck access near ferry terminal, advance planning required, scenic properties), Paine Field area (residential near airport, standard access, flight path awareness), Japanese Gulch (established residential, standard access, mix of home sizes), and North Mukilteo (established neighborhood, standard access, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "How do you handle HOA move-in requirements in Harbour Pointe?",
+        a: "We are very familiar with Harbour Pointe's HOA move-in rules. We provide certificates of insurance, work within designated move-in windows, and coordinate directly with the HOA management office before move day. We've completed hundreds of Harbour Pointe moves.",
+      },
+      {
+        q: "How do you handle waterfront property moves near the Mukilteo ferry terminal?",
+        a: "We assess every waterfront property near the Mukilteo ferry terminal before move day. We identify the best truck parking position, the safest carry path, and any equipment we need. For very limited access, we use a smaller vehicle for the final approach.",
+      },
+    ],
+  },
+
+  "mukilteo-apartment": {
+    intro: `Mukilteo has limited apartment inventory outside of Harbour Pointe, where multi-story buildings have HOA-enforced move-in windows and COI requirements. Our crews coordinate directly with building management and the Harbour Pointe HOA before move day to secure elevator reservations and confirm all requirements. Most Mukilteo apartment moves complete in 2–3 hours, and we provide flat-rate quotes so you know the final price before we start.`,
+    buildingCalloutsHeading: "Apartment Buildings We Serve in Mukilteo",
+    buildingCallouts: `Our apartment moving crews serve Mukilteo's residential buildings: Harbour Pointe multi-story buildings (HOA move-in rules, elevator reservations required, COI required, designated windows), waterfront area apartments (limited access, advance planning required, standard move-in requirements), and Paine Field area apartments (standard requirements, ample parking, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Do Harbour Pointe apartment buildings require a certificate of insurance?",
+        a: "Yes. Harbour Pointe HOA requires a COI from your moving company. We provide certificates of insurance at no charge — just send us the HOA's requirements and we'll issue the COI within 24 hours.",
+      },
+      {
+        q: "How far in advance should I book a Mukilteo apartment move?",
+        a: "We recommend booking 3–4 weeks in advance for Harbour Pointe moves due to limited HOA-approved move-in windows. We accommodate last-minute moves when availability allows.",
+      },
+    ],
+  },
+
+  "mukilteo-packing": {
+    intro: `Mukilteo homes range from large Harbour Pointe residences to waterfront properties near the ferry terminal. Our packing crews bring all materials and are experienced with the full range of Mukilteo home types. Harbour Pointe homes tend to be large and well-furnished, making full-pack service a popular choice. Waterfront properties often contain outdoor furniture, water sports equipment, and dock accessories that require weatherproof packing. We provide flat-rate packing quotes so you know the final price before we start.`,
+    buildingCalloutsHeading: "Packing Services Across Mukilteo Neighborhoods",
+    buildingCallouts: `Our packing crews serve all Mukilteo neighborhoods: Harbour Pointe (large homes, extensive contents, full-pack service common, HOA coordination included), Mukilteo waterfront (outdoor furniture, water sports equipment, weatherproof packing, advance access planning), Paine Field area (residential, standard packing, efficient turnaround), Japanese Gulch (established homes, standard packing, efficient turnaround), and North Mukilteo (standard packing, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "How long does it take to pack a Harbour Pointe home?",
+        a: "A typical 3-bedroom Harbour Pointe home takes 6–10 hours to pack with a 2-person crew. Larger 4–5 bedroom homes take 10–16 hours. We recommend a free walkthrough quote for larger homes so we can give you an accurate time and cost estimate.",
+      },
+      {
+        q: "Do you pack outdoor and water sports equipment for Mukilteo waterfront moves?",
+        a: "Yes. We pack kayaks, paddleboards, outdoor furniture, and water sports equipment using weatherproof wrapping and custom crating where needed.",
+      },
+    ],
+  },
+
+  "mukilteo-commercial": {
+    intro: `Mukilteo's business community is concentrated near Paine Field, with aerospace-related businesses, professional services, and light industrial. Our commercial crews handle office and industrial moves with minimal disruption — we work after hours and on weekends. For Paine Field area businesses, we plan truck access and parking in advance. Flat-rate quotes available for all Mukilteo commercial moves.`,
+    buildingCalloutsHeading: "Commercial Moving in Mukilteo's Business Areas",
+    buildingCallouts: `We serve Mukilteo's major commercial areas: Paine Field corridor (aerospace and industrial businesses, standard access, flexible scheduling, after-hours available), Mukilteo waterfront commercial (marine businesses, limited access, advance planning required), and general commercial (professional services, standard access, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Do you handle aerospace or industrial equipment moves near Paine Field?",
+        a: "Yes. We handle office and light industrial moves near Paine Field. For specialized equipment, we recommend a free on-site walkthrough to plan the move sequence and identify any equipment needs.",
+      },
+      {
+        q: "Can you move our Mukilteo office on a weekend?",
+        a: "Yes. Weekend moves are our most common request for Mukilteo commercial relocations. We work Saturday and Sunday and can start as early as 6 a.m.",
+      },
+    ],
+  },
+
+  "mukilteo-storage": {
+    intro: `Our climate-controlled storage facility in Redmond is 18 miles from Mukilteo — a 28-minute drive via I-5 and SR-525. We offer month-to-month storage with no long-term contracts, and your first month is free with any Mukilteo move. Mukilteo customers commonly use our storage for Harbour Pointe home transitions, waterfront property staging, and seasonal equipment. All items are stored in individually locked units with 24/7 security monitoring.`,
+    buildingCalloutsHeading: "Storage Solutions for Mukilteo Residents and Businesses",
+    buildingCallouts: `Our Redmond storage facility serves all Mukilteo neighborhoods: Harbour Pointe storage (between-home storage, staging storage, renovation storage, first month free with any move), waterfront property storage (seasonal equipment, outdoor furniture, water sports gear, climate-controlled units), Paine Field business storage (equipment storage, document storage, month-to-month), and general household storage (month-to-month, no long-term contracts).`,
+    extraFaqs: [
+      {
+        q: "How far is your storage facility from Mukilteo?",
+        a: "Our Redmond storage facility is 18 miles from Mukilteo — about 28 minutes via I-5 and SR-525. We offer pickup and delivery from your Mukilteo home, or you can drop off and pick up directly at our facility.",
+      },
+      {
+        q: "Can I store seasonal waterfront equipment at your Redmond facility?",
+        a: "Yes. We store kayaks, paddleboards, outdoor furniture, and other seasonal equipment. Our climate-controlled units protect items from the Pacific Northwest's wet winters. Month-to-month contracts mean you can retrieve items when the season changes.",
+      },
+    ],
+  },
+
+  "mukilteo-senior": {
+    intro: `Mukilteo has a significant senior population in its established neighborhoods, and we have extensive experience with senior moves in the area. Our senior moving crews work at a pace that's comfortable for you — we never rush, we communicate clearly, and we take extra care with items that have sentimental value. For Harbour Pointe moves, we handle all HOA coordination so you don't have to. We coordinate with family members, senior living facilities, and downsizing specialists as needed.`,
+    buildingCalloutsHeading: "Senior Moving Services Across Mukilteo",
+    buildingCallouts: `Our senior moving crews serve all Mukilteo neighborhoods and destinations: Harbour Pointe (HOA coordination handled, full packing available, family communication), Mukilteo waterfront (careful access planning, no rushing, family coordination), senior living facilities in and near Mukilteo (direct facility coordination, move-in window compliance, COI handling), and in-Mukilteo downsizing moves (from larger home to smaller home or apartment).`,
+    extraFaqs: [
+      {
+        q: "Do you help with downsizing moves from large Harbour Pointe homes?",
+        a: "Yes. We work with seniors and families downsizing from Harbour Pointe homes. We can pack, move, and help coordinate donation pickups. We handle all HOA coordination and move at your pace.",
+      },
+      {
+        q: "Can you coordinate with a senior living facility near Mukilteo?",
+        a: "Yes. We coordinate directly with senior living facility management to confirm move-in windows, elevator reservations, and COI requirements.",
+      },
+    ],
+  },
+
+  "mukilteo-furniture": {
+    intro: `Mukilteo homes — especially in Harbour Pointe — often contain large, well-appointed furniture: sectional sofas, king beds, dining sets, and outdoor furniture for waterfront properties. Our furniture moving crews bring the tools for disassembly and reassembly, and use furniture pads and floor runners to protect both your furniture and your property. For waterfront properties with challenging access, we plan the carry route in advance.`,
+    buildingCalloutsHeading: "Furniture Moving Across Mukilteo Neighborhoods",
+    buildingCallouts: `Our furniture moving crews serve all Mukilteo neighborhoods: Harbour Pointe (large sectionals, king beds, dining sets, disassembly available, HOA coordination), Mukilteo waterfront (outdoor furniture, teak sets, patio sectionals, challenging access planning), Paine Field area (standard furniture, efficient moves), Japanese Gulch (established homes, standard furniture, efficient moves), and North Mukilteo (standard furniture, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Do you disassemble and reassemble furniture for Mukilteo moves?",
+        a: "Yes. We disassemble and reassemble bed frames, sectional sofas, dining tables, and other furniture as needed. We bring the tools and hardware bags to keep everything organized. Reassembly is included in our standard service.",
+      },
+      {
+        q: "Can you move large outdoor furniture from a Mukilteo waterfront property?",
+        a: "Yes. We regularly move large outdoor furniture from Mukilteo waterfront properties. We assess the carry path in advance and bring the right equipment for challenging access near the ferry terminal.",
+      },
+    ],
+  },
+
+  "mukilteo-appliance": {
+    intro: `Moving appliances in Mukilteo requires the right equipment and experience. Our appliance moving crews use appliance dollies, furniture pads, and straps to protect both the appliance and your floors. For Harbour Pointe homes with HOA requirements, we work within designated move-in windows. For waterfront properties with challenging access, we plan the carry route in advance. We disconnect and reconnect standard appliance hookups as part of our service.`,
+    buildingCalloutsHeading: "Appliance Moving Across Mukilteo",
+    buildingCallouts: `Our appliance moving crews serve all Mukilteo neighborhoods: Harbour Pointe (HOA coordination, designated windows, standard appliances, efficient moves), Mukilteo waterfront (challenging access, outdoor appliances, advance planning), Paine Field area (standard appliances, efficient moves), Japanese Gulch (established homes, standard appliances, efficient moves), and North Mukilteo (standard appliances, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Do you disconnect and reconnect appliances for Mukilteo moves?",
+        a: "Yes. We disconnect and reconnect standard appliance hookups — water lines for refrigerators and dishwashers, electric connections for ranges. Gas disconnection requires a licensed plumber, which we can coordinate.",
+      },
+      {
+        q: "Can you move appliances within Harbour Pointe's HOA move-in windows?",
+        a: "Yes. We work within Harbour Pointe's designated move-in windows for all appliance moves. We coordinate with the HOA management office before move day to confirm timing.",
+      },
+    ],
+  },
+
+  "mukilteo-unpacking": {
+    intro: `After a Mukilteo move, our unpacking crews can set up your new home so you're living comfortably from day one. We unpack boxes, place items in their designated rooms, and remove all packing materials. For Harbour Pointe homes, we work within HOA move-in windows. For waterfront properties, we set up outdoor living spaces and water-adjacent storage. Unpacking service is available as a standalone booking or as an add-on to any Mukilteo move.`,
+    buildingCalloutsHeading: "Unpacking Services Across Mukilteo",
+    buildingCallouts: `Our unpacking crews serve all Mukilteo neighborhoods and home types: Harbour Pointe (HOA window compliance, full unpacking service, room-by-room setup), Mukilteo waterfront (indoor and outdoor setup, patio furniture arrangement, water sports equipment placement), Paine Field area (standard setup, efficient unpacking), and North Mukilteo (standard setup, efficient unpacking, all materials removed).`,
+    extraFaqs: [
+      {
+        q: "How long does unpacking take for a Harbour Pointe home?",
+        a: "A typical 3-bedroom Harbour Pointe home takes 5–8 hours to unpack with a 2-person crew. Larger homes take 8–12 hours. We remove all boxes and packing materials when we're done.",
+      },
+      {
+        q: "Can I book unpacking service separately from the move in Mukilteo?",
+        a: "Yes. We offer unpacking as a standalone service. We can schedule unpacking the day after your move or whenever works best for you.",
+      },
+    ],
+  },
+
+  "mukilteo-warehousing": {
+    intro: `Our Redmond warehouse is 18 miles from Mukilteo and offers flexible warehousing and distribution services for Snohomish County businesses. We handle receiving, storage, inventory management, and last-mile delivery. For Paine Field area businesses, our facility provides efficient access via I-5 and SR-525. Month-to-month contracts available — no long-term commitment required.`,
+    buildingCalloutsHeading: "Warehousing and Distribution for Mukilteo Businesses",
+    buildingCallouts: `Our warehousing services support Mukilteo businesses: Paine Field corridor (aerospace and industrial storage, equipment storage, flexible terms), waterfront commercial (marine equipment storage, seasonal inventory, month-to-month), professional services (document storage, equipment storage, month-to-month), and general business storage (month-to-month, pickup and delivery available, 18 miles via I-5/SR-525).`,
+    extraFaqs: [
+      {
+        q: "How far is your warehouse from Mukilteo businesses?",
+        a: "Our Redmond warehouse is 18 miles from Mukilteo — about 28 minutes via I-5 and SR-525. We offer pickup and delivery from your Mukilteo location.",
+      },
+      {
+        q: "Do you offer month-to-month warehousing for Mukilteo businesses?",
+        a: "Yes. All our warehousing contracts are month-to-month — no long-term commitment required. We scale storage space up or down as your needs change.",
+      },
+    ],
+  },
+
+// ===================================================================
+// BURIEN
+// ===================================================================
+
+  "burien-residential": {
+    intro: `Burien is a diverse community in South King County with a revitalized downtown, waterfront neighborhoods on Puget Sound, and easy access to Seattle-Tacoma International Airport. Our crews have been moving Burien homes since 2009 and know every neighborhood's specific logistics. Three Tree Point and Seahurst have waterfront properties with limited truck access and steep paths to the water. Downtown Burien's revitalization has brought new apartment buildings with standard elevator requirements. Our Redmond warehouse is 18 miles northeast — a 28-minute drive via I-5.`,
+    buildingCalloutsHeading: "Burien Neighborhoods We Know Best",
+    buildingCallouts: `Our residential crews serve all Burien neighborhoods: Downtown Burien (new apartment buildings, elevator coordination, standard move-in requirements), Three Tree Point (waterfront properties, limited truck access, steep paths, advance planning required), Seahurst (waterfront-adjacent, Puget Sound views, standard access), Gregory Heights (established residential, older homes, standard access), Boulevard Park (established neighborhood, standard access, mix of home sizes), and Sunnydale (residential, standard access, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "How do you handle waterfront property moves in Three Tree Point and Seahurst?",
+        a: "We assess every Three Tree Point and Seahurst waterfront property before move day. We identify the best truck parking position, the safest carry path to the water, and any equipment we need. For very steep or narrow access, we use a smaller vehicle for the final approach.",
+      },
+      {
+        q: "What's the best time to schedule a Burien move to avoid Sea-Tac airport traffic?",
+        a: "We recommend starting before 8 a.m. or after 10 a.m. to avoid the morning rush on I-5 and SR-509. For large moves, we often start at 7 a.m. to maximize the available window before afternoon traffic builds.",
+      },
+    ],
+  },
+
+  "burien-apartment": {
+    intro: `Burien's apartment market is growing in Downtown Burien, with new buildings that have standard elevator and move-in window requirements. Our crews coordinate directly with building management before move day to secure elevator reservations and confirm parking. Most Burien apartment moves complete in 2–3 hours, and we provide flat-rate quotes so you know the final price before we start.`,
+    buildingCalloutsHeading: "Apartment Buildings We Serve in Burien",
+    buildingCallouts: `Our apartment moving crews serve Burien's major complexes: Downtown Burien apartments (elevator reservations required, COI required, standard move-in windows, newer construction), Gregory Heights apartments (established buildings, standard access, efficient moves), Boulevard Park apartments (standard requirements, ample parking, efficient moves), and Sunnydale apartments (standard requirements, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Do Downtown Burien apartment buildings require a certificate of insurance?",
+        a: "Most newer Downtown Burien apartment buildings require a COI from your moving company. We provide certificates of insurance at no charge — just send us your building's requirements and we'll issue the COI within 24 hours.",
+      },
+      {
+        q: "How far in advance should I book a Burien apartment move?",
+        a: "We recommend booking 2–3 weeks in advance for Burien apartment moves. Downtown Burien buildings fill quickly on weekends and end-of-month dates.",
+      },
+    ],
+  },
+
+  "burien-packing": {
+    intro: `Burien homes range from compact older properties in Gregory Heights to newer construction in Downtown Burien and waterfront homes in Three Tree Point. Our packing crews bring all materials and are experienced with the full range of Burien home types. For waterfront properties, we pack outdoor furniture, water sports equipment, and patio accessories. For older Gregory Heights homes with vintage contents, we use specialty wrapping. We provide flat-rate packing quotes.`,
+    buildingCalloutsHeading: "Packing Services Across Burien Neighborhoods",
+    buildingCallouts: `Our packing crews serve all Burien neighborhoods: Three Tree Point and Seahurst (outdoor furniture, water sports equipment, weatherproof packing, advance access planning), Gregory Heights (older homes, vintage contents, specialty wrapping available), Downtown Burien (newer construction, standard packing, efficient turnaround), Boulevard Park (established homes, standard packing, efficient turnaround), and Sunnydale (residential, standard packing, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "How long does it take to pack a Burien home?",
+        a: "A typical 2-bedroom Burien home takes 4–6 hours to pack with a 2-person crew. A larger 3–4 bedroom home takes 6–10 hours. We recommend a free walkthrough quote for larger homes.",
+      },
+      {
+        q: "Do you pack outdoor and waterfront equipment for Burien moves?",
+        a: "Yes. We pack outdoor furniture, kayaks, paddleboards, and patio accessories for Burien waterfront moves using weatherproof wrapping and custom crating where needed.",
+      },
+    ],
+  },
+
+  "burien-commercial": {
+    intro: `Burien's business community is concentrated in Downtown Burien and near Sea-Tac Airport, with retail, professional services, and hospitality businesses. Our commercial crews handle office and retail moves with minimal disruption — we work after hours and on weekends. For Downtown Burien businesses with limited truck parking, we plan access in advance. Flat-rate quotes available for all Burien commercial moves.`,
+    buildingCalloutsHeading: "Commercial Moving in Burien's Business Districts",
+    buildingCallouts: `We serve Burien's major commercial areas: Downtown Burien (retail and office moves, limited truck parking, after-hours available, elevator coordination), Sea-Tac Airport corridor (hospitality and service businesses, standard access, flexible scheduling), Gregory Heights commercial (established businesses, standard access, efficient moves), and Boulevard Park commercial (standard access, ample parking, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Can you move our Burien office on a weekend?",
+        a: "Yes. Weekend moves are our most common request for Burien commercial relocations. We work Saturday and Sunday and can start as early as 6 a.m.",
+      },
+      {
+        q: "Do you handle restaurant or hospitality moves near Sea-Tac in Burien?",
+        a: "Yes. We handle restaurant and hospitality moves including kitchen equipment, furniture, and fixtures. We work after hours to minimize disruption to your business.",
+      },
+    ],
+  },
+
+  "burien-storage": {
+    intro: `Our climate-controlled storage facility in Redmond is 18 miles from Burien — a 28-minute drive via I-5. We offer month-to-month storage with no long-term contracts, and your first month is free with any Burien move. Burien customers commonly use our storage for between-home transitions, home staging, and renovation projects. All items are stored in individually locked units with 24/7 security monitoring.`,
+    buildingCalloutsHeading: "Storage Solutions for Burien Residents and Businesses",
+    buildingCallouts: `Our Redmond storage facility serves all Burien neighborhoods: Three Tree Point and Seahurst storage (seasonal equipment, outdoor furniture, water sports gear, climate-controlled units), Downtown Burien business storage (retail inventory overflow, seasonal storage, month-to-month), residential storage (between-home storage, staging storage, renovation storage, first month free with any move), and general household storage (month-to-month, no long-term contracts).`,
+    extraFaqs: [
+      {
+        q: "How far is your storage facility from Burien?",
+        a: "Our Redmond storage facility is 18 miles from Burien — about 28 minutes via I-5. We offer pickup and delivery from your Burien home, or you can drop off and pick up directly at our facility.",
+      },
+      {
+        q: "Do you offer business storage for Burien retail businesses?",
+        a: "Yes. We offer flexible month-to-month storage for retail inventory, seasonal overflow, and equipment. Many Burien businesses use our Redmond facility for seasonal inventory management.",
+      },
+    ],
+  },
+
+  "burien-senior": {
+    intro: `Burien has established residential neighborhoods with a significant senior population, and we have extensive experience with senior moves in the area. Our senior moving crews work at a pace that's comfortable for you — we never rush, we communicate clearly, and we take extra care with items that have sentimental value. For waterfront property moves in Three Tree Point, we handle the challenging access so you don't have to. We coordinate with family members, senior living facilities, and downsizing specialists as needed.`,
+    buildingCalloutsHeading: "Senior Moving Services Across Burien",
+    buildingCallouts: `Our senior moving crews serve all Burien neighborhoods and destinations: Gregory Heights and Boulevard Park (established homes, downsizing moves, full packing available), Three Tree Point and Seahurst (careful access planning, no rushing, family coordination), senior living facilities in and near Burien (direct facility coordination, move-in window compliance, COI handling), and in-Burien downsizing moves (from larger home to smaller home or apartment).`,
+    extraFaqs: [
+      {
+        q: "Do you help with downsizing moves from Burien homes?",
+        a: "Yes. We work with seniors and families downsizing from Burien homes. We can pack, move, and help coordinate donation pickups. We move at your pace and communicate clearly throughout the process.",
+      },
+      {
+        q: "Can you coordinate with a senior living facility near Burien?",
+        a: "Yes. We coordinate directly with senior living facility management to confirm move-in windows, elevator reservations, and COI requirements.",
+      },
+    ],
+  },
+
+  "burien-furniture": {
+    intro: `Burien homes range from compact older properties in Gregory Heights to waterfront homes in Three Tree Point with large outdoor furniture. Our furniture moving crews bring the tools for disassembly and reassembly, and use furniture pads and floor runners to protect both your furniture and your property. For waterfront properties with challenging access, we plan the carry route in advance. For older Gregory Heights homes with narrow doorways, we assess access before move day.`,
+    buildingCalloutsHeading: "Furniture Moving Across Burien Neighborhoods",
+    buildingCallouts: `Our furniture moving crews serve all Burien neighborhoods: Three Tree Point and Seahurst (outdoor furniture, teak sets, patio sectionals, challenging access planning), Gregory Heights (older homes, narrow doorways, careful maneuvering), Downtown Burien (newer construction, standard furniture, elevator coordination), Boulevard Park (established homes, standard furniture, efficient moves), and Sunnydale (residential, standard furniture, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Do you disassemble and reassemble furniture for Burien moves?",
+        a: "Yes. We disassemble and reassemble bed frames, sectional sofas, dining tables, and other furniture as needed. We bring the tools and hardware bags to keep everything organized.",
+      },
+      {
+        q: "Can you move large outdoor furniture from a Burien waterfront property?",
+        a: "Yes. We regularly move large outdoor furniture from Three Tree Point and Seahurst waterfront properties. We assess the carry path in advance and bring the right equipment for challenging access.",
+      },
+    ],
+  },
+
+  "burien-appliance": {
+    intro: `Moving appliances in Burien requires the right equipment and experience. Our appliance moving crews use appliance dollies, furniture pads, and straps to protect both the appliance and your floors. For older Gregory Heights homes with narrow doorways, we assess access before move day. For Downtown Burien apartments with elevators, we coordinate timing in advance. We disconnect and reconnect standard appliance hookups as part of our service.`,
+    buildingCalloutsHeading: "Appliance Moving Across Burien",
+    buildingCallouts: `Our appliance moving crews serve all Burien neighborhoods: Three Tree Point and Seahurst (waterfront properties, outdoor appliances, advance planning), Gregory Heights (older homes, narrow access, careful maneuvering), Downtown Burien (elevator coordination, standard appliances, efficient moves), Boulevard Park (established homes, standard appliances, efficient moves), and Sunnydale (residential, standard appliances, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Do you disconnect and reconnect appliances for Burien moves?",
+        a: "Yes. We disconnect and reconnect standard appliance hookups — water lines for refrigerators and dishwashers, electric connections for ranges. Gas disconnection requires a licensed plumber, which we can coordinate.",
+      },
+      {
+        q: "Can you move appliances through narrow doorways in older Burien homes?",
+        a: "Yes. We're experienced with moving appliances through challenging spaces in older Gregory Heights homes. We assess doorway dimensions before move day and plan accordingly.",
+      },
+    ],
+  },
+
+  "burien-unpacking": {
+    intro: `After a Burien move, our unpacking crews can set up your new home so you're living comfortably from day one. We unpack boxes, place items in their designated rooms, and remove all packing materials. For waterfront properties, we set up outdoor living spaces and patio furniture. We work at your pace and follow your instructions for where everything goes. Unpacking service is available as a standalone booking or as an add-on to any Burien move.`,
+    buildingCalloutsHeading: "Unpacking Services Across Burien",
+    buildingCallouts: `Our unpacking crews serve all Burien neighborhoods and home types: Three Tree Point and Seahurst (indoor and outdoor setup, patio furniture arrangement, water sports equipment placement), Gregory Heights (established homes, standard unpacking, room-by-room setup), Downtown Burien (newer construction, standard unpacking, all materials removed), Boulevard Park (established homes, efficient unpacking, standard setup), and Sunnydale (residential, efficient unpacking, standard setup).`,
+    extraFaqs: [
+      {
+        q: "How long does unpacking take for a Burien home?",
+        a: "A typical 2-bedroom Burien home takes 3–5 hours to unpack with a 2-person crew. A larger 3–4 bedroom home takes 5–8 hours. We remove all boxes and packing materials when we're done.",
+      },
+      {
+        q: "Can I book unpacking service separately from the move in Burien?",
+        a: "Yes. We offer unpacking as a standalone service. We can schedule unpacking the day after your move or whenever works best for you.",
+      },
+    ],
+  },
+
+  "burien-warehousing": {
+    intro: `Our Redmond warehouse is 18 miles from Burien and offers flexible warehousing and distribution services for South King County businesses. We handle receiving, storage, inventory management, and last-mile delivery. For businesses near Sea-Tac Airport and Downtown Burien, our facility provides efficient access via I-5. Month-to-month contracts available — no long-term commitment required.`,
+    buildingCalloutsHeading: "Warehousing and Distribution for Burien Businesses",
+    buildingCallouts: `Our warehousing services support Burien businesses: Downtown Burien retail (inventory storage, seasonal overflow, last-mile delivery), Sea-Tac corridor businesses (hospitality supply storage, equipment storage, flexible terms), professional services (document storage, equipment storage, month-to-month), and general business storage (month-to-month, pickup and delivery available, 18 miles via I-5).`,
+    extraFaqs: [
+      {
+        q: "How far is your warehouse from Burien?",
+        a: "Our Redmond warehouse is 18 miles from Burien — about 28 minutes via I-5. We offer pickup and delivery from your Burien location.",
+      },
+      {
+        q: "Do you offer month-to-month warehousing for Burien businesses?",
+        a: "Yes. All our warehousing contracts are month-to-month — no long-term commitment required.",
+      },
+    ],
+  },
+
+// ===================================================================
+// SNOQUALMIE
+// ===================================================================
+
+  "snoqualmie-residential": {
+    intro: `Snoqualmie is a growing community at the foot of the Cascades, anchored by Snoqualmie Ridge — one of the largest master-planned communities in Washington State, with thousands of homes and strict HOA move-in rules. Our crews have been moving Snoqualmie homes since 2009 and know Snoqualmie Ridge's HOA requirements inside and out. Downtown Snoqualmie has older homes with narrow access near Snoqualmie Falls. I-90 provides the main access route from our Redmond warehouse, 17 miles northwest — a 25-minute drive.`,
+    buildingCalloutsHeading: "Snoqualmie Neighborhoods We Know Best",
+    buildingCallouts: `Our residential crews serve all Snoqualmie neighborhoods: Snoqualmie Ridge (HOA move-in rules, COI required, designated windows, one of the largest planned communities in WA), Downtown Snoqualmie (older homes, narrow streets, Snoqualmie Falls area, advance planning for large trucks), Grand Ridge (newer construction, standard access, large homes), Meadowbrook (established residential, standard access, efficient moves), and Snoqualmie Valley rural properties (challenging access, advance planning required, right-size truck selection).`,
+    extraFaqs: [
+      {
+        q: "How do you handle HOA move-in requirements in Snoqualmie Ridge?",
+        a: "We are very familiar with Snoqualmie Ridge's HOA move-in rules. We provide certificates of insurance, work within designated move-in windows, and coordinate directly with the HOA management office before move day. We've completed hundreds of Snoqualmie Ridge moves.",
+      },
+      {
+        q: "Do you move homes in Downtown Snoqualmie near Snoqualmie Falls?",
+        a: "Yes. We regularly move homes in historic Downtown Snoqualmie. We use smaller trucks for narrow streets and plan access in advance. The area near Snoqualmie Falls has limited truck parking — we assess each property before move day.",
+      },
+    ],
+  },
+
+  "snoqualmie-apartment": {
+    intro: `Snoqualmie has limited apartment inventory, with most residential moves in Snoqualmie Ridge's single-family homes. Snoqualmie Ridge multi-story buildings have HOA-enforced move-in windows and COI requirements. Our crews coordinate directly with building management and the HOA before move day. Most Snoqualmie apartment moves complete in 2–3 hours, and we provide flat-rate quotes so you know the final price before we start.`,
+    buildingCalloutsHeading: "Apartment Buildings We Serve in Snoqualmie",
+    buildingCallouts: `Our apartment moving crews serve Snoqualmie's residential buildings: Snoqualmie Ridge townhomes and condos (HOA move-in rules, COI required, designated windows, elevator coordination where applicable), Downtown Snoqualmie apartments (standard requirements, narrow street access, advance planning), and Grand Ridge condos (standard requirements, ample parking, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Do Snoqualmie Ridge condos require a certificate of insurance?",
+        a: "Yes. Snoqualmie Ridge HOA requires a COI from your moving company. We provide certificates of insurance at no charge — just send us the HOA's requirements and we'll issue the COI within 24 hours.",
+      },
+      {
+        q: "How far in advance should I book a Snoqualmie apartment move?",
+        a: "We recommend booking 3–4 weeks in advance for Snoqualmie Ridge moves due to limited HOA-approved move-in windows. We accommodate last-minute moves when availability allows.",
+      },
+    ],
+  },
+
+  "snoqualmie-packing": {
+    intro: `Snoqualmie Ridge homes are large and well-appointed — full-pack service is a popular choice for families moving in or out of the Ridge. Our packing crews bring all materials and are experienced with large Snoqualmie Ridge homes. For Downtown Snoqualmie homes with vintage contents, we use specialty wrapping for fragile items. We provide flat-rate packing quotes and recommend a walkthrough for larger homes so we can give you an accurate estimate.`,
+    buildingCalloutsHeading: "Packing Services Across Snoqualmie Neighborhoods",
+    buildingCallouts: `Our packing crews serve all Snoqualmie neighborhoods: Snoqualmie Ridge (large homes, extensive contents, full-pack service common, HOA coordination included), Downtown Snoqualmie (older homes, vintage contents, specialty wrapping available), Grand Ridge (newer construction, large kitchens, full-pack available), Meadowbrook (established homes, standard packing, efficient turnaround), and Snoqualmie Valley rural (standard packing, advance access planning).`,
+    extraFaqs: [
+      {
+        q: "How long does it take to pack a Snoqualmie Ridge home?",
+        a: "A typical 3-bedroom Snoqualmie Ridge home takes 6–10 hours to pack with a 2-person crew. Larger 4–5 bedroom homes take 10–16 hours. We recommend a free walkthrough quote for larger homes.",
+      },
+      {
+        q: "Do you bring packing materials for Snoqualmie moves?",
+        a: "Yes. We bring all packing materials — boxes, tape, bubble wrap, packing paper, and specialty materials for fragile items. All materials are included in our flat-rate packing quotes.",
+      },
+    ],
+  },
+
+  "snoqualmie-commercial": {
+    intro: `Snoqualmie has limited commercial development, with small businesses concentrated near Snoqualmie Ridge's commercial areas and Downtown Snoqualmie. Our commercial crews handle small office and retail moves with minimal disruption. For Downtown Snoqualmie businesses with narrow street access, we plan truck access in advance. Flat-rate quotes available for all Snoqualmie commercial moves.`,
+    buildingCalloutsHeading: "Commercial Moving in Snoqualmie",
+    buildingCallouts: `We serve Snoqualmie's commercial areas: Snoqualmie Ridge commercial (retail and professional services, standard access, flexible scheduling), Downtown Snoqualmie (small businesses, narrow street access, advance planning required), and Snoqualmie Valley commercial (standard access, ample parking, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Can you move our Snoqualmie office on a weekend?",
+        a: "Yes. Weekend moves are our most common request for Snoqualmie commercial relocations. We work Saturday and Sunday and can start as early as 6 a.m.",
+      },
+      {
+        q: "Do you handle moves for businesses in Downtown Snoqualmie?",
+        a: "Yes. We regularly move businesses in historic Downtown Snoqualmie. We use smaller trucks for narrow streets and plan access in advance.",
+      },
+    ],
+  },
+
+  "snoqualmie-storage": {
+    intro: `Our climate-controlled storage facility in Redmond is 17 miles from Snoqualmie — a 25-minute drive via I-90. We offer month-to-month storage with no long-term contracts, and your first month is free with any Snoqualmie move. Snoqualmie customers commonly use our storage for Snoqualmie Ridge home transitions, renovation projects, and between-home storage during real estate transactions. All items are stored in individually locked units with 24/7 security monitoring.`,
+    buildingCalloutsHeading: "Storage Solutions for Snoqualmie Residents and Businesses",
+    buildingCallouts: `Our Redmond storage facility serves all Snoqualmie neighborhoods: Snoqualmie Ridge storage (between-home storage, staging storage, renovation storage, first month free with any move), Downtown Snoqualmie storage (household goods, vintage items, general storage), Grand Ridge storage (between-home storage, staging, general household), and general business storage (month-to-month, pickup and delivery available, 17 miles via I-90).`,
+    extraFaqs: [
+      {
+        q: "How far is your storage facility from Snoqualmie?",
+        a: "Our Redmond storage facility is 17 miles from Snoqualmie — about 25 minutes via I-90. We offer pickup and delivery from your Snoqualmie home, or you can drop off and pick up directly at our facility.",
+      },
+      {
+        q: "Do you offer month-to-month storage for Snoqualmie residents?",
+        a: "Yes. All our storage contracts are month-to-month — no long-term commitment required. Your first month is free with any Snoqualmie move.",
+      },
+    ],
+  },
+
+  "snoqualmie-senior": {
+    intro: `Snoqualmie Ridge has a growing senior population, and we have extensive experience with senior moves in the community. Our senior moving crews work at a pace that's comfortable for you — we never rush, we communicate clearly, and we take extra care with items that have sentimental value. For Snoqualmie Ridge moves, we handle all HOA coordination so you don't have to. We coordinate with family members, senior living facilities, and downsizing specialists as needed.`,
+    buildingCalloutsHeading: "Senior Moving Services Across Snoqualmie",
+    buildingCallouts: `Our senior moving crews serve all Snoqualmie neighborhoods and destinations: Snoqualmie Ridge (HOA coordination handled, full packing available, family communication), Downtown Snoqualmie (careful access planning, no rushing, family coordination), senior living facilities in and near Snoqualmie (direct facility coordination, move-in window compliance), and in-Snoqualmie downsizing moves (from larger Ridge home to smaller home or apartment).`,
+    extraFaqs: [
+      {
+        q: "Do you help with downsizing moves from large Snoqualmie Ridge homes?",
+        a: "Yes. We work with seniors and families downsizing from Snoqualmie Ridge homes. We can pack, move, and help coordinate donation pickups. We handle all HOA coordination and move at your pace.",
+      },
+      {
+        q: "Can you coordinate with a senior living facility near Snoqualmie?",
+        a: "Yes. We coordinate directly with senior living facility management to confirm move-in windows, elevator reservations, and COI requirements.",
+      },
+    ],
+  },
+
+  "snoqualmie-furniture": {
+    intro: `Snoqualmie Ridge homes are large and well-furnished — sectional sofas, king beds, dining sets, and home office furniture are common. Our furniture moving crews bring the tools for disassembly and reassembly, and use furniture pads and floor runners to protect both your furniture and your property. For Downtown Snoqualmie homes with narrow doorways, we assess access before move day. HOA coordination for Snoqualmie Ridge is included in our service.`,
+    buildingCalloutsHeading: "Furniture Moving Across Snoqualmie Neighborhoods",
+    buildingCallouts: `Our furniture moving crews serve all Snoqualmie neighborhoods: Snoqualmie Ridge (large sectionals, king beds, dining sets, disassembly available, HOA coordination), Downtown Snoqualmie (older homes, narrow doorways, careful maneuvering), Grand Ridge (newer construction, oversized pieces, standard access), Meadowbrook (established homes, standard furniture, efficient moves), and Snoqualmie Valley rural (standard furniture, advance access planning).`,
+    extraFaqs: [
+      {
+        q: "Do you disassemble and reassemble furniture for Snoqualmie Ridge moves?",
+        a: "Yes. We disassemble and reassemble bed frames, sectional sofas, dining tables, and other furniture as needed. We bring the tools and hardware bags to keep everything organized.",
+      },
+      {
+        q: "Can you move large furniture through narrow doorways in Downtown Snoqualmie homes?",
+        a: "Yes. We're experienced with maneuvering large furniture through challenging spaces in older Downtown Snoqualmie homes. We assess access before move day and plan accordingly.",
+      },
+    ],
+  },
+
+  "snoqualmie-appliance": {
+    intro: `Moving appliances in Snoqualmie requires the right equipment and experience. Our appliance moving crews use appliance dollies, furniture pads, and straps to protect both the appliance and your floors. For Snoqualmie Ridge homes with HOA requirements, we work within designated move-in windows. For Downtown Snoqualmie homes with narrow access, we assess before move day. We disconnect and reconnect standard appliance hookups as part of our service.`,
+    buildingCalloutsHeading: "Appliance Moving Across Snoqualmie",
+    buildingCallouts: `Our appliance moving crews serve all Snoqualmie neighborhoods: Snoqualmie Ridge (HOA coordination, designated windows, standard appliances, efficient moves), Downtown Snoqualmie (narrow access, careful maneuvering, standard appliances), Grand Ridge (newer construction, large appliances, standard access), Meadowbrook (established homes, standard appliances, efficient moves), and Snoqualmie Valley rural (advance access planning, right-size truck selection).`,
+    extraFaqs: [
+      {
+        q: "Do you disconnect and reconnect appliances for Snoqualmie moves?",
+        a: "Yes. We disconnect and reconnect standard appliance hookups — water lines for refrigerators and dishwashers, electric connections for ranges.",
+      },
+      {
+        q: "Can you move appliances within Snoqualmie Ridge's HOA move-in windows?",
+        a: "Yes. We work within Snoqualmie Ridge's designated move-in windows for all appliance moves. We coordinate with the HOA management office before move day to confirm timing.",
+      },
+    ],
+  },
+
+  "snoqualmie-unpacking": {
+    intro: `After a Snoqualmie move, our unpacking crews can set up your new home so you're living comfortably from day one. We unpack boxes, place items in their designated rooms, and remove all packing materials. For Snoqualmie Ridge homes, we work within HOA move-in windows. We work at your pace and follow your instructions for where everything goes. Unpacking service is available as a standalone booking or as an add-on to any Snoqualmie move.`,
+    buildingCalloutsHeading: "Unpacking Services Across Snoqualmie",
+    buildingCallouts: `Our unpacking crews serve all Snoqualmie neighborhoods and home types: Snoqualmie Ridge (HOA window compliance, full unpacking service, room-by-room setup), Downtown Snoqualmie (careful handling, standard unpacking, all materials removed), Grand Ridge (newer construction, full unpacking service, efficient setup), and Meadowbrook (established homes, standard unpacking, efficient setup).`,
+    extraFaqs: [
+      {
+        q: "How long does unpacking take for a Snoqualmie Ridge home?",
+        a: "A typical 3-bedroom Snoqualmie Ridge home takes 5–8 hours to unpack with a 2-person crew. Larger homes take 8–12 hours. We remove all boxes and packing materials when we're done.",
+      },
+      {
+        q: "Can I book unpacking service separately from the move in Snoqualmie?",
+        a: "Yes. We offer unpacking as a standalone service. We can schedule unpacking the day after your move or whenever works best for you.",
+      },
+    ],
+  },
+
+  "snoqualmie-warehousing": {
+    intro: `Our Redmond warehouse is 17 miles from Snoqualmie and offers flexible warehousing and distribution services for Snoqualmie Valley businesses. We handle receiving, storage, inventory management, and last-mile delivery. For Snoqualmie Ridge commercial businesses, our facility provides efficient access via I-90. Month-to-month contracts available — no long-term commitment required.`,
+    buildingCalloutsHeading: "Warehousing and Distribution for Snoqualmie Businesses",
+    buildingCallouts: `Our warehousing services support Snoqualmie businesses: Snoqualmie Ridge commercial (retail inventory storage, seasonal overflow, last-mile delivery), Downtown Snoqualmie (small business storage, document storage, month-to-month), professional services (equipment storage, general storage, flexible terms), and general business storage (month-to-month, pickup and delivery available, 17 miles via I-90).`,
+    extraFaqs: [
+      {
+        q: "How far is your warehouse from Snoqualmie?",
+        a: "Our Redmond warehouse is 17 miles from Snoqualmie — about 25 minutes via I-90. We offer pickup and delivery from your Snoqualmie location.",
+      },
+      {
+        q: "Do you offer month-to-month warehousing for Snoqualmie businesses?",
+        a: "Yes. All our warehousing contracts are month-to-month — no long-term commitment required.",
+      },
+    ],
+  },
+
+// ===================================================================
+// NORTH BEND
+// ===================================================================
+
+  "north-bend-residential": {
+    intro: `North Bend is a gateway community to the Cascade Mountains, known for its outdoor recreation, Twin Peaks filming locations, and a mix of rural and suburban residential neighborhoods. Our crews have been moving North Bend homes since 2009 and know the specific challenges of this area. I-90 provides the main access route from our Redmond warehouse, 18 miles west — a 28-minute drive. Some North Bend properties are on rural roads with challenging access for large trucks, and we assess every property before move day.`,
+    buildingCalloutsHeading: "North Bend Neighborhoods We Know Best",
+    buildingCallouts: `Our residential crews serve all North Bend neighborhoods: North Bend Way (downtown area, older homes, limited truck parking, advance planning), Edgewick (residential, standard access, mix of home sizes), Tanner (established neighborhood, standard access, efficient moves), Rattlesnake Ridge area (rural-adjacent, some challenging access, advance planning), Cedar Falls (rural residential, unpaved roads possible, right-size truck selection), and new North Bend development (newer construction, standard access, larger homes).`,
+    extraFaqs: [
+      {
+        q: "How do you handle moves on rural roads in North Bend?",
+        a: "We regularly move on rural roads in the North Bend area. We assess access points in advance and use the right size truck for each property — sometimes a smaller truck is needed for the final approach on narrow or unpaved roads.",
+      },
+      {
+        q: "Do you move homes in North Bend during winter near Snoqualmie Pass?",
+        a: "Yes. We move year-round in North Bend. For winter moves, we monitor I-90 road conditions and may adjust scheduling if Snoqualmie Pass is affected by snow or ice. We communicate any changes proactively.",
+      },
+    ],
+  },
+
+  "north-bend-apartment": {
+    intro: `North Bend has limited apartment inventory, with most residential moves in single-family homes. Our crews handle the full range of North Bend residential moves, from compact downtown apartments to larger homes in Edgewick and Tanner. Most North Bend apartment moves complete in 2–3 hours, and we provide flat-rate quotes so you know the final price before we start.`,
+    buildingCalloutsHeading: "Apartment Buildings We Serve in North Bend",
+    buildingCallouts: `Our apartment moving crews serve North Bend's residential buildings: North Bend Way apartments (standard requirements, limited truck parking, advance planning), Edgewick area apartments (standard access, efficient moves, ample parking), and Tanner area apartments (standard requirements, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "How far in advance should I book a North Bend apartment move?",
+        a: "We recommend booking 2–3 weeks in advance for North Bend apartment moves. We accommodate last-minute moves when availability allows.",
+      },
+      {
+        q: "Do North Bend apartment buildings require a certificate of insurance?",
+        a: "Most North Bend apartment buildings do not require a COI, but some newer buildings do. We provide certificates of insurance at no charge if needed.",
+      },
+    ],
+  },
+
+  "north-bend-packing": {
+    intro: `North Bend homes range from compact older properties near downtown to newer construction in the surrounding valleys. Our packing crews bring all materials and are experienced with the full range of North Bend home types. For rural properties with outdoor equipment, we use weatherproof packing. For older downtown homes with vintage contents, we use specialty wrapping. We provide flat-rate packing quotes so you know the final price before we start.`,
+    buildingCalloutsHeading: "Packing Services Across North Bend Neighborhoods",
+    buildingCallouts: `Our packing crews serve all North Bend neighborhoods: North Bend Way (older homes, vintage contents, specialty wrapping available), Edgewick (established homes, standard packing, efficient turnaround), Tanner (established homes, standard packing, efficient moves), Rattlesnake Ridge area (rural properties, outdoor equipment, weatherproof packing), and Cedar Falls (rural residential, outdoor equipment, standard packing).`,
+    extraFaqs: [
+      {
+        q: "How long does it take to pack a North Bend home?",
+        a: "A typical 2-bedroom North Bend home takes 4–6 hours to pack with a 2-person crew. A larger 3–4 bedroom home takes 6–10 hours. We recommend a free walkthrough quote for larger homes.",
+      },
+      {
+        q: "Do you pack outdoor and recreational equipment for North Bend moves?",
+        a: "Yes. North Bend residents often have extensive outdoor gear — skis, snowboards, camping equipment, and mountain bikes. We pack and wrap all outdoor equipment using weatherproof materials.",
+      },
+    ],
+  },
+
+  "north-bend-commercial": {
+    intro: `North Bend has limited commercial development, with small businesses concentrated near North Bend Way and the Premium Outlets. Our commercial crews handle small office and retail moves with minimal disruption. For downtown North Bend businesses with limited truck parking, we plan access in advance. Flat-rate quotes available for all North Bend commercial moves.`,
+    buildingCalloutsHeading: "Commercial Moving in North Bend",
+    buildingCallouts: `We serve North Bend's commercial areas: North Bend Way (small businesses, limited truck parking, advance planning required), North Bend Premium Outlets area (retail moves, standard access, flexible scheduling), and Edgewick commercial (standard access, ample parking, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Can you move our North Bend business on a weekend?",
+        a: "Yes. Weekend moves are our most common request for North Bend commercial relocations. We work Saturday and Sunday and can start as early as 6 a.m.",
+      },
+      {
+        q: "Do you handle retail moves near North Bend Premium Outlets?",
+        a: "Yes. We handle retail moves in the North Bend Premium Outlets area. We coordinate with outlet management for access and plan truck parking in advance.",
+      },
+    ],
+  },
+
+  "north-bend-storage": {
+    intro: `Our climate-controlled storage facility in Redmond is 18 miles from North Bend — a 28-minute drive via I-90. We offer month-to-month storage with no long-term contracts, and your first month is free with any North Bend move. North Bend customers commonly use our storage for between-home transitions, seasonal outdoor equipment, and renovation projects. All items are stored in individually locked units with 24/7 security monitoring.`,
+    buildingCalloutsHeading: "Storage Solutions for North Bend Residents and Businesses",
+    buildingCallouts: `Our Redmond storage facility serves all North Bend neighborhoods: residential storage (between-home storage, staging storage, renovation storage, first month free with any move), outdoor equipment storage (skis, snowboards, camping gear, mountain bikes, climate-controlled units), rural property storage (seasonal equipment, farm equipment, flexible terms), and general business storage (month-to-month, pickup and delivery available, 18 miles via I-90).`,
+    extraFaqs: [
+      {
+        q: "How far is your storage facility from North Bend?",
+        a: "Our Redmond storage facility is 18 miles from North Bend — about 28 minutes via I-90. We offer pickup and delivery from your North Bend home, or you can drop off and pick up directly at our facility.",
+      },
+      {
+        q: "Can I store seasonal outdoor equipment from a North Bend home?",
+        a: "Yes. We store skis, snowboards, camping equipment, mountain bikes, and other seasonal gear. Our climate-controlled units protect items from the Pacific Northwest's wet winters.",
+      },
+    ],
+  },
+
+  "north-bend-senior": {
+    intro: `North Bend has established residential neighborhoods with a senior population, and we have experience with senior moves in the area. Our senior moving crews work at a pace that's comfortable for you — we never rush, we communicate clearly, and we take extra care with items that have sentimental value. For rural properties with challenging access, we handle the logistics so you don't have to. We coordinate with family members, senior living facilities, and downsizing specialists as needed.`,
+    buildingCalloutsHeading: "Senior Moving Services Across North Bend",
+    buildingCallouts: `Our senior moving crews serve all North Bend neighborhoods and destinations: North Bend Way (careful access planning, no rushing, family coordination), Edgewick and Tanner (established homes, downsizing moves, full packing available), senior living facilities near North Bend (direct facility coordination, move-in window compliance), and in-North Bend downsizing moves (from larger home to smaller home or apartment).`,
+    extraFaqs: [
+      {
+        q: "Do you help with downsizing moves from North Bend homes?",
+        a: "Yes. We work with seniors and families downsizing from North Bend homes. We can pack, move, and help coordinate donation pickups. We move at your pace and communicate clearly throughout the process.",
+      },
+      {
+        q: "Can you coordinate with a senior living facility near North Bend?",
+        a: "Yes. We coordinate directly with senior living facility management to confirm move-in windows, elevator reservations, and COI requirements.",
+      },
+    ],
+  },
+
+  "north-bend-furniture": {
+    intro: `North Bend homes range from compact older properties near downtown to larger homes in Edgewick and Tanner. Our furniture moving crews bring the tools for disassembly and reassembly, and use furniture pads and floor runners to protect both your furniture and your property. For rural properties with challenging access, we plan the carry route in advance. For older downtown homes with narrow doorways, we assess access before move day.`,
+    buildingCalloutsHeading: "Furniture Moving Across North Bend Neighborhoods",
+    buildingCallouts: `Our furniture moving crews serve all North Bend neighborhoods: North Bend Way (older homes, narrow doorways, careful maneuvering), Edgewick (established homes, standard furniture, efficient moves), Tanner (established homes, standard furniture, efficient moves), Rattlesnake Ridge area (rural properties, advance access planning), and Cedar Falls (rural residential, right-size truck selection, advance planning).`,
+    extraFaqs: [
+      {
+        q: "Do you disassemble and reassemble furniture for North Bend moves?",
+        a: "Yes. We disassemble and reassemble bed frames, sectional sofas, dining tables, and other furniture as needed. We bring the tools and hardware bags to keep everything organized.",
+      },
+      {
+        q: "Can you move large furniture to rural properties in North Bend?",
+        a: "Yes. We regularly move large furniture to rural North Bend properties. We assess access in advance and use the right size truck — sometimes a smaller vehicle for the final approach on narrow roads.",
+      },
+    ],
+  },
+
+  "north-bend-appliance": {
+    intro: `Moving appliances in North Bend requires the right equipment and experience. Our appliance moving crews use appliance dollies, furniture pads, and straps to protect both the appliance and your floors. For rural properties with challenging access, we plan the carry route in advance. For older downtown homes with narrow doorways, we assess before move day. We disconnect and reconnect standard appliance hookups as part of our service.`,
+    buildingCalloutsHeading: "Appliance Moving Across North Bend",
+    buildingCallouts: `Our appliance moving crews serve all North Bend neighborhoods: North Bend Way (older homes, narrow access, careful maneuvering), Edgewick (established homes, standard appliances, efficient moves), Tanner (standard appliances, efficient moves), Rattlesnake Ridge area (rural properties, advance access planning), and Cedar Falls (rural residential, right-size truck selection).`,
+    extraFaqs: [
+      {
+        q: "Do you disconnect and reconnect appliances for North Bend moves?",
+        a: "Yes. We disconnect and reconnect standard appliance hookups — water lines for refrigerators and dishwashers, electric connections for ranges.",
+      },
+      {
+        q: "Can you move appliances to rural properties in North Bend?",
+        a: "Yes. We regularly deliver appliances to rural North Bend properties. We assess access in advance and use the right size truck for each property.",
+      },
+    ],
+  },
+
+  "north-bend-unpacking": {
+    intro: `After a North Bend move, our unpacking crews can set up your new home so you're living comfortably from day one. We unpack boxes, place items in their designated rooms, and remove all packing materials. We work at your pace and follow your instructions for where everything goes. Unpacking service is available as a standalone booking or as an add-on to any North Bend move.`,
+    buildingCalloutsHeading: "Unpacking Services Across North Bend",
+    buildingCallouts: `Our unpacking crews serve all North Bend neighborhoods and home types: North Bend Way (older homes, careful handling, standard unpacking), Edgewick and Tanner (established homes, standard unpacking, room-by-room setup), Rattlesnake Ridge area (rural properties, standard unpacking, all materials removed), and Cedar Falls (rural residential, efficient unpacking, standard setup).`,
+    extraFaqs: [
+      {
+        q: "How long does unpacking take for a North Bend home?",
+        a: "A typical 2-bedroom North Bend home takes 3–5 hours to unpack with a 2-person crew. A larger 3–4 bedroom home takes 5–8 hours. We remove all boxes and packing materials when we're done.",
+      },
+      {
+        q: "Can I book unpacking service separately from the move in North Bend?",
+        a: "Yes. We offer unpacking as a standalone service. We can schedule unpacking the day after your move or whenever works best for you.",
+      },
+    ],
+  },
+
+  "north-bend-warehousing": {
+    intro: `Our Redmond warehouse is 18 miles from North Bend and offers flexible warehousing and distribution services for Snoqualmie Valley businesses. We handle receiving, storage, inventory management, and last-mile delivery. For North Bend businesses along I-90, our facility provides efficient access. Month-to-month contracts available — no long-term commitment required.`,
+    buildingCalloutsHeading: "Warehousing and Distribution for North Bend Businesses",
+    buildingCallouts: `Our warehousing services support North Bend businesses: North Bend Way retail (inventory storage, seasonal overflow, last-minute delivery), outdoor recreation businesses (seasonal equipment storage, flexible terms), professional services (document storage, equipment storage, month-to-month), and general business storage (month-to-month, pickup and delivery available, 18 miles via I-90).`,
+    extraFaqs: [
+      {
+        q: "How far is your warehouse from North Bend?",
+        a: "Our Redmond warehouse is 18 miles from North Bend — about 28 minutes via I-90. We offer pickup and delivery from your North Bend location.",
+      },
+      {
+        q: "Do you offer month-to-month warehousing for North Bend businesses?",
+        a: "Yes. All our warehousing contracts are month-to-month — no long-term commitment required.",
+      },
+    ],
+  },
+
+// ===================================================================
+// DUVALL
+// ===================================================================
+
+  "duvall-residential": {
+    intro: `Duvall is a small, charming community in the Snoqualmie Valley, known for its historic downtown, rural character, and proximity to the Cascade foothills. Our crews have been moving Duvall homes since 2009 and know the specific challenges of this area. The Woodinville-Duvall Road is the main access route from our Redmond warehouse, 17 miles southwest — a 28-minute drive. Some Duvall properties are on rural roads with challenging access for large trucks, and we assess every property before move day.`,
+    buildingCalloutsHeading: "Duvall Neighborhoods We Know Best",
+    buildingCallouts: `Our residential crews serve all Duvall neighborhoods: Downtown Duvall (historic homes, narrow streets, limited truck parking, advance planning required), Cherry Valley (newer construction, standard access, large homes), Big Rock (established residential, standard access, mix of home sizes), Novelty Hill adjacent (newer development, standard access, larger homes), and Duvall rural properties (challenging access, rural roads, right-size truck selection, advance planning).`,
+    extraFaqs: [
+      {
+        q: "How do you handle moves on rural roads in Duvall?",
+        a: "We regularly move on rural roads in the Duvall area. We assess access points in advance and use the right size truck for each property — sometimes a smaller truck is needed for the final approach on narrow or unpaved roads.",
+      },
+      {
+        q: "Do you move homes in historic Downtown Duvall?",
+        a: "Yes. We regularly move homes in historic Downtown Duvall. We use smaller trucks for narrow streets and plan access in advance. Downtown Duvall has limited truck parking — we assess each property before move day.",
+      },
+    ],
+  },
+
+  "duvall-apartment": {
+    intro: `Duvall has limited apartment inventory, with most residential moves in single-family homes. Our crews handle the full range of Duvall residential moves, from compact downtown apartments to larger homes in Cherry Valley and Big Rock. Most Duvall apartment moves complete in 2–3 hours, and we provide flat-rate quotes so you know the final price before we start.`,
+    buildingCalloutsHeading: "Apartment Buildings We Serve in Duvall",
+    buildingCallouts: `Our apartment moving crews serve Duvall's residential buildings: Downtown Duvall apartments (standard requirements, narrow street access, advance planning), Cherry Valley area apartments (standard access, efficient moves, ample parking), and Big Rock area apartments (standard requirements, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "How far in advance should I book a Duvall apartment move?",
+        a: "We recommend booking 2–3 weeks in advance for Duvall apartment moves. We accommodate last-minute moves when availability allows.",
+      },
+      {
+        q: "Do Duvall apartment buildings require a certificate of insurance?",
+        a: "Most Duvall apartment buildings do not require a COI, but some newer buildings do. We provide certificates of insurance at no charge if needed.",
+      },
+    ],
+  },
+
+  "duvall-packing": {
+    intro: `Duvall homes range from compact older properties in historic downtown to newer construction in Cherry Valley and Big Rock. Our packing crews bring all materials and are experienced with the full range of Duvall home types. For rural properties with outdoor equipment, we use weatherproof packing. For older downtown homes with vintage contents, we use specialty wrapping. We provide flat-rate packing quotes so you know the final price before we start.`,
+    buildingCalloutsHeading: "Packing Services Across Duvall Neighborhoods",
+    buildingCallouts: `Our packing crews serve all Duvall neighborhoods: Downtown Duvall (older homes, vintage contents, specialty wrapping available), Cherry Valley (newer construction, large kitchens, full-pack service common), Big Rock (established homes, standard packing, efficient turnaround), Novelty Hill adjacent (newer development, standard packing, efficient moves), and Duvall rural (outdoor equipment, weatherproof packing, advance access planning).`,
+    extraFaqs: [
+      {
+        q: "How long does it take to pack a Duvall home?",
+        a: "A typical 2-bedroom Duvall home takes 4–6 hours to pack with a 2-person crew. A larger Cherry Valley or Big Rock home with 3–4 bedrooms takes 6–10 hours. We recommend a free walkthrough quote for larger homes.",
+      },
+      {
+        q: "Do you pack outdoor and rural property equipment for Duvall moves?",
+        a: "Yes. Duvall residents often have extensive outdoor gear and rural property equipment. We pack and wrap all items using weatherproof materials and custom crating where needed.",
+      },
+    ],
+  },
+
+  "duvall-commercial": {
+    intro: `Duvall has limited commercial development, with small businesses concentrated in historic Downtown Duvall. Our commercial crews handle small office and retail moves with minimal disruption. For downtown Duvall businesses with narrow street access, we plan truck access in advance. Flat-rate quotes available for all Duvall commercial moves.`,
+    buildingCalloutsHeading: "Commercial Moving in Duvall",
+    buildingCallouts: `We serve Duvall's commercial areas: Downtown Duvall (small businesses, narrow street access, advance planning required, after-hours available), Cherry Valley commercial (standard access, ample parking, efficient moves), and Big Rock area commercial (standard access, efficient moves).`,
+    extraFaqs: [
+      {
+        q: "Can you move our Duvall business on a weekend?",
+        a: "Yes. Weekend moves are our most common request for Duvall commercial relocations. We work Saturday and Sunday and can start as early as 6 a.m.",
+      },
+      {
+        q: "Do you handle moves for businesses in historic Downtown Duvall?",
+        a: "Yes. We regularly move businesses in historic Downtown Duvall. We use smaller trucks for narrow streets and plan access in advance.",
+      },
+    ],
+  },
+
+  "duvall-storage": {
+    intro: `Our climate-controlled storage facility in Redmond is 17 miles from Duvall — a 28-minute drive via the Woodinville-Duvall Road. We offer month-to-month storage with no long-term contracts, and your first month is free with any Duvall move. Duvall customers commonly use our storage for between-home transitions, rural property equipment, and renovation projects. All items are stored in individually locked units with 24/7 security monitoring.`,
+    buildingCalloutsHeading: "Storage Solutions for Duvall Residents and Businesses",
+    buildingCallouts: `Our Redmond storage facility serves all Duvall neighborhoods: residential storage (between-home storage, staging storage, renovation storage, first month free with any move), rural property storage (outdoor equipment, farm equipment, seasonal items, climate-controlled units), Downtown Duvall business storage (small business storage, document storage, month-to-month), and general household storage (month-to-month, no long-term contracts).`,
+    extraFaqs: [
+      {
+        q: "How far is your storage facility from Duvall?",
+        a: "Our Redmond storage facility is 17 miles from Duvall — about 28 minutes via the Woodinville-Duvall Road. We offer pickup and delivery from your Duvall home, or you can drop off and pick up directly at our facility.",
+      },
+      {
+        q: "Do you offer month-to-month storage for Duvall residents?",
+        a: "Yes. All our storage contracts are month-to-month — no long-term commitment required. Your first month is free with any Duvall move.",
+      },
+    ],
+  },
+
+  "duvall-senior": {
+    intro: `Duvall has established residential neighborhoods with a senior population, and we have experience with senior moves in the area. Our senior moving crews work at a pace that's comfortable for you — we never rush, we communicate clearly, and we take extra care with items that have sentimental value. For rural properties with challenging access, we handle the logistics so you don't have to. We coordinate with family members, senior living facilities, and downsizing specialists as needed.`,
+    buildingCalloutsHeading: "Senior Moving Services Across Duvall",
+    buildingCallouts: `Our senior moving crews serve all Duvall neighborhoods and destinations: Downtown Duvall (careful access planning, no rushing, family coordination), Cherry Valley and Big Rock (established homes, downsizing moves, full packing available), senior living facilities near Duvall (direct facility coordination, move-in window compliance), and in-Duvall downsizing moves (from larger home to smaller home or apartment).`,
+    extraFaqs: [
+      {
+        q: "Do you help with downsizing moves from Duvall homes?",
+        a: "Yes. We work with seniors and families downsizing from Duvall homes. We can pack, move, and help coordinate donation pickups. We move at your pace and communicate clearly throughout the process.",
+      },
+      {
+        q: "Can you coordinate with a senior living facility near Duvall?",
+        a: "Yes. We coordinate directly with senior living facility management to confirm move-in windows, elevator reservations, and COI requirements.",
+      },
+    ],
+  },
+
+  "duvall-furniture": {
+    intro: `Duvall homes range from compact older properties in historic downtown to newer construction in Cherry Valley and Big Rock. Our furniture moving crews bring the tools for disassembly and reassembly, and use furniture pads and floor runners to protect both your furniture and your property. For rural properties with challenging access, we plan the carry route in advance. For older downtown homes with narrow doorways, we assess access before move day.`,
+    buildingCalloutsHeading: "Furniture Moving Across Duvall Neighborhoods",
+    buildingCallouts: `Our furniture moving crews serve all Duvall neighborhoods: Downtown Duvall (older homes, narrow doorways, careful maneuvering), Cherry Valley (newer construction, oversized pieces, disassembly available), Big Rock (established homes, standard furniture, efficient moves), Novelty Hill adjacent (newer development, standard furniture, efficient moves), and Duvall rural (advance access planning, right-size truck selection).`,
+    extraFaqs: [
+      {
+        q: "Do you disassemble and reassemble furniture for Duvall moves?",
+        a: "Yes. We disassemble and reassemble bed frames, sectional sofas, dining tables, and other furniture as needed. We bring the tools and hardware bags to keep everything organized.",
+      },
+      {
+        q: "Can you move large furniture to rural properties in Duvall?",
+        a: "Yes. We regularly move large furniture to rural Duvall properties. We assess access in advance and use the right size truck — sometimes a smaller vehicle for the final approach on narrow roads.",
+      },
+    ],
+  },
+
+  "duvall-appliance": {
+    intro: `Moving appliances in Duvall requires the right equipment and experience. Our appliance moving crews use appliance dollies, furniture pads, and straps to protect both the appliance and your floors. For rural properties with challenging access, we plan the carry route in advance. For older downtown homes with narrow doorways, we assess before move day. We disconnect and reconnect standard appliance hookups as part of our service.`,
+    buildingCalloutsHeading: "Appliance Moving Across Duvall",
+    buildingCallouts: `Our appliance moving crews serve all Duvall neighborhoods: Downtown Duvall (older homes, narrow access, careful maneuvering), Cherry Valley (newer construction, large appliances, standard access), Big Rock (established homes, standard appliances, efficient moves), Novelty Hill adjacent (standard appliances, efficient moves), and Duvall rural (advance access planning, right-size truck selection).`,
+    extraFaqs: [
+      {
+        q: "Do you disconnect and reconnect appliances for Duvall moves?",
+        a: "Yes. We disconnect and reconnect standard appliance hookups — water lines for refrigerators and dishwashers, electric connections for ranges.",
+      },
+      {
+        q: "Can you move appliances to rural properties in Duvall?",
+        a: "Yes. We regularly deliver appliances to rural Duvall properties. We assess access in advance and use the right size truck for each property.",
+      },
+    ],
+  },
+
+  "duvall-unpacking": {
+    intro: `After a Duvall move, our unpacking crews can set up your new home so you're living comfortably from day one. We unpack boxes, place items in their designated rooms, and remove all packing materials. We work at your pace and follow your instructions for where everything goes. Unpacking service is available as a standalone booking or as an add-on to any Duvall move.`,
+    buildingCalloutsHeading: "Unpacking Services Across Duvall",
+    buildingCallouts: `Our unpacking crews serve all Duvall neighborhoods and home types: Downtown Duvall (older homes, careful handling, standard unpacking), Cherry Valley (newer construction, full unpacking service, all materials removed), Big Rock (established homes, standard unpacking, room-by-room setup), and Duvall rural (standard unpacking, efficient setup, all materials removed).`,
+    extraFaqs: [
+      {
+        q: "How long does unpacking take for a Duvall home?",
+        a: "A typical 2-bedroom Duvall home takes 3–5 hours to unpack with a 2-person crew. A larger Cherry Valley or Big Rock home takes 5–8 hours. We remove all boxes and packing materials when we're done.",
+      },
+      {
+        q: "Can I book unpacking service separately from the move in Duvall?",
+        a: "Yes. We offer unpacking as a standalone service. We can schedule unpacking the day after your move or whenever works best for you.",
+      },
+    ],
+  },
+
+  "duvall-warehousing": {
+    intro: `Our Redmond warehouse is 17 miles from Duvall and offers flexible warehousing and distribution services for Snoqualmie Valley businesses. We handle receiving, storage, inventory management, and last-mile delivery. For Duvall businesses along the Woodinville-Duvall Road corridor, our facility provides efficient access. Month-to-month contracts available — no long-term commitment required.`,
+    buildingCalloutsHeading: "Warehousing and Distribution for Duvall Businesses",
+    buildingCallouts: `Our warehousing services support Duvall businesses: Downtown Duvall retail (inventory storage, seasonal overflow, last-mile delivery), rural businesses (equipment storage, seasonal inventory, flexible terms), professional services (document storage, equipment storage, month-to-month), and general business storage (month-to-month, pickup and delivery available, 17 miles via Woodinville-Duvall Road).`,
+    extraFaqs: [
+      {
+        q: "How far is your warehouse from Duvall?",
+        a: "Our Redmond warehouse is 17 miles from Duvall — about 28 minutes via the Woodinville-Duvall Road. We offer pickup and delivery from your Duvall location.",
+      },
+      {
+        q: "Do you offer month-to-month warehousing for Duvall businesses?",
+        a: "Yes. All our warehousing contracts are month-to-month — no long-term commitment required.",
+      },
+    ],
+  },
 };
