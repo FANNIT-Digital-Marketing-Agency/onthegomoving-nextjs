@@ -345,11 +345,11 @@ const COMPANIES = [
       "No hidden fees policy advertised",
     ],
     cons: [
-      "Recent Reddit reports (2025) of significant billing overruns vs. estimates",
+      "Recent Reddit reports (2025–2026) of significant billing overruns vs. estimates",
       "One widely-shared Reddit post described a $915 estimate becoming a $3,700 final bill",
       "Mixed reviews — quality appears inconsistent across crews",
     ],
-    description: `Kangaroo Movers advertises competitive rates and a no-hidden-fees policy, and for small studio or 1-bedroom moves they can be cost-effective. However, a 2025 Reddit thread in r/Seattle documented a significant billing dispute — a $915 estimate that became a $3,700 final bill — which generated substantial community discussion. As with any mover, get a detailed written estimate that specifies all potential charges before booking, and confirm what triggers additional fees. If you go with Kangaroo, document your inventory thoroughly in writing before the move day.`,
+    description: `Kangaroo Movers advertises competitive rates and a no-hidden-fees policy, and for small studio or 1-bedroom moves they can be cost-effective. However, a Reddit thread in r/Seattle documented a significant billing dispute — a $915 estimate that became a $3,700 final bill — which generated substantial community discussion. As with any mover, get a detailed written estimate that specifies all potential charges before booking, and confirm what triggers additional fees. If you go with Kangaroo, document your inventory thoroughly in writing before the move day.`,
     internalLinks: [],
     schema: {
       "@type": "LocalBusiness",
@@ -495,9 +495,9 @@ const FAQS = [
 ];
 
 export default function BestMovingCompaniesSeattle() {
-  const pageTitle = "10 Best Moving Companies in Seattle, WA (2025) — Honest Comparison";
+  const pageTitle = "10 Best Moving Companies in Seattle, WA (2026) — Honest Comparison";
   const pageDesc =
-    "Compare the best moving companies in Seattle with real pricing, ratings, and honest pros & cons. Updated for 2025. On The Go Moving rated #1 for value and reliability.";
+    "Compare the best moving companies in Seattle with real pricing, ratings, and honest pros & cons. Updated for 2026. On The Go Moving rated #1 for value and reliability.";
 
   const schemaItemList = {
     "@context": "https://schema.org",
@@ -538,7 +538,7 @@ export default function BestMovingCompaniesSeattle() {
   return (
     <>
       <Header />
-      <main className="max-w-4xl mx-auto px-4 py-10 font-sans text-gray-800">
+      <main className="max-w-4xl mx-auto px-4 pt-16 pb-10 font-sans text-gray-800">
         {/* Breadcrumb */}
         <nav className="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-[#75aa11]">Home</Link>
@@ -551,10 +551,10 @@ export default function BestMovingCompaniesSeattle() {
         {/* Hero */}
         <header className="mb-10">
           <div className="inline-flex items-center gap-2 bg-[#75aa11]/10 text-[#75aa11] text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">
-            <Award size={14} /> Updated May 2025
+            <Award size={14} /> Updated May 2026
           </div>
           <h1 className="text-4xl font-extrabold text-[#1e3a0f] leading-tight mb-4" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-            10 Best Moving Companies in Seattle, WA (2025)
+            10 Best Moving Companies in Seattle, WA (2026)
           </h1>
           <p className="text-lg text-gray-600 leading-relaxed">
             We researched and ranked the top Seattle moving companies based on real Google and Yelp ratings, transparent pricing, licensing, and what actual customers say on Reddit and review sites. Whether you're moving a studio apartment in Capitol Hill or a 4-bedroom home in Magnolia, this guide gives you the honest comparison you need to make the right call — and avoid the movers that have burned Seattle residents with surprise bills.
@@ -624,7 +624,7 @@ export default function BestMovingCompaniesSeattle() {
         {/* Seattle pricing guide */}
         <section className="mb-12 p-6 bg-gray-50 rounded-xl border border-gray-200">
           <h2 className="text-2xl font-bold text-[#1e3a0f] mb-2" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-            How Much Do Movers Cost in Seattle? (2025 Pricing Guide)
+            How Much Do Movers Cost in Seattle? (2026 Pricing Guide)
           </h2>
           <p className="text-gray-600 mb-4 text-sm leading-relaxed">
             Seattle's average moving rate is approximately <strong>$182/hr</strong> for a standard 2-person crew — about 30% above the national average of $139/hr. This reflects the city's higher labor costs, traffic complexity, and the prevalence of apartment buildings with elevator and parking restrictions. Below are realistic cost ranges for common move sizes, comparing On The Go Moving's rates against the broader Seattle market.
