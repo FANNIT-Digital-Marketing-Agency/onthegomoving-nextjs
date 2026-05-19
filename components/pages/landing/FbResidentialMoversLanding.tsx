@@ -20,6 +20,7 @@ import {
   ChevronDown,
   ChevronUp,
   ArrowDown,
+  ArrowRight,
   ArrowUp,
   Zap,
   ClipboardList,
@@ -343,7 +344,13 @@ function FbQuoteForm() {
         disabled={submitting}
         className="w-full bg-[#75aa11] hover:bg-[#5e8a0d] disabled:opacity-60 text-white font-extrabold text-base py-4 rounded-xl transition-colors shadow-lg"
       >
-        {submitting ? "Sending…" : "Get My Free Quote →"}
+        {submitting ? (
+          "Sending…"
+        ) : (
+          <span className="inline-flex items-center justify-center gap-2">
+            Get My Free Quote <ArrowRight size={18} />
+          </span>
+        )}
       </button>
       <p className="text-center text-xs text-gray-400">
         No obligation · Flat-rate pricing · Licensed & Insured
@@ -427,7 +434,8 @@ export default function FbResidentialMoversLanding() {
                 >
                   <ClipboardList size={20} />
                   Get My Free Quote
-                  <ArrowDown size={18} />
+                  <ArrowDown size={18} className="sm:hidden" />
+                  <ArrowRight size={18} className="hidden sm:inline" />
                 </a>
               </div>
               {/* Urgency nudge */}
