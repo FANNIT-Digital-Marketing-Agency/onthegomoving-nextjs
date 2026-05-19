@@ -10,7 +10,6 @@ import { useState, useRef, useEffect } from "react";
 import { COMPANY } from "@/lib/siteData";
 import { BRAND_IMAGES } from "@/lib/brandImages";
 import {
-  Phone,
   CheckCircle,
   Home,
   Star,
@@ -20,6 +19,9 @@ import {
   Clock,
   ChevronDown,
   ChevronUp,
+  ArrowDown,
+  Zap,
+  ClipboardList,
 } from "lucide-react";
 
 // ── Facebook Pixel ID ─────────────────────────────────────────────────────
@@ -227,10 +229,10 @@ function FbQuoteForm() {
         }
         window.location.href = "/get/fb-thank-you/";
       } else {
-        setError("Something went wrong. Please call us directly at " + COMPANY.phone);
+        setError("Something went wrong. Please try again or email us at " + COMPANY.email + ".");
       }
     } catch {
-      setError("Network error. Please call us directly at " + COMPANY.phone);
+      setError("Network error. Please try again or email us at " + COMPANY.email + ".");
     } finally {
       setSubmitting(false);
     }
@@ -416,16 +418,21 @@ export default function FbResidentialMoversLanding() {
               <p className="text-lg text-gray-200 mb-6 max-w-lg">
                 Family-owned and operated since {COMPANY.founded}. On The Go Moving handles your home move with the care and attention it deserves — flat-rate pricing, no surprises.
               </p>
-              {/* Phone CTA */}
+              {/* Form scroll CTA */}
               <div className="flex flex-wrap gap-3 mb-6">
                 <a
-                  href={COMPANY.phoneHref}
+                  href="#quote-form"
                   className="inline-flex items-center gap-3 bg-[#75aa11] hover:bg-[#5e8a0d] text-white font-extrabold text-base sm:text-xl px-5 sm:px-8 py-3 sm:py-4 rounded-xl transition-colors shadow-lg"
                 >
-                  <Phone size={18} className="sm:hidden" />
-                  <Phone size={22} className="hidden sm:block" />
-                  {COMPANY.phone}
+                  <ClipboardList size={20} />
+                  Get My Free Quote
+                  <ArrowDown size={18} />
                 </a>
+              </div>
+              {/* Urgency nudge */}
+              <div className="flex items-center gap-2 text-[#a8d44f] text-sm font-semibold mb-2">
+                <Zap size={14} className="fill-[#a8d44f]" />
+                We respond within 1 hour — no phone call required
               </div>
               {/* Trust badges */}
               <div className="flex flex-nowrap gap-x-3 mt-2 overflow-hidden">
@@ -439,8 +446,13 @@ export default function FbResidentialMoversLanding() {
             </div>
             {/* Right: Quote form */}
             <div id="quote-form" className="bg-white rounded-2xl shadow-2xl p-6 sm:p-8">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="inline-flex items-center gap-1.5 bg-[#e8f4d0] text-[#3d6b05] text-xs font-bold px-2.5 py-1 rounded-full">
+                  <Zap size={11} className="fill-[#3d6b05]" /> 100% Online — No Phone Call Needed
+                </span>
+              </div>
               <h2 className="text-[#1a2e0a] text-xl font-bold mb-1">Get Your Free Moving Quote</h2>
-              <p className="text-gray-500 text-sm mb-4">Flat-rate pricing — know your exact cost before move day.</p>
+              <p className="text-gray-500 text-sm mb-4">Flat-rate pricing — know your exact cost before move day. We respond within 1 hour.</p>
               <FbQuoteForm />
             </div>
           </div>
@@ -566,19 +578,36 @@ export default function FbResidentialMoversLanding() {
       </section>
 
       {/* ── Bottom CTA ── */}
-      <section className="bg-[#75aa11] py-12 text-white text-center">
+      <section className="bg-[#1a2e0a] py-14 text-white text-center">
         <div className="max-w-2xl mx-auto px-4">
-          <h2 className="text-3xl font-extrabold mb-3">Ready to Get Moving?</h2>
-          <p className="text-white/90 mb-6">Call us for a free flat-rate quote. No obligation, no surprises.</p>
+          <div className="inline-flex items-center gap-2 bg-[#75aa11] text-white text-xs font-bold px-3 py-1.5 rounded-full mb-4 uppercase tracking-wide">
+            <Zap size={12} className="fill-white" /> Responds in Under 1 Hour
+          </div>
+          <h2 className="text-3xl font-extrabold mb-3">Ready to Lock In Your Moving Date?</h2>
+          <p className="text-white/80 mb-8 text-lg">Fill out the quick form at the top of this page — it takes under 2 minutes and you'll get a flat-rate quote with no obligation and no surprise charges.</p>
           <a
-            href={COMPANY.phoneHref}
-            className="inline-flex items-center gap-3 bg-white text-[#1a2e0a] font-extrabold text-xl px-10 py-4 rounded-xl hover:bg-gray-100 transition-colors shadow-lg"
+            href="#quote-form"
+            className="inline-flex items-center gap-3 bg-[#75aa11] hover:bg-[#5e8a0d] text-white font-extrabold text-xl px-10 py-4 rounded-xl transition-colors shadow-lg"
           >
-            <Phone size={22} />
-            {COMPANY.phone}
+            <ClipboardList size={22} />
+            Get My Free Quote
+            <ArrowDown size={18} />
           </a>
+          <p className="text-white/50 text-sm mt-4">No phone call required. We'll reach out by email or text.</p>
         </div>
       </section>
+
+      {/* ── Sticky mobile CTA bar ── */}
+      <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden bg-[#75aa11] shadow-[0_-4px_20px_rgba(0,0,0,0.25)]">
+        <a
+          href="#quote-form"
+          className="flex items-center justify-center gap-3 text-white font-extrabold text-base py-4 px-6"
+        >
+          <ClipboardList size={20} />
+          Get My Free Quote — Respond in 1 Hour
+          <ArrowDown size={16} />
+        </a>
+      </div>
     </div>
   );
 }
