@@ -57,7 +57,7 @@ export const handler = async (event) => {
         WHERE createdAt >= ?
         ORDER BY createdAt DESC
         LIMIT ? OFFSET ?`,
-        [cutoff, perPage, offset]
+        [cutoff, Number(perPage), Number(offset)]
       );
 
       const [[{ total }]] = await conn.execute(
@@ -101,9 +101,20 @@ export const handler = async (event) => {
         body: JSON.stringify({ submissions, total, source: "db", page, perPage }),
       };
     } catch (err) {
-      console.error("[get-leads] DB error:", err.message);
+      console.error("[get-leads] DB error:", err.message, err.code);
       try { if (conn) await conn.end(); } catch {}
-      // Fall through to Netlify Forms fallback
+      // Expose DB error in response for debugging
+      return {
+        statusCode: 200,
+        headers,
+        body: JSON.stringify({ 
+          source: "db-error", 
+          error: err.message, 
+          code: err.code,
+          submissions: [], 
+          total: 0 
+        }),
+      };
     }
   } else {
     console.warn("[get-leads] DATABASE_URL not set, using Netlify Forms fallback");
