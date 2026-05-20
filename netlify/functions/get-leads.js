@@ -56,8 +56,8 @@ export const handler = async (event) => {
         FROM leads
         WHERE createdAt >= ?
         ORDER BY createdAt DESC
-        LIMIT ? OFFSET ?`,
-        [cutoff, Number(perPage), Number(offset)]
+        LIMIT ${Number(perPage)} OFFSET ${Number(offset)}`,
+        [cutoff]
       );
 
       const [[{ total }]] = await conn.execute(
