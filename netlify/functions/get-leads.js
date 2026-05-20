@@ -11,17 +11,6 @@ const NETLIFY_API_TOKEN = process.env.NETLIFY_API_TOKEN || "nfp_TBPuSHsYiBk694eb
 const FORM_ID = process.env.NETLIFY_FORM_ID || "69e79d1e5a0b680008ea12ab";
 const ADMIN_KEY = process.env.ADMIN_DASHBOARD_KEY || "otgm-admin-2025";
 
-async function getDbConnection() {
-  const url = process.env.DATABASE_URL;
-  if (!url) return null;
-  try {
-    return await mysql.createConnection(url);
-  } catch (err) {
-    console.error("[get-leads] DB connect error:", err.message);
-    return null;
-  }
-}
-
 export const handler = async (event) => {
   const headers = {
     "Access-Control-Allow-Origin": "*",
@@ -43,10 +32,13 @@ export const handler = async (event) => {
   const days    = parseInt(event.queryStringParameters?.days || "30", 10);
   const offset  = (page - 1) * perPage;
 
-  // ── Try MySQL first ────────────────────────────────────────────────────────
-  const conn = await getDbConnection();
-  if (conn) {
+  // ── Try MySQL first (same pattern as run-migration which is known to work) ──
+  const dbUrl = process.env.DATABASE_URL;
+  if (dbUrl) {
+    let conn;
     try {
+      conn = await mysql.createConnection(dbUrl);
+
       const cutoff = new Date(Date.now() - days * 24 * 60 * 60 * 1000)
         .toISOString().slice(0, 19).replace("T", " ");
 
@@ -109,9 +101,12 @@ export const handler = async (event) => {
         body: JSON.stringify({ submissions, total, source: "db", page, perPage }),
       };
     } catch (err) {
-      console.error("[get-leads] DB query error:", err.message);
-      try { await conn.end(); } catch {}
+      console.error("[get-leads] DB error:", err.message);
+      try { if (conn) await conn.end(); } catch {}
+      // Fall through to Netlify Forms fallback
     }
+  } else {
+    console.warn("[get-leads] DATABASE_URL not set, using Netlify Forms fallback");
   }
 
   // ── Fallback: Netlify Forms API ────────────────────────────────────────────
