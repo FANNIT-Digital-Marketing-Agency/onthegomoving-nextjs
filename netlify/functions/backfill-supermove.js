@@ -28,6 +28,7 @@ async function getConnection() {
 
 function normalizeName(name) {
   if (!name) return "";
+  // Trim, lowercase, collapse multiple spaces, remove trailing/leading spaces
   return name.toLowerCase().trim().replace(/\s+/g, " ");
 }
 
@@ -77,14 +78,27 @@ export const handler = async (event) => {
     const byName = new Map(); // normalized full name -> lead id
     const byProjectNum = new Map(); // project number (string) -> lead id
 
+    const debug = event.queryStringParameters?.debug === "1";
+    const debugNames = [];
+
     for (const row of rows) {
       const norm = normalizeName(row.fullName);
       if (norm && !byName.has(norm)) {
         byName.set(norm, row.id);
+        if (debug) debugNames.push({ norm, id: row.id, original: row.fullName });
       }
       if (row.smProjectNumber) {
         byProjectNum.set(String(row.smProjectNumber), row.id);
       }
+    }
+
+    if (debug) {
+      await conn.end();
+      return {
+        statusCode: 200,
+        headers,
+        body: JSON.stringify({ leadsLoaded: rows.length, names: debugNames.slice(0, 20) }),
+      };
     }
 
     console.log(`[backfill-supermove] Loaded ${rows.length} leads, processing ${projects.length} projects`);
