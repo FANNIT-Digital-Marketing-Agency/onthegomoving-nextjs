@@ -452,18 +452,32 @@ export default function LeadsDashboard() {
     setError("");
     setDeleteResult(null);
     try {
-      const res = await fetch(
-        `/.netlify/functions/get-leads?key=${encodeURIComponent(key)}&per_page=1000&days=${days}`
-      );
-      if (res.status === 401) {
-        setError("Invalid admin key.");
-        setAdminKey("");
-        sessionStorage.removeItem(ADMIN_KEY_STORAGE);
-        return;
-      }
-      if (!res.ok) throw new Error(`API error: ${res.status}`);
-      const data = await res.json();
-      setLeads(data.submissions || []);
+      // Paginate through all records (API caps at 200 per page)
+      const PER_PAGE = 200;
+      let page = 1;
+      let allLeads: any[] = [];
+      let total = 0;
+
+      do {
+        const res = await fetch(
+          `/.netlify/functions/get-leads?key=${encodeURIComponent(key)}&per_page=${PER_PAGE}&page=${page}&days=${days}`
+        );
+        if (res.status === 401) {
+          setError("Invalid admin key.");
+          setAdminKey("");
+          sessionStorage.removeItem(ADMIN_KEY_STORAGE);
+          return;
+        }
+        if (!res.ok) throw new Error(`API error: ${res.status}`);
+        const data = await res.json();
+        const batch = data.submissions || [];
+        total = data.total || 0;
+        allLeads = allLeads.concat(batch);
+        if (batch.length < PER_PAGE) break; // last page
+        page++;
+      } while (allLeads.length < total && page <= 20); // safety cap at 20 pages
+
+      setLeads(allLeads);
       setLastFetched(new Date());
     } catch (err: any) {
       setError(err.message || "Failed to load leads.");
