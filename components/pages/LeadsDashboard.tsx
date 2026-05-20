@@ -43,9 +43,22 @@ interface Lead {
   wantsStorage: string;
   sourcePage: string;
   sourceLabel: string;
-  referrer: string;
-  ip: string;
-  userAgent: string;
+  referrer?: string;
+  ip?: string;
+  userAgent?: string;
+  webhookStatus?: string;
+  // Supermove sync fields
+  smProjectId?: string | null;
+  smProjectNumber?: string | null;
+  smStage?: string | null;
+  smBookingStatus?: string | null;
+  smTotalRevenue?: string | null;
+  smCoordinator?: string | null;
+  smSalesperson?: string | null;
+  smIsCancelled?: boolean;
+  smMoveDate?: string | null;
+  smLastSyncedAt?: string | null;
+  source?: string;
 }
 
 interface SourceGroup {
@@ -761,6 +774,7 @@ export default function LeadsDashboard() {
                         >
                           Source Page {sortField === "sourcePage" && (sortDir === "desc" ? "↓" : "↑")}
                         </th>
+                        <th className="px-4 py-3 text-xs font-semibold text-gray-500">Supermove</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-50">
@@ -819,6 +833,45 @@ export default function LeadsDashboard() {
                             </div>
                             {lead.sourceLabel && (
                               <div className="text-xs text-gray-400 italic">{lead.sourceLabel}</div>
+                            )}
+                          </td>
+                          {/* Supermove sync column */}
+                          <td className="px-4 py-3">
+                            {lead.smProjectNumber ? (
+                              <div className="flex flex-col gap-1">
+                                <a
+                                  href={`https://app.supermove.co/projects/${lead.smProjectId}`}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-xs font-mono text-blue-600 hover:underline flex items-center gap-1"
+                                >
+                                  #{lead.smProjectNumber}
+                                  <ExternalLink size={10} />
+                                </a>
+                                {lead.smStage && (
+                                  <span className={`px-2 py-0.5 rounded-full text-xs font-medium w-fit ${
+                                    lead.smIsCancelled
+                                      ? "bg-red-100 text-red-700"
+                                      : lead.smStage === "Booked" || lead.smBookingStatus === "confirmed"
+                                      ? "bg-green-100 text-green-700"
+                                      : lead.smStage === "Quote Pending"
+                                      ? "bg-yellow-100 text-yellow-700"
+                                      : "bg-gray-100 text-gray-600"
+                                  }`}>
+                                    {lead.smIsCancelled ? "Cancelled" : lead.smStage}
+                                  </span>
+                                )}
+                                {lead.smTotalRevenue && (
+                                  <div className="text-xs text-gray-600 font-medium">
+                                    ${parseFloat(lead.smTotalRevenue).toLocaleString()}
+                                  </div>
+                                )}
+                                {lead.smCoordinator && (
+                                  <div className="text-xs text-gray-400">{lead.smCoordinator}</div>
+                                )}
+                              </div>
+                            ) : (
+                              <span className="text-xs text-gray-300">Not synced</span>
                             )}
                           </td>
                         </tr>

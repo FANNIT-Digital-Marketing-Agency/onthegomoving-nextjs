@@ -48,6 +48,17 @@ export const leads = mysqlTable("leads", {
   webhookStatus: mysqlEnum("webhookStatus", ["pending", "synced", "failed"]).default("pending").notNull(),
   webhookAttemptedAt: timestamp("webhookAttemptedAt"),
   webhookError: text("webhookError"),
+  // Supermove sync — populated by the outbound webhook receiver
+  smProjectId: varchar("smProjectId", { length: 64 }),       // Supermove project UUID
+  smProjectNumber: varchar("smProjectNumber", { length: 32 }), // Human-readable e.g. "7994"
+  smStage: varchar("smStage", { length: 64 }),                // e.g. "New", "Quote Pending", "Booked"
+  smBookingStatus: varchar("smBookingStatus", { length: 64 }), // booking_status from Supermove
+  smTotalRevenue: varchar("smTotalRevenue", { length: 32 }),   // PROJECT_TOTAL_REVENUE
+  smCoordinator: varchar("smCoordinator", { length: 128 }),   // coordinator full_name
+  smSalesperson: varchar("smSalesperson", { length: 128 }),   // salesperson full_name
+  smIsCancelled: int("smIsCancelled").default(0).notNull(),   // 0 = active, 1 = cancelled
+  smMoveDate: varchar("smMoveDate", { length: 32 }),          // start_date from Supermove job
+  smLastSyncedAt: timestamp("smLastSyncedAt"),                // when we last received a webhook
   // Timestamps
   createdAt: timestamp("createdAt").defaultNow().notNull(),
   updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),

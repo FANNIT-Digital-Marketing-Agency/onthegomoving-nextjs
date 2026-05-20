@@ -1,107 +1,160 @@
 // ============================================================
 // ON THE GO MOVING — Netlify Function: get-leads
-// Proxies the Netlify Forms API so the API token stays
-// server-side and never reaches the browser.
+// Reads leads from MySQL database (includes Supermove sync data).
+// Falls back to Netlify Forms API if DB is unavailable.
 //
-// GET /.netlify/functions/get-leads?page=1&per_page=100
-//
-// Simple password protection: pass ?key=<ADMIN_KEY> in the
-// query string. The key is stored in the ADMIN_DASHBOARD_KEY
-// env var (set in Netlify UI → Site settings → Environment).
-// Falls back to a hardcoded default if the env var is not set.
+// GET /.netlify/functions/get-leads?key=<ADMIN_KEY>&page=1&per_page=100&days=30
 // ============================================================
+import mysql from "mysql2/promise";
 
 const NETLIFY_API_TOKEN = process.env.NETLIFY_API_TOKEN || "nfp_TBPuSHsYiBk694ebCvcGUbXD8iDphJfQcfb5";
 const FORM_ID = process.env.NETLIFY_FORM_ID || "69e79d1e5a0b680008ea12ab";
 const ADMIN_KEY = process.env.ADMIN_DASHBOARD_KEY || "otgm-admin-2025";
 
-exports.handler = async (event) => {
+async function getDbConnection() {
+  const url = process.env.DATABASE_URL;
+  if (!url) return null;
+  try {
+    return await mysql.createConnection(url);
+  } catch (err) {
+    console.error("[get-leads] DB connect error:", err.message);
+    return null;
+  }
+}
+
+export const handler = async (event) => {
   const headers = {
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Headers": "Content-Type",
     "Content-Type": "application/json",
   };
 
-  // Handle CORS preflight
   if (event.httpMethod === "OPTIONS") {
     return { statusCode: 200, headers, body: "" };
   }
 
-  // Simple password protection
   const providedKey = event.queryStringParameters?.key || "";
   if (providedKey !== ADMIN_KEY) {
-    return {
-      statusCode: 401,
-      headers,
-      body: JSON.stringify({ error: "Unauthorized" }),
-    };
+    return { statusCode: 401, headers, body: JSON.stringify({ error: "Unauthorized" }) };
   }
 
-  try {
-    const page = parseInt(event.queryStringParameters?.page || "1", 10);
-    const perPage = Math.min(parseInt(event.queryStringParameters?.per_page || "100", 10), 100);
+  const page    = Math.max(1, parseInt(event.queryStringParameters?.page     || "1",   10));
+  const perPage = Math.min(200, parseInt(event.queryStringParameters?.per_page || "100", 10));
+  const days    = parseInt(event.queryStringParameters?.days || "30", 10);
+  const offset  = (page - 1) * perPage;
 
-    // Fetch from Netlify Forms API
-    const url = `https://api.netlify.com/api/v1/forms/${FORM_ID}/submissions?page=${page}&per_page=${perPage}`;
-    const response = await fetch(url, {
-      headers: {
-        Authorization: `Bearer ${NETLIFY_API_TOKEN}`,
-      },
-    });
+  // ── Try MySQL first ────────────────────────────────────────────────────────
+  const conn = await getDbConnection();
+  if (conn) {
+    try {
+      const cutoff = new Date(Date.now() - days * 24 * 60 * 60 * 1000)
+        .toISOString().slice(0, 19).replace("T", " ");
 
-    if (!response.ok) {
-      throw new Error(`Netlify API error: ${response.status} ${response.statusText}`);
-    }
+      const [rows] = await conn.execute(
+        `SELECT
+          id, fullName, phone, email,
+          moveDate, moveType, moveSize, squareFeet,
+          fromZip, toZip, wantsStorage,
+          sourcePage, sourceLabel,
+          webhookStatus, webhookAttemptedAt, webhookError,
+          smProjectId, smProjectNumber, smStage, smBookingStatus,
+          smTotalRevenue, smCoordinator, smSalesperson,
+          smIsCancelled, smMoveDate, smLastSyncedAt,
+          createdAt, updatedAt
+        FROM leads
+        WHERE createdAt >= ?
+        ORDER BY createdAt DESC
+        LIMIT ? OFFSET ?`,
+        [cutoff, perPage, offset]
+      );
 
-    const submissions = await response.json();
+      const [[{ total }]] = await conn.execute(
+        "SELECT COUNT(*) AS total FROM leads WHERE createdAt >= ?",
+        [cutoff]
+      );
 
-    // Normalise each submission: derive sourcePage from referrer if not set
-    const normalised = submissions.map((sub) => {
-      const data = sub.data || {};
-      let sourcePage = data.sourcePage || "";
-      let sourceLabel = data.sourceLabel || "";
+      await conn.end();
 
-      // Derive source page from referrer for older submissions that lack the hidden input
-      if (!sourcePage && data.referrer) {
-        try {
-          const url = new URL(data.referrer);
-          sourcePage = url.pathname;
-        } catch {
-          sourcePage = data.referrer;
-        }
-      }
+      const submissions = rows.map((r) => ({
+        id:              r.id,
+        createdAt:       r.createdAt,
+        fullName:        r.fullName  || "",
+        phone:           r.phone     || "",
+        email:           r.email     || "",
+        moveDate:        r.moveDate  || "",
+        zipFrom:         r.fromZip   || "",
+        zipTo:           r.toZip     || "",
+        moveType:        r.moveType  || "",
+        moveSize:        r.moveSize  || r.squareFeet || "",
+        wantsStorage:    r.wantsStorage ? "yes" : "",
+        sourcePage:      r.sourcePage  || "/",
+        sourceLabel:     r.sourceLabel || "",
+        webhookStatus:   r.webhookStatus,
+        smProjectId:     r.smProjectId     || null,
+        smProjectNumber: r.smProjectNumber || null,
+        smStage:         r.smStage         || null,
+        smBookingStatus: r.smBookingStatus || null,
+        smTotalRevenue:  r.smTotalRevenue  || null,
+        smCoordinator:   r.smCoordinator   || null,
+        smSalesperson:   r.smSalesperson   || null,
+        smIsCancelled:   r.smIsCancelled   === 1,
+        smMoveDate:      r.smMoveDate      || null,
+        smLastSyncedAt:  r.smLastSyncedAt  || null,
+        source:          "db",
+      }));
 
       return {
-        id: sub.id,
-        createdAt: sub.created_at,
-        fullName: data.fullName || "",
-        phone: data.phone || "",
-        email: data.email || "",
-        moveDate: data.moveDate || "",
-        zipFrom: data.zipFrom || "",
-        zipTo: data.zipTo || "",
-        moveType: data.moveType || "",
-        moveSize: data.moveSize || data.squareFeet || "",
+        statusCode: 200,
+        headers,
+        body: JSON.stringify({ submissions, total, source: "db", page, perPage }),
+      };
+    } catch (err) {
+      console.error("[get-leads] DB query error:", err.message);
+      try { await conn.end(); } catch {}
+    }
+  }
+
+  // ── Fallback: Netlify Forms API ────────────────────────────────────────────
+  try {
+    const url = `https://api.netlify.com/api/v1/forms/${FORM_ID}/submissions?page=${page}&per_page=${perPage}`;
+    const response = await fetch(url, {
+      headers: { Authorization: `Bearer ${NETLIFY_API_TOKEN}` },
+    });
+    if (!response.ok) throw new Error(`Netlify API error: ${response.status}`);
+    const raw = await response.json();
+
+    const submissions = raw.map((sub) => {
+      const data = sub.data || {};
+      let sourcePage = data.sourcePage || "";
+      if (!sourcePage && data.referrer) {
+        try { sourcePage = new URL(data.referrer).pathname; } catch { sourcePage = data.referrer; }
+      }
+      return {
+        id:           sub.id,
+        createdAt:    sub.created_at,
+        fullName:     data.fullName    || "",
+        phone:        data.phone       || "",
+        email:        data.email       || "",
+        moveDate:     data.moveDate    || "",
+        zipFrom:      data.zipFrom     || "",
+        zipTo:        data.zipTo       || "",
+        moveType:     data.moveType    || "",
+        moveSize:     data.moveSize || data.squareFeet || "",
         wantsStorage: data.wantsStorage || data.freeStorage || "",
-        sourcePage: sourcePage || "/",
-        sourceLabel: sourceLabel || "",
-        referrer: data.referrer || "",
-        ip: data.ip || "",
-        userAgent: data.user_agent || "",
+        sourcePage:   sourcePage || "/",
+        sourceLabel:  data.sourceLabel || "",
+        webhookStatus: "unknown",
+        source:       "netlify-forms",
       };
     });
 
     return {
       statusCode: 200,
       headers,
-      body: JSON.stringify({ submissions: normalised, total: normalised.length }),
+      body: JSON.stringify({ submissions, total: submissions.length, source: "netlify-forms", page, perPage }),
     };
   } catch (err) {
-    console.error("[get-leads] Error:", err);
-    return {
-      statusCode: 500,
-      headers,
-      body: JSON.stringify({ error: err.message }),
-    };
+    console.error("[get-leads] Fallback error:", err);
+    return { statusCode: 500, headers, body: JSON.stringify({ error: err.message }) };
   }
 };
