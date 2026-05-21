@@ -130,10 +130,6 @@ export default function MovingCostBreakdown() {
           <div className="container relative z-10 py-14 lg:py-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
               <div>
-                <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-green-200 text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5">
-                  <Clock size={12} />
-                  Updated May 2026 · Seattle &amp; Eastside Rates
-                </div>
                 <h1
                   className="text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-5"
                   style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
