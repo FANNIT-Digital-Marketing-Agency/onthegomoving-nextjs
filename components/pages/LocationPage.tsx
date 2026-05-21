@@ -775,7 +775,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
               </p>
               <div className="flex flex-wrap justify-center gap-3">
                 {nearbyCities.map((loc, i) => (
-                  <a key={i} href={`/${loc.slug}/`}>
+                  <a key={i} href={loc.slug === "seattle-movers" ? "/" : `/${loc.slug}/`}>
                     <span className="bg-white/10 hover:bg-white/20 border border-white/20 text-white text-sm px-4 py-2 rounded-full transition-colors cursor-pointer">
                       {loc.city} Movers
                     </span>
