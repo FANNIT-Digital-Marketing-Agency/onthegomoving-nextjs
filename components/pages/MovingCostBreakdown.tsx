@@ -180,80 +180,7 @@ export default function MovingCostBreakdown() {
           </div>
         </section>
 
-        {/* ── PRICING TABLE ── */}
-        <section className="py-14 bg-white">
-          <div className="container">
-            <div className="text-center mb-10">
-              <p className="section-label text-brand-green mb-2">Typical Moving Costs</p>
-              <h2
-                className="text-4xl font-extrabold text-gray-900"
-                style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
-              >
-                Cost by Home Size — Seattle &amp; Eastside
-              </h2>
-              <p className="text-gray-500 mt-3 max-w-2xl mx-auto">
-                These ranges reflect real On The Go Moving jobs in Redmond, Bellevue, Seattle, and Kirkland. Your actual cost depends on crew size, access, and prep.
-              </p>
-            </div>
-            <div className="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="text-left text-xs font-bold uppercase tracking-widest text-white" style={{ backgroundColor: "#1e3a0f" }}>
-                    <th className="px-5 py-4">Home Size</th>
-                    <th className="px-5 py-4">Crew</th>
-                    <th className="px-5 py-4">Typical Hours</th>
-                    <th className="px-5 py-4" style={{ color: "#fbc319" }}>Typical Cost</th>
-                    <th className="px-5 py-4">Notes</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {PRICING_TABLE.map((row, i) => (
-                    <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#f5f5f3]"}>
-                      <td className="px-5 py-4 font-semibold text-gray-900">{row.size}</td>
-                      <td className="px-5 py-4 text-gray-600">{row.crew}</td>
-                      <td className="px-5 py-4 text-gray-600">{row.hours}</td>
-                      <td className="px-5 py-4 font-bold" style={{ color: "#75aa11" }}>{row.range}</td>
-                      <td className="px-5 py-4 text-gray-500 text-xs">{row.notes}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            <p className="text-xs text-gray-400 mt-3 text-center">
-              Rates current as of May 2026. Final cost depends on actual move conditions.{" "}
-              <a href="/contact-us/" className="underline" style={{ color: "#75aa11" }}>Get an exact quote →</a>
-            </p>
-          </div>
-        </section>
 
-        {/* ── HOURLY RATES ── */}
-        <section className="py-14 bg-[#f5f5f3]">
-          <div className="container">
-            <div className="text-center mb-10">
-              <p className="section-label text-brand-green mb-2">Hourly Rates</p>
-              <h2
-                className="text-4xl font-extrabold text-gray-900"
-                style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
-              >
-                On The Go Moving — Crew Sizes
-              </h2>
-              <p className="text-gray-500 mt-2 max-w-xl mx-auto text-sm">Call or request a free quote for current rates. Pricing varies by season and availability.</p>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-              {HOURLY_RATES.map((r, i) => (
-                <div key={i} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center">
-                  <p className="text-sm font-bold text-gray-700 mb-2">{r.crew}</p>
-                  <p className="text-xl font-extrabold mb-1" style={{ fontFamily: "'Barlow Condensed', sans-serif", color: "#75aa11" }}>{r.rate}</p>
-                  <p className="text-xs text-gray-400">{r.best}</p>
-                </div>
-              ))}
-            </div>
-            <div className="mt-6 bg-white rounded-xl p-5 border border-gray-200 max-w-2xl mx-auto text-center">
-              <AlertCircle size={18} className="inline mr-2" style={{ color: "#fbc319" }} />
-              <span className="text-sm text-gray-600">All rates include truck, fuel, equipment, blankets, and standard valuation coverage. Call us for current rates and availability.</span>
-            </div>
-          </div>
-        </section>
 
         {/* ── HOW TO KEEP COSTS LOWER ── */}
         <section className="py-14 bg-white">
@@ -307,57 +234,7 @@ export default function MovingCostBreakdown() {
           </div>
         </section>
 
-        {/* ── COST FACTORS ── */}
-        <section className="py-14 bg-[#f5f5f3]">
-          <div className="container">
-            <div className="text-center mb-10">
-              <p className="section-label text-brand-green mb-2">What Affects Your Price</p>
-              <h2
-                className="text-4xl font-extrabold text-gray-900"
-                style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
-              >
-                Why Do Moving Costs Vary?
-              </h2>
-              <p className="text-gray-500 mt-3 max-w-2xl mx-auto">
-                Two homes with the same square footage can have very different costs. Here's what actually changes the price — and what you can control.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              <div className="bg-red-50 rounded-2xl p-6 border border-red-100">
-                <div className="flex items-center gap-3 mb-5">
-                  <TrendingUp size={22} className="text-red-500" />
-                  <h3 className="text-xl font-bold text-gray-900" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-                    Things That Increase Cost
-                  </h3>
-                </div>
-                <div className="space-y-3">
-                  {COST_FACTORS_UP.map((f, i) => (
-                    <div key={i} className="flex items-center justify-between bg-white rounded-lg px-4 py-3 border border-red-100">
-                      <span className="text-sm text-gray-700">{f.factor}</span>
-                      <span className="text-xs font-bold text-red-600 ml-4 flex-shrink-0">{f.impact}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <div className="rounded-2xl p-6 border" style={{ backgroundColor: "#f0f7e6", borderColor: "#c5e08a" }}>
-                <div className="flex items-center gap-3 mb-5">
-                  <TrendingDown size={22} style={{ color: "#75aa11" }} />
-                  <h3 className="text-xl font-bold text-gray-900" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-                    How to Keep Costs Lower
-                  </h3>
-                </div>
-                <div className="space-y-3">
-                  {COST_FACTORS_DOWN.map((f, i) => (
-                    <div key={i} className="flex items-center justify-between bg-white rounded-lg px-4 py-3 border" style={{ borderColor: "#c5e08a" }}>
-                      <span className="text-sm text-gray-700">{f.factor}</span>
-                      <span className="text-xs font-bold ml-4 flex-shrink-0" style={{ color: "#75aa11" }}>{f.saving}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+
 
         {/* ── FAQ ── */}
         <section className="py-14 bg-white">
