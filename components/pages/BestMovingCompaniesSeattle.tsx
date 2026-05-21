@@ -34,7 +34,7 @@ const COMPANIES = [
     ],
     description: `On The Go Moving & Storage has been serving the greater Seattle area since 2009 and has built one of the strongest reputations in the market — 1,562+ five-star Google reviews, a 4.8-star average, and 25,000+ completed moves. What sets them apart for price shoppers is their fully transparent hourly pricing: you pay for the time the crew works, with no fuel surcharges, no stair fees, and no hidden add-ons. Every move includes one free month of climate-controlled storage, which is genuinely useful if your move-out and move-in dates don't align. Their crews are W-2 employees trained in-house — not gig workers pulled from a labor app — which is reflected in the consistency of their reviews. For most Seattle moves, On The Go is the best combination of price, reliability, and coverage.`,
     internalLinks: [
-      { label: "Seattle Movers", href: "/seattle-movers/" },
+      { label: "Seattle Movers", href: "/" },
       { label: "Seattle Apartment Moving", href: "/seattle-apartment-moving/" },
       { label: "Seattle Packing Services", href: "/seattle-packing-services/" },
       { label: "Seattle Storage Services", href: "/seattle-storage-services/" },
@@ -543,7 +543,7 @@ export default function BestMovingCompaniesSeattle() {
         <nav className="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-[#75aa11]">Home</Link>
           <span className="mx-2">/</span>
-          <Link href="/seattle-movers/" className="hover:text-[#75aa11]">Seattle Movers</Link>
+          <Link href="/" className="hover:text-[#75aa11]">Seattle Movers</Link>
           <span className="mx-2">/</span>
           <span className="text-gray-700">Best Moving Companies Seattle</span>
         </nav>
@@ -908,7 +908,7 @@ export default function BestMovingCompaniesSeattle() {
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
             {[
-              { label: "Seattle Movers", href: "/seattle-movers/" },
+              { label: "Seattle Movers", href: "/" },
               { label: "Seattle Residential Moving", href: "/seattle-residential-moving/" },
               { label: "Seattle Apartment Moving", href: "/seattle-apartment-moving/" },
               { label: "Seattle Packing Services", href: "/seattle-packing-services/" },

@@ -577,7 +577,7 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
                   <h3 className="font-bold text-gray-900 mb-3 text-sm uppercase tracking-widest">Serving Your City</h3>
                   <div className="space-y-2">
                     {[
-                      { label: "Seattle Movers", href: "/seattle-movers/" },
+                      { label: "Seattle Movers", href: "/" },
                       { label: "Bellevue Movers", href: "/bellevue-movers/" },
                       { label: "Redmond Movers", href: "/redmond-movers/" },
                       { label: "Kirkland Movers", href: "/kirkland-movers/" },

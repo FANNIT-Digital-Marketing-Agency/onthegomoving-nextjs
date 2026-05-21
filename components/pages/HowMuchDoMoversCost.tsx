@@ -440,7 +440,7 @@ export default function HowMuchDoMoversCost() {
                 10 Best Moving Companies in Seattle (2026)
               </a>
               <a
-                href="/seattle-movers/"
+                href="/"
                 className="inline-flex items-center gap-2 bg-white border border-gray-200 text-brand-forest font-semibold text-sm px-4 py-2 rounded-full hover:border-brand-forest hover:shadow-sm transition-all"
               >
                 Seattle Movers

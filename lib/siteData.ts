@@ -31,7 +31,7 @@ export const NAV_SERVICES = [
 
 // Top 12 shown in nav dropdown — links to all 26 location pages
 export const NAV_LOCATIONS = [
-  { label: "Seattle Movers", href: "/seattle-movers/" },
+  { label: "Seattle Movers", href: "/" },
   { label: "Bellevue Movers", href: "/bellevue-movers/" },
   { label: "Redmond Movers", href: "/redmond-movers/" },
   { label: "Kirkland Movers", href: "/kirkland-movers/" },
