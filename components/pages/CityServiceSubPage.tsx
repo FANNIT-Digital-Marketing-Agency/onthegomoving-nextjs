@@ -631,7 +631,7 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
         "@context": "https://schema.org",
         "@type": ["MovingCompany", "LocalBusiness"],
         name: COMPANY.name,
-        url: cityMoverSlug === "seattle-movers" ? "https://onthegomoving.com/" : `https://onthegomoving.com/${cityMoverSlug}/${serviceKey}/`,
+        url: `https://onthegomoving.com/${cityMoverSlug}/${serviceKey}/`,
         telephone: cityData?.gbp?.telephone ?? COMPANY.phone,
         address: {
           "@type": "PostalAddress",

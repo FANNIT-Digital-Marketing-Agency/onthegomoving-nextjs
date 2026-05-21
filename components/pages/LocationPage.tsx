@@ -135,7 +135,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
         "@context": "https://schema.org",
         "@type": ["MovingCompany", "LocalBusiness"],
         name: COMPANY.name,
-        url: data.slug === "seattle-movers" ? "https://onthegomoving.com/" : `https://onthegomoving.com/${data.slug}/`,
+        url: `https://onthegomoving.com/${data.slug}/`,
         telephone: data.gbp?.telephone ?? COMPANY.phone,
         email: COMPANY.email,
         address: {
