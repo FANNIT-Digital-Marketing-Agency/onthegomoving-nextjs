@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import HomePageContent from "@/components/pages/Home";
 
 export const metadata: Metadata = {
-  title: "Seattle Movers – On The Go Moving & Storage",
+  title: {
+    absolute: "Seattle Movers – On The Go Moving & Storage",
+  },
   description:
     "On The Go Moving & Storage is Seattle's local moving company. Serving all Seattle neighborhoods — residential, commercial, and apartment moves. Get a free quote today.",
   alternates: {

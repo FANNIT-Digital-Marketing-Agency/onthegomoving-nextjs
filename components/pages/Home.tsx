@@ -148,9 +148,9 @@ export default function Home() {
                 className="text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white leading-tight mb-5"
                 style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
               >
-                Seattle's Trusted Movers
+                Greater Seattle's
                 <br />
-                <span style={{ color: "#75aa11" }}>Local. Reliable. On The Go.</span>
+                <span style={{ color: "#75aa11" }}>Trusted Movers.</span>
               </h1>
               <p className="text-green-100 text-lg leading-relaxed mb-7 max-w-lg">
                 Flat-rate pricing, professional crews, and 1 free month of storage — trusted by 25,000+ Puget Sound families since 2009.
