@@ -770,12 +770,6 @@
   force = true
 
 [[redirects]]
-  from = "/moving-snoqualmie/"
-  to = "/residential-moving/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/moving-supplies/"
   to = "/residential-moving/"
   status = 301
