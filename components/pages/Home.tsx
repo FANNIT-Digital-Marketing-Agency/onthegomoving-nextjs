@@ -535,6 +535,8 @@ export default function Home() {
                 { name: "Magnolia", desc: "Waterfront and bluff properties with long carries and limited truck access." },
                 { name: "West Seattle", desc: "Family homes and condos across the bridge — we serve all West Seattle zip codes." },
                 { name: "Beacon Hill", desc: "Light Rail proximity makes Beacon Hill popular for apartment moves — we know the buildings." },
+                { name: "Columbia City", desc: "One of Seattle's most diverse neighborhoods — single-family homes, apartments, and easy I-90 access." },
+                { name: "University District", desc: "High-turnover apartment moves near UW — we handle move-in/move-out season efficiently." },
               ].map((n, i) => (
                 <div key={i} className="bg-white rounded-xl border border-gray-100 shadow-sm p-5 hover:shadow-md hover:border-brand-green/30 transition-all">
                   <h3 className="font-bold text-brand-forest text-base mb-1">{n.name}</h3>
