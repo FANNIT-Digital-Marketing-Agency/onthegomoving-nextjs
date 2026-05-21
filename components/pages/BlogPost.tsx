@@ -29,7 +29,7 @@ const KEYWORD_MAP: Array<{ pattern: RegExp; url: string; label: string }> = [
   { pattern: /\bunpacking services?\b/i, url: "/unpacking-services/", label: "unpacking services" },
   { pattern: /\bstaging professionals?\b|\breal estate staging\b/i, url: "/staging-professionals/", label: "staging professionals" },
   // Location pages — top cities
-  { pattern: /\bSeattle movers?\b|\bmovers? in Seattle\b/i, url: "/seattle-movers/", label: "Seattle movers" },
+  { pattern: /\bSeattle movers?\b|\bmovers? in Seattle\b/i, url: "/", label: "Seattle movers" },
   { pattern: /\bBellevue movers?\b|\bmovers? in Bellevue\b/i, url: "/bellevue-movers/", label: "Bellevue movers" },
   { pattern: /\bRedmond movers?\b|\bmovers? in Redmond\b/i, url: "/redmond-movers/", label: "Redmond movers" },
   { pattern: /\bKirkland movers?\b|\bmovers? in Kirkland\b/i, url: "/kirkland-movers/", label: "Kirkland movers" },

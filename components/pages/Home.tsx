@@ -78,8 +78,8 @@ export default function Home() {
 
   // Schema is injected server-side in app/(main)/page.tsx for static HTML inclusion
   useSEO({
-    title: "On The Go Moving & Storage | Greater Seattle Moving Company",
-    description: "On The Go Moving & Storage — Greater Seattle's trusted moving company since 2009. Residential, commercial, packing & storage across the Puget Sound. Licensed & insured. Free quote.",
+    title: "Seattle Movers – On The Go Moving & Storage",
+    description: "On The Go Moving & Storage is Seattle's local moving company. Serving all Seattle neighborhoods — residential, commercial, and apartment moves. Get a free quote today.",
     canonical: "https://onthegomoving.com/",
     ogType: "website",
   });
@@ -148,9 +148,9 @@ export default function Home() {
                 className="text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white leading-tight mb-5"
                 style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
               >
-                Greater Seattle's
+                Seattle's Trusted Movers
                 <br />
-                <span style={{ color: "#75aa11" }}>Trusted Movers.</span>
+                <span style={{ color: "#75aa11" }}>Local. Reliable. On The Go.</span>
               </h1>
               <p className="text-green-100 text-lg leading-relaxed mb-7 max-w-lg">
                 Flat-rate pricing, professional crews, and 1 free month of storage — trusted by 25,000+ Puget Sound families since 2009.
@@ -504,6 +504,49 @@ export default function Home() {
               ))}
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ── SEATTLE NEIGHBORHOODS WE SERVE ─────────────────────────────────── */}
+      <section className="py-16 bg-gray-50">
+        <div className="container">
+          <FadeSection className="text-center mb-10">
+            <p className="text-brand-green text-sm font-bold uppercase tracking-widest mb-2">Where We Work</p>
+            <h2
+              className="text-3xl lg:text-4xl font-extrabold text-brand-forest mb-4"
+              style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
+            >
+              Seattle Neighborhoods We Serve
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+              On The Go Moving serves every Seattle neighborhood — from Capitol Hill condos to West Seattle homes. Our crews know Seattle's streets, building requirements, and parking quirks. We dispatch from our Redmond facility and reach any Seattle neighborhood in under 30 minutes.
+            </p>
+          </FadeSection>
+          <FadeSection>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+              {[
+                { name: "Ballard", desc: "Apartment and condo moves near the Ship Canal — elevator coordination included." },
+                { name: "Capitol Hill", desc: "High-density apartment buildings, narrow streets, and strict move-in windows." },
+                { name: "Queen Anne", desc: "Hillside homes and walk-up apartments — our crews handle steep carries with ease." },
+                { name: "Fremont", desc: "Mixed residential and commercial moves in one of Seattle's most active neighborhoods." },
+                { name: "South Lake Union", desc: "Tech company office relocations and high-rise apartment moves near Amazon HQ." },
+                { name: "Belltown", desc: "Downtown high-rise condos with loading dock coordination and COI requirements." },
+                { name: "Green Lake", desc: "Single-family homes and bungalows — full-service residential moves." },
+                { name: "Magnolia", desc: "Waterfront and bluff properties with long carries and limited truck access." },
+                { name: "West Seattle", desc: "Family homes and condos across the bridge — we serve all West Seattle zip codes." },
+                { name: "Beacon Hill", desc: "Light Rail proximity makes Beacon Hill popular for apartment moves — we know the buildings." },
+              ].map((n, i) => (
+                <div key={i} className="bg-white rounded-xl border border-gray-100 shadow-sm p-5 hover:shadow-md hover:border-brand-green/30 transition-all">
+                  <h3 className="font-bold text-brand-forest text-base mb-1">{n.name}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">{n.desc}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-center text-gray-500 text-sm mt-6">
+              Don't see your neighborhood?{" "}
+              <a href="/seattle-movers/" className="text-brand-green font-semibold hover:underline">View all Seattle moving services →</a>
+            </p>
+          </FadeSection>
         </div>
       </section>
 

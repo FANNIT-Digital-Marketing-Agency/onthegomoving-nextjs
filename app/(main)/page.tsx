@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import HomePageContent from "@/components/pages/Home";
 
 export const metadata: Metadata = {
-  title: "On The Go Moving & Storage | Moving You Can Rely On Across Western Washington",
+  title: "Seattle Movers – On The Go Moving & Storage",
   description:
-    "On The Go Moving & Storage — Greater Seattle's trusted moving company since 2009. Residential, commercial, packing & storage across the Puget Sound. Licensed & insured. Free quotes — call (425) 761-8500.",
+    "On The Go Moving & Storage is Seattle's local moving company. Serving all Seattle neighborhoods — residential, commercial, and apartment moves. Get a free quote today.",
   alternates: {
     canonical: "https://onthegomoving.com/",
   },
   openGraph: {
-    title: "On The Go Moving & Storage | Moving You Can Rely On Across Western Washington",
+    title: "Seattle Movers – On The Go Moving & Storage",
     description:
-      "Greater Seattle's trusted moving company since 2009. Residential, commercial, packing & storage across the Puget Sound. Licensed & insured.",
+      "On The Go Moving & Storage is Seattle's local moving company. Serving all Seattle neighborhoods — residential, commercial, and apartment moves. Get a free quote today.",
     url: "https://onthegomoving.com/",
   },
 };
