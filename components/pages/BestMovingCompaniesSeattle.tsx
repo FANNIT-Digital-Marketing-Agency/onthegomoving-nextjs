@@ -58,6 +58,7 @@ const COMPANIES = [
         ratingValue: "4.8",
         reviewCount: "1562",
       },
+      sameAs: ["https://share.google/kOvPFtNuCbovRUD7T"],
     },
   },
   {
@@ -929,6 +930,15 @@ export default function BestMovingCompaniesSeattle() {
                 {link.label}
               </Link>
             ))}
+          </div>
+        </section>
+
+        {/* Related comparison pages */}
+        <section className="mb-8 p-5 bg-gray-50 rounded-xl border border-gray-200">
+          <p className="text-sm font-bold text-[#1e3a0f] mb-3">Also Compare: Best Movers in Nearby Cities</p>
+          <div className="flex flex-wrap gap-2">
+            <Link href="/best-moving-companies-bellevue/" className="text-sm bg-white border border-gray-200 text-[#1e3a0f] font-medium px-4 py-2 rounded-lg hover:border-[#75aa11] hover:text-[#75aa11] transition-colors">Best Moving Companies Bellevue →</Link>
+            <Link href="/best-moving-companies-redmond/" className="text-sm bg-white border border-gray-200 text-[#1e3a0f] font-medium px-4 py-2 rounded-lg hover:border-[#75aa11] hover:text-[#75aa11] transition-colors">Best Moving Companies Redmond →</Link>
           </div>
         </section>
 

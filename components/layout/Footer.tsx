@@ -96,6 +96,18 @@ export default function Footer() {
                   Best Moving Companies Seattle
                 </a>
               </li>
+              <li>
+                <a href="/best-moving-companies-bellevue/" className="text-white/75 hover:text-[#75aa11] text-sm transition-colors flex items-center gap-1.5">
+                  <span style={{ color: "#75aa11" }}>→</span>
+                  Best Moving Companies Bellevue
+                </a>
+              </li>
+              <li>
+                <a href="/best-moving-companies-redmond/" className="text-white/75 hover:text-[#75aa11] text-sm transition-colors flex items-center gap-1.5">
+                  <span style={{ color: "#75aa11" }}>→</span>
+                  Best Moving Companies Redmond
+                </a>
+              </li>
             </ul>
           </div>
 

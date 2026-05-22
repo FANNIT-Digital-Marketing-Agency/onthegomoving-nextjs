@@ -12,6 +12,8 @@ const CORE_PAGES = [
   { label: "FAQ", href: "/faq/" },
   { label: "How Much Do Movers Cost?", href: "/how-much-do-movers-cost/" },
   { label: "10 Best Moving Companies in Seattle", href: "/best-moving-companies-seattle/" },
+  { label: "10 Best Moving Companies in Bellevue", href: "/best-moving-companies-bellevue/" },
+  { label: "10 Best Moving Companies in Redmond", href: "/best-moving-companies-redmond/" },
   { label: "Locations We Serve", href: "/we-are-local/" },
   { label: "Blog", href: "/blog/" },
   { label: "Real Estate Agents", href: "/real-estate-agents/" },
