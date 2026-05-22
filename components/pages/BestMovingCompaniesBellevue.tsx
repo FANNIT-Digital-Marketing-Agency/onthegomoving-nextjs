@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { CheckCircle, Star, AlertCircle, Info, DollarSign, Award, MapPin } from "lucide-react";
 import { useSEO, MOVING_COMPANY_SCHEMA, buildFAQSchema } from "@/hooks/useSEO";
