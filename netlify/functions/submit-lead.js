@@ -192,10 +192,26 @@ export const handler = async (event) => {
     return { statusCode: 400, body: JSON.stringify({ error: "Invalid JSON" }) };
   }
 
+  // Sanitize name — strip any leading non-alphabetic characters (e.g. ": Justin" → "Justin")
+  lead.fullName = (lead.fullName || "").replace(/^[^a-zA-Z]+/, "").trim();
+
+  // Sanitize phone — strip non-digits, handle 11-digit with leading 1
+  const rawPhone = (lead.phone || "").replace(/\D/g, "");
+  const cleanPhone = rawPhone.length === 11 && rawPhone.startsWith("1") ? rawPhone.slice(1) : rawPhone;
+  lead.phone = cleanPhone;
+
   if (!lead.fullName || !lead.phone || !lead.email) {
     return {
       statusCode: 400,
       body: JSON.stringify({ error: "Name, phone, and email are required" }),
+    };
+  }
+
+  // Validate phone is exactly 10 US digits
+  if (lead.phone.length !== 10) {
+    return {
+      statusCode: 400,
+      body: JSON.stringify({ error: "Please enter a valid 10-digit US phone number." }),
     };
   }
 

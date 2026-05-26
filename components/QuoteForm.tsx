@@ -147,6 +147,14 @@ export default function QuoteForm({
       return;
     }
 
+    // Validate phone is a 10-digit US number
+    const phoneDigits = formData.phone.replace(/\D/g, "");
+    const cleanedPhone = phoneDigits.length === 11 && phoneDigits.startsWith("1") ? phoneDigits.slice(1) : phoneDigits;
+    if (cleanedPhone.length !== 10) {
+      toast.error("Please enter a valid 10-digit US phone number (e.g. 425-761-8500).");
+      return;
+    }
+
     setLoading(true);
 
     try {
