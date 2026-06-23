@@ -186,7 +186,7 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
           "name": "On The Go Moving & Storage",
           "url": "https://onthegomoving.com",
         },
-        "image": "https://files.manuscdn.com/user_upload_by_module/session_file/310519663327875635/wYRLOfBmzfRNeyqa.jpg",
+        "image": "https://onthegomoving.com/assets/jason-sexton-headshot.jpg",
       },
       "publisher": {
         "@type": "Organization",

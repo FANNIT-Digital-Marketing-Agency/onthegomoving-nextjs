@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "profile",
     images: [
       {
-        url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663327875635/wYRLOfBmzfRNeyqa.jpg",
+        url: "https://onthegomoving.com/assets/jason-sexton-headshot.jpg",
         width: 720,
         height: 960,
         alt: "Jason Sexton — Founder and Owner of On The Go Moving & Storage",

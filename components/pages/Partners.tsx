@@ -483,35 +483,35 @@ export default function Partners() {
           <div className="flex flex-wrap justify-center items-center gap-10 lg:gap-16">
             <a href="https://www.bennettfoundation.org/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
               <img
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663327875635/hxTkOuafgAoQcNrl.png"
+                src="/assets/bennett-foundation.png"
                 alt="The Bennett Foundation"
                 className="h-14 object-contain"
               />
             </a>
             <a href="https://www.marchofdimes.org/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
               <img
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663327875635/InNXDGFdZoqXtPki.png"
+                src="/assets/march-for-babies.png"
                 alt="March for Babies"
                 className="h-14 object-contain"
               />
             </a>
             <a href="https://www.marchofdimes.org/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
               <img
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663327875635/xStVyfbghkiuohZc.png"
+                src="/assets/march-of-dimes.png"
                 alt="March of Dimes"
                 className="h-14 object-contain"
               />
             </a>
             <a href="https://www.seattlechildrens.org/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
               <img
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663327875635/JZRGcTYXRtvHKYBi.png"
+                src="/assets/seattle-childrens.png"
                 alt="Seattle Children's Hospital"
                 className="h-14 object-contain"
               />
             </a>
             <a href="https://www.girlscouts.org/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
               <img
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663327875635/OFCTzMwqNlNkjzSz.png"
+                src="/assets/girl-scouts.png"
                 alt="Girl Scouts of America"
                 className="h-14 object-contain"
               />

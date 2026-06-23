@@ -126,7 +126,7 @@ export default function Home() {
               opacity: 0.9,
             }}
           >
-            <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663327875635/fyzLoYjGXntZpltH.mp4" type="video/mp4" />
+            <source src="/assets/hero-video.mp4" type="video/mp4" />
           </video>
         </div>
 
