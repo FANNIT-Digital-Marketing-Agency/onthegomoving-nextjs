@@ -121,7 +121,7 @@ export default function AdminLeads() {
             <h1 className="text-xl font-bold text-gray-900" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
               Lead Submissions
             </h1>
-            <p className="text-sm text-gray-500 mt-0.5">All quote form submissions — On The Go Moving</p>
+            <p className="text-sm text-gray-500 mt-0.5">All quote form submissions, On The Go Moving</p>
           </div>
           <div className="flex items-center gap-2">
             <Button
@@ -215,18 +215,18 @@ export default function AdminLeads() {
                         <div className="text-xs text-gray-500">{lead.email}</div>
                       </TableCell>
                       <TableCell>
-                        <div className="text-sm text-gray-700 capitalize">{lead.moveType ?? "—"}</div>
+                        <div className="text-sm text-gray-700 capitalize">{lead.moveType ?? "-"}</div>
                         <div className="text-xs text-gray-500">
                           {lead.fromZip && lead.toZip
                             ? `${lead.fromZip} → ${lead.toZip}`
-                            : lead.fromZip ?? lead.toZip ?? "—"}
+                            : lead.fromZip ?? lead.toZip ?? "-"}
                         </div>
                         {lead.moveDate && (
                           <div className="text-xs text-gray-400">{lead.moveDate}</div>
                         )}
                       </TableCell>
                       <TableCell>
-                        <div className="text-xs text-gray-700 font-medium">{lead.sourceLabel ?? "—"}</div>
+                        <div className="text-xs text-gray-700 font-medium">{lead.sourceLabel ?? "-"}</div>
                         <div className="text-xs text-gray-400 truncate max-w-[180px]" title={lead.sourcePage ?? ""}>
                           {lead.sourcePage ?? ""}
                         </div>

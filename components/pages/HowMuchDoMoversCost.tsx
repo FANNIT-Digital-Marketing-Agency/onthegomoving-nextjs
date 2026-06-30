@@ -60,11 +60,11 @@ const FAQS = [
   },
   {
     q: "How much do movers charge per hour?",
-    a: "On The Go Moving charges by the hour based on crew size. All rates include the moving truck, fuel, basic equipment, and standard valuation coverage. Call us or request a free quote for current rates — pricing varies by season, availability, and move details.",
+    a: "On The Go Moving charges by the hour based on crew size. All rates include the moving truck, fuel, basic equipment, and standard valuation coverage. Call us or request a free quote for current rates, pricing varies by season, availability, and move details.",
   },
   {
     q: "Is it cheaper to move yourself or hire movers?",
-    a: "For most moves in the Seattle area, hiring professional movers is cost-competitive with DIY when you factor in truck rental, fuel, equipment, and your time. A 2-bedroom DIY move (truck + supplies + time) typically costs $400–$700. A professional 2-bedroom move with On The Go Moving runs $450–$800 — and you don't have to do any of the heavy lifting.",
+    a: "For most moves in the Seattle area, hiring professional movers is cost-competitive with DIY when you factor in truck rental, fuel, equipment, and your time. A 2-bedroom DIY move (truck + supplies + time) typically costs $400–$700. A professional 2-bedroom move with On The Go Moving runs $450–$800, and you don't have to do any of the heavy lifting.",
   },
   {
     q: "What is included in the hourly moving rate?",
@@ -152,7 +152,7 @@ export default function HowMuchDoMoversCost() {
                   <span style={{ color: "#75aa11" }}>Movers Cost?</span>
                 </h1>
                 <p className="text-green-100 text-lg leading-relaxed max-w-xl">
-                  Most local moves in Seattle and the Eastside cost <strong className="text-white">$300–$1,600</strong> depending on home size and crew. Here's exactly how pricing works — with no surprises.
+                  Most local moves in Seattle and the Eastside cost <strong className="text-white">$300–$1,600</strong> depending on home size and crew. Here's exactly how pricing works, with no surprises.
                 </p>
               </div>
               <div className="hidden lg:block">
@@ -181,7 +181,7 @@ export default function HowMuchDoMoversCost() {
               </p>
             </div>
             <div className="flex flex-wrap gap-4 text-sm text-gray-600">
-              <div className="flex items-center gap-2"><CheckCircle size={16} style={{ color: "#75aa11" }} /> Flat hourly rate — no hidden fees</div>
+              <div className="flex items-center gap-2"><CheckCircle size={16} style={{ color: "#75aa11" }} /> Flat hourly rate, no hidden fees</div>
               <div className="flex items-center gap-2"><CheckCircle size={16} style={{ color: "#75aa11" }} /> Truck, fuel &amp; equipment included</div>
               <div className="flex items-center gap-2"><CheckCircle size={16} style={{ color: "#75aa11" }} /> Secure vault storage available</div>
               <div className="flex items-center gap-2"><CheckCircle size={16} style={{ color: "#75aa11" }} /> Free quote in 60 seconds</div>
@@ -198,7 +198,7 @@ export default function HowMuchDoMoversCost() {
                 className="text-4xl font-extrabold text-gray-900"
                 style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
               >
-                Cost by Home Size — Seattle &amp; Eastside
+                Cost by Home Size, Seattle &amp; Eastside
               </h2>
               <p className="text-gray-500 mt-3 max-w-2xl mx-auto">
                 These ranges reflect real On The Go Moving jobs in Redmond, Bellevue, Seattle, and Kirkland. Your actual cost depends on crew size, access, and prep.
@@ -244,7 +244,7 @@ export default function HowMuchDoMoversCost() {
                 className="text-4xl font-extrabold text-gray-900"
                 style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
               >
-                On The Go Moving — Crew Sizes
+                On The Go Moving, Crew Sizes
               </h2>
               <p className="text-gray-500 mt-2 max-w-xl mx-auto text-sm">Call or request a free quote for current rates. Pricing varies by season and availability.</p>
             </div>
@@ -276,7 +276,7 @@ export default function HowMuchDoMoversCost() {
                 Why Do Moving Costs Vary?
               </h2>
               <p className="text-gray-500 mt-3 max-w-2xl mx-auto">
-                Two homes with the same square footage can have very different costs. Here's what actually changes the price — and what you can control.
+                Two homes with the same square footage can have very different costs. Here's what actually changes the price, and what you can control.
               </p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -327,10 +327,10 @@ export default function HowMuchDoMoversCost() {
                 Apartments &amp; Condos Often Cost More Than You Expect
               </h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                With studios and small apartments, the amount of furniture usually isn't the problem — the <strong>building is</strong>. Slow elevators, loading docks, tight parking, and other moving companies using the same space can add significant time to your move.
+                With studios and small apartments, the amount of furniture usually isn't the problem, the <strong>building is</strong>. Slow elevators, loading docks, tight parking, and other moving companies using the same space can add significant time to your move.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">
-                For most 1–2 bedroom apartments and condos, we recommend <strong>3 movers instead of 2</strong>. It can feel like you're saving money with fewer movers — but in most apartment moves, the extra mover reduces total hours and often results in a <em>lower</em> final bill.
+                For most 1–2 bedroom apartments and condos, we recommend <strong>3 movers instead of 2</strong>. It can feel like you're saving money with fewer movers, but in most apartment moves, the extra mover reduces total hours and often results in a <em>lower</em> final bill.
               </p>
               <div className="bg-[#f0f7e6] rounded-xl p-5 border" style={{ borderColor: "#c5e08a" }}>
                 <p className="text-sm font-semibold text-gray-800">
@@ -415,7 +415,7 @@ export default function HowMuchDoMoversCost() {
               Get Your Exact Moving Cost in 60 Seconds
             </h2>
             <p className="text-white/70 mb-7 max-w-xl mx-auto">
-              No obligation. We respond within 1 hour with a flat-rate quote — no hidden fees, no surprises on move day.
+              No obligation. We respond within 1 hour with a flat-rate quote, no hidden fees, no surprises on move day.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/contact-us/" className="btn-gold text-base px-8 py-3 inline-flex items-center gap-2">

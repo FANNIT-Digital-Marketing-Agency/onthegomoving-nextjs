@@ -6,14 +6,14 @@ export const metadata: Metadata = {
     absolute: "Seattle Movers – On The Go Moving & Storage",
   },
   description:
-    "On The Go Moving & Storage is Seattle's local moving company. Serving all Seattle neighborhoods — residential, commercial, and apartment moves. Get a free quote today.",
+    "On The Go Moving & Storage is Seattle's local moving company. Serving all Seattle neighborhoods, residential, commercial, and apartment moves. Get a free quote today.",
   alternates: {
     canonical: "https://onthegomoving.com/",
   },
   openGraph: {
     title: "Seattle Movers – On The Go Moving & Storage",
     description:
-      "On The Go Moving & Storage is Seattle's local moving company. Serving all Seattle neighborhoods — residential, commercial, and apartment moves. Get a free quote today.",
+      "On The Go Moving & Storage is Seattle's local moving company. Serving all Seattle neighborhoods, residential, commercial, and apartment moves. Get a free quote today.",
     url: "https://onthegomoving.com/",
   },
 };

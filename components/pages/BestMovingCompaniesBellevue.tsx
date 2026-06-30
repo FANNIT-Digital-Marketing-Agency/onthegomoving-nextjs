@@ -9,7 +9,7 @@ const COMPANIES = [
   {
     rank: 1,
     name: "On The Go Moving & Storage",
-    badge: "Best Overall — Best Value in Bellevue",
+    badge: "Best Overall, Best Value in Bellevue",
     badgeColor: "bg-[#75aa11] text-white",
     url: "https://www.onthegomoving.com",
     phone: "(425) 761-8500",
@@ -21,19 +21,19 @@ const COMPANIES = [
     twoBedEstimate: "$450–$900",
     bestFor: "Best Overall Value",
     pros: [
-      "Eastside-based — Redmond warehouse means minimal travel time to Bellevue",
-      "Transparent hourly pricing — no fuel surcharges, no stair fees, no hidden add-ons",
+      "Eastside-based, Redmond warehouse means minimal travel time to Bellevue",
+      "Transparent hourly pricing, no fuel surcharges, no stair fees, no hidden add-ons",
       "Secure climate-controlled vault storage available",
       "Licensed, insured, and BBB-accredited since 2009",
-      "W-2 employee crews — not day laborers or subcontractors",
+      "W-2 employee crews, not day laborers or subcontractors",
       "Experienced with Bellevue's high-rise condos, downtown towers, and Eastside neighborhoods",
-      "4.8 stars across 1,562+ Google reviews — highest verified volume among Eastside movers",
+      "4.8 stars across 1,562+ Google reviews, highest verified volume among Eastside movers",
     ],
     cons: [
       "Books up fast during summer peak season (May–September)",
-      "Weekend slots fill quickly — book 3–4 weeks ahead in summer",
+      "Weekend slots fill quickly, book 3–4 weeks ahead in summer",
     ],
-    description: `On The Go Moving & Storage is the top-rated independent mover serving Bellevue, with 1,562+ five-star Google reviews and a 4.8-star average across 25,000+ completed moves since 2009. Their Redmond warehouse puts them minutes from Bellevue — meaning lower travel time charges compared to Seattle-based competitors. Bellevue's mix of downtown high-rise condos, Eastside single-family neighborhoods, and tech campus apartments requires movers with real local experience, and On The Go's crews have handled thousands of Bellevue moves across Crossroads, Factoria, Somerset, Newport Hills, and downtown Bellevue towers. Their pricing is fully transparent: hourly billing with no fuel surcharges, no stair fees, and no hidden add-ons. Multiple r/BellevueWA and r/eastside users have recommended On The Go by name in recent community threads.`,
+    description: `On The Go Moving & Storage is the top-rated independent mover serving Bellevue, with 1,562+ five-star Google reviews and a 4.8-star average across 25,000+ completed moves since 2009. Their Redmond warehouse puts them minutes from Bellevue, meaning lower travel time charges compared to Seattle-based competitors. Bellevue's mix of downtown high-rise condos, Eastside single-family neighborhoods, and tech campus apartments requires movers with real local experience, and On The Go's crews have handled thousands of Bellevue moves across Crossroads, Factoria, Somerset, Newport Hills, and downtown Bellevue towers. Their pricing is fully transparent: hourly billing with no fuel surcharges, no stair fees, and no hidden add-ons. Multiple r/BellevueWA and r/eastside users have recommended On The Go by name in recent community threads.`,
     internalLinks: [
       { label: "Bellevue Movers", href: "/bellevue-movers/" },
       { label: "Bellevue Residential Moving", href: "/bellevue-residential-moving/" },
@@ -68,7 +68,7 @@ const COMPANIES = [
     badge: "Best for Careful Handling",
     badgeColor: "bg-blue-700 text-white",
     url: "https://jordanrivermoving.com",
-    phone: "N/A — book online",
+    phone: "N/A, book online",
     founded: "N/A",
     googleRating: 4.8,
     reviewCount: "300+",
@@ -86,7 +86,7 @@ const COMPANIES = [
       "Pricing slightly above budget options",
       "Availability can be limited during peak summer months",
     ],
-    description: `Jordan River Moving is one of the most consistently recommended movers on Bellevue and Eastside Reddit threads. Multiple r/BellevueWA users have cited them specifically for their careful handling — crews are known for wrapping items thoroughly before any move begins. One r/eastside commenter noted their efficiency and care for fragile items. They are a solid choice for Bellevue residents with furniture, art, or items that require extra attention. For straightforward moves where price is the top priority, On The Go Moving offers comparable care at a lower rate.`,
+    description: `Jordan River Moving is one of the most consistently recommended movers on Bellevue and Eastside Reddit threads. Multiple r/BellevueWA users have cited them specifically for their careful handling, crews are known for wrapping items thoroughly before any move begins. One r/eastside commenter noted their efficiency and care for fragile items. They are a solid choice for Bellevue residents with furniture, art, or items that require extra attention. For straightforward moves where price is the top priority, On The Go Moving offers comparable care at a lower rate.`,
     internalLinks: [],
     schema: {
       "@type": "LocalBusiness",
@@ -111,7 +111,7 @@ const COMPANIES = [
     badge: "Best for Eco-Conscious Moves",
     badgeColor: "bg-green-700 text-white",
     url: "https://www.ecomovers.com",
-    phone: "N/A — book online",
+    phone: "N/A, book online",
     founded: "2008",
     googleRating: 4.6,
     reviewCount: "400+",
@@ -120,7 +120,7 @@ const COMPANIES = [
     twoBedEstimate: "$600–$1,100",
     bestFor: "Eco-Friendly Moves",
     pros: [
-      "Uses reusable moving bins — reduces cardboard waste",
+      "Uses reusable moving bins, reduces cardboard waste",
       "Strong coverage across Bellevue, Redmond, and Eastside",
       "Offers packing and storage services",
       "Frequently recommended on r/BellevueWA and r/eastside",
@@ -130,7 +130,7 @@ const COMPANIES = [
       "Pricing can vary significantly based on crew and date",
       "Less transparent pricing structure than hourly-only competitors",
     ],
-    description: `Eco Movers has been a fixture in the Eastside moving market since 2008 and is frequently recommended on Bellevue community forums. Their eco-friendly approach — reusable plastic bins instead of cardboard boxes — appeals to environmentally conscious Bellevue residents. They have solid coverage across Bellevue and the broader Eastside. However, recent Reddit threads have surfaced some billing concerns, with a few customers reporting final invoices higher than initial estimates. Always get a detailed written estimate and confirm all potential add-on charges before booking.`,
+    description: `Eco Movers has been a fixture in the Eastside moving market since 2008 and is frequently recommended on Bellevue community forums. Their eco-friendly approach, reusable plastic bins instead of cardboard boxes, appeals to environmentally conscious Bellevue residents. They have solid coverage across Bellevue and the broader Eastside. However, recent Reddit threads have surfaced some billing concerns, with a few customers reporting final invoices higher than initial estimates. Always get a detailed written estimate and confirm all potential add-on charges before booking.`,
     internalLinks: [],
     schema: {
       "@type": "LocalBusiness",
@@ -155,7 +155,7 @@ const COMPANIES = [
     badge: "Best for White-Glove Service",
     badgeColor: "bg-gray-700 text-white",
     url: "https://www.gentlegiant.com",
-    phone: "N/A — book online",
+    phone: "N/A, book online",
     founded: "1980",
     googleRating: 4.7,
     reviewCount: "125+",
@@ -165,7 +165,7 @@ const COMPANIES = [
     bestFor: "White-Glove & Long-Distance",
     pros: [
       "National brand with strong Eastside presence",
-      "High hiring standards — crews are known for professionalism",
+      "High hiring standards, crews are known for professionalism",
       "Excellent for long-distance and interstate moves",
       "Strong track record for fragile and high-value items",
     ],
@@ -174,7 +174,7 @@ const COMPANIES = [
       "3-hour labor minimum adds up quickly on small moves",
       "Less competitive for budget-conscious local moves",
     ],
-    description: `Gentle Giant has been in business since 1980 and is consistently recommended on Bellevue and Eastside Reddit threads for their professionalism and care. Their crews are well-trained and known for running — not walking — between loads. The tradeoff is price: at ~$243/hr for a three-person crew, they are among the most expensive options in the Bellevue market. They are best suited for large homes, high-value items, or long-distance moves where the premium is justified. For a standard 1–2 bedroom local Bellevue move, most price-conscious shoppers will find better value with On The Go Moving.`,
+    description: `Gentle Giant has been in business since 1980 and is consistently recommended on Bellevue and Eastside Reddit threads for their professionalism and care. Their crews are well-trained and known for running, not walking, between loads. The tradeoff is price: at ~$243/hr for a three-person crew, they are among the most expensive options in the Bellevue market. They are best suited for large homes, high-value items, or long-distance moves where the premium is justified. For a standard 1–2 bedroom local Bellevue move, most price-conscious shoppers will find better value with On The Go Moving.`,
     internalLinks: [],
     schema: {
       "@type": "LocalBusiness",
@@ -199,7 +199,7 @@ const COMPANIES = [
     badge: "Best for Budget Local Moves",
     badgeColor: "bg-orange-600 text-white",
     url: "https://adamsmovingservice.com",
-    phone: "N/A — book online",
+    phone: "N/A, book online",
     founded: "N/A",
     googleRating: 4.7,
     reviewCount: "300+",
@@ -214,11 +214,11 @@ const COMPANIES = [
       "Competitive pricing for the Eastside market",
     ],
     cons: [
-      "Billing model has shifted — some larger moves now quoted by volume, not hourly",
-      "Smaller operation — limited availability during peak summer months",
+      "Billing model has shifted, some larger moves now quoted by volume, not hourly",
+      "Smaller operation, limited availability during peak summer months",
       "Some long-time customers report higher rates than previous years",
     ],
-    description: `Adam's Moving is one of the most frequently recommended local movers on Bellevue and Eastside community forums, particularly for smaller moves. Their crews are praised for being fast, careful, and professional. One important note: their billing model has evolved — some customers report that for larger moves, they now quote based on truck volume rather than hourly rate, which can result in higher-than-expected invoices. Always confirm the billing method when getting a quote. For straightforward small-to-medium Bellevue moves, Adam's remains a solid choice.`,
+    description: `Adam's Moving is one of the most frequently recommended local movers on Bellevue and Eastside community forums, particularly for smaller moves. Their crews are praised for being fast, careful, and professional. One important note: their billing model has evolved, some customers report that for larger moves, they now quote based on truck volume rather than hourly rate, which can result in higher-than-expected invoices. Always confirm the billing method when getting a quote. For straightforward small-to-medium Bellevue moves, Adam's remains a solid choice.`,
     internalLinks: [],
     schema: {
       "@type": "LocalBusiness",
@@ -243,7 +243,7 @@ const COMPANIES = [
     badge: "Best for Long-Distance & Commercial",
     badgeColor: "bg-yellow-700 text-white",
     url: "https://www.hansenbros.com",
-    phone: "N/A — book online",
+    phone: "N/A, book online",
     founded: "1890",
     googleRating: 4.5,
     reviewCount: "500+",
@@ -252,8 +252,8 @@ const COMPANIES = [
     twoBedEstimate: "$900–$1,800",
     bestFor: "Long-Distance & Commercial",
     pros: [
-      "Established since 1890 — one of the Pacific Northwest's oldest movers",
-      "Allied Van Lines agent — strong for long-distance and interstate moves",
+      "Established since 1890, one of the Pacific Northwest's oldest movers",
+      "Allied Van Lines agent, strong for long-distance and interstate moves",
       "Newcastle location serves Bellevue and the Eastside directly",
       "A+ BBB rating",
       "Full-service commercial and office relocation capabilities",
@@ -263,7 +263,7 @@ const COMPANIES = [
       "Some reviewers report high quotes for standard local jobs",
       "Better suited for large commercial or long-distance moves than small local ones",
     ],
-    description: `Hansen Bros. has been moving Eastside families and businesses since 1890. As an Allied Van Lines agent, they are particularly strong for long-distance and interstate moves. Their Newcastle location serves Bellevue and the Eastside directly. For local Bellevue moves, their pricing is on the higher end — several Reddit users have noted receiving quotes significantly above market rate for standard local jobs. Where Hansen Bros. shines is in large commercial relocations, office moves, and long-distance moves where their network and infrastructure provide real value.`,
+    description: `Hansen Bros. has been moving Eastside families and businesses since 1890. As an Allied Van Lines agent, they are particularly strong for long-distance and interstate moves. Their Newcastle location serves Bellevue and the Eastside directly. For local Bellevue moves, their pricing is on the higher end, several Reddit users have noted receiving quotes significantly above market rate for standard local jobs. Where Hansen Bros. shines is in large commercial relocations, office moves, and long-distance moves where their network and infrastructure provide real value.`,
     internalLinks: [],
     schema: {
       "@type": "LocalBusiness",
@@ -304,9 +304,9 @@ const COMPANIES = [
     ],
     cons: [
       "Less name recognition than larger Eastside movers",
-      "Smaller fleet — limited availability for large or complex moves",
+      "Smaller fleet, limited availability for large or complex moves",
     ],
-    description: `People Movers is a Bothell-based company with strong coverage across the Eastside suburbs — Bellevue, Kirkland, Redmond, Bothell, Woodinville, and surrounding areas. They carry $2M in business liability and cargo coverage, which is above the industry minimum. Customers consistently praise their efficiency and professionalism. For moves centered on the Eastside, People Movers is worth getting a quote from alongside On The Go Moving.`,
+    description: `People Movers is a Bothell-based company with strong coverage across the Eastside suburbs, Bellevue, Kirkland, Redmond, Bothell, Woodinville, and surrounding areas. They carry $2M in business liability and cargo coverage, which is above the industry minimum. Customers consistently praise their efficiency and professionalism. For moves centered on the Eastside, People Movers is worth getting a quote from alongside On The Go Moving.`,
     internalLinks: [],
     schema: {
       "@type": "LocalBusiness",
@@ -332,7 +332,7 @@ const COMPANIES = [
     badge: "Best for Junk Removal + Moving",
     badgeColor: "bg-red-600 text-white",
     url: "https://www.collegehunkshaulingjunk.com",
-    phone: "N/A — book online",
+    phone: "N/A, book online",
     founded: "2003",
     googleRating: 4.6,
     reviewCount: "250+",
@@ -351,7 +351,7 @@ const COMPANIES = [
       "Not the best choice for a straightforward local move without junk removal",
       "Pricing can be less transparent than hourly-only competitors",
     ],
-    description: `College HUNKS is a national franchise that combines moving services with junk hauling — making them uniquely useful if you're downsizing, clearing out an estate, or need to dispose of furniture and appliances before or during your Bellevue move. Their Eastside franchise has solid reviews and uniformed, background-checked crews. For a standard local move without junk removal needs, they are not the most cost-efficient option. But if you're combining a move with a cleanout, the ability to handle both in one booking is a genuine convenience.`,
+    description: `College HUNKS is a national franchise that combines moving services with junk hauling, making them uniquely useful if you're downsizing, clearing out an estate, or need to dispose of furniture and appliances before or during your Bellevue move. Their Eastside franchise has solid reviews and uniformed, background-checked crews. For a standard local move without junk removal needs, they are not the most cost-efficient option. But if you're combining a move with a cleanout, the ability to handle both in one booking is a genuine convenience.`,
     internalLinks: [],
     schema: {
       "@type": "LocalBusiness",
@@ -376,7 +376,7 @@ const COMPANIES = [
     badge: "Best for Name Recognition",
     badgeColor: "bg-slate-600 text-white",
     url: "https://www.twomenandatruck.com",
-    phone: "N/A — book online",
+    phone: "N/A, book online",
     founded: "1985",
     googleRating: 4.5,
     reviewCount: "200+",
@@ -391,12 +391,12 @@ const COMPANIES = [
       "Straightforward booking process",
     ],
     cons: [
-      "Franchise model — quality varies by local owner and crew",
+      "Franchise model, quality varies by local owner and crew",
       "Pricing is above average for the Bellevue market",
       "Some customers report less flexibility than independent local movers",
       "Less competitive than Eastside independents for local moves",
     ],
-    description: `Two Men and a Truck is one of the most recognized moving brands in the country. Their Bellevue-area franchise provides consistent training standards and the accountability that comes with a national brand. The tradeoff is price — at $150–$200/hr, they are above the Eastside market average for a 2-person crew. For local Bellevue moves, independent Eastside movers like On The Go Moving typically offer better value. For long-distance moves where you want the backing of a national network, Two Men and a Truck is worth considering.`,
+    description: `Two Men and a Truck is one of the most recognized moving brands in the country. Their Bellevue-area franchise provides consistent training standards and the accountability that comes with a national brand. The tradeoff is price, at $150–$200/hr, they are above the Eastside market average for a 2-person crew. For local Bellevue moves, independent Eastside movers like On The Go Moving typically offer better value. For long-distance moves where you want the backing of a national network, Two Men and a Truck is worth considering.`,
     internalLinks: [],
     schema: {
       "@type": "LocalBusiness",
@@ -421,7 +421,7 @@ const COMPANIES = [
     badge: "Best App-Based Experience",
     badgeColor: "bg-indigo-600 text-white",
     url: "https://www.bellhops.com",
-    phone: "N/A — app/online only",
+    phone: "N/A, app/online only",
     founded: "2011",
     googleRating: 4.5,
     reviewCount: "180+",
@@ -432,13 +432,13 @@ const COMPANIES = [
     pros: [
       "Slick app-based booking with upfront pricing",
       "Real-time crew tracking on move day",
-      "Nationwide availability — good for interstate moves",
+      "Nationwide availability, good for interstate moves",
       "Transparent pricing with no surprise charges",
     ],
     cons: [
-      "Gig-economy crew model — workers are independent contractors, not W-2 employees",
+      "Gig-economy crew model, workers are independent contractors, not W-2 employees",
       "Crew consistency varies more than with employee-based companies",
-      "Customer service is app/chat-based — limited phone support",
+      "Customer service is app/chat-based, limited phone support",
       "Less local knowledge than Eastside-native companies",
     ],
     description: `Bellhops is a tech-forward moving platform that offers upfront pricing, real-time crew tracking, and a smooth app-based booking experience. They operate nationwide and serve the Bellevue market with competitive rates. The key tradeoff is their crew model: Bellhops uses independent contractors rather than W-2 employees, which means crew quality and experience can vary more than with a company like On The Go Moving that trains and employs its own crews. For tech-savvy Bellevue renters who prioritize booking convenience and price transparency, Bellhops is worth considering. For moves involving high-value items or complex logistics, an employee-based local company is generally the safer choice.`,
@@ -472,7 +472,7 @@ const PRICE_TABLE = [
 const FAQS = [
   {
     q: "How much do movers cost in Bellevue, WA?",
-    a: "Bellevue moving costs range from $115–$250/hr depending on the company, crew size, and services. For a 2-bedroom local move, expect to pay $450–$1,100 with most reputable companies. On The Go Moving charges $115–$155/hr for a 2-person crew and operates from a Redmond warehouse — meaning lower travel time charges for Bellevue moves compared to Seattle-based competitors.",
+    a: "Bellevue moving costs range from $115–$250/hr depending on the company, crew size, and services. For a 2-bedroom local move, expect to pay $450–$1,100 with most reputable companies. On The Go Moving charges $115–$155/hr for a 2-person crew and operates from a Redmond warehouse, meaning lower travel time charges for Bellevue moves compared to Seattle-based competitors.",
   },
   {
     q: "What is the cheapest time to move in Bellevue?",
@@ -480,7 +480,7 @@ const FAQS = [
   },
   {
     q: "Do Bellevue movers charge extra for high-rise condos or elevators?",
-    a: "Many movers add elevator fees or long-carry fees for downtown Bellevue high-rises. On The Go Moving does not charge stair or elevator fees — their hourly rate covers all standard move conditions. If you're moving into or out of a downtown Bellevue tower, always ask about these fees before booking any mover.",
+    a: "Many movers add elevator fees or long-carry fees for downtown Bellevue high-rises. On The Go Moving does not charge stair or elevator fees, their hourly rate covers all standard move conditions. If you're moving into or out of a downtown Bellevue tower, always ask about these fees before booking any mover.",
   },
   {
     q: "How do I verify a moving company is licensed in Washington State?",
@@ -497,7 +497,7 @@ const FAQS = [
 ];
 
 export default function BestMovingCompaniesBellevue() {
-  const pageTitle = "10 Best Moving Companies in Bellevue, WA (2026) — Honest Comparison";
+  const pageTitle = "10 Best Moving Companies in Bellevue, WA (2026), Honest Comparison";
   const pageDesc =
     "Compare the best moving companies in Bellevue, WA with real pricing, ratings, and honest pros & cons. Updated for 2026. On The Go Moving rated #1 for value and reliability on the Eastside.";
 
@@ -559,12 +559,12 @@ export default function BestMovingCompaniesBellevue() {
             10 Best Moving Companies in Bellevue, WA (2026)
           </h1>
           <p className="text-lg text-gray-600 leading-relaxed">
-            We researched and ranked the top Bellevue moving companies based on real Google and Yelp ratings, transparent pricing, licensing, and what actual customers say on Reddit and community forums. Whether you're moving into a downtown Bellevue high-rise, relocating within the Eastside, or moving your family from Crossroads to Somerset, this guide gives you the honest comparison you need — and flags the movers that have burned Bellevue residents with surprise bills.
+            We researched and ranked the top Bellevue moving companies based on real Google and Yelp ratings, transparent pricing, licensing, and what actual customers say on Reddit and community forums. Whether you're moving into a downtown Bellevue high-rise, relocating within the Eastside, or moving your family from Crossroads to Somerset, this guide gives you the honest comparison you need, and flags the movers that have burned Bellevue residents with surprise bills.
           </p>
           {/* Local callout */}
           <div className="mt-5 flex items-start gap-3 p-4 bg-blue-50 border border-blue-200 rounded-xl text-sm text-blue-800">
             <MapPin size={18} className="text-blue-500 mt-0.5 shrink-0" />
-            <p><strong>Bellevue-specific note:</strong> Most movers on this list are based in Seattle — meaning you'll pay 30–60 minutes of travel time each way. <strong>On The Go Moving operates from a Redmond warehouse</strong>, just minutes from Bellevue, which meaningfully reduces travel time charges on hourly billing.</p>
+            <p><strong>Bellevue-specific note:</strong> Most movers on this list are based in Seattle, meaning you'll pay 30–60 minutes of travel time each way. <strong>On The Go Moving operates from a Redmond warehouse</strong>, just minutes from Bellevue, which meaningfully reduces travel time charges on hourly billing.</p>
           </div>
           <div className="mt-5 p-4 bg-[#1e3a0f] text-white rounded-xl flex flex-col sm:flex-row gap-4 items-start sm:items-center">
             <div className="flex-1">
@@ -634,7 +634,7 @@ export default function BestMovingCompaniesBellevue() {
             How Much Do Movers Cost in Bellevue? (2026 Pricing Guide)
           </h2>
           <p className="text-gray-600 mb-4 text-sm leading-relaxed">
-            Bellevue's average moving rate is approximately <strong>$175–$195/hr</strong> for a standard 2-person crew — slightly above the broader Seattle market average due to the higher concentration of high-rise condos, elevator-access buildings, and premium neighborhoods. Below are realistic cost ranges for common move sizes, comparing On The Go Moving's rates against the broader Bellevue/Eastside market.
+            Bellevue's average moving rate is approximately <strong>$175–$195/hr</strong> for a standard 2-person crew, slightly above the broader Seattle market average due to the higher concentration of high-rise condos, elevator-access buildings, and premium neighborhoods. Below are realistic cost ranges for common move sizes, comparing On The Go Moving's rates against the broader Bellevue/Eastside market.
           </p>
           <div className="overflow-x-auto rounded-xl border border-gray-200">
             <table className="w-full text-sm">
@@ -664,7 +664,7 @@ export default function BestMovingCompaniesBellevue() {
         {/* Company cards */}
         <section className="mb-12 space-y-8">
           <h2 className="text-2xl font-bold text-[#1e3a0f]" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-            The 10 Best Bellevue Movers — Detailed Reviews
+            The 10 Best Bellevue Movers, Detailed Reviews
           </h2>
           {COMPANIES.map((company) => (
             <div
@@ -797,7 +797,7 @@ export default function BestMovingCompaniesBellevue() {
                       href="tel:4257618500"
                       className="flex-1 text-center bg-[#f5c518] text-[#1e3a0f] font-bold py-3 rounded-lg hover:bg-yellow-400 transition-colors text-sm"
                     >
-                      Call (425) 761-8500 — Free Quote
+                      Call (425) 761-8500, Free Quote
                     </a>
                     <Link
                       href="/contact-us/"
@@ -840,12 +840,12 @@ export default function BestMovingCompaniesBellevue() {
               {
                 icon: <DollarSign size={20} className="text-[#75aa11]" />,
                 title: "Travel Time Charges",
-                body: "Most Seattle-based movers charge travel time from their warehouse to your Bellevue address — typically 30–60 minutes each way. On The Go Moving is Eastside-based (Redmond), so this charge is minimal for most Bellevue moves.",
+                body: "Most Seattle-based movers charge travel time from their warehouse to your Bellevue address, typically 30–60 minutes each way. On The Go Moving is Eastside-based (Redmond), so this charge is minimal for most Bellevue moves.",
               },
               {
                 icon: <Info size={20} className="text-[#75aa11]" />,
                 title: "High-Rise & Elevator Fees",
-                body: "Bellevue has a high concentration of downtown condos and high-rise apartments. Many movers add elevator fees ($50–$100) or long-carry fees. On The Go Moving includes all standard move conditions in their hourly rate — no surprise add-ons.",
+                body: "Bellevue has a high concentration of downtown condos and high-rise apartments. Many movers add elevator fees ($50–$100) or long-carry fees. On The Go Moving includes all standard move conditions in their hourly rate, no surprise add-ons.",
               },
               {
                 icon: <Star size={20} className="text-[#75aa11]" />,
@@ -888,7 +888,7 @@ export default function BestMovingCompaniesBellevue() {
         {/* Internal links hub */}
         <section className="mb-12 p-6 bg-[#1e3a0f] text-white rounded-xl">
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-            On The Go Moving — Bellevue Service Pages
+            On The Go Moving, Bellevue Service Pages
           </h2>
           <p className="text-gray-300 text-sm mb-4">
             On The Go Moving serves all Bellevue neighborhoods and surrounding Eastside cities from their Redmond base. Explore our service-specific pages for detailed information, pricing, and neighborhood coverage.
@@ -925,7 +925,7 @@ export default function BestMovingCompaniesBellevue() {
             Ready to Book Bellevue's #1 Rated Mover?
           </h2>
           <p className="text-gray-600 text-sm mb-5">
-            On The Go Moving — Eastside-based, 4.8 stars, 1,562+ Google reviews, transparent hourly pricing, and secure vault storage available.
+            On The Go Moving, Eastside-based, 4.8 stars, 1,562+ Google reviews, transparent hourly pricing, and secure vault storage available.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a

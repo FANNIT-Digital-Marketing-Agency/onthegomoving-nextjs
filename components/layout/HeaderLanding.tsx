@@ -19,7 +19,7 @@ export default function HeaderLanding() {
       {/* Main header row */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         {/* Logo */}
-        <a href="/" aria-label="On The Go Moving & Storage — Home">
+        <a href="/" aria-label="On The Go Moving & Storage, Home">
           <img
             src={BRAND_IMAGES.logo}
             alt="On The Go Moving & Storage"

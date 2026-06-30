@@ -75,7 +75,7 @@ export default function TermsOfService() {
           <div>
             <h2 className="font-display text-2xl font-bold text-brand-forest mb-3">7. Intellectual Property</h2>
             <p>
-              All content on this Site — including text, images, logos, graphics, and video — is the property of On The Go Moving &amp; Storage or its content suppliers and is protected by applicable copyright and trademark laws. You may not reproduce, distribute, or create derivative works from Site content without our express written permission.
+              All content on this Site, including text, images, logos, graphics, and video, is the property of On The Go Moving &amp; Storage or its content suppliers and is protected by applicable copyright and trademark laws. You may not reproduce, distribute, or create derivative works from Site content without our express written permission.
             </p>
           </div>
 

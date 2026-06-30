@@ -16,7 +16,7 @@ const SERVICES = [
   {
     icon: Home,
     title: "Residential Moving",
-    desc: "Houses, apartments, condos — full-service moves across Greater Seattle.",
+    desc: "Houses, apartments, condos, full-service moves across Greater Seattle.",
   },
   {
     icon: Building2,
@@ -31,29 +31,29 @@ const SERVICES = [
   {
     icon: Truck,
     title: "Packing Services",
-    desc: "Full-pack and partial-pack options — we handle boxes, furniture, and fragile items.",
+    desc: "Full-pack and partial-pack options, we handle boxes, furniture, and fragile items.",
   },
 ];
 
 const TRUST_ITEMS = [
   { icon: Star, text: `${COMPANY.googleRating}★ (${COMPANY.googleReviewCount.toLocaleString()} reviews)` },
-  { icon: Shield, text: "Licensed & Insured — WA HG-064180" },
+  { icon: Shield, text: "Licensed & Insured, WA HG-064180" },
   { icon: Users, text: "Family-owned since 2009" },
-  { icon: Clock, text: "Flat-rate pricing — no surprises" },
+  { icon: Clock, text: "Flat-rate pricing, no surprises" },
 ];
 
 const FAQS = [
   {
     q: "How quickly will I get a quote?",
-    a: "Submit the form and we'll respond within 1 business hour with availability and a flat-rate price. For faster service, call us directly at (425) 761-8500 — we can often quote you on the spot.",
+    a: "Submit the form and we'll respond within 1 business hour with availability and a flat-rate price. For faster service, call us directly at (425) 761-8500, we can often quote you on the spot.",
   },
   {
     q: "What does flat-rate pricing mean?",
-    a: "Flat-rate means the price we quote you is the price you pay — no hourly clock, no surprise charges at the end. You'll know your exact cost before move day.",
+    a: "Flat-rate means the price we quote you is the price you pay, no hourly clock, no surprise charges at the end. You'll know your exact cost before move day.",
   },
   {
     q: "Do you serve my area?",
-    a: "We serve the entire Greater Seattle area — Seattle, Bellevue, Redmond, Kirkland, Sammamish, Issaquah, Bothell, Renton, Shoreline, and surrounding cities within about 50 miles.",
+    a: "We serve the entire Greater Seattle area, Seattle, Bellevue, Redmond, Kirkland, Sammamish, Issaquah, Bothell, Renton, Shoreline, and surrounding cities within about 50 miles.",
   },
   {
     q: "What's included in a move?",
@@ -102,7 +102,7 @@ export default function QuoteLanding() {
                 <span className="text-[#75aa11]">in Minutes</span>
               </h1>
               <p className="text-lg text-gray-200 mb-6 max-w-lg">
-                On The Go Moving &amp; Storage has served the Greater Seattle area since {COMPANY.founded}. Tell us about your move and we'll give you a flat-rate quote — no obligation, no surprises.
+                On The Go Moving &amp; Storage has served the Greater Seattle area since {COMPANY.founded}. Tell us about your move and we'll give you a flat-rate quote, no obligation, no surprises.
               </p>
 
               {/* Phone CTA + scroll-to-form anchor */}
@@ -118,7 +118,7 @@ export default function QuoteLanding() {
                 </a>
               </div>
 
-              {/* Trust badges — single row on mobile */}
+              {/* Trust badges, single row on mobile */}
               <div className="flex flex-nowrap gap-x-3 mt-2 overflow-hidden">
                 {TRUST_ITEMS.slice(0, 2).map(({ icon: Icon, text }) => (
                   <div key={text} className="flex items-center gap-2 text-xs sm:text-sm text-gray-200 flex-shrink-0 whitespace-nowrap">
@@ -202,12 +202,12 @@ export default function QuoteLanding() {
               </h2>
               <ul className="space-y-4">
                 {[
-                  "Flat-rate pricing — your quote is your final price",
+                  "Flat-rate pricing, your quote is your final price",
                   "Background-checked, uniformed crew members",
-                  "Fully padded and wrapped furniture — zero damage policy",
+                  "Fully padded and wrapped furniture, zero damage policy",
                   
                   "Family-owned and operated since 2009",
-                  "Licensed & insured — WA HG-064180 / USDOT# 2120054",
+                  "Licensed & insured, WA HG-064180 / USDOT# 2120054",
                   `${COMPANY.googleRating}★ average across ${COMPANY.googleReviewCount.toLocaleString()} Google reviews`,
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">

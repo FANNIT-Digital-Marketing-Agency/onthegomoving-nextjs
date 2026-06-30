@@ -24,7 +24,7 @@ const MOVE_TYPES = [
   {
     icon: Package,
     title: "Full-Pack Moves",
-    desc: "We pack everything — boxes, furniture, fragile items — so you don't have to.",
+    desc: "We pack everything, boxes, furniture, fragile items, so you don't have to.",
   },
   {
     icon: Clock,
@@ -44,7 +44,7 @@ const REVIEWS = [
     name: "James T.",
     location: "Seattle, WA",
     stars: 5,
-    text: "Used them for a 3-bedroom house move. Flat-rate pricing was exactly what they quoted — no surprises. Professional team from start to finish.",
+    text: "Used them for a 3-bedroom house move. Flat-rate pricing was exactly what they quoted, no surprises. Professional team from start to finish.",
   },
   {
     name: "Linda K.",
@@ -56,14 +56,14 @@ const REVIEWS = [
 
 const TRUST_ITEMS = [
   { icon: Star, text: `${COMPANY.googleRating}★ (${COMPANY.googleReviewCount.toLocaleString()} reviews)` },
-  { icon: Shield, text: "Licensed & Insured — WA HG-064180" },
+  { icon: Shield, text: "Licensed & Insured, WA HG-064180" },
   { icon: Users, text: "Family-owned since 2009" },
 ];
 
 const FAQS = [
   {
     q: "What does flat-rate pricing mean?",
-    a: "Flat-rate means the price we quote you is the price you pay — period. We don't run an hourly clock that can balloon if the move takes longer than expected. You'll know your exact cost before move day.",
+    a: "Flat-rate means the price we quote you is the price you pay, period. We don't run an hourly clock that can balloon if the move takes longer than expected. You'll know your exact cost before move day.",
   },
   {
     q: "What's included in a residential move?",
@@ -75,7 +75,7 @@ const FAQS = [
   },
   {
     q: "How far in advance should I book?",
-    a: "We recommend booking 2–4 weeks in advance for weekend moves, especially in summer. That said, we often have weekday availability on shorter notice — call us to check.",
+    a: "We recommend booking 2–4 weeks in advance for weekend moves, especially in summer. That said, we often have weekday availability on shorter notice, call us to check.",
   },
 ];
 
@@ -113,14 +113,14 @@ export default function ResidentialMoversLanding() {
             {/* Left: headline + trust */}
             <div>
               <div className="inline-flex items-center gap-2 bg-[#75aa11] text-white text-xs font-bold px-3 py-1.5 rounded-full mb-4 uppercase tracking-wide">
-                <Star size={12} /> {COMPANY.googleRating}★ Rated — {COMPANY.googleReviewCount.toLocaleString()} Reviews
+                <Star size={12} /> {COMPANY.googleRating}★ Rated, {COMPANY.googleReviewCount.toLocaleString()} Reviews
               </div>
               <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-4">
                 Seattle's Most Trusted<br />
                 <span className="text-[#75aa11]">Residential Movers</span>
               </h1>
               <p className="text-lg text-gray-200 mb-6 max-w-lg">
-                Family-owned and operated since {COMPANY.founded}. On The Go Moving handles your home move with the care and attention it deserves — flat-rate pricing, no surprises.
+                Family-owned and operated since {COMPANY.founded}. On The Go Moving handles your home move with the care and attention it deserves, flat-rate pricing, no surprises.
               </p>
 
               {/* Phone CTA + scroll-to-form anchor */}
@@ -136,7 +136,7 @@ export default function ResidentialMoversLanding() {
                 </a>
               </div>
 
-              {/* Trust badges — single row on mobile */}
+              {/* Trust badges, single row on mobile */}
               <div className="flex flex-nowrap gap-x-3 mt-2 overflow-hidden">
                 {TRUST_ITEMS.slice(0, 2).map(({ icon: Icon, text }) => (
                   <div key={text} className="flex items-center gap-2 text-xs sm:text-sm text-gray-200 flex-shrink-0 whitespace-nowrap">
@@ -150,7 +150,7 @@ export default function ResidentialMoversLanding() {
             {/* Right: Quote form */}
             <div id="quote-form" className="bg-white rounded-2xl shadow-2xl p-6 sm:p-8">
               <h2 className="text-[#1a2e0a] text-xl font-bold mb-1">Get Your Free Moving Quote</h2>
-              <p className="text-gray-500 text-sm mb-4">Flat-rate pricing — know your exact cost before move day.</p>
+              <p className="text-gray-500 text-sm mb-4">Flat-rate pricing, know your exact cost before move day.</p>
               <QuoteForm
                 variant="inline"
                 sourceLabel="landing-residential-movers"
@@ -256,9 +256,9 @@ export default function ResidentialMoversLanding() {
               </h2>
               <ul className="space-y-4">
                 {[
-                  "Flat-rate pricing — your quote is your final price",
+                  "Flat-rate pricing, your quote is your final price",
                   "Background-checked, uniformed crew members",
-                  "Fully padded and wrapped furniture — zero damage policy",
+                  "Fully padded and wrapped furniture, zero damage policy",
                   
                   "Family-owned and operated since 2009",
                   `${COMPANY.googleRating}★ average across ${COMPANY.googleReviewCount.toLocaleString()} Google reviews`,

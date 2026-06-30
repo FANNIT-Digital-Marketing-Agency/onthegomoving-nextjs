@@ -134,7 +134,7 @@ export const SERVICES = [
     href: "/storage-services/",
     icon: "🏪",
     description:
-      "Secure storage vaults at our Redmond, WA facility. Your belongings are loaded into dedicated vaults and managed by our team — not a self-serve unit. Contact us for current pricing.",
+      "Secure storage vaults at our Redmond, WA facility. Your belongings are loaded into dedicated vaults and managed by our team, not a self-serve unit. Contact us for current pricing.",
     image: BRAND_IMAGES.storageForklift,
   },
   {
@@ -170,7 +170,7 @@ export const SERVICES = [
     href: "/packing-services/",
     icon: "📦",
     description:
-      "Professional packing using quality materials — all supplies included. Full-pack, partial-pack, or fragile-only options available.",
+      "Professional packing using quality materials, all supplies included. Full-pack, partial-pack, or fragile-only options available.",
     image: BRAND_IMAGES.packingCrew,
   },
   {
@@ -179,7 +179,7 @@ export const SERVICES = [
     href: "/labor-only-moving/",
     icon: "💪",
     description:
-      "Need loading or unloading help without a truck? Our professional crews bring the same care and equipment — ask about upgrading to a full-service move.",
+      "Need loading or unloading help without a truck? Our professional crews bring the same care and equipment, ask about upgrading to a full-service move.",
     image: BRAND_IMAGES.laborOnlyCrew,
   },
   {
@@ -197,7 +197,7 @@ export const SERVICES = [
     href: "/condo-moving/",
     icon: "🏙️",
     description:
-      "Condo moves handled with building compliance in mind — elevator reservations, COI certificates, and move-in/out rules managed for you.",
+      "Condo moves handled with building compliance in mind, elevator reservations, COI certificates, and move-in/out rules managed for you.",
     image: BRAND_IMAGES.crewEntryway3,
   },
   {
@@ -233,7 +233,7 @@ export const SERVICES = [
     href: "/office-moving/",
     icon: "🖥️",
     description:
-      "Complete office relocations with minimal disruption. We handle workstations, filing systems, IT equipment, and furniture — evenings and weekends available.",
+      "Complete office relocations with minimal disruption. We handle workstations, filing systems, IT equipment, and furniture, evenings and weekends available.",
     image: BRAND_IMAGES.officeMoveAction,
   },
   {
@@ -333,12 +333,12 @@ export const FAQS = [
   {
     question: "How far in advance should I book movers?",
     answer:
-      "We recommend booking at least 2–4 weeks in advance, especially for summer moves (May–September) when demand is highest. However, we do our best to accommodate last-minute moves — call us and we'll check availability.",
+      "We recommend booking at least 2–4 weeks in advance, especially for summer moves (May–September) when demand is highest. However, we do our best to accommodate last-minute moves, call us and we'll check availability.",
   },
   {
     question: "Do you offer free storage with a move?",
     answer:
-      "Yes! We offer secure vault storage at our Redmond, WA facility. Our team handles all loading and retrieval — it's a full-service solution, not a self-serve storage unit. Contact us for current storage pricing and availability.",
+      "Yes! We offer secure vault storage at our Redmond, WA facility. Our team handles all loading and retrieval, it's a full-service solution, not a self-serve storage unit. Contact us for current storage pricing and availability.",
   },
   {
     question: "Are you licensed and insured?",

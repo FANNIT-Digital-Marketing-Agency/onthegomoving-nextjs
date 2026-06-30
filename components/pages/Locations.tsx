@@ -37,7 +37,7 @@ export default function Locations() {
     script.text = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "ItemList",
-      name: "On The Go Moving Service Areas — Greater Seattle Eastside",
+      name: "On The Go Moving Service Areas, Greater Seattle Eastside",
       description: "All cities served by On The Go Moving & Storage within 18 miles of Redmond, WA",
       numberOfItems: ALL_LOCATIONS.length,
       itemListElement: ALL_LOCATIONS.map((loc, i) => ({
@@ -55,7 +55,7 @@ export default function Locations() {
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
 
-      {/* Hero — pt accounts for fixed header (~96px: 32px top bar + 64px nav) */}
+      {/* Hero, pt accounts for fixed header (~96px: 32px top bar + 64px nav) */}
       <section className="pt-28 pb-16 lg:pt-32 lg:pb-20" style={{ backgroundColor: "#1e3a0f" }}>
         <div className="container text-center">
           <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-green-300 text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5">
@@ -63,7 +63,7 @@ export default function Locations() {
             18-Mile Service Radius · Redmond, WA
           </div>
           <h1 className="font-display text-4xl lg:text-5xl font-black text-white mb-4">
-            We Are Local — Greater Seattle Movers
+            We Are Local, Greater Seattle Movers
           </h1>
           <p className="text-white/70 text-lg max-w-2xl mx-auto mb-8">
             On The Go Moving & Storage serves all communities within 18 miles of our Redmond, WA warehouse. Find your city below and get a free quote today.
@@ -83,7 +83,7 @@ export default function Locations() {
         </div>
       </section>
 
-      {/* All 26 Location Pages — fully linked grid */}
+      {/* All 26 Location Pages, fully linked grid */}
       <section className="py-16 bg-gray-50">
         <div className="container">
           <div className="text-center mb-10">
@@ -125,7 +125,7 @@ export default function Locations() {
             Based in Redmond. Built for the Eastside.
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed mb-8">
-            On The Go Moving & Storage has been headquartered in Redmond, WA since 2009. Our warehouse, our crews, and our equipment are all within 18 miles of every city we serve. That means faster dispatch, lower travel fees, and crews who know the local roads, buildings, and neighborhoods — not out-of-state contractors who've never navigated a Bellevue high-rise or a Kirkland waterfront condo.
+            On The Go Moving & Storage has been headquartered in Redmond, WA since 2009. Our warehouse, our crews, and our equipment are all within 18 miles of every city we serve. That means faster dispatch, lower travel fees, and crews who know the local roads, buildings, and neighborhoods, not out-of-state contractors who've never navigated a Bellevue high-rise or a Kirkland waterfront condo.
           </p>
           <div className="grid sm:grid-cols-3 gap-6">
             {[

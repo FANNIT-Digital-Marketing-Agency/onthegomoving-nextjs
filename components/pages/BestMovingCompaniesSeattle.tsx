@@ -9,7 +9,7 @@ const COMPANIES = [
   {
     rank: 1,
     name: "On The Go Moving & Storage",
-    badge: "Best Overall — Editor's Pick",
+    badge: "Best Overall, Editor's Pick",
     badgeColor: "bg-[#75aa11] text-white",
     url: "https://www.onthegomoving.com",
     phone: "(425) 761-8500",
@@ -21,18 +21,18 @@ const COMPANIES = [
     twoBedEstimate: "$450–$900",
     bestFor: "Best Overall Value",
     pros: [
-      "Transparent hourly pricing — no hidden fees, no fuel surcharges",
+      "Transparent hourly pricing, no hidden fees, no fuel surcharges",
       "Secure climate-controlled vault storage available",
       "Serves all 30+ Seattle neighborhoods and suburbs",
       "Licensed, insured, and BBB-accredited since 2009",
       "Same-day and next-day availability in most cases",
-      "Dedicated crews — not day laborers or subcontractors",
+      "Dedicated crews, not day laborers or subcontractors",
     ],
     cons: [
-      "Based in Redmond — travel time applies for far West Seattle moves",
+      "Based in Redmond, travel time applies for far West Seattle moves",
       "Online booking fills up fast in summer peak season",
     ],
-    description: `On The Go Moving & Storage has been serving the greater Seattle area since 2009 and has built one of the strongest reputations in the market — 1,562+ five-star Google reviews, a 4.8-star average, and 25,000+ completed moves. What sets them apart for price shoppers is their fully transparent hourly pricing: you pay for the time the crew works, with no fuel surcharges, no stair fees, and no hidden add-ons. Every move includes Their crews are W-2 employees trained in-house — not gig workers pulled from a labor app — which is reflected in the consistency of their reviews. For most Seattle moves, On The Go is the best combination of price, reliability, and coverage.`,
+    description: `On The Go Moving & Storage has been serving the greater Seattle area since 2009 and has built one of the strongest reputations in the market, 1,562+ five-star Google reviews, a 4.8-star average, and 25,000+ completed moves. What sets them apart for price shoppers is their fully transparent hourly pricing: you pay for the time the crew works, with no fuel surcharges, no stair fees, and no hidden add-ons. Every move includes Their crews are W-2 employees trained in-house, not gig workers pulled from a labor app, which is reflected in the consistency of their reviews. For most Seattle moves, On The Go is the best combination of price, reliability, and coverage.`,
     internalLinks: [
       { label: "Seattle Movers", href: "/" },
       { label: "Seattle Apartment Moving", href: "/seattle-apartment-moving/" },
@@ -67,7 +67,7 @@ const COMPANIES = [
     badge: "Best for White-Glove Service",
     badgeColor: "bg-blue-700 text-white",
     url: "https://www.gentlegiant.com",
-    phone: "N/A — book online",
+    phone: "N/A, book online",
     founded: "1980",
     googleRating: 4.7,
     reviewCount: "125+",
@@ -77,7 +77,7 @@ const COMPANIES = [
     bestFor: "White-Glove & Long-Distance",
     pros: [
       "National brand with strong local Seattle presence",
-      "High hiring standards — crews are known for professionalism",
+      "High hiring standards, crews are known for professionalism",
       "Excellent for long-distance and interstate moves",
       "Strong track record for fragile and high-value items",
     ],
@@ -86,7 +86,7 @@ const COMPANIES = [
       "3-hour labor minimum adds up quickly on small moves",
       "Less competitive for budget-conscious local moves",
     ],
-    description: `Gentle Giant has been in business since 1980 and is consistently recommended by Seattle residents on Reddit and neighborhood forums for their professionalism and care. Their crews are well-trained and known for running — not walking — between loads. The tradeoff is price: at ~$243/hr for a three-person crew, they are among the most expensive options in Seattle. They are best suited for large homes, high-value items, or long-distance moves where the premium is justified. For a standard 1–2 bedroom local move, most price-conscious shoppers will find better value elsewhere.`,
+    description: `Gentle Giant has been in business since 1980 and is consistently recommended by Seattle residents on Reddit and neighborhood forums for their professionalism and care. Their crews are well-trained and known for running, not walking, between loads. The tradeoff is price: at ~$243/hr for a three-person crew, they are among the most expensive options in Seattle. They are best suited for large homes, high-value items, or long-distance moves where the premium is justified. For a standard 1–2 bedroom local move, most price-conscious shoppers will find better value elsewhere.`,
     internalLinks: [],
     schema: {
       "@type": "LocalBusiness",
@@ -111,7 +111,7 @@ const COMPANIES = [
     badge: "Best for Eco-Conscious Moves",
     badgeColor: "bg-green-700 text-white",
     url: "https://www.ecomovers.com",
-    phone: "N/A — book online",
+    phone: "N/A, book online",
     founded: "2008",
     googleRating: 4.6,
     reviewCount: "400+",
@@ -120,7 +120,7 @@ const COMPANIES = [
     twoBedEstimate: "$600–$1,100",
     bestFor: "Eco-Friendly Moves",
     pros: [
-      "Uses reusable moving bins — reduces cardboard waste",
+      "Uses reusable moving bins, reduces cardboard waste",
       "Strong Yelp and Google presence with consistent reviews",
       "Eastside coverage including Bellevue, Kirkland, and Redmond",
       "Offers packing and storage services",
@@ -130,7 +130,7 @@ const COMPANIES = [
       "Pricing can vary significantly based on crew and date",
       "Less transparent pricing structure than hourly-only competitors",
     ],
-    description: `Eco Movers has been a fixture in the Seattle moving market since 2008 and built a strong reputation on their eco-friendly approach — reusable plastic bins instead of cardboard boxes, and a commitment to reducing move waste. They have solid coverage across Seattle and the Eastside. However, recent Reddit threads and review sites have surfaced some billing concerns, with a few customers reporting final invoices significantly higher than initial estimates. As with any mover, get a detailed written estimate and confirm all potential add-on charges before booking.`,
+    description: `Eco Movers has been a fixture in the Seattle moving market since 2008 and built a strong reputation on their eco-friendly approach, reusable plastic bins instead of cardboard boxes, and a commitment to reducing move waste. They have solid coverage across Seattle and the Eastside. However, recent Reddit threads and review sites have surfaced some billing concerns, with a few customers reporting final invoices significantly higher than initial estimates. As with any mover, get a detailed written estimate and confirm all potential add-on charges before booking.`,
     internalLinks: [],
     schema: {
       "@type": "LocalBusiness",
@@ -155,7 +155,7 @@ const COMPANIES = [
     badge: "Best for Budget Local Moves",
     badgeColor: "bg-orange-600 text-white",
     url: "https://adamsmovingservice.com",
-    phone: "N/A — book online",
+    phone: "N/A, book online",
     founded: "N/A",
     googleRating: 4.7,
     reviewCount: "300+",
@@ -165,16 +165,16 @@ const COMPANIES = [
     bestFor: "Budget Local Moves",
     pros: [
       "Consistently recommended on Seattle Reddit for small/local moves",
-      "No hidden fees — straightforward hourly billing",
+      "No hidden fees, straightforward hourly billing",
       "Fast and efficient crews praised in reviews",
       "Good availability for last-minute bookings",
     ],
     cons: [
-      "Pricing model changed in recent years — some long-time customers report higher rates",
+      "Pricing model changed in recent years, some long-time customers report higher rates",
       "Some reviewers note rates are now volume-based rather than hourly for larger moves",
-      "Smaller operation — limited availability during peak summer months",
+      "Smaller operation, limited availability during peak summer months",
     ],
-    description: `Adam's Moving is one of Seattle's most frequently recommended local movers on community forums and Reddit, particularly for smaller moves within the city. Their crews are praised for being fast, careful, and professional. One important note: their billing model has evolved — some customers report that for larger moves, they now quote based on truck volume rather than hourly rate, which can result in higher-than-expected invoices for some job types. Always confirm the billing method when getting a quote. For straightforward small-to-medium local moves, Adam's remains a solid choice.`,
+    description: `Adam's Moving is one of Seattle's most frequently recommended local movers on community forums and Reddit, particularly for smaller moves within the city. Their crews are praised for being fast, careful, and professional. One important note: their billing model has evolved, some customers report that for larger moves, they now quote based on truck volume rather than hourly rate, which can result in higher-than-expected invoices for some job types. Always confirm the billing method when getting a quote. For straightforward small-to-medium local moves, Adam's remains a solid choice.`,
     internalLinks: [],
     schema: {
       "@type": "LocalBusiness",
@@ -199,7 +199,7 @@ const COMPANIES = [
     badge: "Best for Online Booking Experience",
     badgeColor: "bg-purple-700 text-white",
     url: "https://www.cantstopmoving.com",
-    phone: "N/A — book online",
+    phone: "N/A, book online",
     founded: "N/A",
     googleRating: 5.0,
     reviewCount: "100+",
@@ -214,11 +214,11 @@ const COMPANIES = [
       "Competitive pricing for the Seattle market",
     ],
     cons: [
-      "Smaller operation — limited crew availability",
+      "Smaller operation, limited crew availability",
       "Less established track record than older Seattle movers",
       "May not cover all suburban areas outside core Seattle",
     ],
-    description: `Can't Stop Moving has earned a perfect 5-star Google rating and is increasingly recommended on Seattle forums for their smooth booking experience and reliable crews. They are particularly well-suited for renters and apartment dwellers who want a no-hassle, tech-forward booking process. Their pricing is competitive and their reviews are consistently positive. As a smaller operation, availability can be limited during the busy summer season — book early if your move date falls between May and September.`,
+    description: `Can't Stop Moving has earned a perfect 5-star Google rating and is increasingly recommended on Seattle forums for their smooth booking experience and reliable crews. They are particularly well-suited for renters and apartment dwellers who want a no-hassle, tech-forward booking process. Their pricing is competitive and their reviews are consistently positive. As a smaller operation, availability can be limited during the busy summer season, book early if your move date falls between May and September.`,
     internalLinks: [],
     schema: {
       "@type": "LocalBusiness",
@@ -259,9 +259,9 @@ const COMPANIES = [
     ],
     cons: [
       "Less name recognition than larger Seattle movers",
-      "Smaller fleet — limited availability for large or complex moves",
+      "Smaller fleet, limited availability for large or complex moves",
     ],
-    description: `People Movers is a Bothell-based company with strong coverage across the Eastside suburbs — Kenmore, Kirkland, Bothell, Woodinville, and surrounding areas. They carry $2M in business liability and cargo coverage, which is above the industry minimum. Customers consistently praise their efficiency and professionalism. For moves centered on the Eastside rather than core Seattle, People Movers is worth getting a quote from alongside On The Go Moving.`,
+    description: `People Movers is a Bothell-based company with strong coverage across the Eastside suburbs, Kenmore, Kirkland, Bothell, Woodinville, and surrounding areas. They carry $2M in business liability and cargo coverage, which is above the industry minimum. Customers consistently praise their efficiency and professionalism. For moves centered on the Eastside rather than core Seattle, People Movers is worth getting a quote from alongside On The Go Moving.`,
     internalLinks: [],
     schema: {
       "@type": "LocalBusiness",
@@ -287,7 +287,7 @@ const COMPANIES = [
     badge: "Best for Long-Distance & Commercial",
     badgeColor: "bg-gray-700 text-white",
     url: "https://www.hansenbros.com",
-    phone: "N/A — book online",
+    phone: "N/A, book online",
     founded: "1890",
     googleRating: 4.5,
     reviewCount: "500+",
@@ -296,8 +296,8 @@ const COMPANIES = [
     twoBedEstimate: "$900–$1,800",
     bestFor: "Long-Distance & Commercial",
     pros: [
-      "Established since 1890 — one of Seattle's oldest movers",
-      "Allied Van Lines agent — strong for long-distance and interstate moves",
+      "Established since 1890, one of Seattle's oldest movers",
+      "Allied Van Lines agent, strong for long-distance and interstate moves",
       "Three locations: Seattle, Lynnwood, and Newcastle",
       "A+ BBB rating",
       "Full-service commercial and office relocation capabilities",
@@ -307,7 +307,7 @@ const COMPANIES = [
       "Some reviewers report high quotes for standard local jobs",
       "Better suited for large commercial or long-distance moves than small local ones",
     ],
-    description: `Hansen Bros. has been moving Seattle families and businesses since 1890, making them one of the oldest and most established movers in the Pacific Northwest. As an Allied Van Lines agent, they are particularly strong for long-distance and interstate moves. For local moves, their pricing is on the higher end — several Reddit users have noted receiving quotes significantly above market rate for standard local jobs. Where Hansen Bros. shines is in large commercial relocations, office moves, and long-distance moves where their network and infrastructure provide real value.`,
+    description: `Hansen Bros. has been moving Seattle families and businesses since 1890, making them one of the oldest and most established movers in the Pacific Northwest. As an Allied Van Lines agent, they are particularly strong for long-distance and interstate moves. For local moves, their pricing is on the higher end, several Reddit users have noted receiving quotes significantly above market rate for standard local jobs. Where Hansen Bros. shines is in large commercial relocations, office moves, and long-distance moves where their network and infrastructure provide real value.`,
     internalLinks: [],
     schema: {
       "@type": "LocalBusiness",
@@ -348,9 +348,9 @@ const COMPANIES = [
     cons: [
       "Recent Reddit reports (2026) of significant billing overruns vs. estimates",
       "One widely-shared Reddit post described a $915 estimate becoming a $3,700 final bill",
-      "Mixed reviews — quality appears inconsistent across crews",
+      "Mixed reviews, quality appears inconsistent across crews",
     ],
-    description: `Kangaroo Movers advertises competitive rates and a no-hidden-fees policy, and for small studio or 1-bedroom moves they can be cost-effective. However, a Reddit thread in r/Seattle documented a significant billing dispute — a $915 estimate that became a $3,700 final bill — which generated substantial community discussion. As with any mover, get a detailed written estimate that specifies all potential charges before booking, and confirm what triggers additional fees. If you go with Kangaroo, document your inventory thoroughly in writing before the move day.`,
+    description: `Kangaroo Movers advertises competitive rates and a no-hidden-fees policy, and for small studio or 1-bedroom moves they can be cost-effective. However, a Reddit thread in r/Seattle documented a significant billing dispute, a $915 estimate that became a $3,700 final bill, which generated substantial community discussion. As with any mover, get a detailed written estimate that specifies all potential charges before booking, and confirm what triggers additional fees. If you go with Kangaroo, document your inventory thoroughly in writing before the move day.`,
     internalLinks: [],
     schema: {
       "@type": "LocalBusiness",
@@ -376,7 +376,7 @@ const COMPANIES = [
     badge: "Best for Junk Removal + Moving",
     badgeColor: "bg-red-600 text-white",
     url: "https://www.collegehunkshaulingjunk.com",
-    phone: "N/A — book online",
+    phone: "N/A, book online",
     founded: "2003",
     googleRating: 4.6,
     reviewCount: "250+",
@@ -395,7 +395,7 @@ const COMPANIES = [
       "Not the best choice for a straightforward local move without junk removal",
       "Pricing can be less transparent than hourly-only competitors",
     ],
-    description: `College HUNKS is a national franchise that combines moving services with junk hauling — making them uniquely useful if you're downsizing, clearing out an estate, or need to dispose of furniture and appliances before or during your move. Their Seattle-area franchise has solid reviews and uniformed, background-checked crews. For a standard local move without junk removal needs, they are not the most cost-efficient option. But if you're combining a move with a cleanout, the ability to handle both in one booking is a genuine convenience that saves you from coordinating two separate vendors.`,
+    description: `College HUNKS is a national franchise that combines moving services with junk hauling, making them uniquely useful if you're downsizing, clearing out an estate, or need to dispose of furniture and appliances before or during your move. Their Seattle-area franchise has solid reviews and uniformed, background-checked crews. For a standard local move without junk removal needs, they are not the most cost-efficient option. But if you're combining a move with a cleanout, the ability to handle both in one booking is a genuine convenience that saves you from coordinating two separate vendors.`,
     internalLinks: [],
     schema: {
       "@type": "LocalBusiness",
@@ -420,7 +420,7 @@ const COMPANIES = [
     badge: "Best App-Based Experience",
     badgeColor: "bg-indigo-600 text-white",
     url: "https://www.bellhops.com",
-    phone: "N/A — app/online only",
+    phone: "N/A, app/online only",
     founded: "2011",
     googleRating: 4.5,
     reviewCount: "180+",
@@ -431,13 +431,13 @@ const COMPANIES = [
     pros: [
       "Slick app-based booking with upfront pricing",
       "Real-time crew tracking on move day",
-      "Nationwide availability — good for interstate moves",
+      "Nationwide availability, good for interstate moves",
       "Transparent pricing with no surprise charges",
     ],
     cons: [
-      "Gig-economy crew model — workers are independent contractors, not W-2 employees",
+      "Gig-economy crew model, workers are independent contractors, not W-2 employees",
       "Crew consistency varies more than with employee-based companies",
-      "Customer service is app/chat-based — limited phone support",
+      "Customer service is app/chat-based, limited phone support",
       "Less local knowledge than Seattle-native companies",
     ],
     description: `Bellhops is a tech-forward moving platform that offers upfront pricing, real-time crew tracking, and a smooth app-based booking experience. They operate nationwide and serve the Seattle market with competitive rates. The key tradeoff is their crew model: Bellhops uses independent contractors rather than W-2 employees, which means crew quality and experience can vary more than with a company like On The Go Moving that trains and employs its own crews. For tech-savvy renters who prioritize booking convenience and price transparency, Bellhops is worth considering. For moves involving high-value items or complex logistics, an employee-based local company is generally the safer choice.`,
@@ -471,7 +471,7 @@ const PRICE_TABLE = [
 const FAQS = [
   {
     q: "How much do movers cost in Seattle?",
-    a: "Seattle moving costs range from $90–$250/hr depending on the company, crew size, and services. For a 2-bedroom local move, expect to pay $450–$1,100 with most reputable companies. On The Go Moving charges $115–$155/hr for a 2-person crew — below the Seattle market average of ~$182/hr.",
+    a: "Seattle moving costs range from $90–$250/hr depending on the company, crew size, and services. For a 2-bedroom local move, expect to pay $450–$1,100 with most reputable companies. On The Go Moving charges $115–$155/hr for a 2-person crew, below the Seattle market average of ~$182/hr.",
   },
   {
     q: "What is the cheapest time to move in Seattle?",
@@ -479,11 +479,11 @@ const FAQS = [
   },
   {
     q: "How do I avoid moving scams in Seattle?",
-    a: "Always verify a mover's Washington State Utilities and Transportation Commission (UTC) license before booking. Get a written estimate that itemizes all potential charges. Be wary of unusually low quotes — some companies use low estimates to secure bookings, then inflate the final bill. On The Go Moving is UTC-licensed and provides transparent hourly pricing with no hidden fees.",
+    a: "Always verify a mover's Washington State Utilities and Transportation Commission (UTC) license before booking. Get a written estimate that itemizes all potential charges. Be wary of unusually low quotes, some companies use low estimates to secure bookings, then inflate the final bill. On The Go Moving is UTC-licensed and provides transparent hourly pricing with no hidden fees.",
   },
   {
     q: "Do Seattle movers charge for stairs or elevators?",
-    a: "Many Seattle movers add stair fees ($50–$150 per flight) or elevator fees. On The Go Moving does not charge stair or elevator fees — their hourly rate covers all standard move conditions. Always ask about these fees before booking any mover.",
+    a: "Many Seattle movers add stair fees ($50–$150 per flight) or elevator fees. On The Go Moving does not charge stair or elevator fees, their hourly rate covers all standard move conditions. Always ask about these fees before booking any mover.",
   },
   {
     q: "How far in advance should I book movers in Seattle?",
@@ -496,7 +496,7 @@ const FAQS = [
 ];
 
 export default function BestMovingCompaniesSeattle() {
-  const pageTitle = "10 Best Moving Companies in Seattle, WA (2026) — Honest Comparison";
+  const pageTitle = "10 Best Moving Companies in Seattle, WA (2026), Honest Comparison";
   const pageDesc =
     "Compare the best moving companies in Seattle with real pricing, ratings, and honest pros & cons. Updated for 2026. On The Go Moving rated #1 for value and reliability.";
 
@@ -558,7 +558,7 @@ export default function BestMovingCompaniesSeattle() {
             10 Best Moving Companies in Seattle, WA (2026)
           </h1>
           <p className="text-lg text-gray-600 leading-relaxed">
-            We researched and ranked the top Seattle moving companies based on real Google and Yelp ratings, transparent pricing, licensing, and what actual customers say on Reddit and review sites. Whether you're moving a studio apartment in Capitol Hill or a 4-bedroom home in Magnolia, this guide gives you the honest comparison you need to make the right call — and avoid the movers that have burned Seattle residents with surprise bills.
+            We researched and ranked the top Seattle moving companies based on real Google and Yelp ratings, transparent pricing, licensing, and what actual customers say on Reddit and review sites. Whether you're moving a studio apartment in Capitol Hill or a 4-bedroom home in Magnolia, this guide gives you the honest comparison you need to make the right call, and avoid the movers that have burned Seattle residents with surprise bills.
           </p>
           <div className="mt-6 p-4 bg-[#1e3a0f] text-white rounded-xl flex flex-col sm:flex-row gap-4 items-start sm:items-center">
             <div className="flex-1">
@@ -628,7 +628,7 @@ export default function BestMovingCompaniesSeattle() {
             How Much Do Movers Cost in Seattle? (2026 Pricing Guide)
           </h2>
           <p className="text-gray-600 mb-4 text-sm leading-relaxed">
-            Seattle's average moving rate is approximately <strong>$182/hr</strong> for a standard 2-person crew — about 30% above the national average of $139/hr. This reflects the city's higher labor costs, traffic complexity, and the prevalence of apartment buildings with elevator and parking restrictions. Below are realistic cost ranges for common move sizes, comparing On The Go Moving's rates against the broader Seattle market.
+            Seattle's average moving rate is approximately <strong>$182/hr</strong> for a standard 2-person crew, about 30% above the national average of $139/hr. This reflects the city's higher labor costs, traffic complexity, and the prevalence of apartment buildings with elevator and parking restrictions. Below are realistic cost ranges for common move sizes, comparing On The Go Moving's rates against the broader Seattle market.
           </p>
           <div className="overflow-x-auto rounded-lg border border-gray-200">
             <table className="w-full text-sm">
@@ -811,7 +811,7 @@ export default function BestMovingCompaniesSeattle() {
                       href="tel:4257618500"
                       className="flex-1 text-center bg-[#f5c518] text-[#1e3a0f] font-bold py-3 rounded-lg hover:bg-yellow-400 transition-colors text-sm"
                     >
-                      Call (425) 761-8500 — Free Quote
+                      Call (425) 761-8500, Free Quote
                     </a>
                     <Link
                       href="/contact-us/"
@@ -835,7 +835,7 @@ export default function BestMovingCompaniesSeattle() {
             We evaluated each company across five criteria: <strong>pricing transparency</strong> (hourly vs. volume-based, hidden fees), <strong>verified ratings</strong> (Google, Yelp, Angi), <strong>licensing</strong> (Washington State UTC registration), <strong>insurance coverage</strong>, and <strong>real customer feedback</strong> from Reddit, community forums, and review aggregators. We did not accept payment or incentives from any company listed here.
           </p>
           <p className="text-gray-700 text-sm leading-relaxed">
-            On The Go Moving ranked #1 because they combine the most transparent pricing structure in the Seattle market (true hourly billing with no add-on fees), the highest verified review volume among local independent movers (1,562+ Google reviews), and the broadest service coverage across Seattle and all Eastside suburbs. Their crews are W-2 employees — not subcontractors — which directly correlates with the consistency of their reviews.
+            On The Go Moving ranked #1 because they combine the most transparent pricing structure in the Seattle market (true hourly billing with no add-on fees), the highest verified review volume among local independent movers (1,562+ Google reviews), and the broadest service coverage across Seattle and all Eastside suburbs. Their crews are W-2 employees, not subcontractors, which directly correlates with the consistency of their reviews.
           </p>
         </section>
 
@@ -859,7 +859,7 @@ export default function BestMovingCompaniesSeattle() {
               {
                 icon: <Info size={20} className="text-[#75aa11]" />,
                 title: "What's Included in the Rate",
-                body: "Ask specifically: Does the rate include the truck? Fuel? Moving blankets? Stair fees? Elevator fees? Long-carry fees? On The Go Moving includes truck, fuel, and blankets — no add-ons for standard conditions.",
+                body: "Ask specifically: Does the rate include the truck? Fuel? Moving blankets? Stair fees? Elevator fees? Long-carry fees? On The Go Moving includes truck, fuel, and blankets, no add-ons for standard conditions.",
               },
               {
                 icon: <Star size={20} className="text-[#75aa11]" />,
@@ -902,7 +902,7 @@ export default function BestMovingCompaniesSeattle() {
         {/* Internal links hub */}
         <section className="mb-12 p-6 bg-[#1e3a0f] text-white rounded-xl">
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-            On The Go Moving — Seattle Service Pages
+            On The Go Moving, Seattle Service Pages
           </h2>
           <p className="text-gray-300 text-sm mb-4">
             On The Go Moving serves all Seattle neighborhoods and surrounding cities. Explore our service-specific pages for detailed information, pricing, and neighborhood coverage.
@@ -948,7 +948,7 @@ export default function BestMovingCompaniesSeattle() {
             Ready to Book Seattle's #1 Rated Mover?
           </h2>
           <p className="text-gray-600 text-sm mb-5">
-            On The Go Moving — 4.8 stars, 1,562+ Google reviews, transparent hourly pricing, and secure vault storage available.
+            On The Go Moving, 4.8 stars, 1,562+ Google reviews, transparent hourly pricing, and secure vault storage available.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a

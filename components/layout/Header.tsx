@@ -393,7 +393,7 @@ export default function Header() {
                 18-mile radius from Redmond, WA
               </p>
               <p className="text-white/70 text-xs leading-relaxed">
-                Our crews are based in the communities we serve — giving you local knowledge and genuine care on every move.
+                Our crews are based in the communities we serve, giving you local knowledge and genuine care on every move.
               </p>
               <ul className="space-y-1.5 mt-1">
                 {["Greater Seattle", "Eastside Cities", "South King County", "Snohomish County"].map(area => (
@@ -503,7 +503,7 @@ export default function Header() {
 
   return (
     <>
-      {/* Backdrop overlay — dims page behind open mega panel, closes on click */}
+      {/* Backdrop overlay, dims page behind open mega panel, closes on click */}
       {activePanel && (
         <div
           className="fixed inset-0 bg-black/40 z-40 animate-in fade-in duration-150"
@@ -524,11 +524,11 @@ export default function Header() {
           scrolled ? "bg-white shadow-md" : "bg-white/95 backdrop-blur-sm"
         }`}
       >
-        {/* Top bar — hidden on mobile, visible sm+ */}
+        {/* Top bar, hidden on mobile, visible sm+ */}
         <div style={{ backgroundColor: "#1e3a0f" }} className="hidden sm:block py-1.5 px-4">
           <div className="container flex items-center justify-between">
             <p className="text-white/80 text-xs hidden sm:block">
-              Seattle's Most Trusted Movers — Licensed &amp; Insured | HG-064180 | USDOT# 2120054
+              Seattle's Most Trusted Movers, Licensed &amp; Insured | HG-064180 | USDOT# 2120054
             </p>
             <a
               href={COMPANY.phoneHref}

@@ -51,7 +51,7 @@ const AVOID_THESE = [
   "Booking the last Saturday of the month and expecting a 'quick' move",
   "Planning to pack, dispose, and move everything in one day for a large home",
   "Scheduling other major projects on moving day (contractors, deliveries, etc.)",
-  "Assuming friends or family will help carry loads — and then they can't make it",
+  "Assuming friends or family will help carry loads, and then they can't make it",
 ];
 
 const COST_FACTORS_UP = [
@@ -82,7 +82,7 @@ const FAQS = [
   },
   {
     q: "Can you hook up my washer, dryer, or mount my TV?",
-    a: "We're happy to disconnect and move appliances and TVs. For liability reasons, we generally do not handle complex hookups or wall-mounting. We'll make sure everything arrives safely — and you can decide how you want it installed.",
+    a: "We're happy to disconnect and move appliances and TVs. For liability reasons, we generally do not handle complex hookups or wall-mounting. We'll make sure everything arrives safely, and you can decide how you want it installed.",
   },
   {
     q: "Do you offer storage?",
@@ -90,7 +90,7 @@ const FAQS = [
   },
   {
     q: "Is labor-only available?",
-    a: "We occasionally offer labor-only for unloading trucks, pods, or pack days. When our calendar is full, full-service moves with a truck get priority — so labor-only is always 'call for availability.'",
+    a: "We occasionally offer labor-only for unloading trucks, pods, or pack days. When our calendar is full, full-service moves with a truck get priority, so labor-only is always 'call for availability.'",
   },
   {
     q: "When is the cheapest time to move?",
@@ -138,7 +138,7 @@ export default function MovingCostBreakdown() {
                 <span style={{ color: "#75aa11" }}>Move Cost?</span>
               </h1>
               <p className="text-green-100 text-lg leading-relaxed max-w-2xl mx-auto">
-                Typical ranges by home size. Every move is a little different — but most local moves fall into the ranges below. Your actual price depends on crew size, access (stairs/elevators), prep, and move date.
+                Typical ranges by home size. Every move is a little different, but most local moves fall into the ranges below. Your actual price depends on crew size, access (stairs/elevators), prep, and move date.
               </p>
             </div>
           </div>
@@ -251,7 +251,7 @@ export default function MovingCostBreakdown() {
               Get Your Exact Moving Cost in 60 Seconds
             </h2>
             <p className="text-white/70 mb-7 max-w-xl mx-auto">
-              No obligation. We respond within 1 hour with a flat-rate quote — no hidden fees, no surprises on move day.
+              No obligation. We respond within 1 hour with a flat-rate quote, no hidden fees, no surprises on move day.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/contact-us/" className="btn-gold text-base px-8 py-3 inline-flex items-center gap-2">

@@ -56,7 +56,7 @@ const BENEFITS = [
     icon: Users,
     color: "bg-blue-100 text-blue-600",
     title: "Dedicated Account Manager",
-    desc: "You get a single point of contact at On The Go Moving. No hold times, no runaround — just fast answers.",
+    desc: "You get a single point of contact at On The Go Moving. No hold times, no runaround, just fast answers.",
   },
   {
     icon: Shield,
@@ -74,7 +74,7 @@ const BENEFITS = [
     icon: Calendar,
     color: "bg-rose-100 text-rose-600",
     title: "Priority Scheduling",
-    desc: "Referred clients get priority booking access — especially important during the busy spring and summer moving season.",
+    desc: "Referred clients get priority booking access, especially important during the busy spring and summer moving season.",
   },
 ];
 
@@ -120,7 +120,7 @@ export default function RealEstateAgents() {
               Partner With Seattle's Most Trusted Movers
             </h1>
             <p className="text-green-100 text-lg lg:text-xl mb-8 max-w-2xl">
-              Offer your clients a seamless moving experience — and earn referral fees — when you partner with On The Go Moving & Storage. Serving the Greater Seattle area since 2009.
+              Offer your clients a seamless moving experience, and earn referral fees, when you partner with On The Go Moving & Storage. Serving the Greater Seattle area since 2009.
             </p>
             <div className="flex flex-wrap items-center gap-3 mb-8 bg-white/10 rounded-xl px-4 py-3 w-fit">
               <div className="flex items-center gap-1">
@@ -195,7 +195,7 @@ export default function RealEstateAgents() {
                   ["1", "Sign Up", "Contact us to set up your referral account. Takes less than 5 minutes. You'll get a dedicated account manager and your unique referral code."],
                   ["2", "Refer Your Clients", "When a client needs moving services, refer them to us by phone, email, or your unique referral link. We take it from there."],
                   ["3", "We Deliver 5-Star Service", "Our crews provide the same white-glove service to your referred clients that has earned us 1,562+ 5-star reviews."],
-                  ["4", "You Earn a Referral Fee", "After each completed move, we process your referral fee promptly. No complicated tracking — we handle everything."],
+                  ["4", "You Earn a Referral Fee", "After each completed move, we process your referral fee promptly. No complicated tracking, we handle everything."],
                 ].map(([num, title, desc]) => (
                   <div key={num} className="flex gap-5">
                     <div className="w-10 h-10 rounded-full bg-brand-forest text-white flex items-center justify-center font-bold text-lg flex-shrink-0">
@@ -249,8 +249,8 @@ export default function RealEstateAgents() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              ["Full-Service Moving", "Packing, loading, transport, and unloading — all handled by our professional crews."],
-              ["Secure Vault Storage", "Climate-controlled vault storage at our Redmond facility — available for your clients during transitions."],
+              ["Full-Service Moving", "Packing, loading, transport, and unloading, all handled by our professional crews."],
+              ["Secure Vault Storage", "Climate-controlled vault storage at our Redmond facility, available for your clients during transitions."],
               ["Flat-Rate Pricing", "No hourly surprises. Your clients know their final cost before we start."],
               ["Licensed & Insured", "Full coverage on every move. Your clients' belongings are protected."],
             ].map(([title, desc], i) => (

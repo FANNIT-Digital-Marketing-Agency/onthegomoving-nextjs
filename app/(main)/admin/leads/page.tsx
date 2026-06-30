@@ -3,7 +3,7 @@ import LeadsDashboard from "@/components/pages/LeadsDashboard";
 
 export const metadata: Metadata = {
   title: "Leads Dashboard | On The Go Moving Admin",
-  description: "Internal admin dashboard — form submissions by source page.",
+  description: "Internal admin dashboard, form submissions by source page.",
   robots: { index: false, follow: false },
 };
 

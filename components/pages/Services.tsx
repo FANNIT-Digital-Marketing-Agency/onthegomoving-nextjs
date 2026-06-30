@@ -36,7 +36,7 @@ const ALL_SERVICES = [
     icon: Building2,
     popular: true,
     description:
-      "Minimize downtime with efficient office and commercial relocation. We work around your schedule — evenings and weekends available.",
+      "Minimize downtime with efficient office and commercial relocation. We work around your schedule, evenings and weekends available.",
     image: BRAND_IMAGES.commercialFleet,
     cta: "Get a Commercial Quote",
   },
@@ -46,7 +46,7 @@ const ALL_SERVICES = [
     icon: Archive,
     popular: true,
     description:
-      "Secure vaulted storage at our Redmond, WA facility. Dedicated vaults managed by our team — not a self-serve unit. Contact us for current pricing.",
+      "Secure vaulted storage at our Redmond, WA facility. Dedicated vaults managed by our team, not a self-serve unit. Contact us for current pricing.",
     image: BRAND_IMAGES.storageForklift,
     cta: "Learn About Storage",
   },
@@ -56,7 +56,7 @@ const ALL_SERVICES = [
     icon: HomeIcon,
     popular: false,
     description:
-      "Studio to multi-bedroom apartment moves. We know Seattle and Eastside buildings — elevator reservations, COI requirements, and tight hallways are no problem.",
+      "Studio to multi-bedroom apartment moves. We know Seattle and Eastside buildings, elevator reservations, COI requirements, and tight hallways are no problem.",
     image: BRAND_IMAGES.crewEntryway1,
     cta: "Get an Apartment Quote",
   },
@@ -66,7 +66,7 @@ const ALL_SERVICES = [
     icon: Users,
     popular: false,
     description:
-      "Patient, careful service for seniors and families. We take the time to do it right — downsizing, assisted living transitions, and estate moves handled with respect.",
+      "Patient, careful service for seniors and families. We take the time to do it right, downsizing, assisted living transitions, and estate moves handled with respect.",
     image: BRAND_IMAGES.customerHandshake,
     cta: "Learn About Senior Moves",
   },
@@ -86,7 +86,7 @@ const ALL_SERVICES = [
     icon: Package,
     popular: false,
     description:
-      "Professional packing using quality materials — all supplies included. Full-pack, partial-pack, or fragile-only options available.",
+      "Professional packing using quality materials, all supplies included. Full-pack, partial-pack, or fragile-only options available.",
     image: BRAND_IMAGES.packingCrew,
     cta: "Learn About Packing",
   },
@@ -96,7 +96,7 @@ const ALL_SERVICES = [
     icon: Dumbbell,
     popular: false,
     description:
-      "Need professional loading or unloading help? Our crews bring the same care and equipment as a full-service move — ask us about upgrading to a full-service truck for a small hourly increase.",
+      "Need professional loading or unloading help? Our crews bring the same care and equipment as a full-service move, ask us about upgrading to a full-service truck for a small hourly increase.",
     image: BRAND_IMAGES.laborOnlyCrew,
     cta: "Learn About Labor Only",
   },
@@ -185,7 +185,7 @@ const ALL_SERVICES = [
 const SCHEMA = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "On The Go Moving & Storage — Moving Services",
+  name: "On The Go Moving & Storage, Moving Services",
   description: "All moving and storage services offered by On The Go Moving & Storage in Greater Seattle, WA",
   numberOfItems: ALL_SERVICES.length,
   itemListElement: ALL_SERVICES.map((svc, i) => ({
@@ -224,7 +224,7 @@ export default function Services() {
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
 
-      {/* Hero — pt accounts for fixed header (~96px: 32px top bar + 64px nav) */}
+      {/* Hero, pt accounts for fixed header (~96px: 32px top bar + 64px nav) */}
       <section className="pt-28 pb-16 lg:pt-32 lg:pb-20" style={{ backgroundColor: "#1e3a0f" }}>
         <div className="container text-center">
           <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-green-300 text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5">
@@ -324,7 +324,7 @@ export default function Services() {
               { stat: "25,000+", label: "Successful Moves", desc: "Residential, commercial, and specialty moves completed across Greater Seattle." },
               { stat: "4.8★", label: "Google Rating", desc: "1,562 verified reviews from real customers in Seattle, Bellevue, Redmond, and beyond." },
               { stat: "15+ yrs", label: "In Business", desc: "Locally owned and operated since 2009. We're part of the community we serve." },
-              { stat: "Secure", label: "Vault Storage", desc: "Private climate-controlled vault storage at our Redmond facility — managed by our team." },
+              { stat: "Secure", label: "Vault Storage", desc: "Private climate-controlled vault storage at our Redmond facility, managed by our team." },
             ].map((item, i) => (
               <div key={i} className="bg-gray-50 rounded-2xl p-6 text-center border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
                 <p className="font-display text-3xl font-black text-brand-green mb-1">{item.stat}</p>

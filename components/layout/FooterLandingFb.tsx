@@ -24,7 +24,7 @@ export default function FooterLandingFb() {
             </p>
           </div>
 
-          {/* Contact info — email and address only, no phone */}
+          {/* Contact info, email and address only, no phone */}
           <div className="flex flex-col gap-3 text-sm text-gray-300 items-center sm:items-end">
             <a href={`mailto:${COMPANY.email}`} className="flex items-center gap-2 hover:text-[#75aa11] transition-colors font-semibold text-white text-base">
               <Mail size={16} />

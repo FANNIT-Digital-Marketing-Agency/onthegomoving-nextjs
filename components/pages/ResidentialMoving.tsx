@@ -20,15 +20,15 @@ import {
 const FAQS = [
   {
     question: "How much does residential moving cost in Seattle?",
-    answer: "Most residential moves in the Greater Seattle area cost $100–$175 per hour for a 2-person crew with a truck. A typical 1-bedroom apartment move runs $350–$600, a 2-bedroom home runs $600–$1,200, and a 3-bedroom home runs $1,000–$2,000. On The Go Moving provides flat-rate quotes so you know the exact price before your move date — no surprise charges.",
+    answer: "Most residential moves in the Greater Seattle area cost $100–$175 per hour for a 2-person crew with a truck. A typical 1-bedroom apartment move runs $350–$600, a 2-bedroom home runs $600–$1,200, and a 3-bedroom home runs $1,000–$2,000. On The Go Moving provides flat-rate quotes so you know the exact price before your move date, no surprise charges.",
   },
   {
     question: "How far in advance should I book residential movers in Seattle?",
-    answer: "We recommend booking 2–4 weeks in advance for most moves. Summer months (June–August) and end-of-month dates book out fastest — for those, 4–6 weeks is ideal. That said, we accommodate last-minute moves when availability allows. Call us and we'll let you know what's open.",
+    answer: "We recommend booking 2–4 weeks in advance for most moves. Summer months (June–August) and end-of-month dates book out fastest, for those, 4–6 weeks is ideal. That said, we accommodate last-minute moves when availability allows. Call us and we'll let you know what's open.",
   },
   {
     question: "Do you move apartments with stairs or no elevator?",
-    answer: "Yes — stairs and no-elevator buildings are a routine part of our work across Seattle and the Eastside. Our crews are trained and equipped for multi-story apartment moves. We factor stair access into your quote upfront so there are no surprises on move day.",
+    answer: "Yes, stairs and no-elevator buildings are a routine part of our work across Seattle and the Eastside. Our crews are trained and equipped for multi-story apartment moves. We factor stair access into your quote upfront so there are no surprises on move day.",
   },
   {
     question: "What is included in a full-service residential move?",
@@ -77,7 +77,7 @@ const MOVE_TYPES = [
   {
     icon: Package,
     label: "Full-Pack Moves",
-    desc: "We pack everything — boxes, furniture, fragile items — so you don't have to.",
+    desc: "We pack everything, boxes, furniture, fragile items, so you don't have to.",
     color: "border-purple-400 bg-purple-50",
     iconColor: "text-purple-500",
   },
@@ -87,7 +87,7 @@ const PROCESS_STEPS = [
   {
     icon: Phone,
     step: "Get a Free Quote",
-    desc: "Call or fill out our form. Flat-rate quote within 1 hour — no vague estimates.",
+    desc: "Call or fill out our form. Flat-rate quote within 1 hour, no vague estimates.",
   },
   {
     icon: Clock,
@@ -151,7 +151,7 @@ const INCLUDED = [
   "Furniture placement in your new home",
   "Secure climate-controlled storage",
   "Dedicated move coordinator",
-  "Flat-rate pricing — the quote is the price",
+  "Flat-rate pricing, the quote is the price",
   "Floor runners & door frame protection",
 ];
 
@@ -268,7 +268,7 @@ export default function ResidentialMoving() {
               <p className="text-green-100 text-lg leading-relaxed mb-6 max-w-lg">
                 On The Go Moving & Storage provides professional residential moving services for homes, apartments, and condos across Seattle, Bellevue, Redmond, Kirkland, and the Greater Seattle Eastside. Flat-rate pricing and secure vault storage available.
               </p>
-              {/* Trust strip — single line, plain text style */}
+              {/* Trust strip, single line, plain text style */}
               <div className="flex items-center gap-1.5 mb-6 text-xs sm:text-sm text-white/80 flex-wrap">
                 <div className="flex items-center gap-1">
                   {[1,2,3,4,5].map(i => <Star key={i} size={12} fill="#fbc319" color="#fbc319" />)}
@@ -310,10 +310,10 @@ export default function ResidentialMoving() {
         <div className="container">
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-3">
             {[
-              { icon: Star, text: "4.8 Stars on Google — 1,562 Reviews", color: "text-amber-500" },
+              { icon: Star, text: "4.8 Stars on Google, 1,562 Reviews", color: "text-amber-500" },
               { icon: Shield, text: "WA Licensed HG-064180 · USDOT# 2120054", color: "text-brand-green" },
               { icon: Clock, text: "Serving Greater Seattle Since 2009", color: "text-brand-green" },
-              { icon: DollarSign, text: "Flat-Rate Pricing — No Hidden Fees", color: "text-brand-green" },
+              { icon: DollarSign, text: "Flat-Rate Pricing, No Hidden Fees", color: "text-brand-green" },
               { icon: Award, text: "Background-Checked Crews", color: "text-brand-green" },
             ].map(({ icon: Icon, text, color }) => (
               <div key={text} className="flex items-center gap-2">
@@ -325,7 +325,7 @@ export default function ResidentialMoving() {
         </div>
       </section>
 
-      {/* ── WHAT IS IT — Direct Answer Block (AEO target) ── */}
+      {/* ── WHAT IS IT, Direct Answer Block (AEO target) ── */}
       <section className="py-16 bg-white">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -338,7 +338,7 @@ export default function ResidentialMoving() {
                 What Is a Residential Moving Service?
               </h2>
               <p className="text-gray-700 text-lg leading-relaxed mb-5">
-                A residential moving service is a professional crew that transports your household belongings — furniture, boxes, appliances, and specialty items — from your current home to your new one. The service includes a moving truck, all equipment (dollies, furniture pads, straps), and trained movers who load, transport, and unload your belongings safely.
+                A residential moving service is a professional crew that transports your household belongings, furniture, boxes, appliances, and specialty items, from your current home to your new one. The service includes a moving truck, all equipment (dollies, furniture pads, straps), and trained movers who load, transport, and unload your belongings safely.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 On The Go Moving & Storage provides full-service residential moves across the Greater Seattle Eastside. Every move includes a dedicated crew, a clean moving truck, all necessary equipment, and access to secure climate-controlled storage at our Redmond, WA facility.
@@ -453,7 +453,7 @@ export default function ResidentialMoving() {
               How a Residential Move Works
             </h2>
             <p className="text-gray-500 mt-3 max-w-xl mx-auto text-sm">
-              From first call to final placement — here's exactly what to expect.
+              From first call to final placement, here's exactly what to expect.
             </p>
           </div>
           <div className="relative">
@@ -520,7 +520,7 @@ export default function ResidentialMoving() {
           <div className="text-center mt-6">
             <a href="/how-much-do-movers-cost/">
               <span className="inline-flex items-center gap-2 text-brand-green font-semibold text-sm hover:underline cursor-pointer">
-                See the full pricing guide — How Much Do Movers Cost? <ArrowRight size={14} />
+                See the full pricing guide, How Much Do Movers Cost? <ArrowRight size={14} />
               </span>
             </a>
           </div>

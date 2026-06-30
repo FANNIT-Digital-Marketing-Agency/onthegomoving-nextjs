@@ -32,7 +32,7 @@ const BENEFITS = [
     icon: Star,
     color: "bg-amber-50 text-amber-600",
     title: "4.8★ Reputation You Can Stand Behind",
-    desc: "With 1,562 five-star Google reviews, your clients will thank you for the referral — not question it.",
+    desc: "With 1,562 five-star Google reviews, your clients will thank you for the referral, not question it.",
   },
   {
     icon: Shield,
@@ -44,13 +44,13 @@ const BENEFITS = [
     icon: Users,
     color: "bg-green-50 text-green-700",
     title: "Dedicated Partner Support",
-    desc: "A direct line to our team — no hold queues, no runaround. Your clients get priority scheduling.",
+    desc: "A direct line to our team, no hold queues, no runaround. Your clients get priority scheduling.",
   },
   {
     icon: Award,
     color: "bg-purple-50 text-purple-600",
     title: "1 Free Month of Storage",
-    desc: "We offer secure climate-controlled vault storage at our Redmond facility — a convenient option for your clients during transitions.",
+    desc: "We offer secure climate-controlled vault storage at our Redmond facility, a convenient option for your clients during transitions.",
   },
 ];
 
@@ -63,7 +63,7 @@ const STEPS = [
   {
     num: "02",
     title: "Refer Your Clients",
-    desc: "Send your clients our way — by phone, email, or our online quote form. We'll take it from there and keep you in the loop.",
+    desc: "Send your clients our way, by phone, email, or our online quote form. We'll take it from there and keep you in the loop.",
   },
   {
     num: "03",
@@ -90,9 +90,9 @@ const PARTNER_QUOTES = [
 ];
 
 const REAL_ESTATE_BENEFITS = [
-  "Direct coordination with your clients — you stay focused on closing",
+  "Direct coordination with your clients, you stay focused on closing",
   "Priority scheduling for your referrals",
-  "Flat-rate pricing your clients can trust — no surprise invoices",
+  "Flat-rate pricing your clients can trust, no surprise invoices",
   "Secure climate-controlled storage available",
   "10+ years of referral relationships with Eastside agents",
   "Licensed, insured, and background-checked crews",
@@ -104,7 +104,7 @@ const STAGING_BENEFITS = [
   "Flexible scheduling to fit your project calendar",
   "Experienced crews trained in furniture protection",
   "Competitive rates for repeat staging partners",
-  "Direct contact with our team — no hold queues",
+  "Direct contact with our team, no hold queues",
 ];
 
 export default function Partners() {
@@ -147,7 +147,7 @@ export default function Partners() {
                 <span style={{ color: "#fbc319" }}>We'll Make You Look Good.</span>
               </h1>
               <p className="text-green-100 text-lg leading-relaxed mb-8 max-w-lg">
-                Real estate agents and staging professionals across the Eastside have trusted On The Go Moving & Storage for over 15 years. Your reputation is on the line every time you make a referral — we take that seriously.
+                Real estate agents and staging professionals across the Eastside have trusted On The Go Moving & Storage for over 15 years. Your reputation is on the line every time you make a referral, we take that seriously.
               </p>
 
               {/* Trust strip */}
@@ -249,7 +249,7 @@ export default function Partners() {
               Built for Professional Referrals
             </h2>
             <p className="text-gray-500 mt-3 max-w-xl mx-auto">
-              Every benefit below is standard — no tiers, no upsells. When you refer us, your clients get the full On The Go experience.
+              Every benefit below is standard, no tiers, no upsells. When you refer us, your clients get the full On The Go experience.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -349,7 +349,7 @@ export default function Partners() {
                 Help Your Clients Move with Confidence
               </h3>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Help your buyers and sellers transition smoothly. We coordinate directly with your clients so you can stay focused on closing deals. Many Eastside agents have referred us for 10+ years — and they keep coming back because we make them look good.
+                Help your buyers and sellers transition smoothly. We coordinate directly with your clients so you can stay focused on closing deals. Many Eastside agents have referred us for 10+ years, and they keep coming back because we make them look good.
               </p>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
                 {REAL_ESTATE_BENEFITS.map((item) => (
@@ -382,7 +382,7 @@ export default function Partners() {
                 Fast, Careful Moves for Staging &amp; De-Staging
               </h3>
               <p className="text-gray-600 leading-relaxed mb-6">
-                We understand staging timelines and the fragility of staged inventory. Our crews are trained to handle furniture with care, work quickly, and communicate proactively — so your projects stay on schedule.
+                We understand staging timelines and the fragility of staged inventory. Our crews are trained to handle furniture with care, work quickly, and communicate proactively, so your projects stay on schedule.
               </p>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
                 {STAGING_BENEFITS.map((item) => (

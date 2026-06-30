@@ -59,21 +59,21 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
     label: "Residential Moving",
     hubSlug: "/residential-moving/",
     tagline: (city) => `Residential Movers in ${city}`,
-    subtitle: (city) => `Local home moving services in ${city}, WA — flat-rate pricing, professional crews, secure vault storage.`,
+    subtitle: (city) => `Local home moving services in ${city}, WA, flat-rate pricing, professional crews, secure vault storage.`,
     intro: (city, cityData) =>
-      `Every neighborhood in ${city} has its own quirks — narrow driveways, permit-only parking zones, steep hills, and HOA move-in windows that close fast. Our residential crews have been navigating ${city} since 2009 and know what each area demands before the truck leaves the yard. Flat-rate pricing means the number we quote is the number you pay — no hourly clock running while we figure things out on your driveway.`,
+      `Every neighborhood in ${city} has its own quirks, narrow driveways, permit-only parking zones, steep hills, and HOA move-in windows that close fast. Our residential crews have been navigating ${city} since 2009 and know what each area demands before the truck leaves the yard. Flat-rate pricing means the number we quote is the number you pay, no hourly clock running while we figure things out on your driveway.`,
     pricing: (city) =>
       `Studio: $320–$520 · 1-Bed: $480–$780 · 2-Bed: $750–$1,300 · 3-Bed: $1,200–$2,000`,
     steps: (city) => [
-      `Free quote — we assess your ${city} home and provide a flat-rate price`,
+      `Free quote, we assess your ${city} home and provide a flat-rate price`,
       "Move day: crew arrives on time with all equipment and packing materials",
       "Every item is wrapped, padded, and loaded with care",
-      `Safe transport to your new home — we know ${city}'s streets and access points`,
-      "Careful unloading and placement — furniture goes exactly where you want it",
+      `Safe transport to your new home, we know ${city}'s streets and access points`,
+      "Careful unloading and placement, furniture goes exactly where you want it",
       "Final walkthrough to confirm everything is in order",
     ],
     benefits: [
-      "Flat-rate pricing — no hourly clock surprises",
+      "Flat-rate pricing, no hourly clock surprises",
       "Full packing and unpacking available",
       "Secure climate-controlled vault storage",
       "Floor runners, door jamb protectors, and furniture pads on every job",
@@ -81,9 +81,9 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
       "Licensed HG-064180 | USDOT# 2120054 | Fully insured",
     ],
     faqs: (city) => [
-      { q: `How much does a residential move cost in ${city}?`, a: `Most ${city} residential moves cost $480–$780 for a 1-bedroom home and $750–$1,300 for a 2-bedroom home. We provide flat-rate quotes so you know the final price before we start — no hourly surprises.` },
-      { q: `How far in advance should I book ${city} residential movers?`, a: `We recommend booking 2–4 weeks in advance, especially for summer moves (May–September) and end-of-month dates. We accommodate last-minute moves regularly — call us to check availability.` },
-      { q: `Do you offer packing services for ${city} home moves?`, a: `Yes. We offer full packing, partial packing, and unpacking services. Our packers bring all materials — boxes, tape, bubble wrap, and specialty containers for fragile items.` },
+      { q: `How much does a residential move cost in ${city}?`, a: `Most ${city} residential moves cost $480–$780 for a 1-bedroom home and $750–$1,300 for a 2-bedroom home. We provide flat-rate quotes so you know the final price before we start, no hourly surprises.` },
+      { q: `How far in advance should I book ${city} residential movers?`, a: `We recommend booking 2–4 weeks in advance, especially for summer moves (May–September) and end-of-month dates. We accommodate last-minute moves regularly, call us to check availability.` },
+      { q: `Do you offer packing services for ${city} home moves?`, a: `Yes. We offer full packing, partial packing, and unpacking services. Our packers bring all materials, boxes, tape, bubble wrap, and specialty containers for fragile items.` },
       { q: `Are you licensed and insured to move in ${city}?`, a: `Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move.` },
     ],
     heroImage: BRAND_IMAGES.threeCrewLoadingTruck,
@@ -95,9 +95,9 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
     label: "Apartment Moving",
     hubSlug: "/apartment-moving/",
     tagline: (city) => `Apartment Movers in ${city}`,
-    subtitle: (city) => `Apartment moving specialists in ${city}, WA — elevator coordination, HOA certificates, flat-rate pricing.`,
+    subtitle: (city) => `Apartment moving specialists in ${city}, WA, elevator coordination, HOA certificates, flat-rate pricing.`,
     intro: (city, cityData) =>
-      `${city} apartment buildings each have their own rules — some require 2-week elevator notice, others need a COI naming the building as additional insured, and a few restrict move times to weekday mornings only. We call ahead, get the details, and handle every requirement before your move day so none of it lands on you. When our crew shows up, the elevator is already reserved and the paperwork is already filed.`,
+      `${city} apartment buildings each have their own rules, some require 2-week elevator notice, others need a COI naming the building as additional insured, and a few restrict move times to weekday mornings only. We call ahead, get the details, and handle every requirement before your move day so none of it lands on you. When our crew shows up, the elevator is already reserved and the paperwork is already filed.`,
     pricing: (city) =>
       `Studio: $320–$520 · 1-Bed: $480–$780 · 2-Bed: $700–$1,200`,
     steps: (city) => [
@@ -110,9 +110,9 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
     ],
     benefits: [
       "Elevator reservation coordination with building management",
-      "Certificate of insurance for HOA requirements — no extra charge",
+      "Certificate of insurance for HOA requirements, no extra charge",
       "Furniture protection for tight hallways and elevators",
-      "Flat-rate pricing — no hourly surprises",
+      "Flat-rate pricing, no hourly surprises",
       "Available 7 days a week including weekends",
       "Licensed HG-064180 | USDOT# 2120054 | Fully insured",
     ],
@@ -131,9 +131,9 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
     label: "Packing Services",
     hubSlug: "/packing-services/",
     tagline: (city) => `Packing Services in ${city}`,
-    subtitle: (city) => `Professional packing in ${city}, WA — all materials included, full-pack or fragile-only options.`,
+    subtitle: (city) => `Professional packing in ${city}, WA, all materials included, full-pack or fragile-only options.`,
     intro: (city, cityData) =>
-      `Most ${city} residents underestimate how long packing takes — a 2-bedroom home that looks manageable on a Sunday afternoon turns into a 3-day project by Wednesday. Our packing crews work fast, label every box by room, and bring every material with them so you don't have to make a single trip to the store. Full-pack, partial-pack, or fragile-only — we work around whatever you've already done.`,
+      `Most ${city} residents underestimate how long packing takes, a 2-bedroom home that looks manageable on a Sunday afternoon turns into a 3-day project by Wednesday. Our packing crews work fast, label every box by room, and bring every material with them so you don't have to make a single trip to the store. Full-pack, partial-pack, or fragile-only, we work around whatever you've already done.`,
     pricing: (city) =>
       `$35–$55/hr per packer · 1-Bed: 2–4 hrs · 3-Bed: 6–10 hrs · All materials included`,
     steps: (city) => [
@@ -146,15 +146,15 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
     ],
     benefits: [
       "Full-pack, partial-pack, or fragile-only options",
-      "All packing materials included — no hidden supply charges",
+      "All packing materials included, no hidden supply charges",
       "Careful labeling system for easy unpacking",
       "Specialty packing for art, mirrors, and antiques",
       "Available as a standalone service or add-on to your move",
       "Licensed HG-064180 | USDOT# 2120054 | Fully insured",
     ],
     faqs: (city) => [
-      { q: `How much do packing services cost in ${city}?`, a: `Professional packing in ${city} typically costs $35–$55 per hour per packer. A 1-bedroom home takes 2–4 hours to pack. A 3-bedroom home takes 6–10 hours. All packing materials are included — no surprise supply charges.` },
-      { q: `Do I need to buy boxes and supplies for my ${city} packing?`, a: `No. We bring all packing materials — boxes, tape, bubble wrap, packing paper, and specialty containers. Everything is included in the quoted price.` },
+      { q: `How much do packing services cost in ${city}?`, a: `Professional packing in ${city} typically costs $35–$55 per hour per packer. A 1-bedroom home takes 2–4 hours to pack. A 3-bedroom home takes 6–10 hours. All packing materials are included, no surprise supply charges.` },
+      { q: `Do I need to buy boxes and supplies for my ${city} packing?`, a: `No. We bring all packing materials, boxes, tape, bubble wrap, packing paper, and specialty containers. Everything is included in the quoted price.` },
       { q: `Can you pack just my fragile items in ${city}?`, a: `Yes. We offer fragile-only packing for customers who want to pack most items themselves but need professional help with dishes, glassware, artwork, and other breakables.` },
       { q: `How far in advance should I book packing services in ${city}?`, a: `We recommend booking 1–2 weeks before your move date. For large homes or peak season moves (May–September), book 2–4 weeks in advance.` },
     ],
@@ -167,9 +167,9 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
     label: "Storage Services",
     hubSlug: "/storage-services/",
     tagline: (city) => `Storage Services for ${city} Residents`,
-    subtitle: (city) => `Secure storage vaults for ${city}, WA — climate-controlled, full-service pickup and delivery.`,
+    subtitle: (city) => `Secure storage vaults for ${city}, WA, climate-controlled, full-service pickup and delivery.`,
     intro: (city, cityData) =>
-      `The gap between your move-out date and your new home's availability is one of the most stressful parts of any ${city} move — and it's where most people end up renting a self-storage unit and spending their weekends hauling boxes. We eliminate that entirely. Our Redmond facility is minutes from ${city}. We pick up your items, load them into a dedicated storage vault at our climate-controlled warehouse, and deliver them back when you're ready. You never have to touch a storage unit or drive to a facility.`,
+      `The gap between your move-out date and your new home's availability is one of the most stressful parts of any ${city} move, and it's where most people end up renting a self-storage unit and spending their weekends hauling boxes. We eliminate that entirely. Our Redmond facility is minutes from ${city}. We pick up your items, load them into a dedicated storage vault at our climate-controlled warehouse, and deliver them back when you're ready. You never have to touch a storage unit or drive to a facility.`,
     pricing: (city) =>
       `1-Bed contents: $150–$250/mo · 3-Bed contents: $300–$500/mo · Month-to-month contracts`,
     steps: (city) => [
@@ -180,16 +180,16 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
       "We deliver your items back when you're ready",
     ],
     benefits: [
-      "Climate-controlled — no temperature extremes year-round",
+      "Climate-controlled, no temperature extremes year-round",
       "24/7 security monitoring and access control",
-      "Flexible month-to-month terms — no long-term contracts",
+      "Flexible month-to-month terms, no long-term contracts",
       "Full-service: we handle all loading and unloading",
       "Secure vault storage available",
       "Licensed HG-064180 | USDOT# 2120054 | Fully insured",
     ],
     faqs: (city) => [
       { q: `How much does storage cost for ${city} residents?`, a: `Storage rates depend on the volume of items. A typical 1-bedroom home's contents cost $150–$250/month to store. A 3-bedroom home runs $300–$500/month. We provide exact quotes after inventorying your items.` },
-      { q: `Is the storage facility near ${city}?`, a: `Yes. Our storage vault facility is in Redmond, WA — just minutes from ${city}. We handle all pickup and delivery so you never have to drive to a storage facility.` },
+      { q: `Is the storage facility near ${city}?`, a: `Yes. Our storage vault facility is in Redmond, WA, just minutes from ${city}. We handle all pickup and delivery so you never have to drive to a storage facility.` },
       { q: `Do you offer storage for ${city} moves?`, a: `Yes. We offer secure vault storage at our climate-controlled Redmond facility. This is especially useful if your new home isn't ready when you move out. Contact us for current pricing.` },
       { q: `How long can I store my belongings?`, a: `As long as you need. We offer flexible month-to-month storage with no long-term contracts. Most customers store for 1–3 months during a move, but we have customers who have stored with us for years.` },
     ],
@@ -202,9 +202,9 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
     label: "Office Moving",
     hubSlug: "/office-moving/",
     tagline: (city) => `Office Movers in ${city}`,
-    subtitle: (city) => `Professional office moving in ${city}, WA — after-hours execution, dedicated project manager, IT equipment handling.`,
+    subtitle: (city) => `Professional office moving in ${city}, WA, after-hours execution, dedicated project manager, IT equipment handling.`,
     intro: (city, cityData) =>
-      `A ${city} office move that runs into Monday morning costs your business real money — in lost productivity, IT downtime, and employee frustration. Our office crews work Friday night through Sunday so your team walks in Monday to a fully set-up workspace. Every job gets a dedicated project manager who creates the floor plan, coordinates building access, and is on-site throughout the move — not just reachable by phone.`,
+      `A ${city} office move that runs into Monday morning costs your business real money, in lost productivity, IT downtime, and employee frustration. Our office crews work Friday night through Sunday so your team walks in Monday to a fully set-up workspace. Every job gets a dedicated project manager who creates the floor plan, coordinates building access, and is on-site throughout the move, not just reachable by phone.`,
     pricing: (city) =>
       `10–25 workstations: $1,500–$4,000 · Larger offices quoted after free site assessment`,
     steps: (city) => [
@@ -238,9 +238,9 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
     label: "Commercial Moving",
     hubSlug: "/commercial-moving/",
     tagline: (city) => `Commercial Movers in ${city}`,
-    subtitle: (city) => `Business moving services in ${city}, WA — minimal downtime, dedicated project manager, after-hours available.`,
+    subtitle: (city) => `Business moving services in ${city}, WA, minimal downtime, dedicated project manager, after-hours available.`,
     intro: (city, cityData) =>
-      `Commercial moves in ${city} require a different level of planning than residential moves — loading dock access, freight elevator scheduling, building security sign-ins, and IT equipment that can't be tossed in a box. We've handled commercial moves across ${city}'s office parks and downtown buildings since 2009. Our project managers know the local building requirements and build a move plan that accounts for every constraint before the first truck arrives.`,
+      `Commercial moves in ${city} require a different level of planning than residential moves, loading dock access, freight elevator scheduling, building security sign-ins, and IT equipment that can't be tossed in a box. We've handled commercial moves across ${city}'s office parks and downtown buildings since 2009. Our project managers know the local building requirements and build a move plan that accounts for every constraint before the first truck arrives.`,
     pricing: (city) =>
       `Small business (10–25 workstations): $1,500–$4,000 · Larger moves quoted after free site assessment`,
     steps: (city) => [
@@ -274,15 +274,15 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
     label: "Senior Moving",
     hubSlug: "/senior-moving/",
     tagline: (city) => `Senior Moving Services in ${city}`,
-    subtitle: (city) => `Compassionate senior moving in ${city}, WA — patient crews, downsizing assistance, assisted living coordination.`,
+    subtitle: (city) => `Compassionate senior moving in ${city}, WA, patient crews, downsizing assistance, assisted living coordination.`,
     intro: (city, cityData) =>
-      `A senior move in ${city} is rarely just a logistics problem — it's a life transition that involves decades of belongings, family members coordinating from different cities, and often a move into a facility with its own move-in procedures. Our crews are trained specifically for this. We work at your pace, communicate directly with family members, and coordinate with assisted living and retirement community staff so nothing falls through the cracks on move day.`,
+      `A senior move in ${city} is rarely just a logistics problem, it's a life transition that involves decades of belongings, family members coordinating from different cities, and often a move into a facility with its own move-in procedures. Our crews are trained specifically for this. We work at your pace, communicate directly with family members, and coordinate with assisted living and retirement community staff so nothing falls through the cracks on move day.`,
     pricing: (city) =>
-      `$120–$160/hr for 2-person crew · Most senior moves are smaller in scope — often lower total cost`,
+      `$120–$160/hr for 2-person crew · Most senior moves are smaller in scope, often lower total cost`,
     steps: (city) => [
       "Free consultation to understand your specific needs and timeline",
       "Crew arrives on time and introduces themselves",
-      "We work at your pace — no rushing",
+      "We work at your pace, no rushing",
       "Fragile and sentimental items receive extra care",
       "We coordinate with family members and facility staff",
       "We help set up your new space so it feels like home",
@@ -310,9 +310,9 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
     label: "Furniture Moving",
     hubSlug: "/furniture-moving/",
     tagline: (city) => `Furniture Movers in ${city}`,
-    subtitle: (city) => `Professional furniture moving in ${city}, WA — heavy items, specialty pieces, in-home rearranging.`,
+    subtitle: (city) => `Professional furniture moving in ${city}, WA, heavy items, specialty pieces, in-home rearranging.`,
     intro: (city, cityData) =>
-      `That sectional that seemed like a good idea when you bought it is now wedged in a ${city} stairwell at 10am on a Saturday. We've seen it. Our furniture crews carry the right equipment for every scenario — furniture boards, furniture dollies, stair-climbing hand trucks, and enough moving straps to handle anything from a single dresser to a full home's worth of furniture. Single-item moves, in-home rearranging, or full furniture relocation — we do all of it.`,
+      `That sectional that seemed like a good idea when you bought it is now wedged in a ${city} stairwell at 10am on a Saturday. We've seen it. Our furniture crews carry the right equipment for every scenario, furniture boards, furniture dollies, stair-climbing hand trucks, and enough moving straps to handle anything from a single dresser to a full home's worth of furniture. Single-item moves, in-home rearranging, or full furniture relocation, we do all of it.`,
     pricing: (city) =>
       `Single item: $150–$350 · Full home furniture: $480–$1,500+ · In-home rearranging: $120–$160/hr`,
     steps: (city) => [
@@ -324,7 +324,7 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
       "Final inspection to confirm no damage",
     ],
     benefits: [
-      "In-home rearranging available — no full move required",
+      "In-home rearranging available, no full move required",
       "Furniture pads and protective wrapping on every piece",
       "Stair and elevator carries handled safely",
       "Flat-rate pricing for single items",
@@ -346,25 +346,25 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
     label: "Condo Moving",
     hubSlug: "/condo-moving/",
     tagline: (city) => `Condo Movers in ${city}`,
-    subtitle: (city) => `Condo moving specialists in ${city}, WA — HOA coordination, elevator booking, certificate of insurance.`,
+    subtitle: (city) => `Condo moving specialists in ${city}, WA, HOA coordination, elevator booking, certificate of insurance.`,
     intro: (city, cityData) =>
-      `${city} condo buildings will turn away a moving crew that shows up without the right paperwork — and that means your move day is over before it starts. We've worked with enough ${city} buildings to know that every property has its own COI requirements, elevator reservation windows, and move-in fee structures. We handle all of it in advance: we call the building, get the requirements, file the paperwork, and book the elevator so your move day runs without surprises.`,
+      `${city} condo buildings will turn away a moving crew that shows up without the right paperwork, and that means your move day is over before it starts. We've worked with enough ${city} buildings to know that every property has its own COI requirements, elevator reservation windows, and move-in fee structures. We handle all of it in advance: we call the building, get the requirements, file the paperwork, and book the elevator so your move day runs without surprises.`,
     pricing: (city) =>
       `1-Bed condo: $480–$780 · 2-Bed condo: $700–$1,200 · All HOA coordination included`,
     steps: (city) => [
       `We contact your ${city} HOA or building management to confirm requirements`,
-      `Certificate of insurance provided — meets most ${city} building requirements`,
+      `Certificate of insurance provided, meets most ${city} building requirements`,
       "Elevator reservation booked for your move window",
       "Crew arrives on time with all equipment and furniture protection",
       "Careful navigation through hallways and elevators",
-      "Final walkthrough of common areas — no damage left behind",
+      "Final walkthrough of common areas, no damage left behind",
     ],
     benefits: [
       "HOA move-in/move-out procedure coordination",
       "Certificate of insurance provided at no extra charge",
       "Elevator reservation coordination with building management",
       "Furniture protection for hallways and elevators",
-      "Flat-rate pricing — no hourly surprises",
+      "Flat-rate pricing, no hourly surprises",
       "Licensed HG-064180 | USDOT# 2120054 | Fully insured",
     ],
     faqs: (city) => [
@@ -382,9 +382,9 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
     label: "Corporate Relocation",
     hubSlug: "/corporate-relocation/",
     tagline: (city) => `Corporate Relocation Services in ${city}`,
-    subtitle: (city) => `Employee and office relocation in ${city}, WA — HR coordination, dedicated project manager, full-service execution.`,
+    subtitle: (city) => `Employee and office relocation in ${city}, WA, HR coordination, dedicated project manager, full-service execution.`,
     intro: (city, cityData) =>
-      `HR teams in ${city} managing a relocation are juggling lease timelines, employee expectations, and building logistics simultaneously — and a moving company that just shows up with a truck isn't enough. Our corporate relocation team assigns a dedicated project manager who works directly with your HR department, coordinates with property managers at both ends, and provides the documentation your company needs for expense reporting and compliance. We've handled relocations for ${city} companies ranging from single-employee moves to full office transitions.`,
+      `HR teams in ${city} managing a relocation are juggling lease timelines, employee expectations, and building logistics simultaneously, and a moving company that just shows up with a truck isn't enough. Our corporate relocation team assigns a dedicated project manager who works directly with your HR department, coordinates with property managers at both ends, and provides the documentation your company needs for expense reporting and compliance. We've handled relocations for ${city} companies ranging from single-employee moves to full office transitions.`,
     pricing: (city) =>
       `Single employee relocation: $800–$2,500 · Multi-person office relocation: quoted after assessment`,
     steps: (city) => [
@@ -418,9 +418,9 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
     label: "Labor Only Moving",
     hubSlug: "/labor-only-moving/",
     tagline: (city) => `Labor Only Movers in ${city}`,
-    subtitle: (city) => `Professional moving labor in ${city}, WA — loading, unloading, and furniture rearranging.`,
+    subtitle: (city) => `Professional moving labor in ${city}, WA, loading, unloading, and furniture rearranging.`,
     intro: (city, cityData) =>
-      `Labor-only moving in ${city} is a practical option for PODS, portable containers, and same-building moves — but many customers find that upgrading to a full-service truck and crew costs only a small amount more per hour. Our labor-only crews are the same professional movers who work our full-service jobs. Ask us about adding a truck when you call — it's often closer in price than you'd expect, and you skip the rental, the driving, and the liability.`,
+      `Labor-only moving in ${city} is a practical option for PODS, portable containers, and same-building moves, but many customers find that upgrading to a full-service truck and crew costs only a small amount more per hour. Our labor-only crews are the same professional movers who work our full-service jobs. Ask us about adding a truck when you call, it's often closer in price than you'd expect, and you skip the rental, the driving, and the liability.`,
     pricing: (city) =>
       `$120–$160/hr for 2-person crew · Call us about our minimums · Loading or unloading only available`,
     steps: (city) => [
@@ -435,7 +435,7 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
       "Loading only, unloading only, or both",
       "Furniture pads and moving equipment provided",
       "Efficient loading to maximize truck space",
-      "Flexible scheduling — available 7 days a week",
+      "Flexible scheduling, available 7 days a week",
       "Licensed HG-064180 | USDOT# 2120054 | Fully insured",
     ],
     faqs: (city) => [
@@ -453,9 +453,9 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
     label: "Appliance Moving",
     hubSlug: "/appliance-moving/",
     tagline: (city) => `Appliance Movers in ${city}`,
-    subtitle: (city) => `Professional appliance moving in ${city}, WA — refrigerators, washers, dryers, and more.`,
+    subtitle: (city) => `Professional appliance moving in ${city}, WA, refrigerators, washers, dryers, and more.`,
     intro: (city, cityData) =>
-      `A refrigerator dragged across hardwood floors in a ${city} home leaves scratches that cost more to fix than the moving service would have. Our appliance crews use appliance dollies, floor runners, and moving straps on every job — the refrigerator never touches your floor directly. We move refrigerators, washers, dryers, dishwashers, and large ranges throughout ${city}, and we can coordinate disconnection and reconnection assistance for standard appliances.`,
+      `A refrigerator dragged across hardwood floors in a ${city} home leaves scratches that cost more to fix than the moving service would have. Our appliance crews use appliance dollies, floor runners, and moving straps on every job, the refrigerator never touches your floor directly. We move refrigerators, washers, dryers, dishwashers, and large ranges throughout ${city}, and we can coordinate disconnection and reconnection assistance for standard appliances.`,
     pricing: (city) =>
       `Single appliance: $150–$350 · Multiple appliances: $120–$160/hr · Disconnection/reconnection available`,
     steps: (city) => [
@@ -490,9 +490,9 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
     label: "Unpacking Services",
     hubSlug: "/unpacking-services/",
     tagline: (city) => `Unpacking Services in ${city}`,
-    subtitle: (city) => `Professional unpacking in ${city}, WA — we unpack, organize, and remove all boxes and materials.`,
+    subtitle: (city) => `Professional unpacking in ${city}, WA, we unpack, organize, and remove all boxes and materials.`,
     intro: (city, cityData) =>
-      `Most ${city} families live out of boxes for two weeks after a move — not because they don't want to unpack, but because move day is exhausting and the boxes just keep multiplying. Our unpacking crews arrive the day of or day after your move, unpack every box, place items in the right rooms, and haul away every box and packing material. You go to sleep in a new home that actually feels like one.`,
+      `Most ${city} families live out of boxes for two weeks after a move, not because they don't want to unpack, but because move day is exhausting and the boxes just keep multiplying. Our unpacking crews arrive the day of or day after your move, unpack every box, place items in the right rooms, and haul away every box and packing material. You go to sleep in a new home that actually feels like one.`,
     pricing: (city) =>
       `$35–$55/hr per unpacker · 1-Bed: 2–4 hrs · 3-Bed: 6–10 hrs · Box removal included`,
     steps: (city) => [
@@ -514,7 +514,7 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
     faqs: (city) => [
       { q: `How much do unpacking services cost in ${city}?`, a: `Professional unpacking in ${city} typically costs $35–$55 per hour per unpacker. A 1-bedroom home takes 2–4 hours to unpack. A 3-bedroom home takes 6–10 hours. Box removal is included.` },
       { q: `Do you remove all the boxes and packing materials after unpacking in ${city}?`, a: `Yes. Box removal and packing material disposal are included in our unpacking service. We break down all boxes and remove all materials from your ${city} home.` },
-      { q: `Can you unpack just certain rooms in my ${city} home?`, a: `Yes. We offer partial unpacking — you choose which rooms you want unpacked. Common partial unpacking requests include kitchen, master bedroom, and bathrooms.` },
+      { q: `Can you unpack just certain rooms in my ${city} home?`, a: `Yes. We offer partial unpacking, you choose which rooms you want unpacked. Common partial unpacking requests include kitchen, master bedroom, and bathrooms.` },
       { q: `Can I book unpacking services the day after my ${city} move?`, a: `Yes. We offer same-day and next-day unpacking services. Book unpacking when you book your move and we'll schedule it for move day or the following day.` },
     ],
     heroImage: BRAND_IMAGES.truckKirklandHouse,
@@ -526,18 +526,18 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
     label: "Warehousing Services",
     hubSlug: "/warehousing-services/",
     tagline: (city) => `Warehousing & Distribution in ${city}`,
-    subtitle: (city) => `Business warehousing and logistics for ${city}, WA companies — secure storage, inventory management, distribution.`,
+    subtitle: (city) => `Business warehousing and logistics for ${city}, WA companies, secure storage, inventory management, distribution.`,
     intro: (city, cityData) =>
-      `${city} businesses outgrow their storage space faster than they outgrow their lease — and signing a long-term warehouse contract to solve a short-term inventory problem is an expensive mistake. Our Redmond facility is minutes from ${city} with month-to-month terms, full inventory management, and receiving and distribution services. You get a dedicated warehouse team without the overhead of a dedicated warehouse.`,
+      `${city} businesses outgrow their storage space faster than they outgrow their lease, and signing a long-term warehouse contract to solve a short-term inventory problem is an expensive mistake. Our Redmond facility is minutes from ${city} with month-to-month terms, full inventory management, and receiving and distribution services. You get a dedicated warehouse team without the overhead of a dedicated warehouse.`,
     pricing: (city) =>
       `Pallet storage: $25–$45/pallet/month · Full warehouse solutions quoted after assessment`,
     steps: (city) => [
       `Free consultation to assess your ${city} business warehousing needs`,
       "Inventory is received, photographed, and catalogued",
       "Items stored in our secure, climate-controlled Redmond facility",
-      "Online inventory management — track your stock anytime",
+      "Online inventory management, track your stock anytime",
       "Pick-and-pack and distribution services available",
-      "Flexible terms — scale up or down as your business needs change",
+      "Flexible terms, scale up or down as your business needs change",
     ],
     benefits: [
       "Climate-controlled, secure Redmond facility",
@@ -601,7 +601,7 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
   useEffect(() => {
     if (!serviceDef) return;
     const title = `${serviceDef.label} in ${city} | On The Go Moving & Storage`;
-    const desc = `Professional ${serviceDef.label.toLowerCase()} in ${city}, WA. On The Go Moving & Storage — licensed, insured, 4.8 stars. Flat-rate pricing. Free quote. Call ${COMPANY.phone}.`;
+    const desc = `Professional ${serviceDef.label.toLowerCase()} in ${city}, WA. On The Go Moving & Storage, licensed, insured, 4.8 stars. Flat-rate pricing. Free quote. Call ${COMPANY.phone}.`;
 
     document.title = title;
     const setMeta = (name: string, content: string, prop = false) => {
@@ -753,10 +753,10 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
 
   // Option 2 — City-specific context paragraph based on service type
   const cityContextHeading = ["apartment", "condo"].includes(serviceKey)
-    ? `${serviceDef.label} in ${city} — What to Know`
+    ? `${serviceDef.label} in ${city}, What to Know`
     : ["office", "commercial", "corporate-relocation", "warehousing"].includes(serviceKey)
     ? `Business Moves in ${city}`
-    : `${city} Home Moves — Local Expertise`;
+    : `${city} Home Moves, Local Expertise`;
   const cityContextBody: string | null = ["apartment", "condo"].includes(serviceKey)
     ? (cityData?.apartment || null)
     : ["office", "commercial", "corporate-relocation", "warehousing"].includes(serviceKey)
@@ -821,7 +821,7 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
               {serviceDef.subtitle(city)}
             </p>
 
-            {/* Trust strip — single line, plain text style */}
+            {/* Trust strip, single line, plain text style */}
             <div className="flex items-center gap-1.5 mb-8 text-xs sm:text-sm text-white/80">
               <div className="flex items-center gap-1">
                 {[1,2,3,4,5].map(i => <Star key={i} size={12} fill="#fbc319" color="#fbc319" />)}
@@ -888,7 +888,7 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
             {/* ── MAIN COLUMN ── */}
             <div className="lg:col-span-2 space-y-8">
 
-              {/* Intro — LOCAL focus, NOT educational (that's the service hub) */}
+              {/* Intro, LOCAL focus, NOT educational (that's the service hub) */}
               <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
                 <h2 className="font-display text-2xl font-bold text-brand-forest mb-4">
                   {serviceDef.label} in {city}, WA
@@ -909,7 +909,7 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
                     </>
                   )}
                 </p>
-                {/* Cross-link to service hub — differentiates content intent */}
+                {/* Cross-link to service hub, differentiates content intent */}
                 <div className="flex items-center gap-2 p-4 bg-green-50 border border-green-200 rounded-xl">
                   <ExternalLink className="w-4 h-4 text-brand-green flex-shrink-0" />
                   <p className="text-sm text-gray-600">
@@ -930,7 +930,7 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
                     {serviceDef.label} Across {city} Neighborhoods
                   </h2>
                   <p className="text-gray-600 mb-5">
-                    Our crews serve every neighborhood in {city} — from the most accessible suburbs to the trickiest urban streets. Here are some of the areas we cover regularly:
+                    Our crews serve every neighborhood in {city}, from the most accessible suburbs to the trickiest urban streets. Here are some of the areas we cover regularly:
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {neighborhoods.map((n, i) => (
@@ -943,7 +943,7 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
                 </div>
               )}
 
-              {/* City-specific context — Option 2 (non-Tier-A pages only) */}
+              {/* City-specific context, Option 2 (non-Tier-A pages only) */}
               {!tierAEntry && cityContextBody && (
                 <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
                   <h2 className="font-display text-2xl font-bold text-brand-forest mb-4">
@@ -995,10 +995,10 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
                 </ul>
               </div>
 
-              {/* FAQs — city-specific questions only */}
+              {/* FAQs, city-specific questions only */}
               <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
                 <h2 className="font-display text-2xl font-bold text-brand-forest mb-6">
-                  {serviceDef.label} in {city} — Common Questions
+                  {serviceDef.label} in {city}, Common Questions
                 </h2>
                 <div className="space-y-3">
                   {[...faqs, ...(tierAEntry ? tierAEntry.extraFaqs : blendedCityFaqs)].map((faq, i) => (
@@ -1049,7 +1049,7 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
             {/* ── SIDEBAR ── */}
             <div className="space-y-6">
 
-              {/* Quote CTA — desktop only; mobile uses the hero form */}
+              {/* Quote CTA, desktop only; mobile uses the hero form */}
               <div className="hidden lg:block bg-white border border-gray-200 rounded-2xl p-6 sticky top-24">
                 <h3 className="font-display font-bold text-xl mb-1 text-brand-forest">Get a Free Quote</h3>
                 <p className="text-gray-500 text-sm mb-4">

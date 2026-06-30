@@ -36,7 +36,7 @@ export default function GetLayout({ children }: { children: React.ReactNode }) {
 
       <FooterLanding />
 
-      {/* ── Mobile sticky bottom CTA bar — visible only on small screens ── */}
+      {/* ── Mobile sticky bottom CTA bar, visible only on small screens ── */}
       <div className="fixed bottom-0 left-0 right-0 z-50 sm:hidden bg-white border-t border-gray-200 shadow-lg">
         <div className="flex items-center gap-2 px-4 py-3">
           <a
@@ -56,7 +56,7 @@ export default function GetLayout({ children }: { children: React.ReactNode }) {
         </div>
       </div>
 
-      {/* ── Desktop sticky side CTA — visible only on sm+ screens, after scroll ── */}
+      {/* ── Desktop sticky side CTA, visible only on sm+ screens, after scroll ── */}
       <div
         className={[
           "hidden sm:flex fixed right-0 top-1/2 -translate-y-1/2 z-50 flex-col items-center gap-0",
@@ -64,7 +64,7 @@ export default function GetLayout({ children }: { children: React.ReactNode }) {
           showDesktopCta ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none",
         ].join(" ")}
       >
-        {/* Phone button — vertical text rotated */}
+        {/* Phone button, vertical text rotated */}
         <a
           href={COMPANY.phoneHref}
           onClick={() => pushPhoneClickEvent("desktop-sticky-side")}

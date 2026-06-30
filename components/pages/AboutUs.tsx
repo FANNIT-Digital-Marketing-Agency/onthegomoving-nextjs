@@ -25,18 +25,18 @@ const TEAM_QUALITIES = [
   { icon: Shield, title: "Background Checked", desc: "Every team member passes a thorough background check before their first day on the job." },
   { icon: CheckCircle, title: "Professionally Trained", desc: "Our crews complete a structured training program covering safe lifting, furniture protection, and customer communication." },
   { icon: Heart, title: "Customer-First Culture", desc: "We hire for attitude and train for skill. Every person on our team is selected for their commitment to service." },
-  { icon: Award, title: "Long-Term Employees", desc: "Low turnover means you get experienced movers — not day laborers. Many of our crew members have been with us for 5+ years." },
+  { icon: Award, title: "Long-Term Employees", desc: "Low turnover means you get experienced movers, not day laborers. Many of our crew members have been with us for 5+ years." },
 ];
 
 const TEAM = [
   { name: "Jason Sexton", role: "Founder & Owner", fact: "Started OTGM at 26 with one truck and a belief that moving companies could do better." },
-  { name: "Operations Team", role: "Move Coordinators", fact: "Our coordinators have an average tenure of 6 years — they know every neighborhood in the service area." },
+  { name: "Operations Team", role: "Move Coordinators", fact: "Our coordinators have an average tenure of 6 years, they know every neighborhood in the service area." },
   { name: "Field Crews", role: "Professional Movers", fact: "Every crew member is background-checked, drug-tested, and trained in furniture protection and safe lifting." },
 ];
 
 const VALUES = [
   { icon: Star, title: "Hard Work", desc: "We show up ready to give 100% every day, going the extra mile to get the job done right." },
-  { icon: Shield, title: "Integrity", desc: "We do what's right — even when it's not the easiest option — earning trust through honesty and accountability." },
+  { icon: Shield, title: "Integrity", desc: "We do what's right, even when it's not the easiest option, earning trust through honesty and accountability." },
   { icon: Zap, title: "Efficiency", desc: "We stay focused, organized, and productive to complete every move with speed and precision." },
   { icon: Users, title: "Teamwork", desc: "We support one another and communicate clearly to get the job done safely and smoothly." },
   { icon: CheckCircle, title: "Safety", desc: "We prioritize the well-being of our team, our clients, and their belongings on every move." },
@@ -58,14 +58,14 @@ const FAQS = [
   },
   {
     q: "What makes On The Go Moving different from other Seattle movers?",
-    a: "On The Go Moving is locally owned and operated, not a franchise or broker. Every crew member is a direct employee — background-checked, trained, and uniformed. We offer flat-rate pricing, secure vault storage available, and a 4.8-star Google rating backed by over 1,562 reviews.",
+    a: "On The Go Moving is locally owned and operated, not a franchise or broker. Every crew member is a direct employee, background-checked, trained, and uniformed. We offer flat-rate pricing, secure vault storage available, and a 4.8-star Google rating backed by over 1,562 reviews.",
   },
 ];
 
 export default function AboutUs() {
   useSEO({
     title: "Seattle Moving Company Since 2009 | On The Go Moving",
-    description: "On The Go Moving & Storage — Seattle's trusted movers since 2009. 25,000+ moves, 1,562 five-star reviews, licensed & insured in WA. Meet our team.",
+    description: "On The Go Moving & Storage, Seattle's trusted movers since 2009. 25,000+ moves, 1,562 five-star reviews, licensed & insured in WA. Meet our team.",
     canonical: "https://onthegomoving.com/about-us/",
     ogType: "website",
     schema: [
@@ -155,10 +155,10 @@ export default function AboutUs() {
                   Who We Are
                 </h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  On The Go Moving &amp; Storage is a locally owned and operated moving company headquartered in Redmond, Washington. Founded in {COMPANY.founded}, we serve homes, apartments, condos, and businesses within approximately 18 miles of Redmond — covering Seattle, Bellevue, Kirkland, Bothell, Issaquah, Sammamish, Renton, and the surrounding Eastside communities.
+                  On The Go Moving &amp; Storage is a locally owned and operated moving company headquartered in Redmond, Washington. Founded in {COMPANY.founded}, we serve homes, apartments, condos, and businesses within approximately 18 miles of Redmond, covering Seattle, Bellevue, Kirkland, Bothell, Issaquah, Sammamish, Renton, and the surrounding Eastside communities.
                 </p>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  We are not a franchise, a broker, or a national chain. Every mover on every job is a direct employee of On The Go Moving — background-checked, professionally trained, and uniformed. We own our trucks and operate our own storage facility in Redmond, which means we control the quality of every move from start to finish.
+                  We are not a franchise, a broker, or a national chain. Every mover on every job is a direct employee of On The Go Moving, background-checked, professionally trained, and uniformed. We own our trucks and operate our own storage facility in Redmond, which means we control the quality of every move from start to finish.
                 </p>
                 <p className="text-gray-700 leading-relaxed mb-6">
                   With over {COMPANY.googleReviewCount.toLocaleString()} five-star Google reviews and more than 25,000 successful moves, we are proud to be the moving company the Eastside trusts most.
@@ -200,7 +200,7 @@ export default function AboutUs() {
                 Moving You Can Rely On
               </h2>
               <p className="text-gray-500 max-w-xl mx-auto">
-                Watch our crews in action — the same professional team that shows up to every move, uniformed and ready.
+                Watch our crews in action, the same professional team that shows up to every move, uniformed and ready.
               </p>
             </div>
             <div className="max-w-3xl mx-auto">
@@ -210,7 +210,7 @@ export default function AboutUs() {
               >
                 <iframe
                   src="https://www.youtube.com/embed/NaNz7SzlpTo?rel=0&controls=1&showinfo=0&modestbranding=1"
-                  title="On The Go Moving & Storage — Moving You Can Rely On"
+                  title="On The Go Moving & Storage, Moving You Can Rely On"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className="absolute inset-0 w-full h-full"
@@ -218,7 +218,7 @@ export default function AboutUs() {
                 />
               </div>
               <p className="text-center text-gray-400 text-sm mt-4">
-                On The Go Moving &amp; Storage — Serving Greater Seattle Since 2009
+                On The Go Moving &amp; Storage, Serving Greater Seattle Since 2009
               </p>
             </div>
           </div>
@@ -296,7 +296,7 @@ export default function AboutUs() {
                 Our Team
               </h2>
               <p className="text-gray-500 mt-3 max-w-xl mx-auto">
-                Every person at On The Go Moving is a direct employee — not a day laborer or subcontractor. We invest in training, background checks, and fair wages because the quality of your move depends on the quality of our people.
+                Every person at On The Go Moving is a direct employee, not a day laborer or subcontractor. We invest in training, background checks, and fair wages because the quality of your move depends on the quality of our people.
               </p>
             </div>
             {/* Philosophy intro */}
@@ -312,7 +312,7 @@ export default function AboutUs() {
                   Since 2009, On The Go Moving &amp; Storage has built its reputation on one principle: the quality of your move is only as good as the people doing it. That's why we are selective about who joins our team.
                 </p>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Every mover on our crew is a full-time, W-2 employee — not a day laborer or subcontractor. This means consistent quality, accountability, and a team that takes pride in their work because this is their career.
+                  Every mover on our crew is a full-time, W-2 employee, not a day laborer or subcontractor. This means consistent quality, accountability, and a team that takes pride in their work because this is their career.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
                   You'll see the difference the moment our crew arrives: uniformed, professional, and ready to treat your home and belongings with the care they deserve.
@@ -342,7 +342,7 @@ export default function AboutUs() {
                     <div className="w-16 h-16 rounded-full overflow-hidden mx-auto mb-4 border-2 border-brand-green">
                       <img
                         src={BRAND_IMAGES.jasonSextonHeadshot}
-                        alt="Jason Sexton — Founder & Owner"
+                        alt="Jason Sexton, Founder & Owner"
                         className="w-full h-full object-cover object-top"
                       />
                     </div>
@@ -398,7 +398,7 @@ export default function AboutUs() {
                   We Are Local
                 </h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  On The Go Moving is not just a business in the Eastside community — we are part of it. Our team members live in Redmond, Bellevue, Kirkland, and the surrounding cities. We coach youth sports, donate to local food banks, and support organizations that make the Eastside a better place to live.
+                  On The Go Moving is not just a business in the Eastside community, we are part of it. Our team members live in Redmond, Bellevue, Kirkland, and the surrounding cities. We coach youth sports, donate to local food banks, and support organizations that make the Eastside a better place to live.
                 </p>
                 <p className="text-gray-700 leading-relaxed mb-6">
                   When you hire On The Go Moving, you are supporting a locally owned company that reinvests in the neighborhoods we serve.

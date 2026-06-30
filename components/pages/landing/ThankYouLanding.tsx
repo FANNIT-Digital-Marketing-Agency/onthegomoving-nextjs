@@ -109,9 +109,9 @@ export default function ThankYouLanding() {
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-500">
             <span className="flex items-center gap-1.5">
               <Star size={15} className="text-yellow-400 fill-yellow-400" />
-              <strong className="text-gray-700">{COMPANY.googleRating}★</strong> — {COMPANY.googleReviewCount.toLocaleString()} Google reviews
+              <strong className="text-gray-700">{COMPANY.googleRating}★</strong>, {COMPANY.googleReviewCount.toLocaleString()} Google reviews
             </span>
-            <span>Licensed &amp; Insured — WA {COMPANY.license}</span>
+            <span>Licensed &amp; Insured, WA {COMPANY.license}</span>
             <span>Serving Seattle since {COMPANY.founded}</span>
           </div>
         </div>

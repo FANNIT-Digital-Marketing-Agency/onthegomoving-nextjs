@@ -38,7 +38,7 @@ const CREDENTIALS = [
   {
     icon: Briefcase,
     title: "15+ Years in the Moving Industry",
-    desc: "Jason founded On The Go Moving & Storage in 2009 at age 26 and has been hands-on in every aspect of the business — from driving trucks in the early years to building the operations and culture that define the company today.",
+    desc: "Jason founded On The Go Moving & Storage in 2009 at age 26 and has been hands-on in every aspect of the business, from driving trucks in the early years to building the operations and culture that define the company today.",
   },
   {
     icon: Truck,
@@ -47,12 +47,12 @@ const CREDENTIALS = [
   },
   {
     icon: Shield,
-    title: "Licensed & Insured — HG-064180 / USDOT 2120054",
+    title: "Licensed & Insured, HG-064180 / USDOT 2120054",
     desc: "Jason holds all required Washington State moving company licenses and federal USDOT registration. He maintains full general liability and cargo insurance on every move.",
   },
   {
     icon: Star,
-    title: "4.8-Star Google Rating — 1,562+ Reviews",
+    title: "4.8-Star Google Rating, 1,562+ Reviews",
     desc: "Jason's commitment to flat-rate pricing, on-time performance, and professional crews has earned On The Go Moving a 4.8-star average across more than 1,562 verified Google reviews.",
   },
   {
@@ -63,7 +63,7 @@ const CREDENTIALS = [
   {
     icon: Users,
     title: "Local Eastside Business Owner",
-    desc: "Jason is a Redmond, WA resident and active member of the Eastside business community. On The Go Moving is locally owned and operated — not a franchise or broker — and Jason is personally invested in the communities the company serves.",
+    desc: "Jason is a Redmond, WA resident and active member of the Eastside business community. On The Go Moving is locally owned and operated, not a franchise or broker, and Jason is personally invested in the communities the company serves.",
   },
 ];
 
@@ -81,7 +81,7 @@ const TIMELINE = [
   {
     year: "2015",
     event:
-      "Surpassed 5,000 successful moves. Earned the Angie's List Super Service Award for the first time — a recognition Jason considers a direct reflection of his crew's daily work.",
+      "Surpassed 5,000 successful moves. Earned the Angie's List Super Service Award for the first time, a recognition Jason considers a direct reflection of his crew's daily work.",
   },
   {
     year: "2018",
@@ -107,7 +107,7 @@ const FAQS = [
   },
   {
     q: "How long has Jason Sexton been in the moving industry?",
-    a: "Jason has been in the moving industry since 2009 — over 15 years. He started On The Go Moving at age 26 and has personally overseen more than 25,000 residential and commercial moves across the Greater Seattle area.",
+    a: "Jason has been in the moving industry since 2009, over 15 years. He started On The Go Moving at age 26 and has personally overseen more than 25,000 residential and commercial moves across the Greater Seattle area.",
   },
   {
     q: "Is Jason Sexton involved in day-to-day operations?",
@@ -125,7 +125,7 @@ const FAQS = [
 
 export default function JasonSexton() {
   useSEO({
-    title: "Jason Sexton — Founder & Owner | On The Go Moving & Storage",
+    title: "Jason Sexton, Founder & Owner | On The Go Moving & Storage",
     description:
       "Meet Jason Sexton, founder and owner of On The Go Moving & Storage since 2009. 15+ years of experience, 25,000+ moves completed, licensed & insured in Washington State.",
     canonical: "https://onthegomoving.com/jason-sexton/",
@@ -207,7 +207,7 @@ export default function JasonSexton() {
               <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-[#7bc144] shadow-xl">
                 <img
                   src={BRAND_IMAGES.jasonSextonHeadshot}
-                  alt="Jason Sexton — Founder and Owner of On The Go Moving & Storage"
+                  alt="Jason Sexton, Founder and Owner of On The Go Moving & Storage"
                   className="w-full h-full object-cover object-top"
                   width={224}
                   height={224}
@@ -271,7 +271,7 @@ export default function JasonSexton() {
           </h2>
           <p className="text-gray-600 mb-10 max-w-2xl">
             Jason's authority in the moving industry is built on 15+ years of direct, hands-on
-            experience — not just ownership.
+            experience, not just ownership.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {CREDENTIALS.map(({ icon: Icon, title, desc }) => (
@@ -296,7 +296,7 @@ export default function JasonSexton() {
       <section className="py-16 bg-[#f5f7fa]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold text-[#1a2332] mb-2">
-            Building On The Go Moving — A 15-Year Timeline
+            Building On The Go Moving, A 15-Year Timeline
           </h2>
           <p className="text-gray-600 mb-10 max-w-2xl">
             From a single truck in 2009 to one of the most-reviewed moving companies in the Pacific
@@ -332,7 +332,7 @@ export default function JasonSexton() {
               </h2>
               <p className="text-gray-700 leading-relaxed mb-4">
                 "Moving is one of the most stressful events in a person's life. Our job isn't just
-                to move boxes — it's to take that stress off your plate entirely. That means showing
+                to move boxes, it's to take that stress off your plate entirely. That means showing
                 up on time, communicating clearly, protecting your belongings as if they were our
                 own, and charging exactly what we quoted. No surprises."
               </p>
@@ -342,7 +342,7 @@ export default function JasonSexton() {
                 showing up on time. Those principles haven't changed since 2009.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                Every piece of content on this site — from service descriptions to moving guides —
+                Every piece of content on this site, from service descriptions to moving guides -
                 reflects Jason's direct experience and the standards he holds his team to every day.
               </p>
             </div>
@@ -434,7 +434,7 @@ export default function JasonSexton() {
           </h2>
           <p className="text-gray-300 mb-8 max-w-xl mx-auto">
             Get a free, flat-rate quote from the team Jason built. No hidden fees, no hourly
-            surprises — just professional movers who show up on time.
+            surprises, just professional movers who show up on time.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a

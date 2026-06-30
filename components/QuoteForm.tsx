@@ -293,7 +293,7 @@ export default function QuoteForm({
         className,
       ].join(" ")}
     >
-      {/* Hidden inputs required by Netlify Forms — must exist as real HTML elements for Netlify to capture them */}
+      {/* Hidden inputs required by Netlify Forms, must exist as real HTML elements for Netlify to capture them */}
       <input type="hidden" name="form-name" value="quote-request" />
       <input type="hidden" name="sourcePage" value="" />
       <input type="hidden" name="sourceLabel" value="" />
@@ -437,7 +437,7 @@ export default function QuoteForm({
             />
           </div>
 
-          {/* Swap button — centered between the two zip fields */}
+          {/* Swap button, centered between the two zip fields */}
           <button
             type="button"
             onClick={handleSwapZip}
@@ -494,7 +494,7 @@ export default function QuoteForm({
           </select>
         </div>
 
-        {/* Row 5a: Move Size — shown for apartment/house (full width) */}
+        {/* Row 5a: Move Size, shown for apartment/house (full width) */}
         {showMoveSize && (
           <div className={`sm:col-span-2 ${fieldWrap("moveSize")}`}>
             {focused === "moveSize" && (
@@ -519,7 +519,7 @@ export default function QuoteForm({
           </div>
         )}
 
-        {/* Row 5b: Square Feet — shown for commercial (full width) */}
+        {/* Row 5b: Square Feet, shown for commercial (full width) */}
         {showSquareFeet && (
           <div className={`sm:col-span-2 ${fieldWrap("squareFeet")}`}>
             {focused === "squareFeet" && (
@@ -542,16 +542,16 @@ export default function QuoteForm({
           </div>
         )}
 
-        {/* Row 6: Free Storage checkbox — HIDDEN (temporarily disabled, re-enable when promotion is active) */}
+        {/* Row 6: Free Storage checkbox, HIDDEN (temporarily disabled, re-enable when promotion is active) */}
 
       </div>
 
-      {/* Urgency signal — landing pages only */}
+      {/* Urgency signal, landing pages only */}
       {isLandingPage && (
         <div className="mt-4 flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-lg px-3 py-2.5">
           <Zap size={14} className="text-amber-500 flex-shrink-0" />
           <p className="text-xs text-amber-800 font-medium">
-            Crews available this week — slots fill fast in summer. Submit now to hold your date.
+            Crews available this week, slots fill fast in summer. Submit now to hold your date.
           </p>
         </div>
       )}

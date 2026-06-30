@@ -12,7 +12,7 @@ const VALUES = [
   { icon: <Shield className="w-6 h-6 text-brand-gold" />, title: "Background Checked", desc: "Every team member passes a thorough background check before their first day." },
   { icon: <Award className="w-6 h-6 text-brand-gold" />, title: "Professionally Trained", desc: "Our crews complete a structured training program covering safe lifting, furniture protection, and customer communication." },
   { icon: <Star className="w-6 h-6 text-brand-gold" />, title: "Customer-First Culture", desc: "We hire for attitude and train for skill. Every person on our team is selected for their commitment to service." },
-  { icon: <Users className="w-6 h-6 text-brand-gold" />, title: "Long-Term Employees", desc: "Low turnover means you get experienced movers — not day laborers. Many of our crew members have been with us for 5+ years." },
+  { icon: <Users className="w-6 h-6 text-brand-gold" />, title: "Long-Term Employees", desc: "Low turnover means you get experienced movers, not day laborers. Many of our crew members have been with us for 5+ years." },
 ];
 
 export default function Team() {
@@ -79,7 +79,7 @@ export default function Team() {
                 Since 2009, On The Go Moving & Storage has built its reputation on one principle: the quality of your move is only as good as the people doing it. That's why we are selective about who joins our team.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Every mover on our crew is a full-time, W-2 employee — not a day laborer or subcontractor. This means consistent quality, accountability, and a team that takes pride in their work because this is their career.
+                Every mover on our crew is a full-time, W-2 employee, not a day laborer or subcontractor. This means consistent quality, accountability, and a team that takes pride in their work because this is their career.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 You'll see the difference the moment our crew arrives: uniformed, professional, and ready to treat your home and belongings with the care they deserve.
@@ -116,7 +116,7 @@ export default function Team() {
         <div className="container max-w-4xl text-center">
           <h2 className="font-display text-2xl lg:text-3xl font-black text-brand-forest mb-4">A Team You Can Trust</h2>
           <p className="text-gray-500 max-w-2xl mx-auto mb-8">
-            From our office staff to our moving crews, everyone at On The Go Moving & Storage is committed to making your move as smooth and stress-free as possible. We're not just movers — we're your neighbors.
+            From our office staff to our moving crews, everyone at On The Go Moving & Storage is committed to making your move as smooth and stress-free as possible. We're not just movers, we're your neighbors.
           </p>
           <img src={BRAND_IMAGES.heroMovingCrew} alt="On The Go Moving crew in action" className="rounded-2xl shadow-xl w-full object-cover max-h-80 mx-auto" />
         </div>

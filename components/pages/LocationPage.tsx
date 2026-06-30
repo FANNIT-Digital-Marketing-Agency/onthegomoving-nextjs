@@ -236,7 +236,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
         }}
       >
         <div className="container py-16 lg:py-20">
-          {/* Breadcrumb — AEO: helps LLMs understand page hierarchy */}
+          {/* Breadcrumb, AEO: helps LLMs understand page hierarchy */}
           <nav className="flex items-center gap-2 text-sm text-green-200 mb-6" aria-label="Breadcrumb">
             <a href="/" className="hover:text-white transition-colors">Home</a>
             <span>/</span>
@@ -259,7 +259,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
                 {data.heroSubtitle}
               </p>
 
-              {/* Trust strip — single line, plain text style */}
+              {/* Trust strip, single line, plain text style */}
               <div className="flex items-center gap-1.5 mb-8 text-xs sm:text-sm text-white/80">
                 <div className="flex items-center gap-1">
                   {[1,2,3,4,5].map(i => <Star key={i} size={12} fill="#fbc319" color="#fbc319" />)}
@@ -335,11 +335,11 @@ export default function LocationPage({ slug }: LocationPageProps) {
               <h2 className="font-display text-3xl lg:text-4xl font-black text-brand-forest mb-6 leading-tight">
                 Why {data.city} Families & Businesses Choose On The Go
               </h2>
-              {/* AEO: direct-answer paragraph — LLMs cite this for "best movers in [city]" queries */}
+              {/* AEO: direct-answer paragraph, LLMs cite this for "best movers in [city]" queries */}
               <p className="text-gray-600 text-lg leading-relaxed mb-6">{data.intro}</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
                 {[
-                  { icon: CheckCircle, text: "Flat-rate quotes — no surprise charges on move day" },
+                  { icon: CheckCircle, text: "Flat-rate quotes, no surprise charges on move day" },
                   { icon: CheckCircle, text: "On-time crews with professional equipment" },
                   { icon: CheckCircle, text: "Secure climate-controlled vault storage" },
                   { icon: CheckCircle, text: "Available 7 days a week, including weekends" },
@@ -472,7 +472,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
               How Much Do Movers Cost in {data.city}?
             </h2>
             <p className="text-green-100 max-w-2xl mx-auto">
-              We believe in upfront pricing with no hidden fees. Here are typical ranges for {data.city} moves — your exact quote depends on home size, distance, and any add-on services.
+              We believe in upfront pricing with no hidden fees. Here are typical ranges for {data.city} moves, your exact quote depends on home size, distance, and any add-on services.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
@@ -516,7 +516,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { name: "Sarah M.", location: `${data.city}, WA`, text: "On The Go Moving made our move completely stress-free. The crew was on time, professional, and handled all of our furniture with incredible care. I can't recommend them enough!", date: "March 2024" },
-              { name: "James K.", location: `${data.city}, WA`, text: "I was skeptical about hiring movers but these guys were worth every penny. They moved our 3-bedroom house in under 5 hours and nothing was damaged. Transparent pricing too — no surprises.", date: "January 2024" },
+              { name: "James K.", location: `${data.city}, WA`, text: "I was skeptical about hiring movers but these guys were worth every penny. They moved our 3-bedroom house in under 5 hours and nothing was damaged. Transparent pricing too, no surprises.", date: "January 2024" },
               { name: "Maria L.", location: `${data.city}, WA`, text: "Used them for our office relocation. They worked over a weekend so we had zero business downtime. Professional, fast, and they even helped reassemble our furniture. Highly recommend.", date: "November 2023" },
             ].map((review, i) => (
               <div key={i} className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
@@ -588,7 +588,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
                 ))}
               </div>
 
-              {/* Service Area — cities within 18 miles of Redmond — linked internally */}
+              {/* Service Area, cities within 18 miles of Redmond, linked internally */}
               <div className="rounded-xl bg-white border border-gray-200 shadow-sm p-5">
                 <div className="flex items-center gap-2 mb-3">
                   <MapPin className="w-4 h-4 text-brand-green flex-shrink-0" />
@@ -619,7 +619,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
           <div className="text-center mb-10">
             <p className="text-brand-green font-semibold text-sm uppercase tracking-widest mb-3">Common Questions</p>
             <h2 className="font-display text-3xl lg:text-4xl font-black text-brand-forest">
-              Frequently Asked Questions — {data.city} Movers
+              Frequently Asked Questions, {data.city} Movers
             </h2>
           </div>
           <div className="space-y-3">
@@ -684,13 +684,13 @@ export default function LocationPage({ slug }: LocationPageProps) {
               </div>
             </div>
 
-            {/* Full Service Area Grid — all cities linked for internal link equity */}
+            {/* Full Service Area Grid, all cities linked for internal link equity */}
             <div className="rounded-2xl bg-white border border-gray-200 shadow-sm p-6">
               <div className="flex items-center gap-2 mb-1">
                 <MapPin className="w-5 h-5 text-brand-green" />
                 <h3 className="font-display font-bold text-brand-forest text-lg">Our Service Area</h3>
               </div>
-              <p className="text-gray-500 text-sm mb-5">All communities within 18 miles of our Redmond, WA warehouse — typically 10–28 minutes away.</p>
+              <p className="text-gray-500 text-sm mb-5">All communities within 18 miles of our Redmond, WA warehouse, typically 10–28 minutes away.</p>
               <div className="grid grid-cols-2 gap-x-4 gap-y-1">
                 {SERVICE_AREA_CITIES.map((c, i) => (
                   <div key={i} className="flex items-center justify-between py-1.5 border-b border-gray-100 last:border-0">
@@ -767,7 +767,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
             </div>
           </div>
 
-          {/* Nearby cities — internal linking mesh */}
+          {/* Nearby cities, internal linking mesh */}
           {nearbyCities.length > 0 && (
             <div className="border-t border-white/10 pt-10">
               <p className="text-center text-green-300 text-sm font-semibold uppercase tracking-widest mb-6">

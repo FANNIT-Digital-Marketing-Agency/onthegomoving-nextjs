@@ -18,7 +18,7 @@ export default function HeaderLandingFb() {
 
       {/* Main header row */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
-        {/* Logo — no link to avoid navigation away */}
+        {/* Logo, no link to avoid navigation away */}
         <img
           src={BRAND_IMAGES.logo}
           alt="On The Go Moving & Storage"

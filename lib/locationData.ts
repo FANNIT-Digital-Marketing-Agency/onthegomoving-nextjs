@@ -15,7 +15,7 @@ export interface LocationData {
   state: string;
   miles: number;
   drive: string;
-  dispatchFrom?: "Redmond" | "Seattle"; // Which yard is closer — defaults to Redmond if omitted
+  dispatchFrom?: "Redmond" | "Seattle"; // Which yard is closer, defaults to Redmond if omitted
   metaTitle: string;
   metaDescription: string;
   heroTagline: string;
@@ -58,11 +58,11 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     miles: 12,
     drive: "15 min",
     dispatchFrom: "Seattle",
-    metaTitle: "On The Go Moving & Storage — Seattle, WA",
-    metaDescription: "On The Go Moving & Storage serves every Seattle neighborhood. Licensed & insured since 2009. Choose your move type — apartment, residential, commercial, or packing — and get a free quote today.",
-    heroTagline: "On The Go Moving — Serving All of Seattle",
-    heroSubtitle: "From Capitol Hill to West Seattle, Ballard to Beacon Hill — licensed, insured, and local since 2009.",
-    intro: "On The Go Moving & Storage has operated out of Seattle since 2009. We know the buildings, the parking restrictions, and the neighborhoods — from South Lake Union high-rises to West Seattle family homes. Select your move type below to see how we handle your specific situation, or call us for a free quote.",
+    metaTitle: "On The Go Moving & Storage, Seattle, WA",
+    metaDescription: "On The Go Moving & Storage serves every Seattle neighborhood. Licensed & insured since 2009. Choose your move type, apartment, residential, commercial, or packing, and get a free quote today.",
+    heroTagline: "On The Go Moving, Serving All of Seattle",
+    heroSubtitle: "From Capitol Hill to West Seattle, Ballard to Beacon Hill, licensed, insured, and local since 2009.",
+    intro: "On The Go Moving & Storage has operated out of Seattle since 2009. We know the buildings, the parking restrictions, and the neighborhoods, from South Lake Union high-rises to West Seattle family homes. Select your move type below to see how we handle your specific situation, or call us for a free quote.",
     localKnowledge: "We've been based in Seattle since 2009 and our crews know every neighborhood's quirks. South Lake Union buildings require elevator reservations 48–72 hours in advance. Capitol Hill and Belltown need SDOT temporary no-parking permits for truck access. Queen Anne's steep streets require experienced drivers and properly loaded trucks. We handle all of this coordination before move day so nothing surprises you.",
     neighborhoods: ["Capitol Hill", "Ballard", "Queen Anne", "Fremont", "South Lake Union", "Beacon Hill", "Magnolia", "Wallingford", "Green Lake", "Northgate", "First Hill", "Madison Park", "Madrona", "Leschi", "Columbia City", "West Seattle"],
     challenges: ["Elevator reservations required in South Lake Union and First Hill high-rises", "SDOT temporary no-parking permits needed for Capitol Hill and Belltown", "Steep streets in Queen Anne, Capitol Hill, and Beacon Hill", "Narrow residential streets in Ballard, Fremont, and Wallingford", "Limited truck access in Pike/Pine corridor and Broadway"],
@@ -77,8 +77,8 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "What areas of Seattle do you serve?", a: "We serve every Seattle neighborhood including Capitol Hill, Ballard, Queen Anne, Fremont, South Lake Union, Beacon Hill, Magnolia, West Seattle, Columbia City, University District, and more. Our Seattle yard is at 4024 13th Ave W in Magnolia." },
       { q: "Do you handle elevator reservations and SDOT parking permits?", a: "Yes. For high-rise buildings in South Lake Union, First Hill, and Belltown, we coordinate elevator reservations in advance. For areas with limited street parking, we pull SDOT temporary no-parking permits on your behalf." },
       { q: "Are you licensed and insured?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every job. Our USDOT# 2120054 is on file with the FMCSA." },
-      { q: "How far in advance should I book?", a: "We recommend booking 2–4 weeks ahead, especially for summer (May–September) and end-of-month dates. We also accommodate last-minute requests — call to check availability." },
-      { q: "Do you offer storage with Seattle moves?", a: "Yes. We offer secure vault storage at our Redmond warehouse, 12 miles from central Seattle. Storage is available month-to-month — contact us for current pricing." },
+      { q: "How far in advance should I book?", a: "We recommend booking 2–4 weeks ahead, especially for summer (May–September) and end-of-month dates. We also accommodate last-minute requests, call to check availability." },
+      { q: "Do you offer storage with Seattle moves?", a: "Yes. We offer secure vault storage at our Redmond warehouse, 12 miles from central Seattle. Storage is available month-to-month, contact us for current pricing." },
     ],
     nearby: [
       ["Bellevue", "bellevue-movers"],
@@ -97,9 +97,9 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       latitude: 47.6505,
       longitude: -122.3793,
     },
-    apartment: "From South Lake Union high-rises to Ballard low-rises, we handle the logistics — elevator reservations, SDOT permits, and building access coordination. See our full Seattle apartment moving page for details.",
+    apartment: "From South Lake Union high-rises to Ballard low-rises, we handle the logistics, elevator reservations, SDOT permits, and building access coordination. See our full Seattle apartment moving page for details.",
     home: "From Ballard craftsman bungalows to Magnolia family homes, we handle Seattle's varied residential landscape. See our full Seattle residential moving page for details.",
-    business: "We handle office and commercial relocations throughout Seattle — IT equipment, workstations, and after-hours scheduling available. See our full Seattle commercial moving page for details.",
+    business: "We handle office and commercial relocations throughout Seattle, IT equipment, workstations, and after-hours scheduling available. See our full Seattle commercial moving page for details.",
   },
   "bellevue-movers": {
     slug: "bellevue-movers",
@@ -115,14 +115,14 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     localKnowledge: "Bellevue moves require specific preparation. Downtown Bellevue high-rises \u2014 including The Bravern, Cirrus, and Bellevue Towers \u2014 require elevator reservations booked 48\u201372 hours in advance and have strict move-in windows, typically 8am\u20135pm on weekdays. The Crossroads and Eastgate neighborhoods have dense apartment complexes with limited truck access. Somerset and Newport Hills feature large homes on steep lots with long carry distances. Our Redmond warehouse is 5 miles north \u2014 the closest of any major moving company to central Bellevue.",
     neighborhoods: ["Downtown Bellevue", "Crossroads", "Factoria", "Somerset", "Newport Hills", "Eastgate", "Bridle Trails", "Lake Hills", "Wilburton", "Bel-Red", "West Bellevue", "Medina"],
     neighborhoodDetails: [
-      { name: "Downtown Bellevue", desc: "Luxury high-rises like The Bravern, Cirrus, and Bellevue Towers — elevator reservations and COI requirements handled in advance." },
-      { name: "Somerset", desc: "Upscale hillside neighborhood with steep driveways and large homes — our crews bring the right equipment for long carries." },
-      { name: "Newport Hills", desc: "Established residential area with large family homes on wooded lots — full-service residential moves." },
-      { name: "Crossroads", desc: "Dense apartment corridor with limited truck access — we scout parking and access points before move day." },
-      { name: "Eastgate", desc: "Mixed residential and commercial area near I-90 — popular for office relocations and apartment moves." },
-      { name: "Factoria", desc: "Townhomes and condos near Bellevue Square — compact moves with elevator and parking coordination." },
-      { name: "Bel-Red", desc: "Fast-growing corridor with new apartment buildings near the Spring District — we handle new-construction move-in requirements." },
-      { name: "Lake Hills", desc: "Established neighborhood with single-family homes and easy truck access — one of our most common Bellevue job types." },
+      { name: "Downtown Bellevue", desc: "Luxury high-rises like The Bravern, Cirrus, and Bellevue Towers, elevator reservations and COI requirements handled in advance." },
+      { name: "Somerset", desc: "Upscale hillside neighborhood with steep driveways and large homes, our crews bring the right equipment for long carries." },
+      { name: "Newport Hills", desc: "Established residential area with large family homes on wooded lots, full-service residential moves." },
+      { name: "Crossroads", desc: "Dense apartment corridor with limited truck access, we scout parking and access points before move day." },
+      { name: "Eastgate", desc: "Mixed residential and commercial area near I-90, popular for office relocations and apartment moves." },
+      { name: "Factoria", desc: "Townhomes and condos near Bellevue Square, compact moves with elevator and parking coordination." },
+      { name: "Bel-Red", desc: "Fast-growing corridor with new apartment buildings near the Spring District, we handle new-construction move-in requirements." },
+      { name: "Lake Hills", desc: "Established neighborhood with single-family homes and easy truck access, one of our most common Bellevue job types." },
     ],
     challenges: ["Elevator reservations required in Downtown Bellevue high-rises", "Strict move-in windows at luxury apartment buildings", "Steep driveways in Somerset and Newport Hills", "Limited truck parking in Crossroads and Bel-Red corridors", "HOA move-in fees and certificate of insurance requirements"],
     pricing: {
@@ -159,7 +159,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     },
     apartment: "Bellevue's apartment market ranges from luxury high-rises in Downtown to mid-rise complexes in Crossroads and Eastgate. Downtown buildings like The Bravern and Cirrus require elevator reservations and certificates of insurance. Crossroads complexes often have limited parking for moving trucks \u2014 we scout access points before move day. Most Bellevue apartment moves complete in 2\u20134 hours.",
     home: "Bellevue home moves span a wide range \u2014 from compact townhomes in Factoria to large estates in Somerset and Newport Hills. Our residential crews handle steep driveways, long carry distances, and the oversized furniture common in Bellevue's newer construction. We bring floor runners, door jamb protectors, and furniture pads on every job.",
-    business: "Bellevue is home to major employers including Microsoft, T-Mobile, and Expedia, plus hundreds of tech startups in the Spring District and Bel-Red corridor. We handle office relocations of all sizes — from a 5-person startup to a 100-workstation enterprise move. After-hours and weekend scheduling available to eliminate downtime.",
+    business: "Bellevue is home to major employers including Microsoft, T-Mobile, and Expedia, plus hundreds of tech startups in the Spring District and Bel-Red corridor. We handle office relocations of all sizes, from a 5-person startup to a 100-workstation enterprise move. After-hours and weekend scheduling available to eliminate downtime.",
   },
   "redmond-movers": {
     slug: "redmond-movers",
@@ -175,14 +175,14 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     localKnowledge: "Redmond is Microsoft's hometown and one of the most active moving markets on the Eastside. The Overlake neighborhood near Microsoft's campus has dense apartment complexes with strict move-in policies. Education Hill and Bear Creek feature large family homes on wooded lots with challenging access. Downtown Redmond's newer mixed-use buildings require elevator coordination. Our warehouse on Redmond Way means we can mobilize faster than any other moving company in the city \u2014 typically arriving within 30 minutes of your scheduled start time.",
     neighborhoods: ["Downtown Redmond", "Education Hill", "Overlake", "Bear Creek", "Grass Lawn", "Willows", "Idylwood", "Rose Hill", "Ames Lake", "Novelty Hill", "Union Hill", "Redmond Ridge"],
     neighborhoodDetails: [
-      { name: "Overlake", desc: "Dense apartment complexes near Microsoft's campus — elevator reservations and COI requirements handled by our crew." },
-      { name: "Education Hill", desc: "Large family homes on wooded lots with steep driveways and long carry distances — our most common Redmond job type." },
+      { name: "Overlake", desc: "Dense apartment complexes near Microsoft's campus, elevator reservations and COI requirements handled by our crew." },
+      { name: "Education Hill", desc: "Large family homes on wooded lots with steep driveways and long carry distances, our most common Redmond job type." },
       { name: "Downtown Redmond", desc: "Mixed-use buildings near Redmond Town Center with elevator coordination and limited street parking." },
-      { name: "Bear Creek", desc: "Spacious properties on the east side of Redmond — we handle long driveways and rural access roads." },
+      { name: "Bear Creek", desc: "Spacious properties on the east side of Redmond, we handle long driveways and rural access roads." },
       { name: "Grass Lawn", desc: "Established residential neighborhood with single-family homes and easy truck access." },
-      { name: "Redmond Ridge", desc: "Newer HOA-governed development with strict move-in rules — we coordinate with property management in advance." },
-      { name: "Rose Hill", desc: "Hillside neighborhood bordering Kirkland — popular for tech employees relocating to the Eastside." },
-      { name: "Novelty Hill", desc: "Large homes and newer construction near Trilogy and Willowmere — full-service residential moves." },
+      { name: "Redmond Ridge", desc: "Newer HOA-governed development with strict move-in rules, we coordinate with property management in advance." },
+      { name: "Rose Hill", desc: "Hillside neighborhood bordering Kirkland, popular for tech employees relocating to the Eastside." },
+      { name: "Novelty Hill", desc: "Large homes and newer construction near Trilogy and Willowmere, full-service residential moves." },
     ],
     challenges: ["Elevator reservations at Overlake tech campus apartments", "Long wooded driveways on Education Hill and Bear Creek", "Traffic congestion on 520 and Redmond Way during peak hours", "Strict HOA move-in rules in newer Redmond Ridge developments", "Limited truck access in Downtown Redmond's mixed-use blocks"],
     pricing: {
@@ -198,7 +198,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Are you licensed and insured to move in Redmond?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "Do you move near Microsoft's campus in Overlake?", a: "Yes. We regularly move in and out of the apartment complexes near Microsoft's Redmond campus in Overlake. We know the elevator policies and move-in windows for the major buildings in that area." },
       { q: "How quickly can you schedule a Redmond move?", a: "As a Redmond-based company, we often have same-week availability for local moves. For summer and end-of-month dates, we recommend booking 2\u20133 weeks in advance. Call us for current availability." },
-      { q: "Do you offer storage in Redmond?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond. Storage is available month-to-month — contact us for current pricing. We offer both short-term and long-term storage options." },
+      { q: "Do you offer storage in Redmond?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond. Storage is available month-to-month, contact us for current pricing. We offer both short-term and long-term storage options." },
     ],
     nearby: [
       ["Bellevue", "bellevue-movers"],
@@ -225,14 +225,14 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     localKnowledge: "Kirkland moves come with specific logistical considerations. Downtown Kirkland's waterfront streets have limited truck parking \u2014 we secure temporary no-parking permits when needed. The Totem Lake area has dense apartment complexes near the Google campus with elevator reservations required. Juanita and Lakeview neighborhoods feature homes on steep hillside lots with challenging access. The Parkplace complex near downtown is one of the most active apartment move locations in the city. Our Redmond warehouse is 5 miles east, making Kirkland one of our fastest-response service areas.",
     neighborhoods: ["Downtown Kirkland", "Juanita", "Totem Lake", "Bridle Trails", "Lakeview", "Highlands", "Kingsgate", "Finn Hill", "Norkirk", "Houghton", "Moss Bay", "South Kirkland"],
     neighborhoodDetails: [
-      { name: "Downtown Kirkland", desc: "Waterfront streets with limited truck parking — we secure temporary no-parking permits and scout access before move day." },
-      { name: "Totem Lake", desc: "Dense apartment corridor near Google's Kirkland campus — elevator reservations and COI requirements handled in advance." },
-      { name: "Juanita", desc: "Established residential neighborhood with hillside lots and narrow streets — experienced crews for challenging access." },
-      { name: "Lakeview & Highlands", desc: "Steep hillside neighborhoods with large homes and long carry distances — we bring the right equipment for every job." },
+      { name: "Downtown Kirkland", desc: "Waterfront streets with limited truck parking, we secure temporary no-parking permits and scout access before move day." },
+      { name: "Totem Lake", desc: "Dense apartment corridor near Google's Kirkland campus, elevator reservations and COI requirements handled in advance." },
+      { name: "Juanita", desc: "Established residential neighborhood with hillside lots and narrow streets, experienced crews for challenging access." },
+      { name: "Lakeview & Highlands", desc: "Steep hillside neighborhoods with large homes and long carry distances, we bring the right equipment for every job." },
       { name: "Finn Hill", desc: "Growing residential area with newer construction and HOA-governed communities." },
       { name: "Kingsgate", desc: "Established neighborhood near SR-405 with easy truck access and a mix of home sizes." },
-      { name: "Moss Bay", desc: "Upscale waterfront area with luxury homes — white-glove service for high-value moves." },
-      { name: "Norkirk", desc: "Older residential neighborhood with compact homes and narrow streets — our smaller trucks navigate easily." },
+      { name: "Moss Bay", desc: "Upscale waterfront area with luxury homes, white-glove service for high-value moves." },
+      { name: "Norkirk", desc: "Older residential neighborhood with compact homes and narrow streets, our smaller trucks navigate easily." },
     ],
     challenges: ["Limited truck parking on Downtown Kirkland waterfront streets", "Elevator reservations at Totem Lake and Google campus apartments", "Steep hillside lots in Lakeview and Highlands", "Narrow streets in older Juanita and Norkirk neighborhoods", "Parkplace complex move-in coordination and elevator booking"],
     pricing: {
@@ -315,12 +315,12 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     localKnowledge: "Issaquah moves require specific preparation. Issaquah Highlands is a large planned community on a hillside with steep internal roads \u2014 our drivers know the best access routes for large moving trucks. Talus has strict HOA move-in rules including required certificates of insurance. The historic downtown area has narrow streets with limited truck parking. I-90 access makes Issaquah one of our most efficient service areas from our Redmond warehouse, just 10 miles northwest.",
     neighborhoods: ["Issaquah Highlands", "Talus", "Downtown Issaquah", "Cougar Mountain", "Squak Mountain", "Gilman Village", "East Issaquah", "Grand Ridge", "Montreux"],
     neighborhoodDetails: [
-      { name: "Issaquah Highlands", desc: "Large planned community on a hillside with steep internal roads — our drivers know the best truck access routes and handle HOA move-in coordination." },
-      { name: "Talus", desc: "Newer HOA-governed community with strict move-in rules and certificate of insurance requirements — all handled before move day." },
-      { name: "Downtown Issaquah", desc: "Historic downtown with narrow streets and limited truck parking — we scout access and secure parking in advance." },
+      { name: "Issaquah Highlands", desc: "Large planned community on a hillside with steep internal roads, our drivers know the best truck access routes and handle HOA move-in coordination." },
+      { name: "Talus", desc: "Newer HOA-governed community with strict move-in rules and certificate of insurance requirements, all handled before move day." },
+      { name: "Downtown Issaquah", desc: "Historic downtown with narrow streets and limited truck parking, we scout access and secure parking in advance." },
       { name: "Grand Ridge", desc: "Newer construction neighborhood in Issaquah Highlands with large homes and HOA oversight." },
-      { name: "Gilman Village", desc: "Mixed residential and retail area near downtown — compact moves with easy I-90 access." },
-      { name: "Cougar Mountain", desc: "Wooded residential area with hillside lots and challenging truck access — experienced crews for steep driveways." },
+      { name: "Gilman Village", desc: "Mixed residential and retail area near downtown, compact moves with easy I-90 access." },
+      { name: "Cougar Mountain", desc: "Wooded residential area with hillside lots and challenging truck access, experienced crews for steep driveways." },
     ],
     challenges: ["Steep internal roads in Issaquah Highlands", "HOA move-in rules and COI requirements in Talus", "Narrow streets in historic Downtown Issaquah", "Limited truck parking near Gilman Village", "I-90 traffic congestion during peak hours"],
     pricing: {
@@ -335,7 +335,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle moves in Issaquah Highlands?", a: "Yes. We regularly move in and out of Issaquah Highlands. Our drivers know the best access routes for large moving trucks on the steep internal roads. We also handle HOA move-in coordination for Highlands communities." },
       { q: "Are you licensed and insured to move in Issaquah?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "How far in advance should I book Issaquah movers?", a: "We recommend booking 2\u20134 weeks in advance, especially for summer moves. We accommodate last-minute moves regularly \u2014 call us to check availability." },
-      { q: "Do you offer storage near Issaquah?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 10 miles from Issaquah via I-90. Storage is available month-to-month — contact us for current pricing." },
+      { q: "Do you offer storage near Issaquah?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 10 miles from Issaquah via I-90. Storage is available month-to-month, contact us for current pricing." },
       { q: "Can you move large items in Issaquah Highlands?", a: "Yes. We regularly move large furniture, pianos, and safes in Issaquah Highlands. Our crews have the equipment and experience to handle steep driveways and challenging access points." },
     ],
     nearby: [
@@ -363,12 +363,12 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     localKnowledge: "Woodinville moves are predominantly large residential \u2014 estate homes on wooded lots with long driveways and challenging access for large moving trucks. Hollywood Hill has some of the most challenging access in the region, with steep, narrow roads and properties set far back from the street. Bear Creek Road properties often require our smaller trucks for initial access. Wellington Hills and other planned communities have HOA move-in rules. Our Redmond warehouse is 8 miles south \u2014 a 13-minute drive.",
     neighborhoods: ["Hollywood Hill", "Bear Creek", "Wellington Hills", "Downtown Woodinville", "Cottage Lake", "Tolt Hill", "Woodinville Wine Country", "Leota"],
     neighborhoodDetails: [
-      { name: "Hollywood Hill", desc: "Estate properties on steep, narrow roads — we use smaller lead vehicles for initial access and stage the main truck safely." },
+      { name: "Hollywood Hill", desc: "Estate properties on steep, narrow roads, we use smaller lead vehicles for initial access and stage the main truck safely." },
       { name: "Bear Creek", desc: "Rural properties along Bear Creek Road with long driveways and limited truck turnaround space." },
-      { name: "Wellington Hills", desc: "HOA-governed planned community — we coordinate move-in rules and parking with property management in advance." },
-      { name: "Cottage Lake", desc: "Lakeside residential neighborhood with a mix of older cabins and newer homes — waterfront access handled with care." },
-      { name: "Downtown Woodinville", desc: "Mixed-use buildings near the wine district — standard elevator and parking coordination." },
-      { name: "Woodinville Wine Country", desc: "Winery and estate moves including wine collections — we provide padded, temperature-aware transport for every bottle." },
+      { name: "Wellington Hills", desc: "HOA-governed planned community, we coordinate move-in rules and parking with property management in advance." },
+      { name: "Cottage Lake", desc: "Lakeside residential neighborhood with a mix of older cabins and newer homes, waterfront access handled with care." },
+      { name: "Downtown Woodinville", desc: "Mixed-use buildings near the wine district, standard elevator and parking coordination." },
+      { name: "Woodinville Wine Country", desc: "Winery and estate moves including wine collections, we provide padded, temperature-aware transport for every bottle." },
     ],
     challenges: ["Steep, narrow roads on Hollywood Hill", "Long driveways requiring smaller lead vehicles", "HOA move-in rules in Wellington Hills", "Limited truck access on Bear Creek Road properties", "Traffic on SR-522 and Woodinville-Duvall Road"],
     pricing: {
@@ -384,7 +384,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Are you licensed and insured to move in Woodinville?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "Do you move wine collections in Woodinville?", a: "Yes. We handle wine collections with care \u2014 proper padding, temperature-aware transport, and careful handling. For large collections, we recommend our full packing service to ensure every bottle is properly protected." },
       { q: "How far in advance should I book Woodinville movers?", a: "We recommend booking 3\u20134 weeks in advance for Woodinville moves, especially for large estate properties that require extra crew and equipment." },
-      { q: "Do you offer storage near Woodinville?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 8 miles south of Woodinville. Storage is available month-to-month — contact us for current pricing." },
+      { q: "Do you offer storage near Woodinville?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 8 miles south of Woodinville. Storage is available month-to-month, contact us for current pricing." },
     ],
     nearby: [
       ["Redmond", "redmond-movers"],
@@ -424,7 +424,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Are you licensed and insured to move in Kenmore?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "How far in advance should I book Kenmore movers?", a: "We recommend booking 2\u20134 weeks in advance, especially for summer moves. We accommodate last-minute moves regularly \u2014 call us to check availability." },
       { q: "Do you offer packing services in Kenmore?", a: "Yes. We offer full packing, partial packing, and unpacking services. Our packers bring all materials and can handle everything from kitchenware to fragile antiques." },
-      { q: "Do you offer storage near Kenmore?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 10 miles southeast of Kenmore. Storage is available month-to-month — contact us for current pricing." },
+      { q: "Do you offer storage near Kenmore?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 10 miles southeast of Kenmore. Storage is available month-to-month, contact us for current pricing." },
     ],
     nearby: [
       ["Kirkland", "kirkland-movers"],
@@ -451,12 +451,12 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     localKnowledge: "Bothell is one of the most active moving markets in the north Eastside. Canyon Park has dense office and apartment development with standard move-in requirements. North Creek and Queensborough are established planned communities with HOA oversight. Downtown Bothell's revitalization has brought new mixed-use buildings with elevator coordination requirements. I-405 and SR-522 are the main access routes \u2014 our crews plan around peak traffic to maximize efficiency. Our Redmond warehouse is 11 miles south.",
     neighborhoods: ["Downtown Bothell", "Canyon Park", "North Creek", "Queensborough", "Thrasher's Corner", "Westhill", "Shelton View", "Filbert Creek", "North Bothell"],
     neighborhoodDetails: [
-      { name: "Canyon Park", desc: "Major office and apartment hub — our most active Bothell commercial move area, with elevator and after-hours coordination." },
-      { name: "Downtown Bothell", desc: "Revitalized mixed-use district with newer apartment buildings and older homes — we handle both." },
-      { name: "North Creek", desc: "Established planned community with HOA oversight — we coordinate move-in rules and parking in advance." },
+      { name: "Canyon Park", desc: "Major office and apartment hub, our most active Bothell commercial move area, with elevator and after-hours coordination." },
+      { name: "Downtown Bothell", desc: "Revitalized mixed-use district with newer apartment buildings and older homes, we handle both." },
+      { name: "North Creek", desc: "Established planned community with HOA oversight, we coordinate move-in rules and parking in advance." },
       { name: "Queensborough", desc: "Newer residential development with HOA requirements and large single-family homes." },
-      { name: "Thrasher's Corner", desc: "Residential area near the Snohomish County border — we serve both the King and Snohomish County sides of Bothell." },
-      { name: "UW Bothell Area", desc: "Active apartment and student housing market near the UW Bothell campus — high move volume in August and September." },
+      { name: "Thrasher's Corner", desc: "Residential area near the Snohomish County border, we serve both the King and Snohomish County sides of Bothell." },
+      { name: "UW Bothell Area", desc: "Active apartment and student housing market near the UW Bothell campus, high move volume in August and September." },
     ],
     challenges: ["I-405 and SR-522 traffic congestion during peak hours", "HOA move-in rules in North Creek and Queensborough", "Elevator coordination in Canyon Park apartment buildings", "Mix of older homes with narrow access in Downtown Bothell", "Snohomish County permit requirements for some moves"],
     pricing: {
@@ -472,7 +472,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Are you licensed and insured to move in Bothell?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "How far in advance should I book Bothell movers?", a: "We recommend booking 2\u20134 weeks in advance, especially for summer moves. We accommodate last-minute moves regularly \u2014 call us to check availability." },
       { q: "Do you handle commercial moves in Canyon Park?", a: "Yes. Canyon Park is one of our most active commercial move areas. We work after hours and on weekends to minimize business disruption." },
-      { q: "Do you offer storage near Bothell?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 11 miles south of Bothell. Storage is available month-to-month — contact us for current pricing." },
+      { q: "Do you offer storage near Bothell?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 11 miles south of Bothell. Storage is available month-to-month, contact us for current pricing." },
     ],
     nearby: [
       ["Kenmore", "kenmore-movers"],
@@ -552,7 +552,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Are you licensed and insured to move in Renton?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "How far in advance should I book Renton movers?", a: "We recommend booking 2\u20134 weeks in advance, especially for summer moves. We accommodate last-minute moves regularly \u2014 call us to check availability." },
       { q: "Do you offer packing services in Renton?", a: "Yes. We offer full packing, partial packing, and unpacking services. Our packers bring all materials and can handle everything from kitchenware to fragile antiques." },
-      { q: "Do you offer storage near Renton?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 13 miles north of Renton. Storage is available month-to-month — contact us for current pricing." },
+      { q: "Do you offer storage near Renton?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 13 miles north of Renton. Storage is available month-to-month, contact us for current pricing." },
     ],
     nearby: [
       ["Bellevue", "bellevue-movers"],
@@ -593,7 +593,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Are you licensed and insured to move in Shoreline?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "How far in advance should I book Shoreline movers?", a: "We recommend booking 2\u20134 weeks in advance, especially for summer moves. We accommodate last-minute moves regularly \u2014 call us to check availability." },
       { q: "Do you offer packing services in Shoreline?", a: "Yes. We offer full packing, partial packing, and unpacking services." },
-      { q: "Do you offer storage near Shoreline?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 16 miles east of Shoreline. Storage is available month-to-month — contact us for current pricing." },
+      { q: "Do you offer storage near Shoreline?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 16 miles east of Shoreline. Storage is available month-to-month, contact us for current pricing." },
     ],
     nearby: [
       ["Seattle", "seattle-movers"],
@@ -633,7 +633,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Are you licensed and insured to move in Newcastle?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "Do you handle high-value item moves in Newcastle?", a: "Yes. We regularly move fine art, antiques, and specialty items in Newcastle. Our specialty moving crews have the equipment and training for white-glove handling." },
       { q: "How far in advance should I book Newcastle movers?", a: "We recommend booking 3\u20134 weeks in advance for Newcastle moves, especially for large estate properties." },
-      { q: "Do you offer storage near Newcastle?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 8 miles north of Newcastle. Storage is available month-to-month — contact us for current pricing." },
+      { q: "Do you offer storage near Newcastle?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 8 miles north of Newcastle. Storage is available month-to-month, contact us for current pricing." },
     ],
     nearby: [
       ["Bellevue", "bellevue-movers"],
@@ -672,7 +672,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle waterfront property moves in Lake Forest Park?", a: "Yes. We regularly move in and out of waterfront properties on Lake Washington in Lake Forest Park. We assess access points in advance and bring the right equipment." },
       { q: "Are you licensed and insured to move in Lake Forest Park?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Lake Forest Park movers?", a: "We recommend booking 2\u20134 weeks in advance, especially for summer moves. We accommodate last-minute moves regularly \u2014 call us to check availability." },
-      { q: "Do you offer storage near Lake Forest Park?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 14 miles east. Storage is available month-to-month — contact us for current pricing." },
+      { q: "Do you offer storage near Lake Forest Park?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 14 miles east. Storage is available month-to-month, contact us for current pricing." },
       { q: "Do you offer packing services in Lake Forest Park?", a: "Yes. We offer full packing, partial packing, and unpacking services. Our packers bring all materials." },
     ],
     nearby: [
@@ -713,7 +713,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle moves near Southcenter in Tukwila?", a: "Yes. We regularly move in and out of the apartment buildings near Westfield Southcenter and the light rail stations. We coordinate elevator reservations and work within building move-in windows." },
       { q: "Are you licensed and insured to move in Tukwila?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Tukwila movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly \u2014 call us to check availability." },
-      { q: "Do you offer storage near Tukwila?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 16 miles north of Tukwila. Storage is available month-to-month — contact us for current pricing." },
+      { q: "Do you offer storage near Tukwila?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 16 miles north of Tukwila. Storage is available month-to-month, contact us for current pricing." },
       { q: "Do you offer packing services in Tukwila?", a: "Yes. We offer full packing, partial packing, and unpacking services." },
     ],
     nearby: [
@@ -754,7 +754,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle moves near the new light rail station in Mountlake Terrace?", a: "Yes. We regularly move in and out of the new apartment buildings near Mountlake Terrace's light rail station. We coordinate elevator reservations and work within building move-in windows." },
       { q: "Are you licensed and insured to move in Mountlake Terrace?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Mountlake Terrace movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
-      { q: "Do you offer storage near Mountlake Terrace?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 17 miles southeast. Storage is available month-to-month — contact us for current pricing." },
+      { q: "Do you offer storage near Mountlake Terrace?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 17 miles southeast. Storage is available month-to-month, contact us for current pricing." },
       { q: "Do you serve Snohomish County from Mountlake Terrace?", a: "Yes. Mountlake Terrace is in Snohomish County and we are fully licensed to operate there. We serve all of Mountlake Terrace and surrounding Snohomish County communities." },
     ],
     nearby: [
@@ -794,7 +794,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle moves near the Lynnwood City Center light rail station?", a: "Yes. We regularly move in and out of the new apartment buildings near Lynnwood's City Center light rail station. We coordinate elevator reservations and work within building move-in windows." },
       { q: "Are you licensed and insured to move in Lynnwood?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Lynnwood movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
-      { q: "Do you offer storage near Lynnwood?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 18 miles southeast. Storage is available month-to-month — contact us for current pricing." },
+      { q: "Do you offer storage near Lynnwood?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 18 miles southeast. Storage is available month-to-month, contact us for current pricing." },
       { q: "Do you serve Snohomish County from Lynnwood?", a: "Yes. Lynnwood is in Snohomish County and we are fully licensed to operate there." },
     ],
     nearby: [
@@ -834,7 +834,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle HOA move-in requirements in Harbour Pointe?", a: "Yes. We are familiar with Harbour Pointe's HOA move-in rules. We provide certificates of insurance and work within designated move-in windows." },
       { q: "Are you licensed and insured to move in Mukilteo?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Mukilteo movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
-      { q: "Do you offer storage near Mukilteo?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 18 miles southeast. Storage is available month-to-month — contact us for current pricing." },
+      { q: "Do you offer storage near Mukilteo?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 18 miles southeast. Storage is available month-to-month, contact us for current pricing." },
       { q: "Do you handle waterfront property moves in Mukilteo?", a: "Yes. We regularly move in and out of waterfront properties near the Mukilteo ferry terminal. We assess access points in advance." },
     ],
     nearby: [
@@ -875,7 +875,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle waterfront property moves in Burien?", a: "Yes. We regularly move in and out of waterfront properties in Three Tree Point and Seahurst. We assess access points in advance." },
       { q: "Are you licensed and insured to move in Burien?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Burien movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
-      { q: "Do you offer storage near Burien?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 18 miles northeast. Storage is available month-to-month — contact us for current pricing." },
+      { q: "Do you offer storage near Burien?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 18 miles northeast. Storage is available month-to-month, contact us for current pricing." },
       { q: "Do you offer packing services in Burien?", a: "Yes. We offer full packing, partial packing, and unpacking services." },
     ],
     nearby: [
@@ -915,7 +915,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle HOA move-in requirements in Snoqualmie Ridge?", a: "Yes. We are familiar with Snoqualmie Ridge's HOA move-in rules. We provide certificates of insurance and work within designated move-in windows." },
       { q: "Are you licensed and insured to move in Snoqualmie?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Snoqualmie movers?", a: "We recommend booking 3\u20134 weeks in advance for Snoqualmie Ridge moves. We accommodate last-minute moves regularly." },
-      { q: "Do you offer storage near Snoqualmie?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 17 miles northwest via I-90. Storage is available month-to-month — contact us for current pricing." },
+      { q: "Do you offer storage near Snoqualmie?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 17 miles northwest via I-90. Storage is available month-to-month, contact us for current pricing." },
       { q: "Do you serve North Bend from Snoqualmie?", a: "Yes. We serve both Snoqualmie and North Bend. North Bend is just a few miles east of Snoqualmie on I-90." },
     ],
     nearby: [
@@ -955,7 +955,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle moves on rural roads in North Bend?", a: "Yes. We regularly move on rural roads in the North Bend area. We assess access points in advance and use the right size truck for each property." },
       { q: "Are you licensed and insured to move in North Bend?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "Do you move in North Bend during winter?", a: "Yes. We move year-round in North Bend. For winter moves near Snoqualmie Pass, we monitor road conditions and may adjust scheduling if I-90 is affected by snow or ice." },
-      { q: "Do you offer storage near North Bend?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 18 miles west via I-90. Storage is available month-to-month — contact us for current pricing." },
+      { q: "Do you offer storage near North Bend?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 18 miles west via I-90. Storage is available month-to-month, contact us for current pricing." },
       { q: "How far in advance should I book North Bend movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
     ],
     nearby: [
@@ -995,7 +995,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle moves on rural roads in Duvall?", a: "Yes. We regularly move on rural roads in the Duvall area. We assess access points in advance and use the right size truck for each property." },
       { q: "Are you licensed and insured to move in Duvall?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Duvall movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
-      { q: "Do you offer storage near Duvall?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 17 miles southwest. Storage is available month-to-month — contact us for current pricing." },
+      { q: "Do you offer storage near Duvall?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 17 miles southwest. Storage is available month-to-month, contact us for current pricing." },
       { q: "Do you also serve Carnation near Duvall?", a: "Yes. We serve Carnation and the surrounding Snoqualmie Valley communities. Carnation is just a few miles south of Duvall on SR-203." },
     ],
     nearby: [
@@ -1035,7 +1035,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle moves on rural roads in Carnation?", a: "Yes. We regularly move on rural roads and farm lanes in the Carnation area. We assess access points in advance." },
       { q: "Are you licensed and insured to move in Carnation?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Carnation movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
-      { q: "Do you offer storage near Carnation?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 16 miles southwest. Storage is available month-to-month — contact us for current pricing." },
+      { q: "Do you offer storage near Carnation?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 16 miles southwest. Storage is available month-to-month, contact us for current pricing." },
       { q: "Do you also serve Duvall near Carnation?", a: "Yes. We serve Duvall and the surrounding Snoqualmie Valley communities. Duvall is just a few miles north of Carnation on SR-203." },
     ],
     nearby: [
@@ -1075,7 +1075,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle moves on rural properties in Fall City?", a: "Yes. We regularly move on rural properties in Fall City. We assess access points in advance and use the right size truck for each property." },
       { q: "Are you licensed and insured to move in Fall City?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Fall City movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
-      { q: "Do you offer storage near Fall City?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 12 miles west. Storage is available month-to-month — contact us for current pricing." },
+      { q: "Do you offer storage near Fall City?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 12 miles west. Storage is available month-to-month, contact us for current pricing." },
       { q: "Can you move horse equipment or farm items in Fall City?", a: "Yes. We can move farm equipment, tack, and other equestrian items. Let us know what you need moved when you request a quote so we can bring the right equipment." },
     ],
     nearby: [
@@ -1115,7 +1115,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle HOA move-in requirements in Maple Valley?", a: "Yes. We are familiar with HOA move-in rules in Maple Valley's planned communities. We provide certificates of insurance and work within designated move-in windows." },
       { q: "Are you licensed and insured to move in Maple Valley?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Maple Valley movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
-      { q: "Do you offer storage near Maple Valley?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 18 miles north. Storage is available month-to-month — contact us for current pricing." },
+      { q: "Do you offer storage near Maple Valley?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 18 miles north. Storage is available month-to-month, contact us for current pricing." },
       { q: "Do you offer packing services in Maple Valley?", a: "Yes. We offer full packing, partial packing, and unpacking services." },
     ],
     nearby: [
@@ -1155,7 +1155,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle HOA move-in requirements in Covington?", a: "Yes. We are familiar with HOA move-in rules in Covington's planned communities. We provide certificates of insurance and work within designated move-in windows." },
       { q: "Are you licensed and insured to move in Covington?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Covington movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
-      { q: "Do you offer storage near Covington?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 18 miles north. Storage is available month-to-month — contact us for current pricing." },
+      { q: "Do you offer storage near Covington?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 18 miles north. Storage is available month-to-month, contact us for current pricing." },
       { q: "Do you also serve Maple Valley near Covington?", a: "Yes. We serve both Covington and Maple Valley. They are adjacent communities in southeast King County." },
     ],
     nearby: [
@@ -1180,8 +1180,8 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     metaDescription: "On The Go Moving & Storage provides professional moving services in Medina, WA. Trusted movers for Medina's luxury estates and waterfront homes. Licensed, insured, 4.8 stars. Free quote.",
     heroTagline: "Medina's Trusted Local Moving Company",
     heroSubtitle: "Expert movers for Medina's luxury estates, waterfront properties, and high-value homes.",
-    intro: "Medina is one of the most exclusive communities on the Eastside, home to large waterfront estates, gated properties, and high-value residences that demand the highest level of care. On The Go Moving & Storage has been serving Medina residents since 2009, with crews trained in the specific requirements of luxury home moves — from oversized furniture and art collections to long driveways and gated access.",
-    localKnowledge: "Medina moves require a level of care and discretion that goes beyond standard residential moving. Many Medina properties have gated entries, long driveways, and limited truck access that require advance coordination. Waterfront homes often have multiple levels with narrow staircases. High-value furniture, art, and antiques require custom wrapping and extra padding. Our Redmond warehouse is just 8 miles away — a 14-minute drive that allows us to respond quickly to Medina clients.",
+    intro: "Medina is one of the most exclusive communities on the Eastside, home to large waterfront estates, gated properties, and high-value residences that demand the highest level of care. On The Go Moving & Storage has been serving Medina residents since 2009, with crews trained in the specific requirements of luxury home moves, from oversized furniture and art collections to long driveways and gated access.",
+    localKnowledge: "Medina moves require a level of care and discretion that goes beyond standard residential moving. Many Medina properties have gated entries, long driveways, and limited truck access that require advance coordination. Waterfront homes often have multiple levels with narrow staircases. High-value furniture, art, and antiques require custom wrapping and extra padding. Our Redmond warehouse is just 8 miles away, a 14-minute drive that allows us to respond quickly to Medina clients.",
     neighborhoods: ["Medina Park", "Overlake Golf Club area", "Evergreen Point", "Medina Beach", "Hunt's Point adjacent"],
     challenges: ["Gated entries requiring advance coordination", "Long driveways with limited truck turnaround space", "High-value furniture and art requiring custom protection", "Waterfront homes with multiple levels and narrow staircases", "HOA and community restrictions on move times"],
     pricing: {
@@ -1205,7 +1205,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       ["Clyde Hill", "clyde-hill-movers"],
       ["Seattle", "seattle-movers"],
     ],
-    apartment: "Medina has very few apartment buildings — the community is primarily single-family estates and luxury homes. If you're moving from an apartment in a nearby city to a Medina home, we handle the full move seamlessly.",
+    apartment: "Medina has very few apartment buildings, the community is primarily single-family estates and luxury homes. If you're moving from an apartment in a nearby city to a Medina home, we handle the full move seamlessly.",
     home: "Medina home moves are our specialty. We handle the large estates, waterfront properties, and high-value residences that define this community. Our crews bring custom wrapping materials, extra padding, and the experience to move valuable furniture and art without damage.",
     business: "Medina has limited commercial development, but we serve the few businesses and home offices in the area. For corporate clients with employees relocating to Medina, we offer white-glove relocation services.",
   },
@@ -1260,7 +1260,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     heroTagline: "Ballard's Trusted Local Moving Company",
     heroSubtitle: "Serving Ballard's apartments, condos, townhomes, and single-family homes throughout the neighborhood.",
     intro: "Ballard is one of Seattle's most vibrant and rapidly growing neighborhoods, with a mix of historic craftsman homes, modern condos, and apartment buildings along its main corridors. On The Go Moving & Storage has been serving Ballard residents since 2009, navigating the neighborhood's narrow streets, limited parking, and dense residential blocks with efficiency and care.",
-    localKnowledge: "Ballard moves require specific planning. NW Market Street and the main commercial corridors have limited truck parking, often requiring temporary no-parking permits from SDOT. The older residential streets west of 15th Ave NW have overhead utility lines that limit truck height. Many Ballard apartment buildings have no service elevator, requiring stair carries. The neighborhood's craftsman homes often have narrow doorways and tight staircases. Our Redmond warehouse is 14 miles east — a 22-minute drive that keeps us responsive for Ballard moves.",
+    localKnowledge: "Ballard moves require specific planning. NW Market Street and the main commercial corridors have limited truck parking, often requiring temporary no-parking permits from SDOT. The older residential streets west of 15th Ave NW have overhead utility lines that limit truck height. Many Ballard apartment buildings have no service elevator, requiring stair carries. The neighborhood's craftsman homes often have narrow doorways and tight staircases. Our Redmond warehouse is 14 miles east, a 22-minute drive that keeps us responsive for Ballard moves.",
     neighborhoods: ["Old Ballard", "Sunset Hill", "Crown Hill", "Loyal Heights", "Greenwood adjacent", "Phinney Ridge adjacent", "Shilshole"],
     challenges: ["Limited truck parking on NW Market Street and main corridors", "SDOT temporary no-parking permits often required", "Overhead utility lines limiting truck height on residential streets", "Narrow doorways and staircases in older craftsman homes", "No service elevator in many Ballard apartment buildings"],
     pricing: {
@@ -1273,7 +1273,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     faqs: [
       { q: "How much does it cost to move in Ballard?", a: "Most Ballard moves cost $125–$165 per hour for a 2-person crew. A 1-bedroom apartment typically runs $480–$780. A 2-bedroom home move usually costs $750–$1,300. We provide flat-rate quotes." },
       { q: "Do you handle parking permits for Ballard moves?", a: "Yes. If your move requires a temporary no-parking permit from SDOT, we can assist with the application process. Permit fees are passed through at cost." },
-      { q: "Can you move in and out of Ballard apartments without elevators?", a: "Yes. Our crews are trained for stair carries and we bring the right equipment — furniture dollies, stair rollers, and moving straps — to handle buildings without elevators efficiently." },
+      { q: "Can you move in and out of Ballard apartments without elevators?", a: "Yes. Our crews are trained for stair carries and we bring the right equipment, furniture dollies, stair rollers, and moving straps, to handle buildings without elevators efficiently." },
       { q: "Are you licensed and insured for Ballard moves?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured with general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Ballard movers?", a: "We recommend booking 2–4 weeks in advance, especially for summer moves (May–September) and end-of-month dates." },
     ],
@@ -1299,8 +1299,8 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     metaDescription: "On The Go Moving & Storage serves Capitol Hill, WA. Licensed & insured local movers with 4.8 stars and 1,562 reviews. Get a free quote today.",
     heroTagline: "Capitol Hill's Trusted Local Moving Company",
     heroSubtitle: "Serving Capitol Hill's apartments, condos, Victorian homes, and dense residential blocks.",
-    intro: "Capitol Hill is one of Seattle's most densely populated and culturally vibrant neighborhoods, with a mix of Victorian homes, modern apartment towers, and everything in between. Moving in Capitol Hill presents unique challenges — steep hills, limited parking, and dense residential blocks. On The Go Moving & Storage has been navigating Capitol Hill moves since 2009.",
-    localKnowledge: "Capitol Hill moves require careful planning. Broadway and Pike/Pine have virtually no truck parking, requiring SDOT temporary no-parking permits for most moves. The neighborhood's steep hills — particularly on 10th, 11th, and 12th Ave — demand experienced drivers and properly loaded trucks. Many Capitol Hill apartment buildings are older with no service elevator. First Hill high-rises require elevator reservations. Our Redmond warehouse is 13 miles east — a 21-minute drive.",
+    intro: "Capitol Hill is one of Seattle's most densely populated and culturally vibrant neighborhoods, with a mix of Victorian homes, modern apartment towers, and everything in between. Moving in Capitol Hill presents unique challenges, steep hills, limited parking, and dense residential blocks. On The Go Moving & Storage has been navigating Capitol Hill moves since 2009.",
+    localKnowledge: "Capitol Hill moves require careful planning. Broadway and Pike/Pine have virtually no truck parking, requiring SDOT temporary no-parking permits for most moves. The neighborhood's steep hills, particularly on 10th, 11th, and 12th Ave, demand experienced drivers and properly loaded trucks. Many Capitol Hill apartment buildings are older with no service elevator. First Hill high-rises require elevator reservations. Our Redmond warehouse is 13 miles east, a 21-minute drive.",
     neighborhoods: ["Broadway", "Pike/Pine", "First Hill", "Squire Park", "Miller Park", "Volunteer Park", "Stevens", "Montlake adjacent"],
     challenges: ["SDOT temporary no-parking permits required for most moves", "Steep hills on 10th, 11th, and 12th Ave", "No service elevator in many older apartment buildings", "Elevator reservations required in First Hill high-rises", "Limited truck access on Pike/Pine corridor"],
     pricing: {
@@ -1325,7 +1325,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       ["Shoreline", "shoreline-movers"],
     ],
     apartment: "Capitol Hill has one of Seattle's most active apartment markets, from vintage walk-up buildings on Broadway to modern towers on First Hill. Many older buildings have no elevator. First Hill high-rises require elevator reservations. We handle both with equal expertise.",
-    home: "Capitol Hill's Victorian homes and craftsman bungalows are beautiful but challenging to move — narrow doorways, steep staircases, and tight hallways require experienced crews. We protect your floors and walls on every move.",
+    home: "Capitol Hill's Victorian homes and craftsman bungalows are beautiful but challenging to move, narrow doorways, steep staircases, and tight hallways require experienced crews. We protect your floors and walls on every move.",
     business: "Capitol Hill has a thriving small business scene along Broadway and Pike/Pine. We handle office moves, retail relocations, and restaurant equipment moves throughout the neighborhood.",
   },
   "queen-anne-movers": {
@@ -1340,7 +1340,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     heroTagline: "Queen Anne's Trusted Local Moving Company",
     heroSubtitle: "Expert movers for Queen Anne's Victorian homes, apartments, and steep neighborhood streets.",
     intro: "Queen Anne is one of Seattle's most iconic neighborhoods, known for its stunning views, Victorian architecture, and the steep hill that defines the neighborhood. Moving in Queen Anne requires experienced crews who know how to navigate the steep grades, limited parking, and historic homes that make this neighborhood unique. On The Go Moving & Storage has been serving Queen Anne residents since 2009.",
-    localKnowledge: "Queen Anne Hill is one of Seattle's steepest neighborhoods. The main arterials — Queen Anne Ave N, 1st Ave N, and 2nd Ave N — have limited truck parking. The hill's steep grades require experienced drivers and properly loaded trucks to prevent shifting. Many Queen Anne homes are historic Victorians with narrow doorways and staircases. Lower Queen Anne (Uptown) has dense apartment buildings with limited parking. Our Redmond warehouse is 13 miles east — a 20-minute drive.",
+    localKnowledge: "Queen Anne Hill is one of Seattle's steepest neighborhoods. The main arterials, Queen Anne Ave N, 1st Ave N, and 2nd Ave N, have limited truck parking. The hill's steep grades require experienced drivers and properly loaded trucks to prevent shifting. Many Queen Anne homes are historic Victorians with narrow doorways and staircases. Lower Queen Anne (Uptown) has dense apartment buildings with limited parking. Our Redmond warehouse is 13 miles east, a 20-minute drive.",
     neighborhoods: ["Upper Queen Anne", "Lower Queen Anne / Uptown", "Queen Anne Ave N corridor", "Boston Street", "Bigelow Ave N", "Kerry Park area"],
     challenges: ["Steep grades requiring experienced drivers and proper truck loading", "Limited truck parking on Queen Anne Ave N and main streets", "Narrow doorways and staircases in historic Victorian homes", "Dense apartment buildings in Lower Queen Anne with limited parking", "SDOT parking permits often required"],
     pricing: {
@@ -1365,7 +1365,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       ["Redmond", "redmond-movers"],
     ],
     apartment: "Lower Queen Anne (Uptown) has a dense apartment market near Seattle Center. Many buildings have limited parking for moving trucks. Upper Queen Anne has smaller apartment buildings and condos. We handle both areas with equal expertise.",
-    home: "Queen Anne's Victorian homes are some of Seattle's most beautiful — and most challenging to move. Narrow doorways, steep staircases, and period furniture require experienced crews. We protect your floors, walls, and architectural details throughout the move.",
+    home: "Queen Anne's Victorian homes are some of Seattle's most beautiful, and most challenging to move. Narrow doorways, steep staircases, and period furniture require experienced crews. We protect your floors, walls, and architectural details throughout the move.",
     business: "Queen Anne has a growing business community near Seattle Center and along Queen Anne Ave N. We handle office moves and commercial relocations throughout the neighborhood.",
   },
   "fremont-movers": {
@@ -1380,7 +1380,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     heroTagline: "Fremont's Trusted Local Moving Company",
     heroSubtitle: "Serving Fremont's apartments, condos, craftsman homes, and the Center of the Universe.",
     intro: "Fremont is one of Seattle's most eclectic and beloved neighborhoods, with a mix of craftsman homes, modern condos, and tech offices along the Ship Canal. Moving in Fremont requires navigating narrow residential streets, limited parking near the commercial core, and the occasional quirky access challenge. On The Go Moving & Storage has been serving Fremont residents since 2009.",
-    localKnowledge: "Fremont's residential streets north of 36th St are narrow with limited truck access. The commercial core along Fremont Ave N and N 36th St has virtually no truck parking. Many Fremont apartment buildings are older with no service elevator. The neighborhood's craftsman homes often have narrow doorways and steep staircases. Our Redmond warehouse is 13 miles east — a 21-minute drive.",
+    localKnowledge: "Fremont's residential streets north of 36th St are narrow with limited truck access. The commercial core along Fremont Ave N and N 36th St has virtually no truck parking. Many Fremont apartment buildings are older with no service elevator. The neighborhood's craftsman homes often have narrow doorways and steep staircases. Our Redmond warehouse is 13 miles east, a 21-minute drive.",
     neighborhoods: ["Fremont core", "North Fremont", "Phinney Ridge adjacent", "Wallingford adjacent", "Fremont Ave N corridor", "Stone Way N corridor"],
     challenges: ["Narrow residential streets north of 36th St", "Limited truck parking near the commercial core", "No service elevator in many older apartment buildings", "Narrow doorways and staircases in craftsman homes", "Overhead utility lines on some residential streets"],
     pricing: {
@@ -1405,7 +1405,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       ["Kirkland", "kirkland-movers"],
     ],
     apartment: "Fremont has a mix of vintage apartment buildings and newer condos. Many older buildings have no elevator. We handle stair carries efficiently with the right equipment and crew.",
-    home: "Fremont's craftsman homes are charming but challenging — narrow doorways, steep staircases, and tight hallways require experienced crews. We protect your floors and architectural details throughout the move.",
+    home: "Fremont's craftsman homes are charming but challenging, narrow doorways, steep staircases, and tight hallways require experienced crews. We protect your floors and architectural details throughout the move.",
     business: "Fremont is home to Google's Seattle campus and many tech companies along the Ship Canal. We handle office moves and commercial relocations throughout the neighborhood.",
   },
   "juanita-movers": {
@@ -1417,9 +1417,9 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     metaTitle: "Juanita Movers & Storage",
     metaDescription: "Professional moving services in Juanita, Kirkland, WA. Trusted local movers for Juanita's homes, condos, and apartments. Licensed, insured, 4.8 stars. Free quote.",
     heroTagline: "Juanita's Trusted Local Moving Company",
-    heroSubtitle: "Serving Juanita's homes, condos, and apartments — just 12 minutes from our Redmond warehouse.",
-    intro: "Juanita is a beautiful waterfront community within Kirkland, known for Juanita Beach Park, quiet residential streets, and a mix of single-family homes and condos. On The Go Moving & Storage is just 7 miles from Juanita — making us one of the closest and most responsive moving companies for Juanita residents.",
-    localKnowledge: "Juanita's residential streets are generally accessible, but some areas near the waterfront have limited truck access. The neighborhood's mix of older homes and newer condos means our crews encounter a variety of access situations. Our proximity to Juanita — just 12 minutes from our Redmond warehouse — means we can respond quickly and keep travel time costs low.",
+    heroSubtitle: "Serving Juanita's homes, condos, and apartments, just 12 minutes from our Redmond warehouse.",
+    intro: "Juanita is a beautiful waterfront community within Kirkland, known for Juanita Beach Park, quiet residential streets, and a mix of single-family homes and condos. On The Go Moving & Storage is just 7 miles from Juanita, making us one of the closest and most responsive moving companies for Juanita residents.",
+    localKnowledge: "Juanita's residential streets are generally accessible, but some areas near the waterfront have limited truck access. The neighborhood's mix of older homes and newer condos means our crews encounter a variety of access situations. Our proximity to Juanita, just 12 minutes from our Redmond warehouse, means we can respond quickly and keep travel time costs low.",
     neighborhoods: ["Juanita Beach", "Juanita Village", "Holmes Point", "Finn Hill adjacent", "Totem Lake adjacent"],
     challenges: ["Limited truck access near the waterfront", "Mix of older homes with narrow access and newer condos", "Steep driveways in some hillside properties"],
     pricing: {
@@ -1431,7 +1431,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     },
     faqs: [
       { q: "How much does it cost to move in Juanita?", a: "Most Juanita moves cost $120–$160 per hour for a 2-person crew. A 1-bedroom apartment typically runs $450–$750. A 2-bedroom home move usually costs $700–$1,200. We provide flat-rate quotes." },
-      { q: "How close are you to Juanita?", a: "Our Redmond warehouse is just 7 miles from Juanita — a 12-minute drive. This means lower travel time costs and faster response times for Juanita residents." },
+      { q: "How close are you to Juanita?", a: "Our Redmond warehouse is just 7 miles from Juanita, a 12-minute drive. This means lower travel time costs and faster response times for Juanita residents." },
       { q: "Are you licensed and insured for Juanita moves?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured with general liability and cargo insurance on every move." },
       { q: "Do you offer packing services in Juanita?", a: "Yes. We offer full packing, partial packing, and unpacking services for Juanita residents." },
       { q: "How far in advance should I book Juanita movers?", a: "We recommend booking 2–4 weeks in advance, especially for summer moves and end-of-month dates." },
@@ -1458,7 +1458,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     heroTagline: "Professional Moving Services to and from Olympia",
     heroSubtitle: "Serving moves between Olympia, Lacey, Tumwater, and the Greater Seattle area.",
     intro: "On The Go Moving & Storage serves moves between Olympia and the Greater Seattle area. Whether you're relocating from Seattle to Olympia for a state government job, moving a family to the South Sound, or heading north to the Eastside, our experienced crews handle the full move with the same care and professionalism we bring to every job.",
-    localKnowledge: "Olympia moves are long-distance local moves — typically 60–70 miles from our Redmond warehouse. We price these moves as flat-rate jobs based on the scope of the move, not hourly, to give you predictable pricing. Olympia's downtown has limited truck access in some areas. The surrounding communities of Lacey and Tumwater are generally more accessible.",
+    localKnowledge: "Olympia moves are long-distance local moves, typically 60–70 miles from our Redmond warehouse. We price these moves as flat-rate jobs based on the scope of the move, not hourly, to give you predictable pricing. Olympia's downtown has limited truck access in some areas. The surrounding communities of Lacey and Tumwater are generally more accessible.",
     neighborhoods: ["Downtown Olympia", "Eastside", "Westside", "South Capitol", "Lacey", "Tumwater", "Hawks Prairie"],
     challenges: ["60–70 mile distance from our Redmond warehouse", "Limited truck access in Downtown Olympia", "State government buildings may have specific move requirements"],
     pricing: {
@@ -1497,7 +1497,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     heroTagline: "Snoqualmie's Trusted Local Moving Company",
     heroSubtitle: "Serving Snoqualmie Ridge, Snoqualmie Valley, and surrounding communities.",
     intro: "Snoqualmie is a master-planned community in the foothills of the Cascades, known for Snoqualmie Ridge, the historic Snoqualmie Falls, and a growing residential community. On The Go Moving & Storage serves Snoqualmie residents and the surrounding Snoqualmie Valley with professional moving services.",
-    localKnowledge: "Snoqualmie Ridge is a large planned community with wide streets and good truck access. The older downtown Snoqualmie area has narrower streets. The Snoqualmie Valley communities — including North Bend and Fall City — are within our service area. Our Redmond warehouse is 20 miles west — a 28-minute drive.",
+    localKnowledge: "Snoqualmie Ridge is a large planned community with wide streets and good truck access. The older downtown Snoqualmie area has narrower streets. The Snoqualmie Valley communities, including North Bend and Fall City, are within our service area. Our Redmond warehouse is 20 miles west, a 28-minute drive.",
     neighborhoods: ["Snoqualmie Ridge", "Downtown Snoqualmie", "Snoqualmie Falls area", "North Bend adjacent", "Fall City adjacent"],
     challenges: ["Distance from Seattle metro (20+ miles)", "Some narrow streets in older downtown area", "Seasonal road conditions near the Cascades"],
     pricing: {

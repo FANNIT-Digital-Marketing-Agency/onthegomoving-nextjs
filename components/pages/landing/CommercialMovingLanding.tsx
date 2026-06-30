@@ -14,7 +14,7 @@ const SERVICES = [
   {
     icon: Building2,
     title: "Office Relocations",
-    desc: "Minimal downtime moves for offices of any size — from a single suite to a full floor.",
+    desc: "Minimal downtime moves for offices of any size, from a single suite to a full floor.",
   },
   {
     icon: Truck,
@@ -24,18 +24,18 @@ const SERVICES = [
   {
     icon: FileText,
     title: "COI & Building Compliance",
-    desc: "We provide Certificates of Insurance for any building requirement — no delays.",
+    desc: "We provide Certificates of Insurance for any building requirement, no delays.",
   },
   {
     icon: Clock,
     title: "After-Hours & Weekend Moves",
-    desc: "We work around your schedule to avoid business disruption — nights and weekends available.",
+    desc: "We work around your schedule to avoid business disruption, nights and weekends available.",
   },
 ];
 
 const TRUST_ITEMS = [
   { icon: Star, text: `${COMPANY.googleRating}★ (${COMPANY.googleReviewCount.toLocaleString()} reviews)` },
-  { icon: Shield, text: "Fully insured — COI provided on request" },
+  { icon: Shield, text: "Fully insured, COI provided on request" },
   { icon: Building2, text: "Offices, retail, medical, industrial" },
   { icon: CheckCircle, text: `Serving Seattle businesses since ${COMPANY.founded}` },
 ];
@@ -43,11 +43,11 @@ const TRUST_ITEMS = [
 const FAQS = [
   {
     q: "Do you provide a Certificate of Insurance (COI) for our building?",
-    a: "Yes. We provide COIs naming your building management as additional insured — a standard requirement for most Seattle commercial buildings. Just let us know the building's requirements when you request your quote.",
+    a: "Yes. We provide COIs naming your building management as additional insured, a standard requirement for most Seattle commercial buildings. Just let us know the building's requirements when you request your quote.",
   },
   {
     q: "Can you move our office outside of business hours?",
-    a: "Absolutely. We regularly do after-hours and weekend moves to minimize disruption to your business operations. We'll work around your schedule — just tell us your preferred window.",
+    a: "Absolutely. We regularly do after-hours and weekend moves to minimize disruption to your business operations. We'll work around your schedule, just tell us your preferred window.",
   },
   {
     q: "How do you handle IT equipment and servers?",
@@ -55,7 +55,7 @@ const FAQS = [
   },
   {
     q: "Do you offer flat-rate pricing for commercial moves?",
-    a: "Yes. We quote commercial moves at a flat rate based on the scope of work — not an open-ended hourly clock. You'll know your exact cost before we show up.",
+    a: "Yes. We quote commercial moves at a flat rate based on the scope of work, not an open-ended hourly clock. You'll know your exact cost before we show up.",
   },
 ];
 
@@ -100,7 +100,7 @@ export default function CommercialMovingLanding() {
                 <span className="text-[#75aa11]">Seattle Businesses Trust</span>
               </h1>
               <p className="text-lg text-gray-200 mb-6 max-w-lg">
-                Office relocations, equipment moves, and business transitions — done on your schedule to minimize downtime. COI provided for any building requirement.
+                Office relocations, equipment moves, and business transitions, done on your schedule to minimize downtime. COI provided for any building requirement.
               </p>
 
               {/* Phone CTA + scroll-to-form anchor */}
@@ -116,7 +116,7 @@ export default function CommercialMovingLanding() {
                 </a>
               </div>
 
-              {/* Trust badges — single row on mobile */}
+              {/* Trust badges, single row on mobile */}
               <div className="flex flex-nowrap gap-x-3 mt-2 overflow-hidden">
                 {TRUST_ITEMS.slice(0, 2).map(({ icon: Icon, text }) => (
                   <div key={text} className="flex items-center gap-2 text-xs sm:text-sm text-gray-200 flex-shrink-0 whitespace-nowrap">
@@ -212,7 +212,7 @@ export default function CommercialMovingLanding() {
                   "COI (Certificate of Insurance) provided for any building",
                   "After-hours and weekend moves to avoid business disruption",
                   "Specialized handling for IT equipment and sensitive inventory",
-                  "Flat-rate commercial pricing — no surprise hourly overruns",
+                  "Flat-rate commercial pricing, no surprise hourly overruns",
                   `${COMPANY.googleRating}★ average across ${COMPANY.googleReviewCount.toLocaleString()} Google reviews`,
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">

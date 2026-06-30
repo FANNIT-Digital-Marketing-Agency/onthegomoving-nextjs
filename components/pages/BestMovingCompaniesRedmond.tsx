@@ -9,7 +9,7 @@ const COMPANIES = [
   {
     rank: 1,
     name: "On The Go Moving & Storage",
-    badge: "Best Overall — Redmond's Local Mover",
+    badge: "Best Overall, Redmond's Local Mover",
     badgeColor: "bg-[#75aa11] text-white",
     url: "https://www.onthegomoving.com",
     phone: "(425) 761-8500",
@@ -21,11 +21,11 @@ const COMPANIES = [
     twoBedEstimate: "$450–$900",
     bestFor: "Best Overall Value",
     pros: [
-      "Warehouse and headquarters based in Redmond — no travel time markup for most Redmond moves",
-      "Transparent hourly pricing — no hidden fees, no fuel surcharges",
+      "Warehouse and headquarters based in Redmond, no travel time markup for most Redmond moves",
+      "Transparent hourly pricing, no hidden fees, no fuel surcharges",
       "Secure climate-controlled vault storage available",
       "Licensed, insured, and BBB-accredited since 2009",
-      "W-2 employee crews — not day laborers or subcontractors",
+      "W-2 employee crews, not day laborers or subcontractors",
       "Same-day and next-day availability outside peak season",
       "Recommended multiple times on r/redmond by real customers",
     ],
@@ -33,7 +33,7 @@ const COMPANIES = [
       "Books up fast during summer peak season (May–September)",
       "Online booking fills quickly for weekend slots",
     ],
-    description: `On The Go Moving & Storage is the only major moving company on this list that is actually headquartered in Redmond. Their warehouse and operations base is located in Redmond, WA — which means no travel time surcharge for most Redmond moves, and crews who know the area's neighborhoods, apartment complexes, and traffic patterns intimately. With 1,562+ five-star Google reviews, a 4.8-star average, and 25,000+ completed moves since 2009, they are the most reviewed independent mover serving the Eastside. Their pricing is fully transparent: you pay for the time the crew works, with no fuel surcharges, no stair fees, and no hidden add-ons. Multiple r/redmond users have specifically recommended On The Go by name in recent threads. For Redmond residents, this is the clearest choice for value, reliability, and local knowledge.`,
+    description: `On The Go Moving & Storage is the only major moving company on this list that is actually headquartered in Redmond. Their warehouse and operations base is located in Redmond, WA, which means no travel time surcharge for most Redmond moves, and crews who know the area's neighborhoods, apartment complexes, and traffic patterns intimately. With 1,562+ five-star Google reviews, a 4.8-star average, and 25,000+ completed moves since 2009, they are the most reviewed independent mover serving the Eastside. Their pricing is fully transparent: you pay for the time the crew works, with no fuel surcharges, no stair fees, and no hidden add-ons. Multiple r/redmond users have specifically recommended On The Go by name in recent threads. For Redmond residents, this is the clearest choice for value, reliability, and local knowledge.`,
     internalLinks: [
       { label: "Redmond Movers", href: "/redmond-movers/" },
       { label: "Redmond Residential Moving", href: "/redmond-residential-movers/" },
@@ -68,7 +68,7 @@ const COMPANIES = [
     badge: "Best for Careful Handling",
     badgeColor: "bg-blue-700 text-white",
     url: "https://jordanrivermoving.com",
-    phone: "N/A — book online",
+    phone: "N/A, book online",
     founded: "N/A",
     googleRating: 4.8,
     reviewCount: "300+",
@@ -86,7 +86,7 @@ const COMPANIES = [
       "Pricing slightly above budget options",
       "Availability can be limited during peak summer months",
     ],
-    description: `Jordan River Moving is one of the most consistently recommended movers on Redmond and Eastside Reddit threads. Multiple r/redmond users have cited them specifically for their careful handling — crews are known for wrapping items thoroughly before any move begins. One r/eastside commenter noted: "FYI in Washington State all local moves are paid by time" and recommended Jordan River for their efficiency and care. They are a solid choice for Redmond residents with furniture or items that require extra attention. For straightforward moves where price is the top priority, On The Go Moving offers comparable care at a lower rate.`,
+    description: `Jordan River Moving is one of the most consistently recommended movers on Redmond and Eastside Reddit threads. Multiple r/redmond users have cited them specifically for their careful handling, crews are known for wrapping items thoroughly before any move begins. One r/eastside commenter noted: "FYI in Washington State all local moves are paid by time" and recommended Jordan River for their efficiency and care. They are a solid choice for Redmond residents with furniture or items that require extra attention. For straightforward moves where price is the top priority, On The Go Moving offers comparable care at a lower rate.`,
     internalLinks: [],
     schema: {
       "@type": "LocalBusiness",
@@ -111,7 +111,7 @@ const COMPANIES = [
     badge: "Best for Eco-Conscious Moves",
     badgeColor: "bg-green-700 text-white",
     url: "https://www.ecomovers.com",
-    phone: "N/A — book online",
+    phone: "N/A, book online",
     founded: "2008",
     googleRating: 4.6,
     reviewCount: "400+",
@@ -120,7 +120,7 @@ const COMPANIES = [
     twoBedEstimate: "$600–$1,100",
     bestFor: "Eco-Friendly Moves",
     pros: [
-      "Uses reusable moving bins — reduces cardboard waste",
+      "Uses reusable moving bins, reduces cardboard waste",
       "Strong coverage across Redmond, Bellevue, and Eastside",
       "Offers packing and storage services",
       "Frequently recommended on r/redmond and r/eastside",
@@ -130,7 +130,7 @@ const COMPANIES = [
       "Pricing can vary significantly based on crew and date",
       "Less transparent pricing structure than hourly-only competitors",
     ],
-    description: `Eco Movers has been a fixture in the Eastside moving market since 2008 and is frequently recommended on Redmond community forums. Their eco-friendly approach — reusable plastic bins instead of cardboard boxes — appeals to environmentally conscious residents. They have solid coverage across Redmond and the broader Eastside. However, recent Reddit threads have surfaced some billing concerns, with a few customers reporting final invoices higher than initial estimates. Always get a detailed written estimate and confirm all potential add-on charges before booking.`,
+    description: `Eco Movers has been a fixture in the Eastside moving market since 2008 and is frequently recommended on Redmond community forums. Their eco-friendly approach, reusable plastic bins instead of cardboard boxes, appeals to environmentally conscious residents. They have solid coverage across Redmond and the broader Eastside. However, recent Reddit threads have surfaced some billing concerns, with a few customers reporting final invoices higher than initial estimates. Always get a detailed written estimate and confirm all potential add-on charges before booking.`,
     internalLinks: [],
     schema: {
       "@type": "LocalBusiness",
@@ -155,7 +155,7 @@ const COMPANIES = [
     badge: "Best for Budget Local Moves",
     badgeColor: "bg-orange-600 text-white",
     url: "https://adamsmovingservice.com",
-    phone: "N/A — book online",
+    phone: "N/A, book online",
     founded: "N/A",
     googleRating: 4.7,
     reviewCount: "300+",
@@ -170,11 +170,11 @@ const COMPANIES = [
       "Competitive pricing for the Eastside market",
     ],
     cons: [
-      "Billing model has shifted — some larger moves now quoted by volume, not hourly",
-      "Smaller operation — limited availability during peak summer months",
+      "Billing model has shifted, some larger moves now quoted by volume, not hourly",
+      "Smaller operation, limited availability during peak summer months",
       "Some long-time customers report higher rates than previous years",
     ],
-    description: `Adam's Moving is one of the most frequently recommended local movers on Redmond and Eastside community forums, particularly for smaller moves. Their crews are praised for being fast, careful, and professional. One important note: their billing model has evolved — some customers report that for larger moves, they now quote based on truck volume rather than hourly rate, which can result in higher-than-expected invoices. Always confirm the billing method when getting a quote. For straightforward small-to-medium Redmond moves, Adam's remains a solid choice.`,
+    description: `Adam's Moving is one of the most frequently recommended local movers on Redmond and Eastside community forums, particularly for smaller moves. Their crews are praised for being fast, careful, and professional. One important note: their billing model has evolved, some customers report that for larger moves, they now quote based on truck volume rather than hourly rate, which can result in higher-than-expected invoices. Always confirm the billing method when getting a quote. For straightforward small-to-medium Redmond moves, Adam's remains a solid choice.`,
     internalLinks: [],
     schema: {
       "@type": "LocalBusiness",
@@ -215,9 +215,9 @@ const COMPANIES = [
     ],
     cons: [
       "Less name recognition than larger Eastside movers",
-      "Smaller fleet — limited availability for large or complex moves",
+      "Smaller fleet, limited availability for large or complex moves",
     ],
-    description: `People Movers is a Bothell-based company with strong coverage across the Eastside suburbs — Redmond, Kenmore, Kirkland, Bothell, Woodinville, and surrounding areas. They carry $2M in business liability and cargo coverage, which is above the industry minimum. Customers consistently praise their efficiency and professionalism. For moves centered on the Eastside, People Movers is worth getting a quote from alongside On The Go Moving.`,
+    description: `People Movers is a Bothell-based company with strong coverage across the Eastside suburbs, Redmond, Kenmore, Kirkland, Bothell, Woodinville, and surrounding areas. They carry $2M in business liability and cargo coverage, which is above the industry minimum. Customers consistently praise their efficiency and professionalism. For moves centered on the Eastside, People Movers is worth getting a quote from alongside On The Go Moving.`,
     internalLinks: [],
     schema: {
       "@type": "LocalBusiness",
@@ -243,7 +243,7 @@ const COMPANIES = [
     badge: "Best for Large Home Moves",
     badgeColor: "bg-purple-700 text-white",
     url: "https://fabulousmovers.com",
-    phone: "N/A — book online",
+    phone: "N/A, book online",
     founded: "N/A",
     googleRating: 4.7,
     reviewCount: "150+",
@@ -261,7 +261,7 @@ const COMPANIES = [
       "Less established review volume than top competitors",
       "Pricing can vary depending on job complexity",
     ],
-    description: `Fabulous Movers has earned genuine recommendations on r/redmond for handling large home moves — one community member described a 5,800 square foot custom home move that was completed with full packing, loading, and care. Another r/redmond user noted they were able to accommodate a last-minute second move the following week when apartment issues arose. They are a solid option for larger Redmond homes where flexibility and crew capacity matter. For standard 1–3 bedroom moves, On The Go Moving offers more transparent pricing and a higher verified review volume.`,
+    description: `Fabulous Movers has earned genuine recommendations on r/redmond for handling large home moves, one community member described a 5,800 square foot custom home move that was completed with full packing, loading, and care. Another r/redmond user noted they were able to accommodate a last-minute second move the following week when apartment issues arose. They are a solid option for larger Redmond homes where flexibility and crew capacity matter. For standard 1–3 bedroom moves, On The Go Moving offers more transparent pricing and a higher verified review volume.`,
     internalLinks: [],
     schema: {
       "@type": "LocalBusiness",
@@ -286,7 +286,7 @@ const COMPANIES = [
     badge: "Best for Communication",
     badgeColor: "bg-indigo-600 text-white",
     url: "https://www.easycompanymoving.com",
-    phone: "N/A — book online",
+    phone: "N/A, book online",
     founded: "N/A",
     googleRating: 4.9,
     reviewCount: "100+",
@@ -301,10 +301,10 @@ const COMPANIES = [
       "Movers are kind, personable, and thorough",
     ],
     cons: [
-      "Smaller operation — limited crew availability",
+      "Smaller operation, limited crew availability",
       "Less established review volume than larger competitors",
     ],
-    description: `Easy Company Moving was specifically recommended on r/redmond by a customer who used them for two separate 5-bedroom/3-bathroom home moves. The reviewer highlighted owner Kyle's proactive communication — suggesting things customers may not have thought of — and praised the movers as "phenomenal." For Redmond residents who value direct owner involvement and strong communication throughout the move process, Easy Company Moving is worth a quote. Their smaller size means availability can be limited, especially during peak season.`,
+    description: `Easy Company Moving was specifically recommended on r/redmond by a customer who used them for two separate 5-bedroom/3-bathroom home moves. The reviewer highlighted owner Kyle's proactive communication, suggesting things customers may not have thought of, and praised the movers as "phenomenal." For Redmond residents who value direct owner involvement and strong communication throughout the move process, Easy Company Moving is worth a quote. Their smaller size means availability can be limited, especially during peak season.`,
     internalLinks: [],
     schema: {
       "@type": "LocalBusiness",
@@ -329,7 +329,7 @@ const COMPANIES = [
     badge: "Best for White-Glove Service",
     badgeColor: "bg-gray-700 text-white",
     url: "https://www.gentlegiant.com",
-    phone: "N/A — book online",
+    phone: "N/A, book online",
     founded: "1980",
     googleRating: 4.7,
     reviewCount: "125+",
@@ -339,7 +339,7 @@ const COMPANIES = [
     bestFor: "White-Glove & Long-Distance",
     pros: [
       "National brand with strong Eastside presence",
-      "High hiring standards — crews are known for professionalism",
+      "High hiring standards, crews are known for professionalism",
       "Excellent for long-distance and interstate moves",
       "Strong track record for fragile and high-value items",
     ],
@@ -348,7 +348,7 @@ const COMPANIES = [
       "3-hour labor minimum adds up quickly on small moves",
       "Less competitive for budget-conscious local moves",
     ],
-    description: `Gentle Giant has been in business since 1980 and is consistently recommended on Redmond and Eastside Reddit threads for their professionalism and care. Their crews are well-trained and known for running — not walking — between loads. The tradeoff is price: at ~$243/hr for a three-person crew, they are among the most expensive options in the market. They are best suited for large homes, high-value items, or long-distance moves where the premium is justified. For a standard 1–2 bedroom local Redmond move, most price-conscious shoppers will find better value with On The Go Moving.`,
+    description: `Gentle Giant has been in business since 1980 and is consistently recommended on Redmond and Eastside Reddit threads for their professionalism and care. Their crews are well-trained and known for running, not walking, between loads. The tradeoff is price: at ~$243/hr for a three-person crew, they are among the most expensive options in the market. They are best suited for large homes, high-value items, or long-distance moves where the premium is justified. For a standard 1–2 bedroom local Redmond move, most price-conscious shoppers will find better value with On The Go Moving.`,
     internalLinks: [],
     schema: {
       "@type": "LocalBusiness",
@@ -373,7 +373,7 @@ const COMPANIES = [
     badge: "Best for Junk Removal + Moving",
     badgeColor: "bg-red-600 text-white",
     url: "https://www.collegehunkshaulingjunk.com",
-    phone: "N/A — book online",
+    phone: "N/A, book online",
     founded: "2003",
     googleRating: 4.6,
     reviewCount: "250+",
@@ -392,7 +392,7 @@ const COMPANIES = [
       "Not the best choice for a straightforward local move without junk removal",
       "Pricing can be less transparent than hourly-only competitors",
     ],
-    description: `College HUNKS is a national franchise that combines moving services with junk hauling — making them uniquely useful if you're downsizing, clearing out an estate, or need to dispose of furniture and appliances before or during your Redmond move. Their Eastside franchise has solid reviews and uniformed, background-checked crews. For a standard local move without junk removal needs, they are not the most cost-efficient option. But if you're combining a move with a cleanout, the ability to handle both in one booking is a genuine convenience.`,
+    description: `College HUNKS is a national franchise that combines moving services with junk hauling, making them uniquely useful if you're downsizing, clearing out an estate, or need to dispose of furniture and appliances before or during your Redmond move. Their Eastside franchise has solid reviews and uniformed, background-checked crews. For a standard local move without junk removal needs, they are not the most cost-efficient option. But if you're combining a move with a cleanout, the ability to handle both in one booking is a genuine convenience.`,
     internalLinks: [],
     schema: {
       "@type": "LocalBusiness",
@@ -417,7 +417,7 @@ const COMPANIES = [
     badge: "Best for Long-Distance & Commercial",
     badgeColor: "bg-yellow-700 text-white",
     url: "https://www.hansenbros.com",
-    phone: "N/A — book online",
+    phone: "N/A, book online",
     founded: "1890",
     googleRating: 4.5,
     reviewCount: "500+",
@@ -426,8 +426,8 @@ const COMPANIES = [
     twoBedEstimate: "$900–$1,800",
     bestFor: "Long-Distance & Commercial",
     pros: [
-      "Established since 1890 — one of the Pacific Northwest's oldest movers",
-      "Allied Van Lines agent — strong for long-distance and interstate moves",
+      "Established since 1890, one of the Pacific Northwest's oldest movers",
+      "Allied Van Lines agent, strong for long-distance and interstate moves",
       "Newcastle location serves the Eastside directly",
       "A+ BBB rating",
       "Full-service commercial and office relocation capabilities",
@@ -437,7 +437,7 @@ const COMPANIES = [
       "Some reviewers report high quotes for standard local jobs",
       "Better suited for large commercial or long-distance moves than small local ones",
     ],
-    description: `Hansen Bros. has been moving Eastside families and businesses since 1890. As an Allied Van Lines agent, they are particularly strong for long-distance and interstate moves. Their Newcastle location serves the Eastside directly. For local Redmond moves, their pricing is on the higher end — several Reddit users have noted receiving quotes significantly above market rate for standard local jobs. Where Hansen Bros. shines is in large commercial relocations, office moves, and long-distance moves where their network and infrastructure provide real value.`,
+    description: `Hansen Bros. has been moving Eastside families and businesses since 1890. As an Allied Van Lines agent, they are particularly strong for long-distance and interstate moves. Their Newcastle location serves the Eastside directly. For local Redmond moves, their pricing is on the higher end, several Reddit users have noted receiving quotes significantly above market rate for standard local jobs. Where Hansen Bros. shines is in large commercial relocations, office moves, and long-distance moves where their network and infrastructure provide real value.`,
     internalLinks: [],
     schema: {
       "@type": "LocalBusiness",
@@ -472,7 +472,7 @@ const FAQS = [
   },
   {
     q: "Is On The Go Moving based in Redmond?",
-    a: "Yes — On The Go Moving & Storage is headquartered and warehoused in Redmond, WA. This means their crews have direct local knowledge of Redmond neighborhoods, apartment complexes, and traffic patterns, and there is typically no travel time surcharge for moves within Redmond.",
+    a: "Yes, On The Go Moving & Storage is headquartered and warehoused in Redmond, WA. This means their crews have direct local knowledge of Redmond neighborhoods, apartment complexes, and traffic patterns, and there is typically no travel time surcharge for moves within Redmond.",
   },
   {
     q: "What is the cheapest time to move in Redmond?",
@@ -480,7 +480,7 @@ const FAQS = [
   },
   {
     q: "Do Redmond movers charge extra for stairs or elevators?",
-    a: "Many movers add stair fees ($50–$150 per flight) or elevator fees. On The Go Moving does not charge stair or elevator fees — their hourly rate covers all standard move conditions. Always ask about these fees before booking any mover.",
+    a: "Many movers add stair fees ($50–$150 per flight) or elevator fees. On The Go Moving does not charge stair or elevator fees, their hourly rate covers all standard move conditions. Always ask about these fees before booking any mover.",
   },
   {
     q: "How do I verify a moving company is licensed in Washington State?",
@@ -493,9 +493,9 @@ const FAQS = [
 ];
 
 export default function BestMovingCompaniesRedmond() {
-  const pageTitle = "10 Best Moving Companies in Redmond, WA (2026) — Honest Comparison";
+  const pageTitle = "10 Best Moving Companies in Redmond, WA (2026), Honest Comparison";
   const pageDesc =
-    "Compare the best moving companies in Redmond, WA with real pricing, ratings, and honest pros & cons. Updated for 2026. On The Go Moving rated #1 — the only major mover based in Redmond.";
+    "Compare the best moving companies in Redmond, WA with real pricing, ratings, and honest pros & cons. Updated for 2026. On The Go Moving rated #1, the only major mover based in Redmond.";
 
   const schemaItemList = {
     "@context": "https://schema.org",
@@ -555,12 +555,12 @@ export default function BestMovingCompaniesRedmond() {
             10 Best Moving Companies in Redmond, WA (2026)
           </h1>
           <p className="text-lg text-gray-600 leading-relaxed">
-            We researched and ranked the top Redmond moving companies based on real Google and Yelp ratings, transparent pricing, licensing, and what actual customers say on Reddit and community forums. Whether you're moving within Education Hill, relocating from Overlake to Redmond Ridge, or moving to or from the Microsoft campus area, this guide gives you the honest comparison you need — and flags the movers that have burned Eastside residents with surprise bills.
+            We researched and ranked the top Redmond moving companies based on real Google and Yelp ratings, transparent pricing, licensing, and what actual customers say on Reddit and community forums. Whether you're moving within Education Hill, relocating from Overlake to Redmond Ridge, or moving to or from the Microsoft campus area, this guide gives you the honest comparison you need, and flags the movers that have burned Eastside residents with surprise bills.
           </p>
           {/* Local callout */}
           <div className="mt-5 flex items-start gap-3 p-4 bg-blue-50 border border-blue-200 rounded-xl text-sm text-blue-800">
             <MapPin size={18} className="text-blue-500 mt-0.5 shrink-0" />
-            <p><strong>Redmond-specific note:</strong> Unlike most movers on this list who are based in Seattle or Bellevue, <strong>On The Go Moving is headquartered and warehoused in Redmond</strong>. That means no travel time markup for most Redmond moves — a meaningful cost difference on hourly billing.</p>
+            <p><strong>Redmond-specific note:</strong> Unlike most movers on this list who are based in Seattle or Bellevue, <strong>On The Go Moving is headquartered and warehoused in Redmond</strong>. That means no travel time markup for most Redmond moves, a meaningful cost difference on hourly billing.</p>
           </div>
           <div className="mt-5 p-4 bg-[#1e3a0f] text-white rounded-xl flex flex-col sm:flex-row gap-4 items-start sm:items-center">
             <div className="flex-1">
@@ -660,7 +660,7 @@ export default function BestMovingCompaniesRedmond() {
         {/* Company cards */}
         <section className="mb-12 space-y-8">
           <h2 className="text-2xl font-bold text-[#1e3a0f]" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-            The 10 Best Redmond Movers — Detailed Reviews
+            The 10 Best Redmond Movers, Detailed Reviews
           </h2>
           {COMPANIES.map((company) => (
             <div
@@ -793,7 +793,7 @@ export default function BestMovingCompaniesRedmond() {
                       href="tel:4257618500"
                       className="flex-1 text-center bg-[#f5c518] text-[#1e3a0f] font-bold py-3 rounded-lg hover:bg-yellow-400 transition-colors text-sm"
                     >
-                      Call (425) 761-8500 — Free Quote
+                      Call (425) 761-8500, Free Quote
                     </a>
                     <Link
                       href="/contact-us/"
@@ -817,7 +817,7 @@ export default function BestMovingCompaniesRedmond() {
             We evaluated each company across five criteria: <strong>pricing transparency</strong> (hourly vs. volume-based, hidden fees), <strong>verified ratings</strong> (Google, Yelp, Angi), <strong>licensing</strong> (Washington State UTC registration), <strong>insurance coverage</strong>, and <strong>real customer feedback</strong> from Reddit (r/redmond, r/eastside), community forums, and review aggregators. We did not accept payment or incentives from any company listed here.
           </p>
           <p className="text-gray-700 text-sm leading-relaxed">
-            On The Go Moving ranked #1 because they are the only major mover on this list that is actually headquartered in Redmond — meaning no travel time markup for most Redmond moves. Combined with the most transparent pricing structure in the Eastside market (true hourly billing with no add-on fees), the highest verified review volume among local independent movers (1,562+ Google reviews), and W-2 employee crews, they represent the clearest value for Redmond residents.
+            On The Go Moving ranked #1 because they are the only major mover on this list that is actually headquartered in Redmond, meaning no travel time markup for most Redmond moves. Combined with the most transparent pricing structure in the Eastside market (true hourly billing with no add-on fees), the highest verified review volume among local independent movers (1,562+ Google reviews), and W-2 employee crews, they represent the clearest value for Redmond residents.
           </p>
         </section>
 
@@ -836,12 +836,12 @@ export default function BestMovingCompaniesRedmond() {
               {
                 icon: <DollarSign size={20} className="text-[#75aa11]" />,
                 title: "Travel Time Charges",
-                body: "Most Seattle-based movers charge travel time from their warehouse to your Redmond address — typically 30–60 minutes each way. On The Go Moving is based in Redmond, so this charge is minimal or eliminated for most Redmond moves.",
+                body: "Most Seattle-based movers charge travel time from their warehouse to your Redmond address, typically 30–60 minutes each way. On The Go Moving is based in Redmond, so this charge is minimal or eliminated for most Redmond moves.",
               },
               {
                 icon: <Info size={20} className="text-[#75aa11]" />,
                 title: "What's Included in the Rate",
-                body: "Ask specifically: Does the rate include the truck? Fuel? Moving blankets? Stair fees? Elevator fees? Long-carry fees? On The Go Moving includes truck, fuel, and blankets — no add-ons for standard conditions.",
+                body: "Ask specifically: Does the rate include the truck? Fuel? Moving blankets? Stair fees? Elevator fees? Long-carry fees? On The Go Moving includes truck, fuel, and blankets, no add-ons for standard conditions.",
               },
               {
                 icon: <Star size={20} className="text-[#75aa11]" />,
@@ -884,7 +884,7 @@ export default function BestMovingCompaniesRedmond() {
         {/* Internal links hub */}
         <section className="mb-12 p-6 bg-[#1e3a0f] text-white rounded-xl">
           <h2 className="text-xl font-bold mb-3" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-            On The Go Moving — Redmond Service Pages
+            On The Go Moving, Redmond Service Pages
           </h2>
           <p className="text-gray-300 text-sm mb-4">
             On The Go Moving is based in Redmond and serves all Redmond neighborhoods and surrounding Eastside cities. Explore our service-specific pages for detailed information, pricing, and neighborhood coverage.
@@ -921,7 +921,7 @@ export default function BestMovingCompaniesRedmond() {
             Ready to Book Redmond's #1 Rated Mover?
           </h2>
           <p className="text-gray-600 text-sm mb-5">
-            On The Go Moving — based in Redmond, 4.8 stars, 1,562+ Google reviews, transparent hourly pricing, and secure vault storage available.
+            On The Go Moving, based in Redmond, 4.8 stars, 1,562+ Google reviews, transparent hourly pricing, and secure vault storage available.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a

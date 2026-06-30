@@ -36,7 +36,7 @@ const WHY_US = [
     icon: Users,
     color: "bg-purple-100 text-purple-600",
     title: "Consistent, Reliable Crews",
-    desc: "You'll work with the same experienced team members — not random day laborers. Consistency you can count on for every project.",
+    desc: "You'll work with the same experienced team members, not random day laborers. Consistency you can count on for every project.",
   },
 ];
 
@@ -64,7 +64,7 @@ const SERVICES = [
   {
     icon: Star,
     title: "Fragile & High-Value Items",
-    desc: "Artwork, mirrors, glass tables — we handle your most delicate staging pieces with care.",
+    desc: "Artwork, mirrors, glass tables, we handle your most delicate staging pieces with care.",
   },
   {
     icon: CreditCard,
@@ -84,7 +84,7 @@ const FAQS = [
   },
   {
     q: "Do you offer rush or same-day service?",
-    a: "Yes, for established staging partners we offer rush and same-day scheduling when available. We understand listing dates can shift — call us as early as possible and we'll do our best to accommodate.",
+    a: "Yes, for established staging partners we offer rush and same-day scheduling when available. We understand listing dates can shift, call us as early as possible and we'll do our best to accommodate.",
   },
   {
     q: "How do you handle fragile or high-value staging pieces?",
@@ -188,7 +188,7 @@ export default function StagingProfessionals() {
                     "Furniture assembly and precise placement",
                     "Rush and same-day scheduling available",
                     "Monthly invoicing for regular-volume partners",
-                    "Dedicated account manager — no hold times",
+                    "Dedicated account manager, no hold times",
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-green-100 text-sm">
                       <CheckCircle className="w-4 h-4 text-brand-gold flex-shrink-0 mt-0.5" />
@@ -237,7 +237,7 @@ export default function StagingProfessionals() {
               Why Staging Professionals Choose Us
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              We understand the unique demands of staging work — tight timelines, valuable inventory, and the need for a partner you can count on every time.
+              We understand the unique demands of staging work, tight timelines, valuable inventory, and the need for a partner you can count on every time.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

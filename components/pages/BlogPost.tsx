@@ -369,7 +369,7 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
 
               {/* MAIN CONTENT */}
               <article className="max-w-none">
-                {/* Intro paragraph — AEO direct answer */}
+                {/* Intro paragraph, AEO direct answer */}
                 <p
                   className="text-lg text-gray-700 leading-relaxed mb-8 font-medium border-l-4 pl-5"
                   style={{ borderColor: "#75aa11" }}
@@ -401,7 +401,7 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
                   </div>
                 ))}
 
-                {/* Internal CTA — prominent mid-article conversion block */}
+                {/* Internal CTA, prominent mid-article conversion block */}
                 {(post.relatedService || post.relatedCity) && (() => {
                   // Build city-specific links when relatedCity is set
                   const cityName = post.relatedCity
@@ -492,7 +492,7 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
                     <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-[#7bc144]">
                       <img
                         src={BRAND_IMAGES.jasonSextonHeadshot}
-                        alt="Jason Sexton — Founder & Owner, On The Go Moving & Storage"
+                        alt="Jason Sexton, Founder & Owner, On The Go Moving & Storage"
                         className="w-full h-full object-cover object-top"
                         width={56}
                         height={56}
@@ -515,7 +515,7 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
                   </div>
                 </div>
 
-                {/* Bottom CTA — full-width conversion block before back link */}
+                {/* Bottom CTA, full-width conversion block before back link */}
                 <div className="mt-10 rounded-2xl p-6 sm:p-8 text-center" style={{ backgroundColor: "#f0f7e6", border: "2px solid #75aa11" }}>
                   <p className="text-2xl font-extrabold text-gray-900 mb-2" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
                     Get a Free Moving Quote Today
@@ -572,7 +572,7 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
                   </div>
                 </div>
 
-                {/* Contextual Location Links — dynamic based on post topic */}
+                {/* Contextual Location Links, dynamic based on post topic */}
                 <div className="bg-white rounded-xl p-5 border border-gray-100">
                   <h3 className="font-bold text-gray-900 mb-3 text-sm uppercase tracking-widest">Serving Your City</h3>
                   <div className="space-y-2">

@@ -51,7 +51,7 @@ const MOVE_TYPES = [
   {
     icon: Package,
     title: "Full-Pack Moves",
-    desc: "We pack everything — boxes, furniture, fragile items — so you don't have to.",
+    desc: "We pack everything, boxes, furniture, fragile items, so you don't have to.",
   },
   {
     icon: Clock,
@@ -84,7 +84,7 @@ const REVIEWS = [
 const FAQS = [
   {
     q: "What does flat-rate pricing mean?",
-    a: "Flat-rate means the price we quote you is the price you pay — period. We don't run an hourly clock that can balloon if the move takes longer than expected. You'll know your exact cost before move day.",
+    a: "Flat-rate means the price we quote you is the price you pay, period. We don't run an hourly clock that can balloon if the move takes longer than expected. You'll know your exact cost before move day.",
   },
   {
     q: "What's included in a residential move?",
@@ -96,7 +96,7 @@ const FAQS = [
   },
   {
     q: "How far in advance should I book?",
-    a: "We recommend booking 2–4 weeks in advance for weekend moves, especially in summer. That said, we often have weekday availability on shorter notice — call us to check.",
+    a: "We recommend booking 2–4 weeks in advance for weekend moves, especially in summer. That said, we often have weekday availability on shorter notice, call us to check.",
   },
 ];
 
@@ -337,7 +337,7 @@ function FbQuoteForm() {
       {/* Urgency signal */}
       <div className="flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-lg px-3 py-2 text-xs text-amber-800">
         <Clock size={13} className="flex-shrink-0" />
-        <span>We respond within <strong>1 business hour</strong> — spots fill fast in summer</span>
+        <span>We respond within <strong>1 business hour</strong>, spots fill fast in summer</span>
       </div>
       <button
         type="submit"
@@ -417,14 +417,14 @@ export default function FbResidentialMoversLanding() {
             {/* Left: headline + trust */}
             <div>
               <div className="inline-flex items-center gap-2 bg-[#75aa11] text-white text-xs font-bold px-3 py-1.5 rounded-full mb-4 uppercase tracking-wide">
-                <Star size={12} /> {COMPANY.googleRating}★ Rated — {COMPANY.googleReviewCount.toLocaleString()} Reviews
+                <Star size={12} /> {COMPANY.googleRating}★ Rated, {COMPANY.googleReviewCount.toLocaleString()} Reviews
               </div>
               <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-4">
                 Seattle's Most Trusted<br />
                 <span className="text-[#75aa11]">Residential Movers</span>
               </h1>
               <p className="text-lg text-gray-200 mb-6 max-w-lg">
-                Family-owned and operated since {COMPANY.founded}. On The Go Moving handles your home move with the care and attention it deserves — flat-rate pricing, no surprises.
+                Family-owned and operated since {COMPANY.founded}. On The Go Moving handles your home move with the care and attention it deserves, flat-rate pricing, no surprises.
               </p>
               {/* Form scroll CTA */}
               <div className="flex flex-wrap gap-3 mb-6">
@@ -441,7 +441,7 @@ export default function FbResidentialMoversLanding() {
               {/* Urgency nudge */}
               <div className="flex items-center gap-2 text-[#a8d44f] text-sm font-semibold mb-2">
                 <Zap size={14} className="fill-[#a8d44f]" />
-                We respond within 1 hour — no phone call required
+                We respond within 1 hour, no phone call required
               </div>
               {/* Trust badges */}
               <div className="flex flex-nowrap gap-x-3 mt-2 overflow-hidden">
@@ -457,11 +457,11 @@ export default function FbResidentialMoversLanding() {
             <div id="quote-form" className="bg-white rounded-2xl shadow-2xl p-6 sm:p-8">
               <div className="flex items-center gap-2 mb-2">
                 <span className="inline-flex items-center gap-1.5 bg-[#e8f4d0] text-[#3d6b05] text-xs font-bold px-2.5 py-1 rounded-full">
-                  <Zap size={11} className="fill-[#3d6b05]" /> 100% Online — No Phone Call Needed
+                  <Zap size={11} className="fill-[#3d6b05]" /> 100% Online, No Phone Call Needed
                 </span>
               </div>
               <h2 className="text-[#1a2e0a] text-xl font-bold mb-1">Get Your Free Moving Quote</h2>
-              <p className="text-gray-500 text-sm mb-4">Flat-rate pricing — know your exact cost before move day. We respond within 1 hour.</p>
+              <p className="text-gray-500 text-sm mb-4">Flat-rate pricing, know your exact cost before move day. We respond within 1 hour.</p>
               <FbQuoteForm />
             </div>
           </div>
@@ -554,9 +554,9 @@ export default function FbResidentialMoversLanding() {
               </h2>
               <ul className="space-y-4">
                 {[
-                  "Flat-rate pricing — your quote is your final price",
+                  "Flat-rate pricing, your quote is your final price",
                   "Background-checked, uniformed crew members",
-                  "Fully padded and wrapped furniture — zero damage policy",
+                  "Fully padded and wrapped furniture, zero damage policy",
                   
                   "Family-owned and operated since 2009",
                   `${COMPANY.googleRating}★ average across ${COMPANY.googleReviewCount.toLocaleString()} Google reviews`,
@@ -593,7 +593,7 @@ export default function FbResidentialMoversLanding() {
             <Zap size={12} className="fill-white" /> Responds in Under 1 Hour
           </div>
           <h2 className="text-3xl font-extrabold mb-3">Ready to Lock In Your Moving Date?</h2>
-          <p className="text-white/80 mb-8 text-lg">Fill out the quick form at the top of this page — it takes under 2 minutes and you'll get a flat-rate quote with no obligation and no surprise charges.</p>
+          <p className="text-white/80 mb-8 text-lg">Fill out the quick form at the top of this page, it takes under 2 minutes and you'll get a flat-rate quote with no obligation and no surprise charges.</p>
           <a
             href="#quote-form"
             className="inline-flex items-center gap-3 bg-[#75aa11] hover:bg-[#5e8a0d] text-white font-extrabold text-xl px-10 py-4 rounded-xl transition-colors shadow-lg"
@@ -613,7 +613,7 @@ export default function FbResidentialMoversLanding() {
           className="flex items-center justify-center gap-3 text-white font-extrabold text-base py-4 px-6"
         >
           <ClipboardList size={20} />
-          Get My Free Quote — Respond in 1 Hour
+          Get My Free Quote, Respond in 1 Hour
           <ArrowDown size={16} />
         </a>
       </div>

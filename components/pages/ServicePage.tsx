@@ -53,8 +53,8 @@ const SERVICE_DATA: Record<string, {
     metaTitle: "Commercial Moving Services | Seattle & Eastside WA | On The Go Moving",
     metaDesc: "Professional commercial moving services in Seattle, Bellevue, Redmond & the Eastside. Minimize downtime with experienced commercial moving crews. Free quote.",
     canonical: "https://onthegomoving.com/commercial-moving/",
-    heroTagline: "Commercial Moving Services — Seattle & the Eastside",
-    intro: "On The Go Moving & Storage specializes in commercial relocations for businesses of all sizes — from small offices to large corporate campuses. We work around your schedule to minimize downtime and get your business back up and running as quickly as possible.",
+    heroTagline: "Commercial Moving Services, Seattle & the Eastside",
+    intro: "On The Go Moving & Storage specializes in commercial relocations for businesses of all sizes, from small offices to large corporate campuses. We work around your schedule to minimize downtime and get your business back up and running as quickly as possible.",
     whatIsItTitle: "What Is Commercial Moving?",
     whatIsIt: "Commercial moving involves relocating a business's equipment, furniture, files, and technology from one location to another. Unlike residential moves, commercial moves require careful planning around business hours, IT infrastructure, and specialized equipment handling. A professional commercial moving company provides project management, after-hours crews, and secure chain-of-custody for sensitive items.",
     benefits: [
@@ -66,7 +66,7 @@ const SERVICE_DATA: Record<string, {
       "Experience with offices, retail, medical, and industrial moves",
     ],
     whoWeHelp: [
-      { icon: Building2, label: "Offices & Startups", desc: "From 5-person offices to 500-person campuses — we plan and execute every detail.", color: "border-brand-green bg-green-50", iconColor: "text-brand-green" },
+      { icon: Building2, label: "Offices & Startups", desc: "From 5-person offices to 500-person campuses, we plan and execute every detail.", color: "border-brand-green bg-green-50", iconColor: "text-brand-green" },
       { icon: Home, label: "Retail & Storefronts", desc: "Careful handling of fixtures, displays, and inventory with minimal disruption.", color: "border-blue-400 bg-blue-50", iconColor: "text-blue-500" },
       { icon: Users, label: "Medical & Healthcare", desc: "HIPAA-aware handling of records and sensitive medical equipment.", color: "border-amber-400 bg-amber-50", iconColor: "text-amber-500" },
       { icon: Package, label: "Industrial & Warehouse", desc: "Heavy equipment, racking systems, and industrial assets moved safely.", color: "border-purple-400 bg-purple-50", iconColor: "text-purple-500" },
@@ -111,8 +111,8 @@ const SERVICE_DATA: Record<string, {
     metaTitle: "Professional Packing Services | Seattle & Eastside WA | On The Go Moving",
     metaDesc: "Expert packing services in Seattle, Bellevue, Redmond & the Eastside. Full-pack, partial-pack, and unpacking. Quality materials, careful handling. Free quote.",
     canonical: "https://onthegomoving.com/packing-services/",
-    heroTagline: "Professional Packing Services — Seattle & the Eastside",
-    intro: "Our professional packing services take the most time-consuming part of moving off your plate. We use high-quality packing materials and proven techniques to ensure every item — from everyday dishes to fragile antiques — arrives at your new home in perfect condition.",
+    heroTagline: "Professional Packing Services, Seattle & the Eastside",
+    intro: "Our professional packing services take the most time-consuming part of moving off your plate. We use high-quality packing materials and proven techniques to ensure every item, from everyday dishes to fragile antiques, arrives at your new home in perfect condition.",
     whatIsItTitle: "What Are Professional Packing Services?",
     whatIsIt: "Professional packing services involve trained movers carefully wrapping, boxing, and labeling all of your belongings using professional-grade materials. This includes furniture wrapping, dish packing, electronics protection, and custom crating for specialty items. A professional packer works systematically and efficiently, typically completing in hours what takes most homeowners days.",
     benefits: [
@@ -144,7 +144,7 @@ const SERVICE_DATA: Record<string, {
     ],
     pricingNote: "Packing pricing includes all materials (boxes, tape, bubble wrap, packing paper). Actual cost depends on home size, number of fragile items, and whether unpacking is included.",
     testimonials: [
-      { name: "Rachel T.", city: "Kirkland, WA", context: "Full-pack service", rating: 5, text: "They packed our entire 3-bedroom home in one day. Everything arrived perfectly — not a single broken item. Worth every penny." },
+      { name: "Rachel T.", city: "Kirkland, WA", context: "Full-pack service", rating: 5, text: "They packed our entire 3-bedroom home in one day. Everything arrived perfectly, not a single broken item. Worth every penny." },
       { name: "Tom B.", city: "Seattle, WA", context: "Fragile items packing", rating: 5, text: "Had them pack just my art collection and fragile items. The care they took was incredible. Everything arrived in perfect condition." },
       { name: "Amy S.", city: "Bellevue, WA", context: "Full-pack + unpack", rating: 5, text: "Full pack and unpack service was a game changer. We moved in on a Saturday and by Sunday evening everything was in its place." },
     ],
@@ -169,16 +169,16 @@ const SERVICE_DATA: Record<string, {
     metaDesc: "Secure storage vault rental at our Redmond, WA facility. Short and long-term storage for households and businesses. On The Go Moving & Storage.",
     canonical: "https://onthegomoving.com/storage-services/",
     heroTagline: "Secure Storage Vaults in Redmond, WA",
-    intro: "On The Go Moving & Storage stores your belongings in large, secure storage vaults at our Redmond, WA facility. This is not a self-serve storage unit — your items are loaded into dedicated vaults, stored safely in our warehouse, and retrieved by our team when you're ready. Contact us for current pricing.",
+    intro: "On The Go Moving & Storage stores your belongings in large, secure storage vaults at our Redmond, WA facility. This is not a self-serve storage unit, your items are loaded into dedicated vaults, stored safely in our warehouse, and retrieved by our team when you're ready. Contact us for current pricing.",
     whatIsItTitle: "What Are Storage Vaults?",
-    whatIsIt: "Storage vaults are large, enclosed containers that hold an entire room's worth of belongings. Unlike traditional self-serve storage units, your items are loaded into a vault by our crew, stored in our secure Redmond, WA warehouse, and retrieved using a forklift when needed. You don't have to navigate a storage facility or move anything yourself — we handle it all. Vault storage is ideal for moves, renovations, and transitions where you need professional handling and a trusted facility.",
+    whatIsIt: "Storage vaults are large, enclosed containers that hold an entire room's worth of belongings. Unlike traditional self-serve storage units, your items are loaded into a vault by our crew, stored in our secure Redmond, WA warehouse, and retrieved using a forklift when needed. You don't have to navigate a storage facility or move anything yourself, we handle it all. Vault storage is ideal for moves, renovations, and transitions where you need professional handling and a trusted facility.",
     benefits: [
       "First month FREE with any moving service",
-      "Large storage vaults — holds a full room's worth of belongings",
+      "Large storage vaults, holds a full room's worth of belongings",
       "Secure Redmond, WA warehouse facility with 24/7 monitoring",
-      "Professional handling — our crew loads and retrieves your vault",
-      "Flexible month-to-month contracts — no long-term commitment required",
-      "Full-service access — we bring your vault down with a forklift when needed",
+      "Professional handling, our crew loads and retrieves your vault",
+      "Flexible month-to-month contracts, no long-term commitment required",
+      "Full-service access, we bring your vault down with a forklift when needed",
     ],
     whoWeHelp: [
       { icon: Home, label: "Home Sellers & Buyers", desc: "Bridge the gap between move-out and move-in with secure vault storage.", color: "border-brand-green bg-green-50", iconColor: "text-brand-green" },
@@ -190,7 +190,7 @@ const SERVICE_DATA: Record<string, {
       { icon: Phone, step: "Get a Quote", desc: "Tell us what you need to store and we'll recommend the right vault size." },
       { icon: Truck, step: "We Load Your Vault", desc: "Our crew packs and loads your belongings into a dedicated storage vault." },
       { icon: Shield, step: "Secure Vault Storage", desc: "Your vault is stored in our monitored Redmond, WA warehouse facility." },
-      { icon: Clock, step: "Access During Facility Hours", desc: "Visit during business hours or schedule vault retrieval — our team brings it down with a forklift." },
+      { icon: Clock, step: "Access During Facility Hours", desc: "Visit during business hours or schedule vault retrieval, our team brings it down with a forklift." },
       { icon: Home, step: "We Deliver It Back", desc: "When you're ready, we retrieve your vault and deliver your belongings to your new address." },
     ],
     pricing: [
@@ -199,17 +199,17 @@ const SERVICE_DATA: Record<string, {
       { size: "3-Bedroom Home", crew: "3–5 vaults", duration: "Monthly", cost: "$240–$400/mo" },
       { size: "Office / Commercial", crew: "Custom", duration: "Monthly", cost: "Call for quote" },
     ],
-    pricingNote: "All vaults are the same size: 7 ft tall × 5 ft wide × 7 ft deep — $80/month per vault. First month is FREE with any On The Go Moving service. Month-to-month contracts available at our Redmond, WA facility.",
+    pricingNote: "All vaults are the same size: 7 ft tall × 5 ft wide × 7 ft deep, $80/month per vault. First month is FREE with any On The Go Moving service. Month-to-month contracts available at our Redmond, WA facility.",
     testimonials: [
       { name: "Chris M.", city: "Redmond, WA", context: "Storage during home sale", rating: 5, text: "Used their storage vaults for 3 months while our new home was being built. The free first month was a great bonus. Everything came out in perfect condition." },
       { name: "Lisa P.", city: "Bellevue, WA", context: "Business storage", rating: 5, text: "Stored our office furniture for 6 weeks during our renovation. Professional handling and easy access. Will use again." },
       { name: "Kevin H.", city: "Kirkland, WA", context: "Long-term storage", rating: 5, text: "Stored some furniture for over a year. The vault kept everything protected and the team was great about retrieving items when I needed them." },
     ],
     faqs: [
-      { question: "What is a storage vault?", answer: "A storage vault is a large, enclosed container measuring 7 ft tall × 5 ft wide × 7 ft deep — enough to hold an entire room's worth of belongings. Your items are loaded into the vault by our crew, stored in our secure Redmond, WA warehouse, and retrieved by forklift when you need access. It's a fully managed alternative to traditional self-serve storage units." },
-      { question: "How much does vault storage cost per month?", answer: "All of our storage vaults are the same size — 7 ft tall × 5 ft wide × 7 ft deep — and cost $80 per month per vault. Most apartments need 1–2 vaults; most homes need 2–5. Contact us for current pricing." },
-      { question: "Can I access my vault anytime?", answer: "Vault access is available during facility hours (7am–7pm every day). If your vault is stacked, our team retrieves it using a forklift — just give us a heads up when you'd like access." },
-      { question: "Is this the same as a self-serve storage unit?", answer: "No. Our storage vaults are managed by our team — we load, store, and retrieve your belongings for you. You don't navigate a storage facility or move anything yourself. It's a full-service solution designed to work seamlessly with your move." },
+      { question: "What is a storage vault?", answer: "A storage vault is a large, enclosed container measuring 7 ft tall × 5 ft wide × 7 ft deep, enough to hold an entire room's worth of belongings. Your items are loaded into the vault by our crew, stored in our secure Redmond, WA warehouse, and retrieved by forklift when you need access. It's a fully managed alternative to traditional self-serve storage units." },
+      { question: "How much does vault storage cost per month?", answer: "All of our storage vaults are the same size, 7 ft tall × 5 ft wide × 7 ft deep, and cost $80 per month per vault. Most apartments need 1–2 vaults; most homes need 2–5. Contact us for current pricing." },
+      { question: "Can I access my vault anytime?", answer: "Vault access is available during facility hours (7am–7pm every day). If your vault is stacked, our team retrieves it using a forklift, just give us a heads up when you'd like access." },
+      { question: "Is this the same as a self-serve storage unit?", answer: "No. Our storage vaults are managed by our team, we load, store, and retrieve your belongings for you. You don't navigate a storage facility or move anything yourself. It's a full-service solution designed to work seamlessly with your move." },
       { question: "Is there a minimum storage period?", answer: "No. We offer month-to-month contracts with no long-term commitment required. You can store for as little as one month or as long as you need." },
     ],
     image: BRAND_IMAGES.storageForklift,
@@ -225,10 +225,10 @@ const SERVICE_DATA: Record<string, {
     metaTitle: "Labor Only Moving Services | Loading & Unloading | On The Go Moving",
     metaDesc: "Professional labor only movers in Seattle, Bellevue, Redmond & the Eastside. Packing up for an out-of-state move, unloading when you arrive, or moving items within your home. Free quote.",
     canonical: "https://onthegomoving.com/labor-only-moving/",
-    heroTagline: "Labor Only Moving Services — Seattle & the Eastside",
-    intro: "Labor only is a great starting point — but many customers find that adding a full-service truck and crew costs only a little more per hour and removes all the hassle. Ask us about upgrading when you call.",
-    whatIsItTitle: "Labor Only Moving — and When to Consider Full Service",
-    whatIsIt: "Labor only services provide professional movers for loading, unloading, or furniture rearranging when you supply the truck or container. It's a practical option for same-building moves, PODS loading, or unloading when you arrive from out of state. That said, most customers who call about labor only end up upgrading to a full-service move once they hear how close the price difference is — our crews bring the truck, equipment, and full liability coverage for a small hourly increase.",
+    heroTagline: "Labor Only Moving Services, Seattle & the Eastside",
+    intro: "Labor only is a great starting point, but many customers find that adding a full-service truck and crew costs only a little more per hour and removes all the hassle. Ask us about upgrading when you call.",
+    whatIsItTitle: "Labor Only Moving, and When to Consider Full Service",
+    whatIsIt: "Labor only services provide professional movers for loading, unloading, or furniture rearranging when you supply the truck or container. It's a practical option for same-building moves, PODS loading, or unloading when you arrive from out of state. That said, most customers who call about labor only end up upgrading to a full-service move once they hear how close the price difference is, our crews bring the truck, equipment, and full liability coverage for a small hourly increase.",
     benefits: [
       "Professional crew for loading, unloading, or furniture rearranging",
       "Works with PODS, U-Pack, and all portable container companies",
@@ -238,7 +238,7 @@ const SERVICE_DATA: Record<string, {
       "Available for same-building moves and in-home rearranging",
     ],
     whoWeHelp: [
-      { icon: Truck, label: "Out-of-State Movers", desc: "Loading your truck before a long drive? We pack it right so nothing shifts in transit — or upgrade to full service and skip the truck rental entirely.", color: "border-brand-green bg-green-50", iconColor: "text-brand-green" },
+      { icon: Truck, label: "Out-of-State Movers", desc: "Loading your truck before a long drive? We pack it right so nothing shifts in transit, or upgrade to full service and skip the truck rental entirely.", color: "border-brand-green bg-green-50", iconColor: "text-brand-green" },
       { icon: Package, label: "Arriving in Town", desc: "Just pulled in from out of state? We unload and place everything. Ask about our full-service options for your next move.", color: "border-blue-400 bg-blue-50", iconColor: "text-blue-500" },
       { icon: Home, label: "Same-Building Moves", desc: "Moving to another unit in your building or complex? We handle the heavy lifting.", color: "border-amber-400 bg-amber-50", iconColor: "text-amber-500" },
       { icon: Building2, label: "Furniture Rearrangers", desc: "Need heavy items moved within your current home? We handle it safely and efficiently.", color: "border-purple-400 bg-purple-50", iconColor: "text-purple-500" },
@@ -255,24 +255,24 @@ const SERVICE_DATA: Record<string, {
       { size: "3 Movers", crew: "3 movers", duration: "3–5 hrs", cost: "Call for quote", highlight: true },
       { size: "Custom / Large Job", crew: "Custom", duration: "Custom", cost: "Call for quote" },
     ],
-    pricingNote: "Labor only services are charged by the hour. Call or email us for a free quote based on your specific needs — crew size, hours, and job type.",
+    pricingNote: "Labor only services are charged by the hour. Call or email us for a free quote based on your specific needs, crew size, hours, and job type.",
     testimonials: [
       { name: "Brian W.", city: "Seattle, WA", context: "Out-of-state loading", rating: 5, text: "Needed help loading my truck before driving to Portland. Two guys showed up on time and had everything loaded perfectly in under 2 hours. Saved my back and my weekend." },
       { name: "Stephanie C.", city: "Bothell, WA", context: "Arriving from out of state", rating: 5, text: "Drove in from California and needed help unloading. The crew was fast, careful, and placed everything exactly where I wanted it." },
       { name: "Mike D.", city: "Redmond, WA", context: "Same-building move", rating: 5, text: "Moved from one unit to another in my building. Quick, professional, and no damage to floors or walls." },
     ],
     faqs: [
-      { question: "Can you load my truck for an out-of-state move?", answer: "Absolutely. We load one end — your origin — so everything is packed safely and efficiently before your long drive. Call us to get a quote based on your home size and timeline." },
+      { question: "Can you load my truck for an out-of-state move?", answer: "Absolutely. We load one end, your origin, so everything is packed safely and efficiently before your long drive. Call us to get a quote based on your home size and timeline." },
       { question: "Can you unload my truck when I arrive in the Seattle area?", answer: "Yes. If you're moving to the Seattle area and just need help unloading, we'll meet you at your new address and get everything inside and placed." },
       { question: "Do you help with moves between units in the same building?", answer: "Yes. Moving from one apartment to another in the same building or complex is a great fit for labor-only service. We bring the equipment and do the heavy lifting." },
       { question: "Do you work with PODS and portable containers?", answer: "Yes. We regularly work with PODS, U-Pack, and all major portable container companies for loading and unloading." },
-      { question: "Do you bring equipment for labor only jobs?", answer: "Yes. Our crew brings dollies, furniture straps, and moving blankets for every labor only job — no extra charge." },
+      { question: "Do you bring equipment for labor only jobs?", answer: "Yes. Our crew brings dollies, furniture straps, and moving blankets for every labor only job, no extra charge." },
       { question: "Can you help with furniture rearranging inside my home?", answer: "Absolutely. We offer furniture rearranging services for customers who need heavy items moved within their current home." },
     ],
     image: BRAND_IMAGES.laborOnlyCrew,
     imageAlt: "On The Go Moving labor only crew",
     statValue: "One End",
-    statLabel: "or Both — We've Got You",
+    statLabel: "or Both, We've Got You",
     ctaHeadline: "Need Professional Movers for One Part of Your Move?",
   },
 
@@ -282,8 +282,8 @@ const SERVICE_DATA: Record<string, {
     metaTitle: "Apartment Moving Services | Seattle & Eastside WA | On The Go Moving",
     metaDesc: "Professional apartment movers in Seattle, Bellevue, Kirkland & the Eastside. Expert handling of elevators, stairs, and tight spaces. Licensed & insured. Free quote.",
     canonical: "https://onthegomoving.com/apartment-moving/",
-    heroTagline: "Apartment Moving Services — Seattle & the Eastside",
-    intro: "Apartment moves come with unique challenges — elevators, stairs, narrow hallways, and strict building rules. On The Go Moving's crews are experienced apartment movers who know how to navigate Seattle's high-rises, condos, and urban apartment buildings efficiently and without damage.",
+    heroTagline: "Apartment Moving Services, Seattle & the Eastside",
+    intro: "Apartment moves come with unique challenges, elevators, stairs, narrow hallways, and strict building rules. On The Go Moving's crews are experienced apartment movers who know how to navigate Seattle's high-rises, condos, and urban apartment buildings efficiently and without damage.",
     whatIsItTitle: "What Is Apartment Moving?",
     whatIsIt: "Apartment moving involves relocating belongings from one apartment or condo unit to another. It typically requires navigating elevators, stairwells, and tight spaces, and may involve coordinating with building management for elevator reservations and loading dock access. Professional apartment movers know these requirements and handle them proactively.",
     benefits: [
@@ -291,7 +291,7 @@ const SERVICE_DATA: Record<string, {
       "We handle elevator reservations and building coordination",
       "Protective floor coverings and door jamb protectors included",
       "Efficient crews that work quickly to minimize elevator time",
-      "Affordable hourly rates — most apartment moves complete in 2–4 hours",
+      "Affordable hourly rates, most apartment moves complete in 2–4 hours",
       "Available 7 days a week including weekends",
     ],
     whoWeHelp: [
@@ -313,7 +313,7 @@ const SERVICE_DATA: Record<string, {
       { size: "2-Bedroom Apartment", crew: "2–3 movers", duration: "4–7 hrs", cost: "$550–$950" },
       { size: "3-Bedroom Apartment", crew: "3 movers", duration: "6–9 hrs", cost: "$800–$1,300" },
     ],
-    pricingNote: "Apartment move pricing is based on home size, number of floors, and elevator access. We factor stair and elevator access into your quote upfront — no surprise charges.",
+    pricingNote: "Apartment move pricing is based on home size, number of floors, and elevator access. We factor stair and elevator access into your quote upfront, no surprise charges.",
     testimonials: [
       { name: "Alex P.", city: "Seattle, WA", context: "High-rise apartment move", rating: 5, text: "Moved out of a 12th floor apartment in Capitol Hill. The crew handled the elevator coordination and had everything out in 3 hours. Impressive." },
       { name: "Megan L.", city: "Bellevue, WA", context: "4th floor walk-up", rating: 5, text: "4th floor with no elevator and they didn't even blink. Fast, professional, and no damage to the walls or floors." },
@@ -339,14 +339,14 @@ const SERVICE_DATA: Record<string, {
     metaTitle: "Senior Moving Services | Assisted Living & Downsizing | On The Go Moving",
     metaDesc: "Compassionate senior movers in Seattle, Bellevue, Redmond & the Eastside. Downsizing, assisted living, and retirement community moves. Patient, caring crews. Free quote.",
     canonical: "https://onthegomoving.com/senior-moving/",
-    heroTagline: "Senior Moving Services — Seattle & the Eastside",
-    intro: "Moving later in life requires a different level of care, patience, and understanding. On The Go Moving's senior moving specialists are trained to provide compassionate, stress-free moves for seniors — whether downsizing to a smaller home, moving to an assisted living facility, or relocating closer to family.",
+    heroTagline: "Senior Moving Services, Seattle & the Eastside",
+    intro: "Moving later in life requires a different level of care, patience, and understanding. On The Go Moving's senior moving specialists are trained to provide compassionate, stress-free moves for seniors, whether downsizing to a smaller home, moving to an assisted living facility, or relocating closer to family.",
     whatIsItTitle: "What Are Senior Moving Services?",
     whatIsIt: "Senior moving services are specialized moving services designed for older adults. They typically include extra time for decision-making, assistance with downsizing and donation coordination, careful handling of sentimental items, and coordination with assisted living or retirement community staff. A senior-focused moving company understands the emotional and physical challenges of moving later in life.",
     benefits: [
-      "10% senior discount — our way of honoring the people who built this community",
+      "10% senior discount, our way of honoring the people who built this community",
       "Patient, compassionate crews trained for senior moves",
-      "Downsizing assistance — we help sort, donate, and dispose",
+      "Downsizing assistance, we help sort, donate, and dispose",
       "Coordination with assisted living and retirement communities",
       "Extra care for sentimental and fragile items",
       "Flexible scheduling to accommodate medical appointments",
@@ -371,7 +371,7 @@ const SERVICE_DATA: Record<string, {
       { size: "3-Bedroom Home", crew: "3 movers", duration: "6–9 hrs", cost: "$900–$1,400" },
       { size: "Full Downsizing Service", crew: "Custom", duration: "Custom", cost: "Call for quote" },
     ],
-    pricingNote: "We offer a 10% senior discount on all senior moves — mention it when you call or request your quote. Pricing includes extra time for careful handling and placement. Downsizing assistance and donation coordination are available as add-on services.",
+    pricingNote: "We offer a 10% senior discount on all senior moves, mention it when you call or request your quote. Pricing includes extra time for careful handling and placement. Downsizing assistance and donation coordination are available as add-on services.",
     testimonials: [
       { name: "Carol B.", city: "Kirkland, WA", context: "Assisted living move", rating: 5, text: "They moved my mother to her assisted living facility with such patience and kindness. She was nervous but the crew put her completely at ease." },
       { name: "James T.", city: "Bellevue, WA", context: "Downsizing move", rating: 5, text: "Helped my parents downsize from their 4-bedroom home. The crew was patient, careful, and treated every item with respect." },
@@ -398,7 +398,7 @@ const SERVICE_DATA: Record<string, {
     metaTitle: "Warehousing & Business Storage Services | Redmond WA | On The Go Moving",
     metaDesc: "Secure warehousing and business storage at our Redmond, WA facility. Climate-controlled warehouse space for businesses and households. On The Go Moving & Storage.",
     canonical: "https://onthegomoving.com/warehousing-distribution/",
-    heroTagline: "Warehousing & Business Storage — Redmond, WA",
+    heroTagline: "Warehousing & Business Storage, Redmond, WA",
     intro: "On The Go Moving & Storage provides professional warehousing solutions for businesses that need secure, flexible storage for inventory, equipment, furniture, and records. Our Redmond, WA warehouse facility offers climate-controlled space with professional handling and logistics support.",
     whatIsItTitle: "What Are Warehousing Services?",
     whatIsIt: "Warehousing services provide businesses with secure, managed storage space for inventory, equipment, and assets. Unlike self-storage, professional warehousing includes handling, inventory management, and logistics support. Our Redmond, WA facility is climate-controlled, 24/7 monitored, and staffed by professional logistics personnel.",
@@ -454,8 +454,8 @@ const SERVICE_DATA: Record<string, {
     metaTitle: "Office Moving Services | Commercial Office Relocation | On The Go Moving",
     metaDesc: "Professional office movers in Seattle, Bellevue, Redmond & the Eastside. Minimize downtime with experienced office relocation crews. Free quote. Licensed & insured.",
     canonical: "https://onthegomoving.com/office-moving/",
-    heroTagline: "Office Moving Services — Seattle & the Eastside",
-    intro: "On The Go Moving & Storage specializes in office relocations for businesses of all sizes — from small startups to large corporate offices. We work around your schedule, move after hours or on weekends, and have your office fully operational by Monday morning.",
+    heroTagline: "Office Moving Services, Seattle & the Eastside",
+    intro: "On The Go Moving & Storage specializes in office relocations for businesses of all sizes, from small startups to large corporate offices. We work around your schedule, move after hours or on weekends, and have your office fully operational by Monday morning.",
     whatIsItTitle: "What Is Office Moving?",
     whatIsIt: "Office moving involves the professional relocation of workstations, furniture, IT equipment, filing systems, and office supplies from one commercial space to another. A professional office move minimizes downtime, protects sensitive equipment, and keeps your business running with minimal disruption. Unlike residential moves, office moves require careful planning around business hours and IT infrastructure.",
     benefits: [
@@ -492,7 +492,7 @@ const SERVICE_DATA: Record<string, {
       { name: "Jennifer T.", city: "Redmond, WA", context: "Medical office move", rating: 5, text: "Professional, discreet, and careful with our medical equipment and records. Would absolutely use them again." },
     ],
     faqs: [
-      { question: "Can you move our office over a weekend?", answer: "Yes — weekend and after-hours moves are our specialty for commercial clients. We can have your office fully moved and set up before your team arrives Monday morning." },
+      { question: "Can you move our office over a weekend?", answer: "Yes, weekend and after-hours moves are our specialty for commercial clients. We can have your office fully moved and set up before your team arrives Monday morning." },
       { question: "How do you handle computers and servers?", answer: "We use anti-static packing materials and specialized boxes for all electronics. Servers are transported upright in padded crates. We recommend your IT team disconnect and reconnect equipment, but we handle all physical transport." },
       { question: "Do you provide a dedicated project manager?", answer: "Yes. Every office move gets a dedicated project manager who coordinates logistics, communicates with your team, and is on-site during the move." },
       { question: "How much does an office move cost?", answer: "Office move costs depend on the number of workstations, floors, and distance. We provide flat-rate quotes after a free site assessment. Most small office moves (10–25 workstations) run $1,500–$4,000." },
@@ -510,17 +510,17 @@ const SERVICE_DATA: Record<string, {
     metaTitle: "Furniture Moving Services | Seattle & Eastside WA | On The Go Moving",
     metaDesc: "Professional furniture movers in Seattle, Bellevue, Redmond & the Eastside. Single items to full households. Careful handling, no damage guarantee. Free quote.",
     canonical: "https://onthegomoving.com/furniture-moving/",
-    heroTagline: "Furniture Moving Services — Seattle & the Eastside",
+    heroTagline: "Furniture Moving Services, Seattle & the Eastside",
     intro: "Whether you need to move a single piece of furniture across town or an entire household, On The Go Moving & Storage provides careful, professional furniture moving services throughout the Greater Seattle area. We bring all the equipment needed to protect your furniture and your home.",
     whatIsItTitle: "What Is Professional Furniture Moving?",
-    whatIsIt: "Furniture moving is the professional transport of individual pieces or entire sets of furniture — sofas, beds, dressers, dining tables, entertainment centers, and more — from one location to another. Professional furniture movers use moving blankets, stretch wrap, dollies, and straps to prevent damage during loading, transport, and unloading.",
+    whatIsIt: "Furniture moving is the professional transport of individual pieces or entire sets of furniture, sofas, beds, dressers, dining tables, entertainment centers, and more, from one location to another. Professional furniture movers use moving blankets, stretch wrap, dollies, and straps to prevent damage during loading, transport, and unloading.",
     benefits: [
       "Moving blankets and stretch wrap on every piece",
       "Furniture disassembly and reassembly included",
       "Floor runners and door jamb protectors to protect your home",
       "Available for single-item moves and full households",
       "Experienced with oversized, antique, and custom furniture",
-      "Flat-rate pricing — no surprise charges",
+      "Flat-rate pricing, no surprise charges",
     ],
     whoWeHelp: [
       { icon: Home, label: "Homeowners", desc: "Moving furniture between rooms or to a new home.", color: "border-brand-green bg-green-50", iconColor: "text-brand-green" },
@@ -543,12 +543,12 @@ const SERVICE_DATA: Record<string, {
     ],
     pricingNote: "Furniture move pricing depends on number of items, floors, and distance. Disassembly and reassembly are included at no extra charge.",
     testimonials: [
-      { name: "Nicole B.", city: "Seattle, WA", context: "Single item move", rating: 5, text: "Needed a large sectional sofa moved to a new apartment. They handled it perfectly — no damage to the sofa or the walls." },
+      { name: "Nicole B.", city: "Seattle, WA", context: "Single item move", rating: 5, text: "Needed a large sectional sofa moved to a new apartment. They handled it perfectly, no damage to the sofa or the walls." },
       { name: "Paul M.", city: "Bellevue, WA", context: "Full bedroom set", rating: 5, text: "Moved our entire bedroom set including a king bed and armoire. Disassembled and reassembled everything perfectly." },
       { name: "Sandra K.", city: "Kirkland, WA", context: "Antique furniture", rating: 5, text: "Had several antique pieces moved. They treated each one with incredible care. Everything arrived in perfect condition." },
     ],
     faqs: [
-      { question: "Can you move just one piece of furniture?", answer: "Yes. We offer single-item furniture moves throughout the Greater Seattle area. Call us for a quote — we'll let you know if we can accommodate your timeline." },
+      { question: "Can you move just one piece of furniture?", answer: "Yes. We offer single-item furniture moves throughout the Greater Seattle area. Call us for a quote, we'll let you know if we can accommodate your timeline." },
       { question: "Do you disassemble and reassemble furniture?", answer: "Yes. Disassembly and reassembly of beds, shelving, and large furniture is included in our service at no extra charge." },
       { question: "How do you protect hardwood floors during a furniture move?", answer: "We use floor runners, felt pads under furniture legs, and dollies with rubber wheels to protect hardwood, tile, and carpet during every move." },
       { question: "Can you move antique furniture?", answer: "Yes. We have experience moving antique and high-value furniture. We use extra padding, custom wrapping, and take additional care with fragile or irreplaceable pieces. Please mention antiques when booking." },
@@ -566,8 +566,8 @@ const SERVICE_DATA: Record<string, {
     metaTitle: "Condo Moving Services | Elevator & HOA Specialists | On The Go Moving",
     metaDesc: "Professional condo movers in Seattle, Bellevue, Kirkland & the Eastside. Elevator coordination, HOA compliance, and careful handling. Free quote.",
     canonical: "https://onthegomoving.com/condo-moving/",
-    heroTagline: "Condo Moving Services — Seattle & the Eastside",
-    intro: "Condo moves come with unique challenges — elevator reservations, HOA move-in windows, limited parking for moving trucks, and tight hallways. On The Go Moving & Storage has navigated hundreds of condo moves across Seattle and the Eastside, and we know exactly how to handle every building's requirements.",
+    heroTagline: "Condo Moving Services, Seattle & the Eastside",
+    intro: "Condo moves come with unique challenges, elevator reservations, HOA move-in windows, limited parking for moving trucks, and tight hallways. On The Go Moving & Storage has navigated hundreds of condo moves across Seattle and the Eastside, and we know exactly how to handle every building's requirements.",
     whatIsItTitle: "What Is Condo Moving?",
     whatIsIt: "Condo moving is the relocation of belongings from or to a condominium unit. Unlike house moves, condo moves require coordination with building management for elevator reservations, certificates of insurance, move-in time windows, and parking permits. Professional condo movers know these requirements and handle them proactively.",
     benefits: [
@@ -622,7 +622,7 @@ const SERVICE_DATA: Record<string, {
     metaTitle: "Corporate Relocation Services | Employee & Office Moves | On The Go Moving",
     metaDesc: "Professional corporate relocation in Seattle, Bellevue, Redmond & the Eastside. Employee moves, office relocations, and full corporate campus moves. Free quote.",
     canonical: "https://onthegomoving.com/corporate-relocation/",
-    heroTagline: "Corporate Relocation Services — Seattle & the Eastside",
+    heroTagline: "Corporate Relocation Services, Seattle & the Eastside",
     intro: "On The Go Moving & Storage provides comprehensive corporate relocation services for businesses relocating employees or entire operations. From single employee moves to full campus relocations, we provide the planning, coordination, and execution that corporate clients demand.",
     whatIsItTitle: "What Is Corporate Relocation?",
     whatIsIt: "Corporate relocation involves moving employees and/or entire business operations from one location to another. This includes employee household moves, office furniture and equipment relocation, IT infrastructure transport, and coordination with HR and facilities teams. A professional corporate relocation company provides project management, dedicated account management, and seamless execution.",
@@ -678,17 +678,17 @@ const SERVICE_DATA: Record<string, {
     metaTitle: "Appliance Moving Services | Refrigerators, Washers & More | On The Go Moving",
     metaDesc: "Professional appliance movers in Seattle, Bellevue, Redmond & the Eastside. Refrigerators, washers, dryers, and more. Safe handling, no damage. Free quote.",
     canonical: "https://onthegomoving.com/appliance-moving/",
-    heroTagline: "Appliance Moving Services — Seattle & the Eastside",
-    intro: "Moving heavy appliances — refrigerators, washers, dryers, dishwashers, stoves — requires specialized equipment and experienced crews. On The Go Moving & Storage provides professional appliance moving services throughout the Greater Seattle area, with careful handling to protect your appliances, floors, and home.",
+    heroTagline: "Appliance Moving Services, Seattle & the Eastside",
+    intro: "Moving heavy appliances, refrigerators, washers, dryers, dishwashers, stoves, requires specialized equipment and experienced crews. On The Go Moving & Storage provides professional appliance moving services throughout the Greater Seattle area, with careful handling to protect your appliances, floors, and home.",
     whatIsItTitle: "What Is Appliance Moving?",
-    whatIsIt: "Appliance moving is the professional transport of heavy household appliances — refrigerators, washers, dryers, dishwashers, stoves, and more. Appliances require specialized dollies, straps, and techniques to move safely without damaging the appliance, floors, or doorways. Professional appliance movers also handle disconnection and reconnection coordination.",
+    whatIsIt: "Appliance moving is the professional transport of heavy household appliances, refrigerators, washers, dryers, dishwashers, stoves, and more. Appliances require specialized dollies, straps, and techniques to move safely without damaging the appliance, floors, or doorways. Professional appliance movers also handle disconnection and reconnection coordination.",
     benefits: [
       "Specialized appliance dollies and straps for safe handling",
       "Floor protection to prevent scratches and damage",
       "Experienced with all major appliance brands and sizes",
       "Available for single appliances or full household moves",
       "Disconnection coordination available",
-      "Flat-rate pricing — no surprise charges",
+      "Flat-rate pricing, no surprise charges",
     ],
     whoWeHelp: [
       { icon: Home, label: "Homeowners", desc: "Moving appliances as part of a residential move or home sale.", color: "border-brand-green bg-green-50", iconColor: "text-brand-green" },
@@ -712,7 +712,7 @@ const SERVICE_DATA: Record<string, {
     pricingNote: "Appliance move pricing depends on number of appliances, floors, and access. Disconnection and reconnection coordination is available as an add-on service.",
     testimonials: [
       { name: "Mark T.", city: "Seattle, WA", context: "Refrigerator move", rating: 5, text: "Moved a large side-by-side refrigerator down a flight of stairs without a scratch. Professional and efficient." },
-      { name: "Linda S.", city: "Bellevue, WA", context: "Full kitchen appliances", rating: 5, text: "Moved our entire kitchen suite — fridge, stove, dishwasher — during a kitchen remodel. No damage, no issues." },
+      { name: "Linda S.", city: "Bellevue, WA", context: "Full kitchen appliances", rating: 5, text: "Moved our entire kitchen suite, fridge, stove, dishwasher, during a kitchen remodel. No damage, no issues." },
       { name: "Chris B.", city: "Kirkland, WA", context: "Washer and dryer", rating: 5, text: "Moved our washer and dryer to a new home. Quick, careful, and no damage to the floors." },
     ],
     faqs: [
@@ -734,12 +734,12 @@ const SERVICE_DATA: Record<string, {
     metaTitle: "Professional Unpacking Services | Seattle & Eastside WA | On The Go Moving",
     metaDesc: "Expert unpacking services in Seattle, Bellevue, Redmond & the Eastside. We unpack, organize, and set up your new home. Full-service unpacking available. Free quote.",
     canonical: "https://onthegomoving.com/unpacking-services/",
-    heroTagline: "Professional Unpacking Services — Seattle & the Eastside",
-    intro: "Moving in is just the beginning. Our professional unpacking services take the stress out of settling into your new home. We unpack boxes, place items in their designated rooms, organize your kitchen and closets, and remove all packing materials — leaving your new home ready to live in.",
+    heroTagline: "Professional Unpacking Services, Seattle & the Eastside",
+    intro: "Moving in is just the beginning. Our professional unpacking services take the stress out of settling into your new home. We unpack boxes, place items in their designated rooms, organize your kitchen and closets, and remove all packing materials, leaving your new home ready to live in.",
     whatIsItTitle: "What Are Professional Unpacking Services?",
     whatIsIt: "Professional unpacking services involve trained movers systematically unpacking all boxes, placing items in their designated rooms, and organizing your new home according to your preferences. This includes kitchen organization, closet setup, and removal of all packing materials. Professional unpackers work efficiently and can complete in hours what takes most families days.",
     benefits: [
-      "Full-service unpacking — every box opened and items placed",
+      "Full-service unpacking, every box opened and items placed",
       "Kitchen and pantry organization included",
       "Closet and wardrobe setup available",
       "All packing materials removed and disposed of",
@@ -747,9 +747,9 @@ const SERVICE_DATA: Record<string, {
       "Available same day as your move or on a separate day",
     ],
     whoWeHelp: [
-      { icon: Home, label: "Busy Families", desc: "Get your new home functional immediately — no living out of boxes.", color: "border-brand-green bg-green-50", iconColor: "text-brand-green" },
+      { icon: Home, label: "Busy Families", desc: "Get your new home functional immediately, no living out of boxes.", color: "border-brand-green bg-green-50", iconColor: "text-brand-green" },
       { icon: Users, label: "Seniors", desc: "Patient, careful unpacking with placement exactly where you want it.", color: "border-amber-400 bg-amber-50", iconColor: "text-amber-500" },
-      { icon: Building2, label: "Corporate Relocatees", desc: "Get settled quickly when relocating for work — no time to waste.", color: "border-blue-400 bg-blue-50", iconColor: "text-blue-500" },
+      { icon: Building2, label: "Corporate Relocatees", desc: "Get settled quickly when relocating for work, no time to waste.", color: "border-blue-400 bg-blue-50", iconColor: "text-blue-500" },
       { icon: Package, label: "Anyone Who Hates Unpacking", desc: "We all hate unpacking. Let us handle it while you enjoy your new home.", color: "border-purple-400 bg-purple-50", iconColor: "text-purple-500" },
     ],
     process: [
@@ -773,7 +773,7 @@ const SERVICE_DATA: Record<string, {
     ],
     faqs: [
       { question: "Can you unpack on a different day than the move?", answer: "Yes. We can schedule unpacking services on the same day as your move or on a separate day, depending on your preference and our availability." },
-      { question: "Do you organize items or just unpack them?", answer: "We do both. We unpack boxes and place items according to your preferences. For kitchens and closets, we'll organize items the way you want them — just tell us your preferences." },
+      { question: "Do you organize items or just unpack them?", answer: "We do both. We unpack boxes and place items according to your preferences. For kitchens and closets, we'll organize items the way you want them, just tell us your preferences." },
       { question: "Do you remove all the packing materials?", answer: "Yes. We remove all boxes, packing paper, bubble wrap, and other materials and dispose of them properly. You won't have to deal with any of it." },
       { question: "How much does unpacking cost?", answer: "Unpacking services typically cost $200–$600 for a 1–2 bedroom home, depending on the number of boxes and rooms. We provide flat-rate quotes." },
     ],
@@ -790,7 +790,7 @@ const SERVICE_DATA: Record<string, {
     metaTitle: "Freight Forwarding Services | Local & Regional Logistics | On The Go Moving",
     metaDesc: "Professional freight forwarding and logistics in Seattle, Bellevue, Redmond & the Eastside. Local and regional freight transport for businesses. Licensed, insured. Free quote.",
     canonical: "https://onthegomoving.com/freight-forwarding-service/",
-    heroTagline: "Freight Forwarding & Logistics Services — Seattle & the Eastside",
+    heroTagline: "Freight Forwarding & Logistics Services, Seattle & the Eastside",
     intro: "On The Go Moving & Storage provides freight forwarding and logistics services for businesses in the Greater Seattle area. From single pallets to full truckloads, we coordinate pickup, transport, and delivery with the reliability and care your business demands.",
     whatIsItTitle: "What Is Freight Forwarding?",
     whatIsIt: "Freight forwarding is the coordination and shipment of goods from one location to another using a network of carriers and logistics services. A freight forwarder acts as an intermediary between the shipper and transportation services, handling documentation, routing, and delivery coordination. For local and regional freight, On The Go Moving provides direct transport with our own fleet.",
@@ -809,7 +809,7 @@ const SERVICE_DATA: Record<string, {
       { icon: Users, label: "Medical & Healthcare", desc: "Secure transport of medical equipment and supplies.", color: "border-purple-400 bg-purple-50", iconColor: "text-purple-500" },
     ],
     process: [
-      { icon: Phone, step: "Quote Request", desc: "Provide shipment details — dimensions, weight, origin, destination — for an accurate quote." },
+      { icon: Phone, step: "Quote Request", desc: "Provide shipment details, dimensions, weight, origin, destination, for an accurate quote." },
       { icon: Clock, step: "Pickup Scheduling", desc: "We schedule pickup at your facility or warehouse at a time that works for your operations." },
       { icon: Truck, step: "Secure Transport", desc: "Your freight is loaded, secured, and transported in our commercial vehicles." },
       { icon: CheckCircle, step: "Delivery Confirmation", desc: "We confirm delivery and provide documentation upon completion." },
@@ -974,7 +974,7 @@ export default function ServicePage({ slug }: ServicePageProps) {
               <p className="text-green-100 text-lg leading-relaxed mb-6 max-w-lg">
                 {data.intro}
               </p>
-              {/* Trust strip — single line, plain text style */}
+              {/* Trust strip, single line, plain text style */}
               <div className="flex items-center gap-1.5 mb-6 text-xs sm:text-sm text-white/80 flex-wrap">
                 <div className="flex items-center gap-1">
                   {[1,2,3,4,5].map(i => <Star key={i} size={12} fill="#fbc319" color="#fbc319" />)}
@@ -1015,10 +1015,10 @@ export default function ServicePage({ slug }: ServicePageProps) {
         <div className="container">
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-3">
             {[
-              { icon: Star, text: "4.8 Stars on Google — 1,562 Reviews", color: "text-amber-500" },
+              { icon: Star, text: "4.8 Stars on Google, 1,562 Reviews", color: "text-amber-500" },
               { icon: Shield, text: "WA Licensed HG-064180 · USDOT# 2120054", color: "text-brand-green" },
               { icon: Clock, text: "Serving Greater Seattle Since 2009", color: "text-brand-green" },
-              { icon: DollarSign, text: "Flat-Rate Pricing — No Hidden Fees", color: "text-brand-green" },
+              { icon: DollarSign, text: "Flat-Rate Pricing, No Hidden Fees", color: "text-brand-green" },
               { icon: Award, text: "Background-Checked Crews", color: "text-brand-green" },
             ].map(({ icon: Icon, text, color }) => (
               <div key={text} className="flex items-center gap-2">
@@ -1208,7 +1208,7 @@ export default function ServicePage({ slug }: ServicePageProps) {
           <div className="text-center mt-6">
             <a href="/how-much-do-movers-cost/">
               <span className="inline-flex items-center gap-2 text-brand-green font-semibold text-sm hover:underline cursor-pointer">
-                See the full pricing guide — How Much Do Movers Cost? <ArrowRight size={14} />
+                See the full pricing guide, How Much Do Movers Cost? <ArrowRight size={14} />
               </span>
             </a>
           </div>

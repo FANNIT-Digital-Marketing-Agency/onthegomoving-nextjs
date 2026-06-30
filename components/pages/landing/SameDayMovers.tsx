@@ -20,7 +20,7 @@ const STEPS = [
   {
     step: "2",
     title: "Get a Flat-Rate Quote",
-    desc: "No hourly surprises. We give you a firm price before we show up — guaranteed.",
+    desc: "No hourly surprises. We give you a firm price before we show up, guaranteed.",
     icon: Zap,
   },
   {
@@ -33,23 +33,23 @@ const STEPS = [
 
 const TRUST_ITEMS = [
   { icon: Star, text: `${COMPANY.googleRating}★ (${COMPANY.googleReviewCount.toLocaleString()} reviews)` },
-  { icon: Shield, text: "Licensed & Insured — WA HG-064180" },
-  { icon: Clock, text: "Same-day availability — call to confirm" },
+  { icon: Shield, text: "Licensed & Insured, WA HG-064180" },
+  { icon: Clock, text: "Same-day availability, call to confirm" },
   { icon: CheckCircle, text: `Serving Seattle since ${COMPANY.founded}` },
 ];
 
 const FAQS = [
   {
     q: "How quickly can you confirm same-day availability?",
-    a: "Call us directly at (425) 761-8500 and we can check crew availability on the spot — usually within a few minutes. For form submissions, we respond within 1 business hour.",
+    a: "Call us directly at (425) 761-8500 and we can check crew availability on the spot, usually within a few minutes. For form submissions, we respond within 1 business hour.",
   },
   {
     q: "Do you charge extra for same-day or last-minute moves?",
-    a: "We price every move based on size and distance — not on how much notice you give us. You'll get the same flat-rate quote whether you book 4 weeks out or 4 hours out.",
+    a: "We price every move based on size and distance, not on how much notice you give us. You'll get the same flat-rate quote whether you book 4 weeks out or 4 hours out.",
   },
   {
     q: "What areas do you cover for same-day moves?",
-    a: "We cover the entire Greater Seattle Eastside — Seattle, Bellevue, Redmond, Kirkland, Sammamish, Issaquah, Bothell, Renton, and surrounding cities within about 50 miles.",
+    a: "We cover the entire Greater Seattle Eastside, Seattle, Bellevue, Redmond, Kirkland, Sammamish, Issaquah, Bothell, Renton, and surrounding cities within about 50 miles.",
   },
   {
     q: "What's included in a same-day move?",
@@ -114,7 +114,7 @@ export default function SameDayMovers() {
                 </a>
               </div>
 
-              {/* Trust badges — single row on mobile */}
+              {/* Trust badges, single row on mobile */}
               <div className="flex flex-nowrap gap-x-3 mt-2 overflow-hidden">
                 {TRUST_ITEMS.slice(0, 2).map(({ icon: Icon, text }) => (
                   <div key={text} className="flex items-center gap-2 text-xs sm:text-sm text-gray-200 flex-shrink-0 whitespace-nowrap">
@@ -171,7 +171,7 @@ export default function SameDayMovers() {
       <section className="bg-gray-50 py-14">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl font-extrabold text-[#1a2e0a] text-center mb-10">
-            How It Works — 3 Simple Steps
+            How It Works, 3 Simple Steps
           </h2>
           <div className="grid sm:grid-cols-3 gap-6">
             {STEPS.map(({ step, title, desc, icon: Icon }) => (
@@ -198,9 +198,9 @@ export default function SameDayMovers() {
               </h2>
               <ul className="space-y-4">
                 {[
-                  "Flat-rate pricing — no hourly clock surprises",
+                  "Flat-rate pricing, no hourly clock surprises",
                   "Background-checked, uniformed crew members",
-                  "Fully padded and wrapped furniture — zero damage policy",
+                  "Fully padded and wrapped furniture, zero damage policy",
                   
                   "Same-day and next-day availability (call to confirm)",
                   `${COMPANY.googleRating}★ average across ${COMPANY.googleReviewCount.toLocaleString()} Google reviews`,

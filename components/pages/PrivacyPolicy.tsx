@@ -53,7 +53,7 @@ export default function PrivacyPolicy() {
               <ul className="list-disc pl-6 space-y-1">
                 <li>Name, email address, phone number, and mailing address</li>
                 <li>Move details including origin and destination addresses, move date, and home size</li>
-                <li>Payment information (processed securely through our payment processor — we do not store credit card numbers)</li>
+                <li>Payment information (processed securely through our payment processor, we do not store credit card numbers)</li>
                 <li>Communications you send us via email, phone, or our contact form</li>
               </ul>
               <h3 className="font-semibold text-brand-forest text-lg mt-4 mb-2">Automatically Collected Information</h3>

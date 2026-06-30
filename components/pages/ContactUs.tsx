@@ -10,7 +10,7 @@ import { useSEO, CONTACT_POINT_SCHEMA, MOVING_COMPANY_SCHEMA } from "@/hooks/use
 export default function ContactUs() {
   useSEO({
     title: "Get a Free Moving Quote | On The Go Moving & Storage",
-    description: "Get a free moving quote from On The Go Moving & Storage. Serving Seattle, Bellevue, Redmond & the Eastside. Call (425) 761-8500 — response within 1 hour.",
+    description: "Get a free moving quote from On The Go Moving & Storage. Serving Seattle, Bellevue, Redmond & the Eastside. Call (425) 761-8500, response within 1 hour.",
     canonical: "https://onthegomoving.com/contact-us/",
     ogType: "website",
     schema: [

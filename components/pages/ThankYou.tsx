@@ -37,7 +37,7 @@ export default function ThankYou() {
         });
       }
     }
-    document.title = "Thank You — Quote Request Received | On The Go Moving";
+    document.title = "Thank You, Quote Request Received | On The Go Moving";
     // noindex — conversion confirmation page should not be indexed
     let robotsMeta = document.querySelector('meta[name="robots"]') as HTMLMetaElement;
     if (!robotsMeta) { robotsMeta = document.createElement("meta"); robotsMeta.setAttribute("name", "robots"); document.head.appendChild(robotsMeta); }

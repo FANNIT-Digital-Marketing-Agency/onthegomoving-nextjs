@@ -14,7 +14,7 @@ import { CheckCircle, Package, Phone, ShoppingCart, Truck, Star, AlertCircle } f
 const OTGM_PROVIDES = [
   { name: "Moving Blankets / Furniture Pads", desc: "Heavy-duty 80 lb blankets to protect furniture surfaces during loading, transport, and unloading." },
   { name: "Stretch Wrap / Shrink Wrap", desc: "Plastic film to bundle drawers, protect upholstery, and keep furniture pieces together." },
-  { name: "Wardrobe Boxes", desc: "Tall hanging boxes so your clothes stay on hangers — no folding, no wrinkles." },
+  { name: "Wardrobe Boxes", desc: "Tall hanging boxes so your clothes stay on hangers, no folding, no wrinkles." },
   { name: "Tape & Tape Gun", desc: "Heavy-duty packing tape and dispensers for sealing boxes quickly and securely." },
   { name: "Dollies & Hand Trucks", desc: "Furniture dollies and appliance hand trucks to move heavy items safely without damage." },
   { name: "Floor & Door Frame Protection", desc: "Protective coverings for hardwood floors and door frames to prevent scuffs and scratches." },
@@ -40,7 +40,7 @@ const CUSTOMER_SHOULD_BUY = [
   {
     name: "Mattress Bags",
     desc: "Plastic bags that keep mattresses clean during transport. Available in twin, full, queen, and king sizes.",
-    tip: "Purchase these before move day — they slip on in seconds.",
+    tip: "Purchase these before move day, they slip on in seconds.",
   },
   {
     name: "Dish Pack Boxes",
@@ -50,14 +50,14 @@ const CUSTOMER_SHOULD_BUY = [
   {
     name: "Markers & Labels",
     desc: "Color-coded room labels and permanent markers to mark every box with its destination room and contents.",
-    tip: "Label the top AND sides of every box — it saves time on unload day.",
+    tip: "Label the top AND sides of every box, it saves time on unload day.",
   },
 ];
 
 const FAQS = [
   {
     q: "Does On The Go Moving bring supplies to the job?",
-    a: "Yes — our crew arrives with moving blankets, stretch wrap, tape, wardrobe boxes, dollies, and floor/door frame protection on every move. These are included in your move at no extra charge.",
+    a: "Yes, our crew arrives with moving blankets, stretch wrap, tape, wardrobe boxes, dollies, and floor/door frame protection on every move. These are included in your move at no extra charge.",
   },
   {
     q: "What should I have ready before the movers arrive?",
@@ -65,7 +65,7 @@ const FAQS = [
   },
   {
     q: "Can I purchase boxes and packing materials from On The Go Moving?",
-    a: "Yes — we carry boxes, packing paper, bubble wrap, mattress bags, and specialty boxes available for pickup at our Redmond, WA warehouse. Call us to check availability and pricing.",
+    a: "Yes, we carry boxes, packing paper, bubble wrap, mattress bags, and specialty boxes available for pickup at our Redmond, WA warehouse. Call us to check availability and pricing.",
   },
   {
     q: "How many boxes do I need for a 2-bedroom apartment?",
@@ -73,7 +73,7 @@ const FAQS = [
   },
   {
     q: "Do you buy back unused boxes?",
-    a: "Yes — we buy back clean, undamaged boxes after your move. Bring them to our Redmond warehouse within 30 days.",
+    a: "Yes, we buy back clean, undamaged boxes after your move. Bring them to our Redmond warehouse within 30 days.",
   },
 ];
 
@@ -89,7 +89,7 @@ export default function MovingSupplies() {
     schema.text = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Store",
-      "name": "On The Go Moving & Storage — Moving Supplies",
+      "name": "On The Go Moving & Storage, Moving Supplies",
       "url": "https://onthegomoving.com/moving-supplies/",
       "telephone": COMPANY.phone,
       "address": { "@type": "PostalAddress", "addressLocality": "Redmond", "addressRegion": "WA", "postalCode": "98052" },
@@ -118,7 +118,7 @@ export default function MovingSupplies() {
               <span className="text-brand-gold">Before Move Day</span>
             </h1>
             <p className="text-green-100 text-lg mb-8 max-w-xl">
-              Our crew brings the blankets, wrap, tape, and equipment. Here's what we recommend you have packed and ready — so your move stays on schedule and nothing gets left behind.
+              Our crew brings the blankets, wrap, tape, and equipment. Here's what we recommend you have packed and ready, so your move stays on schedule and nothing gets left behind.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={COMPANY.phoneHref} className="inline-flex items-center justify-center gap-3 bg-brand-gold hover:bg-brand-gold-dark text-brand-forest font-bold text-lg px-8 py-4 rounded-lg transition-all hover:scale-105 shadow-lg">
@@ -146,7 +146,7 @@ export default function MovingSupplies() {
               <CheckCircle className="w-3.5 h-3.5" /> Included With Your Move
             </div>
             <h2 className="font-display text-3xl lg:text-4xl font-black text-brand-forest mb-3">What Our Crew Brings</h2>
-            <p className="text-gray-500 max-w-xl mx-auto">Every On The Go Moving job includes professional-grade equipment and protection materials — no extra charge.</p>
+            <p className="text-gray-500 max-w-xl mx-auto">Every On The Go Moving job includes professional-grade equipment and protection materials, no extra charge.</p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {OTGM_PROVIDES.map((item, i) => (
@@ -173,7 +173,7 @@ export default function MovingSupplies() {
             </div>
             <h2 className="font-display text-3xl lg:text-4xl font-black text-brand-forest mb-3">What We Recommend You Have Ready</h2>
             <p className="text-gray-500 max-w-2xl mx-auto">
-              Having these items purchased and your boxes packed before the crew arrives keeps your move on schedule and prevents surprises. We can supply many of these items — call ahead to arrange pickup at our Redmond warehouse.
+              Having these items purchased and your boxes packed before the crew arrives keeps your move on schedule and prevents surprises. We can supply many of these items, call ahead to arrange pickup at our Redmond warehouse.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -192,7 +192,7 @@ export default function MovingSupplies() {
           </div>
           <div className="mt-10 bg-brand-forest/5 border border-brand-forest/10 rounded-2xl p-6 text-center">
             <p className="text-gray-600 mb-2 font-medium">Need help estimating how many boxes or supplies you need?</p>
-            <p className="text-gray-500 text-sm mb-4">Call us and we'll walk through your home size and give you a free supply estimate — no obligation.</p>
+            <p className="text-gray-500 text-sm mb-4">Call us and we'll walk through your home size and give you a free supply estimate, no obligation.</p>
             <a href={COMPANY.phoneHref} className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-forest text-white font-bold px-8 py-3 rounded-lg transition-colors">
               <Phone className="w-4 h-4" /> {COMPANY.phone}
             </a>
@@ -208,7 +208,7 @@ export default function MovingSupplies() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { icon: <Star className="w-6 h-6 text-brand-gold" />, title: "Professional Grade", desc: "The same boxes and materials our crews use on every move." },
-              { icon: <Truck className="w-6 h-6 text-brand-gold" />, title: "Delivered With Your Move", desc: "Order supplies and have them delivered when our crew arrives — no extra trip." },
+              { icon: <Truck className="w-6 h-6 text-brand-gold" />, title: "Delivered With Your Move", desc: "Order supplies and have them delivered when our crew arrives, no extra trip." },
               { icon: <ShoppingCart className="w-6 h-6 text-brand-gold" />, title: "Buy-Back Program", desc: "Return clean, unused boxes within 30 days." },
               { icon: <CheckCircle className="w-6 h-6 text-brand-gold" />, title: "Expert Advice", desc: "Not sure what you need? Our team will estimate your supply list for free." },
             ].map((f, i) => (

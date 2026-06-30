@@ -14,12 +14,12 @@ const COMPARISON = [
   {
     feature: "Vault size",
     us: "7 ft tall × 5 ft wide × 7 ft deep",
-    them: "Varies — often smaller or oddly shaped",
+    them: "Varies, often smaller or oddly shaped",
   },
   {
     feature: "Storage type",
-    us: "Private vault — your items only",
-    them: "Open unit — shared access",
+    us: "Private vault, your items only",
+    them: "Open unit, shared access",
   },
   {
     feature: "Access",
@@ -42,14 +42,14 @@ const COMPARISON = [
 const TRUST_ITEMS = [
   { icon: Star, text: `${COMPANY.googleRating}★ (${COMPANY.googleReviewCount.toLocaleString()} reviews)` },
   { icon: Shield, text: "Secured Redmond, WA facility" },
-  { icon: Lock, text: "Private vaults — not shared units" },
+  { icon: Lock, text: "Private vaults, not shared units" },
 
 ];
 
 const FAQS = [
   {
     q: "What's the difference between vault storage and self-storage?",
-    a: "With our vault storage, your belongings are loaded into a private wooden vault measuring 7 ft tall × 5 ft wide × 7 ft deep at our secure Redmond facility — no other customers' items share your space. Self-storage units are open rooms in a shared building where anyone with a unit can walk past your belongings.",
+    a: "With our vault storage, your belongings are loaded into a private wooden vault measuring 7 ft tall × 5 ft wide × 7 ft deep at our secure Redmond facility, no other customers' items share your space. Self-storage units are open rooms in a shared building where anyone with a unit can walk past your belongings.",
   },
 
   {
@@ -58,7 +58,7 @@ const FAQS = [
   },
   {
     q: "Do you pick up and deliver stored items?",
-    a: "Yes. We pick up your items, transport them to our Redmond storage facility, and deliver them back to you when you're ready — all included in the service. You never have to rent a truck or make multiple trips.",
+    a: "Yes. We pick up your items, transport them to our Redmond storage facility, and deliver them back to you when you're ready, all included in the service. You never have to rent a truck or make multiple trips.",
   },
 ];
 
@@ -96,14 +96,14 @@ export default function StorageServicesLanding() {
             {/* Left: headline + trust */}
             <div>
               <div className="inline-flex items-center gap-2 bg-[#75aa11] text-white text-xs font-bold px-3 py-1.5 rounded-full mb-4 uppercase tracking-wide">
-                <Package size={12} /> Storage Vaults — Not Self-Storage
+                <Package size={12} /> Storage Vaults, Not Self-Storage
               </div>
               <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-4">
                 Secure Storage<br />
                 <span className="text-[#75aa11]">in Redmond, WA</span>
               </h1>
               <p className="text-lg text-gray-200 mb-6 max-w-lg">
-                Unlike self-storage units, our private storage vaults (7 ft tall × 5 ft wide × 7 ft deep) are held in a secured Redmond warehouse — only accessible by our team. We pick up, store, and deliver your items. No hauling required.
+                Unlike self-storage units, our private storage vaults (7 ft tall × 5 ft wide × 7 ft deep) are held in a secured Redmond warehouse, only accessible by our team. We pick up, store, and deliver your items. No hauling required.
               </p>
 
               {/* Phone CTA + scroll-to-form anchor */}
@@ -119,7 +119,7 @@ export default function StorageServicesLanding() {
                 </a>
               </div>
 
-              {/* Trust badges — single row on mobile */}
+              {/* Trust badges, single row on mobile */}
               <div className="flex flex-nowrap gap-x-3 mt-2 overflow-hidden">
                 {TRUST_ITEMS.slice(0, 2).map(({ icon: Icon, text }) => (
                   <div key={text} className="flex items-center gap-2 text-xs sm:text-sm text-gray-200 flex-shrink-0 whitespace-nowrap">
@@ -179,7 +179,7 @@ export default function StorageServicesLanding() {
             Vault Storage vs. Self-Storage
           </h2>
           <p className="text-center text-gray-600 mb-8 max-w-xl mx-auto">
-            Our storage vaults are private, secured, and managed by our team — not a public storage facility where anyone can access the building.
+            Our storage vaults are private, secured, and managed by our team, not a public storage facility where anyone can access the building.
           </p>
           <div className="overflow-x-auto rounded-xl shadow-sm border border-gray-200">
             <table className="w-full text-sm">
@@ -221,9 +221,9 @@ export default function StorageServicesLanding() {
                 {[
                   "We pick up your items from your home or office",
                   "Items are loaded into a private vault (7 ft tall × 5 ft wide × 7 ft deep) at our Redmond facility",
-                  "Your vault is sealed — only accessible by our team",
+                  "Your vault is sealed, only accessible by our team",
                   "When you're ready, we deliver directly to your new location",
-                  "Flexible month-to-month pricing — no long-term contracts",
+                  "Flexible month-to-month pricing, no long-term contracts",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <CheckCircle size={18} className="text-[#75aa11] flex-shrink-0 mt-0.5" />

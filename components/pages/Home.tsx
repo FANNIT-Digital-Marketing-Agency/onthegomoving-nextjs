@@ -79,7 +79,7 @@ export default function Home() {
   // Schema is injected server-side in app/(main)/page.tsx for static HTML inclusion
   useSEO({
     title: "Seattle Movers – On The Go Moving & Storage",
-    description: "On The Go Moving & Storage is Seattle's local moving company. Serving all Seattle neighborhoods — residential, commercial, and apartment moves. Get a free quote today.",
+    description: "On The Go Moving & Storage is Seattle's local moving company. Serving all Seattle neighborhoods, residential, commercial, and apartment moves. Get a free quote today.",
     canonical: "https://onthegomoving.com/",
     ogType: "website",
   });
@@ -92,14 +92,14 @@ export default function Home() {
       <section
         className="relative pt-[72px] min-h-[700px] flex items-center overflow-hidden bg-[#0a1e06]"
       >
-        {/* Static background — always visible as poster/fallback and on mobile */}
+        {/* Static background, always visible as poster/fallback and on mobile */}
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: `linear-gradient(to right, rgba(10,30,6,0.88) 48%, rgba(10,30,6,0.50) 100%), url(${BRAND_IMAGES.threeCrewLoadingTruck})`,
           }}
         />
-        {/* Self-hosted hero video — desktop only, PageSpeed optimised
+        {/* Self-hosted hero video, desktop only, PageSpeed optimised
          *  - preload="none": browser does NOT fetch video bytes until page is
          *    interactive — static background image is the LCP element instead
          *  - autoPlay muted loop playsInline: standard autoplay requirements
@@ -140,7 +140,7 @@ export default function Home() {
               {/* Eyebrow badge */}
               <div className="inline-flex items-center gap-2 bg-[#75aa11]/20 border border-[#75aa11]/40 text-[#a8d060] text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5">
                 <CheckCircle size={12} />
-                Moving You Can Rely On — Since 2009
+                Moving You Can Rely On, Since 2009
               </div>
 
               {/* Headline */}
@@ -153,10 +153,10 @@ export default function Home() {
                 <span style={{ color: "#75aa11" }}>Trusted Movers.</span>
               </h1>
               <p className="text-green-100 text-lg leading-relaxed mb-7 max-w-lg">
-                Flat-rate pricing, professional crews, and secure vault storage — trusted by 25,000+ Puget Sound families since 2009.
+                Flat-rate pricing, professional crews, and secure vault storage, trusted by 25,000+ Puget Sound families since 2009.
               </p>
 
-              {/* Trust strip — single line, plain text style */}
+              {/* Trust strip, single line, plain text style */}
               <div className="flex items-center gap-1.5 mb-8 text-xs sm:text-sm text-white/80 flex-wrap">
                 <div className="flex items-center gap-1">
                   {[1,2,3,4,5].map(i => <Star key={i} size={12} fill="#fbc319" color="#fbc319" />)}
@@ -170,7 +170,7 @@ export default function Home() {
                 <span className="hidden sm:inline">1 Mo. Free Storage</span>
               </div>
 
-              {/* Mobile CTA — phone button + inline form */}
+              {/* Mobile CTA, phone button + inline form */}
               <div className="lg:hidden space-y-4">
                 <a href={COMPANY.phoneHref} className="btn-primary text-base justify-center w-full sm:w-auto">
                   <Phone size={16} /> {COMPANY.phone}
@@ -193,7 +193,7 @@ export default function Home() {
       {/* ── STATS BAR ────────────────────────────────────────────────────── */}
       <section className="bg-white border-b border-gray-100 py-8 relative overflow-hidden">
         <div className="container">
-          {/* Progressive green accent bar — grows right, echoing the truck sweep */}
+          {/* Progressive green accent bar, grows right, echoing the truck sweep */}
           <div className="absolute bottom-0 left-0 right-0 h-[3px]"
             style={{ background: "linear-gradient(to right, transparent 0%, #75aa11 40%, #8fc820 70%, #a8d060 100%)" }}
           />
@@ -308,7 +308,7 @@ export default function Home() {
                 Seattle's Most Trusted Moving Company
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Since {COMPANY.founded}, we've built our reputation one move at a time — with over {COMPANY.googleReviewCount.toLocaleString()} five-star Google reviews and 25,000+ successful moves.
+                Since {COMPANY.founded}, we've built our reputation one move at a time, with over {COMPANY.googleReviewCount.toLocaleString()} five-star Google reviews and 25,000+ successful moves.
               </p>
 
               {/* Two-column checklist */}
@@ -319,7 +319,7 @@ export default function Home() {
                   { icon: <Archive size={15} />, text: "Secure vault storage" },
                   { icon: <Users size={15} />, text: "Background-checked crews" },
                   { icon: <Clock size={15} />, text: "On-time, every time" },
-                  { icon: <Award size={15} />, text: "4.8★ on Google — 1,562 reviews" },
+                  { icon: <Award size={15} />, text: "4.8★ on Google, 1,562 reviews" },
                 ].map((item) => (
                   <div key={item.text} className="flex items-start gap-2.5 text-gray-700 text-sm">
                     <span className="shrink-0 mt-0.5 text-[#75aa11]">{item.icon}</span>
@@ -333,7 +333,7 @@ export default function Home() {
                 <div className="flex gap-2 items-start">
                   <Quote size={16} className="text-[#75aa11] shrink-0 mt-0.5" />
                   <p className="text-gray-700 text-sm leading-relaxed italic">
-                    "We're not just a moving company — we're your neighbors. Every crew member lives and works in the communities we serve."
+                    "We're not just a moving company, we're your neighbors. Every crew member lives and works in the communities we serve."
                   </p>
                 </div>
               </div>
@@ -416,7 +416,7 @@ export default function Home() {
                 Serving Greater Seattle &amp; Beyond
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Our crews live and work in the communities we serve — giving us unmatched local knowledge and genuine care for every move. We cover 50+ cities within 18 miles of Redmond.
+                Our crews live and work in the communities we serve, giving us unmatched local knowledge and genuine care for every move. We cover 50+ cities within 18 miles of Redmond.
               </p>
               <a href="/we-are-local/" className="btn-primary">
                 View All Service Areas <ArrowRight size={16} />
@@ -519,24 +519,24 @@ export default function Home() {
               Seattle Neighborhoods We Serve
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-              On The Go Moving serves every Seattle neighborhood — from Capitol Hill condos to West Seattle homes. Our crews know Seattle's streets, building requirements, and parking quirks. We dispatch from our Redmond facility and reach any Seattle neighborhood in under 30 minutes.
+              On The Go Moving serves every Seattle neighborhood, from Capitol Hill condos to West Seattle homes. Our crews know Seattle's streets, building requirements, and parking quirks. We dispatch from our Redmond facility and reach any Seattle neighborhood in under 30 minutes.
             </p>
           </FadeSection>
           <FadeSection>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
               {[
-                { name: "Ballard", desc: "Apartment and condo moves near the Ship Canal — elevator coordination included." },
+                { name: "Ballard", desc: "Apartment and condo moves near the Ship Canal, elevator coordination included." },
                 { name: "Capitol Hill", desc: "High-density apartment buildings, narrow streets, and strict move-in windows." },
-                { name: "Queen Anne", desc: "Hillside homes and walk-up apartments — our crews handle steep carries with ease." },
+                { name: "Queen Anne", desc: "Hillside homes and walk-up apartments, our crews handle steep carries with ease." },
                 { name: "Fremont", desc: "Mixed residential and commercial moves in one of Seattle's most active neighborhoods." },
                 { name: "South Lake Union", desc: "Tech company office relocations and high-rise apartment moves near Amazon HQ." },
                 { name: "Belltown", desc: "Downtown high-rise condos with loading dock coordination and COI requirements." },
-                { name: "Green Lake", desc: "Single-family homes and bungalows — full-service residential moves." },
+                { name: "Green Lake", desc: "Single-family homes and bungalows, full-service residential moves." },
                 { name: "Magnolia", desc: "Waterfront and bluff properties with long carries and limited truck access." },
-                { name: "West Seattle", desc: "Family homes and condos across the bridge — we serve all West Seattle zip codes." },
-                { name: "Beacon Hill", desc: "Light Rail proximity makes Beacon Hill popular for apartment moves — we know the buildings." },
-                { name: "Columbia City", desc: "One of Seattle's most diverse neighborhoods — single-family homes, apartments, and easy I-90 access." },
-                { name: "University District", desc: "High-turnover apartment moves near UW — we handle move-in/move-out season efficiently." },
+                { name: "West Seattle", desc: "Family homes and condos across the bridge, we serve all West Seattle zip codes." },
+                { name: "Beacon Hill", desc: "Light Rail proximity makes Beacon Hill popular for apartment moves, we know the buildings." },
+                { name: "Columbia City", desc: "One of Seattle's most diverse neighborhoods, single-family homes, apartments, and easy I-90 access." },
+                { name: "University District", desc: "High-turnover apartment moves near UW, we handle move-in/move-out season efficiently." },
               ].map((n, i) => (
                 <div key={i} className="bg-white rounded-xl border border-gray-100 shadow-sm p-5 hover:shadow-md hover:border-brand-green/30 transition-all">
                   <h3 className="font-bold text-brand-forest text-base mb-1">{n.name}</h3>
@@ -552,7 +552,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── CTA BANNER (dark forest green — matches service pages) ────────── */}
+      {/* ── CTA BANNER (dark forest green, matches service pages) ────────── */}
       <section
         className="py-16"
         style={{

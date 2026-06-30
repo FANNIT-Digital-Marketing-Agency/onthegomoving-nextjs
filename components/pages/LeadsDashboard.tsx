@@ -132,11 +132,11 @@ const STAGE_TEXT: Record<string, string> = {
 // ── Helpers ────────────────────────────────────────────────────────────────
 
 function formatDate(iso: string) {
-  if (!iso) return "—";
+  if (!iso) return "-";
   return new Date(iso).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
 }
 function formatDateShort(iso: string) {
-  if (!iso) return "—";
+  if (!iso) return "-";
   return new Date(iso).toLocaleDateString("en-US", { month: "short", day: "numeric" });
 }
 function formatTime(iso: string) {
@@ -743,7 +743,7 @@ export default function LeadsDashboard() {
             </div>
             <div>
               <h1 className="text-lg font-bold text-gray-900">Leads Dashboard</h1>
-              <p className="text-xs text-gray-500">On The Go Moving — Admin</p>
+              <p className="text-xs text-gray-500">On The Go Moving, Admin</p>
             </div>
           </div>
           {error && (
@@ -1213,18 +1213,18 @@ export default function LeadsDashboard() {
                               <div key={lead.id} className={`px-4 py-3 flex flex-wrap items-start gap-x-6 gap-y-1.5 ${isTestLead(lead) ? "bg-amber-50/60" : "bg-gray-50/50"}`}>
                                 <div className="min-w-0">
                                   <div className="font-semibold text-sm text-gray-900 flex items-center gap-2">
-                                    {lead.fullName || "—"}
+                                    {lead.fullName || "-"}
                                     {isTestLead(lead) && <span className="text-xs bg-amber-100 text-amber-700 px-1.5 py-0.5 rounded font-medium">TEST</span>}
                                   </div>
                                   <div className="text-xs text-gray-400">{formatDate(lead.createdAt)} at {formatTime(lead.createdAt)}</div>
                                 </div>
                                 <div className="flex items-center gap-1 text-xs text-gray-600">
                                   <Phone size={11} />
-                                  <a href={`tel:${lead.phone}`} className="hover:text-[#75aa11]">{lead.phone || "—"}</a>
+                                  <a href={`tel:${lead.phone}`} className="hover:text-[#75aa11]">{lead.phone || "-"}</a>
                                 </div>
                                 <div className="flex items-center gap-1 text-xs text-gray-600">
                                   <Mail size={11} />
-                                  <a href={`mailto:${lead.email}`} className="hover:text-[#75aa11]">{lead.email || "—"}</a>
+                                  <a href={`mailto:${lead.email}`} className="hover:text-[#75aa11]">{lead.email || "-"}</a>
                                 </div>
                                 {lead.moveType && (
                                   <span className={`px-2 py-0.5 rounded-full text-xs font-medium capitalize ${moveTypeBadge(lead.moveType)}`}>{lead.moveType}</span>
@@ -1300,15 +1300,15 @@ export default function LeadsDashboard() {
                           </td>
                           <td className="px-4 py-3">
                             <div className="font-medium text-gray-900 flex items-center gap-2">
-                              {lead.fullName || "—"}
+                              {lead.fullName || "-"}
                               {isTestLead(lead) && <span className="text-xs bg-amber-100 text-amber-700 px-1.5 py-0.5 rounded font-medium">TEST</span>}
                             </div>
                             {lead.moveDate && <div className="text-xs text-gray-400">Move: {lead.moveDate}</div>}
                           </td>
                           <td className="px-4 py-3">
                             <div className="text-xs">
-                              <a href={`tel:${lead.phone}`} className="text-gray-700 hover:text-[#75aa11] block">{lead.phone || "—"}</a>
-                              <a href={`mailto:${lead.email}`} className="text-gray-400 hover:text-[#75aa11] block truncate max-w-[160px]">{lead.email || "—"}</a>
+                              <a href={`tel:${lead.phone}`} className="text-gray-700 hover:text-[#75aa11] block">{lead.phone || "-"}</a>
+                              <a href={`mailto:${lead.email}`} className="text-gray-400 hover:text-[#75aa11] block truncate max-w-[160px]">{lead.email || "-"}</a>
                             </div>
                           </td>
                           <td className="px-4 py-3">
@@ -1452,8 +1452,8 @@ export default function LeadsDashboard() {
                               <span className={`px-2 py-0.5 rounded-full text-xs font-medium ${stageBadgeClass(lead)}`}>{getLeadStage(lead)}</span>
                             </td>
                             <td className="px-4 py-3 font-semibold text-gray-800 text-sm">{formatCurrency(lead.smTotalRevenue)}</td>
-                            <td className="px-4 py-3 text-xs text-gray-500">{lead.smMoveDate ? formatDate(lead.smMoveDate) : (lead.moveDate || "—")}</td>
-                            <td className="px-4 py-3 text-xs text-gray-500">{lead.smCoordinator || "—"}</td>
+                            <td className="px-4 py-3 text-xs text-gray-500">{lead.smMoveDate ? formatDate(lead.smMoveDate) : (lead.moveDate || "-")}</td>
+                            <td className="px-4 py-3 text-xs text-gray-500">{lead.smCoordinator || "-"}</td>
                             <td className="px-4 py-3 text-xs text-gray-400">{formatDate(lead.createdAt)}</td>
                           </tr>
                         ))}
@@ -1748,7 +1748,7 @@ export default function LeadsDashboard() {
                               <td className="py-2 text-right">
                                 <span className={`text-xs font-semibold ${booked > 0 ? "text-green-600" : "text-gray-400"}`}>{booked}</span>
                               </td>
-                              <td className="py-2 text-right text-xs font-semibold text-gray-700">{rev > 0 ? formatCurrency(rev) : "—"}</td>
+                              <td className="py-2 text-right text-xs font-semibold text-gray-700">{rev > 0 ? formatCurrency(rev) : "-"}</td>
                             </tr>
                           );
                         })}
@@ -1780,7 +1780,7 @@ export default function LeadsDashboard() {
           </div>
         )}
 
-        <div className="text-center text-xs text-gray-300 pb-4">On The Go Moving & Storage — Internal Admin Tool</div>
+        <div className="text-center text-xs text-gray-300 pb-4">On The Go Moving & Storage, Internal Admin Tool</div>
       </div>
     </div>
   );
