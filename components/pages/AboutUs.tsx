@@ -58,7 +58,7 @@ const FAQS = [
   },
   {
     q: "What makes On The Go Moving different from other Seattle movers?",
-    a: "On The Go Moving is locally owned and operated, not a franchise or broker. Every crew member is a direct employee — background-checked, trained, and uniformed. We offer flat-rate pricing, one free month of storage with every move, and a 4.8-star Google rating backed by over 1,562 reviews.",
+    a: "On The Go Moving is locally owned and operated, not a franchise or broker. Every crew member is a direct employee — background-checked, trained, and uniformed. We offer flat-rate pricing, secure vault storage available, and a 4.8-star Google rating backed by over 1,562 reviews.",
   },
 ];
 

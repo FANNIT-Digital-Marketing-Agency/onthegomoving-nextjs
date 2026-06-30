@@ -36,18 +36,14 @@ const COMPARISON = [
     us: "We pick up, store, and deliver",
     them: "You haul it yourself",
   },
-  {
-    feature: "Free month offer",
-    us: "1 free month with any move",
-    them: "No free month",
-  },
+
 ];
 
 const TRUST_ITEMS = [
   { icon: Star, text: `${COMPANY.googleRating}★ (${COMPANY.googleReviewCount.toLocaleString()} reviews)` },
   { icon: Shield, text: "Secured Redmond, WA facility" },
   { icon: Lock, text: "Private vaults — not shared units" },
-  { icon: CheckCircle, text: "1 free month with any move" },
+
 ];
 
 const FAQS = [
@@ -55,10 +51,7 @@ const FAQS = [
     q: "What's the difference between vault storage and self-storage?",
     a: "With our vault storage, your belongings are loaded into a private wooden vault measuring 7 ft tall × 5 ft wide × 7 ft deep at our secure Redmond facility — no other customers' items share your space. Self-storage units are open rooms in a shared building where anyone with a unit can walk past your belongings.",
   },
-  {
-    q: "How does the 1 free month of storage work?",
-    a: "Every move we do includes 1 free month of vault storage at our Redmond facility. After the free month, storage continues at our standard monthly rate. There's no obligation to continue — we'll deliver your items back whenever you're ready.",
-  },
+
   {
     q: "Can I access my stored items?",
     a: "Yes. You can schedule access to your vault during business hours. Because we use private vaults rather than open units, we'll retrieve your specific vault for you.",
@@ -145,7 +138,7 @@ export default function StorageServicesLanding() {
                 variant="inline"
                 sourceLabel="landing-storage-services"
                 defaultMoveType="house"
-                defaultFreeStorage={true}
+                defaultFreeStorage={false}
                 isLandingPage={true}
               />
             </div>
@@ -230,8 +223,7 @@ export default function StorageServicesLanding() {
                   "Items are loaded into a private vault (7 ft tall × 5 ft wide × 7 ft deep) at our Redmond facility",
                   "Your vault is sealed — only accessible by our team",
                   "When you're ready, we deliver directly to your new location",
-                  "1 free month of storage included with any move",
-                  "Flexible month-to-month pricing after the free period",
+                  "Flexible month-to-month pricing — no long-term contracts",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <CheckCircle size={18} className="text-[#75aa11] flex-shrink-0 mt-0.5" />

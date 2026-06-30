@@ -4,7 +4,7 @@ import StorageServicesLanding from "@/components/pages/landing/StorageServicesLa
 export const metadata: Metadata = {
   title: "Secure Storage Seattle",
   description:
-    "Private vault storage at our secured Redmond, WA facility. We pick up, store, and deliver. 1 free month with any move. Call (425) 761-8500.",
+    "Private vault storage at our secured Redmond, WA facility. We pick up, store, and deliver. Call (425) 761-8500.",
   robots: {
     index: false,
     follow: true,

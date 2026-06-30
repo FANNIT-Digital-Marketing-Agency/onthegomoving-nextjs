@@ -78,7 +78,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle elevator reservations and SDOT parking permits?", a: "Yes. For high-rise buildings in South Lake Union, First Hill, and Belltown, we coordinate elevator reservations in advance. For areas with limited street parking, we pull SDOT temporary no-parking permits on your behalf." },
       { q: "Are you licensed and insured?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every job. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "How far in advance should I book?", a: "We recommend booking 2–4 weeks ahead, especially for summer (May–September) and end-of-month dates. We also accommodate last-minute requests — call to check availability." },
-      { q: "Do you offer storage with Seattle moves?", a: "Yes. Every move includes 1 free month of storage at our Redmond warehouse, 12 miles from central Seattle. Extended storage is available month-to-month." },
+      { q: "Do you offer storage with Seattle moves?", a: "Yes. We offer secure vault storage at our Redmond warehouse, 12 miles from central Seattle. Storage is available month-to-month — contact us for current pricing." },
     ],
     nearby: [
       ["Bellevue", "bellevue-movers"],
@@ -198,7 +198,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Are you licensed and insured to move in Redmond?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "Do you move near Microsoft's campus in Overlake?", a: "Yes. We regularly move in and out of the apartment complexes near Microsoft's Redmond campus in Overlake. We know the elevator policies and move-in windows for the major buildings in that area." },
       { q: "How quickly can you schedule a Redmond move?", a: "As a Redmond-based company, we often have same-week availability for local moves. For summer and end-of-month dates, we recommend booking 2\u20133 weeks in advance. Call us for current availability." },
-      { q: "Do you offer storage in Redmond?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond. Your first month of storage is free with any move. We offer both short-term and long-term storage options." },
+      { q: "Do you offer storage in Redmond?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond. Storage is available month-to-month — contact us for current pricing. We offer both short-term and long-term storage options." },
     ],
     nearby: [
       ["Bellevue", "bellevue-movers"],
@@ -335,7 +335,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle moves in Issaquah Highlands?", a: "Yes. We regularly move in and out of Issaquah Highlands. Our drivers know the best access routes for large moving trucks on the steep internal roads. We also handle HOA move-in coordination for Highlands communities." },
       { q: "Are you licensed and insured to move in Issaquah?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "How far in advance should I book Issaquah movers?", a: "We recommend booking 2\u20134 weeks in advance, especially for summer moves. We accommodate last-minute moves regularly \u2014 call us to check availability." },
-      { q: "Do you offer storage near Issaquah?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 10 miles from Issaquah via I-90. Your first month of storage is free with any move." },
+      { q: "Do you offer storage near Issaquah?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 10 miles from Issaquah via I-90. Storage is available month-to-month — contact us for current pricing." },
       { q: "Can you move large items in Issaquah Highlands?", a: "Yes. We regularly move large furniture, pianos, and safes in Issaquah Highlands. Our crews have the equipment and experience to handle steep driveways and challenging access points." },
     ],
     nearby: [
@@ -384,7 +384,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Are you licensed and insured to move in Woodinville?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "Do you move wine collections in Woodinville?", a: "Yes. We handle wine collections with care \u2014 proper padding, temperature-aware transport, and careful handling. For large collections, we recommend our full packing service to ensure every bottle is properly protected." },
       { q: "How far in advance should I book Woodinville movers?", a: "We recommend booking 3\u20134 weeks in advance for Woodinville moves, especially for large estate properties that require extra crew and equipment." },
-      { q: "Do you offer storage near Woodinville?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 8 miles south of Woodinville. Your first month of storage is free with any move." },
+      { q: "Do you offer storage near Woodinville?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 8 miles south of Woodinville. Storage is available month-to-month — contact us for current pricing." },
     ],
     nearby: [
       ["Redmond", "redmond-movers"],
@@ -424,7 +424,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Are you licensed and insured to move in Kenmore?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "How far in advance should I book Kenmore movers?", a: "We recommend booking 2\u20134 weeks in advance, especially for summer moves. We accommodate last-minute moves regularly \u2014 call us to check availability." },
       { q: "Do you offer packing services in Kenmore?", a: "Yes. We offer full packing, partial packing, and unpacking services. Our packers bring all materials and can handle everything from kitchenware to fragile antiques." },
-      { q: "Do you offer storage near Kenmore?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 10 miles southeast of Kenmore. Your first month of storage is free with any move." },
+      { q: "Do you offer storage near Kenmore?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 10 miles southeast of Kenmore. Storage is available month-to-month — contact us for current pricing." },
     ],
     nearby: [
       ["Kirkland", "kirkland-movers"],
@@ -472,7 +472,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Are you licensed and insured to move in Bothell?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "How far in advance should I book Bothell movers?", a: "We recommend booking 2\u20134 weeks in advance, especially for summer moves. We accommodate last-minute moves regularly \u2014 call us to check availability." },
       { q: "Do you handle commercial moves in Canyon Park?", a: "Yes. Canyon Park is one of our most active commercial move areas. We work after hours and on weekends to minimize business disruption." },
-      { q: "Do you offer storage near Bothell?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 11 miles south of Bothell. Your first month of storage is free with any move." },
+      { q: "Do you offer storage near Bothell?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 11 miles south of Bothell. Storage is available month-to-month — contact us for current pricing." },
     ],
     nearby: [
       ["Kenmore", "kenmore-movers"],
@@ -552,7 +552,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Are you licensed and insured to move in Renton?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "How far in advance should I book Renton movers?", a: "We recommend booking 2\u20134 weeks in advance, especially for summer moves. We accommodate last-minute moves regularly \u2014 call us to check availability." },
       { q: "Do you offer packing services in Renton?", a: "Yes. We offer full packing, partial packing, and unpacking services. Our packers bring all materials and can handle everything from kitchenware to fragile antiques." },
-      { q: "Do you offer storage near Renton?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 13 miles north of Renton. Your first month of storage is free with any move." },
+      { q: "Do you offer storage near Renton?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 13 miles north of Renton. Storage is available month-to-month — contact us for current pricing." },
     ],
     nearby: [
       ["Bellevue", "bellevue-movers"],
@@ -593,7 +593,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Are you licensed and insured to move in Shoreline?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "How far in advance should I book Shoreline movers?", a: "We recommend booking 2\u20134 weeks in advance, especially for summer moves. We accommodate last-minute moves regularly \u2014 call us to check availability." },
       { q: "Do you offer packing services in Shoreline?", a: "Yes. We offer full packing, partial packing, and unpacking services." },
-      { q: "Do you offer storage near Shoreline?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 16 miles east of Shoreline. Your first month of storage is free with any move." },
+      { q: "Do you offer storage near Shoreline?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 16 miles east of Shoreline. Storage is available month-to-month — contact us for current pricing." },
     ],
     nearby: [
       ["Seattle", "seattle-movers"],
@@ -633,7 +633,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Are you licensed and insured to move in Newcastle?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move. Our USDOT# 2120054 is on file with the FMCSA." },
       { q: "Do you handle high-value item moves in Newcastle?", a: "Yes. We regularly move fine art, antiques, and specialty items in Newcastle. Our specialty moving crews have the equipment and training for white-glove handling." },
       { q: "How far in advance should I book Newcastle movers?", a: "We recommend booking 3\u20134 weeks in advance for Newcastle moves, especially for large estate properties." },
-      { q: "Do you offer storage near Newcastle?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 8 miles north of Newcastle. Your first month of storage is free with any move." },
+      { q: "Do you offer storage near Newcastle?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 8 miles north of Newcastle. Storage is available month-to-month — contact us for current pricing." },
     ],
     nearby: [
       ["Bellevue", "bellevue-movers"],
@@ -672,7 +672,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle waterfront property moves in Lake Forest Park?", a: "Yes. We regularly move in and out of waterfront properties on Lake Washington in Lake Forest Park. We assess access points in advance and bring the right equipment." },
       { q: "Are you licensed and insured to move in Lake Forest Park?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Lake Forest Park movers?", a: "We recommend booking 2\u20134 weeks in advance, especially for summer moves. We accommodate last-minute moves regularly \u2014 call us to check availability." },
-      { q: "Do you offer storage near Lake Forest Park?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 14 miles east. Your first month of storage is free with any move." },
+      { q: "Do you offer storage near Lake Forest Park?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 14 miles east. Storage is available month-to-month — contact us for current pricing." },
       { q: "Do you offer packing services in Lake Forest Park?", a: "Yes. We offer full packing, partial packing, and unpacking services. Our packers bring all materials." },
     ],
     nearby: [
@@ -713,7 +713,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle moves near Southcenter in Tukwila?", a: "Yes. We regularly move in and out of the apartment buildings near Westfield Southcenter and the light rail stations. We coordinate elevator reservations and work within building move-in windows." },
       { q: "Are you licensed and insured to move in Tukwila?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Tukwila movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly \u2014 call us to check availability." },
-      { q: "Do you offer storage near Tukwila?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 16 miles north of Tukwila. Your first month of storage is free with any move." },
+      { q: "Do you offer storage near Tukwila?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 16 miles north of Tukwila. Storage is available month-to-month — contact us for current pricing." },
       { q: "Do you offer packing services in Tukwila?", a: "Yes. We offer full packing, partial packing, and unpacking services." },
     ],
     nearby: [
@@ -754,7 +754,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle moves near the new light rail station in Mountlake Terrace?", a: "Yes. We regularly move in and out of the new apartment buildings near Mountlake Terrace's light rail station. We coordinate elevator reservations and work within building move-in windows." },
       { q: "Are you licensed and insured to move in Mountlake Terrace?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Mountlake Terrace movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
-      { q: "Do you offer storage near Mountlake Terrace?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 17 miles southeast. Your first month of storage is free with any move." },
+      { q: "Do you offer storage near Mountlake Terrace?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 17 miles southeast. Storage is available month-to-month — contact us for current pricing." },
       { q: "Do you serve Snohomish County from Mountlake Terrace?", a: "Yes. Mountlake Terrace is in Snohomish County and we are fully licensed to operate there. We serve all of Mountlake Terrace and surrounding Snohomish County communities." },
     ],
     nearby: [
@@ -794,7 +794,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle moves near the Lynnwood City Center light rail station?", a: "Yes. We regularly move in and out of the new apartment buildings near Lynnwood's City Center light rail station. We coordinate elevator reservations and work within building move-in windows." },
       { q: "Are you licensed and insured to move in Lynnwood?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Lynnwood movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
-      { q: "Do you offer storage near Lynnwood?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 18 miles southeast. Your first month of storage is free with any move." },
+      { q: "Do you offer storage near Lynnwood?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 18 miles southeast. Storage is available month-to-month — contact us for current pricing." },
       { q: "Do you serve Snohomish County from Lynnwood?", a: "Yes. Lynnwood is in Snohomish County and we are fully licensed to operate there." },
     ],
     nearby: [
@@ -834,7 +834,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle HOA move-in requirements in Harbour Pointe?", a: "Yes. We are familiar with Harbour Pointe's HOA move-in rules. We provide certificates of insurance and work within designated move-in windows." },
       { q: "Are you licensed and insured to move in Mukilteo?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Mukilteo movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
-      { q: "Do you offer storage near Mukilteo?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 18 miles southeast. Your first month of storage is free with any move." },
+      { q: "Do you offer storage near Mukilteo?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 18 miles southeast. Storage is available month-to-month — contact us for current pricing." },
       { q: "Do you handle waterfront property moves in Mukilteo?", a: "Yes. We regularly move in and out of waterfront properties near the Mukilteo ferry terminal. We assess access points in advance." },
     ],
     nearby: [
@@ -875,7 +875,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle waterfront property moves in Burien?", a: "Yes. We regularly move in and out of waterfront properties in Three Tree Point and Seahurst. We assess access points in advance." },
       { q: "Are you licensed and insured to move in Burien?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Burien movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
-      { q: "Do you offer storage near Burien?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 18 miles northeast. Your first month of storage is free with any move." },
+      { q: "Do you offer storage near Burien?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 18 miles northeast. Storage is available month-to-month — contact us for current pricing." },
       { q: "Do you offer packing services in Burien?", a: "Yes. We offer full packing, partial packing, and unpacking services." },
     ],
     nearby: [
@@ -915,7 +915,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle HOA move-in requirements in Snoqualmie Ridge?", a: "Yes. We are familiar with Snoqualmie Ridge's HOA move-in rules. We provide certificates of insurance and work within designated move-in windows." },
       { q: "Are you licensed and insured to move in Snoqualmie?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Snoqualmie movers?", a: "We recommend booking 3\u20134 weeks in advance for Snoqualmie Ridge moves. We accommodate last-minute moves regularly." },
-      { q: "Do you offer storage near Snoqualmie?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 17 miles northwest via I-90. Your first month of storage is free with any move." },
+      { q: "Do you offer storage near Snoqualmie?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 17 miles northwest via I-90. Storage is available month-to-month — contact us for current pricing." },
       { q: "Do you serve North Bend from Snoqualmie?", a: "Yes. We serve both Snoqualmie and North Bend. North Bend is just a few miles east of Snoqualmie on I-90." },
     ],
     nearby: [
@@ -955,7 +955,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle moves on rural roads in North Bend?", a: "Yes. We regularly move on rural roads in the North Bend area. We assess access points in advance and use the right size truck for each property." },
       { q: "Are you licensed and insured to move in North Bend?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "Do you move in North Bend during winter?", a: "Yes. We move year-round in North Bend. For winter moves near Snoqualmie Pass, we monitor road conditions and may adjust scheduling if I-90 is affected by snow or ice." },
-      { q: "Do you offer storage near North Bend?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 18 miles west via I-90. Your first month of storage is free with any move." },
+      { q: "Do you offer storage near North Bend?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 18 miles west via I-90. Storage is available month-to-month — contact us for current pricing." },
       { q: "How far in advance should I book North Bend movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
     ],
     nearby: [
@@ -995,7 +995,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle moves on rural roads in Duvall?", a: "Yes. We regularly move on rural roads in the Duvall area. We assess access points in advance and use the right size truck for each property." },
       { q: "Are you licensed and insured to move in Duvall?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Duvall movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
-      { q: "Do you offer storage near Duvall?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 17 miles southwest. Your first month of storage is free with any move." },
+      { q: "Do you offer storage near Duvall?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 17 miles southwest. Storage is available month-to-month — contact us for current pricing." },
       { q: "Do you also serve Carnation near Duvall?", a: "Yes. We serve Carnation and the surrounding Snoqualmie Valley communities. Carnation is just a few miles south of Duvall on SR-203." },
     ],
     nearby: [
@@ -1035,7 +1035,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle moves on rural roads in Carnation?", a: "Yes. We regularly move on rural roads and farm lanes in the Carnation area. We assess access points in advance." },
       { q: "Are you licensed and insured to move in Carnation?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Carnation movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
-      { q: "Do you offer storage near Carnation?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 16 miles southwest. Your first month of storage is free with any move." },
+      { q: "Do you offer storage near Carnation?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 16 miles southwest. Storage is available month-to-month — contact us for current pricing." },
       { q: "Do you also serve Duvall near Carnation?", a: "Yes. We serve Duvall and the surrounding Snoqualmie Valley communities. Duvall is just a few miles north of Carnation on SR-203." },
     ],
     nearby: [
@@ -1075,7 +1075,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle moves on rural properties in Fall City?", a: "Yes. We regularly move on rural properties in Fall City. We assess access points in advance and use the right size truck for each property." },
       { q: "Are you licensed and insured to move in Fall City?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Fall City movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
-      { q: "Do you offer storage near Fall City?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 12 miles west. Your first month of storage is free with any move." },
+      { q: "Do you offer storage near Fall City?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 12 miles west. Storage is available month-to-month — contact us for current pricing." },
       { q: "Can you move horse equipment or farm items in Fall City?", a: "Yes. We can move farm equipment, tack, and other equestrian items. Let us know what you need moved when you request a quote so we can bring the right equipment." },
     ],
     nearby: [
@@ -1115,7 +1115,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle HOA move-in requirements in Maple Valley?", a: "Yes. We are familiar with HOA move-in rules in Maple Valley's planned communities. We provide certificates of insurance and work within designated move-in windows." },
       { q: "Are you licensed and insured to move in Maple Valley?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Maple Valley movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
-      { q: "Do you offer storage near Maple Valley?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 18 miles north. Your first month of storage is free with any move." },
+      { q: "Do you offer storage near Maple Valley?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 18 miles north. Storage is available month-to-month — contact us for current pricing." },
       { q: "Do you offer packing services in Maple Valley?", a: "Yes. We offer full packing, partial packing, and unpacking services." },
     ],
     nearby: [
@@ -1155,7 +1155,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       { q: "Do you handle HOA move-in requirements in Covington?", a: "Yes. We are familiar with HOA move-in rules in Covington's planned communities. We provide certificates of insurance and work within designated move-in windows." },
       { q: "Are you licensed and insured to move in Covington?", a: "Yes. On The Go Moving & Storage is fully licensed (HG-064180) and insured. We carry general liability and cargo insurance on every move." },
       { q: "How far in advance should I book Covington movers?", a: "We recommend booking 2\u20134 weeks in advance. We accommodate last-minute moves regularly." },
-      { q: "Do you offer storage near Covington?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 18 miles north. Your first month of storage is free with any move." },
+      { q: "Do you offer storage near Covington?", a: "Yes. Our secure, climate-controlled storage facility is in Redmond, 18 miles north. Storage is available month-to-month — contact us for current pricing." },
       { q: "Do you also serve Maple Valley near Covington?", a: "Yes. We serve both Covington and Maple Valley. They are adjacent communities in southeast King County." },
     ],
     nearby: [

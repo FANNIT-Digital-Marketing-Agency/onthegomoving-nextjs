@@ -557,7 +557,7 @@ export default function FbResidentialMoversLanding() {
                   "Flat-rate pricing — your quote is your final price",
                   "Background-checked, uniformed crew members",
                   "Fully padded and wrapped furniture — zero damage policy",
-                  "1 free month of storage with every residential move",
+                  
                   "Family-owned and operated since 2009",
                   `${COMPANY.googleRating}★ average across ${COMPANY.googleReviewCount.toLocaleString()} Google reviews`,
                 ].map((item) => (

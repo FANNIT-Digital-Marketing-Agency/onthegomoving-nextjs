@@ -201,7 +201,7 @@ export default function SameDayMovers() {
                   "Flat-rate pricing — no hourly clock surprises",
                   "Background-checked, uniformed crew members",
                   "Fully padded and wrapped furniture — zero damage policy",
-                  "1 free month of storage with every move",
+                  
                   "Same-day and next-day availability (call to confirm)",
                   `${COMPANY.googleRating}★ average across ${COMPANY.googleReviewCount.toLocaleString()} Google reviews`,
                 ].map((item) => (

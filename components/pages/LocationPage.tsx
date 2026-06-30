@@ -341,7 +341,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
                 {[
                   { icon: CheckCircle, text: "Flat-rate quotes — no surprise charges on move day" },
                   { icon: CheckCircle, text: "On-time crews with professional equipment" },
-                  { icon: CheckCircle, text: "Your first month of storage is free with any move" },
+                  { icon: CheckCircle, text: "Secure climate-controlled vault storage" },
                   { icon: CheckCircle, text: "Available 7 days a week, including weekends" },
                   { icon: CheckCircle, text: "Family-owned and operated since 2009" },
                   { icon: CheckCircle, text: "Background-checked, professionally trained crews" },
@@ -383,7 +383,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
             {[
               { icon: Home, title: "Residential Moving", desc: `Full-service home moves for houses, condos, and townhomes throughout ${data.city}.`, href: `/${slug}/residential/` },
               { icon: Building2, title: "Commercial Moving", desc: `Office and business relocations in ${data.city} with minimal downtime. We work around your schedule.`, href: `/${slug}/commercial/` },
-              { icon: Truck, title: "Storage Services", desc: `Secure storage vaults at our climate-controlled Redmond facility. Full-service pickup and delivery for ${data.city} residents. First month free with any move.`, href: `/${slug}/storage/` },
+              { icon: Truck, title: "Storage Services", desc: `Secure storage vaults at our climate-controlled Redmond facility. Full-service pickup and delivery. Contact us for current pricing.`, href: `/${slug}/storage/` },
               { icon: Package, title: "Apartment Moving", desc: `Elevator coordination, HOA certificates, and stress-free apartment moves throughout ${data.city}.`, href: `/${slug}/apartment/` },
               { icon: Users, title: "Senior Moving", desc: `Patient, compassionate crews for senior moves in ${data.city}. We work at your pace and coordinate with family.`, href: `/${slug}/senior/` },
               { icon: Truck, title: "Staging Professionals", desc: `Real estate staging services in ${data.city}. We work with staging professionals to make your home show-ready.`, href: `/staging-professionals/` },

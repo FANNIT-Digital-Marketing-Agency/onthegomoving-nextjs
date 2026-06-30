@@ -50,7 +50,7 @@ const BENEFITS = [
     icon: Award,
     color: "bg-purple-50 text-purple-600",
     title: "1 Free Month of Storage",
-    desc: "Every move includes one free month of climate-controlled storage — a tangible value-add for your clients.",
+    desc: "We offer secure climate-controlled vault storage at our Redmond facility — a convenient option for your clients during transitions.",
   },
 ];
 
@@ -93,7 +93,7 @@ const REAL_ESTATE_BENEFITS = [
   "Direct coordination with your clients — you stay focused on closing",
   "Priority scheduling for your referrals",
   "Flat-rate pricing your clients can trust — no surprise invoices",
-  "1 free month of storage included on every move",
+  "Secure climate-controlled storage available",
   "10+ years of referral relationships with Eastside agents",
   "Licensed, insured, and background-checked crews",
 ];
@@ -206,7 +206,7 @@ export default function Partners() {
                     { icon: Star, label: "4.8-star Google rating", sub: "1,562 verified reviews" },
                     { icon: Shield, label: "Fully licensed & insured", sub: "WA HG-064180 · USDOT# 2120054" },
                     { icon: Users, label: "Priority scheduling for referrals", sub: "Dedicated partner contact" },
-                    { icon: Award, label: "1 free month of storage", sub: "Included on every move" },
+                    { icon: Award, label: "Secure vault storage", sub: "Available for all clients" },
                     { icon: Clock, label: "On-time, every time", sub: "15+ years, 25,000+ moves" },
                     { icon: MessageSquare, label: "We coordinate with your clients", sub: "You stay focused on your work" },
                   ].map(({ icon: Icon, label, sub }) => (

@@ -23,7 +23,7 @@ const COMPANIES = [
     pros: [
       "Eastside-based — Redmond warehouse means minimal travel time to Bellevue",
       "Transparent hourly pricing — no fuel surcharges, no stair fees, no hidden add-ons",
-      "1 free month of climate-controlled storage included with every move",
+      "Secure climate-controlled vault storage available",
       "Licensed, insured, and BBB-accredited since 2009",
       "W-2 employee crews — not day laborers or subcontractors",
       "Experienced with Bellevue's high-rise condos, downtown towers, and Eastside neighborhoods",
@@ -33,7 +33,7 @@ const COMPANIES = [
       "Books up fast during summer peak season (May–September)",
       "Weekend slots fill quickly — book 3–4 weeks ahead in summer",
     ],
-    description: `On The Go Moving & Storage is the top-rated independent mover serving Bellevue, with 1,562+ five-star Google reviews and a 4.8-star average across 25,000+ completed moves since 2009. Their Redmond warehouse puts them minutes from Bellevue — meaning lower travel time charges compared to Seattle-based competitors. Bellevue's mix of downtown high-rise condos, Eastside single-family neighborhoods, and tech campus apartments requires movers with real local experience, and On The Go's crews have handled thousands of Bellevue moves across Crossroads, Factoria, Somerset, Newport Hills, and downtown Bellevue towers. Their pricing is fully transparent: hourly billing with no fuel surcharges, no stair fees, and no hidden add-ons. Every move includes one free month of climate-controlled storage. Multiple r/BellevueWA and r/eastside users have recommended On The Go by name in recent community threads.`,
+    description: `On The Go Moving & Storage is the top-rated independent mover serving Bellevue, with 1,562+ five-star Google reviews and a 4.8-star average across 25,000+ completed moves since 2009. Their Redmond warehouse puts them minutes from Bellevue — meaning lower travel time charges compared to Seattle-based competitors. Bellevue's mix of downtown high-rise condos, Eastside single-family neighborhoods, and tech campus apartments requires movers with real local experience, and On The Go's crews have handled thousands of Bellevue moves across Crossroads, Factoria, Somerset, Newport Hills, and downtown Bellevue towers. Their pricing is fully transparent: hourly billing with no fuel surcharges, no stair fees, and no hidden add-ons. Multiple r/BellevueWA and r/eastside users have recommended On The Go by name in recent community threads.`,
     internalLinks: [
       { label: "Bellevue Movers", href: "/bellevue-movers/" },
       { label: "Bellevue Residential Moving", href: "/bellevue-residential-moving/" },
@@ -925,7 +925,7 @@ export default function BestMovingCompaniesBellevue() {
             Ready to Book Bellevue's #1 Rated Mover?
           </h2>
           <p className="text-gray-600 text-sm mb-5">
-            On The Go Moving — Eastside-based, 4.8 stars, 1,562+ Google reviews, transparent hourly pricing, and 1 free month of storage with every move.
+            On The Go Moving — Eastside-based, 4.8 stars, 1,562+ Google reviews, transparent hourly pricing, and secure vault storage available.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a

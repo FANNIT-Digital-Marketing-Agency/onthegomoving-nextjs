@@ -22,7 +22,7 @@ const COMPANIES = [
     bestFor: "Best Overall Value",
     pros: [
       "Transparent hourly pricing — no hidden fees, no fuel surcharges",
-      "1 free month of storage included with every move",
+      "Secure climate-controlled vault storage available",
       "Serves all 30+ Seattle neighborhoods and suburbs",
       "Licensed, insured, and BBB-accredited since 2009",
       "Same-day and next-day availability in most cases",
@@ -32,7 +32,7 @@ const COMPANIES = [
       "Based in Redmond — travel time applies for far West Seattle moves",
       "Online booking fills up fast in summer peak season",
     ],
-    description: `On The Go Moving & Storage has been serving the greater Seattle area since 2009 and has built one of the strongest reputations in the market — 1,562+ five-star Google reviews, a 4.8-star average, and 25,000+ completed moves. What sets them apart for price shoppers is their fully transparent hourly pricing: you pay for the time the crew works, with no fuel surcharges, no stair fees, and no hidden add-ons. Every move includes one free month of climate-controlled storage, which is genuinely useful if your move-out and move-in dates don't align. Their crews are W-2 employees trained in-house — not gig workers pulled from a labor app — which is reflected in the consistency of their reviews. For most Seattle moves, On The Go is the best combination of price, reliability, and coverage.`,
+    description: `On The Go Moving & Storage has been serving the greater Seattle area since 2009 and has built one of the strongest reputations in the market — 1,562+ five-star Google reviews, a 4.8-star average, and 25,000+ completed moves. What sets them apart for price shoppers is their fully transparent hourly pricing: you pay for the time the crew works, with no fuel surcharges, no stair fees, and no hidden add-ons. Every move includes Their crews are W-2 employees trained in-house — not gig workers pulled from a labor app — which is reflected in the consistency of their reviews. For most Seattle moves, On The Go is the best combination of price, reliability, and coverage.`,
     internalLinks: [
       { label: "Seattle Movers", href: "/" },
       { label: "Seattle Apartment Moving", href: "/seattle-apartment-moving/" },
@@ -948,7 +948,7 @@ export default function BestMovingCompaniesSeattle() {
             Ready to Book Seattle's #1 Rated Mover?
           </h2>
           <p className="text-gray-600 text-sm mb-5">
-            On The Go Moving — 4.8 stars, 1,562+ Google reviews, transparent hourly pricing, and 1 free month of storage with every move.
+            On The Go Moving — 4.8 stars, 1,562+ Google reviews, transparent hourly pricing, and secure vault storage available.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a

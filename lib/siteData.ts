@@ -134,7 +134,7 @@ export const SERVICES = [
     href: "/storage-services/",
     icon: "🏪",
     description:
-      "Secure storage vaults at our Redmond, WA facility. Your belongings are loaded into dedicated vaults and managed by our team — not a self-serve unit. First month free with any move.",
+      "Secure storage vaults at our Redmond, WA facility. Your belongings are loaded into dedicated vaults and managed by our team — not a self-serve unit. Contact us for current pricing.",
     image: BRAND_IMAGES.storageForklift,
   },
   {
@@ -297,7 +297,7 @@ export const TESTIMONIALS = [
     name: "David R.",
     location: "Kirkland, WA",
     rating: 5,
-    text: "The team was incredibly careful with our antiques and fragile items. Everything arrived in perfect condition. The free storage month was a huge bonus during our transition.",
+    text: "The team was incredibly careful with our antiques and fragile items. Everything arrived in perfect condition. Our move was seamless from start to finish.",
     date: "December 2023",
   },
   {
@@ -338,7 +338,7 @@ export const FAQS = [
   {
     question: "Do you offer free storage with a move?",
     answer:
-      "Yes! We offer one free month of storage with every move. We store your belongings in large, secure storage vaults at our Redmond, WA facility. Our team handles all loading and retrieval — it's a full-service solution, not a self-serve storage unit.",
+      "Yes! We offer secure vault storage at our Redmond, WA facility. Our team handles all loading and retrieval — it's a full-service solution, not a self-serve storage unit. Contact us for current storage pricing and availability.",
   },
   {
     question: "Are you licensed and insured?",

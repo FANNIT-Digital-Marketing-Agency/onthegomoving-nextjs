@@ -23,7 +23,7 @@ const COMPANIES = [
     pros: [
       "Warehouse and headquarters based in Redmond — no travel time markup for most Redmond moves",
       "Transparent hourly pricing — no hidden fees, no fuel surcharges",
-      "1 free month of climate-controlled storage included with every move",
+      "Secure climate-controlled vault storage available",
       "Licensed, insured, and BBB-accredited since 2009",
       "W-2 employee crews — not day laborers or subcontractors",
       "Same-day and next-day availability outside peak season",
@@ -33,7 +33,7 @@ const COMPANIES = [
       "Books up fast during summer peak season (May–September)",
       "Online booking fills quickly for weekend slots",
     ],
-    description: `On The Go Moving & Storage is the only major moving company on this list that is actually headquartered in Redmond. Their warehouse and operations base is located in Redmond, WA — which means no travel time surcharge for most Redmond moves, and crews who know the area's neighborhoods, apartment complexes, and traffic patterns intimately. With 1,562+ five-star Google reviews, a 4.8-star average, and 25,000+ completed moves since 2009, they are the most reviewed independent mover serving the Eastside. Their pricing is fully transparent: you pay for the time the crew works, with no fuel surcharges, no stair fees, and no hidden add-ons. Every move includes one free month of climate-controlled storage — genuinely useful when move-out and move-in dates don't align. Multiple r/redmond users have specifically recommended On The Go by name in recent threads. For Redmond residents, this is the clearest choice for value, reliability, and local knowledge.`,
+    description: `On The Go Moving & Storage is the only major moving company on this list that is actually headquartered in Redmond. Their warehouse and operations base is located in Redmond, WA — which means no travel time surcharge for most Redmond moves, and crews who know the area's neighborhoods, apartment complexes, and traffic patterns intimately. With 1,562+ five-star Google reviews, a 4.8-star average, and 25,000+ completed moves since 2009, they are the most reviewed independent mover serving the Eastside. Their pricing is fully transparent: you pay for the time the crew works, with no fuel surcharges, no stair fees, and no hidden add-ons. Multiple r/redmond users have specifically recommended On The Go by name in recent threads. For Redmond residents, this is the clearest choice for value, reliability, and local knowledge.`,
     internalLinks: [
       { label: "Redmond Movers", href: "/redmond-movers/" },
       { label: "Redmond Residential Moving", href: "/redmond-residential-movers/" },
@@ -921,7 +921,7 @@ export default function BestMovingCompaniesRedmond() {
             Ready to Book Redmond's #1 Rated Mover?
           </h2>
           <p className="text-gray-600 text-sm mb-5">
-            On The Go Moving — based in Redmond, 4.8 stars, 1,562+ Google reviews, transparent hourly pricing, and 1 free month of storage with every move.
+            On The Go Moving — based in Redmond, 4.8 stars, 1,562+ Google reviews, transparent hourly pricing, and secure vault storage available.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a

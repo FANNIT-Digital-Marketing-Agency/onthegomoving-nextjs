@@ -46,7 +46,7 @@ const ALL_SERVICES = [
     icon: Archive,
     popular: true,
     description:
-      "Secure vaulted storage at our Redmond, WA facility. Dedicated vaults managed by our team — not a self-serve unit. First month free with any move.",
+      "Secure vaulted storage at our Redmond, WA facility. Dedicated vaults managed by our team — not a self-serve unit. Contact us for current pricing.",
     image: BRAND_IMAGES.storageForklift,
     cta: "Learn About Storage",
   },
@@ -324,7 +324,7 @@ export default function Services() {
               { stat: "25,000+", label: "Successful Moves", desc: "Residential, commercial, and specialty moves completed across Greater Seattle." },
               { stat: "4.8★", label: "Google Rating", desc: "1,562 verified reviews from real customers in Seattle, Bellevue, Redmond, and beyond." },
               { stat: "15+ yrs", label: "In Business", desc: "Locally owned and operated since 2009. We're part of the community we serve." },
-              { stat: "1 mo free", label: "Storage Included", desc: "Every move includes one free month of secure vault storage at our Redmond facility." },
+              { stat: "Secure", label: "Vault Storage", desc: "Private climate-controlled vault storage at our Redmond facility — managed by our team." },
             ].map((item, i) => (
               <div key={i} className="bg-gray-50 rounded-2xl p-6 text-center border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
                 <p className="font-display text-3xl font-black text-brand-green mb-1">{item.stat}</p>
@@ -365,7 +365,7 @@ export default function Services() {
             Ready to Get Started?
           </h2>
           <p className="text-white/70 text-lg max-w-xl mx-auto mb-8">
-            Get a free, no-obligation quote in under 60 seconds. Flat-rate pricing, professional crews, and 1 free month of storage with every move.
+            Get a free, no-obligation quote in under 60 seconds. Flat-rate pricing, professional crews, and secure vault storage available.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

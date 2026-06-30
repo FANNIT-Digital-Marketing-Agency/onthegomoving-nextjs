@@ -11,3 +11,4 @@ Thumbs.db
 .idea/
 *.tsbuildinfo
 .env.local
+.git-project-config

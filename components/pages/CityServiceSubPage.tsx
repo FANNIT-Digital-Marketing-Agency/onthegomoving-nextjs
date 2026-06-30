@@ -59,7 +59,7 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
     label: "Residential Moving",
     hubSlug: "/residential-moving/",
     tagline: (city) => `Residential Movers in ${city}`,
-    subtitle: (city) => `Local home moving services in ${city}, WA — flat-rate pricing, professional crews, 1 free month of storage.`,
+    subtitle: (city) => `Local home moving services in ${city}, WA — flat-rate pricing, professional crews, secure vault storage.`,
     intro: (city, cityData) =>
       `Every neighborhood in ${city} has its own quirks — narrow driveways, permit-only parking zones, steep hills, and HOA move-in windows that close fast. Our residential crews have been navigating ${city} since 2009 and know what each area demands before the truck leaves the yard. Flat-rate pricing means the number we quote is the number you pay — no hourly clock running while we figure things out on your driveway.`,
     pricing: (city) =>
@@ -75,7 +75,7 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
     benefits: [
       "Flat-rate pricing — no hourly clock surprises",
       "Full packing and unpacking available",
-      "1 free month of climate-controlled storage with every move",
+      "Secure climate-controlled vault storage",
       "Floor runners, door jamb protectors, and furniture pads on every job",
       "Available 7 days a week including weekends",
       "Licensed HG-064180 | USDOT# 2120054 | Fully insured",
@@ -167,11 +167,11 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
     label: "Storage Services",
     hubSlug: "/storage-services/",
     tagline: (city) => `Storage Services for ${city} Residents`,
-    subtitle: (city) => `Secure storage vaults for ${city}, WA — climate-controlled, full-service pickup and delivery, 1 free month with every move.`,
+    subtitle: (city) => `Secure storage vaults for ${city}, WA — climate-controlled, full-service pickup and delivery.`,
     intro: (city, cityData) =>
       `The gap between your move-out date and your new home's availability is one of the most stressful parts of any ${city} move — and it's where most people end up renting a self-storage unit and spending their weekends hauling boxes. We eliminate that entirely. Our Redmond facility is minutes from ${city}. We pick up your items, load them into a dedicated storage vault at our climate-controlled warehouse, and deliver them back when you're ready. You never have to touch a storage unit or drive to a facility.`,
     pricing: (city) =>
-      `1-Bed contents: $150–$250/mo · 3-Bed contents: $300–$500/mo · 1 free month with every move`,
+      `1-Bed contents: $150–$250/mo · 3-Bed contents: $300–$500/mo · Month-to-month contracts`,
     steps: (city) => [
       `We pick up your items from your ${city} home or office`,
       "Items are carefully inventoried and photographed",
@@ -184,13 +184,13 @@ const SERVICE_DEFS: Record<string, ServiceDef> = {
       "24/7 security monitoring and access control",
       "Flexible month-to-month terms — no long-term contracts",
       "Full-service: we handle all loading and unloading",
-      "1 free month of storage included with every move",
+      "Secure vault storage available",
       "Licensed HG-064180 | USDOT# 2120054 | Fully insured",
     ],
     faqs: (city) => [
       { q: `How much does storage cost for ${city} residents?`, a: `Storage rates depend on the volume of items. A typical 1-bedroom home's contents cost $150–$250/month to store. A 3-bedroom home runs $300–$500/month. We provide exact quotes after inventorying your items.` },
       { q: `Is the storage facility near ${city}?`, a: `Yes. Our storage vault facility is in Redmond, WA — just minutes from ${city}. We handle all pickup and delivery so you never have to drive to a storage facility.` },
-      { q: `Do I get 1 free month of storage with my ${city} move?`, a: `Yes. Every move with On The Go Moving & Storage includes 1 free month of vault storage at our climate-controlled Redmond facility. This is especially useful if your new home isn't ready when you move out.` },
+      { q: `Do you offer storage for ${city} moves?`, a: `Yes. We offer secure vault storage at our climate-controlled Redmond facility. This is especially useful if your new home isn't ready when you move out. Contact us for current pricing.` },
       { q: `How long can I store my belongings?`, a: `As long as you need. We offer flexible month-to-month storage with no long-term contracts. Most customers store for 1–3 months during a move, but we have customers who have stored with us for years.` },
     ],
     heroImage: BRAND_IMAGES.storageWarehouse,

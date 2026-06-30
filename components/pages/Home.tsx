@@ -153,7 +153,7 @@ export default function Home() {
                 <span style={{ color: "#75aa11" }}>Trusted Movers.</span>
               </h1>
               <p className="text-green-100 text-lg leading-relaxed mb-7 max-w-lg">
-                Flat-rate pricing, professional crews, and 1 free month of storage — trusted by 25,000+ Puget Sound families since 2009.
+                Flat-rate pricing, professional crews, and secure vault storage — trusted by 25,000+ Puget Sound families since 2009.
               </p>
 
               {/* Trust strip — single line, plain text style */}
@@ -316,7 +316,7 @@ export default function Home() {
                 {[
                   { icon: <Shield size={15} />, text: "Licensed, bonded & insured" },
                   { icon: <CheckCircle size={15} />, text: "Flat-rate, no hidden fees" },
-                  { icon: <Archive size={15} />, text: "1 free month of storage" },
+                  { icon: <Archive size={15} />, text: "Secure vault storage" },
                   { icon: <Users size={15} />, text: "Background-checked crews" },
                   { icon: <Clock size={15} />, text: "On-time, every time" },
                   { icon: <Award size={15} />, text: "4.8★ on Google — 1,562 reviews" },

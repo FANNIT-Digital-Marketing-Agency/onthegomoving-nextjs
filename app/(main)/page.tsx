@@ -120,10 +120,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Do you offer free storage with a move?",
+      name: "Do you offer storage with a move?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes! We offer one free month of storage with every move. We store your belongings in large, secure storage vaults at our Redmond, WA facility. Our team handles all loading and retrieval \u2014 it's a full-service solution, not a self-serve storage unit.",
+        text: "Yes! We offer secure vault storage at our Redmond, WA facility. Our team handles all loading and retrieval \u2014 it's a full-service solution, not a self-serve storage unit. Contact us for current storage pricing and availability.",
       },
     },
     {

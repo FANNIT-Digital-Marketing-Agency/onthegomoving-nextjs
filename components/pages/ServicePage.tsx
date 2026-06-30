@@ -166,10 +166,10 @@ const SERVICE_DATA: Record<string, {
   "storage-services": {
     title: "Storage Services",
     metaTitle: "Secure Storage Vaults | Redmond WA | On The Go Moving & Storage",
-    metaDesc: "Secure storage vault rental at our Redmond, WA facility. First month free with any move. Short and long-term storage for households and businesses. On The Go Moving & Storage.",
+    metaDesc: "Secure storage vault rental at our Redmond, WA facility. Short and long-term storage for households and businesses. On The Go Moving & Storage.",
     canonical: "https://onthegomoving.com/storage-services/",
     heroTagline: "Secure Storage Vaults in Redmond, WA",
-    intro: "On The Go Moving & Storage stores your belongings in large, secure storage vaults at our Redmond, WA facility. This is not a self-serve storage unit — your items are loaded into dedicated vaults, stored safely in our warehouse, and retrieved by our team when you're ready. Your first month is always free with any move.",
+    intro: "On The Go Moving & Storage stores your belongings in large, secure storage vaults at our Redmond, WA facility. This is not a self-serve storage unit — your items are loaded into dedicated vaults, stored safely in our warehouse, and retrieved by our team when you're ready. Contact us for current pricing.",
     whatIsItTitle: "What Are Storage Vaults?",
     whatIsIt: "Storage vaults are large, enclosed containers that hold an entire room's worth of belongings. Unlike traditional self-serve storage units, your items are loaded into a vault by our crew, stored in our secure Redmond, WA warehouse, and retrieved using a forklift when needed. You don't have to navigate a storage facility or move anything yourself — we handle it all. Vault storage is ideal for moves, renovations, and transitions where you need professional handling and a trusted facility.",
     benefits: [
@@ -207,7 +207,7 @@ const SERVICE_DATA: Record<string, {
     ],
     faqs: [
       { question: "What is a storage vault?", answer: "A storage vault is a large, enclosed container measuring 7 ft tall × 5 ft wide × 7 ft deep — enough to hold an entire room's worth of belongings. Your items are loaded into the vault by our crew, stored in our secure Redmond, WA warehouse, and retrieved by forklift when you need access. It's a fully managed alternative to traditional self-serve storage units." },
-      { question: "How much does vault storage cost per month?", answer: "All of our storage vaults are the same size — 7 ft tall × 5 ft wide × 7 ft deep — and cost $80 per month per vault. Most apartments need 1–2 vaults; most homes need 2–5. Your first month is free with any move." },
+      { question: "How much does vault storage cost per month?", answer: "All of our storage vaults are the same size — 7 ft tall × 5 ft wide × 7 ft deep — and cost $80 per month per vault. Most apartments need 1–2 vaults; most homes need 2–5. Contact us for current pricing." },
       { question: "Can I access my vault anytime?", answer: "Vault access is available during facility hours (7am–7pm every day). If your vault is stacked, our team retrieves it using a forklift — just give us a heads up when you'd like access." },
       { question: "Is this the same as a self-serve storage unit?", answer: "No. Our storage vaults are managed by our team — we load, store, and retrieve your belongings for you. You don't navigate a storage facility or move anything yourself. It's a full-service solution designed to work seamlessly with your move." },
       { question: "Is there a minimum storage period?", answer: "No. We offer month-to-month contracts with no long-term commitment required. You can store for as little as one month or as long as you need." },

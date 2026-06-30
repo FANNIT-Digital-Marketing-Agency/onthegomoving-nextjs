@@ -80,7 +80,7 @@ const FAQS = [
   },
   {
     q: "Do you offer free storage with a move?",
-    a: "Yes. On The Go Moving includes one free month of storage at our Redmond, WA facility with every move. This is particularly useful for apartment renters with a gap between move-out and move-in dates.",
+    a: "Yes. On The Go Moving offers secure vault storage at our Redmond, WA facility. This is particularly useful for apartment renters with a gap between move-out and move-in dates.",
   },
   {
     q: "How far in advance should I book movers?",
@@ -177,13 +177,13 @@ export default function HowMuchDoMoversCost() {
             <div className="bg-[#f0f7e6] border-l-4 rounded-r-xl p-6 mb-8" style={{ borderColor: "#75aa11" }}>
               <p className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: "#75aa11" }}>Quick Answer</p>
               <p className="text-gray-800 text-lg leading-relaxed">
-                <strong>Local movers in Seattle and the Eastside charge by the hour</strong> depending on crew size. Most moves take 3–7 hours. A typical 2-bedroom move costs <strong>$450–$900</strong>. On The Go Moving charges by the hour with no hidden fees and includes one free month of storage with every move.
+                <strong>Local movers in Seattle and the Eastside charge by the hour</strong> depending on crew size. Most moves take 3–7 hours. A typical 2-bedroom move costs <strong>$450–$900</strong>. On The Go Moving charges by the hour with no hidden fees and offers secure vault storage.
               </p>
             </div>
             <div className="flex flex-wrap gap-4 text-sm text-gray-600">
               <div className="flex items-center gap-2"><CheckCircle size={16} style={{ color: "#75aa11" }} /> Flat hourly rate — no hidden fees</div>
               <div className="flex items-center gap-2"><CheckCircle size={16} style={{ color: "#75aa11" }} /> Truck, fuel &amp; equipment included</div>
-              <div className="flex items-center gap-2"><CheckCircle size={16} style={{ color: "#75aa11" }} /> 1 free month storage included</div>
+              <div className="flex items-center gap-2"><CheckCircle size={16} style={{ color: "#75aa11" }} /> Secure vault storage available</div>
               <div className="flex items-center gap-2"><CheckCircle size={16} style={{ color: "#75aa11" }} /> Free quote in 60 seconds</div>
             </div>
           </div>

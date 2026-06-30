@@ -36,7 +36,7 @@ const FAQS = [
   },
   {
     question: "Do you offer free storage with a residential move?",
-    answer: "Yes. Every residential move with On The Go Moving includes 1 free month of climate-controlled storage at our Redmond, WA facility. This is especially useful if there's a gap between your move-out and move-in dates.",
+    answer: "We offer secure climate-controlled vault storage at our Redmond, WA facility. This is especially useful if there's a gap between your move-out and move-in dates. Contact us for current pricing.",
   },
   {
     question: "Are your movers licensed and insured?",
@@ -149,7 +149,7 @@ const INCLUDED = [
   "Careful furniture wrapping & protection",
   "Loading, transport & unloading",
   "Furniture placement in your new home",
-  "1 free month climate-controlled storage",
+  "Secure climate-controlled storage",
   "Dedicated move coordinator",
   "Flat-rate pricing — the quote is the price",
   "Floor runners & door frame protection",
@@ -165,7 +165,7 @@ export default function ResidentialMoving() {
       if (!el) { el = document.createElement("meta"); el.setAttribute("name", name); document.head.appendChild(el); }
       el.setAttribute("content", content);
     };
-    setMeta("description", "Professional residential movers in Seattle, Bellevue, Redmond & the Eastside. Flat-rate pricing, 1 free month storage, licensed & insured. Free quote.");
+    setMeta("description", "Professional residential movers in Seattle, Bellevue, Redmond & the Eastside. Flat-rate pricing, secure vault storage, licensed & insured. Free quote.");
 
     let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
     if (!canonical) { canonical = document.createElement("link"); canonical.rel = "canonical"; document.head.appendChild(canonical); }
@@ -178,7 +178,7 @@ export default function ResidentialMoving() {
       el.setAttribute("content", content);
     };
     const RES_TITLE = "Seattle Residential Movers | On The Go Moving";
-    const RES_DESC = "Professional residential movers in Seattle, Bellevue, Redmond & the Eastside. Flat-rate pricing, 1 free month storage, licensed & insured. Free quote.";
+    const RES_DESC = "Professional residential movers in Seattle, Bellevue, Redmond & the Eastside. Flat-rate pricing, secure vault storage, licensed & insured. Free quote.";
     const OG_IMAGE = "https://onthegomoving.com/wp-content/uploads/2021/01/on-the-go-moving-storage-truck.jpg";
     setOG("og:type", "website");
     setOG("og:title", RES_TITLE);
@@ -266,7 +266,7 @@ export default function ResidentialMoving() {
                 <span style={{ color: "#75aa11" }}>in Seattle & the Eastside</span>
               </h1>
               <p className="text-green-100 text-lg leading-relaxed mb-6 max-w-lg">
-                On The Go Moving & Storage provides professional residential moving services for homes, apartments, and condos across Seattle, Bellevue, Redmond, Kirkland, and the Greater Seattle Eastside. Flat-rate pricing and 1 free month of storage included.
+                On The Go Moving & Storage provides professional residential moving services for homes, apartments, and condos across Seattle, Bellevue, Redmond, Kirkland, and the Greater Seattle Eastside. Flat-rate pricing and secure vault storage available.
               </p>
               {/* Trust strip — single line, plain text style */}
               <div className="flex items-center gap-1.5 mb-6 text-xs sm:text-sm text-white/80 flex-wrap">
@@ -341,7 +341,7 @@ export default function ResidentialMoving() {
                 A residential moving service is a professional crew that transports your household belongings — furniture, boxes, appliances, and specialty items — from your current home to your new one. The service includes a moving truck, all equipment (dollies, furniture pads, straps), and trained movers who load, transport, and unload your belongings safely.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                On The Go Moving & Storage provides full-service residential moves across the Greater Seattle Eastside. Every move includes a dedicated crew, a clean moving truck, all necessary equipment, and 1 free month of climate-controlled storage at our Redmond, WA facility.
+                On The Go Moving & Storage provides full-service residential moves across the Greater Seattle Eastside. Every move includes a dedicated crew, a clean moving truck, all necessary equipment, and access to secure climate-controlled storage at our Redmond, WA facility.
               </p>
               <div className="mt-6 flex gap-3">
                 <a href="/contact-us/">

@@ -250,7 +250,7 @@ export default function RealEstateAgents() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               ["Full-Service Moving", "Packing, loading, transport, and unloading — all handled by our professional crews."],
-              ["1 Free Month Storage", "Every move includes 1 free month of climate-controlled storage at our Redmond facility."],
+              ["Secure Vault Storage", "Climate-controlled vault storage at our Redmond facility — available for your clients during transitions."],
               ["Flat-Rate Pricing", "No hourly surprises. Your clients know their final cost before we start."],
               ["Licensed & Insured", "Full coverage on every move. Your clients' belongings are protected."],
             ].map(([title, desc], i) => (

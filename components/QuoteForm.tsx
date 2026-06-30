@@ -542,24 +542,7 @@ export default function QuoteForm({
           </div>
         )}
 
-        {/* Row 6: Free Storage checkbox */}
-        <div className="sm:col-span-2">
-          <label className="group flex items-start gap-2.5 cursor-pointer">
-            <div className="relative mt-0.5 flex-shrink-0">
-              <input
-                type="checkbox"
-                name="freeStorage"
-                checked={formData.freeStorage}
-                onChange={handleChange}
-                className="w-4 h-4 rounded accent-[#75aa11] cursor-pointer transition-transform duration-150 group-hover:scale-110"
-              />
-            </div>
-            <span className={`text-sm transition-colors duration-200 ${formData.freeStorage ? "text-gray-800" : "text-gray-600 group-hover:text-gray-800"}`}>
-              <span className="font-bold text-gray-800">Yes, I want 1 month of FREE storage</span>
-              {" "}— include 1 free month of storage with my move
-            </span>
-          </label>
-        </div>
+        {/* Row 6: Free Storage checkbox — HIDDEN (temporarily disabled, re-enable when promotion is active) */}
 
       </div>
 

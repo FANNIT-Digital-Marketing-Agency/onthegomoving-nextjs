@@ -57,7 +57,7 @@ const FAQS = [
   },
   {
     q: "What's included in a move?",
-    a: "A trained crew (2–4 movers), a moving truck, all equipment (dollies, furniture pads, straps, floor runners), careful loading and unloading, furniture disassembly and reassembly, and 1 free month of vault storage.",
+    a: "A trained crew (2–4 movers), a moving truck, all equipment (dollies, furniture pads, straps, floor runners), careful loading and unloading, furniture disassembly and reassembly.",
   },
 ];
 
@@ -205,7 +205,7 @@ export default function QuoteLanding() {
                   "Flat-rate pricing — your quote is your final price",
                   "Background-checked, uniformed crew members",
                   "Fully padded and wrapped furniture — zero damage policy",
-                  "1 free month of storage with every move",
+                  
                   "Family-owned and operated since 2009",
                   "Licensed & insured — WA HG-064180 / USDOT# 2120054",
                   `${COMPANY.googleRating}★ average across ${COMPANY.googleReviewCount.toLocaleString()} Google reviews`,
