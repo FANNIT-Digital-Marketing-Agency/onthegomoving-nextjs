@@ -41,8 +41,8 @@ async function insertLeadToDB(conn, lead, webhookStatus) {
       (fullName, phone, email, moveDate, moveType, moveSize, fromZip, toZip,
        wantsStorage, sourcePage, sourceLabel,
        utmSource, utmMedium, utmCampaign, utmContent, utmTerm, gclid, fbclid,
-       webhookStatus, webhookAttemptedAt, createdAt, updatedAt)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, NOW(), NOW(), NOW())
+       webhookStatus, createdAt, updatedAt)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, NOW(), NOW())
   `;
   const phoneDigits = (() => {
     let d = (lead.phone || "").replace(/\D/g, "");
