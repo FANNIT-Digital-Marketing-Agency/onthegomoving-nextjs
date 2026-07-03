@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import LeadsDashboard from "@/components/pages/LeadsDashboard";
+import AdminLeads from "@/components/pages/AdminLeads";
 
 export const metadata: Metadata = {
   title: "Leads Dashboard | On The Go Moving Admin",
@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function AdminLeadsPage() {
-  return <LeadsDashboard />;
+  return <AdminLeads />;
 }
