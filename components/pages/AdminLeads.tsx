@@ -38,12 +38,26 @@ interface Lead {
   fbclid: string | null;
 }
 
+// Labels that indicate FB/Meta paid traffic
+const FB_LABELS = ["landing-fb-residential-movers", "landing-social-residential-movers"];
+// Labels that indicate Google/paid traffic (non-FB)
+const GOOGLE_LABELS = [
+  "landing-residential-movers",
+  "landing-same-day-movers",
+  "landing-commercial-moving",
+  "landing-storage-services",
+  "landing-quote",
+];
+
 const AdSourceBadge = ({ lead }: { lead: Lead }) => {
   const hasGclid = !!lead.gclid;
   const hasFbclid = !!lead.fbclid;
   const src = (lead.utmSource || "").toLowerCase();
   const med = (lead.utmMedium || "").toLowerCase();
+  const label = (lead.sourceLabel || "").toLowerCase();
+  const page = (lead.sourcePage || "").toLowerCase();
 
+  // --- Definitive signals (tracking params present) ---
   if (hasGclid || src.includes("google") || med === "cpc" || med === "ppc") {
     return (
       <Badge className="bg-blue-100 text-blue-800 border-blue-200 text-xs font-semibold">
@@ -65,13 +79,23 @@ const AdSourceBadge = ({ lead }: { lead: Lead }) => {
       </Badge>
     );
   }
-  if (src) {
+
+  // --- Inferred signals (from landing page label / URL) ---
+  if (FB_LABELS.includes(label) || page.includes("/get/fb-") || page.includes("/get/social-") || label.includes("fb") || label.includes("social")) {
     return (
-      <Badge className="bg-gray-100 text-gray-700 border-gray-200 text-xs">
-        {src}
+      <Badge className="bg-indigo-50 text-indigo-600 border-indigo-200 text-xs">
+        Meta Ads (inferred)
       </Badge>
     );
   }
+  if (GOOGLE_LABELS.includes(label) || page.startsWith("/get/")) {
+    return (
+      <Badge className="bg-blue-50 text-blue-600 border-blue-200 text-xs">
+        Google Ads (inferred)
+      </Badge>
+    );
+  }
+
   return (
     <Badge className="bg-gray-50 text-gray-400 border-gray-200 text-xs">
       Organic
