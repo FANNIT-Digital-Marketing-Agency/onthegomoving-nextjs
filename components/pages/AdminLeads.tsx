@@ -12,7 +12,8 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { RefreshCw, Search, Download, Lock } from "lucide-react";
+import { RefreshCw, Search, Download, Lock, Trash2 } from "lucide-react";
+import { toast } from "sonner";
 
 const ADMIN_KEY = "otgm-admin-2025";
 
@@ -110,6 +111,8 @@ export default function AdminLeads() {
   const [authed, setAuthed] = useState(false);
   const [keyInput, setKeyInput] = useState("");
   const [keyError, setKeyError] = useState(false);
+  const [deletingId, setDeletingId] = useState<number | null>(null);
+  const [confirmDeleteId, setConfirmDeleteId] = useState<number | null>(null);
 
   const fetchLeads = useCallback(async () => {
     setIsLoading(true);
@@ -138,6 +141,28 @@ export default function AdminLeads() {
   useEffect(() => {
     if (authed) fetchLeads();
   }, [authed, fetchLeads]);
+
+  const handleDelete = async (id: number) => {
+    if (confirmDeleteId !== id) {
+      setConfirmDeleteId(id);
+      return;
+    }
+    setDeletingId(id);
+    setConfirmDeleteId(null);
+    try {
+      const res = await fetch(
+        `/.netlify/functions/delete-lead?key=${ADMIN_KEY}&id=${id}`,
+        { method: "POST" }
+      );
+      if (!res.ok) throw new Error("Delete failed");
+      setLeads((prev) => prev.filter((l) => l.id !== id));
+      toast.success("Lead deleted");
+    } catch {
+      toast.error("Failed to delete lead");
+    } finally {
+      setDeletingId(null);
+    }
+  };
 
   const handleKeySubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -324,6 +349,7 @@ export default function AdminLeads() {
                     <TableHead className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Move Details</TableHead>
                     <TableHead className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Ad Source</TableHead>
                     <TableHead className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Submitted</TableHead>
+                    <TableHead className="text-xs font-semibold text-gray-600 uppercase tracking-wide w-16"></TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
@@ -389,6 +415,44 @@ export default function AdminLeads() {
                         <div className="text-xs text-gray-400">
                           {new Date(lead.createdAt).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
                         </div>
+                      </TableCell>
+
+                      {/* Delete */}
+                      <TableCell>
+                        {confirmDeleteId === lead.id ? (
+                          <div className="flex items-center gap-1">
+                            <Button
+                              size="sm"
+                              variant="destructive"
+                              className="h-7 px-2 text-xs"
+                              onClick={() => handleDelete(lead.id)}
+                              disabled={deletingId === lead.id}
+                            >
+                              Confirm
+                            </Button>
+                            <Button
+                              size="sm"
+                              variant="outline"
+                              className="h-7 px-2 text-xs"
+                              onClick={() => setConfirmDeleteId(null)}
+                            >
+                              Cancel
+                            </Button>
+                          </div>
+                        ) : (
+                          <Button
+                            size="sm"
+                            variant="ghost"
+                            className="h-7 w-7 p-0 text-gray-400 hover:text-red-500 hover:bg-red-50"
+                            onClick={() => handleDelete(lead.id)}
+                            disabled={deletingId === lead.id}
+                            title="Delete lead"
+                          >
+                            {deletingId === lead.id
+                              ? <RefreshCw size={13} className="animate-spin" />
+                              : <Trash2 size={13} />}
+                          </Button>
+                        )}
                       </TableCell>
 
                     </TableRow>
