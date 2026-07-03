@@ -1,7 +1,6 @@
 "use client";
 
-import { useState } from "react";
-import { trpc } from "@/lib/trpc";
+import { useState, useEffect, useCallback } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -13,17 +12,120 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { RefreshCw, Search, Download } from "lucide-react";
+import { RefreshCw, Search, Download, Lock } from "lucide-react";
+
+const ADMIN_KEY = "otgm-admin-2025";
+
+interface Lead {
+  id: number;
+  createdAt: string;
+  fullName: string;
+  phone: string;
+  email: string;
+  moveDate: string;
+  moveType: string;
+  moveSize: string;
+  zipFrom: string;
+  zipTo: string;
+  sourcePage: string;
+  sourceLabel: string;
+  utmSource: string | null;
+  utmMedium: string | null;
+  utmCampaign: string | null;
+  utmContent: string | null;
+  utmTerm: string | null;
+  gclid: string | null;
+  fbclid: string | null;
+}
+
+const AdSourceBadge = ({ lead }: { lead: Lead }) => {
+  const hasGclid = !!lead.gclid;
+  const hasFbclid = !!lead.fbclid;
+  const src = (lead.utmSource || "").toLowerCase();
+  const med = (lead.utmMedium || "").toLowerCase();
+
+  if (hasGclid || src.includes("google") || med === "cpc" || med === "ppc") {
+    return (
+      <Badge className="bg-blue-100 text-blue-800 border-blue-200 text-xs font-semibold">
+        Google Ads
+      </Badge>
+    );
+  }
+  if (hasFbclid || src.includes("meta") || src.includes("facebook") || src.includes("instagram") || med === "paid_social") {
+    return (
+      <Badge className="bg-indigo-100 text-indigo-800 border-indigo-200 text-xs font-semibold">
+        Meta Ads
+      </Badge>
+    );
+  }
+  if (src && med) {
+    return (
+      <Badge className="bg-purple-100 text-purple-800 border-purple-200 text-xs font-semibold">
+        {src}/{med}
+      </Badge>
+    );
+  }
+  if (src) {
+    return (
+      <Badge className="bg-gray-100 text-gray-700 border-gray-200 text-xs">
+        {src}
+      </Badge>
+    );
+  }
+  return (
+    <Badge className="bg-gray-50 text-gray-400 border-gray-200 text-xs">
+      Organic
+    </Badge>
+  );
+};
 
 export default function AdminLeads() {
+  const [leads, setLeads] = useState<Lead[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
   const [search, setSearch] = useState("");
+  const [authed, setAuthed] = useState(false);
+  const [keyInput, setKeyInput] = useState("");
+  const [keyError, setKeyError] = useState(false);
 
-  const { data: leads, isLoading, refetch, isFetching } = trpc.leads.getAll.useQuery(
-    { limit: 500 },
-    { refetchInterval: 60_000 } // auto-refresh every 60s
-  );
+  const fetchLeads = useCallback(async () => {
+    setIsLoading(true);
+    try {
+      const res = await fetch(
+        `/.netlify/functions/get-leads?key=${ADMIN_KEY}&per_page=500&days=365`
+      );
+      if (!res.ok) throw new Error("Failed to fetch");
+      const data = await res.json();
+      setLeads(data.submissions || []);
+    } catch {
+      setLeads([]);
+    } finally {
+      setIsLoading(false);
+    }
+  }, []);
 
-  const filtered = leads?.filter((lead) => {
+  useEffect(() => {
+    // Check URL param for key
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("key") === ADMIN_KEY) {
+      setAuthed(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (authed) fetchLeads();
+  }, [authed, fetchLeads]);
+
+  const handleKeySubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (keyInput === ADMIN_KEY) {
+      setAuthed(true);
+      setKeyError(false);
+    } else {
+      setKeyError(true);
+    }
+  };
+
+  const filtered = leads.filter((lead) => {
     if (!search) return true;
     const q = search.toLowerCase();
     return (
@@ -36,21 +138,21 @@ export default function AdminLeads() {
   });
 
   const stats = {
-    total: leads?.length ?? 0,
-    googleAds: leads?.filter((l) => !!(l as any).gclid || (l as any).utmSource?.toLowerCase().includes("google") || ["cpc","ppc"].includes(((l as any).utmMedium || "").toLowerCase())).length ?? 0,
-    metaAds: leads?.filter((l) => !!(l as any).fbclid || ["meta","facebook","instagram"].some(s => ((l as any).utmSource || "").toLowerCase().includes(s)) || (l as any).utmMedium?.toLowerCase() === "paid_social").length ?? 0,
-    organic: leads?.filter((l) => !(l as any).gclid && !(l as any).fbclid && !(l as any).utmSource).length ?? 0,
+    total: leads.length,
+    googleAds: leads.filter((l) => !!l.gclid || (l.utmSource || "").toLowerCase().includes("google") || ["cpc","ppc"].includes((l.utmMedium || "").toLowerCase())).length,
+    metaAds: leads.filter((l) => !!l.fbclid || ["meta","facebook","instagram"].some(s => (l.utmSource || "").toLowerCase().includes(s)) || (l.utmMedium || "").toLowerCase() === "paid_social").length,
+    organic: leads.filter((l) => !l.gclid && !l.fbclid && !l.utmSource).length,
   };
 
   const exportCSV = () => {
-    if (!filtered) return;
+    if (!filtered.length) return;
     const headers = [
       "ID", "Name", "Phone", "Email", "Move Date", "Move Type", "Move Size",
       "From Zip", "To Zip", "Source", "Source Label", "Source Page",
       "UTM Source", "UTM Medium", "UTM Campaign", "UTM Term", "GCLID", "FBCLID",
       "Submitted At"
     ];
-    const rows = filtered.map((l: any) => [
+    const rows = filtered.map((l) => [
       l.id,
       `"${l.fullName}"`,
       l.phone,
@@ -58,8 +160,8 @@ export default function AdminLeads() {
       l.moveDate ?? "",
       l.moveType ?? "",
       l.moveSize ?? "",
-      l.fromZip ?? "",
-      l.toZip ?? "",
+      l.zipFrom ?? "",
+      l.zipTo ?? "",
       l.gclid ? "Google Ads" : l.fbclid ? "Meta Ads" : l.utmSource ?? "Organic",
       `"${l.sourceLabel ?? ""}"`,
       `"${l.sourcePage ?? ""}"`,
@@ -81,47 +183,32 @@ export default function AdminLeads() {
     URL.revokeObjectURL(url);
   };
 
-  // Derive ad channel from attribution params
-  const AdSourceBadge = ({ lead }: { lead: any }) => {
-    const hasGclid = !!lead.gclid;
-    const hasFbclid = !!lead.fbclid;
-    const src = (lead.utmSource || "").toLowerCase();
-    const med = (lead.utmMedium || "").toLowerCase();
-
-    if (hasGclid || src.includes("google") || med === "cpc" || med === "ppc") {
-      return (
-        <Badge className="bg-blue-100 text-blue-800 border-blue-200 text-xs font-semibold">
-          Google Ads
-        </Badge>
-      );
-    }
-    if (hasFbclid || src.includes("meta") || src.includes("facebook") || src.includes("instagram") || med === "paid_social") {
-      return (
-        <Badge className="bg-indigo-100 text-indigo-800 border-indigo-200 text-xs font-semibold">
-          Meta Ads
-        </Badge>
-      );
-    }
-    if (src && med) {
-      return (
-        <Badge className="bg-purple-100 text-purple-800 border-purple-200 text-xs font-semibold">
-          {src}/{med}
-        </Badge>
-      );
-    }
-    if (src) {
-      return (
-        <Badge className="bg-gray-100 text-gray-700 border-gray-200 text-xs">
-          {src}
-        </Badge>
-      );
-    }
+  // Auth gate
+  if (!authed) {
     return (
-      <Badge className="bg-gray-50 text-gray-400 border-gray-200 text-xs">
-        Organic
-      </Badge>
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="bg-white rounded-xl border border-gray-200 p-8 w-full max-w-sm shadow-sm">
+          <div className="flex items-center gap-2 mb-6">
+            <Lock size={18} className="text-gray-500" />
+            <h1 className="text-lg font-bold text-gray-900" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
+              Admin Access
+            </h1>
+          </div>
+          <form onSubmit={handleKeySubmit} className="space-y-4">
+            <Input
+              type="password"
+              placeholder="Enter admin key"
+              value={keyInput}
+              onChange={(e) => setKeyInput(e.target.value)}
+              className={keyError ? "border-red-400" : ""}
+            />
+            {keyError && <p className="text-xs text-red-500">Incorrect key. Try again.</p>}
+            <Button type="submit" className="w-full">Access Dashboard</Button>
+          </form>
+        </div>
+      </div>
     );
-  };
+  }
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -132,26 +219,14 @@ export default function AdminLeads() {
             <h1 className="text-xl font-bold text-gray-900" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
               Lead Submissions
             </h1>
-            <p className="text-sm text-gray-500 mt-0.5">All quote form submissions, On The Go Moving</p>
+            <p className="text-sm text-gray-500 mt-0.5">All quote form submissions — On The Go Moving</p>
           </div>
           <div className="flex items-center gap-2">
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => refetch()}
-              disabled={isFetching}
-              className="gap-1.5"
-            >
-              <RefreshCw size={14} className={isFetching ? "animate-spin" : ""} />
+            <Button variant="outline" size="sm" onClick={fetchLeads} disabled={isLoading} className="gap-1.5">
+              <RefreshCw size={14} className={isLoading ? "animate-spin" : ""} />
               Refresh
             </Button>
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={exportCSV}
-              disabled={!filtered?.length}
-              className="gap-1.5"
-            >
+            <Button variant="outline" size="sm" onClick={exportCSV} disabled={!filtered.length} className="gap-1.5">
               <Download size={14} />
               Export CSV
             </Button>
@@ -181,7 +256,7 @@ export default function AdminLeads() {
         <div className="relative">
           <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
           <Input
-            placeholder="Search by name, email, phone, move type, or source…"
+            placeholder="Search by name, email, phone, move type, or source..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="pl-9"
@@ -192,9 +267,9 @@ export default function AdminLeads() {
         <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
           {isLoading ? (
             <div className="flex items-center justify-center py-16 text-gray-400">
-              <RefreshCw size={20} className="animate-spin mr-2" /> Loading leads…
+              <RefreshCw size={20} className="animate-spin mr-2" /> Loading leads...
             </div>
-          ) : !filtered?.length ? (
+          ) : !filtered.length ? (
             <div className="flex flex-col items-center justify-center py-16 text-gray-400">
               <p className="font-medium">{search ? "No leads match your search" : "No leads yet"}</p>
               <p className="text-sm mt-1">{search ? "Try a different search term" : "Form submissions will appear here"}</p>
@@ -212,7 +287,7 @@ export default function AdminLeads() {
                   </TableRow>
                 </TableHeader>
                 <TableBody>
-                  {filtered.map((lead: any) => (
+                  {filtered.map((lead) => (
                     <TableRow key={lead.id} className="hover:bg-gray-50 transition-colors">
 
                       {/* Name */}
@@ -229,14 +304,14 @@ export default function AdminLeads() {
 
                       {/* Move Details */}
                       <TableCell>
-                        <div className="text-sm text-gray-700 capitalize">{lead.moveType ?? "-"}</div>
+                        <div className="text-sm text-gray-700 capitalize">{lead.moveType || "-"}</div>
                         {lead.moveSize && (
                           <div className="text-xs text-gray-500">{lead.moveSize}</div>
                         )}
                         <div className="text-xs text-gray-500">
-                          {lead.fromZip && lead.toZip
-                            ? `${lead.fromZip} → ${lead.toZip}`
-                            : lead.fromZip ?? lead.toZip ?? ""}
+                          {lead.zipFrom && lead.zipTo
+                            ? `${lead.zipFrom} → ${lead.zipTo}`
+                            : lead.zipFrom || lead.zipTo || ""}
                         </div>
                         {lead.moveDate && (
                           <div className="text-xs text-gray-400">{lead.moveDate}</div>
@@ -248,9 +323,11 @@ export default function AdminLeads() {
                         <div className="mb-1">
                           <AdSourceBadge lead={lead} />
                         </div>
-                        <div className="text-xs text-gray-600 font-medium">{lead.sourceLabel ?? ""}</div>
-                        <div className="text-xs text-gray-400 truncate max-w-[180px]" title={lead.sourcePage ?? ""}>
-                          {lead.sourcePage ?? ""}
+                        {lead.sourceLabel && (
+                          <div className="text-xs text-gray-600 font-medium">{lead.sourceLabel}</div>
+                        )}
+                        <div className="text-xs text-gray-400 truncate max-w-[180px]" title={lead.sourcePage}>
+                          {lead.sourcePage}
                         </div>
                         {lead.utmCampaign && (
                           <div className="text-xs text-gray-400 truncate max-w-[180px]" title={lead.utmCampaign}>
@@ -282,9 +359,9 @@ export default function AdminLeads() {
           )}
         </div>
 
-        {filtered && filtered.length > 0 && (
+        {filtered.length > 0 && (
           <p className="text-xs text-gray-400 text-center">
-            Showing {filtered.length} of {stats.total} leads · Auto-refreshes every 60 seconds
+            Showing {filtered.length} of {stats.total} leads
           </p>
         )}
       </div>
