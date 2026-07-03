@@ -161,11 +161,27 @@ export default function AdminLeads() {
     );
   });
 
+  const classifyLead = (l: Lead): "google" | "meta" | "organic" => {
+    const src = (l.utmSource || "").toLowerCase();
+    const med = (l.utmMedium || "").toLowerCase();
+    const label = (l.sourceLabel || "").toLowerCase();
+    const page = (l.sourcePage || "").toLowerCase();
+    // Definitive Google
+    if (!!l.gclid || src.includes("google") || med === "cpc" || med === "ppc") return "google";
+    // Definitive Meta
+    if (!!l.fbclid || ["meta","facebook","instagram"].some(s => src.includes(s)) || med === "paid_social") return "meta";
+    // Inferred Meta
+    if (FB_LABELS.includes(label) || page.includes("/get/fb-") || page.includes("/get/social-") || label.includes("fb") || label.includes("social")) return "meta";
+    // Inferred Google
+    if (GOOGLE_LABELS.includes(label) || page.startsWith("/get/")) return "google";
+    return "organic";
+  };
+
   const stats = {
     total: leads.length,
-    googleAds: leads.filter((l) => !!l.gclid || (l.utmSource || "").toLowerCase().includes("google") || ["cpc","ppc"].includes((l.utmMedium || "").toLowerCase())).length,
-    metaAds: leads.filter((l) => !!l.fbclid || ["meta","facebook","instagram"].some(s => (l.utmSource || "").toLowerCase().includes(s)) || (l.utmMedium || "").toLowerCase() === "paid_social").length,
-    organic: leads.filter((l) => !l.gclid && !l.fbclid && !l.utmSource).length,
+    googleAds: leads.filter((l) => classifyLead(l) === "google").length,
+    metaAds: leads.filter((l) => classifyLead(l) === "meta").length,
+    organic: leads.filter((l) => classifyLead(l) === "organic").length,
   };
 
   const exportCSV = () => {
