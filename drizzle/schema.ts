@@ -44,6 +44,14 @@ export const leads = mysqlTable("leads", {
   // Tracking
   sourcePage: text("sourcePage"),        // URL where form was submitted
   sourceLabel: varchar("sourceLabel", { length: 128 }), // e.g. "Homepage", "Bellevue Movers"
+  // Ad attribution — captured from URL params at form submission
+  utmSource: varchar("utmSource", { length: 128 }),    // utm_source e.g. "google", "meta"
+  utmMedium: varchar("utmMedium", { length: 128 }),    // utm_medium e.g. "cpc", "paid_social"
+  utmCampaign: varchar("utmCampaign", { length: 255 }), // utm_campaign
+  utmContent: varchar("utmContent", { length: 255 }),  // utm_content
+  utmTerm: varchar("utmTerm", { length: 255 }),        // utm_term / keyword
+  gclid: varchar("gclid", { length: 512 }),            // Google Click ID (auto-tagging)
+  fbclid: varchar("fbclid", { length: 512 }),          // Facebook Click ID
   // Webhook status
   webhookStatus: mysqlEnum("webhookStatus", ["pending", "synced", "failed"]).default("pending").notNull(),
   webhookAttemptedAt: timestamp("webhookAttemptedAt"),

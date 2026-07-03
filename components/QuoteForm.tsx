@@ -158,6 +158,27 @@ export default function QuoteForm({
     setLoading(true);
 
     try {
+      // Capture ad attribution params from URL — persist in sessionStorage so attribution
+      // survives multi-page browsing (user clicks ad on /seattle-movers/, fills form on /)
+      const captureAttribution = () => {
+        const params = new URLSearchParams(window.location.search);
+        const keys = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "gclid", "fbclid"];
+        keys.forEach((k) => {
+          if (params.has(k)) sessionStorage.setItem(`otgm_${k}`, params.get(k)!);
+        });
+      };
+      captureAttribution();
+      const getAttr = (k: string) => sessionStorage.getItem(`otgm_${k}`) || undefined;
+      const attribution = {
+        utmSource:   getAttr("utm_source"),
+        utmMedium:   getAttr("utm_medium"),
+        utmCampaign: getAttr("utm_campaign"),
+        utmContent:  getAttr("utm_content"),
+        utmTerm:     getAttr("utm_term"),
+        gclid:       getAttr("gclid"),
+        fbclid:      getAttr("fbclid"),
+      };
+
       // Generate a unique event_id for FB Pixel + CAPI deduplication
       // Same ID is sent to CAPI server-side and stored for the pixel browser-side
       const fbEventId = `lead_${Date.now()}_${Math.random().toString(36).slice(2, 9)}`;
@@ -203,6 +224,7 @@ export default function QuoteForm({
             clientIp: undefined, // server will use Netlify's x-forwarded-for header
             clientUserAgent: navigator.userAgent,
             pageUrl: window.location.href,
+            ...attribution,
           }),
         }),
         // Silent Netlify Forms capture — browser POST so it's accepted

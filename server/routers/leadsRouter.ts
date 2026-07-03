@@ -110,6 +110,13 @@ export const leadsRouter = router({
         wantsStorage: z.boolean().optional().default(false),
         sourcePage: z.string().optional(),
         sourceLabel: z.string().optional(),
+        utmSource: z.string().optional(),
+        utmMedium: z.string().optional(),
+        utmCampaign: z.string().optional(),
+        utmContent: z.string().optional(),
+        utmTerm: z.string().optional(),
+        gclid: z.string().optional(),
+        fbclid: z.string().optional(),
       })
     )
     .mutation(async ({ input }) => {
@@ -126,6 +133,13 @@ export const leadsRouter = router({
         wantsStorage: input.wantsStorage ? 1 : 0,
         sourcePage: input.sourcePage ?? null,
         sourceLabel: input.sourceLabel ?? null,
+        utmSource: input.utmSource ?? null,
+        utmMedium: input.utmMedium ?? null,
+        utmCampaign: input.utmCampaign ?? null,
+        utmContent: input.utmContent ?? null,
+        utmTerm: input.utmTerm ?? null,
+        gclid: input.gclid ?? null,
+        fbclid: input.fbclid ?? null,
         webhookStatus: "pending",
       });
 

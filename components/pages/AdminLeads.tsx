@@ -94,6 +94,48 @@ export default function AdminLeads() {
     URL.revokeObjectURL(url);
   };
 
+  // Derive ad channel from attribution params
+  const AdSourceBadge = ({ lead }: { lead: any }) => {
+    const hasGclid = !!lead.gclid;
+    const hasFbclid = !!lead.fbclid;
+    const src = (lead.utmSource || "").toLowerCase();
+    const med = (lead.utmMedium || "").toLowerCase();
+
+    if (hasGclid || src.includes("google") || med === "cpc" || med === "ppc") {
+      return (
+        <Badge className="bg-blue-100 text-blue-800 border-blue-200 text-xs font-semibold">
+          Google Ads
+        </Badge>
+      );
+    }
+    if (hasFbclid || src.includes("meta") || src.includes("facebook") || src.includes("instagram") || med === "paid_social") {
+      return (
+        <Badge className="bg-indigo-100 text-indigo-800 border-indigo-200 text-xs font-semibold">
+          Meta Ads
+        </Badge>
+      );
+    }
+    if (src && med) {
+      return (
+        <Badge className="bg-purple-100 text-purple-800 border-purple-200 text-xs font-semibold">
+          {src}/{med}
+        </Badge>
+      );
+    }
+    if (src) {
+      return (
+        <Badge className="bg-gray-100 text-gray-700 border-gray-200 text-xs">
+          {src}
+        </Badge>
+      );
+    }
+    return (
+      <Badge className="bg-gray-50 text-gray-400 border-gray-200 text-xs">
+        Organic
+      </Badge>
+    );
+  };
+
   const WebhookBadge = ({ status }: { status: string }) => {
     if (status === "synced") return (
       <Badge className="bg-green-100 text-green-800 border-green-200 gap-1">
@@ -226,10 +268,23 @@ export default function AdminLeads() {
                         )}
                       </TableCell>
                       <TableCell>
-                        <div className="text-xs text-gray-700 font-medium">{lead.sourceLabel ?? "-"}</div>
+                        <div className="mb-1">
+                          <AdSourceBadge lead={lead} />
+                        </div>
+                        <div className="text-xs text-gray-600 font-medium">{lead.sourceLabel ?? "-"}</div>
                         <div className="text-xs text-gray-400 truncate max-w-[180px]" title={lead.sourcePage ?? ""}>
                           {lead.sourcePage ?? ""}
                         </div>
+                        {lead.utmCampaign && (
+                          <div className="text-xs text-gray-400 truncate max-w-[180px]" title={lead.utmCampaign}>
+                            Campaign: {lead.utmCampaign}
+                          </div>
+                        )}
+                        {lead.utmTerm && (
+                          <div className="text-xs text-gray-400 truncate max-w-[180px]" title={lead.utmTerm}>
+                            Keyword: {lead.utmTerm}
+                          </div>
+                        )}
                       </TableCell>
                       <TableCell>
                         <div className="flex items-center gap-2">
