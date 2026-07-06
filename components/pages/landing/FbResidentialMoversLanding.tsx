@@ -189,6 +189,12 @@ function FbQuoteForm() {
       return match ? match[2] : undefined;
     };
 
+    // Read attribution params from URL, persist to sessionStorage for multi-page journeys
+    const urlParams = new URLSearchParams(window.location.search);
+    const ATTR_KEYS = ["fbclid", "utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"];
+    ATTR_KEYS.forEach((k) => { const v = urlParams.get(k); if (v) sessionStorage.setItem(`otgm_${k}`, v); });
+    const getAttr = (key: string) => urlParams.get(key) || sessionStorage.getItem(`otgm_${key}`) || undefined;
+
     const payload = {
       fullName,
       phone: phone.replace(/\D/g, ""), // send raw digits to SuperMove
@@ -199,6 +205,13 @@ function FbQuoteForm() {
       moveSize,
       moveType: "house",
       sourceLabel: "landing-fb-residential-movers",
+      sourcePage: window.location.pathname,
+      fbclid: getAttr("fbclid"),
+      utmSource: getAttr("utm_source"),
+      utmMedium: getAttr("utm_medium"),
+      utmCampaign: getAttr("utm_campaign"),
+      utmContent: getAttr("utm_content"),
+      utmTerm: getAttr("utm_term"),
       fbEventId,
       pageUrl: window.location.href,
       clientUserAgent: navigator.userAgent,

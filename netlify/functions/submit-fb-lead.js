@@ -37,8 +37,10 @@ async function insertLeadToDB(conn, lead, webhookStatus) {
   const sql = `
     INSERT INTO leads
       (fullName, phone, email, moveDate, moveType, moveSize, fromZip, toZip,
-       wantsStorage, sourcePage, sourceLabel, webhookStatus, webhookAttemptedAt, createdAt, updatedAt)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, NOW(), NOW(), NOW())
+       wantsStorage, sourcePage, sourceLabel,
+       utmSource, utmMedium, utmCampaign, utmContent, utmTerm, gclid, fbclid,
+       webhookStatus, createdAt, updatedAt)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, NOW(), NOW())
   `;
   const phoneDigits = (() => {
     let d = (lead.phone || "").replace(/\D/g, "");
@@ -57,6 +59,13 @@ async function insertLeadToDB(conn, lead, webhookStatus) {
     lead.wantsStorage ? 1 : 0,
     lead.sourcePage || null,
     (lead.sourceLabel || "Facebook Ads").slice(0, 128),
+    lead.utmSource || null,
+    lead.utmMedium || null,
+    lead.utmCampaign || null,
+    lead.utmContent || null,
+    lead.utmTerm || null,
+    lead.gclid || null,
+    lead.fbclid || null,
     webhookStatus,
   ];
   const [result] = await conn.execute(sql, values);
