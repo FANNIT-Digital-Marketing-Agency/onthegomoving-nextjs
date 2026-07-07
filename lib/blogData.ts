@@ -3677,5 +3677,88 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     ],
     relatedService: "Residential Moving",
     relatedServiceHref: "/residential-moving/"
+  },
+    "moving-out-after-selling-your-home": {
+    slug: "moving-out-after-selling-your-home",
+    title: `Moving Out After Selling Your Home: A Complete Checklist`,
+    metaTitle: `Moving Out After Selling Your Home: A Complete Checklist | On The Go Moving`,
+    metaDescription: `Accepted an offer on your home? Here is the complete moving out checklist for home sellers in Bellevue, Kirkland, Redmond, and the Eastside. Avoid costly mistakes.`,
+    date: "July 7, 2026",
+    dateISO: "2026-07-07",
+    category: "Home Selling",
+    readTime: "8 min read",
+    author: "Jason Sexton",
+    heroImage: BRAND_IMAGES.crewFrontDoorExit,
+    intro: `Selling your home is one of the most financially significant decisions you will make. But once you accept an offer, the clock starts ticking on a process that most sellers underestimate: moving out. Between the inspection period, appraisal, buyer's walkthrough, and closing, you typically have 30 to 45 days to pack an entire home, coordinate logistics, and leave the property in the condition required by your purchase agreement. This checklist walks you through every step, from accepted offer to final walkthrough, so you can close on time and move out without surprises.`,
+    sections: [
+      {
+        type: "h2",
+        heading: `What Sellers Are Contractually Required to Do Before Moving Out`,
+        body: `Before diving into the logistics of moving, it is worth understanding what your purchase agreement actually requires. In Washington State, the standard NWMLS purchase agreement includes several seller obligations related to the condition of the property at closing:\n\n**Property condition.** The home must be delivered in substantially the same condition as when the offer was accepted. This means no new damage, no missing fixtures, and no items removed that were included in the sale (such as appliances listed in the agreement).\n\n**Clean condition.** Most purchase agreements require the seller to leave the property "broom clean," which means free of personal belongings, trash, and debris. This is not the same as professionally cleaned, but it does mean you cannot leave items behind without the buyer's agreement.\n\n**Agreed repairs.** If the buyer requested repairs during the inspection period and you agreed to make them, those repairs must be completed before closing. Keep receipts and documentation.\n\n**Included items.** Review your purchase agreement carefully for the list of items included in the sale. Appliances, fixtures, window treatments, and other items listed in the agreement must remain with the property. Removing them is a breach of contract.\n\nUnderstanding these obligations before you start packing prevents costly disputes at closing.`
+      },
+      {
+        type: "h2",
+        heading: `The Moving Out Timeline for Home Sellers`,
+        body: `The moment you accept an offer, you have a closing date. That date is your anchor. Here is how to work backward from closing to ensure a smooth move-out:\n\n**Day 1 (Offer accepted):** Book your movers, begin decluttering, and start identifying what goes with you versus what stays with the property.\n\n**Days 1 to 7:** Schedule any agreed-upon repairs from the inspection. Begin packing rooms you use least: guest rooms, storage areas, the garage, seasonal items, and decorative objects.\n\n**Days 7 to 14:** Continue packing. Notify your utility providers of your move-out date. Begin forwarding your mail (USPS requires 7 to 10 business days to activate).\n\n**Days 14 to 21:** Pack all but daily essentials. Confirm your moving date with your moving company. Arrange for disposal or donation of items you are not taking.\n\n**3 to 5 days before closing:** Complete all agreed repairs. Do a thorough cleaning of the property. Remove all personal belongings.\n\n**Day before closing:** Final walkthrough with your real estate agent to confirm the property is in the required condition.\n\n**Closing day:** Sign paperwork, hand over keys, and confirm all utilities are scheduled for transfer or disconnection.`
+      },
+      {
+        type: "h2",
+        heading: `Room-by-Room Moving Out Checklist`,
+        body: `Use this checklist to work through the home systematically. Check each item as you complete it.\n\n**Kitchen**\nRemove all food, pantry items, and refrigerator contents. Clean the refrigerator, oven, stovetop, and microwave inside and out. Remove all personal items from cabinets and drawers. Confirm which appliances are included in the sale and leave them. Clean under and behind appliances. Empty and clean the dishwasher.\n\n**Living and Dining Rooms**\nRemove all furniture, art, and decorative items (unless included in the sale). Remove all window treatments unless listed as included. Patch any nail holes or wall damage. Clean baseboards, windowsills, and light fixtures.\n\n**Bedrooms**\nRemove all furniture, bedding, and personal items. Check all closets, including high shelves and the floor. Remove any hooks, anchors, or wall-mounted items. Patch holes and touch up paint if needed.\n\n**Bathrooms**\nRemove all personal care items, medications, and toiletries. Clean the toilet, sink, tub, and shower thoroughly. Remove shower curtains and rods (unless included). Clean mirrors and light fixtures.\n\n**Garage and Storage Areas**\nThis is where most sellers underestimate the work. Remove all tools, equipment, sports gear, and stored items. Sweep the floor. Remove any shelving or storage systems unless included in the sale.\n\n**Attic and Basement**\nCheck every corner. These spaces accumulate items over years that are easy to forget. Remove everything.\n\n**Yard and Exterior**\nRemove all personal items: patio furniture, planters, decorative items, and equipment. Leave items listed in the purchase agreement (such as outdoor furniture if included). Mow the lawn and tidy the landscaping.`
+      },
+      {
+        type: "h2",
+        heading: `What to Do With Items You Are Not Taking`,
+        body: `One of the most time-consuming parts of moving out of a home you have lived in for years is deciding what to do with everything you are not taking. Here are your options:\n\n**Donate.** Goodwill, Habitat for Humanity ReStores, and local shelters accept furniture, clothing, household goods, and appliances in good condition. Many organizations offer free pickup for large items. On the Eastside, Eastside Baby Corner, Friends of Youth, and the Bellevue LifeSpring network accept a wide range of household donations.\n\n**Sell.** Facebook Marketplace, Craigslist, and OfferUp are effective for selling furniture and larger items quickly. Estate sale companies can handle the entire process if you have significant volume.\n\n**Junk removal.** For items that cannot be donated or sold, junk removal services can clear an entire home in a single day. This is often the most efficient option for the final push before closing.\n\n**Storage.** If you are moving into temporary housing or a smaller space while you search for your next home, storage is a practical bridge. On The Go Moving offers both short-term and long-term storage solutions, which means you can move out of your sold home and into storage without needing a second moving company.\n\nStart the donation and sale process as early as possible. Waiting until the week before closing to deal with unwanted items creates unnecessary stress.`
+      },
+      {
+        type: "h2",
+        heading: `Booking Movers When Selling Your Home`,
+        body: `The same principle that applies to buyers applies to sellers: book your movers the day your offer is accepted, not after closing. Here is why this matters even more for sellers.\n\nAs a seller, your closing date is fixed. You cannot push it back the way a buyer can sometimes negotiate a closing extension. If you wait too long to book movers and your preferred dates are unavailable, you may be forced to move out in a rush or hire a less reputable company at a premium price.\n\nOn the Eastside, professional movers book out 2 to 4 weeks in advance during normal periods and 4 to 6 weeks during peak season (May through September). If your closing is in June or July, booking movers the day your offer is accepted is not too early.\n\nWhen you call, have the following information ready: your current address, your destination address (or storage facility), your target moving date, and a rough estimate of the size of your home and the volume of items being moved. If you are not sure where you are moving to yet, a reputable moving company can hold a date for your current address and adjust the destination later.\n\nAt On The Go Moving, we work with home sellers throughout the Eastside regularly. We understand that closing dates can shift and that sellers sometimes need storage as a bridge between homes. Call us at 425-440-3241 as soon as your offer is accepted.`
+      },
+      {
+        type: "h2",
+        heading: `Using Storage as a Bridge Between Homes`,
+        body: `Many home sellers on the Eastside find themselves in a gap between closing on their sold home and moving into their next home. This is especially common in competitive markets where sellers accept an offer before they have found their next property, or where their new home's closing date does not align with their sale closing.\n\nStorage is the practical solution for this gap. Rather than rushing to find a new home before your closing date, you can move your belongings into storage and take the time to find the right next home without pressure.\n\nOn The Go Moving offers both short-term and long-term storage at our Redmond facility. Your belongings are stored in a secure, climate-controlled environment and can be delivered to your new home when you are ready. This eliminates the need to hire two separate moving companies and reduces the total cost and complexity of the transition.\n\nIf you know you will need storage as a bridge, mention it when you book your move. We can coordinate the storage and delivery as a single service.`
+      },
+      {
+        type: "h2",
+        heading: `The Final Walkthrough: What Buyers Are Looking For`,
+        body: `The buyer's final walkthrough typically takes place 24 to 48 hours before closing. Its purpose is to confirm that the property is in the condition required by the purchase agreement: agreed repairs completed, included items present, and the home in broom-clean condition.\n\nHere is what buyers and their agents commonly check during the final walkthrough:\n\n**Agreed repairs.** The buyer will verify that every repair agreed to during the inspection period has been completed. Have receipts and documentation ready.\n\n**Included items.** The buyer will confirm that all appliances, fixtures, and other items listed in the purchase agreement are present and in working condition.\n\n**Condition of the property.** The buyer will check for any new damage that was not present when the offer was accepted. This includes damage from moving out, such as wall dings, scratched floors, or broken fixtures.\n\n**Cleanliness.** The property should be broom clean. Personal belongings should be completely removed.\n\nIf the buyer finds issues during the final walkthrough, they can request that repairs be made before closing, request a credit at closing, or in serious cases, delay or cancel the transaction. Avoiding these scenarios is straightforward: complete your obligations before the walkthrough, not after.\n\nDo your own walkthrough the day before the buyer's walkthrough. Walk every room, check every closet, and confirm the property is in the condition you agreed to deliver.`
+      },
+      {
+        type: "h2",
+        heading: `Utilities: What to Cancel and When`,
+        body: `Utility management is one of the most commonly overlooked parts of moving out. Here is what to do:\n\n**Schedule disconnection for the day after closing.** Do not disconnect utilities before closing. The buyer's lender may require a final inspection, and the property needs to be functional for the final walkthrough. Schedule disconnection for the day after closing to be safe.\n\n**Transfer utilities, do not just cancel.** For utilities that the buyer will continue (electricity, gas, water), contact the provider to transfer service to the new owner rather than canceling. This prevents a gap in service that could cause issues for the buyer.\n\n**Internet and cable.** These can typically be canceled on closing day or the day after. Return any equipment (routers, cable boxes) to avoid fees.\n\n**Home security systems.** If you have a monitored security system, contact your provider to cancel or transfer the service. Leave any access codes or documentation for the new owner.\n\n**HOA.** If your home is in a homeowners association, notify the HOA of the sale and provide the buyer's contact information. Confirm that all dues are paid through closing.\n\nOn the Eastside, the primary utility providers are Puget Sound Energy (electricity and gas), the City of Bellevue, City of Kirkland, City of Redmond, or other municipal utilities (water and sewer), and Comcast or CenturyLink (internet and cable).`
+      }
+    ],
+    faqs: [
+      {
+        q: `When should I book movers after accepting an offer on my home?`,
+        a: `Book your movers the day your offer is accepted. As a seller, your closing date is fixed and cannot easily be extended. On the Eastside, professional movers book out 2 to 4 weeks in advance during normal periods and 4 to 6 weeks during peak season. Waiting until after closing to book movers risks not being able to find availability on your required date.`
+      },
+      {
+        q: `What condition does my home need to be in when I move out?`,
+        a: `In Washington State, the standard purchase agreement requires the home to be delivered in substantially the same condition as when the offer was accepted, with all agreed repairs completed, all included items present, and the property in broom-clean condition. This means free of personal belongings, trash, and debris, but not necessarily professionally cleaned.`
+      },
+      {
+        q: `What happens if I leave items behind after closing?`,
+        a: `Leaving personal belongings behind after closing is a breach of your purchase agreement. The buyer can request that you remove the items at your expense, deduct removal costs from your proceeds, or in some cases, pursue legal remedies. The safest approach is to remove everything that is not explicitly listed as included in the sale.`
+      },
+      {
+        q: `Can I move out before closing?`,
+        a: `Yes, and in most cases it is preferable. Moving out before closing gives you time to clean the property, complete any agreed repairs, and ensure the home is in the required condition for the buyer's final walkthrough. It also reduces the stress of coordinating a move on or immediately after closing day.`
+      },
+      {
+        q: `What if I need storage between selling my home and moving into my next one?`,
+        a: `On The Go Moving offers short-term and long-term storage at our Redmond facility. We can coordinate your move-out and storage as a single service, eliminating the need for two separate moving companies. When you are ready to move into your new home, we deliver your belongings directly from storage.`
+      },
+      {
+        q: `Do I need to be present for the buyer's final walkthrough?`,
+        a: `No. The final walkthrough is typically conducted by the buyer and their real estate agent. Your real estate agent may or may not be present. You do not need to be there, but you should ensure the property is in the required condition before the walkthrough takes place.`
+      }
+    ],
+    relatedService: "Residential Moving",
+    relatedServiceHref: "/residential-moving/"
   }
 };

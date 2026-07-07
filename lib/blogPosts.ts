@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "moving-out-after-selling-your-home",
+    title: `Moving Out After Selling Your Home: A Complete Checklist`,
+    date: "July 7, 2026",
+    category: "Home Selling",
+    excerpt: `Accepted an offer on your home? Here is the complete moving out checklist for home sellers in Bellevue, Kirkland, Redmond, and the Eastside. Avoid costly mistakes.`,
+    image: BRAND_IMAGES.crewFrontDoorExit,
+    readTime: "8 min read",
+  },
+  {
     slug: "moving-timeline-for-home-buyers",
     title: `Moving Timeline for Home Buyers: From Offer to Move-In Day`,
     date: "July 7, 2026",
