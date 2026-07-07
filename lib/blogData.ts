@@ -3589,5 +3589,93 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     ],
     relatedService: "Residential Moving",
     relatedServiceHref: "/residential-moving/"
+  },
+    "moving-timeline-for-home-buyers": {
+    slug: "moving-timeline-for-home-buyers",
+    title: `Moving Timeline for Home Buyers: From Offer to Move-In Day`,
+    metaTitle: `Moving Timeline for Home Buyers: From Offer to Move-In Day | On The Go Moving`,
+    metaDescription: `Just had your offer accepted? Here is the exact moving timeline every home buyer needs, from offer acceptance through closing to move-in day on the Eastside.`,
+    date: "July 7, 2026",
+    dateISO: "2026-07-07",
+    category: "Home Buying",
+    readTime: "7 min read",
+    author: "Jason Sexton",
+    heroImage: BRAND_IMAGES.truckKirklandHouse,
+    intro: `The gap between "offer accepted" and "move-in day" is longer and more complicated than most first-time buyers expect. Between inspections, appraisals, financing contingencies, and closing paperwork, the average home purchase takes 30 to 60 days from accepted offer to closing. Add the time needed to pack, hire movers, and coordinate logistics, and you are looking at a process that rewards early planning. This guide walks you through the complete moving timeline for home buyers, week by week, so nothing falls through the cracks.`,
+    sections: [
+      {
+        type: "h2",
+        heading: `The Big Picture: How Long Does the Home Buying Process Take?`,
+        body: `Most buyers on the Eastside close within 30 to 45 days of an accepted offer, though cash purchases can close in as few as 10 to 14 days and complex transactions can stretch to 60 days or more. The closing date is set in the purchase agreement, which means you will know your move-in date relatively early in the process. That is your anchor. Everything else in your moving timeline works backward from that date.\n\nHere is the high-level view of what happens between offer acceptance and move-in day:\n\n- Days 1 to 3: Earnest money deposited, inspection scheduled\n- Days 3 to 10: Home inspection completed, repair requests negotiated\n- Days 5 to 15: Appraisal ordered and completed\n- Days 1 to 30: Mortgage underwriting and loan processing\n- Days 25 to 35: Final walkthrough scheduled\n- Days 30 to 45: Closing day, keys received\n- Move-in day: Typically the day of or the day after closing\n\nThe most important thing to understand is that your moving preparation should begin the moment your offer is accepted, not after closing. Waiting until you have keys in hand leaves you scrambling to find movers, pack an entire home, and coordinate logistics in a matter of days.`
+      },
+      {
+        type: "h2",
+        heading: `Week 1 After Offer Acceptance: Start Your Moving Preparation Now`,
+        body: `The first week after your offer is accepted is the busiest on the real estate side, but it is also the right time to start your moving preparation. Here is what to do:\n\n**Book your movers.** Professional movers on the Eastside book out 2 to 4 weeks in advance, and during peak moving season (May through September) the best dates fill even faster. Contact your moving company as soon as you have a target closing date. You do not need a confirmed closing date to get on the calendar. Book a tentative date and adjust it later if the closing shifts. Most reputable movers will work with you on date changes as long as you give reasonable notice.\n\n**Start your declutter pass.** You are going to be packing everything in this house. Now is the time to decide what is not worth packing. Go room by room and identify items for donation, sale, or disposal. The less you move, the faster and less expensive your move will be.\n\n**Order packing supplies.** Boxes, packing tape, bubble wrap, and packing paper take longer to accumulate than most people expect. Order more than you think you need. You can always return unused boxes.\n\n**Notify your current landlord (if renting).** If you are renting, review your lease for notice requirements. Most leases require 30 to 60 days written notice. Giving notice too early is better than giving it too late.`
+      },
+      {
+        type: "h2",
+        heading: `Weeks 2 and 3: Pack Non-Essentials and Confirm Your Move`,
+        body: `By week two or three, your inspection is complete, your appraisal is underway, and your loan is in processing. The real estate transaction is moving forward. This is the time to shift more attention to the move itself.\n\n**Begin packing non-essential rooms.** Start with the spaces you use least: guest rooms, storage areas, the garage, seasonal items, books, and decorative objects. Label every box with its contents and destination room. Packing early reduces the stress of the final week dramatically.\n\n**Confirm your moving date.** Once you have a firm closing date from your lender or real estate agent, call your moving company to lock in the date. If your closing date shifts, notify your movers immediately. Good moving companies will do their best to accommodate changes.\n\n**Set up mail forwarding.** The USPS mail forwarding process takes 7 to 10 business days to activate. Submit your change of address request at usps.com at least two weeks before your move date.\n\n**Notify key contacts of your new address.** Start with your employer, bank, insurance providers, subscription services, and any government agencies (IRS, DMV, voter registration). Create a list and work through it systematically.\n\n**Schedule utility transfers.** Contact your current utility providers to schedule disconnection on your move-out date. Contact the utility providers for your new home to schedule connection for the day before or the day of closing. In Bellevue, Kirkland, and Redmond, this typically means Puget Sound Energy for electricity and gas, and the city utilities department for water and sewer.`
+      },
+      {
+        type: "h2",
+        heading: `The Week Before Closing: Final Preparations`,
+        body: `The week before closing is when the real estate transaction reaches its most intense phase. Your lender will issue a Closing Disclosure at least three business days before closing, which you will need to review carefully. Your real estate agent will schedule a final walkthrough of the property, typically 24 to 48 hours before closing. Amid all of this, your moving preparation needs to continue.\n\n**Pack everything except daily essentials.** By the end of this week, your home should be almost entirely packed. Leave out only what you need for the final few days: a few changes of clothes, toiletries, bedding, kitchen basics, and any items your children or pets need.\n\n**Prepare an essentials box.** Pack a separate box or bag with everything you will need on move-in day and the first night in your new home: phone chargers, toiletries, a change of clothes, medications, snacks, paper towels, toilet paper, and basic cleaning supplies. This box rides in your car, not the moving truck.\n\n**Confirm all moving details.** Call your moving company to confirm the date, time, address, and any special instructions. Confirm the number of movers and the size of the truck. Ask about parking at both the origin and destination addresses.\n\n**Do a final walkthrough of your current home.** Check every closet, cabinet, drawer, and storage space. Check the attic, basement, and garage. It is easy to leave behind items that are out of sight.`
+      },
+      {
+        type: "h2",
+        heading: `Closing Day: What to Expect`,
+        body: `Closing day is the day you sign the final paperwork, pay closing costs, and receive the keys to your new home. In Washington State, closings typically take place at a title company and last 1 to 2 hours. You will need to bring a government-issued photo ID and a cashier's check or wire transfer confirmation for your closing costs and down payment.\n\nAfter signing, there is usually a short period before the deed is recorded and the keys are officially released. In King County, recording can happen the same day or the following business day depending on the time of closing. Your real estate agent will coordinate the key handoff.\n\nIf your closing is in the morning, you may be able to begin moving the same day. If it is in the afternoon, most buyers plan to move the following day. Coordinate this timing with your moving company in advance so they are scheduled appropriately.`
+      },
+      {
+        type: "h2",
+        heading: `Move-In Day: Making It Go Smoothly`,
+        body: `Move-in day is the payoff for all the planning you have done. Here is how to make it as smooth as possible:\n\n**Be at the new home before the movers arrive.** Do a quick walkthrough to confirm utilities are on, the space is clean, and you know where you want furniture placed. Having a clear plan for furniture placement saves significant time and avoids having to move heavy items twice.\n\n**Create a room labeling system.** Post a sign on each room door matching the labels on your boxes. This allows movers to place boxes in the correct rooms without asking you for direction on every item.\n\n**Keep children and pets out of the way.** Move-in day involves a lot of foot traffic, open doors, and heavy items being carried through the home. Arrange for children and pets to be elsewhere if possible.\n\n**Do a walkthrough before the movers leave.** Check every room to confirm all items have been delivered and nothing is missing or damaged. Note any issues on the moving company's paperwork before signing off.\n\n**Prioritize the bedroom.** Set up your bed and bedroom first. No matter how much is left to unpack, you will want a functional place to sleep at the end of the day.`
+      },
+      {
+        type: "h2",
+        heading: `The Complete Moving Timeline at a Glance`,
+        body: `Here is the full timeline condensed into a single reference:\n\n**Day 1 (Offer accepted):** Book your movers, begin decluttering, order packing supplies, notify landlord if renting.\n\n**Days 3 to 10:** Home inspection completed. Begin packing non-essential rooms.\n\n**Days 7 to 14:** Submit USPS mail forwarding request. Begin notifying contacts of address change.\n\n**Days 14 to 21:** Confirm moving date with movers. Schedule utility transfers for both addresses.\n\n**Days 21 to 28:** Pack all but daily essentials. Prepare your essentials box.\n\n**3 days before closing:** Review Closing Disclosure. Confirm all moving details with your moving company.\n\n**1 to 2 days before closing:** Final walkthrough of the property with your real estate agent.\n\n**Closing day:** Sign paperwork, receive keys, coordinate move-in timing with movers.\n\n**Move-in day:** Arrive before movers, direct placement, do final walkthrough before movers leave.`
+      },
+      {
+        type: "h2",
+        heading: `When Should You Book Movers After Your Offer Is Accepted?`,
+        body: `The answer is: immediately. This is the single most common mistake home buyers make. They wait until after closing to book movers, then discover that the dates they need are unavailable or that prices have increased due to last-minute booking.\n\nOn the Eastside, professional moving companies book out 2 to 4 weeks in advance during normal periods and 4 to 6 weeks during peak season (May through September). If your closing is in June or July, booking movers the day your offer is accepted is not too early. It is exactly right.\n\nAt On The Go Moving, we work with home buyers throughout the purchase process. We can hold a tentative date while your transaction is in progress and adjust the date if your closing shifts. The earlier you call, the more flexibility you have.`
+      },
+      {
+        type: "h2",
+        heading: `Moving Tips Specific to the Eastside`,
+        body: `A few considerations specific to moving in Bellevue, Kirkland, Redmond, Sammamish, and the surrounding Eastside communities:\n\n**Parking permits for moving trucks.** Many neighborhoods and condo buildings in Bellevue and Kirkland require advance notice or permits for large moving trucks. Check with your building management or HOA before move-in day. On The Go Moving can help you navigate these requirements.\n\n**Traffic timing.** The I-405 and SR-520 corridors experience heavy congestion during morning and evening commute hours. If possible, schedule your move to begin early in the morning (7 to 8 AM) to avoid peak traffic. This is especially important if you are moving between Seattle and the Eastside.\n\n**Elevator reservations.** If you are moving into or out of a condo or apartment building, reserve the elevator in advance. Most buildings require a reservation and a refundable deposit. Failure to reserve can result in significant delays on move day.\n\n**Weather.** The Eastside averages around 150 days of rain per year, concentrated from October through April. If your closing falls in the fall or winter, plan for wet conditions. Professional movers use floor runners, door frame protectors, and waterproof wrapping to protect your belongings and your new home.`
+      }
+    ],
+    faqs: [
+      {
+        q: `How far in advance should I book movers when buying a home?`,
+        a: `Book your movers as soon as your offer is accepted, not after closing. On the Eastside, professional movers book out 2 to 4 weeks in advance during normal periods and 4 to 6 weeks during peak season (May through September). Booking early gives you the best selection of dates and allows you to adjust if your closing date shifts.`
+      },
+      {
+        q: `What if my closing date changes after I've booked movers?`,
+        a: `Closing date changes are common in real estate transactions. Notify your moving company as soon as you know the date has changed. Most reputable movers will work with you on date adjustments, especially if you give them reasonable notice. At On The Go Moving, we understand that closing dates can shift and we do our best to accommodate changes.`
+      },
+      {
+        q: `Can I move in on the same day I close?`,
+        a: `Yes, but it depends on the timing of your closing. If you close in the morning and keys are released by noon, a same-day move is feasible. If you close in the afternoon, it is usually more practical to move the following day. Coordinate this with your moving company and your real estate agent well in advance.`
+      },
+      {
+        q: `How long does it take to close on a house in Washington State?`,
+        a: `Most home purchases in Washington State close within 30 to 45 days of an accepted offer. Cash purchases can close in 10 to 14 days. Complex transactions or those involving financing contingencies can take up to 60 days. Your purchase agreement will specify the closing date.`
+      },
+      {
+        q: `What should I pack last when moving into a new home?`,
+        a: `Pack an essentials box last and keep it with you (not on the moving truck). This box should contain everything you need for the first 24 hours in your new home: phone chargers, toiletries, a change of clothes, medications, snacks, paper towels, toilet paper, and basic cleaning supplies. Everything else can be unpacked over the following days.`
+      },
+      {
+        q: `Do I need to be present on move-in day?`,
+        a: `Yes. You should be at the new home before the movers arrive to direct furniture placement and answer questions. You should also do a walkthrough before the movers leave to confirm all items have been delivered and note any damage on the moving company's paperwork.`
+      }
+    ],
+    relatedService: "Residential Moving",
+    relatedServiceHref: "/residential-moving/"
   }
 };

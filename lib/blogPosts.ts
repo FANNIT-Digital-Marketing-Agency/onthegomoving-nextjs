@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "moving-timeline-for-home-buyers",
+    title: `Moving Timeline for Home Buyers: From Offer to Move-In Day`,
+    date: "July 7, 2026",
+    category: "Home Buying",
+    excerpt: `Just had your offer accepted? Here is the exact moving timeline every home buyer needs, from offer acceptance through closing to move-in day on the Eastside.`,
+    image: BRAND_IMAGES.truckKirklandHouse,
+    readTime: "7 min read",
+  },
+  {
     slug: "moving-tips-how-to-pack-up-your-garage-for-moving",
     title: `Moving Tips: How to Pack Up Your Garage for Moving`,
     date: "December 16, 2016",
