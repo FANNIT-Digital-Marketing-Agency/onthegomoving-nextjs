@@ -23,7 +23,16 @@ export const BLOG_POSTS: BlogIndexPost[] = [
     excerpt: `Accepted an offer on your home? Here is the complete moving out checklist for home sellers in Bellevue, Kirkland, Redmond, and the Eastside. Avoid costly mistakes.`,
     image: BRAND_IMAGES.crewFrontDoorExit,
     readTime: "8 min read",
-  },
+  }
+  {
+    slug: "renting-vs-buying-eastside-seattle",
+    title: `Renting vs. Buying a Home on the Eastside: What Makes Financial Sense Right Now`,
+    date: "July 10, 2026",
+    category: "Home Buying",
+    excerpt: `With median home prices above $1.2 million in Bellevue and Kirkland, the rent-vs-buy decision on the Eastside is not straightforward. Here is a clear financial framework to help you decide.`,
+    readTime: "9 min read",
+    author: "Jason Sexton"
+  },,
   {
     slug: "moving-timeline-for-home-buyers",
     title: `Moving Timeline for Home Buyers: From Offer to Move-In Day`,
