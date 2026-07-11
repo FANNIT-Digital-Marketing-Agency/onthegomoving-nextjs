@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "what-to-do-with-your-stuff-when-selling-a-home",
+    title: `What to Do With Your Stuff When Selling a Home: Storage, Staging, and Moving`,
+    date: "July 11, 2026",
+    category: "Home Selling",
+    excerpt: `Selling your home on the Eastside? Learn what to do with your belongings before listing: what to declutter, what to store, and how to coordinate your move so your home shows at its best.`,
+    image: BRAND_IMAGES.warehouseInterior,
+    readTime: "8 min read",
+  },
+  {
     slug: "moving-out-after-selling-your-home",
     title: `Moving Out After Selling Your Home: A Complete Checklist`,
     date: "July 7, 2026",
