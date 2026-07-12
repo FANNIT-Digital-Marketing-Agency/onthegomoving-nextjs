@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "office-relocation-checklist-lease-to-move-in",
+    title: `Office Relocation Checklist: From Lease Signing to Move-In Day`,
+    date: "July 12, 2026",
+    category: "Corporate and Office Moving",
+    excerpt: `Planning an office move on the Eastside? Use this complete phase-by-phase checklist covering every step from lease signing through move-in day — including IT, vendor booking, employee communication, and post-move tasks.`,
+    image: BRAND_IMAGES.crewWrappingOffice,
+    readTime: "10 min read",
+  },
+  {
     slug: "what-to-do-with-your-stuff-when-selling-a-home",
     title: `What to Do With Your Stuff When Selling a Home: Storage, Staging, and Moving`,
     date: "July 11, 2026",
