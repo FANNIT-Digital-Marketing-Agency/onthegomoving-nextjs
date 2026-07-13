@@ -3996,10 +3996,148 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
       },
       {
         q: `How much does an office relocation cost on the Eastside?`,
-        a: `Office relocation costs on the Eastside vary significantly based on office size, distance, and the scope of services required. As a rough benchmark, a small office (under 20 employees) moving within the Eastside typically costs $3,000 to $8,000 for professional commercial moving services. A mid-size office (20 to 100 employees) typically costs $10,000 to $40,000. These figures cover moving labor and transportation only; IT relocation, new furniture, and tenant improvements are separate costs. Request binding estimates from at least two reputable commercial moving companies to establish an accurate budget for your specific move.`
+        a: `Office relocation costs on the Eastside vary significantly based on office size, distance, and the scope of services required. As a rough benchmark, a small office (under 20 employees) moving within the Eastside typically costs $3,000 to $8,000 for professional commercial moving services. A mid-size office (20 to 100 employees) typically costs $10,000 to $40,000. These figures cover moving labor and transportation only; IT relocation, new furniture, and tenant improvements are separate costs. Request binding estimates from at least two reputable commercial moving companies to establish an accurate budget for your specific move. If you are still evaluating your new space, read our guide on <a href="/what-to-consider-before-signing-office-lease-eastside/">what to consider before signing an office lease on the Eastside</a> before you commit.`
       }
     ],
     relatedService: "Commercial Moving",
     relatedServiceHref: "/commercial-moving/"
   },
+  "what-to-consider-before-signing-office-lease-eastside": {
+    slug: "what-to-consider-before-signing-office-lease-eastside",
+    title: `What to Consider Before Signing a New Office Lease on the Eastside`,
+    metaTitle: `What to Consider Before Signing an Office Lease on the Eastside | On The Go Moving`,
+    metaDescription: `Before you sign an office lease in Bellevue, Redmond, or Kirkland, read this guide. Covers location, lease terms, building infrastructure, moving logistics, and budgeting for your relocation.`,
+    date: `July 13, 2026`,
+    dateISO: `2026-07-13`,
+    category: `Corporate and Office Moving`,
+    readTime: `9 min read`,
+    author: `Jason Sexton`,
+    heroImage: BRAND_IMAGES.crewWrappingOffice,
+    intro: `Signing an office lease is one of the most consequential financial decisions a business makes. On the Eastside, where commercial real estate ranges from Bellevue's premium Class A towers to Redmond's tech campus environment and Kirkland's mixed-use developments, the right space depends on factors that go well beyond square footage and rent. A lease signed without careful analysis can lock your business into a space that does not fit your team, your operations, or your growth trajectory for three to five years. This guide covers what business owners and operations leaders should evaluate before signing, including the moving logistics that most tenants overlook until it is too late. If you have already signed and are now planning the move itself, our <a href="/office-relocation-checklist-lease-to-move-in/">office relocation checklist</a> covers every phase from lease signing through move-in day.`,
+    sections: [
+      {
+        type: "h2",
+        heading: `Location and Accessibility: More Than Just an Address`,
+        body: `Location on the Eastside is not simply about prestige or proximity to downtown Bellevue. It is about how your employees get to work, how your clients find you, and how your operations function day to day. Before signing, map the commute from your employees' home ZIP codes to the new address. A move from Redmond to Bellevue's Spring District might look like a short distance on a map but add 20 minutes to the daily commute for employees coming from Bothell or Woodinville via I-405.
+
+Parking is a critical and often underestimated factor on the Eastside. Downtown Bellevue has the most constrained parking of any Eastside market, with structured parking often costing $150 to $250 per employee per month. Redmond and Kirkland generally offer more surface parking at lower cost, which matters significantly for companies with large in-person teams. Confirm the number of parking spaces included in the lease and the cost of additional spaces before negotiating terms.
+
+Public transit access is increasingly relevant for companies recruiting from Seattle. Buildings near the East Link light rail stations opening along the Bellevue and Redmond corridor will command a premium, but they also expand your recruiting pool to candidates who do not drive. If your team is transit-dependent or you expect to hire from Seattle, proximity to a Link station or a frequent Metro route should weigh heavily in your location decision.
+
+Client accessibility matters differently depending on your business model. If clients visit your office regularly, a Bellevue address carries more prestige and is easier for clients arriving from Seattle or the airport. If your team is primarily remote or client-facing work happens off-site, the prestige premium may not be worth the cost.`
+      },
+      {
+        type: "h2",
+        heading: `Lease Terms to Negotiate Before You Sign`,
+        body: `The standard Eastside office lease is three to five years, with annual rent escalations of 3 to 4 percent built in. These are starting points, not fixed terms. Every element of the lease is negotiable, and the leverage you have is highest before you sign.
+
+The tenant improvement allowance (TI) is one of the most valuable negotiating points in any office lease. TI is money the landlord provides to build out the space to your specifications, covering construction, electrical, HVAC modifications, and sometimes furniture. In a soft leasing market, landlords may offer $50 to $100 per square foot in TI. In a tight market, the allowance may be lower, but it is always worth asking for. Understand exactly what the TI covers and what happens if your buildout costs exceed the allowance.
+
+Rent escalation clauses determine how much your rent increases each year. A 3 percent annual escalation on a 5,000 square foot space at $40 per square foot means your rent grows from $200,000 per year in year one to approximately $232,000 by year five. Model the total cost of the lease over its full term, not just the first-year rate, before comparing options.
+
+Sublease and assignment rights are critical for growing companies and for companies in industries with variable headcount. If your business grows faster than expected, you may need to move before the lease ends. If it contracts, you may need to sublease part of the space. Confirm that your lease allows subleasing and assignment without requiring landlord approval for every transaction, or negotiate for reasonable approval standards.
+
+Early termination clauses provide a safety valve if your business circumstances change dramatically. They typically require 6 to 12 months of notice and a termination fee equal to several months of rent. Having this option is worth the cost of negotiating it into the lease.`
+      },
+      {
+        type: "h2",
+        heading: `The Space Itself: Fit, Function, and Room to Grow`,
+        body: `The current industry standard for office space is 150 to 200 square feet per employee, down from 250 to 300 square feet a decade ago. However, this average masks significant variation. If your team works primarily at desks with monitors and equipment, 150 square feet per person may feel cramped. If your team is frequently out of the office or works in a hybrid model, you may be able to operate comfortably at 100 square feet per assigned seat with additional shared collaboration space.
+
+Conference room availability is a common source of friction in office spaces. A general rule is one conference room per 10 to 15 employees, with a mix of small (4-person), medium (8-person), and large (12 to 20 person) rooms. If the space you are evaluating has fewer conference rooms than this ratio suggests, factor in the cost of adding them during buildout.
+
+Natural light has a measurable effect on employee productivity and satisfaction. Corner offices and perimeter spaces with window lines are more valuable than interior spaces. If the space you are evaluating has a significant proportion of interior square footage without natural light, that is a legitimate factor in the rent negotiation.
+
+Plan for growth when sizing the space. A lease signed for your current headcount may feel too small in 18 months if your business is growing. Negotiate a right of first refusal on adjacent space, or build in a lease expansion option that allows you to take additional square footage at a predetermined rate if it becomes available.`
+      },
+      {
+        type: "h2",
+        heading: `Building Infrastructure: What to Verify Before You Commit`,
+        body: `Internet and telecommunications infrastructure is non-negotiable for most Eastside businesses. Confirm that the building has fiber connectivity from at least two independent providers, which provides redundancy if one carrier has an outage. Ask the landlord for the names of internet service providers with existing infrastructure in the building. Installing new fiber to a building that lacks it can take 60 to 90 days and cost thousands of dollars.
+
+Electrical capacity matters most for companies with server rooms, specialized manufacturing equipment, or high-density workstation setups. A standard office suite is wired for general office use. If your operations require dedicated circuits, uninterruptible power supplies, or higher amperage than a standard buildout provides, confirm the building's electrical capacity and the cost of upgrades before signing.
+
+HVAC performance in Pacific Northwest buildings is increasingly important as summer temperatures rise. Confirm that the HVAC system can maintain comfortable temperatures during the hottest weeks of the year, and ask about the building's cooling capacity specifically. If you are running a server room or any heat-generating equipment, you may need supplemental cooling that requires landlord approval and additional electrical capacity.
+
+Security and after-hours access matter for companies with non-standard hours or high-value equipment. Confirm the building's access control system, whether it supports key fob or mobile access, and what the after-hours access policy is. If your team works evenings or weekends regularly, a building that locks down at 6 PM creates operational friction.`
+      },
+      {
+        type: "h2",
+        heading: `Building Management and Landlord Quality`,
+        body: `The quality of building management affects your day-to-day operations more than most tenants anticipate before signing. A landlord who is slow to respond to maintenance requests, inflexible on building rules, or financially unstable creates ongoing operational problems that no lease term can fully protect you from.
+
+Before signing, speak with two or three current tenants in the building. Ask specifically about maintenance response times, how the landlord handled the COVID-19 period (a revealing test of landlord flexibility), and whether the building rules have created any operational friction. This 30-minute investment can prevent years of frustration.
+
+Review the building rules carefully. Rules governing signage, deliveries, noise levels, and common area use can significantly affect your operations. A company that receives frequent deliveries needs a building with a functional loading dock and clear delivery policies. A company that hosts client events needs a building that allows after-hours access and does not restrict catering or alcohol.
+
+The financial stability of the landlord matters because a landlord in financial distress may defer maintenance, fail to fund tenant improvement allowances, or lose the building to foreclosure. Ask your real estate attorney to review the landlord's ownership structure and any publicly available information about the building's financing before signing a long-term lease.`
+      },
+      {
+        type: "h2",
+        heading: `Moving Logistics to Evaluate Before You Sign`,
+        body: `Most businesses evaluate a new office space entirely on its operational merits and only think about moving logistics after the lease is signed. This is a mistake. The physical characteristics of the building directly affect the cost and complexity of your move, and discovering problems after signing gives you no leverage.
+
+Elevator access is the single most important moving logistics factor in multi-story buildings. Confirm that the building has a freight elevator large enough to accommodate your largest pieces of furniture and equipment. Passenger elevators are rarely adequate for office moves. Ask about the freight elevator dimensions and weight capacity, and confirm that it can be reserved for your move day without competing with other tenants.
+
+Loading dock availability determines whether your moving company can park a full-size truck at the building or must use street parking and carry items a longer distance. Buildings without loading docks, or with loading docks that are shared and require advance reservation, add time and cost to your move. Confirm the loading dock dimensions and whether it can accommodate a 26-foot or 53-foot truck.
+
+Building move-in requirements vary significantly between landlords. Some buildings require a certificate of insurance from your moving company, a refundable damage deposit, and advance scheduling of elevator time. Others have move-in windows that restrict when you can move (typically weekdays during business hours, which may require your business to be offline during the move). Our <a href="/commercial-moving/">commercial moving services</a> include coordination with building management to handle all of these requirements, but it is worth understanding them before you sign so you can plan your move timeline accordingly.
+
+For large office moves on the Eastside, working with a moving company that has experience in the specific buildings you are moving from and to is valuable. Our team has moved offices in and out of most major Eastside office buildings and can advise on building-specific requirements before your move day.`
+      },
+      {
+        type: "h2",
+        heading: `The Full Cost of Moving: What to Budget`,
+        body: `The cost of an office relocation is consistently underestimated because most businesses focus on the moving company's quote and overlook the full scope of related expenses. A realistic relocation budget for an Eastside office move includes several categories beyond the moving labor itself.
+
+Commercial moving costs for a small office (under 20 employees) moving within the Eastside typically range from $3,000 to $8,000 for professional moving services. A mid-size office (20 to 100 employees) typically costs $10,000 to $40,000. These figures cover moving labor and transportation only. Request binding estimates from at least two reputable commercial moving companies, and confirm what is and is not included in the quote.
+
+IT relocation is often the most expensive and most disruptive component of an office move. Disconnecting, transporting, and reconnecting servers, network equipment, and workstations requires specialized IT expertise. Budget for your IT vendor's time separately from the moving company's quote. For companies with significant server infrastructure, IT relocation can cost as much as the physical move itself.
+
+Downtime costs are the hidden expense that most businesses fail to quantify before a move. Every day your team is not fully operational represents lost productivity. A well-planned move minimizes downtime by scheduling the physical move over a weekend and ensuring IT is reconnected and tested before Monday morning. Our <a href="/office-moving/">office moving services</a> are designed around this principle, with weekend and after-hours scheduling available to minimize business disruption.
+
+Tenant improvement costs, furniture replacement, and signage are additional line items that belong in your relocation budget. If the new space requires significant buildout, those costs may be partially offset by the tenant improvement allowance but rarely fully covered. Build a 10 to 15 percent contingency into your total relocation budget to absorb unexpected costs.`
+      },
+      {
+        type: "h2",
+        heading: `Choosing Between Bellevue, Kirkland, and Redmond`,
+        body: `The three primary Eastside office markets each have distinct characteristics that suit different types of businesses. Understanding these differences helps you narrow your search before engaging a commercial real estate broker.
+
+Bellevue is the Eastside's premier office market, with the highest rents, the most Class A inventory, and the strongest prestige signal. Downtown Bellevue is appropriate for companies that need to attract talent from Seattle, host frequent client meetings, or benefit from proximity to Bellevue's financial and legal services ecosystem. Expect to pay $45 to $65 per square foot annually for Class A space in Downtown Bellevue, with parking costs adding significantly to the total occupancy cost.
+
+Redmond is the natural choice for technology companies, particularly those with ties to Microsoft's campus or the broader tech ecosystem in Overlake. Redmond offers a range of office products from Class A campus buildings to more affordable flex space, with generally lower rents than Bellevue and better parking availability. The Willows Road and Overlake corridors are the most active Redmond submarkets for tech tenants.
+
+Kirkland offers a middle ground between Bellevue's premium pricing and Redmond's tech-campus character. Totem Lake and the Yarrow Bay area have seen significant new development, and Kirkland's waterfront location makes it attractive for companies that want a distinctive address without Bellevue's price point. Kirkland is also well-positioned for companies whose employees live in the north Eastside communities of Woodinville, Bothell, and Kenmore.`
+      }
+    ],
+    faqs: [
+      {
+        q: `How much does it cost to move an office in Bellevue or Redmond?`,
+        a: `Office relocation costs on the Eastside vary based on office size, distance, and scope of services. A small office under 20 employees moving within the Eastside typically costs $3,000 to $8,000 for professional commercial moving services. A mid-size office of 20 to 100 employees typically costs $10,000 to $40,000. These figures cover moving labor and transportation only. IT relocation, new furniture, and tenant improvements are separate costs. Request binding estimates from at least two commercial moving companies to establish an accurate budget.`
+      },
+      {
+        q: `What is a tenant improvement allowance and how do I negotiate it?`,
+        a: `A tenant improvement allowance (TI) is money the landlord provides to build out the leased space to your specifications. It typically covers construction, electrical, HVAC modifications, and sometimes furniture. In a competitive leasing market, TI allowances on the Eastside range from $30 to $100 per square foot depending on market conditions and lease length. To negotiate effectively, get a preliminary construction estimate before negotiating the TI, and ask for the allowance to be paid directly to your contractor rather than reimbursed after the fact.`
+      },
+      {
+        q: `How much notice do I need to give before leaving my current office?`,
+        a: `Most commercial leases on the Eastside require 6 to 12 months of written notice before lease expiration. Review your current lease carefully for the notice requirement and the deadline to exercise any renewal options. Missing a notice deadline can result in automatic lease renewal or loss of negotiating leverage. If you are unsure of your notice obligations, have a commercial real estate attorney review your current lease before you begin searching for new space.`
+      },
+      {
+        q: `What questions should I ask a commercial landlord before signing?`,
+        a: `Key questions to ask before signing an Eastside office lease include: What internet service providers have existing fiber in the building? What is the freight elevator capacity and reservation process? What are the building's move-in requirements and fees? What is the landlord's process for handling maintenance requests? Can you speak with two or three current tenants as references? What is the building's parking ratio and cost per space? Are there any planned capital improvements to the building during the lease term? The answers to these questions reveal as much about the landlord as the lease terms do.`
+      },
+      {
+        q: `How do I choose between Bellevue, Kirkland, and Redmond for my office?`,
+        a: `The right Eastside market depends on your business type, team composition, and budget. Bellevue is best for companies that need prestige, client-facing space, and access to Seattle talent via transit. Redmond is the natural fit for technology companies, particularly those with Microsoft connections or Overlake-area talent pools. Kirkland offers a middle ground with competitive rents, strong north-Eastside access, and a distinctive address. Map your employees' home locations before deciding, as commute time is the factor most likely to affect retention after a move.`
+      },
+      {
+        q: `What moving logistics should I verify before signing an office lease?`,
+        a: `Before signing, confirm the freight elevator dimensions and weight capacity, loading dock availability and truck size limits, building move-in requirements (certificate of insurance, damage deposit, elevator reservation process), and move-in window restrictions. Some buildings only allow moves during business hours on weekdays, which requires your business to be offline during the transition. Understanding these constraints before signing gives you the ability to negotiate move-in accommodations and plan your relocation timeline accurately.`
+      }
+    ],
+    relatedService: "Commercial Moving",
+    relatedServiceHref: "/commercial-moving/"
+  },
+
 };

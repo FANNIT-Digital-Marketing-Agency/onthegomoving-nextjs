@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "what-to-consider-before-signing-office-lease-eastside",
+    title: `What to Consider Before Signing a New Office Lease on the Eastside`,
+    date: `July 13, 2026`,
+    category: `Corporate and Office Moving`,
+    excerpt: `Before you sign an Eastside office lease, evaluate location, lease terms, building infrastructure, and moving logistics. A guide for business owners in Bellevue, Redmond, and Kirkland.`,
+    image: BRAND_IMAGES.crewWrappingOffice,
+    readTime: `9 min read`,
+  },
+  {
     slug: "office-relocation-checklist-lease-to-move-in",
     title: `Office Relocation Checklist: From Lease Signing to Move-In Day`,
     date: "July 12, 2026",
