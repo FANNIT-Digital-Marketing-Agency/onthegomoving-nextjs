@@ -10,7 +10,7 @@ export const COMPANY = {
   phone: "(425) 761-8500",
   phoneHref: "tel:+14257618500",
   email: "booking@onthegomoving.com",
-  address: "Redmond, WA 98052",
+  address: "14920 NE 95th St, Redmond, WA 98052",
   license: "HG-064180",
   usdot: "2120054",
   googleReviewCount: 1562,
