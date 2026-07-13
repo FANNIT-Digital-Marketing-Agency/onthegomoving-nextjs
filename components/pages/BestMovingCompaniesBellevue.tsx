@@ -572,7 +572,7 @@ export default function BestMovingCompaniesBellevue() {
               <p className="text-sm text-gray-300 mt-1">4.8 stars · 1,562+ Google reviews · $115–$155/hr · Eastside-based · No hidden fees · Free storage included</p>
             </div>
             <a
-              href="tel:4257618500"
+              href="tel:+14257618500"
               className="shrink-0 bg-[#f5c518] text-[#1e3a0f] font-bold px-6 py-3 rounded-lg hover:bg-yellow-400 transition-colors text-sm"
             >
               Call (425) 761-8500
@@ -794,7 +794,7 @@ export default function BestMovingCompaniesBellevue() {
                 {company.rank === 1 && (
                   <div className="mt-5 flex flex-col sm:flex-row gap-3">
                     <a
-                      href="tel:4257618500"
+                      href="tel:+14257618500"
                       className="flex-1 text-center bg-[#f5c518] text-[#1e3a0f] font-bold py-3 rounded-lg hover:bg-yellow-400 transition-colors text-sm"
                     >
                       Call (425) 761-8500, Free Quote
@@ -929,7 +929,7 @@ export default function BestMovingCompaniesBellevue() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="tel:4257618500"
+              href="tel:+14257618500"
               className="bg-[#f5c518] text-[#1e3a0f] font-bold px-8 py-3 rounded-lg hover:bg-yellow-400 transition-colors"
             >
               Call (425) 761-8500
