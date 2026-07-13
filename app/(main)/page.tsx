@@ -32,7 +32,7 @@ const localBusinessSchema = {
   email: "booking@onthegomoving.com",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "16625 Redmond Way #M365",
+    streetAddress: "14920 NE 95th St",
     addressLocality: "Redmond",
     addressRegion: "WA",
     postalCode: "98052",

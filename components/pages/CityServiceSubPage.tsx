@@ -635,7 +635,7 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
         telephone: cityData?.gbp?.telephone ?? COMPANY.phone,
         address: {
           "@type": "PostalAddress",
-          streetAddress: cityData?.gbp?.streetAddress ?? "16625 Redmond Way #M365",
+          streetAddress: cityData?.gbp?.streetAddress ?? "14920 NE 95th St",
           addressLocality: cityData?.gbp?.addressLocality ?? "Redmond",
           addressRegion: "WA",
           postalCode: cityData?.gbp?.postalCode ?? "98052",

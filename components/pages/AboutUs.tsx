@@ -80,7 +80,7 @@ export default function AboutUs() {
         founder: { "@type": "Person", "@id": "https://onthegomoving.com/jason-sexton/#person", name: "Jason Sexton", url: "https://onthegomoving.com/jason-sexton/" },
         address: {
           "@type": "PostalAddress",
-          streetAddress: "16625 Redmond Way #M365",
+          streetAddress: "14920 NE 95th St",
           addressLocality: "Redmond",
           addressRegion: "WA",
           postalCode: "98052",

@@ -140,7 +140,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
         email: COMPANY.email,
         address: {
           "@type": "PostalAddress",
-          streetAddress: data.gbp?.streetAddress ?? "16625 Redmond Way #M365",
+          streetAddress: data.gbp?.streetAddress ?? "14920 NE 95th St",
           addressLocality: data.gbp?.addressLocality ?? "Redmond",
           addressRegion: "WA",
           postalCode: data.gbp?.postalCode ?? "98052",

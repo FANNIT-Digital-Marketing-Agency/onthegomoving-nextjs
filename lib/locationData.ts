@@ -192,6 +192,16 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       threeBed: "$1,000\u2013$1,700",
       hourlyRate: "$115\u2013$155/hr (2-person crew)",
     },
+    gbp: {
+      streetAddress: "14920 NE 95th St",
+      addressLocality: "Redmond",
+      postalCode: "98052",
+      telephone: "(425) 761-8500",
+      reviewCount: "483",
+      ratingValue: "4.5",
+      latitude: 47.6740,
+      longitude: -122.1215,
+    },
     faqs: [
       { q: "How much does it cost to hire movers in Redmond?", a: "Most local Redmond moves cost $115\u2013$155 per hour for a 2-person crew. Call us about our minimums. A studio apartment typically runs $280\u2013$480. A 2-bedroom home move usually costs $650\u2013$1,100. As a Redmond-based company, we have no travel time surcharge for Redmond moves." },
       { q: "Where is On The Go Moving & Storage located in Redmond?", a: "Our warehouse and main office are on Redmond Way in Redmond, WA 98052. We are centrally located in the city, which means faster response times and no travel surcharges for Redmond moves." },
