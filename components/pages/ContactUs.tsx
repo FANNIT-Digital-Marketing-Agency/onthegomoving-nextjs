@@ -72,13 +72,67 @@ export default function ContactUs() {
                         <div className="font-bold">{COMPANY.email}</div>
                       </div>
                     </a>
-                    <div className="flex items-center gap-3 text-gray-700">
-                      <div className="w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: "#e8f4d0" }}>
-                        <MapPin size={18} style={{ color: "#75aa11" }} />
+                    {/* Locations */}
+                    <div className="pt-1">
+                      <div className="text-xs text-gray-400 font-semibold uppercase tracking-wide mb-3 flex items-center gap-2">
+                        <MapPin size={14} style={{ color: "#75aa11" }} />
+                        Our Locations
                       </div>
-                      <div>
-                        <div className="text-xs text-gray-400 font-semibold uppercase tracking-wide">Address</div>
-                        <div className="font-bold">{COMPANY.address}</div>
+                      <div className="space-y-3">
+                        {/* Redmond — Primary */}
+                        <div className="bg-white rounded-lg p-3 border border-[#75aa11]/30 shadow-sm">
+                          <div className="flex items-start justify-between gap-2">
+                            <div>
+                              <div className="font-bold text-gray-900 text-sm">Redmond <span className="text-[10px] font-semibold text-white bg-[#75aa11] rounded px-1.5 py-0.5 ml-1">HQ</span></div>
+                              <div className="text-sm text-gray-600 mt-0.5">14920 NE 95th St</div>
+                              <div className="text-sm text-gray-600">Redmond, WA 98052</div>
+                            </div>
+                            <a
+                              href="https://maps.google.com/?q=14920+NE+95th+St+Redmond+WA+98052"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-xs text-[#75aa11] hover:underline shrink-0 mt-0.5"
+                            >
+                              Directions
+                            </a>
+                          </div>
+                        </div>
+                        {/* Seattle */}
+                        <div className="bg-white rounded-lg p-3 border border-gray-200 shadow-sm">
+                          <div className="flex items-start justify-between gap-2">
+                            <div>
+                              <div className="font-bold text-gray-900 text-sm">Seattle</div>
+                              <div className="text-sm text-gray-600 mt-0.5">4024 13th Ave W</div>
+                              <div className="text-sm text-gray-600">Seattle, WA 98119</div>
+                            </div>
+                            <a
+                              href="https://maps.google.com/?q=4024+13th+Ave+W+Seattle+WA+98119"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-xs text-[#75aa11] hover:underline shrink-0 mt-0.5"
+                            >
+                              Directions
+                            </a>
+                          </div>
+                        </div>
+                        {/* Bellevue */}
+                        <div className="bg-white rounded-lg p-3 border border-gray-200 shadow-sm">
+                          <div className="flex items-start justify-between gap-2">
+                            <div>
+                              <div className="font-bold text-gray-900 text-sm">Bellevue</div>
+                              <div className="text-sm text-gray-600 mt-0.5">4010 140th Ave SE</div>
+                              <div className="text-sm text-gray-600">Bellevue, WA 98006</div>
+                            </div>
+                            <a
+                              href="https://maps.google.com/?q=4010+140th+Ave+SE+Bellevue+WA+98006"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-xs text-[#75aa11] hover:underline shrink-0 mt-0.5"
+                            >
+                              Directions
+                            </a>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div className="flex items-center gap-3 text-gray-700">
