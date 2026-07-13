@@ -92,7 +92,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       addressLocality: "Seattle",
       postalCode: "98119",
       telephone: "(425) 761-8500",
-      reviewCount: "394",
+      reviewCount: "397",
       ratingValue: "4.8",
       latitude: 47.6505,
       longitude: -122.3793,
