@@ -40,8 +40,8 @@ const localBusinessSchema = {
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 47.674,
-    longitude: -122.1215,
+    latitude: 47.6869,
+    longitude: -122.1414,
   },
   aggregateRating: {
     "@type": "AggregateRating",

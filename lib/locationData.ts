@@ -199,8 +199,8 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       telephone: "(425) 761-8500",
       reviewCount: "483",
       ratingValue: "4.5",
-      latitude: 47.6740,
-      longitude: -122.1215,
+      latitude: 47.6869,
+      longitude: -122.1414,
     },
     faqs: [
       { q: "How much does it cost to hire movers in Redmond?", a: "Most local Redmond moves cost $115\u2013$155 per hour for a 2-person crew. Call us about our minimums. A studio apartment typically runs $280\u2013$480. A 2-bedroom home move usually costs $650\u2013$1,100. As a Redmond-based company, we have no travel time surcharge for Redmond moves." },
