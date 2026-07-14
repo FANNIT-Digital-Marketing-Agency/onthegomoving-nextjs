@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "how-to-choose-moving-company-for-real-estate-clients",
+    title: `How to Choose a Moving Company to Recommend to Your Real Estate Clients`,
+    date: `July 14, 2026`,
+    category: `Real Estate Agent Resources`,
+    excerpt: `A practical guide for Eastside real estate agents. Learn what to look for, what red flags to avoid, and how to build a referral relationship that protects your reputation.`,
+    image: BRAND_IMAGES.customerHandshake,
+    readTime: `8 min read`,
+  },
+  {
     slug: "what-to-consider-before-signing-office-lease-eastside",
     title: `What to Consider Before Signing a New Office Lease on the Eastside`,
     date: `July 13, 2026`,

@@ -3616,7 +3616,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
       {
         type: "h2",
         heading: `Weeks 2 and 3: Pack Non-Essentials and Confirm Your Move`,
-        body: `By week two or three, your inspection is complete, your appraisal is underway, and your loan is in processing. The real estate transaction is moving forward. This is the time to shift more attention to the move itself.\n\n**Begin packing non-essential rooms.** Start with the spaces you use least: guest rooms, storage areas, the garage, seasonal items, books, and decorative objects. If you would rather leave packing to professionals, our <a href="/packing-services/">packing services</a> team can pack an entire home in a single day. Label every box with its contents and destination room. Packing early reduces the stress of the final week dramatically.\n\n**Confirm your moving date.** Once you have a firm closing date from your lender or real estate agent, call your moving company to lock in the date. If your closing date shifts, notify your movers immediately. Good moving companies will do their best to accommodate changes.\n\n**Set up mail forwarding.** The USPS mail forwarding process takes 7 to 10 business days to activate. Submit your change of address request at usps.com at least two weeks before your move date.\n\n**Notify key contacts of your new address.** Start with your employer, bank, insurance providers, subscription services, and any government agencies (IRS, DMV, voter registration). Create a list and work through it systematically.\n\n**Schedule utility transfers.** Contact your current utility providers to schedule disconnection on your move-out date. Contact the utility providers for your new home to schedule connection for the day before or the day of closing. In Bellevue, Kirkland, and Redmond, this typically means Puget Sound Energy for electricity and gas, and the city utilities department for water and sewer.`
+        body: `By week two or three, your inspection is complete, your appraisal is underway, and your loan is in processing. The real estate transaction is moving forward. This is the time to shift more attention to the move itself.\n\n**Begin packing non-essential rooms.** Start with the spaces you use least: guest rooms, storage areas, the garage, seasonal items, books, and decorative objects. If you would rather leave packing to professionals, our <a href="/packing-services/">packing services</a> team can pack an entire home in a single day. Label every box with its contents and destination room. Packing early reduces the stress of the final week dramatically.\n\n**Confirm your moving date.** Once you have a firm closing date from your lender or real estate agent, call your moving company to lock in the date. If your closing date shifts, notify your movers immediately. Good moving companies will do their best to accommodate changes. If your agent has not yet recommended a moving company, our guide on <a href="/how-to-choose-moving-company-for-real-estate-clients/">how to choose a moving company to recommend to real estate clients</a> explains what to look for.\n\n**Set up mail forwarding.** The USPS mail forwarding process takes 7 to 10 business days to activate. Submit your change of address request at usps.com at least two weeks before your move date.\n\n**Notify key contacts of your new address.** Start with your employer, bank, insurance providers, subscription services, and any government agencies (IRS, DMV, voter registration). Create a list and work through it systematically.\n\n**Schedule utility transfers.** Contact your current utility providers to schedule disconnection on your move-out date. Contact the utility providers for your new home to schedule connection for the day before or the day of closing. In Bellevue, Kirkland, and Redmond, this typically means Puget Sound Energy for electricity and gas, and the city utilities department for water and sewer.`
       },
       {
         type: "h2",
@@ -4138,6 +4138,135 @@ Kirkland offers a middle ground between Bellevue's premium pricing and Redmond's
     ],
     relatedService: "Commercial Moving",
     relatedServiceHref: "/commercial-moving/"
+  },
+
+  "how-to-choose-moving-company-for-real-estate-clients": {
+    slug: "how-to-choose-moving-company-for-real-estate-clients",
+    title: `How to Choose a Moving Company to Recommend to Your Real Estate Clients`,
+    metaTitle: `How to Choose a Moving Company to Recommend to Real Estate Clients | On The Go Moving`,
+    metaDescription: `A practical guide for real estate agents on the Eastside. Learn what to look for, what red flags to avoid, and how to build a referral relationship that protects your reputation.`,
+    date: `July 14, 2026`,
+    dateISO: `2026-07-14`,
+    category: `Real Estate Agent Resources`,
+    readTime: `8 min read`,
+    author: `Jason Sexton`,
+    heroImage: BRAND_IMAGES.customerHandshake,
+    intro: `Your reputation is built on every referral you make. When you recommend a moving company to a client and the move goes badly, that reflects on you. When you recommend a moving company and the move goes smoothly, you strengthen the relationship and earn a referral in return. The problem is that most real estate agents on the Eastside either recommend whoever their clients find on Google, or they default to the same company they have always used without ever verifying that the company still meets the standard. This guide gives you a clear framework for evaluating and recommending moving companies to your clients, so every referral you make is one you can stand behind. If you also want a simple script for advising clients on timing, see our <a href="/moving-timeline-cheat-sheet-real-estate-agents/">moving timeline cheat sheet for real estate agents</a>.`,
+    sections: [
+      {
+        type: "h2",
+        heading: `Why Your Moving Company Referral Matters More Than You Think`,
+        body: `The period between offer acceptance and move-in day is the most emotionally charged part of any real estate transaction. Your clients are managing financing contingencies, inspection negotiations, utility transfers, and packing — all while continuing to work and manage their families. The moving company you recommend enters that environment at the most stressful moment of the entire process.
+
+A bad move does not just inconvenience your client. It damages their memory of the entire transaction. Research on customer experience consistently shows that people remember the end of an experience more vividly than the middle, and a move gone wrong is a vivid ending. Clients who have a bad moving experience after a smooth transaction will still blame the overall process, and they will remember who referred the company that caused the problem.
+
+The inverse is equally true. A client who has a smooth, professional move will associate that positive experience with the entire transaction. They will tell their friends, family, and colleagues about their agent, and they will mention the moving company by name. A single great moving referral can generate multiple future clients for you at no cost.
+
+This is why the moving company referral is not a minor courtesy. It is a direct extension of your professional reputation, and it deserves the same due diligence you apply to every other vendor recommendation you make.`
+      },
+      {
+        type: "h2",
+        heading: `What to Look For in a Moving Company`,
+        body: `The most important thing to verify before recommending any moving company is licensing and insurance. In Washington State, all moving companies operating for hire must be registered with the Washington Utilities and Transportation Commission (UTC) and carry cargo liability insurance and released value protection at minimum. You can verify a company's UTC registration at the UTC website. A company that cannot provide its UTC registration number on request should not be on your referral list.
+
+Beyond licensing, look for companies that use their own employees rather than day laborers or subcontractors. The distinction matters because companies that use their own trained employees have direct control over quality, accountability, and claims resolution. When something goes wrong with a subcontracted crew, the chain of responsibility becomes murky and claims take longer to resolve.
+
+Reviews are a useful signal, but you need to read them critically. A company with 400 reviews averaging 4.7 stars is more reliable than a company with 40 reviews averaging 5.0 stars. Look for patterns in the negative reviews rather than isolated incidents. A company that consistently draws complaints about hidden fees, damaged items, or unresponsive claims handling has a systemic problem. A company with occasional complaints that are publicly addressed and resolved is behaving normally.
+
+Transparent pricing is a non-negotiable requirement for any company you recommend. Moving companies should provide written estimates before the move, and those estimates should be binding or clearly explain the conditions under which they can change. A company that refuses to provide a written estimate, or that provides an estimate so low it cannot possibly be accurate, is setting your client up for a bait-and-switch on move day.`
+      },
+      {
+        type: "h2",
+        heading: `Questions to Ask a Moving Company Before Recommending Them`,
+        body: `Before adding any moving company to your referral list, ask these questions directly. The answers tell you as much about the company's culture as they do about its operations.
+
+**Are you licensed and insured in Washington State?** Ask for the UTC registration number and verify it independently. A legitimate company will provide this immediately and without hesitation.
+
+**Do you use your own employees or subcontractors?** The answer should be "our own employees." If the company uses subcontractors, ask how it screens and trains them and what the claims process looks like when a subcontractor damages something.
+
+**What is your claims process if something is damaged?** A professional company has a documented claims process with a specific timeline. Ask how long claims typically take to resolve and what documentation the client needs to provide. Vague answers or promises that "we will take care of it" are red flags.
+
+**Can you provide references from recent clients in this area?** A company with a strong track record on the Eastside should be able to provide two or three recent client references without hesitation. If the company cannot or will not provide references, that is a significant warning sign.
+
+**What is your cancellation and rescheduling policy?** Real estate transactions fall through and closing dates shift. Your clients need to know what happens if they need to reschedule their move. A company with a rigid no-refund policy creates unnecessary risk for clients whose closing dates are uncertain.`
+      },
+      {
+        type: "h2",
+        heading: `Red Flags That Should Remove a Company From Your List`,
+        body: `Some warning signs are serious enough that a single instance should disqualify a company from your referral list entirely.
+
+**Unusually low estimates.** If a company quotes significantly less than every other company your client contacted, the estimate is not accurate. Low estimates are the most common setup for bait-and-switch pricing, where the final bill is substantially higher than the quote. A legitimate company cannot move a 3-bedroom home for $400, and any company claiming otherwise is either planning to add charges on move day or cutting corners that will result in damaged belongings.
+
+**Large upfront deposits.** Reputable moving companies do not require large deposits before the move. A deposit of 10 to 25 percent is within the normal range for reserving a date. A company that requires 50 percent or more upfront is either in financial difficulty or running a scam. The Federal Motor Carrier Safety Administration has documented numerous cases of "hostage load" schemes where movers collect a large deposit, load the truck, and then demand additional payment before unloading.
+
+**No physical address.** Any company you recommend should have a verifiable physical address, not just a phone number and a website. A company without a physical address has no accountability and no assets to pursue if something goes wrong.
+
+**Reluctance to provide written estimates.** This is a legal requirement in Washington State for moves over a certain threshold. A company that resists providing written documentation of its pricing is not operating within the law.
+
+**Patterns of negative reviews about the same issues.** One complaint about a damaged item is normal in any business. Ten complaints about the same issue, such as movers arriving late, adding charges not in the estimate, or failing to respond to damage claims, indicates a systemic problem that will not be an exception for your client.`
+      },
+      {
+        type: "h2",
+        heading: `Building a Referral Relationship That Protects Your Clients`,
+        body: `A referral relationship with a moving company is most valuable when it is formalized rather than casual. A casual referral, where you mention a company name and move on, provides no accountability and no follow-through. A formalized referral relationship, where you have a direct contact at the company and a process for following up, protects your clients and your reputation.
+
+The first step is vetting the company before you refer it. This means calling the company directly, asking the questions listed above, verifying the UTC registration, and ideally speaking with one or two clients who have used the company recently. This one-time investment takes about two hours and protects every future referral you make.
+
+The second step is establishing a direct contact at the company. When you refer a client, you should be able to call or email a specific person, not a general inquiry line. A direct contact ensures your client gets priority scheduling and that any issues are escalated appropriately rather than lost in a general queue.
+
+The third step is following up after the move. A brief text or email to your client asking how the move went takes 30 seconds and communicates that you care about the entire experience, not just the closing. If the move went well, it is an opportunity to ask for a review or referral. If something went wrong, you learn about it before it becomes a negative review and you have the opportunity to help resolve it.`
+      },
+      {
+        type: "h2",
+        heading: `Why On The Go Moving Works with Real Estate Agents`,
+        body: `On The Go Moving has been serving the Eastside since 2010. We are licensed and insured in Washington State, we use our own trained employees on every move, and we provide binding written estimates before every job. Our <a href="/residential-moving/">residential moving services</a> cover everything from studio apartments to large family homes, and our crews are familiar with the specific logistics of Eastside buildings, including condo elevator reservations, gated community access, and the narrow driveways common in older Bellevue and Kirkland neighborhoods.
+
+For real estate agents, we offer a dedicated point of contact for agent referrals, priority scheduling for referred clients, and a direct line for any issues that arise before, during, or after the move. We understand that your reputation is on the line when you refer us, and we treat every referred client as a direct reflection of that relationship.
+
+Our reviews across Google, Yelp, and Angi reflect a consistent pattern: clients who book through agent referrals report higher satisfaction than average, because those clients tend to book earlier, plan better, and have more realistic expectations about the process. Agents who refer us consistently tell us that the referral strengthens their client relationships rather than creating risk.
+
+To set up a referral partnership or get a direct contact for your clients, reach out through our <a href="/real-estate-agents/">real estate agent resources page</a> or call us directly at (425) 761-8500.`
+      },
+      {
+        type: "h2",
+        heading: `How to Introduce On The Go Moving to Your Clients`,
+        body: `The way you introduce a moving company to your client affects how the client receives the referral. A passive mention, such as "you might want to try On The Go Moving," carries less weight than a direct, confident recommendation with context.
+
+A more effective introduction sounds like this: "I have worked with On The Go Moving for several years. They are licensed, insured, and based in Redmond. Their crews know the Eastside well, and they provide written estimates so there are no surprises on move day. I have a direct contact there, so if anything comes up, let me know and I will help you resolve it quickly."
+
+This introduction does four things. It establishes your personal experience with the company. It provides the key verification points the client needs to feel confident. It signals that you have a direct relationship, which implies accountability. And it offers your continued involvement if anything goes wrong, which is the most reassuring thing you can say to a client in the middle of a stressful transaction.
+
+For clients who are moving long distances or have complex needs, such as a senior parent who needs help with downsizing or a business owner who is also relocating an office, mention those specific capabilities. On The Go Moving offers senior moving services, commercial moving, and storage solutions, so the referral can cover the full scope of the client's needs rather than requiring them to find multiple vendors.`
+      }
+    ],
+    faqs: [
+      {
+        q: `What should I tell my clients when recommending a moving company?`,
+        a: `Tell your clients that the company is licensed and insured in Washington State, that it uses its own employees rather than subcontractors, and that it provides written estimates before the move. If you have a direct contact at the company, share that contact information so your client can reference your relationship when they call. A confident, specific recommendation with these details carries significantly more weight than a casual mention of a company name.`
+      },
+      {
+        q: `How do I know if a moving company is licensed in Washington State?`,
+        a: `Washington State moving companies operating for hire must be registered with the Washington Utilities and Transportation Commission (UTC). You can verify a company's registration at the UTC website by searching the company name or registration number. A legitimate company will provide its UTC registration number immediately when asked. If a company cannot or will not provide this number, do not add it to your referral list.`
+      },
+      {
+        q: `What is the difference between a binding and non-binding moving estimate?`,
+        a: `A binding estimate is a guaranteed price for the move as described. The final bill cannot exceed the binding estimate unless the scope of the move changes materially, such as additional items being added or a different destination. A non-binding estimate is an approximation that can change based on actual weight or time. Non-binding estimates are more common for long-distance moves. For local Eastside moves, most reputable companies provide binding or not-to-exceed estimates. Always ask which type of estimate you are receiving and get it in writing.`
+      },
+      {
+        q: `Can I set up a formal referral partnership with On The Go Moving?`,
+        a: `Yes. On The Go Moving works with real estate agents on the Eastside through a direct referral relationship that includes a dedicated point of contact, priority scheduling for referred clients, and direct communication if any issues arise. To set up a referral partnership, visit our real estate agent resources page or call (425) 761-8500 and ask for the agent relations team.`
+      },
+      {
+        q: `What happens if a client has a bad experience with a moving company I recommended?`,
+        a: `If you have a formalized referral relationship with the company, contact your direct liaison immediately and explain the situation. Most reputable companies will prioritize resolving issues for referred clients because they understand the relationship is at stake. If the company is unresponsive or the issue is not resolved satisfactorily, document the experience and remove the company from your referral list. Your clients trust your recommendations, and a company that fails to resolve legitimate complaints is not one you should continue to refer.`
+      },
+      {
+        q: `How far in advance should I tell my clients to book movers?`,
+        a: `On the Eastside, the general rule is to book as soon as the offer is accepted, not after closing. During peak moving season from May through September, reputable companies can be booked 4 to 6 weeks out. Clients who wait until the week before closing often find that their preferred company is unavailable and must choose from whoever has last-minute availability, which is rarely the best option. Advising clients to book immediately after offer acceptance is one of the most practical pieces of advice you can give them.`
+      }
+    ],
+    relatedService: "Real Estate Agent Resources",
+    relatedServiceHref: "/real-estate-agents/"
   },
 
 };
