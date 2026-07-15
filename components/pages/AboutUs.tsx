@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 import { COMPANY } from "@/lib/siteData";
 import { Phone, ArrowRight, CheckCircle, Star, Award, Users, Heart, Shield, Zap } from "lucide-react";
 import { BRAND_IMAGES } from "@/lib/brandImages";
-import { useSEO, MOVING_COMPANY_SCHEMA } from "@/hooks/useSEO";
+import { useSEO } from "@/hooks/useSEO";
 
 const TIMELINE = [
   { year: "2009", event: "Founded in Redmond, WA with one truck and a two-person crew." },
@@ -68,7 +68,6 @@ export default function AboutUs() {
     description: "On The Go Moving & Storage, Seattle's trusted movers since 2009. 25,000+ moves, 1,562 five-star reviews, licensed & insured in WA. Meet our team.",
     canonical: "https://onthegomoving.com/about-us/",
     ogType: "website",
-    schema: [MOVING_COMPANY_SCHEMA],
   });
 
   return (
