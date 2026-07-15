@@ -1,5 +1,110 @@
 import type { Metadata } from "next";
 import "./globals.css";
+
+// ── Server-side sitewide JSON-LD ──────────────────────────────────────────────
+// Rendered directly into the static HTML on every page so Googlebot sees the
+// Organization/LocalBusiness graph without JS execution. Other pages can
+// reference these entities via @id instead of duplicating the full object.
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://onthegomoving.com/#organization",
+  name: "On The Go Moving & Storage",
+  url: "https://onthegomoving.com",
+  logo: "https://onthegomoving.com/wp-content/uploads/2021/01/on-the-go-moving-logo.png",
+  foundingDate: "2009",
+  founder: {
+    "@type": "Person",
+    "@id": "https://onthegomoving.com/jason-sexton/#person",
+    name: "Jason Sexton",
+    url: "https://onthegomoving.com/jason-sexton/",
+  },
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "16625 Redmond Way #M365",
+    addressLocality: "Redmond",
+    addressRegion: "WA",
+    postalCode: "98052",
+    addressCountry: "US",
+  },
+  telephone: "+14257618500",
+  email: "booking@onthegomoving.com",
+  sameAs: [
+    "https://www.facebook.com/onthegomoving",
+    "https://www.instagram.com/onthegomoving",
+    "https://www.yelp.com/biz/on-the-go-moving-and-storage-redmond",
+    "https://share.google/wz8Px2cowaHkprOAM",
+  ],
+  description:
+    "On The Go Moving & Storage is Seattle's most trusted local moving company, serving Seattle, Bellevue, Redmond, Kirkland, and all Eastside suburbs since 2009. Licensed, insured, and rated 4.8 stars across 1,562+ Google reviews.",
+};
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": ["MovingCompany", "LocalBusiness"],
+  "@id": "https://onthegomoving.com/#local-business",
+  name: "On The Go Moving & Storage",
+  url: "https://onthegomoving.com",
+  logo: "https://onthegomoving.com/wp-content/uploads/2021/01/on-the-go-moving-logo.png",
+  image: "https://onthegomoving.com/wp-content/uploads/2021/01/on-the-go-moving-storage-truck.jpg",
+  telephone: "+14257618500",
+  email: "booking@onthegomoving.com",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "16625 Redmond Way #M365",
+    addressLocality: "Redmond",
+    addressRegion: "WA",
+    postalCode: "98052",
+    addressCountry: "US",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 47.674,
+    longitude: -122.1215,
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.8",
+    reviewCount: "1562",
+    bestRating: "5",
+    worstRating: "1",
+  },
+  priceRange: "$$",
+  openingHoursSpecification: [
+    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "07:00", closes: "19:00" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Saturday"], opens: "07:00", closes: "19:00" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Sunday"], opens: "07:00", closes: "19:00" },
+  ],
+  description:
+    "On The Go Moving & Storage is Seattle's most trusted local moving company, serving Seattle, Bellevue, Redmond, Kirkland, and all Eastside suburbs since 2009. Licensed, insured, and rated 4.8 stars across 1,562+ Google reviews.",
+  sameAs: [
+    "https://www.facebook.com/onthegomoving",
+    "https://www.instagram.com/onthegomoving",
+    "https://www.yelp.com/biz/on-the-go-moving-and-storage-redmond",
+    "https://share.google/wz8Px2cowaHkprOAM",
+  ],
+  areaServed: [
+    "Seattle, WA", "Bellevue, WA", "Redmond, WA", "Kirkland, WA",
+    "Issaquah, WA", "Bothell, WA", "Renton, WA", "Shoreline, WA",
+    "Sammamish, WA", "Woodinville, WA", "Kenmore, WA", "Mercer Island, WA",
+    "Lynnwood, WA", "Mukilteo, WA", "Burien, WA", "Tukwila, WA",
+    "Mountlake Terrace, WA", "Lake Forest Park, WA", "Newcastle, WA",
+    "Snoqualmie, WA", "North Bend, WA", "Duvall, WA", "Carnation, WA",
+    "Fall City, WA", "Maple Valley, WA", "Covington, WA",
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Moving Services",
+    itemListElement: [
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Residential Moving" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Commercial Moving" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Packing Services" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Storage Services" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Long Distance Moving" } },
+    ],
+  },
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://onthegomoving.com"),
   title: {
@@ -100,6 +205,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        {/* Sitewide Organization + LocalBusiness JSON-LD */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([organizationSchema, localBusinessSchema]),
+          }}
+        />
       </head>
       <body suppressHydrationWarning>
         {/* Google Tag Manager (noscript) */}
