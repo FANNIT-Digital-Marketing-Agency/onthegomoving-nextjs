@@ -4269,4 +4269,77 @@ For clients who are moving long distances or have complex needs, such as a senio
     relatedServiceHref: "/real-estate-agents/"
   },
 
+  "moving-timeline-cheat-sheet-real-estate-agents": {
+    slug: "moving-timeline-cheat-sheet-real-estate-agents",
+    title: "Moving Timeline Cheat Sheet for Real Estate Agents",
+    metaTitle: "Moving Timeline Cheat Sheet for Real Estate Agents | On The Go Moving",
+    metaDescription: "A practical moving timeline cheat sheet for real estate agents on the Eastside. Share with buyer and seller clients to prevent last-minute moving disasters.",
+    date: "July 15, 2026",
+    dateISO: "2026-07-15",
+    category: "Real Estate Agent Resources",
+    readTime: "7 min read",
+    author: "Jason Sexton",
+    heroImage: `${BRAND_IMAGES.customerHandshake}`,
+    intro: `One of the most practical things a real estate agent can do for a client is tell them exactly when to book movers. Not a vague suggestion. A specific timeline. Clients who wait until after closing to think about moving end up scrambling, overpaying, or settling for whoever has last-minute availability. That is not the experience you want your name attached to. This cheat sheet gives you a shareable, stage-by-stage moving timeline for both buyers and sellers, a breakdown of what moving costs look like on the Eastside, and a simple script for introducing a trusted moving company at the right moment in the transaction. For a deeper look at how to evaluate and recommend moving companies, see our guide on <a href="/how-to-choose-moving-company-for-real-estate-clients/">how to choose a moving company for your real estate clients</a>.`,
+    sections: [
+      {
+        type: "h2",
+        heading: "The Moving Timeline Your Buyer Clients Need to Know",
+        body: `The moment an offer is accepted is the moment a buyer should start thinking about movers. Not after the inspection. Not after the appraisal. Right away. Here is the stage-by-stage timeline to share with every buyer client.\n\nDay of offer acceptance: book movers immediately. Reputable companies on the Eastside fill up 4 to 6 weeks out during peak season. Waiting even a week can mean losing your preferred date.\n\nWeek 1: start packing non-essentials. Books, seasonal items, decorations, and anything that does not get used daily can go into boxes now. Order moving supplies. This is also the time to request mail forwarding from USPS, which takes 7 to 10 business days to activate.\n\nWeeks 2 to 3: confirm the moving date with your moving company once the closing date is set. Schedule utility transfers at the new address to activate on closing day. Arrange for elevator reservations if moving into or out of a condo or high-rise building.\n\nWeek before closing: pack everything except daily essentials. Clothes for the week, toiletries, medications, and important documents should be the last things packed and the first things unpacked. Confirm the moving company has the correct address, access instructions, and contact number.\n\nClosing day: coordinate the key handoff with the move-in timing. In most Eastside transactions, keys are available in the afternoon after funding. Make sure your client knows not to schedule movers for early morning on closing day unless the timing is confirmed with the title company.\n\nMove-in day: advise your client to arrive before the movers to do a final walkthrough of the new home before furniture is placed. This is the time to note any issues that need to be documented.`
+      },
+      {
+        type: "h2",
+        heading: "The Moving Timeline Your Seller Clients Need to Know",
+        body: `Seller timelines are more compressed and more stressful than buyer timelines because sellers are managing a sale, a move, and often a purchase simultaneously. Here is what they need to know.\n\nDay of offer acceptance: book movers immediately. Sellers often assume they have more time than they do. If the closing is 30 days out, the moving window is tight.\n\nDays 1 to 7: schedule any agreed repairs from the inspection negotiation. Begin packing items that are not needed for staging. If the home is still on the market, coordinate with the listing agent before removing furniture that is part of the staged presentation.\n\nDays 7 to 14: notify utilities of the disconnection date. Submit mail forwarding. Update the address with banks, insurance providers, the DMV, and any subscriptions. This is also the time to arrange storage if the seller is moving into temporary housing between the sale and their next home. On The Go Moving offers <a href="/storage-services/">short-term storage solutions</a> that allow clients to move out once and retrieve their belongings when their next home is ready.\n\nDays 14 to 21: confirm the moving date and time with the moving company. Arrange parking permits or elevator reservations at both the origin and destination if applicable. If the seller is moving to a new home simultaneously, coordinate the timing so the old home is vacated before or on the day of closing.\n\n3 to 5 days before closing: complete all agreed repairs. Do a final clean of the property. Confirm that all personal belongings will be removed before the buyer's final walkthrough.\n\nDay before closing: the buyer's agent will schedule a final walkthrough. The home should be empty, clean, and in the condition agreed upon in the contract.\n\nClosing day: hand over all keys, garage openers, and access codes. Confirm that utilities are transferred to the buyer's name effective on the closing date.`
+      },
+      {
+        type: "h2",
+        heading: "The Most Common Moving Mistakes Your Clients Make",
+        body: `After hundreds of moves on the Eastside, the same mistakes come up repeatedly. Sharing this list with clients before they make these errors is one of the most valuable things you can do as their agent.\n\nWaiting until after closing to book movers is the most common and most costly mistake. During peak season, the best companies are booked weeks in advance. Clients who wait end up with limited options and higher prices.\n\nUnderestimating how long packing takes is the second most common issue. A three-bedroom home typically takes 30 to 50 hours to pack properly. Clients who start packing the week before the move are almost always underprepared.\n\nNot forwarding mail early enough causes weeks of missed statements and important documents. USPS mail forwarding takes 7 to 10 business days to activate. Clients should submit the request at least two weeks before the move.\n\nForgetting to transfer utilities is a problem that affects both buyers and sellers. Buyers who do not activate utilities before move-in day arrive to a home with no power or water. Sellers who do not cancel utilities continue to pay for a home they no longer own.\n\nNot reserving elevators in condo buildings is a logistical failure that can derail an entire moving day. Most Eastside condo buildings require elevator reservations for moves, and weekend slots fill up quickly. This is especially important in Bellevue and Seattle high-rises.`
+      },
+      {
+        type: "h2",
+        heading: "What to Tell Clients About Moving Costs on the Eastside",
+        body: `Clients often have no frame of reference for what a professional move costs. Setting realistic expectations early prevents sticker shock and helps clients budget properly.\n\nFor a local move within the Eastside (under 50 miles), a two-bedroom home typically costs between $800 and $1,400 for a standard move with a two-person crew. A three-bedroom home with a full crew runs $1,200 to $2,200 depending on the volume of belongings and the complexity of the move (stairs, long carries, specialty items).\n\nPeak season pricing from May through September runs 15 to 25 percent higher than off-season rates. Clients who can schedule their move on a weekday rather than a weekend will often save $200 to $400.\n\nProfessional packing services add to the cost but dramatically reduce the risk of damage and the stress of the move. For clients who are time-constrained or have high-value items, <a href="/packing-services/">professional packing</a> is worth the investment.\n\nThe value of getting multiple written estimates cannot be overstated. A written binding estimate protects the client from unexpected charges on move day. Reputable companies provide written estimates after an in-home or virtual walkthrough. Clients who accept a quote over the phone without a walkthrough are taking on unnecessary risk.\n\nWhat is not included in a standard moving quote: packing materials (boxes, tape, paper), specialty item handling (pianos, safes, artwork), long-distance carries, and storage. Make sure clients ask specifically about these items when comparing quotes.`
+      },
+      {
+        type: "h2",
+        heading: "A Simple Script for Advising Clients on Moving",
+        body: `Having a consistent script for moving conversations makes you look prepared and helps clients take action at the right time. Here are the key moments and what to say.\n\nWhen the offer is accepted (buyers): "Congratulations — now let's get your moving company booked. The Eastside market is competitive for movers during this time of year, and the best companies fill up fast. I work with On The Go Moving and Storage — they're local, fully licensed, and my clients have had great experiences with them. Want me to connect you?"\n\nWhen the offer is accepted (sellers): "Now that we have an accepted offer, let's start thinking about your move. You have about 30 days, which is enough time if we start now. I'd recommend booking your movers this week. If you need storage between this home and your next one, On The Go Moving can handle both the move and the storage so you only have to move your things once."\n\nHow to introduce On The Go Moving as a trusted referral: keep it simple and personal. "I've worked with On The Go Moving on several transactions. They're based in Redmond, they serve the whole Eastside, and they're the kind of company that shows up on time and takes care of your stuff. You can reach them at (425) 761-8500 or get a quote at onthegomoving.com." A personal introduction carries more weight than a generic recommendation.`
+      },
+      {
+        type: "h2",
+        heading: "Shareable Resources for Your Clients",
+        body: `These articles are written specifically for the clients you work with every day. Share them directly or include them in your client onboarding materials.\n\nFor buyer clients: the <a href="/moving-timeline-for-home-buyers/">moving timeline for home buyers</a> walks through every stage of the process from offer acceptance to move-in day. It is written in plain language and covers the questions buyers ask most often.\n\nFor seller clients: the <a href="/moving-out-after-selling-your-home/">complete checklist for moving out after selling your home</a> covers everything from scheduling repairs to handing over keys. It is particularly useful for clients who are selling and buying simultaneously.\n\nFor clients who need storage: the article on what to do with your belongings when selling a home covers storage options, staging decisions, and how to coordinate a move when the timing between sale and purchase does not align perfectly.\n\nFor clients relocating for work: the renting vs. buying guide for the Eastside helps corporate relocators and tech workers understand the financial tradeoffs in the current market.\n\nOn The Go Moving contact information for referrals: phone (425) 761-8500, website onthegomoving.com, service area covers Seattle, Bellevue, Redmond, Kirkland, Sammamish, and the full Eastside. Fully licensed and insured. Available for residential and commercial moves.`
+      }
+    ],
+    faqs: [
+      {
+        q: "When should I tell my buyer clients to book movers?",
+        a: "The moment the offer is accepted. Not after the inspection, not after the appraisal — right away. On the Eastside during peak season from May through September, reputable moving companies book up 4 to 6 weeks in advance. A client who waits until two weeks before closing will have limited options and will likely pay more. Making this recommendation immediately after offer acceptance is one of the most practical things you can do for your clients."
+      },
+      {
+        q: "What is the most important moving advice I can give a first-time buyer?",
+        a: "Start earlier than you think you need to. First-time buyers consistently underestimate how long packing takes and how quickly moving company availability disappears. The second most important piece of advice is to get a written binding estimate rather than a verbal quote. Written estimates protect clients from unexpected charges on moving day and make it easy to compare companies fairly."
+      },
+      {
+        q: "How do I handle a client whose closing date shifts after they have booked movers?",
+        a: "Call the moving company as soon as the date change is confirmed. Most reputable companies will work with clients to reschedule, especially if there is adequate notice. On The Go Moving has handled many date changes tied to closing delays and can usually accommodate a new date within a reasonable window. The key is communicating early — last-minute date changes within 48 hours of the move are harder to accommodate and may incur fees."
+      },
+      {
+        q: "What should sellers do if they need storage between their sale and their next home?",
+        a: "The cleanest solution is to use a moving company that offers integrated storage, so the client moves out once and retrieves their belongings when the next home is ready. On The Go Moving offers this service — the crew moves everything out of the sold home, stores it at their Redmond facility, and delivers it to the new home when the client is ready. This eliminates the need for a second move and keeps the process simple. It is particularly useful for clients who are selling before they have identified their next home."
+      },
+      {
+        q: "How do I refer clients to On The Go Moving?",
+        a: "The most effective referral is a personal introduction. Tell your client specifically why you recommend them — they are local, licensed, insured, and you have seen them perform well on other transactions. Give the client the phone number (425) 761-8500 and the website onthegomoving.com. If you want to set up a more formal referral arrangement, contact On The Go Moving directly through the real estate agent resources page at onthegomoving.com/real-estate-agents/."
+      },
+      {
+        q: "Do moving costs vary by season on the Eastside?",
+        a: "Yes, significantly. Peak season from May through September sees rates 15 to 25 percent higher than the off-season, and availability is much tighter. Clients who have flexibility in their closing date and can move in October through April will generally pay less and have more options. If a client must move during peak season, booking early — ideally 4 to 6 weeks in advance — is the best way to secure a good rate and a reputable company."
+      }
+    ],
+    relatedService: "Real Estate Agent Resources",
+    relatedServiceHref: "/real-estate-agents/"
+  },
 };

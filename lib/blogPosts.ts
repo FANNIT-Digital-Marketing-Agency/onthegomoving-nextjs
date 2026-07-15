@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "moving-timeline-cheat-sheet-real-estate-agents",
+    title: "Moving Timeline Cheat Sheet for Real Estate Agents",
+    date: "July 15, 2026",
+    category: "Real Estate Agent Resources",
+    excerpt: "A stage-by-stage moving timeline for buyer and seller clients, common mistakes to prevent, Eastside cost ranges, and a simple script for introducing On The Go Moving as a trusted referral.",
+    image: BRAND_IMAGES.customerHandshake,
+    readTime: "7 min read"
+  },
+  {
     slug: "how-to-choose-moving-company-for-real-estate-clients",
     title: `How to Choose a Moving Company to Recommend to Your Real Estate Clients`,
     date: `July 14, 2026`,
