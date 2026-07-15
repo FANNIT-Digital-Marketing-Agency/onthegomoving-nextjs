@@ -49,8 +49,8 @@ const BENEFITS = [
   {
     icon: Award,
     color: "bg-purple-50 text-purple-600",
-    title: "1 Free Month of Storage",
-    desc: "We offer secure climate-controlled vault storage at our Redmond facility, a convenient option for your clients during transitions.",
+    title: "Secure Vault Storage",
+    desc: "We offer secure vault storage at our Redmond facility starting at $100/month — a convenient option for your clients during transitions.",
   },
 ];
 

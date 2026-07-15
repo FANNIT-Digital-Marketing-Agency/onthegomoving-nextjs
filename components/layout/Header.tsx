@@ -274,7 +274,7 @@ export default function Header() {
                 Get a free quote in under 60 seconds
               </p>
               <p className="text-white/70 text-xs leading-relaxed">
-                No obligation. Flat-rate pricing. 1 free month of storage included.
+                No obligation. Flat-rate pricing. Secure vault storage available.
               </p>
               <a
                 href="/contact-us/"

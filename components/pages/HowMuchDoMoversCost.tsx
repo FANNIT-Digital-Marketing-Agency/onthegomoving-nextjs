@@ -79,8 +79,8 @@ const FAQS = [
     a: "Moving a 2-bedroom apartment in Seattle or the Eastside typically costs $450–$900 with On The Go Moving. We recommend a 3-person crew for most 1–2 bedroom apartments because the extra mover reduces total hours and often results in a lower final bill than a 2-person crew.",
   },
   {
-    q: "Do you offer free storage with a move?",
-    a: "Yes. On The Go Moving offers secure vault storage at our Redmond, WA facility. This is particularly useful for apartment renters with a gap between move-out and move-in dates.",
+    q: "Do you offer storage with a move?",
+    a: "Yes. On The Go Moving offers secure vault storage at our Redmond, WA facility starting at $100/month per vault. This is particularly useful for apartment renters with a gap between move-out and move-in dates. Contact us for current pricing.",
   },
   {
     q: "How far in advance should I book movers?",

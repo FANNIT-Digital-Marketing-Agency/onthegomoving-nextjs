@@ -35,8 +35,8 @@ const FAQS = [
     answer: "A full-service residential move with On The Go Moving includes: a trained 2–4 person crew, a moving truck, all moving equipment (dollies, furniture pads, straps, floor runners), careful loading and unloading, and placement of furniture in your new home. Packing and unpacking services are available as an add-on.",
   },
   {
-    question: "Do you offer free storage with a residential move?",
-    answer: "We offer secure climate-controlled vault storage at our Redmond, WA facility. This is especially useful if there's a gap between your move-out and move-in dates. Contact us for current pricing.",
+    question: "Do you offer storage with a residential move?",
+    answer: "Yes. We offer secure vault storage at our Redmond, WA facility starting at $100/month per vault. This is especially useful if there's a gap between your move-out and move-in dates. Oversized items are $80/month. Contact us for current pricing.",
   },
   {
     question: "Are your movers licensed and insured?",
@@ -278,8 +278,7 @@ export default function ResidentialMoving() {
                 <span className="text-white/30 mx-1">·</span>
                 <Shield size={12} className="text-[#75aa11] flex-shrink-0" />
                 <span>Licensed &amp; Insured</span>
-                <span className="text-white/30 mx-1 hidden sm:inline">·</span>
-                <span className="hidden sm:inline">1 Mo. Free Storage</span>
+
               </div>
               {/* Mobile: phone + form inline in hero */}
               <div className="lg:hidden space-y-4">

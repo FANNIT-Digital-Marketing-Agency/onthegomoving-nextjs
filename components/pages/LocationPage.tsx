@@ -313,7 +313,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
               "USDOT# 2120054",
               "Fully Insured",
               `Serving ${data.city} Since 2009`,
-              "1 Month Free Storage With Any Move",
+              "Secure Vault Storage Available",
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-brand-green-light" />

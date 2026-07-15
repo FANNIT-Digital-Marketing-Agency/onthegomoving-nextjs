@@ -336,9 +336,9 @@ export const FAQS = [
       "We recommend booking at least 2–4 weeks in advance, especially for summer moves (May–September) when demand is highest. However, we do our best to accommodate last-minute moves, call us and we'll check availability.",
   },
   {
-    question: "Do you offer free storage with a move?",
+    question: "Do you offer storage with a move?",
     answer:
-      "Yes! We offer secure vault storage at our Redmond, WA facility. Our team handles all loading and retrieval, it's a full-service solution, not a self-serve storage unit. Contact us for current storage pricing and availability.",
+      "Yes. We offer secure vault storage at our Redmond, WA facility starting at $100/month per vault. Our team handles all loading and retrieval — it's a full-service solution, not a self-serve storage unit. Contact us for current pricing and availability.",
   },
   {
     question: "Are you licensed and insured?",

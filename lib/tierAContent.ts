@@ -373,7 +373,7 @@ export const TIER_A_CONTENT: Record<string, TierAEntry> = {
         a: "Yes. Home renovation storage is one of our most common requests from Seattle homeowners in Magnolia, Madison Park, and Queen Anne. We can vault your furniture room by room, clearing the kitchen first while you renovate, then returning it before moving on to the next room. We provide a detailed inventory of every item in storage so you know exactly what's in your vault.",
       },
     ],
-    pricingNote: "Seattle storage rates: $95–$145/month per vault depending on size. Contact us for current pricing.",
+    pricingNote: "Seattle storage rates: $100–$145/month per vault. Oversized items: $80/month. Short-term storage: $200/day. Contact us for current pricing.",
   },
 
   "bellevue-storage": {
@@ -390,7 +390,7 @@ export const TIER_A_CONTENT: Record<string, TierAEntry> = {
         a: "Yes. We provide a written inventory of every item loaded into your vault, including photos of high-value items. This inventory is your reference for insurance purposes and for scheduling returns. When you're ready to retrieve specific items, you can request individual pieces from your vault, we'll retrieve them and deliver them to your Bellevue address.",
       },
     ],
-    pricingNote: "Bellevue storage rates: $90–$140/month per vault. Contact us for current pricing.",
+    pricingNote: "Bellevue storage rates: $100–$140/month per vault. Oversized items: $80/month. Short-term storage: $200/day. Contact us for current pricing.",
   },
 
   "redmond-storage": {
@@ -407,7 +407,7 @@ export const TIER_A_CONTENT: Record<string, TierAEntry> = {
         a: "Yes. Redmond customers can schedule a facility visit to access their vault by appointment. We'll have your vault staged and accessible within 24 hours of your request. If you need specific items returned to your Redmond address, we can deliver individual pieces from your vault, you don't have to retrieve everything at once.",
       },
     ],
-    pricingNote: "Redmond storage rates: $85–$135/month per vault. Contact us for current pricing. No travel surcharge, facility is on-site.",
+    pricingNote: "Redmond storage rates: $100–$135/month per vault. Oversized items: $80/month. Short-term storage: $200/day. No travel surcharge, facility is on-site. Contact us for current pricing.",
   },
 
   "kirkland-storage": {
@@ -424,7 +424,7 @@ export const TIER_A_CONTENT: Record<string, TierAEntry> = {
         a: "Yes. Short-term vault storage between leases is one of our most common requests from Kirkland apartment residents. We can vault your belongings from your old apartment and hold them for 30–90 days while you're in temporary housing, then deliver to your new address when you're ready. We'll coordinate elevator access at both buildings and handle all the logistics.",
       },
     ],
-    pricingNote: "Kirkland storage rates: $90–$140/month per vault. Contact us for current pricing.",
+    pricingNote: "Kirkland storage rates: $100–$140/month per vault. Oversized items: $80/month. Short-term storage: $200/day. Contact us for current pricing.",
   },
 
   "sammamish-storage": {
@@ -441,7 +441,7 @@ export const TIER_A_CONTENT: Record<string, TierAEntry> = {
         a: "Yes. We offer long-term vault storage with no minimum commitment beyond the first month. Military families receive priority scheduling for both vault pickup and delivery. We can coordinate with a family member or designated contact for access to the vault if needed during the deployment period. Our Redmond facility is secure, climate-controlled, and monitored 24/7.",
       },
     ],
-    pricingNote: "Sammamish storage rates: $90–$145/month per vault. Contact us for current pricing. Multi-vault discounts available.",
+    pricingNote: "Sammamish storage rates: $100–$145/month per vault. Oversized items: $80/month. Short-term storage: $200/day. Multi-vault discounts available. Contact us for current pricing.",
   },
 
   // ──────────────────────────────────────────────────────────────────────────
@@ -4210,7 +4210,7 @@ export const TIER_A_CONTENT: Record<string, TierAEntry> = {
         a: "Yes. We work with Ballard homeowners and real estate agents to clear furniture for home staging. We store your items during the sale and deliver to your new home after closing. Short-term rates available.",
       },
     ],
-    pricingNote: "Ballard storage starts at $95/month for a 5×5 unit and $195/month for a 10×10 unit at our Redmond facility. Pick-up and delivery from Ballard is available. Month-to-month contracts with no long-term commitment.",
+    pricingNote: "Ballard storage vault rental starts at $100/month per vault at our Redmond facility. Oversized items: $80/month. Short-term storage: $200/day. Pick-up and delivery from Ballard available. Month-to-month contracts with no long-term commitment.",
   },
 
   "ballard-senior": {
@@ -4384,7 +4384,7 @@ export const TIER_A_CONTENT: Record<string, TierAEntry> = {
         a: "Yes. We offer month-to-month storage with no minimum commitment beyond 30 days. This is ideal for Capitol Hill renters who need to vacate before their new place is ready.",
       },
     ],
-    pricingNote: "Capitol Hill storage starts at $95/month for a 5×5 unit and $195/month for a 10×10 unit at our Redmond facility. Pick-up and delivery from Capitol Hill available. Month-to-month contracts with no long-term commitment.",
+    pricingNote: "Capitol Hill storage vault rental starts at $100/month per vault at our Redmond facility. Oversized items: $80/month. Short-term storage: $200/day. Pick-up and delivery from Capitol Hill available. Month-to-month contracts with no long-term commitment.",
   },
 
   "capitol-hill-senior": {
@@ -4558,7 +4558,7 @@ export const TIER_A_CONTENT: Record<string, TierAEntry> = {
         a: "Yes. We work with Queen Anne homeowners and real estate agents to clear furniture for home staging. Short-term rates available. We deliver to your new home after closing.",
       },
     ],
-    pricingNote: "Queen Anne storage starts at $95/month for a 5×5 unit and $195/month for a 10×10 unit at our Redmond facility. Pick-up and delivery from Queen Anne available. Month-to-month contracts.",
+    pricingNote: "Queen Anne storage vault rental starts at $100/month per vault at our Redmond facility. Oversized items: $80/month. Short-term storage: $200/day. Pick-up and delivery from Queen Anne available. Month-to-month contracts with no long-term commitment.",
   },
 
   "queen-anne-senior": {
@@ -4732,7 +4732,7 @@ export const TIER_A_CONTENT: Record<string, TierAEntry> = {
         a: "Yes. We offer month-to-month storage with no minimum commitment beyond 30 days. Ideal for Fremont renters who need to vacate before their new place is ready.",
       },
     ],
-    pricingNote: "Fremont storage starts at $95/month for a 5×5 unit and $195/month for a 10×10 unit at our Redmond facility. Pick-up and delivery from Fremont available. Month-to-month contracts.",
+    pricingNote: "Fremont storage vault rental starts at $100/month per vault at our Redmond facility. Oversized items: $80/month. Short-term storage: $200/day. Pick-up and delivery from Fremont available. Month-to-month contracts with no long-term commitment.",
   },
 
   "fremont-senior": {
@@ -4906,7 +4906,7 @@ export const TIER_A_CONTENT: Record<string, TierAEntry> = {
         a: "Yes. We offer seasonal storage for outdoor furniture, boats, and equipment for Juanita's waterfront homeowners. Month-to-month contracts with flexible pickup and delivery.",
       },
     ],
-    pricingNote: "Juanita storage starts at $95/month for a 5×5 unit and $195/month for a 10×10 unit at our Redmond facility. Pick-up and delivery from Juanita available. Month-to-month contracts.",
+    pricingNote: "Juanita storage vault rental starts at $100/month per vault at our Redmond facility. Oversized items: $80/month. Short-term storage: $200/day. Pick-up and delivery from Juanita available. Month-to-month contracts with no long-term commitment.",
   },
 
   "juanita-senior": {
@@ -5080,7 +5080,7 @@ export const TIER_A_CONTENT: Record<string, TierAEntry> = {
         a: "Storage starts at $95/month for a 5×5 unit and $195/month for a 10×10 unit. Pickup from Olympia and delivery to your new location are priced separately based on distance.",
       },
     ],
-    pricingNote: "Olympia storage starts at $95/month for a 5×5 unit and $195/month for a 10×10 unit at our Redmond facility. Pickup from Olympia and delivery to your new location priced separately. Month-to-month contracts.",
+    pricingNote: "Olympia storage vault rental starts at $100/month per vault at our Redmond facility. Oversized items: $80/month. Short-term storage: $200/day. Pickup from Olympia and delivery to your new location priced separately. Month-to-month contracts.",
   },
 
   "olympia-senior": {

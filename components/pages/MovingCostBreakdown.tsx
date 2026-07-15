@@ -86,7 +86,7 @@ const FAQS = [
   },
   {
     q: "Do you offer storage?",
-    a: "Yes. If things get overwhelming, we can load items onto our truck, store them in our warehouse (often with 30 days free storage on qualifying moves), and bring them to you later.",
+    a: "Yes. We offer secure vault storage at our Redmond, WA facility starting at $100/month per vault. If things get overwhelming, we can load items onto our truck, store them in our warehouse, and bring them to you later.",
   },
   {
     q: "Is labor-only available?",

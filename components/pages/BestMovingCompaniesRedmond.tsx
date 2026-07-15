@@ -565,7 +565,7 @@ export default function BestMovingCompaniesRedmond() {
           <div className="mt-5 p-4 bg-[#1e3a0f] text-white rounded-xl flex flex-col sm:flex-row gap-4 items-start sm:items-center">
             <div className="flex-1">
               <p className="font-bold text-lg">Our #1 Pick: On The Go Moving & Storage</p>
-              <p className="text-sm text-gray-300 mt-1">4.8 stars · 1,562+ Google reviews · $115–$155/hr · Based in Redmond · No hidden fees · Free storage included</p>
+              <p className="text-sm text-gray-300 mt-1">4.8 stars · 1,562+ Google reviews · $115–$155/hr · Based in Redmond · No hidden fees · Vault storage available</p>
             </div>
             <a
               href="tel:4257618500"
