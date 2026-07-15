@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import QuoteForm from "@/components/QuoteForm";
 import { COMPANY } from "@/lib/siteData";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
-import { useSEO, CONTACT_POINT_SCHEMA, MOVING_COMPANY_SCHEMA } from "@/hooks/useSEO";
+import { useSEO } from "@/hooks/useSEO";
 
 export default function ContactUs() {
   useSEO({
@@ -14,8 +14,6 @@ export default function ContactUs() {
     canonical: "https://onthegomoving.com/contact-us/",
     ogType: "website",
     schema: [
-      CONTACT_POINT_SCHEMA,
-      MOVING_COMPANY_SCHEMA,
       {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
