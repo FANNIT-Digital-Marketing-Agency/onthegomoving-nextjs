@@ -5,28 +5,19 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { FAQS, COMPANY } from "@/lib/siteData";
 import { ChevronDown, ChevronUp, Phone } from "lucide-react";
-import { useSEO, buildFAQSchema, MOVING_COMPANY_SCHEMA } from "@/hooks/useSEO";
+import { useSEO, MOVING_COMPANY_SCHEMA } from "@/hooks/useSEO";
 
 export default function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
+  // FAQPage and BreadcrumbList schema are rendered server-side in
+  // app/(main)/faq/page.tsx so they're present in the static HTML.
   useSEO({
     title: "Moving FAQ | On The Go Moving & Storage",
     description: "Answers to the most common questions about hiring movers in Seattle. Pricing, scheduling, licensing, what's included, storage, and more from On The Go Moving.",
     canonical: "https://onthegomoving.com/faq/",
     ogType: "website",
-    schema: [
-      buildFAQSchema(FAQS),
-      MOVING_COMPANY_SCHEMA,
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://onthegomoving.com/" },
-          { "@type": "ListItem", position: 2, name: "FAQ", item: "https://onthegomoving.com/faq/" },
-        ],
-      },
-    ],
+    schema: MOVING_COMPANY_SCHEMA,
   });
 
   return (
