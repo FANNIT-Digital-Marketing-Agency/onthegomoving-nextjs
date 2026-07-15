@@ -68,43 +68,7 @@ export default function AboutUs() {
     description: "On The Go Moving & Storage, Seattle's trusted movers since 2009. 25,000+ moves, 1,562 five-star reviews, licensed & insured in WA. Meet our team.",
     canonical: "https://onthegomoving.com/about-us/",
     ogType: "website",
-    schema: [
-      MOVING_COMPANY_SCHEMA,
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        name: "On The Go Moving & Storage",
-        url: "https://onthegomoving.com",
-        logo: "https://onthegomoving.com/wp-content/uploads/2021/01/on-the-go-moving-logo.png",
-        foundingDate: "2009",
-        founder: { "@type": "Person", "@id": "https://onthegomoving.com/jason-sexton/#person", name: "Jason Sexton", url: "https://onthegomoving.com/jason-sexton/" },
-        address: {
-          "@type": "PostalAddress",
-          streetAddress: "14920 NE 95th St",
-          addressLocality: "Redmond",
-          addressRegion: "WA",
-          postalCode: "98052",
-          addressCountry: "US",
-        },
-        telephone: "+14257618500",
-        email: "booking@onthegomoving.com",
-        sameAs: [
-          "https://www.facebook.com/onthegomoving",
-          "https://www.instagram.com/onthegomoving",
-          "https://www.yelp.com/biz/on-the-go-moving-and-storage-redmond",
-        ],
-        numberOfEmployees: { "@type": "QuantitativeValue", value: 30 },
-        description: "On The Go Moving & Storage is a licensed and insured moving company serving Seattle, Bellevue, Redmond, and the Greater Eastside since 2009. Over 25,000 moves completed.",
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://onthegomoving.com/" },
-          { "@type": "ListItem", position: 2, name: "About Us", item: "https://onthegomoving.com/about-us/" },
-        ],
-      },
-    ],
+    schema: [MOVING_COMPANY_SCHEMA],
   });
 
   return (
