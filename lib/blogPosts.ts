@@ -21,7 +21,7 @@ export const BLOG_POSTS: BlogIndexPost[] = [
     date: "July 15, 2026",
     category: "Real Estate Agent Resources",
     excerpt: "A stage-by-stage moving timeline for buyer and seller clients, common mistakes to prevent, Eastside cost ranges, and a simple script for introducing On The Go Moving as a trusted referral.",
-    image: BRAND_IMAGES.customerHandshake,
+    image: BRAND_IMAGES.truckBellevueSkyline,
     readTime: "7 min read"
   },
   {
@@ -39,7 +39,7 @@ export const BLOG_POSTS: BlogIndexPost[] = [
     date: `July 13, 2026`,
     category: `Corporate and Office Moving`,
     excerpt: `Before you sign an Eastside office lease, evaluate location, lease terms, building infrastructure, and moving logistics. A guide for business owners in Bellevue, Redmond, and Kirkland.`,
-    image: BRAND_IMAGES.crewWrappingOffice,
+    image: BRAND_IMAGES.officeMoveAction,
     readTime: `9 min read`,
   },
   {

@@ -4012,7 +4012,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     category: `Corporate and Office Moving`,
     readTime: `9 min read`,
     author: `Jason Sexton`,
-    heroImage: BRAND_IMAGES.crewWrappingOffice,
+    heroImage: BRAND_IMAGES.officeMoveAction,
     intro: `Signing an office lease is one of the most consequential financial decisions a business makes. On the Eastside, where commercial real estate ranges from Bellevue's premium Class A towers to Redmond's tech campus environment and Kirkland's mixed-use developments, the right space depends on factors that go well beyond square footage and rent. A lease signed without careful analysis can lock your business into a space that does not fit your team, your operations, or your growth trajectory for three to five years. This guide covers what business owners and operations leaders should evaluate before signing, including the moving logistics that most tenants overlook until it is too late. If you have already signed and are now planning the move itself, our <a href="/office-relocation-checklist-lease-to-move-in/">office relocation checklist</a> covers every phase from lease signing through move-in day.`,
     sections: [
       {
@@ -4279,7 +4279,7 @@ For clients who are moving long distances or have complex needs, such as a senio
     category: "Real Estate Agent Resources",
     readTime: "7 min read",
     author: "Jason Sexton",
-    heroImage: `${BRAND_IMAGES.customerHandshake}`,
+    heroImage: BRAND_IMAGES.truckBellevueSkyline,
     intro: `One of the most practical things a real estate agent can do for a client is tell them exactly when to book movers. Not a vague suggestion. A specific timeline. Clients who wait until after closing to think about moving end up scrambling, overpaying, or settling for whoever has last-minute availability. That is not the experience you want your name attached to. This cheat sheet gives you a shareable, stage-by-stage moving timeline for both buyers and sellers, a breakdown of what moving costs look like on the Eastside, and a simple script for introducing a trusted moving company at the right moment in the transaction. For a deeper look at how to evaluate and recommend moving companies, see our guide on <a href="/how-to-choose-moving-company-for-real-estate-clients/">how to choose a moving company for your real estate clients</a>.`,
     sections: [
       {
