@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "first-time-homebuyer-guide-eastside-seattle",
+    title: "First-Time Homebuyer Guide for the Eastside: What to Know Before You Buy",
+    date: "July 16, 2026",
+    category: "Home Buying",
+    excerpt: "A step-by-step guide for first-time buyers in Bellevue, Kirkland, Redmond, and Sammamish. Covers pre-approval, affordability, offers, inspections, closing, and moving in.",
+    image: BRAND_IMAGES.truckResidentialBuilding,
+    readTime: "9 min read"
+  },
+  {
     slug: "moving-timeline-cheat-sheet-real-estate-agents",
     title: "Moving Timeline Cheat Sheet for Real Estate Agents",
     date: "July 15, 2026",
