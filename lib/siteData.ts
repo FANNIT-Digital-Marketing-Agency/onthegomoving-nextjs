@@ -355,4 +355,9 @@ export const FAQS = [
     answer:
       "We serve the entire Greater Seattle area including Seattle, Bellevue, Redmond, Kirkland, Issaquah, Bothell, Renton, Shoreline, Sammamish, Woodinville, Kenmore, Mercer Island, Lynnwood, Everett, and surrounding communities.",
   },
+  {
+    question: "How much do movers charge per hour in Seattle?",
+    answer:
+      "Hourly rates for professional movers in Seattle typically range from $100 to $200 per hour, depending on the size of your move and the number of movers required. Most moving companies in the area charge based on a two or three-person crew, with two-person teams generally running between $100 and $150 per hour, while larger three-person crews often fall in the $150 to $200 range. Keep in mind that Seattle's high cost of living, dense urban environment, and factors like traffic, parking challenges, and building elevator reservations can all influence the final price you pay. Beyond the base hourly rate, it's important to understand what's included in the quote — some companies charge separately for materials like packing supplies, moving blankets, and shrink wrap, while others bundle these into their pricing. There may also be travel time fees, fuel surcharges, or minimum hour requirements (commonly two to three hours) that affect your total cost, and moves involving specialty items like pianos, antiques, or large appliances may carry additional charges. Working with a reputable, fully licensed and insured moving company like On The Go Moving & Storage — with transparent, upfront pricing and a detailed, itemized estimate before your move date — is the best way to avoid hidden fees and budget accurately.",
+  },
 ];
