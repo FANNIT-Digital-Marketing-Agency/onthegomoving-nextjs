@@ -73,6 +73,7 @@ export default function AboutUs() {
       {
         "@context": "https://schema.org",
         "@type": "Organization",
+        "@id": "https://onthegomoving.com/#organization",
         name: "On The Go Moving & Storage",
         url: "https://onthegomoving.com",
         logo: "https://onthegomoving.com/wp-content/uploads/2021/01/on-the-go-moving-logo.png",
@@ -103,6 +104,24 @@ export default function AboutUs() {
           { "@type": "ListItem", position: 1, name: "Home", item: "https://onthegomoving.com/" },
           { "@type": "ListItem", position: 2, name: "About Us", item: "https://onthegomoving.com/about-us/" },
         ],
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        name: "About On The Go Moving & Storage",
+        url: "https://onthegomoving.com/about-us/",
+        description: "On The Go Moving & Storage is a locally owned and operated moving company headquartered in Redmond, WA, serving Seattle and the Eastside since 2009. Over 25,000 moves completed and 1,562+ five-star Google reviews.",
+        mainEntity: { "@id": "https://onthegomoving.com/#organization" },
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://onthegomoving.com/jason-sexton/#person",
+        name: "Jason Sexton",
+        jobTitle: "Founder & Owner",
+        url: "https://onthegomoving.com/jason-sexton/",
+        image: BRAND_IMAGES.jasonSextonHeadshot,
+        worksFor: { "@id": "https://onthegomoving.com/#organization" },
       },
     ],
   });
