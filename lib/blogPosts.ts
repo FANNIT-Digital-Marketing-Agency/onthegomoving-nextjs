@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "best-neighborhoods-buy-home-eastside-seattle",
+    title: "Best Neighborhoods to Buy a Home on the Eastside: A City-by-City Guide",
+    date: "July 17, 2026",
+    category: "Home Buying",
+    excerpt: "Bellevue, Kirkland, Redmond, Sammamish, Issaquah, Renton, or Bothell? A practical city-by-city breakdown of the best Eastside neighborhoods to buy a home in 2026, with price ranges, school districts, and commute profiles.",
+    image: BRAND_IMAGES.truckSeattleSkyline,
+    readTime: "10 min read"
+  },
+  {
     slug: "first-time-homebuyer-guide-eastside-seattle",
     title: "First-Time Homebuyer Guide for the Eastside: What to Know Before You Buy",
     date: "July 16, 2026",
