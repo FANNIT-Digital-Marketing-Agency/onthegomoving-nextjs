@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "how-to-time-your-move-mortgage-closing-date",
+    title: "How to Time Your Move Around Your Mortgage Closing Date",
+    date: "July 18, 2026",
+    category: "Home Buying",
+    excerpt: "Closing dates shift. Movers book out weeks in advance. Here is how to coordinate your move with your mortgage closing, handle date changes, and avoid the most common timing mistakes on the Eastside.",
+    image: BRAND_IMAGES.crewLoadingTruckRamp,
+    readTime: "8 min read"
+  },
+  {
     slug: "best-neighborhoods-buy-home-eastside-seattle",
     title: "Best Neighborhoods to Buy a Home on the Eastside: A City-by-City Guide",
     date: "July 17, 2026",
