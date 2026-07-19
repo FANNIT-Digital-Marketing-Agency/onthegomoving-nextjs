@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "downsizing-seattle-move-smaller-home",
+    title: "Downsizing in Seattle: How to Move to a Smaller Home",
+    date: "July 19, 2026",
+    category: "Downsizing & Senior Moving",
+    excerpt: "A practical guide to downsizing on the Eastside. Learn how to decide what to keep, how to handle furniture that won't fit, when storage makes sense, and how to make the move as smooth as possible.",
+    image: BRAND_IMAGES.crewCarryingFurniture,
+    readTime: "9 min read"
+  },
+  {
     slug: "how-to-time-your-move-mortgage-closing-date",
     title: "How to Time Your Move Around Your Mortgage Closing Date",
     date: "July 18, 2026",
