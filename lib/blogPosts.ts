@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "how-to-find-apartment-bellevue-kirkland",
+    title: "How to Find an Apartment in Bellevue or Kirkland: A Practical Guide",
+    date: "July 20, 2026",
+    category: "Renting & Apartments",
+    excerpt: "The Eastside rental market is competitive and expensive. This guide covers where to search, what to budget, how to put together a strong application, what lease terms to watch for, and how to coordinate your move once you have signed.",
+    image: BRAND_IMAGES.truckResidentialBuilding,
+    readTime: "9 min read"
+  },
+  {
     slug: "downsizing-seattle-move-smaller-home",
     title: "Downsizing in Seattle: How to Move to a Smaller Home",
     date: "July 19, 2026",
