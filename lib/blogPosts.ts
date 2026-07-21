@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "best-neighborhoods-rent-eastside-seattle-2026",
+    title: "Best Neighborhoods to Rent on the Eastside in 2026: A Renter's Guide",
+    date: "July 21, 2026",
+    category: "Renting & Apartments",
+    excerpt: "Not all Eastside neighborhoods are created equal. This 2026 guide breaks down the best places to rent in Bellevue, Kirkland, Redmond, Bothell, and Renton with real price ranges, commute context, and honest assessments of what each area is actually like.",
+    image: BRAND_IMAGES.truckKirklandHouse,
+    readTime: "10 min read"
+  },
+  {
     slug: "how-to-find-apartment-bellevue-kirkland",
     title: "How to Find an Apartment in Bellevue or Kirkland: A Practical Guide",
     date: "July 20, 2026",
