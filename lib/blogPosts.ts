@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "renting-bellevue-vs-seattle-cost-comparison-2026",
+    title: "Renting in Bellevue vs. Seattle: A Real Cost Comparison (2026)",
+    date: "July 22, 2026",
+    category: "Renting & Apartments",
+    excerpt: "Bellevue and Seattle are 10 miles apart but involve different tradeoffs for renters. This 2026 guide compares real rent prices by unit type and neighborhood, plus commute costs, parking, and quality of life factors to help you decide where to rent.",
+    image: BRAND_IMAGES.truckSeattleSkyline,
+    readTime: "9 min read"
+  },
+  {
     slug: "best-neighborhoods-rent-eastside-seattle-2026",
     title: "Best Neighborhoods to Rent on the Eastside in 2026: A Renter's Guide",
     date: "July 21, 2026",
