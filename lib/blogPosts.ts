@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "what-to-know-before-signing-lease-washington-state",
+    title: "What to Know Before Signing a Lease in Washington State (2026)",
+    date: "July 24, 2026",
+    category: "Renting & Apartments",
+    excerpt: "A complete guide to signing a lease in Washington State. Covers tenant rights, notice requirements, security deposit rules, lease terms to watch for, and how to protect yourself before and after signing.",
+    image: BRAND_IMAGES.crewHoodieAtTruck,
+    readTime: "10 min read"
+  },
+  {
     slug: "apartment-hunting-checklist-what-to-look-for-before-you-sign",
     title: "Apartment Hunting Checklist: What to Look for Before You Sign",
     date: "July 23, 2026",
