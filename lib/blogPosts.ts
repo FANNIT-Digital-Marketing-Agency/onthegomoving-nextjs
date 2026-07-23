@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "apartment-hunting-checklist-what-to-look-for-before-you-sign",
+    title: "Apartment Hunting Checklist: What to Look for Before You Sign",
+    date: "July 23, 2026",
+    category: "Renting & Apartments",
+    excerpt: "A complete apartment hunting checklist for renters on the Eastside. What to look for during tours, what to ask before signing, lease red flags to watch for, and how to coordinate your move once you have found the right place.",
+    image: BRAND_IMAGES.truckProfessionalLot,
+    readTime: "9 min read"
+  },
+  {
     slug: "renting-bellevue-vs-seattle-cost-comparison-2026",
     title: "Renting in Bellevue vs. Seattle: A Real Cost Comparison (2026)",
     date: "July 22, 2026",

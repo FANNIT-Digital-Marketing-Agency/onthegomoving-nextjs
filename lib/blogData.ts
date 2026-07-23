@@ -4896,7 +4896,7 @@ For clients who are moving long distances or have complex needs, such as a senio
       {
         type: "h2",
         heading: "Planning Your Move: What to Know Before You Relocate",
-        body: `Once you have decided between Bellevue and Seattle, the logistics of the move itself deserve attention. Both cities have apartment buildings with elevator reservations, certificate of insurance requirements, and move-in windows that need to be scheduled in advance. Downtown Bellevue high-rises typically require a COI naming the building as an additional insured. Seattle buildings vary, but most require at least 48 hours notice for elevator reservations. If you are moving from out of state or from a house to an apartment, the logistics are more complex. A professional moving company familiar with both markets can help you navigate building requirements, manage large furniture in tight elevator spaces, and coordinate the timing between your old lease end date and your new lease start date. If there is a gap between leases, short-term <a href="/storage-services/">storage services</a> can bridge the difference without forcing you to rush or overlap rent payments. Our <a href="/apartment-moving/">apartment moving team</a> handles moves into buildings across both Seattle and the Eastside, including high-rises, walk-ups, and townhomes. Call 425-440-3241 to discuss your timeline and get a quote.`
+        body: `Once you have decided between Bellevue and Seattle, the logistics of the move itself deserve attention. Both cities have apartment buildings with elevator reservations, certificate of insurance requirements, and move-in windows that need to be scheduled in advance. Downtown Bellevue high-rises typically require a COI naming the building as an additional insured. Seattle buildings vary, but most require at least 48 hours notice for elevator reservations. If you are moving from out of state or from a house to an apartment, the logistics are more complex. A professional moving company familiar with both markets can help you navigate building requirements, manage large furniture in tight elevator spaces, and coordinate the timing between your old lease end date and your new lease start date. If there is a gap between leases, short-term <a href="/storage-services/">storage services</a> can bridge the difference without forcing you to rush or overlap rent payments. Our <a href="/apartment-moving/">apartment moving team</a> handles moves into buildings across both Seattle and the Eastside, including high-rises, walk-ups, and townhomes. Before you sign, use our <a href="/apartment-hunting-checklist-what-to-look-for-before-you-sign/">apartment hunting checklist</a> to evaluate units, review lease terms, and prepare for move-in day. Call 425-440-3241 to discuss your timeline and get a quote.`
       }
     ],
     faqs: [
@@ -4923,6 +4923,90 @@ For clients who are moving long distances or have complex needs, such as a senio
       {
         q: "What is the best neighborhood in Bellevue for young professionals?",
         a: "Downtown Bellevue and the Spring District are the most popular neighborhoods for young professionals. Downtown Bellevue has the most walkable access to restaurants, bars, and the Bellevue Square mall. The Spring District is newer, has direct East Link access, and is close to several tech campuses. Both neighborhoods have newer high-rise buildings with amenities like rooftop decks, gyms, and coworking spaces."
+      }
+    ],
+    relatedService: "Apartment Moving",
+    relatedServiceHref: "/apartment-moving/"
+  },
+
+  "apartment-hunting-checklist-what-to-look-for-before-you-sign": {
+    slug: "apartment-hunting-checklist-what-to-look-for-before-you-sign",
+    title: "Apartment Hunting Checklist: What to Look for Before You Sign",
+    metaTitle: "Apartment Hunting Checklist: What to Look for Before You Sign | On The Go Moving",
+    metaDescription: "A complete apartment hunting checklist for renters on the Eastside. What to look for during tours, what to ask before signing, lease red flags to watch for, and how to coordinate your move once you have found the right place.",
+    date: "July 23, 2026",
+    dateISO: "2026-07-23",
+    category: "Renting & Apartments",
+    readTime: "9 min read",
+    author: "Jason Sexton",
+    heroImage: BRAND_IMAGES.crewFrontDoorExit,
+    intro: `Finding an apartment on the Eastside is competitive. When you finally get a tour of a place that looks good online, you have limited time to evaluate it before someone else puts in an application. Most renters leave tours wishing they had asked more questions or looked more carefully at things that only become problems after move-in. This checklist covers everything you should look at, ask about, and verify before signing a lease on any apartment in Bellevue, Kirkland, Redmond, or anywhere else on the Eastside.`,
+    sections: [
+      {
+        type: "h2",
+        heading: "Before the Tour: Research You Should Do First",
+        body: `Before you set foot in an apartment, spend 15 minutes on basic research. Search the building name and address on Google to look for news stories, Reddit threads, or review patterns that suggest problems. Check the King County Assessor's website to confirm ownership and look for any outstanding code violations. Search the address on the Washington State Courts website to see if there is a history of eviction filings, which can indicate a landlord who is quick to pursue legal action over minor issues. Look up the building on Yelp and Google Maps to read tenant reviews, paying particular attention to reviews that mention maintenance response times, pest issues, or management communication. A building with a pattern of complaints about unresponsive management is a building to avoid regardless of how nice the unit looks. Check the Walk Score and Transit Score for the address so you have a concrete sense of walkability and transit access before the tour. If you are relying on public transit, map the actual commute from the apartment to your workplace during peak hours using Google Maps or the One Bus Away app.`
+      },
+      {
+        type: "h2",
+        heading: "During the Tour: What to Look at in Every Room",
+        body: `Bring this checklist to every tour. The goal is to evaluate the unit systematically rather than getting distracted by staging or nice finishes. In the kitchen, check under the sink for water stains or soft cabinet material that indicates a slow leak. Turn on all burners and the oven to confirm they work. Open the refrigerator and check that it cools properly. Run the dishwasher briefly if possible. Check the water pressure at the kitchen faucet and look for rust or discoloration in the water. In the bathrooms, flush the toilet and watch for slow drainage. Run the shower and check water pressure and temperature. Look at the caulking around the tub and shower for mold or gaps. Check under the sink for water damage. Open the medicine cabinet and check the mirror for moisture damage on the back. In the bedrooms, open and close every closet door to confirm they operate correctly. Check for outlets on every wall. Look at the ceiling for water stains or discoloration. Open the windows to confirm they open, close, and lock. Check for drafts around window frames. In the living areas, look at the floors for uneven spots, soft areas, or damage under rugs. Check the baseboards for gaps or signs of pest activity. Test every light switch. Confirm the number and location of outlets. Look at the ceiling for cracks or water damage. Throughout the unit, look for signs of pests: droppings near baseboards, holes in walls, or sticky traps left by management. Check the HVAC filter if accessible. Ask when the carpets were last replaced. Look at the condition of the paint for signs of hasty patching that might indicate water damage or mold remediation.`
+      },
+      {
+        type: "h2",
+        heading: "The Building and Common Areas: What to Evaluate",
+        body: `The unit itself is only part of what you are renting. The building and its management will affect your daily life for the duration of your lease. In the lobby and hallways, note the general cleanliness and maintenance condition. Check the mailboxes for damage or signs of tampering. Look at the condition of the elevator if the building has one. Ask how often the elevator is serviced. In the parking area, confirm the number of spots included with your unit and whether they are assigned or first-come. Check the lighting in the parking area at night if possible, or ask about it. Look for security cameras. Ask whether there is a guest parking policy and where guests park. In the laundry room, check the number of machines relative to the number of units. Look at the condition of the machines and whether they are coin-operated or app-based. Ask whether there have been any recent issues with machines being out of service. In the storage areas, confirm whether your unit comes with a storage locker and where it is located. Check the security of the storage area. Ask whether the building has had any break-ins to storage lockers. Ask the property manager or leasing agent directly about pest control procedures, how maintenance requests are submitted and how quickly they are typically resolved, and whether there are any planned construction or renovation projects in the building or adjacent units.`
+      },
+      {
+        type: "h2",
+        heading: "Lease Red Flags: What to Watch for Before Signing",
+        body: `Most lease problems are visible in the lease itself before you sign. Read the entire lease, not just the summary sheet. Pay particular attention to the following areas. Early termination clauses: Washington State law allows tenants to break a lease early under certain circumstances, but most leases include a penalty clause. Understand exactly what you would owe if you needed to leave before the end of the term. A penalty of two months' rent is common; anything higher is worth negotiating. Rent increase provisions: Some leases include automatic rent increase clauses that allow the landlord to raise rent with 20 days' notice. Others cap increases at a fixed percentage. Understand what your rent could be at renewal before you sign. Guest policies: Some leases restrict how long guests can stay or require guests to be registered with management. If you have family who visits regularly or a partner who stays frequently, understand the policy before signing. Subletting restrictions: Most Eastside apartment leases prohibit subletting without written landlord approval. If you travel frequently for work or might need to sublet for any reason, confirm the policy. Pet clauses: If you have or plan to get a pet, read the pet addendum carefully. Note the pet deposit, monthly pet rent, breed and weight restrictions, and any clauses about damage liability. Maintenance responsibility: Some leases shift responsibility for minor repairs to the tenant. Understand what you are responsible for and what the landlord covers. Parking assignment: Confirm that your parking spot is assigned and documented in the lease. Verbal promises about parking are not enforceable.`
+      },
+      {
+        type: "h2",
+        heading: "Questions to Ask Before You Sign",
+        body: `Beyond what you can observe, there are questions that only the landlord or property manager can answer. Ask all of these before signing. How long has the current property management company been managing the building? High management turnover is a warning sign. What is the average tenant tenure in the building? Buildings where people stay for years are generally better managed than buildings with high turnover. Have there been any pest issues in the building in the past 12 months? In Washington State, landlords are required to disclose known pest infestations. Ask directly and get the answer in writing if possible. What is the process for submitting maintenance requests and what is the average response time? Ask for examples of recent maintenance issues and how they were resolved. Is the building on a month-to-month management contract or a long-term management agreement? Buildings that change management companies frequently can have inconsistent service quality. Are there any planned rent increases at renewal? While landlords are not required to commit to a renewal rate, their answer will tell you something about their approach to tenant relationships. What utilities are included in the rent and which are billed separately? Confirm this in writing, not just verbally. Is renter's insurance required? Most Eastside apartment buildings require it. Confirm the minimum coverage amount.`
+      },
+      {
+        type: "h2",
+        heading: "The Move-In Walkthrough: Documenting Existing Damage",
+        body: `Before you move a single item into the apartment, conduct a thorough move-in walkthrough and document every existing imperfection. This documentation is your primary protection against being charged for pre-existing damage when you move out. Use your phone to take timestamped photos and video of every room, paying particular attention to walls, floors, appliances, and fixtures. Photograph every scuff, scratch, stain, and chip you can find. Submit the completed move-in inspection form to the landlord and keep a copy for yourself. If the landlord does not provide a move-in inspection form, create your own and send it to the landlord via email so there is a written record. Note any items that need repair and request that they be addressed before or shortly after move-in. Get the repair timeline in writing. In Washington State, landlords are required to return your security deposit within 21 days of move-out, along with an itemized statement of any deductions. Thorough move-in documentation is your best defense against improper deductions. Our <a href="/apartment-moving/">apartment moving team</a> can help you coordinate the timing of your move-in walkthrough with your move-in day so you have time to document the unit before furniture arrives.`
+      },
+      {
+        type: "h2",
+        heading: "Coordinating Your Move After Signing",
+        body: `Once you have signed the lease, the clock starts on move-in logistics. Most Eastside apartment buildings require you to reserve the elevator or freight elevator for your move. Contact the building management as soon as you have a move-in date to reserve your time slot. Popular move-in days (weekends, end of month) book quickly. Some buildings also require a certificate of insurance from your moving company naming the building as an additional insured. Confirm this requirement with management before booking movers so you can provide the requirement to your moving company. If there is a gap between your old lease end date and your new lease start date, or if you need to store items while you wait for your new place to be ready, <a href="/storage-services/">short-term storage</a> can bridge the difference without forcing you to rush or overlap rent payments. Book your movers at least 3 to 4 weeks in advance for weekend moves during peak season (May through September). For weekday moves, 2 weeks is generally sufficient. Provide the building address, floor number, elevator reservation time, and any COI requirements to your moving company when booking. See our <a href="/how-to-find-apartment-bellevue-kirkland/">guide to finding an apartment in Bellevue or Kirkland</a> for more on the full apartment search process from initial search through signing.`
+      },
+      {
+        type: "h2",
+        heading: "The Complete Apartment Hunting Checklist",
+        body: `Use this summary checklist as a quick reference during your apartment search. Before the tour: research building ownership and reviews, check for code violations, map the commute, verify Walk Score and Transit Score. During the tour: check kitchen appliances and water pressure, inspect bathrooms for drainage and mold, test all windows and doors, look for pest signs, check HVAC filter, note outlet locations and lighting. Building evaluation: assess lobby and hallway condition, confirm parking assignment, check laundry room capacity, ask about maintenance response times. Lease review: read early termination clause, understand rent increase provisions, check guest and pet policies, confirm parking in writing, review maintenance responsibilities. Questions to ask: management tenure, pest history, maintenance process, utility inclusions, renter's insurance requirements. Move-in walkthrough: photograph every room before moving in, submit inspection form to landlord, request repairs in writing, keep copies of all documentation. Move coordination: reserve elevator, confirm COI requirements, book movers 3 to 4 weeks in advance, arrange storage if needed.`
+      }
+    ],
+    faqs: [
+      {
+        q: "What should I look for during an apartment tour?",
+        a: "Check kitchen appliances and water pressure, inspect bathrooms for drainage issues and mold, test all windows and doors, look for signs of pests near baseboards, check the HVAC filter if accessible, and note the condition of floors and ceilings. Also evaluate the building's common areas, parking, and laundry facilities. Bring a checklist and take notes during the tour rather than relying on memory."
+      },
+      {
+        q: "What are the biggest lease red flags to watch for?",
+        a: "Watch for automatic rent increase clauses that allow increases with minimal notice, early termination penalties higher than two months' rent, vague maintenance responsibility language that shifts repair costs to the tenant, and parking arrangements that are not documented in writing. Read the entire lease, not just the summary sheet, before signing."
+      },
+      {
+        q: "How do I protect my security deposit when moving in?",
+        a: "Conduct a thorough move-in walkthrough before moving any items in and document every existing imperfection with timestamped photos and video. Submit the completed move-in inspection form to the landlord and keep a copy. In Washington State, landlords must return your deposit within 21 days of move-out with an itemized statement of any deductions. Thorough documentation is your primary protection against improper charges."
+      },
+      {
+        q: "Do Eastside apartment buildings require a certificate of insurance from movers?",
+        a: "Many Eastside apartment buildings, particularly newer high-rises in downtown Bellevue and Kirkland, require a certificate of insurance from your moving company naming the building as an additional insured. Confirm this requirement with building management before booking movers so you can provide the requirement to your moving company when requesting a quote."
+      },
+      {
+        q: "How far in advance should I book movers for an apartment move?",
+        a: "Book at least 3 to 4 weeks in advance for weekend moves during peak season (May through September). For weekday moves or off-season moves, 2 weeks is generally sufficient. Also reserve your elevator time slot with building management as soon as you have a confirmed move-in date, as popular time slots fill quickly."
+      },
+      {
+        q: "What questions should I ask a landlord before signing a lease?",
+        a: "Ask about the average tenant tenure in the building, pest history in the past 12 months, the maintenance request process and average response time, whether any rent increases are planned at renewal, which utilities are included in the rent, and whether renter's insurance is required. Get answers to utility and insurance questions in writing to avoid disputes later."
       }
     ],
     relatedService: "Apartment Moving",
