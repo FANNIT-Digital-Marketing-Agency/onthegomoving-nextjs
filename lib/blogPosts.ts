@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "downsizing-your-home-step-by-step-guide",
+    title: "Downsizing Your Home: A Step-by-Step Guide",
+    date: "July 24, 2026",
+    category: "Downsizing & Senior Moving",
+    excerpt: "A complete step-by-step guide to downsizing your home. How to decide what to keep, handle sentimental items, sell or donate furniture, and plan the logistics of moving to a smaller space on the Eastside.",
+    image: BRAND_IMAGES.packingBoxes,
+    readTime: "10 min read"
+  },
+  {
     slug: "what-to-know-before-signing-lease-washington-state",
     title: "What to Know Before Signing a Lease in Washington State (2026)",
     date: "July 24, 2026",
