@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "moving-to-a-smaller-home-what-to-expect",
+    title: "Moving to a Smaller Home: What to Expect",
+    date: "July 25, 2026",
+    category: "Downsizing & Senior Moving",
+    excerpt: "What to realistically expect when moving to a smaller home — space adjustment, furniture decisions, storage challenges, the emotional side, and how to make the new space feel like home on the Eastside.",
+    image: BRAND_IMAGES.crewCarryingOut,
+    readTime: "10 min read"
+  },
+  {
     slug: "downsizing-your-home-step-by-step-guide",
     title: "Downsizing Your Home: A Step-by-Step Guide",
     date: "July 24, 2026",
