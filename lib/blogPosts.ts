@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "how-to-decide-what-to-keep-when-downsizing",
+    title: "How to Decide What to Keep When Downsizing",
+    date: "July 26, 2026",
+    category: "Downsizing & Senior Moving",
+    excerpt: "Struggling to decide what to keep when downsizing? A practical four-category framework for furniture, sentimental items, and everyday belongings — so you can downsize with confidence and without regret.",
+    image: BRAND_IMAGES.crewRollingRug,
+    readTime: "11 min read"
+  },
+  {
     slug: "moving-to-a-smaller-home-what-to-expect",
     title: "Moving to a Smaller Home: What to Expect",
     date: "July 25, 2026",
