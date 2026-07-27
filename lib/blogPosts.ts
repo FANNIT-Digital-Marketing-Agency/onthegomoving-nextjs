@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "senior-moving-guide-how-to-plan-a-stress-free-move",
+    title: "Senior Moving Guide: How to Plan a Stress-Free Move",
+    date: "July 27, 2026",
+    category: "Downsizing & Senior Moving",
+    excerpt: "Planning a move as a senior? This guide covers everything from choosing the right timeline to working with a moving company that understands your needs — so your move goes smoothly from start to finish.",
+    image: BRAND_IMAGES.crewMattress,
+    readTime: "12 min read"
+  },
+  {
     slug: "how-to-decide-what-to-keep-when-downsizing",
     title: "How to Decide What to Keep When Downsizing",
     date: "July 26, 2026",
