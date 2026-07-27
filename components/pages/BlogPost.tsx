@@ -43,10 +43,22 @@ const KEYWORD_MAP: Array<{ pattern: RegExp; url: string; label: string }> = [
 const MAX_LINKS_PER_POST = 6;
 
 /**
+ * Returns true if the position `index` in `text` is inside an existing <a>...</a> tag.
+ * Prevents the auto-linker from creating nested anchors over manually-written links.
+ */
+function isInsideAnchor(text: string, index: number): boolean {
+  const before = text.slice(0, index);
+  const lastOpenTag = before.lastIndexOf('<a ');
+  const lastCloseTag = before.lastIndexOf('</a>');
+  return lastOpenTag > lastCloseTag;
+}
+
+/**
  * Injects contextual internal links into a plain-text string.
  * - Tracks which URLs have already been linked (first-occurrence-only per post)
  * - Respects the MAX_LINKS_PER_POST cap
  * - Skips the target URL if it matches the post's own relatedService page
+ * - Skips matches that are already inside an existing <a> tag (avoids nested anchors)
  * - Returns an HTML string safe to render via dangerouslySetInnerHTML
  */
 function linkifyContent(
@@ -70,6 +82,9 @@ function linkifyContent(
 
     const matchedText = match[0];
     const startInOriginal = match.index;
+
+    // Skip if this match is already inside an existing <a> tag — avoids nested anchors
+    if (isInsideAnchor(text, startInOriginal)) continue;
 
     // Build the replacement anchor
     const anchor = `<a href="${url}" class="text-[#75aa11] font-semibold hover:underline">${matchedText}</a>`;
