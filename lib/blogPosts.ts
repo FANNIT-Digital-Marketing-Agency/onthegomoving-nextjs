@@ -16,6 +16,16 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "storage-solutions-when-downsizing",
+    title: "Storage Solutions When Downsizing: What to Keep, What to Store, and When to Let Go",
+    category: "Downsizing & Senior Moving",
+    date: "July 28, 2026",
+    readTime: "11 min read",
+    image: BRAND_IMAGES.warehouseInterior,
+    author: "Jason Sexton",
+    excerpt: "Using storage when downsizing? Learn how to decide what to store, how long to keep it, and when to let go — so storage becomes a bridge, not a permanent solution."
+  },
+  {
     slug: "senior-moving-guide-how-to-plan-a-stress-free-move",
     title: "Senior Moving Guide: How to Plan a Stress-Free Move",
     date: "July 27, 2026",

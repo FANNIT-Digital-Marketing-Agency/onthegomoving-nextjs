@@ -5416,7 +5416,7 @@ For clients who are moving long distances or have complex needs, such as a senio
       },
       {
         q: "What should seniors look for in a moving company?",
-        a: "Look for documented experience with senior moves specifically, not just general residential moving experience. Ask about their process for fragile and irreplaceable items. Ask whether they offer full-service packing. Check reviews specifically from senior clients. Verify their licensing and insurance. Ask for a written, itemized quote that includes all potential fees — stairs, long carries, specialty items, and fuel surcharges. A reputable company will answer all of these questions clearly and without pressure."
+        a: `Look for documented experience with senior moves specifically, not just general residential moving experience. Ask about their process for fragile and irreplaceable items. Ask whether they offer full-service packing. Check reviews specifically from senior clients. Verify their licensing and insurance. Ask for a written, itemized quote that includes all potential fees — stairs, long carries, specialty items, and fuel surcharges. A reputable company will answer all of these questions clearly and without pressure. For help deciding what to store and what to release before the move, our guide to <a href="/storage-solutions-when-downsizing/">storage solutions when downsizing</a> covers the full process.`
       },
       {
         q: "Is it normal to feel sad after a senior move?",
@@ -5425,5 +5425,141 @@ For clients who are moving long distances or have complex needs, such as a senio
     ],
     relatedService: "Senior Moving Services",
     relatedServiceHref: "/senior-moving/"
+  },
+  "storage-solutions-when-downsizing": {
+    slug: "storage-solutions-when-downsizing",
+    title: "Storage Solutions When Downsizing: What to Keep, What to Store, and When to Let Go",
+    metaTitle: "Storage Solutions When Downsizing | On The Go Moving",
+    metaDescription: "Using storage when downsizing? Learn how to decide what to store, how long to keep it, and when to let go — so storage becomes a bridge, not a permanent solution.",
+    date: "July 28, 2026",
+    dateISO: "2026-07-28",
+    category: "Downsizing & Senior Moving",
+    readTime: "11 min read",
+    author: "Jason Sexton",
+    heroImage: BRAND_IMAGES.warehouseInterior,
+    intro: `Storage is one of the most useful tools available to downsizers — and one of the most misused. Used well, a storage unit gives you the breathing room to make thoughtful decisions about a lifetime of possessions without the pressure of an imminent move date. Used poorly, it becomes a holding area for things you are avoiding deciding about, costing hundreds of dollars a month for years while the underlying decisions remain unmade.
+
+This guide covers how to use storage strategically when downsizing: what actually belongs in a unit, what does not, how to choose the right type of storage for your situation, and how to set a clear exit plan so storage stays a temporary bridge rather than a permanent expense.`,
+    sections: [
+      {
+        type: "h2",
+        heading: "Why Downsizers Use Storage (And When It Makes Sense)",
+        body: `The gap between your current home and your new one is rarely a perfect fit. You are moving from a four-bedroom house to a two-bedroom condo, or from a home with a full basement and garage to a townhouse with neither. The math does not work out cleanly, and storage is the buffer that absorbs the difference.
+
+Storage makes sense in several specific situations. First, when you are genuinely uncertain about a piece of furniture — you think it might fit in the new space, but you will not know until you are living there. Second, when you are holding items for family members who want them but cannot take them immediately. Third, when you are in a transitional period between selling your current home and closing on the new one. Fourth, when you have sentimental items you are not ready to release but are not sure you need in the new home.
+
+Storage does not make sense as a solution to indecision. If you are putting something in storage because you cannot bring yourself to make a decision about it, the storage unit is not solving the problem — it is delaying it while charging you monthly rent. The most effective downsizers use storage with a clear exit plan: every item in the unit has a destination (the new home, a family member, donation, or disposal) and a timeline for getting there.`
+      },
+      {
+        type: "h2",
+        heading: "What to Store vs. What to Release Before the Move",
+        body: `Not everything that does not fit in the new home belongs in storage. Sorting items into the right category before the move prevents storage from becoming a catch-all for things that should have been released.
+
+Items that belong in storage: furniture you are genuinely uncertain about until you see the new space; items with clear family recipients who need a few months to arrange pickup; seasonal items that will be used in the new home (holiday decorations, outdoor furniture); items with significant resale value that you have not yet had time to sell; and documents and records that require secure storage.
+
+Items that do not belong in storage: furniture that clearly will not fit the new home regardless of layout; items you are keeping out of guilt rather than genuine attachment or utility; duplicates of things you already have in the new home; items in poor condition that you would not use even if you had the space; and general household goods that can be replaced inexpensively if needed later.
+
+The test for storage is simple: does this item have a specific, realistic destination within six months? If you cannot answer that question clearly, the item probably belongs in the release column rather than the storage column. Our <a href="/storage-services/">storage services</a> team can help you think through what makes sense to store during your transition.`
+      },
+      {
+        type: "h2",
+        heading: "Choosing the Right Type of Storage for Your Situation",
+        body: `Not all storage is the same, and the right choice depends on what you are storing, how long you need it, and your budget.
+
+Climate-controlled storage is the right choice for wood furniture, upholstered pieces, artwork, electronics, musical instruments, documents, and anything sensitive to temperature or humidity fluctuations. The Pacific Northwest's wet winters make climate control particularly important for wooden furniture and anything that can warp, mold, or deteriorate with moisture. Climate-controlled units cost more — typically 25 to 40 percent more than standard units — but the cost is worth it for items with significant value.
+
+Standard storage works for items that are not sensitive to temperature or humidity: metal furniture, outdoor equipment, tools, boxes of non-fragile household goods, and items you are confident will be fine in a non-climate-controlled environment.
+
+Portable storage containers — units delivered to your home that you load yourself and that are then transported to a storage facility — are convenient for the transition period between homes. They eliminate the need to load and unload twice (once into a truck, once into a unit), which matters when you are managing a complex move.
+
+Full-service storage, where a moving company handles pickup, storage, and delivery, is the most convenient option and often the right choice for seniors or anyone who cannot manage the physical logistics of loading and unloading a storage unit. Our <a href="/senior-moving/">senior moving team</a> offers this as part of a full-service move package.`
+      },
+      {
+        type: "h2",
+        heading: "How Much Storage Space Do You Actually Need?",
+        body: `Overestimating storage space is one of the most common and expensive mistakes downsizers make. Renting a 10x20 unit when a 10x10 would have been sufficient doubles your monthly cost for no reason.
+
+A 5x5 unit (25 square feet) holds the contents of a small closet — boxes, small furniture, seasonal items. A 5x10 unit (50 square feet) holds the contents of a small bedroom or a significant number of boxes. A 10x10 unit (100 square feet) holds the contents of a one-bedroom apartment. A 10x20 unit (200 square feet) holds the contents of a two to three bedroom home.
+
+For most downsizers moving from a large family home to a smaller space, a 10x10 to 10x15 unit is sufficient for the items genuinely in transition. If you find yourself looking at a 10x20 or larger unit, that is a signal to revisit the sorting process — you may be putting too many items into storage that should be released.
+
+Storage facilities on the Eastside include Public Storage, Extra Space Storage, and Life Storage locations in Bellevue, Redmond, Kirkland, and Issaquah. Rates vary by location and unit size; booking in advance (two to four weeks before your move date) typically secures better rates than booking at the last minute.`
+      },
+      {
+        type: "h2",
+        heading: "Setting an Exit Plan Before You Sign the Lease",
+        body: `The most important step in using storage effectively is setting an exit plan before you put anything in the unit. Without a plan, storage becomes indefinite — and the monthly cost accumulates while the decisions remain unmade.
+
+An effective exit plan has three components. First, a maximum duration: commit to a specific end date, typically three to six months after your move. This gives you enough time to settle into the new space and discover what you actually need, without allowing storage to become permanent.
+
+Second, a decision rule for each category of items: furniture gets a final decision after 60 days in the new home (either it comes in or it goes); family items get a pickup deadline communicated to family members before the unit opens; sentimental items get a final review at the three-month mark.
+
+Third, a scheduled visit: put a calendar reminder for 30 days after move-in to visit the storage unit and make a first pass at decisions. Most people find that after 30 days in the new home, they have a much clearer sense of what they actually need and what they do not. A second visit at 90 days typically closes out most remaining decisions.
+
+If you reach your maximum duration and still have items in storage, that is a signal to get help — a professional organizer, an estate sale company, or a family conversation about items being held for relatives.`
+      },
+      {
+        type: "h2",
+        heading: "Handling Furniture in Storage: What Actually Fits the New Home",
+        body: `Furniture is the most common reason downsizers use storage, and also the category most likely to result in storage becoming permanent. The challenge is that furniture decisions are hard to make in the abstract — you often do not know whether a piece will work in the new space until you are living there.
+
+The practical approach is to move the furniture you are most confident about into the new home first, then use storage for the pieces you are genuinely uncertain about. After 30 to 60 days of living in the new space, you will have a much clearer sense of what fits — both physically and aesthetically.
+
+Before moving furniture into storage, measure it carefully and compare those measurements to the rooms in the new home. A dining table that is 84 inches long will not work in a dining area that is 10 feet wide once you account for chair clearance. A sectional sofa that works in a 20-foot living room will overwhelm a 14-foot one. Doing this math before the move prevents you from storing furniture that clearly will not work in the new space.
+
+For furniture with significant value that will not fit the new home, selling before the move is almost always better than storing and selling later. Estate sale companies, consignment shops, and online platforms like Facebook Marketplace and Craigslist are all viable options. Selling before the move eliminates the storage cost and the second handling of the item.`
+      },
+      {
+        type: "h2",
+        heading: "Coordinating Storage With Your Move",
+        body: `Timing storage correctly with your move prevents unnecessary handling and cost. The most efficient approach is to identify storage items before move day and load them directly into the storage unit (or portable container) rather than moving them to the new home first and then to storage.
+
+This requires knowing your storage plan before move day — which items are going to the new home and which are going to storage. Creating a labeled inventory before the move (even a simple spreadsheet or handwritten list) makes this coordination possible.
+
+If you are using a full-service moving company, communicate the storage plan clearly in advance. Most companies can coordinate delivery to both a new home and a storage facility on the same day, but this requires planning and may affect the quote. Ask specifically about this option when getting estimates.
+
+For the items going into storage, label boxes and furniture clearly with the intended destination (family member's name, room in new home, or "donate/sell review"). This labeling makes the exit process much faster when you return to the unit to make final decisions. Our <a href="/downsizing-your-home-step-by-step-guide/">step-by-step downsizing guide</a> covers the full sorting and labeling process in detail.`
+      },
+      {
+        type: "h2",
+        heading: "When to Let Go: Recognizing Storage Avoidance",
+        body: `The hardest part of using storage effectively is recognizing when you are using it to avoid decisions rather than to facilitate them. Storage avoidance is common and understandable — releasing a lifetime of possessions is genuinely difficult — but it is expensive and ultimately does not make the decisions easier.
+
+Signs that storage has become avoidance rather than a bridge: you have not visited the unit in more than three months; you are paying for storage on items you could not describe without looking at the inventory; you have renewed the lease more than once without a clear plan; you feel a vague sense of dread when you think about dealing with the unit.
+
+If you recognize these signs, the most effective intervention is to get help. A professional organizer who specializes in downsizing can work through a storage unit in a day or two, helping you make decisions that have been stalled for months. Estate sale companies can handle the sale of items with value. Donation organizations like Habitat for Humanity ReStore, Hopelink, and Goodwill accept furniture and household goods.
+
+The goal is not to rush decisions — it is to make them. Storage is a tool for giving yourself time to make good decisions, not a place to put decisions you are avoiding. Most people find that once they commit to a clear exit plan and get the right help, the process is faster and less painful than they expected.`
+      }
+    ],
+    faqs: [
+      {
+        q: "How long should I keep a storage unit when downsizing?",
+        a: "Three to six months is the recommended maximum for most downsizing situations. This gives you enough time to settle into the new home and discover what you actually need, while keeping the financial cost manageable. If you reach six months and still have significant items in storage without a clear plan for them, that is a signal to get help — a professional organizer or estate sale company can accelerate the decision-making process considerably."
+      },
+      {
+        q: "Is climate-controlled storage worth the extra cost when downsizing?",
+        a: "Yes, for wood furniture, upholstered pieces, artwork, electronics, musical instruments, and documents. The Pacific Northwest's wet winters create real moisture risk for these items in standard storage. The cost premium for climate control — typically 25 to 40 percent more per month — is worth it for items with significant value. For metal furniture, outdoor equipment, and non-fragile household goods, standard storage is fine."
+      },
+      {
+        q: "What size storage unit do I need when downsizing from a large home?",
+        a: "Most downsizers moving from a large family home to a smaller space need a 10x10 to 10x15 unit for the items genuinely in transition. A 10x10 unit holds the contents of a one-bedroom apartment. If you find yourself needing a 10x20 or larger unit, that is often a signal to revisit the sorting process — you may be putting too many items into storage that should be released or sold before the move."
+      },
+      {
+        q: "Can I store furniture in a storage unit long-term when downsizing?",
+        a: "You can, but it is rarely the right choice financially or practically. Long-term furniture storage costs accumulate quickly — a 10x10 climate-controlled unit at $150 to $200 per month costs $1,800 to $2,400 per year. For furniture with significant value that will not fit the new home, selling before the move is almost always better than storing and selling later. For furniture you are genuinely uncertain about, a three to six month storage period while you settle into the new home is reasonable."
+      },
+      {
+        q: "What should I not put in storage when downsizing?",
+        a: "Avoid storing items you are keeping out of guilt rather than genuine attachment or utility, duplicates of things you already have in the new home, items in poor condition, and general household goods that can be replaced inexpensively. Also avoid storing items that clearly will not fit the new home regardless of layout — measure before the move and make those decisions before paying for storage. The storage unit should hold items with a specific, realistic destination within six months."
+      },
+      {
+        q: "How do I coordinate storage with my moving company?",
+        a: "Communicate your storage plan clearly before move day. Identify which items are going to the new home and which are going to storage, and label them accordingly. Most full-service moving companies can coordinate delivery to both a new home and a storage facility on the same day, but this requires advance planning and may affect your quote. Ask specifically about this option when getting estimates. Having a clear labeled inventory before move day makes the coordination much smoother."
+      }
+    ],
+    relatedService: "Storage Services",
+    relatedServiceHref: "/storage-services/"
   }
+
 };
