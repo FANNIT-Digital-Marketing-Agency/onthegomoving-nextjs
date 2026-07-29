@@ -5551,7 +5551,7 @@ The goal is not to rush decisions — it is to make them. Storage is a tool for 
       },
       {
         q: "What should I not put in storage when downsizing?",
-        a: "Avoid storing items you are keeping out of guilt rather than genuine attachment or utility, duplicates of things you already have in the new home, items in poor condition, and general household goods that can be replaced inexpensively. Also avoid storing items that clearly will not fit the new home regardless of layout — measure before the move and make those decisions before paying for storage. The storage unit should hold items with a specific, realistic destination within six months."
+        a: `Avoid storing items you are keeping out of guilt rather than genuine attachment or utility, duplicates of things you already have in the new home, items in poor condition, and general household goods that can be replaced inexpensively. Also avoid storing items that clearly will not fit the new home regardless of layout — measure before the move and make those decisions before paying for storage. For a practical guide to the full selling and donation process before your move, see our article on <a href="/how-to-sell-belongings-before-moving/">how to sell a lifetime of belongings before moving</a>. The storage unit should hold items with a specific, realistic destination within six months.`
       },
       {
         q: "How do I coordinate storage with my moving company?",
@@ -5562,4 +5562,166 @@ The goal is not to rush decisions — it is to make them. Storage is a tool for 
     relatedServiceHref: "/storage-services/"
   }
 
+,
+  "how-to-sell-belongings-before-moving": {
+    slug: "how-to-sell-belongings-before-moving",
+    title: "How to Sell a Lifetime of Belongings Before Moving",
+    metaTitle: "How to Sell a Lifetime of Belongings Before Moving | On The Go Moving",
+    metaDescription: "Downsizing and need to sell furniture, collectibles, and household items? Learn which selling method works best for each item type — estate sales, online marketplaces, consignment, and more.",
+    date: "July 29, 2026",
+    dateISO: "2026-07-29",
+    category: "Downsizing & Senior Moving",
+    readTime: "12 min read",
+    author: "Jason Sexton",
+    heroImage: BRAND_IMAGES.crewCarryingFurniture,
+    intro: `When you are downsizing from a large home, the math is unforgiving. A 3,000-square-foot house full of furniture, appliances, collectibles, and decades of accumulated possessions cannot fit into a 1,400-square-foot condo. Something has to go — and ideally, some of it should generate cash rather than just disappearing into a donation bin.
+
+The challenge is that selling a lifetime of belongings is not a single task. It is a logistics project with multiple channels, each suited to different types of items, different price points, and different timelines. Getting this right means understanding which method works for which items, starting early enough to use the higher-value channels, and having a clear plan for what to do with whatever does not sell.
+
+This guide covers every practical option available to Eastside downsizers — from estate sales and online marketplaces to consignment shops and donation organizations — and explains how to sequence them for maximum return with minimum stress.`,
+    sections: [
+      {
+        type: "h2",
+        heading: "Start With an Honest Inventory",
+        body: `Before you can sell anything, you need to know what you have. This sounds obvious, but most people underestimate the volume of their possessions until they start systematically going through them room by room.
+
+The goal of the inventory phase is not to make final decisions about every item — that comes later. The goal is to identify what categories of items you have, roughly what condition they are in, and which might have meaningful resale value. This information determines which selling channels to pursue.
+
+Walk through each room with a notebook or phone and note the major items: furniture pieces, appliances, electronics, artwork, jewelry, collectibles, musical instruments, tools, sporting equipment, and any specialty items like antiques or vintage pieces. You do not need to price anything yet. You just need a clear picture of the landscape.
+
+Pay particular attention to items that are complete sets (china services, silverware sets, matched bedroom furniture), items in original packaging or with original documentation, and items from recognizable brands or makers. These tend to command significantly higher prices than similar items without provenance.
+
+Once you have a rough inventory, you can make informed decisions about which selling channels to use. High-value items warrant individual attention and specialized channels. Mid-range items are well-suited to estate sales or online marketplaces. Low-value items are better donated than sold — the time cost of selling a $10 item rarely justifies the effort.`
+      },
+      {
+        type: "h2",
+        heading: "Estate Sales: The Right Choice for Large Volumes",
+        body: `An estate sale is the most efficient way to sell a large volume of household items in a short period. A professional estate sale company comes to your home, prices and tags every item, advertises the sale, manages the event over one to three days, and handles the transactions. You receive a percentage of the proceeds — typically 35 to 50 percent — after the company takes its commission.
+
+Estate sales work best when you have a significant volume of items across multiple categories: furniture, kitchenware, linens, tools, artwork, books, collectibles, and general household goods. The estate sale model is designed for exactly this situation. A single well-run estate sale can clear the majority of a home's contents in a weekend.
+
+The tradeoff is control and price. Estate sale companies price items to sell, not to maximize individual item value. Pricing is typically set at 50 to 70 percent of estimated resale value, with further reductions on the final day. If you have items with significant individual value — antiques, jewelry, fine art, collectibles — these are often better handled separately through specialized channels before the estate sale.
+
+On the Eastside, estate sale companies typically book four to eight weeks in advance, especially during peak spring and fall moving seasons. If your move is in the summer, start contacting companies in April or May. Ask for references, check their online reviews, and understand their pricing and commission structure before signing a contract.
+
+Before the estate sale, remove any items you are keeping, items you are giving to family members, and any high-value items you plan to sell through other channels. Once items are in the estate sale, they are priced and tagged — pulling them back out creates complications.`
+      },
+      {
+        type: "h2",
+        heading: "Online Marketplaces: Higher Returns for Individual Items",
+        body: `For items with clear individual value — a specific piece of furniture, a set of tools, a collectible, an appliance — online marketplaces typically generate higher returns than estate sales. The tradeoff is time and effort: each item requires photography, listing, communication with buyers, and coordination of pickup or shipping.
+
+Facebook Marketplace is the most effective platform for large, local items — furniture, appliances, exercise equipment, and anything that requires in-person pickup. Listings are free, reach is local, and transactions are typically cash or Venmo at pickup. Price items at 40 to 60 percent of retail for good condition, lower for older pieces. Include multiple photos, accurate dimensions, and honest condition descriptions. Items priced fairly typically sell within a week.
+
+Craigslist remains useful for the same categories as Facebook Marketplace, particularly for buyers who prefer it. Posting on both platforms simultaneously doubles your reach with minimal additional effort.
+
+eBay is the right choice for items with a national or international buyer market — collectibles, vintage items, specialty tools, musical instruments, cameras, and anything with a collector community. eBay's fee structure (approximately 13 percent of the sale price) is higher than local platforms, but the access to a national buyer pool often more than compensates. Shipping adds complexity, but for items worth $100 or more, it is usually worth it.
+
+Poshmark and Mercari work well for clothing, accessories, and smaller household items. If you have quality clothing, shoes, or accessories in good condition, these platforms have active buyer communities and straightforward selling processes.
+
+The practical limit of online selling is time. If you have 200 items to sell, listing them individually is not realistic. Online selling works best for the top 10 to 20 items with the highest individual value. Everything else is better handled through estate sales or donation.`
+      },
+      {
+        type: "h2",
+        heading: "Consignment and Specialty Dealers: For High-Value Items",
+        body: `Some items are worth more than an estate sale will capture and require more expertise than a general online marketplace can provide. For these, consignment shops and specialty dealers are the right channel.
+
+Antique furniture, fine art, jewelry, silverware, vintage collectibles, and specialty items like musical instruments or high-end audio equipment all benefit from expert valuation and targeted buyer pools. A consignment shop or specialty dealer has established relationships with buyers who are specifically looking for these items and will pay accordingly.
+
+Consignment works by leaving the item with the dealer, who sells it on your behalf and takes a commission — typically 40 to 50 percent. The advantage is that you do not have to manage the transaction; the disadvantage is that items may sit for weeks or months before selling, and you need the item out of your home before the move.
+
+For items you believe have significant value but are unsure about, get an appraisal before selling. An appraiser charges a fee (typically $50 to $150 per hour) but can prevent you from undervaluing items significantly. This is particularly important for jewelry, artwork, and antiques, where the difference between an uninformed sale and an informed one can be substantial.
+
+On the Eastside, antique dealers and consignment shops are concentrated in Bellevue, Kirkland, and Issaquah. Many will do in-home assessments for larger collections, which saves you the effort of transporting items before knowing whether they are worth consigning.
+
+For jewelry specifically, get multiple quotes. Jewelry is frequently undervalued at estate sales and pawn shops. A dedicated jeweler or estate jewelry buyer will typically offer significantly more than a general buyer.`
+      },
+      {
+        type: "h2",
+        heading: "Donation: The Right Channel for the Majority of Items",
+        body: `For most downsizers, the honest reality is that the majority of items will be donated rather than sold. The time cost of selling low-value items exceeds the return, and donation organizations on the Eastside make the process straightforward.
+
+Habitat for Humanity ReStores accept furniture, appliances, building materials, and household items in good condition. They offer free pickup for large items, which is a significant practical advantage when you are managing a move. Donations are tax-deductible, and the pickup scheduling is typically available within one to two weeks.
+
+Goodwill and Salvation Army accept clothing, small household items, books, and general goods. Drop-off locations are convenient throughout the Eastside. For large volumes, some locations offer pickup scheduling.
+
+The Eastside also has a number of community-specific organizations that accept targeted donations: furniture banks that serve families transitioning out of homelessness, organizations that provide household goods to refugees and new immigrants, and senior centers that accept specific categories of items. These organizations often have more specific needs and can put items to more direct use than general thrift stores.
+
+For items in good condition that you want to give away rather than sell, Buy Nothing groups (organized through Facebook) are active throughout the Eastside. Items are offered for free to neighbors, which is a fast and satisfying way to ensure items go to people who will actually use them.
+
+Document your donations carefully. Keep receipts from Habitat for Humanity and other organizations, and photograph significant donations before they leave. For tax purposes, the IRS allows deductions for fair market value of donated items, and good documentation supports larger deductions.`
+      },
+      {
+        type: "h2",
+        heading: "Sequencing the Process: A Practical Timeline",
+        body: `The biggest mistake downsizers make is trying to handle everything at once, or starting too late to use the higher-value channels. The selling process needs to be sequenced correctly to maximize returns and minimize stress.
+
+Start four to six months before your move date. This is when you identify high-value items for appraisal and contact consignment dealers. It is also when you begin listing individual high-value items on eBay or Facebook Marketplace. Starting early gives you time to wait for the right buyer rather than accepting the first offer.
+
+Three to four months before the move, contact estate sale companies. Get quotes from two or three companies, check their references, and book the one that is the best fit. Confirm the sale date — ideally three to four weeks before your move date, which gives you time to handle unsold items before the movers arrive.
+
+Two to three months before the move, continue online selling for individual items. Remove from the estate sale inventory any items you have sold or decided to keep. Coordinate with family members about items they want — it is better to handle these conversations early rather than on move day.
+
+One to two months before the move, the estate sale runs. After the sale, assess what remains. Items in good condition go to donation organizations. Items with no donation value go to junk removal.
+
+The week before the move, the house should be clear of everything except what is coming with you. This is the goal: a clean, clear home that the movers can work through efficiently. For help coordinating the logistics of the move itself, our <a href="/senior-moving-guide-how-to-plan-a-stress-free-move/">senior moving guide</a> covers the full planning timeline in detail.`
+      },
+      {
+        type: "h2",
+        heading: "What to Do With What Does Not Sell",
+        body: `Even with a well-run estate sale and active online selling, some items will not sell. Having a plan for these items in advance prevents them from becoming a last-minute problem.
+
+Junk removal services handle items that are too worn, broken, or low-value for donation. Companies like 1-800-GOT-JUNK, College Hunks Hauling Junk, and local Eastside providers will load and remove virtually anything. This is not cheap — a full truck load typically costs $400 to $600 — but it is fast and eliminates the problem. Budget for junk removal as a line item in your moving costs rather than treating it as a surprise expense.
+
+For items that are in decent condition but did not sell at the estate sale, a final round of Facebook Marketplace listings at significantly reduced prices often moves them quickly. Pricing items at $10 to $20 with "must go before [date]" in the listing creates urgency that attracts buyers.
+
+Some estate sale companies offer a buyout option for remaining items after the sale — they purchase everything that did not sell for a flat fee. This is typically a low price, but it eliminates the problem entirely and may be worth it for the convenience.
+
+The goal is to have a zero-item outcome: everything either sold, donated, or removed before the movers arrive. Items left behind at the old home create complications with the sale or rental of the property and add stress to an already demanding process.`
+      },
+      {
+        type: "h2",
+        heading: "The Emotional Side of Selling Belongings",
+        body: `Selling a lifetime of belongings is not purely a logistics problem. For most downsizers, it involves genuine emotional difficulty — letting go of items connected to significant life events, family history, and personal identity.
+
+The most useful reframe is to separate the memory from the object. The memory of a holiday dinner does not live in the china service — it lives in you. Photographing items before they leave is a practical way to honor the memory without keeping the object. A photo album of significant items takes up no space and preserves the visual record.
+
+For items with family history, offer them to family members before the estate sale. Be specific: "Would you like the dining room table?" is more actionable than "Is there anything you want?" Give family members a deadline — typically two to four weeks — to claim items and arrange pickup. Items not claimed by the deadline go into the estate sale.
+
+Recognize that the process of selling belongings is emotionally tiring in a way that is distinct from physical tiredness. Build rest into the timeline. Do not try to make major decisions about sentimental items when you are exhausted. The decisions made under time pressure and fatigue are often regretted later.
+
+If you are helping an elderly parent through this process, the emotional dimension is even more significant. The parent may have decades of attachment to items that seem ordinary from the outside. Patience and genuine acknowledgment of the difficulty are more useful than efficiency pressure. See our guide on <a href="/storage-solutions-when-downsizing/">storage solutions when downsizing</a> for practical ways to use storage as a bridge when decisions feel too hard to make all at once.
+
+Finally, remember that the goal is not to maximize the dollar return on every item. The goal is to move forward into the next chapter with the things that genuinely matter, without the weight of possessions that no longer serve you. A well-run selling and donation process is an act of clarity, not loss.`
+      }
+    ],
+    faqs: [
+      {
+        q: "How far in advance should I start selling belongings before a downsizing move?",
+        a: "Four to six months before your move date is the recommended starting point. This timeline gives you enough time to get appraisals on high-value items, contact and book an estate sale company (which typically requires four to eight weeks lead time), list individual items online, and still have time to handle unsold items before the movers arrive. Starting two months out is possible but creates significant time pressure, especially if you have a large volume of items."
+      },
+      {
+        q: "Is an estate sale worth it, or should I just donate everything?",
+        a: "An estate sale is worth it if you have a significant volume of items across multiple categories — furniture, kitchenware, tools, collectibles, artwork, and general household goods. A well-run estate sale can generate $5,000 to $20,000 or more from a fully furnished home, depending on the quality and volume of items. If your home is sparsely furnished or most items are low quality, the estate sale commission may not justify the return, and donation is more efficient. Get a free consultation from two or three estate sale companies — they will give you an honest assessment of whether a sale makes sense for your situation."
+      },
+      {
+        q: "What items are worth selling individually rather than through an estate sale?",
+        a: "Items worth individual attention include jewelry (especially fine jewelry, gold, silver, or gemstones), antique furniture with documented provenance, fine art, collectibles with established collector markets (vintage watches, coins, stamps, specific brands of pottery or glass), musical instruments, high-end audio equipment, vintage tools, and any item in original packaging with original documentation. These categories typically command significantly higher prices through specialized channels than through estate sales."
+      },
+      {
+        q: "What happens to items that do not sell at the estate sale?",
+        a: "Items that do not sell at an estate sale typically go through one of three channels: donation to organizations like Habitat for Humanity ReStore or Goodwill, a final round of online listings at significantly reduced prices, or junk removal for items with no donation value. Some estate sale companies offer a buyout option for remaining items. Budget for junk removal as a line item — a full truck load typically costs $400 to $600 on the Eastside — rather than treating it as a surprise expense."
+      },
+      {
+        q: "How do I handle items with sentimental value that I cannot keep?",
+        a: "Offer sentimental items to family members first, with a specific deadline for claiming and pickup. Photograph items before they leave — the visual record preserves the memory without requiring the object. For items with genuine historical or family significance, consider whether a local historical society, library, or community organization might want them. Recognize that the emotional difficulty of letting go is real and normal, and build rest into the process rather than trying to power through it all at once."
+      },
+      {
+        q: "Should I hire a senior move manager in addition to a moving company?",
+        a: `A senior move manager (a specialist in coordinating all aspects of a senior relocation, including sorting, selling, and the physical move) is worth considering if the volume of possessions is large, if the move involves significant emotional complexity, or if the person moving does not have family members available to help coordinate. Senior move managers typically charge $50 to $150 per hour and can manage the entire process from inventory through move-in at the new home. For a straightforward move with family support available, a good moving company with senior moving experience is usually sufficient. Our <a href="/senior-moving-guide-how-to-plan-a-stress-free-move/">senior moving guide</a> covers how to evaluate your options.`
+      }
+    ],
+    relatedService: "Senior Moving Services",
+    relatedServiceHref: "/senior-moving/"
+  }
 };

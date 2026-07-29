@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "how-to-sell-belongings-before-moving",
+    title: "How to Sell a Lifetime of Belongings Before Moving",
+    excerpt: "Downsizing and need to sell furniture, collectibles, and household items? Learn which selling method works best for each item type — estate sales, online marketplaces, consignment, and more.",
+    date: "July 29, 2026",
+    category: "Downsizing & Senior Moving",
+    readTime: "12 min read",
+    image: BRAND_IMAGES.crewCarryingFurniture,
+  },
+  {
     slug: "storage-solutions-when-downsizing",
     title: "Storage Solutions When Downsizing: What to Keep, What to Store, and When to Let Go",
     category: "Downsizing & Senior Moving",
