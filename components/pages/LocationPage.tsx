@@ -726,15 +726,28 @@ export default function LocationPage({ slug }: LocationPageProps) {
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-            {CANONICAL_SERVICES.map((svc) => (
-              <a key={svc.key} href={`/${cityPrefix}-movers/${svc.key}/`}>
-                <span className="flex items-center gap-2 bg-gray-50 hover:bg-brand-green/10 border border-gray-200 hover:border-brand-green/30 text-gray-700 hover:text-brand-forest text-sm font-medium px-4 py-3 rounded-lg transition-all cursor-pointer group">
-                  <span className="text-base leading-none flex-shrink-0">{svc.icon}</span>
-                  <span className="flex-1">{svc.label}</span>
-                  <ArrowRight className="w-3.5 h-3.5 text-brand-green opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
-                </span>
-              </a>
-            ))}
+            {CANONICAL_SERVICES.map((svc) => {
+              // "corporate-relocation" has no /{city}-movers/corporate-relocation/
+              // sub-page for any city (not a valid serviceKey) — render as plain
+              // text instead of a broken link.
+              if (svc.key === "corporate-relocation") {
+                return (
+                  <span key={svc.key} className="flex items-center gap-2 bg-gray-50 border border-gray-200 text-gray-700 text-sm font-medium px-4 py-3 rounded-lg">
+                    <span className="text-base leading-none flex-shrink-0">{svc.icon}</span>
+                    <span className="flex-1">{svc.label}</span>
+                  </span>
+                );
+              }
+              return (
+                <a key={svc.key} href={`/${cityPrefix}-movers/${svc.key}/`}>
+                  <span className="flex items-center gap-2 bg-gray-50 hover:bg-brand-green/10 border border-gray-200 hover:border-brand-green/30 text-gray-700 hover:text-brand-forest text-sm font-medium px-4 py-3 rounded-lg transition-all cursor-pointer group">
+                    <span className="text-base leading-none flex-shrink-0">{svc.icon}</span>
+                    <span className="flex-1">{svc.label}</span>
+                    <ArrowRight className="w-3.5 h-3.5 text-brand-green opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
+                  </span>
+                </a>
+              );
+            })}
           </div>
         </div>
       </section>

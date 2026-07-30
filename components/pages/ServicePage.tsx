@@ -1370,16 +1370,11 @@ export default function ServicePage({ slug }: ServicePageProps) {
         };
         const serviceKey = slugToKey[slug];
         if (!serviceKey) return null;
-        // City/service combos confirmed 404 (no matching /{city}-movers/{service}/
-        // page was ever built) — render as plain text instead of a broken link.
-        const BROKEN_CROSS_LINKS = new Set([
-          "corporate-relocation:woodinville",
-          "labor-only-moving:burien",
-          "labor-only-moving:issaquah",
-          "labor-only-moving:lynnwood",
-          "labor-only-moving:kirkland",
-          "labor-only-moving:mercer-island",
-        ]);
+        // "corporate-relocation" and "labor-only" are not valid serviceKeys for
+        // /{city}-movers/{service}/ (no such sub-page was ever built, for any
+        // city) — render every city in this grid as plain text instead of a
+        // broken link on these two hub pages.
+        const isUnbuiltServiceKey = serviceKey === "corporate-relocation" || serviceKey === "labor-only";
         const cityLinks = [
           { city: "Seattle", slug: "seattle" },
           { city: "Bellevue", slug: "bellevue" },
@@ -1418,7 +1413,7 @@ export default function ServicePage({ slug }: ServicePageProps) {
               </h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2">
                 {unique.map(c => {
-                  if (BROKEN_CROSS_LINKS.has(`${slug}:${c.slug}`)) {
+                  if (isUnbuiltServiceKey) {
                     return (
                       <span key={c.slug} className="flex items-center gap-1.5 px-3 py-2 rounded-lg border border-gray-200 bg-white text-gray-700 text-sm font-medium">
                         <MapPin size={12} className="text-brand-forest flex-shrink-0" />

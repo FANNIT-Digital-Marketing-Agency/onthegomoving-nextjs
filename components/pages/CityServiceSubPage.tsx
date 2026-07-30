@@ -1082,6 +1082,17 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
                   {SERVICE_ORDER.map((svcKey) => {
                     const svc = SERVICE_DEFS[svcKey];
                     if (!svc) return null;
+                    // "corporate-relocation" has no /{city}-movers/corporate-relocation/
+                    // sub-page for any city (not a valid serviceKey) — render as
+                    // plain text instead of a broken link.
+                    if (svcKey === "corporate-relocation") {
+                      return (
+                        <span key={svcKey} className="flex items-center gap-2 text-sm py-1.5 px-2 rounded-lg text-gray-600">
+                          <span className="text-base leading-none">{svc.icon}</span>
+                          {svc.label}
+                        </span>
+                      );
+                    }
                     const isActive = svcKey === serviceKey;
                     return (
                       <a key={svcKey} href={`/${cityMoverSlug}/${svcKey}/`}>
