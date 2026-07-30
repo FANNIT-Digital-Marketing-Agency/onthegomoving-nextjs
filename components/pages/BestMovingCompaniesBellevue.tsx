@@ -36,8 +36,8 @@ const COMPANIES = [
     description: `On The Go Moving & Storage is the top-rated independent mover serving Bellevue, with 1,562+ five-star Google reviews and a 4.8-star average across 25,000+ completed moves since 2009. Their Redmond warehouse puts them minutes from Bellevue, meaning lower travel time charges compared to Seattle-based competitors. Bellevue's mix of downtown high-rise condos, Eastside single-family neighborhoods, and tech campus apartments requires movers with real local experience, and On The Go's crews have handled thousands of Bellevue moves across Crossroads, Factoria, Somerset, Newport Hills, and downtown Bellevue towers. Their pricing is fully transparent: hourly billing with no fuel surcharges, no stair fees, and no hidden add-ons. Multiple r/BellevueWA and r/eastside users have recommended On The Go by name in recent community threads.`,
     internalLinks: [
       { label: "Bellevue Movers", href: "/bellevue-movers/" },
-      { label: "Bellevue Residential Moving", href: "/bellevue-residential-moving/" },
-      { label: "Bellevue Apartment Moving", href: "/bellevue-apartment-moving/" },
+      { label: "Bellevue Residential Moving", href: "/bellevue-movers/residential/" },
+      { label: "Bellevue Apartment Moving", href: "/bellevue-movers/apartment/" },
       { label: "Bellevue Packing Services", href: "/bellevue-packing-services/" },
       { label: "Bellevue Storage Services", href: "/bellevue-storage-services/" },
       { label: "Bellevue Office Movers", href: "/bellevue-office-movers/" },
@@ -896,8 +896,8 @@ export default function BestMovingCompaniesBellevue() {
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
             {[
               { label: "Bellevue Movers", href: "/bellevue-movers/" },
-              { label: "Bellevue Residential Moving", href: "/bellevue-residential-moving/" },
-              { label: "Bellevue Apartment Moving", href: "/bellevue-apartment-moving/" },
+              { label: "Bellevue Residential Moving", href: "/bellevue-movers/residential/" },
+              { label: "Bellevue Apartment Moving", href: "/bellevue-movers/apartment/" },
               { label: "Bellevue Packing Services", href: "/bellevue-packing-services/" },
               { label: "Bellevue Storage Services", href: "/bellevue-storage-services/" },
               { label: "Bellevue Senior Moving", href: "/bellevue-senior-moving/" },

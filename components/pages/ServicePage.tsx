@@ -1370,6 +1370,11 @@ export default function ServicePage({ slug }: ServicePageProps) {
         };
         const serviceKey = slugToKey[slug];
         if (!serviceKey) return null;
+        // "corporate-relocation" and "labor-only" are not valid serviceKeys for
+        // /{city}-movers/{service}/ (no such sub-page was ever built, for any
+        // city) — render every city in this grid as plain text instead of a
+        // broken link on these two hub pages.
+        const isUnbuiltServiceKey = serviceKey === "corporate-relocation" || serviceKey === "labor-only";
         const cityLinks = [
           { city: "Seattle", slug: "seattle" },
           { city: "Bellevue", slug: "bellevue" },
@@ -1407,14 +1412,24 @@ export default function ServicePage({ slug }: ServicePageProps) {
                 {data.title} in Greater Seattle
               </h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2">
-                {unique.map(c => (
-                  <a key={c.slug} href={`/${c.slug}-movers/${serviceKey}/`}>
-                    <span className="flex items-center gap-1.5 px-3 py-2 rounded-lg border border-gray-200 bg-white hover:border-brand-forest hover:bg-brand-forest/5 text-gray-700 hover:text-brand-forest text-sm font-medium transition-all cursor-pointer">
-                      <MapPin size={12} className="text-brand-forest flex-shrink-0" />
-                      {c.city}
-                    </span>
-                  </a>
-                ))}
+                {unique.map(c => {
+                  if (isUnbuiltServiceKey) {
+                    return (
+                      <span key={c.slug} className="flex items-center gap-1.5 px-3 py-2 rounded-lg border border-gray-200 bg-white text-gray-700 text-sm font-medium">
+                        <MapPin size={12} className="text-brand-forest flex-shrink-0" />
+                        {c.city}
+                      </span>
+                    );
+                  }
+                  return (
+                    <a key={c.slug} href={`/${c.slug}-movers/${serviceKey}/`}>
+                      <span className="flex items-center gap-1.5 px-3 py-2 rounded-lg border border-gray-200 bg-white hover:border-brand-forest hover:bg-brand-forest/5 text-gray-700 hover:text-brand-forest text-sm font-medium transition-all cursor-pointer">
+                        <MapPin size={12} className="text-brand-forest flex-shrink-0" />
+                        {c.city}
+                      </span>
+                    </a>
+                  );
+                })}
               </div>
             </div>
           </section>

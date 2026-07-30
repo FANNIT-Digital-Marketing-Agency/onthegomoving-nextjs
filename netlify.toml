@@ -2335,3 +2335,99 @@
   to = "/residential-moving/"
   status = 301
   force = true
+
+# SEO cleanup — city×service sub-pages that were never built (invalid service
+# keys for /{city}-movers/{service}/), redirected to the matching service hub.
+[[redirects]]
+  from = "/woodinville-movers/corporate-relocation/"
+  to = "/corporate-relocation/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/medina-movers/corporate-relocation/"
+  to = "/corporate-relocation/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/kirkland-movers/corporate-relocation/"
+  to = "/corporate-relocation/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/fremont-movers/corporate-relocation/"
+  to = "/corporate-relocation/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/olympia-movers/corporate-relocation/"
+  to = "/corporate-relocation/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/ballard-movers/corporate-relocation/"
+  to = "/corporate-relocation/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/burien-movers/labor-only/"
+  to = "/labor-only-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/issaquah-movers/labor-only/"
+  to = "/labor-only-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/lynnwood-movers/labor-only/"
+  to = "/labor-only-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/mercer-island-movers/labor-only/"
+  to = "/labor-only-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/mukilteo-movers/labor-only/"
+  to = "/labor-only-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/tukwila-movers/labor-only/"
+  to = "/labor-only-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/woodinville-movers/labor-only/"
+  to = "/labor-only-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/sammamish-movers/labor-only/"
+  to = "/labor-only-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/kirkland-movers/labor-only/"
+  to = "/labor-only-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/kenmore-movers/labor-only/"
+  to = "/labor-only-moving/"
+  status = 301
+  force = true
+
+# SEO cleanup — old flat Bellevue service-page slugs, replaced by
+# /bellevue-movers/{service}/ sub-pages.
+[[redirects]]
+  from = "/bellevue-residential-moving/"
+  to = "/bellevue-movers/residential/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/bellevue-apartment-moving/"
+  to = "/bellevue-movers/apartment/"
+  status = 301
+  force = true
