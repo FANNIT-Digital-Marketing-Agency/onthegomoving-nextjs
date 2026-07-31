@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "commercial-moving-timeline-what-to-expect",
+    title: "Commercial Moving Timeline: What to Expect",
+    excerpt: "A week-by-week commercial moving timeline for Eastside businesses. Learn what happens at every stage of an office relocation, from signing the contract to your first day in the new space.",
+    date: "July 31, 2026",
+    category: "Corporate and Office Moving",
+    readTime: "10 min read",
+    image: BRAND_IMAGES.crewCustomerCommercial,
+  },
+  {
     slug: "how-to-plan-office-move-without-disrupting-team",
     title: "How to Plan an Office Move Without Disrupting Your Team",
     excerpt: "A strategic guide to planning an office relocation on the Eastside. Covers the 90-day timeline, move team structure, IT transition, employee communication, and move day execution so your business keeps running.",
