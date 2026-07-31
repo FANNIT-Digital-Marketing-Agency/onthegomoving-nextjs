@@ -22,7 +22,7 @@ export const BLOG_POSTS: BlogIndexPost[] = [
     date: "July 31, 2026",
     category: "Corporate and Office Moving",
     readTime: "10 min read",
-    image: BRAND_IMAGES.crewCustomerCommercial,
+    image: BRAND_IMAGES.customerHandshake,
   },
   {
     slug: "how-to-plan-office-move-without-disrupting-team",

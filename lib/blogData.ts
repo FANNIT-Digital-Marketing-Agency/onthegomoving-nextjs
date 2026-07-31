@@ -5814,7 +5814,7 @@ Finally, remember that the goal is not to maximize the dollar return on every it
     category: "Corporate and Office Moving",
     readTime: "10 min read",
     author: "Jason Sexton",
-    heroImage: BRAND_IMAGES.crewCustomerCommercial,
+    heroImage: BRAND_IMAGES.customerHandshake,
     intro: `Every business that has moved offices has a story about something that did not go as planned. The IT vendor showed up two hours late. The elevator reservation was for the wrong building. The new office had no internet on day one. The furniture arrived before the network closet was ready. These problems are not random. They are the predictable result of a timeline that was not followed, a handoff that was not made, or a vendor that was not confirmed.\n\nUnderstanding what a commercial move looks like week by week is the most effective way to prevent those problems. This timeline covers the full arc of a commercial relocation, from the moment you sign a moving contract through your first week in the new space. It is written for office managers, operations leaders, and business owners on the Eastside who are managing a move and want to know what to expect at every stage.`,
     sections: [
       {
