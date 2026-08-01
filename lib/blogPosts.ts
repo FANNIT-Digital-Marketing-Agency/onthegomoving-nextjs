@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "it-equipment-moving-how-to-relocate-servers-workstations-safely",
+    title: "IT Equipment Moving: How to Relocate Servers and Workstations Safely",
+    excerpt: "Moving servers, workstations, and IT infrastructure requires more planning than moving furniture. Learn how to relocate your office technology safely with zero data loss and minimal downtime.",
+    date: "August 1, 2026",
+    category: "Corporate and Office Moving",
+    readTime: "11 min read",
+    image: BRAND_IMAGES.warehouseInterior,
+  },
+  {
     slug: "commercial-moving-timeline-what-to-expect",
     title: "Commercial Moving Timeline: What to Expect",
     excerpt: "A week-by-week commercial moving timeline for Eastside businesses. Learn what happens at every stage of an office relocation, from signing the contract to your first day in the new space.",

@@ -5888,4 +5888,162 @@ Finally, remember that the goal is not to maximize the dollar return on every it
     relatedServiceHref: "/commercial-moving/"
   }
 
+,
+  "it-equipment-moving-how-to-relocate-servers-workstations-safely": {
+    slug: "it-equipment-moving-how-to-relocate-servers-workstations-safely",
+    title: `IT Equipment Moving: How to Relocate Servers and Workstations Safely`,
+    metaTitle: `IT Equipment Moving: How to Relocate Servers and Workstations Safely | On The Go Moving`,
+    metaDescription: `Moving servers, workstations, and IT infrastructure requires more planning than moving furniture. Learn how to relocate your office technology safely with zero data loss and minimal downtime.`,
+    date: "August 1, 2026",
+    dateISO: "2026-08-01",
+    category: "Corporate and Office Moving",
+    readTime: "11 min read",
+    author: "Jason Sexton",
+    heroImage: BRAND_IMAGES.warehouseInterior,
+    intro: `Every piece of furniture in your office is replaceable. Your servers, workstations, and network infrastructure are not. A dropped hard drive, an improperly packed rack server, or a static discharge event during transit can wipe out years of data and cost tens of thousands of dollars to recover from. Yet IT equipment is often treated as an afterthought in office move planning, handed off to the moving crew on move day with no special instructions and no backup verification.
+
+This guide covers everything you need to know about relocating IT equipment safely during an office move on the Eastside. Whether you are moving a small business with a dozen workstations or a mid-size company with a dedicated server room, the principles are the same: document everything, protect the hardware, and never move a server without a verified backup.`,
+    sections: [
+      {
+        type: "h2",
+        heading: `Why IT Equipment Moves Are Different`,
+        body: `Office furniture can be wrapped in moving blankets and stacked in a truck. IT equipment cannot. The difference comes down to three factors: sensitivity, data risk, and downtime cost.
+
+Hard drives and solid-state drives are precision instruments. A standard 3.5-inch hard drive contains platters spinning at 5,400 to 7,200 RPM, with read/write heads that float nanometers above the surface. A sharp impact during transport can cause a head crash that destroys the drive and the data on it. Even drives that survive the physical move can fail weeks later due to vibration damage that was not immediately apparent.
+
+Server racks present a different challenge. A fully loaded rack can weigh 1,500 to 2,000 pounds and must be moved in a specific sequence: equipment removed from the rack, rack transported empty, equipment reinstalled and reconfigured at the destination. Moving a populated rack is possible in some cases, but only with specialized equipment and experienced crews.
+
+The third factor is downtime cost. For most businesses, every hour of IT downtime has a measurable cost in lost productivity, missed sales, and customer impact. A poorly planned IT move can result in days of downtime rather than hours. A well-planned one can bring systems back online the same day the physical move completes.
+
+Our <a href="/commercial-moving/">commercial moving services</a> on the Eastside include coordination with your IT team to sequence the move correctly. The physical movers and the IT team need to work from the same timeline, not two separate ones.`
+      },
+      {
+        type: "h2",
+        heading: `The IT Inventory Audit: Start Here`,
+        body: `Before you can plan an IT move, you need a complete inventory of everything that needs to move. This sounds obvious, but most businesses discover equipment they forgot about during this process: a server in a back closet, a network switch behind a cabinet, a UPS unit that has been running quietly for years.
+
+Your IT inventory should capture the following for every piece of equipment:
+
+The asset tag or serial number, the make and model, the current location in the office, the destination location in the new space, any special handling requirements (fragile, requires ESD protection, must remain upright), the data backup status, and the person responsible for that equipment.
+
+For servers specifically, document the operating system, the services running on each server, the IP addresses and network configuration, and the dependencies between servers. A web server that depends on a database server needs to come online in a specific order. If you do not document those dependencies before the move, you will spend hours troubleshooting them after.
+
+Workstations are simpler but still require documentation. Note which user is assigned to each machine, whether the machine has a local backup, and whether the user's data is stored locally or on a network drive. Users who store data locally on their workstations are a data loss risk during any move.
+
+Network infrastructure, including switches, routers, firewalls, and patch panels, requires the most careful documentation. Take photographs of every cable connection before disconnecting anything. Label every cable at both ends. A network that took years to build can take days to rebuild from scratch if the documentation does not exist.`
+      },
+      {
+        type: "h2",
+        heading: `Backup Verification: The Non-Negotiable Step`,
+        body: `No IT equipment should move without a verified backup. This is not a suggestion. It is the single most important rule in IT equipment relocation.
+
+The word "verified" is critical. A backup that has never been tested is not a backup. It is a hope. Before move day, your IT team should perform a full backup of every server and every workstation with local data storage, and then verify that the backup can be restored. A test restore of a sample of files is the minimum acceptable verification. A full test restore to a spare machine is better.
+
+For businesses running cloud-based systems, the backup question is simpler but still requires attention. Confirm that all data is synchronized to the cloud before the move begins. Check that no large file transfers are in progress that could be interrupted. Verify that cloud credentials and access keys are documented and accessible from a location other than the servers being moved.
+
+For businesses with on-premises servers, the backup strategy needs to account for the gap between the last backup before the move and the moment the servers come back online at the new location. For most businesses, this gap is acceptable. For businesses with high transaction volumes, it may require a more sophisticated approach, such as replicating data to a cloud instance that remains active during the move.
+
+The backup verification step should be completed at least 48 hours before move day. This gives your IT team time to identify and resolve any backup failures before the move begins, rather than discovering them after the equipment has already been disconnected.`
+      },
+      {
+        type: "h2",
+        heading: `Packing and Protecting IT Equipment`,
+        body: `IT equipment requires specific packing materials and techniques that differ from standard office moving. Using the wrong materials can cause static discharge, impact damage, or moisture damage that destroys equipment that survived the physical move.
+
+For workstations and desktop computers, the original manufacturer packaging is always the best option if it is available. If not, use anti-static foam padding inside a double-walled cardboard box. Never use standard bubble wrap directly against electronic components. Bubble wrap can generate static electricity that damages sensitive components. Anti-static bubble wrap, which is pink or black in color, is safe to use.
+
+For monitors, the original packaging is again ideal. If unavailable, wrap the screen in a clean, lint-free cloth or anti-static foam, then pack in a box with at least two inches of padding on all sides. Transport monitors upright, never flat. A monitor transported flat with weight on top of it can crack the LCD panel even if the outer packaging shows no damage.
+
+Servers require the most careful packing. Before removing a server from its rack, document its position and all cable connections with photographs. Remove all drives if they are hot-swappable and pack them separately in anti-static bags. Pack the server in its original packaging if available, or in a custom foam-lined case. Servers should be transported in a climate-controlled environment when possible, as temperature extremes during transit can cause condensation inside the equipment.
+
+Hard drives and SSDs that are removed from servers or workstations should be packed individually in anti-static bags and then in padded cases. Never stack bare drives. Never place drives in the same box as heavy equipment that could shift during transport.
+
+Network equipment including switches and routers should be packed with their cables labeled and coiled separately. Rack-mounted switches can be transported in the rack if the rack is being moved empty, but should be removed and packed individually if there is any risk of the rack tipping or experiencing significant vibration.`
+      },
+      {
+        type: "h2",
+        heading: `The Move Day IT Sequence`,
+        body: `The sequence in which IT equipment is disconnected, transported, and reconnected matters as much as how it is packed. A well-planned sequence minimizes downtime and reduces the risk of configuration errors.
+
+The general principle is last off, first on. The equipment that is most critical to business operations should be the last to be disconnected at the old location and the first to be reconnected at the new one. For most businesses, this means the core network infrastructure, including the firewall, core switches, and internet connection, should be set up at the new location before any servers or workstations arrive.
+
+A practical IT move sequence for a mid-size office looks like this: On the day before the move, perform final backups and verify them. Shut down non-critical servers. Disconnect and pack workstations. On move day, set up network infrastructure at the new location first, then bring servers online, then connect workstations. Test critical systems before declaring the move complete.
+
+For businesses that cannot afford any downtime during the move, a parallel operation approach is sometimes used. Critical servers are replicated to a cloud instance or a temporary hosting environment before the move. The physical servers are then moved without time pressure, and the cloud instance handles traffic during the transition. This approach adds cost but eliminates downtime risk.
+
+Coordinate the IT sequence with your <a href="/office-moving/">office moving team</a> before move day. The physical movers need to know which equipment moves first, which moves last, and which items require special handling. A shared move day schedule with both the IT team and the moving crew prevents the situation where movers are waiting for IT to finish disconnecting equipment, or IT is waiting for movers to clear a path.
+
+For a broader view of how the IT sequence fits into the overall office relocation project, see our <a href="/commercial-moving-timeline-what-to-expect/">commercial moving timeline guide</a>, which covers all five phases from pre-contract planning through post-move setup.`
+      },
+      {
+        type: "h2",
+        heading: `Setting Up IT at the New Location`,
+        body: `The setup phase at the new location is where most IT moves either succeed or fall apart. The physical move may have gone perfectly, but if the network is not configured correctly or the servers do not come online in the right order, the business is still down.
+
+Start with the physical infrastructure. Verify that the new location has adequate power for your IT equipment. Server rooms require dedicated circuits, proper grounding, and often UPS systems to protect against power fluctuations. If the new space does not have the right electrical infrastructure, this needs to be addressed before move day, not after.
+
+Internet connectivity is the next priority. Confirm that the internet service provider has activated service at the new location before the move. ISP activation delays are one of the most common causes of extended downtime after an office move. Order the new internet service at least four to six weeks before the move date, and confirm activation at least one week before.
+
+When setting up servers, follow the documented startup sequence. Bring up the core infrastructure first: domain controllers, DNS servers, and DHCP servers. Then bring up application servers in order of dependency. Test each layer before moving to the next. Do not bring up all servers simultaneously and then try to troubleshoot why nothing is working.
+
+For workstations, the setup process is simpler but still requires attention. Verify that each workstation connects to the network and can authenticate. Check that mapped network drives and printers are accessible. For users who had local data on their workstations, verify that the data was transferred correctly before the old workstation is decommissioned.
+
+Document any configuration changes made during the move. It is common to discover during setup that IP addresses need to be updated, that a switch port needs to be reconfigured, or that a firewall rule needs to be adjusted. These changes should be documented in your network documentation so the configuration remains accurate after the move.`
+      },
+      {
+        type: "h2",
+        heading: `Working With Your Moving Company on IT Equipment`,
+        body: `Not all moving companies have experience with IT equipment. Before hiring a mover for an office relocation that includes servers and specialized technology, ask specific questions about their IT moving experience.
+
+Ask whether they have moved server racks before and what their process is. Ask whether they use anti-static packing materials for electronics. Ask whether they have climate-controlled vehicles available for sensitive equipment. Ask whether they carry specialized equipment such as server dollies and lift gates for heavy rack equipment.
+
+A moving company that cannot answer these questions confidently is not the right choice for a move that includes significant IT infrastructure. The cost of damaged equipment or lost data far exceeds any savings from hiring a less experienced mover.
+
+The division of responsibility between your IT team and the moving company should be clearly defined before the move. In most cases, the IT team is responsible for disconnecting, labeling, and packing all IT equipment. The moving company is responsible for transporting the packed equipment safely and placing it in the correct location at the destination. The IT team is then responsible for unpacking, connecting, and configuring the equipment.
+
+This division of responsibility protects both parties. The moving company cannot be held responsible for data loss if the IT team did not perform backups. The IT team cannot be held responsible for physical damage if the moving company did not use appropriate packing materials.
+
+For complex moves involving large server rooms or specialized equipment, consider hiring an IT relocation specialist in addition to a general commercial moving company. IT relocation specialists focus exclusively on technology moves and bring expertise in server handling, network reconfiguration, and data center migration that general movers do not have.`
+      },
+      {
+        type: "h2",
+        heading: `Post-Move IT Checklist`,
+        body: `After the physical move is complete and the IT equipment is set up at the new location, work through a structured post-move checklist before declaring the move finished.
+
+Verify that all servers are online and running their expected services. Check server logs for any errors that occurred during startup. Confirm that backups are running correctly at the new location. Verify that all workstations can authenticate and access network resources. Test all business-critical applications from multiple workstations. Confirm that internet connectivity is working at the expected speeds. Test VPN access for remote employees. Verify that all printers and peripheral devices are connected and functional.
+
+Update your IT documentation to reflect the new location. Update IP address assignments if they changed during the move. Update network diagrams to reflect the new physical layout. Update the asset inventory to reflect the new locations of all equipment.
+
+Dispose of any equipment that was not moved to the new location responsibly. Hard drives from decommissioned servers and workstations should be wiped or physically destroyed before disposal. Simply deleting files or formatting a drive does not prevent data recovery. Use certified data destruction software or a professional data destruction service.
+
+Finally, schedule a post-move review with your IT team two weeks after the move. This gives time for any latent issues to surface, such as drives that were damaged during transport but did not fail immediately. Address any outstanding issues before they become larger problems.`
+      }
+    ],
+    faqs: [
+      {
+        q: `Do we need to hire a separate IT moving company, or can our regular movers handle it?`,
+        a: `It depends on the complexity of your IT infrastructure. For a small office with standard workstations and no on-premises servers, an experienced commercial moving company with electronics handling experience is usually sufficient. For offices with server racks, specialized equipment, or large amounts of sensitive hardware, hiring an IT relocation specialist in addition to your commercial mover is worth the additional cost. The key is to ask your moving company specific questions about their IT moving experience before assuming they can handle it.`
+      },
+      {
+        q: `How long does it take to move a server room?`,
+        a: `A small server room with two to five rack units typically takes one to two days to fully disconnect, transport, and reconnect. A mid-size server room with ten to twenty rack units may take three to five days. The physical transport is usually the fastest part. The time-consuming steps are the pre-move documentation and backup verification, and the post-move configuration and testing. Budget at least as much time for setup at the new location as you do for disconnection at the old one.`
+      },
+      {
+        q: `Can we move servers while they are still running?`,
+        a: `No. Servers should always be shut down cleanly before transport. Moving a running server creates multiple risks: data corruption from an unclean shutdown if the server is bumped, physical damage from vibration to spinning hard drives, and voided warranties on most server hardware. The only exception is in very specialized scenarios involving live migration to virtualized infrastructure, which requires specific expertise and is not a standard moving company service.`
+      },
+      {
+        q: `What is the biggest IT mistake companies make during office moves?`,
+        a: `The most common and costly mistake is failing to verify backups before the move. Many companies perform backups regularly but never test whether those backups can actually be restored. A move is a high-risk event for data loss, and discovering that your backup is incomplete or corrupted after the servers have already been moved is a situation that can take days or weeks to recover from. Always perform a test restore before move day.`
+      },
+      {
+        q: `How do we minimize downtime during an IT move?`,
+        a: `The most effective approach is to move IT infrastructure in phases rather than all at once. Move non-critical systems first, verify they are working, then move critical systems. For businesses that cannot tolerate any downtime, consider temporarily replicating critical systems to a cloud environment before the move, then cutting over to the physical servers once they are set up at the new location. Coordinate the IT sequence with your moving company so the physical move and the IT setup happen in the right order.`
+      },
+      {
+        q: `Should we update our IT documentation after the move?`,
+        a: `Yes, and this step is frequently skipped. After the move, update your network diagrams, IP address assignments, asset inventory, and any runbooks or procedures that reference physical locations. IT documentation that reflects the old office layout becomes a liability when something goes wrong at the new location and the person troubleshooting it is working from outdated information. Schedule a documentation update session within two weeks of the move while the details are still fresh.`
+      }
+    ]
+  }
 };
