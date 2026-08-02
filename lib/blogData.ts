@@ -4280,7 +4280,7 @@ For clients who are moving long distances or have complex needs, such as a senio
     readTime: "7 min read",
     author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckBellevueSkyline,
-    intro: `One of the most practical things a real estate agent can do for a client is tell them exactly when to book movers. Not a vague suggestion. A specific timeline. Clients who wait until after closing to think about moving end up scrambling, overpaying, or settling for whoever has last-minute availability. That is not the experience you want your name attached to. This cheat sheet gives you a shareable, stage-by-stage moving timeline for both buyers and sellers, a breakdown of what moving costs look like on the Eastside, and a simple script for introducing a trusted moving company at the right moment in the transaction. For a deeper look at how to evaluate and recommend moving companies, see our guide on <a href="/how-to-choose-moving-company-for-real-estate-clients/">how to choose a moving company for your real estate clients</a>.`,
+    intro: `One of the most practical things a real estate agent can do for a client is tell them exactly when to book movers. Not a vague suggestion. A specific timeline. Clients who wait until after closing to think about moving end up scrambling, overpaying, or settling for whoever has last-minute availability. That is not the experience you want your name attached to. This cheat sheet gives you a shareable, stage-by-stage moving timeline for both buyers and sellers, a breakdown of what moving costs look like on the Eastside, and a simple script for introducing a trusted moving company at the right moment in the transaction. For a deeper look at how to evaluate and recommend moving companies, see our guide on <a href="/how-to-choose-moving-company-for-real-estate-clients/">how to choose a moving company for your real estate clients</a>. For a deeper guide you can share directly with your clients on how to hire the right company and avoid common pitfalls, see our article on <a href="/what-your-clients-need-to-know-about-hiring-movers/">what clients need to know about hiring movers</a>.`,
     sections: [
       {
         type: "h2",
@@ -6043,6 +6043,147 @@ Finally, schedule a post-move review with your IT team two weeks after the move.
       {
         q: `Should we update our IT documentation after the move?`,
         a: `Yes, and this step is frequently skipped. After the move, update your network diagrams, IP address assignments, asset inventory, and any runbooks or procedures that reference physical locations. IT documentation that reflects the old office layout becomes a liability when something goes wrong at the new location and the person troubleshooting it is working from outdated information. Schedule a documentation update session within two weeks of the move while the details are still fresh.`
+      }
+    ]
+  }
+,
+  "what-your-clients-need-to-know-about-hiring-movers": {
+    slug: "what-your-clients-need-to-know-about-hiring-movers",
+    title: `What Your Clients Need to Know About Hiring Movers`,
+    metaTitle: `What Your Clients Need to Know About Hiring Movers | On The Go Moving`,
+    metaDescription: `A practical guide for real estate agents on the Eastside. Share this with your clients to help them hire the right moving company, avoid common scams, and arrive at closing day ready to move.`,
+    date: "August 2, 2026",
+    dateISO: "2026-08-02",
+    category: "Real Estate Agent Resources",
+    readTime: "10 min read",
+    author: "Jason Sexton",
+    heroImage: BRAND_IMAGES.crewEntryway1,
+    intro: `Your clients are focused on the deal. They are thinking about the inspection, the appraisal, the closing date, and the keys. Hiring movers is somewhere on the list, but it rarely gets the attention it deserves until the closing date is two weeks away and suddenly they are scrambling to find availability.
+
+As a real estate agent on the Eastside, you have seen what happens when clients wait too long or hire the wrong company. A bad move experience colors the entire transaction in their memory, even if everything else went smoothly. A good move experience, on the other hand, reinforces the quality of the whole process and makes them more likely to refer you.
+
+This guide is designed to be shared directly with your clients or used as a framework for the conversation you have with them about moving. It covers what to look for, what to avoid, when to book, and what questions to ask before signing a moving contract.`,
+    sections: [
+      {
+        type: "h2",
+        heading: `Why Moving Company Selection Matters More Than Most Clients Think`,
+        body: `Most people hire a moving company once every few years. They do not have a trusted mover the way they have a trusted dentist or mechanic. They search online, look at reviews, and pick someone based on price and availability. This approach works sometimes. It fails often enough that moving company complaints are consistently among the top consumer complaints filed with state attorneys general.
+
+The Eastside market has specific dynamics that make moving company selection more consequential than in other markets. The concentration of high-value homes means that the furniture and belongings being moved are often worth significantly more than the moving estimate. A company that is not properly licensed and insured creates real financial exposure for your clients. A company that low-balls the estimate and then holds belongings hostage with inflated charges on move day is not a hypothetical risk. It happens.
+
+Beyond the financial risk, there is the timing risk. A moving company that does not show up, shows up late, or takes longer than estimated can cause a client to miss their occupancy window at the new property. In a market where sellers and buyers are often coordinating same-day closings, a moving delay can cascade into a contractual problem.
+
+The good news is that the risks are largely preventable. Clients who know what to look for, ask the right questions, and book early almost never have serious problems. Your job as their agent is to make sure they know what to look for before they sign a moving contract.`
+      },
+      {
+        type: "h2",
+        heading: `When to Tell Your Clients to Start Looking`,
+        body: `The most common mistake your clients will make is waiting too long to book movers. On the Eastside, the best moving companies book out four to six weeks in advance during peak season, which runs from May through September. Clients who wait until two weeks before closing frequently find that their preferred companies are unavailable on their date, forcing them to choose from whoever is still open, which is often not the best option.
+
+The right time to start looking for a mover is when the offer is accepted, not when the closing date is confirmed. This may feel premature to clients who are worried about the deal falling through, but reputable moving companies understand that real estate transactions can shift. Most will hold a tentative date with a small deposit and allow date changes up to a certain point without penalty.
+
+For clients who are selling and buying simultaneously, the timing conversation is even more important. They need a moving company that can accommodate a same-day or next-day move, which requires more coordination and earlier booking. Some clients in this situation also need temporary storage if the closing dates do not align perfectly. A moving company that offers both moving and storage services can simplify the logistics significantly.
+
+The practical guidance to give clients: as soon as the offer is accepted, start getting quotes. Do not wait for the inspection, the appraisal, or the clear-to-close. Get three quotes, hold a date with a deposit, and adjust as the closing date firms up. This approach costs nothing extra and eliminates the scramble.`
+      },
+      {
+        type: "h2",
+        heading: `The Three Things That Separate Good Movers From Bad Ones`,
+        body: `When your clients are evaluating moving companies, the field can be simplified to three factors: licensing and insurance, binding estimates, and references.
+
+Licensing and insurance is the baseline. In Washington State, moving companies operating within the state must be registered with the Washington Utilities and Transportation Commission. For interstate moves, they must be registered with the Federal Motor Carrier Safety Administration and have a USDOT number. A company that cannot provide these registration numbers is operating outside the law and should be disqualified immediately, regardless of price.
+
+Insurance is equally important. Moving companies are required to carry cargo liability insurance, but the default coverage they offer, called Released Value Protection, covers only $0.60 per pound per item. For a 50-pound flat-screen television worth $1,500, that is $30 in coverage. Clients with high-value items should either purchase Full Value Protection from the moving company or verify that their homeowner's insurance covers items in transit.
+
+Binding estimates are the second factor. A non-binding estimate is a guess. A binding estimate is a contract. Clients who receive a non-binding estimate and then find the final bill is 30 to 50 percent higher than the estimate have no legal recourse beyond disputing the charges. Reputable moving companies provide binding estimates after an in-home or virtual walkthrough. Any company that provides a quote over the phone without seeing the inventory should be treated with skepticism.
+
+References are the third factor. Online reviews are useful but can be manipulated. The most reliable references are direct referrals from people who have used the company recently for a move similar in size and complexity to your client's move. As an agent, you are in a position to provide this kind of reference if you have a relationship with a moving company you trust. That referral has more value to your client than any number of anonymous online reviews.`
+      },
+      {
+        type: "h2",
+        heading: `Red Flags Your Clients Should Know to Watch For`,
+        body: `The moving industry has a well-documented problem with fraudulent operators. These companies use low estimates to win business, then hold belongings hostage and demand additional payment before delivering. Teaching your clients to recognize the warning signs is one of the most practical things you can do to protect them.
+
+The most reliable red flag is a quote that is significantly lower than all other quotes. If your client gets three quotes and one is 40 percent lower than the others, that is not a deal. That is a signal that the company is either planning to add charges later or is operating without proper insurance and licensing, which means they are cutting costs somewhere that matters.
+
+A second red flag is a company that refuses to do an in-home or virtual walkthrough before providing an estimate. The size of a move cannot be accurately assessed over the phone. A company that quotes based on a phone conversation is either inexperienced or is deliberately underquoting to win the business.
+
+A third red flag is a large upfront deposit requirement. Reputable moving companies typically require a small deposit, often $100 to $200, to hold a date. A company that requires 25 to 50 percent of the estimated cost upfront is a risk. If the company disappears or fails to show up, your client has limited recourse to recover that deposit.
+
+A fourth red flag is a company with no physical address. Moving companies that operate only through a website and a phone number, with no verifiable business address, are often brokers who will subcontract the move to a third party your client has never vetted. The company your client thinks they hired may not be the company that shows up on move day.
+
+Our <a href="/residential-moving/">residential moving services</a> on the Eastside are fully licensed, insured, and transparent about pricing. We provide binding estimates after a walkthrough, require only a small deposit to hold a date, and have a physical office in Redmond. This is the standard your clients should expect from any company they consider.`
+      },
+      {
+        type: "h2",
+        heading: `Questions Your Clients Should Ask Before Signing`,
+        body: `Give your clients a short list of questions to ask every moving company they speak with. The answers will quickly separate the professional operations from the problematic ones.
+
+The first question is whether the estimate is binding or non-binding. A binding estimate means the price will not change unless the inventory changes. A non-binding estimate is subject to revision on move day. Clients should always request a binding estimate.
+
+The second question is what the company's policy is on damage claims. How does the client file a claim? What is the timeline for resolution? What documentation is required? A company that cannot answer these questions clearly has either never had to handle a claim or is hoping the client never asks.
+
+The third question is whether the company uses its own employees or subcontractors. Some moving companies are brokers who sell the job and then hire whoever is available. The crew that shows up may have never worked for the company before and may not be covered by the company's insurance. Clients should ask specifically whether the people who show up on move day will be employees of the company they hired.
+
+The fourth question is what happens if the move takes longer than estimated. On a binding estimate, the answer should be that the price does not change unless the inventory changes. On a non-binding estimate, the client should understand that they may be billed for additional time.
+
+The fifth question is what the company's cancellation and rescheduling policy is. Real estate transactions change. Clients need to know whether they can reschedule without penalty if the closing date shifts, and what happens to their deposit if the deal falls through entirely.
+
+For a broader framework on how to evaluate and recommend moving companies to your clients, see our guide on <a href="/how-to-choose-moving-company-for-real-estate-clients/">how to choose a moving company to recommend to your clients</a>.`
+      },
+      {
+        type: "h2",
+        heading: `What to Tell Clients About the Day Before and Day of the Move`,
+        body: `Your clients will have questions about what to do before the movers arrive. The answers are straightforward, but most clients have not moved recently enough to know them.
+
+The day before the move, everything should be packed and labeled. Movers are not packers unless packing services have been specifically contracted. Clients who expect movers to pack loose items on move day will be disappointed and will pay significantly more than they expected. If your client has not arranged packing services and is not finished packing the day before the move, they should call the moving company immediately to discuss options.
+
+Furniture that needs to be disassembled should be disassembled before the movers arrive, unless the moving company has been specifically contracted to do it. Beds, desks, and large shelving units that can be taken apart should be broken down and ready to move. This saves time and reduces the risk of damage during disassembly.
+
+On move day, someone needs to be present and available throughout the move. This is not the day to be at the new property doing final walk-throughs or running errands. The client or a designated representative needs to be at the origin address to answer questions, direct the crew, and sign off on the inventory before the truck leaves. They also need to be at the destination address when the truck arrives to direct placement and inspect items as they come off the truck.
+
+Before signing the delivery receipt, clients should inspect their belongings for damage. Signing the delivery receipt without inspection is treated as acceptance of the condition of the items. Any damage discovered after signing is significantly harder to claim. Clients should note any visible damage on the delivery receipt before signing, even if they plan to file a formal claim later.
+
+Our <a href="/packing-services/">packing services</a> are available as a standalone service or as part of a full-service move. For clients who are overwhelmed by the packing process, professional packing is often the most cost-effective way to reduce move day stress and protect high-value items.`
+      },
+      {
+        type: "h2",
+        heading: `How to Position Yourself as the Agent Who Thinks of Everything`,
+        body: `The agents who build the strongest referral businesses are the ones who make their clients feel taken care of at every step, including the steps that happen after the contract is signed. Moving is one of those steps.
+
+The simplest way to add value here is to have a short, written guide you share with every client when the offer is accepted. It does not need to be long. A one-page document that covers when to book, what to look for, and what questions to ask is enough to save your clients significant stress and potentially significant money.
+
+If you have a moving company you trust and have referred before, include that recommendation with context. Not just "here is a company I recommend" but "here is why I recommend them and what to expect when you call." That context transforms a generic referral into a trusted recommendation.
+
+Some agents go further and offer to make the introduction directly, connecting their client with the moving company contact they know. This level of service is remembered. It is the kind of thing clients mention when they refer you to their friends.
+
+The goal is not to manage the move for your clients. It is to make sure they have the information they need to manage it well themselves. An agent who equips their clients with the right knowledge at the right time is an agent who gets called first when those clients are ready to buy or sell again.`
+      }
+    ],
+    faqs: [
+      {
+        q: `How far in advance should my clients book a moving company?`,
+        a: `On the Eastside, clients should start getting quotes as soon as the offer is accepted and book as soon as the closing date is reasonably firm. During peak season (May through September), the best companies book out four to six weeks in advance. Waiting until two weeks before closing significantly limits options and often means choosing from companies with lower ratings or less experience. Most reputable companies will hold a date with a small deposit and allow one or two date changes without penalty, so booking early carries little risk.`
+      },
+      {
+        q: `What is the difference between a binding and non-binding moving estimate?`,
+        a: `A binding estimate is a contract. The price will not change on move day unless the inventory changes (items are added or the scope of work changes significantly). A non-binding estimate is a projection that can be revised upward on move day based on actual time and weight. Clients should always request a binding estimate. If a company will only provide a non-binding estimate, clients should ask specifically what circumstances would cause the final price to exceed the estimate and by how much.`
+      },
+      {
+        q: `What should my clients do if something is damaged during the move?`,
+        a: `Clients should note any visible damage on the delivery receipt before signing it. Signing without noting damage is treated as acceptance of the condition of the items. After signing, clients should document the damage with photographs and contact the moving company's claims department within the timeframe specified in their contract, which is typically 30 to 60 days. If the company is unresponsive, clients can file a complaint with the Washington Utilities and Transportation Commission for intrastate moves or the Federal Motor Carrier Safety Administration for interstate moves.`
+      },
+      {
+        q: `Is it safe to hire a moving company found online without a referral?`,
+        a: `It can be, but it requires more due diligence. Clients who hire without a referral should verify the company's Washington UTC registration number, check their USDOT number on the FMCSA website for interstate moves, read reviews on multiple platforms (not just the company's own website), and ask for references from recent moves similar in size to theirs. The most reliable signal of a trustworthy company is a direct referral from someone who has used them recently. As an agent, providing that referral is one of the most valuable things you can do for your clients.`
+      },
+      {
+        q: `What happens if the closing date changes after my client has booked movers?`,
+        a: `Most reputable moving companies will accommodate one or two date changes without penalty, especially if the client gives adequate notice (typically at least two weeks). Clients should ask about the rescheduling policy before booking and confirm it in writing. If the deal falls through entirely, the deposit is typically non-refundable, but some companies will apply it to a future move. Clients should clarify the deposit policy before paying.`
+      },
+      {
+        q: `Should my clients hire the cheapest moving company they can find?`,
+        a: `No. Price is a useful data point but should not be the primary decision factor. A quote that is significantly lower than all other quotes is a red flag, not a deal. Reputable moving companies have similar cost structures for labor, equipment, and insurance. A company that is dramatically cheaper is either cutting corners on insurance, planning to add charges later, or using inexperienced labor. Clients should get three quotes and choose based on the combination of price, licensing and insurance verification, estimate type (binding vs. non-binding), and references.`
       }
     ]
   }

@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "what-your-clients-need-to-know-about-hiring-movers",
+    title: "What Your Clients Need to Know About Hiring Movers",
+    excerpt: "A practical guide for real estate agents on the Eastside. Share this with your clients to help them hire the right moving company, avoid common scams, and arrive at closing day ready to move.",
+    date: "August 2, 2026",
+    category: "Real Estate Agent Resources",
+    readTime: "10 min read",
+    image: BRAND_IMAGES.crewEntryway1,
+  },
+  {
     slug: "it-equipment-moving-how-to-relocate-servers-workstations-safely",
     title: "IT Equipment Moving: How to Relocate Servers and Workstations Safely",
     excerpt: "Moving servers, workstations, and IT infrastructure requires more planning than moving furniture. Learn how to relocate your office technology safely with zero data loss and minimal downtime.",
