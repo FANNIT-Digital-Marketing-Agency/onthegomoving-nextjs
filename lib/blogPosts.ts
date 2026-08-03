@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "how-to-help-clients-prepare-for-moving-day-after-closing",
+    title: "How to Help Clients Prepare for Moving Day After Closing",
+    excerpt: "A practical guide for real estate agents on the Eastside. Learn what to tell your clients about preparing for move day after closing, from key handoff logistics to move-in day coordination tips.",
+    date: "August 3, 2026",
+    category: "Real Estate Agent Resources",
+    readTime: "9 min read",
+    image: BRAND_IMAGES.crewDoorway2,
+  },
+  {
     slug: "what-your-clients-need-to-know-about-hiring-movers",
     title: "What Your Clients Need to Know About Hiring Movers",
     excerpt: "A practical guide for real estate agents on the Eastside. Share this with your clients to help them hire the right moving company, avoid common scams, and arrive at closing day ready to move.",
