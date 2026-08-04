@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "how-to-choose-a-moving-company-10-questions-to-ask",
+    title: "How to Choose a Moving Company: 10 Questions to Ask",
+    excerpt: "Not sure how to choose a moving company you can actually trust? These 10 questions help Eastside homeowners find a licensed, reliable mover and avoid costly surprises on move day.",
+    date: "August 4, 2026",
+    category: "Moving Tips & Guides",
+    readTime: "10 min read",
+    image: BRAND_IMAGES.crewCarryingFurniture,
+  },
+  {
     slug: "how-to-help-clients-prepare-for-moving-day-after-closing",
     title: "How to Help Clients Prepare for Moving Day After Closing",
     excerpt: "A practical guide for real estate agents on the Eastside. Learn what to tell your clients about preparing for move day after closing, from key handoff logistics to move-in day coordination tips.",

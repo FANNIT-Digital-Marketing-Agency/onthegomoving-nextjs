@@ -990,7 +990,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     readTime: "3 min read",
     author: "Jason Sexton",
     heroImage: BRAND_IMAGES.customerHandshake,
-    intro: `Hiring bad movers makes an already stressful experience much worse. Unfortunately, considering the several moving company options out there, avoiding bad moving companies isn’t as easy as you’d like it to be. However, some signs can help you steer clear of the worst moving companies.`,
+    intro: `Hiring bad movers makes an already stressful experience much worse. Unfortunately, considering the several moving company options out there, avoiding bad moving companies isn’t as easy as you’d like it to be. However, some signs can help you steer clear of the worst moving companies. For the positive selection side of the equation, our guide on <a href="/how-to-choose-a-moving-company-10-questions-to-ask/">how to choose a moving company</a> gives you ten specific questions to ask before you book.`,
     sections: [
       { type: "h2", heading: `How to Spot a Bad Moving Company`, body: `Whether you are moving across the country or the street, avoiding moving company scams should be at the top of your mind when shopping around for professional movers. Hiring the wrong company increases your risks of ending up broke, stressed, and with damaged belongings. You can avoid such moving scams if you know what to look for. For starters, moving broker scams lure you in with price estimates that are too good to be true. Before celebrating the bargain, it helps to take a closer look at the company.` },
       { type: "h2", heading: `15 Red Flags About the Worst Moving Company`, body: `While bad movers are everywhere, keeping the following 15 red flags in mind will help you spot them.` },
@@ -6319,6 +6319,165 @@ For a complete guide on how to evaluate and recommend moving companies to your c
       {
         q: `How can real estate agents use moving day preparation to build referrals?`,
         a: `The most effective approach is a two-step system: a pre-closing moving checklist shared two weeks before closing, and a follow-up call or text on move day or the day after. The checklist covers practical preparation and positions you as an agent who thinks beyond the transaction. The follow-up call shows you care about the outcome, not just the close. Clients who receive both are significantly more likely to refer you and leave positive reviews that mention the quality of your service. Including a trusted moving company recommendation in the checklist adds additional value.`
+      }
+    ]
+  }
+,
+  "how-to-choose-a-moving-company-10-questions-to-ask": {
+    slug: "how-to-choose-a-moving-company-10-questions-to-ask",
+    title: `How to Choose a Moving Company: 10 Questions to Ask`,
+    metaTitle: `How to Choose a Moving Company: 10 Questions to Ask | On The Go Moving`,
+    metaDescription: `Not sure how to choose a moving company you can actually trust? These 10 questions help Eastside homeowners find a licensed, reliable mover and avoid costly surprises on move day.`,
+    date: "August 4, 2026",
+    dateISO: "2026-08-04",
+    category: "Moving Tips & Guides",
+    readTime: "10 min read",
+    author: "Jason Sexton",
+    heroImage: BRAND_IMAGES.crewCarryingFurniture,
+    intro: `Choosing a moving company should feel straightforward. You search online, read a few reviews, get some quotes, and pick the one that seems best. In practice, the process is more complicated, because the moving industry has a wide range of operators, from highly professional licensed companies with trained crews to unlicensed operators who take deposits and disappear.
+
+On the Eastside of Seattle, where home values are high and move complexity is often significant, the stakes of choosing the wrong company are real. A damaged piece of furniture, a delayed delivery, or a company that holds your belongings hostage over an inflated final bill can turn an already stressful life event into a genuine crisis.
+
+This guide takes a different approach from the typical "red flags to watch for" article. Instead of focusing on what to avoid, it gives you ten specific questions to ask every moving company you consider, along with the answers that indicate a company worth hiring. Ask these questions before you sign anything, and you will have a clear picture of who you are dealing with.`,
+    sections: [
+      {
+        type: "h2",
+        heading: `Why Questions Matter More Than Reviews`,
+        body: `Online reviews are useful, but they have limits. A company can have a strong average rating and still have serious operational problems that reviews do not reveal. Reviews capture the experience of past customers, not the specific details of your move. They do not tell you whether the company is licensed, how they handle claims, whether the crew is employed or subcontracted, or what happens if something goes wrong.
+
+Questions do. A direct conversation with a moving company before booking reveals how they operate, how they communicate, and whether they are willing to be transparent about the details that matter. Companies that are evasive, vague, or dismissive when asked direct questions are telling you something important about how they will handle your move.
+
+The ten questions below are designed to surface that information quickly. They are not trick questions or adversarial. They are the questions that any professional, well-run moving company should be able to answer clearly and without hesitation. If a company cannot answer them, that is your answer.`
+      },
+      {
+        type: "h2",
+        heading: `Question 1: Are You Licensed and Insured?`,
+        body: `This is the non-negotiable starting point. In Washington State, moving companies that operate commercially are required to be licensed with the Washington Utilities and Transportation Commission (UTC). Interstate movers must also be registered with the Federal Motor Carrier Safety Administration (FMCSA) and have a USDOT number.
+
+The answer you want: a clear yes, with the ability to provide their UTC license number and USDOT number on request. You can verify both independently. The UTC database is searchable online, and the FMCSA has a public carrier lookup tool at safer.fmcsa.dot.gov.
+
+Insurance is equally important. A licensed moving company carries cargo insurance (covering your belongings) and general liability insurance (covering property damage). Ask specifically about both. A company that says "we are covered" without being able to specify what type of coverage and at what limits is not giving you a useful answer.`
+      },
+      {
+        type: "h2",
+        heading: `Question 2: Do You Employ Your Own Crew, or Do You Use Subcontractors?`,
+        body: `This question reveals more about a company's operational model than almost any other. Companies that employ their own crews have direct control over training, background checks, and accountability. Companies that use subcontractors or day laborers have less control over who shows up at your door.
+
+The answer you want: the company employs its own full-time or part-time crew members who are background-checked and trained. Some companies use a mix of employed crew and occasional subcontractors for large moves, which is acceptable as long as they are transparent about it and the subcontractors are vetted.
+
+The answer that should give you pause: "we use independent contractors" or "we hire from a staffing agency" without further detail. This does not automatically mean the company is bad, but it means you should ask follow-up questions about how those workers are vetted and whether they are covered by the company's insurance.`
+      },
+      {
+        type: "h2",
+        heading: `Question 3: What Type of Estimate Do You Provide?`,
+        body: `There are three types of moving estimates, and understanding the difference is essential before you sign anything.
+
+A non-binding estimate is a rough cost projection that can change on move day based on actual weight or time. It is the least protective for the customer. A binding estimate is a firm price that cannot increase, regardless of how long the move takes or how much your belongings weigh. A binding not-to-exceed estimate is the most customer-friendly option: the price is capped at the estimate, but if the actual cost comes in lower, you pay the lower amount.
+
+The answer you want: a written binding or binding not-to-exceed estimate, provided after an in-home or virtual walkthrough of your belongings. Any company that gives you a price over the phone without seeing what you are moving is giving you a number that is likely to change.
+
+Be especially cautious of companies that provide very low non-binding estimates and then present a significantly higher bill on move day. This is one of the most common complaints in the moving industry, and it is entirely avoidable if you insist on a written binding estimate before booking.`
+      },
+      {
+        type: "h2",
+        heading: `Question 4: What Is Included in the Base Rate?`,
+        body: `Moving company pricing can be surprisingly opaque. The base rate typically covers labor and transportation, but many companies charge separately for fuel, stairs, long carries (when the truck cannot park close to the entrance), elevator use, packing materials, and disassembly and reassembly of furniture.
+
+The answer you want: a clear itemized breakdown of what is and is not included in the quoted price, provided in writing. Ask specifically about the items most likely to apply to your move. If you live in a building with stairs or an elevator, ask about those charges. If you have furniture that needs to be disassembled, ask whether that is included.
+
+A company that is transparent about its fee structure is a company that respects your ability to make an informed decision. A company that is vague about additional charges, or that presents them only on move day, is not operating in good faith.`
+      },
+      {
+        type: "h2",
+        heading: `Question 5: How Do You Handle Damage Claims?`,
+        body: `Every professional moving company has a claims process for damaged or missing items. How they handle that process tells you a great deal about how they operate.
+
+The answer you want: a clear explanation of their claims process, including the timeframe for filing a claim, the documentation required, and how the claim is resolved. Ask whether they use released value protection (the default, which covers only $0.60 per pound per item) or full value protection (which covers repair or replacement at current market value). Ask whether full value protection is included or costs extra.
+
+Released value protection is the legal minimum and is essentially worthless for high-value items. A television that weighs 10 pounds would be covered for $6.00 under released value protection. If a company does not offer full value protection or cannot explain the difference, that is a significant gap in their service offering.
+
+For a complete overview of what to watch for when evaluating moving companies, our guide on <a href="/15-signs-of-a-worst-moving-company/">the 15 signs of a bad moving company</a> covers the most common warning signs in detail.`
+      },
+      {
+        type: "h2",
+        heading: `Question 6: Can You Provide References From Recent Customers?`,
+        body: `Online reviews are public and curated. Direct references are more revealing. A company that is confident in its service should be willing to provide contact information for recent customers who have agreed to be references.
+
+The answer you want: yes, with the ability to provide two or three references on request. When you contact those references, ask specifically about whether the final price matched the estimate, whether anything was damaged and how it was handled, and whether the crew was professional and on time.
+
+The answer that should give you pause: "you can read our reviews online" without offering direct references. This is not necessarily a red flag on its own, but combined with other evasive answers, it suggests a company that is not confident in direct scrutiny.
+
+For local moves on the Eastside, ask specifically for references from moves in your area. A company that primarily operates in Seattle may not have the same familiarity with Bellevue, Kirkland, or Redmond neighborhoods, parking restrictions, and building access requirements.`
+      },
+      {
+        type: "h2",
+        heading: `Question 7: What Is Your Cancellation and Rescheduling Policy?`,
+        body: `Life changes, and moves sometimes need to be rescheduled. Understanding a company's cancellation and rescheduling policy before you book prevents unpleasant surprises if your closing date shifts or your plans change.
+
+The answer you want: a clear policy with reasonable notice requirements. Most professional moving companies allow cancellation or rescheduling with 48 to 72 hours notice without penalty. Some require longer notice for large moves or peak season dates. The policy should be in writing.
+
+Ask specifically about the deposit. Most companies require a deposit to hold your date, which is standard practice. Ask whether the deposit is refundable if you cancel within the notice period, and whether it can be applied to a rescheduled date. A non-refundable deposit with no rescheduling flexibility is a warning sign, especially if the company is pushing you to book quickly.
+
+On the Eastside, where real estate closings can shift by days due to financing or title issues, flexibility in the rescheduling policy is particularly valuable. A company that works with you when your closing date changes is a company worth building a relationship with.`
+      },
+      {
+        type: "h2",
+        heading: `Question 8: How Do You Protect Floors, Walls, and Doorframes?`,
+        body: `Property damage during a move is more common than most people expect, and most of it is preventable with proper preparation. A professional moving company should have a standard protocol for protecting your home during the move.
+
+The answer you want: the company uses floor runners or protective coverings on hardwood and carpeted floors, pads doorframes and walls in high-traffic areas, and wraps furniture before moving it through the home. This should be standard practice, not an optional add-on.
+
+Ask specifically about how they protect the floors and walls at both the origin and destination properties. If you are moving into a new home, you want to arrive with the floors in the same condition they were in at the final walk-through. If you are moving out of a home you are selling, you want to leave the property in the condition required by the sale agreement.
+
+Our <a href="/residential-moving/">residential moving services</a> include floor and wall protection as a standard part of every move, because we understand that the home itself is as important as the belongings inside it.`
+      },
+      {
+        type: "h2",
+        heading: `Question 9: What Happens If the Move Takes Longer Than Estimated?`,
+        body: `For hourly-rate moves, the final cost depends on how long the move actually takes. Understanding what happens when a move runs longer than the estimate is essential before you commit to an hourly rate.
+
+The answer you want: a clear explanation of the hourly rate, the minimum charge, and how overtime is billed. Most companies bill in 15 or 30-minute increments after the minimum. Ask whether there is a cap on the total time, or whether the binding estimate covers the full move regardless of duration.
+
+Ask also what factors most commonly cause moves to run long. A company that can give you a specific, honest answer to this question (elevators, long carries, disassembly time, traffic) is a company that has done enough moves to know where the time goes. A company that says "it never takes longer than we estimate" is either inexperienced or not being honest with you.
+
+For moves that involve significant packing, ask whether professional <a href="/packing-services/">packing services</a> might be more cost-effective than paying hourly rates for packing on move day. A crew that packs efficiently on a fixed-price packing job is often faster and less expensive than an hourly rate that includes packing time.`
+      },
+      {
+        type: "h2",
+        heading: `Question 10: What Do You Need From Me to Make This Move Go Smoothly?`,
+        body: `This question is the most revealing of all, because it shifts the conversation from evaluation to partnership. A company that has a clear, specific answer to this question has thought carefully about what makes moves succeed and fail.
+
+The answer you want: specific, practical guidance. Good answers include: have everything packed before the crew arrives, label boxes with destination rooms, clear a path from the door to the truck, be present for the walkthrough at both ends, and have payment ready at the end of the move. The more specific the answer, the more experience the company has.
+
+The answer that should give you pause: a vague response like "just be ready" or "we handle everything." A company that cannot articulate what it needs from you to do its job well is a company that has not thought carefully about the customer's role in a successful move.
+
+This question also opens the door to a productive conversation about your specific situation. If you have items that require special handling, a complex building access situation, or a tight timeline, this is the moment to raise those issues and see how the company responds. A company that listens carefully and gives you a thoughtful answer is a company worth hiring.`
+      }
+    ],
+    faqs: [
+      {
+        q: `How many moving companies should I get quotes from before booking?`,
+        a: `Getting quotes from at least three moving companies is standard advice, and it is good advice. Three quotes give you a meaningful range to compare and help you identify outliers in either direction. A quote that is significantly lower than the other two is worth scrutinizing carefully, because it often indicates a non-binding estimate that will increase on move day, or a company that is cutting corners on insurance, crew quality, or equipment. A quote that is significantly higher is not necessarily better, but it should come with a clear explanation of what is included.`
+      },
+      {
+        q: `Is it safe to book a moving company I found only online?`,
+        a: `It can be, but verify independently before booking. Check the company's UTC license number with the Washington Utilities and Transportation Commission and their USDOT number with the FMCSA. Read reviews on multiple platforms, not just the ones the company links to from its website. Ask for references from recent customers. A company that passes these checks and can answer the ten questions in this guide clearly is likely a legitimate operator, regardless of how you found them.`
+      },
+      {
+        q: `What is the difference between a binding and non-binding moving estimate?`,
+        a: `A binding estimate is a firm price that cannot increase on move day, regardless of how long the move takes or how much your belongings weigh. A non-binding estimate is a projection that can change based on actual conditions. For most residential moves, a binding or binding not-to-exceed estimate is strongly preferable, because it eliminates the risk of a surprise bill at the end of the move. Always get the estimate in writing and confirm whether it is binding before signing a contract.`
+      },
+      {
+        q: `What should I do if a moving company asks for a large deposit upfront?`,
+        a: `A deposit of 10 to 20 percent of the estimated move cost is standard and reasonable. A deposit of 50 percent or more is a warning sign, particularly if the company is also pressuring you to book quickly. Legitimate moving companies do not require large upfront payments because they are confident in their ability to complete the job and collect payment at the end. If a company asks for a large deposit, ask why, get the refund policy in writing, and consider whether the risk is worth it.`
+      },
+      {
+        q: `How do I verify that a moving company is properly licensed in Washington State?`,
+        a: `Washington State moving companies are regulated by the Washington Utilities and Transportation Commission (UTC). You can search for a company's license status at the UTC website using the company's name or license number. For interstate movers, verify their USDOT number at safer.fmcsa.dot.gov. Both searches are free and take less than five minutes. Any company that is unwilling to provide their license number when asked directly is a company to avoid.`
+      },
+      {
+        q: `What is released value protection, and is it enough coverage for my move?`,
+        a: `Released value protection is the default liability coverage that moving companies are required to provide at no charge. It covers damaged or lost items at $0.60 per pound per item, which is far below the replacement value of most household goods. A 50-pound television would be covered for $30 under released value protection. For most moves, full value protection is worth the additional cost, because it covers repair or replacement at current market value. Ask your moving company about full value protection options before your move date.`
       }
     ]
   }
