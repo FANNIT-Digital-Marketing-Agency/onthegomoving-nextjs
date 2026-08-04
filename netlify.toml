@@ -2431,3 +2431,60 @@
   to = "/bellevue-movers/apartment/"
   status = 301
   force = true
+
+# ─── Cannibalization cleanup 301 redirects (August 2026) ──────────────────────
+[[redirects]]
+  from = "/when-is-the-best-time-to-move-into-an-apartment/"
+  to = "/best-time-to-rent-an-apartment-guide/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/things-to-do-in-woodinville/"
+  to = "/living-in-woodinville-wa/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/things-to-do-in-downtown-seattle-washington/"
+  to = "/living-in-downtown-seattle/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/green-moving-eco-friendly-10-tips/"
+  to = "/eco-friendly-moving-sustainable-practices-for-your-next-move/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/furniture-storage-units/"
+  to = "/storage-services/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/how-to-find-the-best-temporary-storage-units-in-your-area/"
+  to = "/storage-services/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/top-7-tips-for-a-smooth-move-a-moving-companys-recommendations-for-your-moving-day/"
+  to = "/moving-hacks/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/packing-fragile-items/"
+  to = "/how-to-protect-fragile-items-during-a-move/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/how-to-efficiently-pack-a-storage-container/"
+  to = "/how-to-pack-a-storage-unit/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/best-tips-for-winter-moving/"
+  to = "/10-expert-tips-to-make-your-winter-move-an-easier-mission/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/how-to-fold-for-packing/"
+  to = "/how-to-pack-clothes-for-moving/"
+  status = 301
+  force = true

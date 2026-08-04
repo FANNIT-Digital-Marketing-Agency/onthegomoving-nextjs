@@ -321,17 +321,7 @@ export const BLOG_POSTS: BlogIndexPost[] = [
     excerpt: `Getting ready for the big move? Here are some helpful moving tips on how to pack your bathroom efficiently and economically.`,
     image: BRAND_IMAGES.truckBrickBuilding,
     readTime: "3 min read",
-  },
-  {
-    slug: "how-to-efficiently-pack-a-storage-container",
-    title: `How to Efficiently Pack A Storage Container`,
-    date: "August 17, 2018",
-    category: "Moving Tips & Guides",
-    excerpt: `Looking for ways to maximize the space in your storage container? Explore our four helpful tips to efficiently and securely pack your belongings for storage.`,
-    image: BRAND_IMAGES.truckResidentialBuilding,
-    readTime: "3 min read",
-  },
-  {
+  },  {
     slug: "how-to-pack-a-storage-unit",
     title: `How to Pack and Organize a Storage Unit | Best Tips for Ease of Access`,
     date: "March 27, 2020",
@@ -357,26 +347,7 @@ export const BLOG_POSTS: BlogIndexPost[] = [
     excerpt: `Take the process of moving as an opportunity to rid yourself of the clutter that has collected over the years and start fresh. Whether it’s your first big move `,
     image: BRAND_IMAGES.crewFloorProtection1,
     readTime: "3 min read",
-  },
-  {
-    slug: "packing-fragile-items",
-    title: `Packing Fragile Items Prior to Moving`,
-    date: "October 28, 2022",
-    category: "Moving Tips & Guides",
-    excerpt: `Learn about Packing Fragile Items prior to moving, from the cost and types of damages of the items. Give On The Go Moving a call today to learn more.`,
-    image: BRAND_IMAGES.crewWrappingFurniture,
-    readTime: "4 min read",
-  },
-  {
-    slug: "best-tips-for-winter-moving",
-    title: `Best Tips for Winter Moving`,
-    date: "March 16, 2022",
-    category: "Moving Tips & Guides",
-    excerpt: `Are you planning for winter moving? Find out all of our best moving suggestions to make the process go more smoothly. Visit us now.`,
-    image: BRAND_IMAGES.truckResidentialStreet,
-    readTime: "3 min read",
-  },
-  {
+  },  {
     slug: "how-to-pack-a-car-for-moving",
     title: `Helpful Tips On How to Pack A Car for Moving`,
     date: "January 16, 2018",
@@ -447,17 +418,7 @@ export const BLOG_POSTS: BlogIndexPost[] = [
     excerpt: `The last thing you want is breaking any of your dishes while moving, that's why we've compiled a 5 step process to packing your dishes safely and securely.`,
     image: BRAND_IMAGES.crewWrappingFurniture,
     readTime: "3 min read",
-  },
-  {
-    slug: "how-to-find-the-best-temporary-storage-units-in-your-area",
-    title: `How to Find the Best Temporary Storage Units in Your Area`,
-    date: "January 18, 2019",
-    category: "Moving Tips & Guides",
-    excerpt: `If you're preparing for a move, you are probably realizing that you have more belongings than you thought. Temporary storage can help you organize and keep safe`,
-    image: BRAND_IMAGES.warehouseCrates,
-    readTime: "3 min read",
-  },
-  {
+  },  {
     slug: "what-not-to-pack-when-moving-non-allowable-items-explained",
     title: `What Not to Pack When Moving: Non-Allowable Items Explained`,
     date: "August 7, 2018",
@@ -600,26 +561,7 @@ export const BLOG_POSTS: BlogIndexPost[] = [
     excerpt: `Planning a move? Discover how many trips for a local move it takes and learn tips to minimize moving truck trips for local moves efficiently`,
     image: BRAND_IMAGES.crewEntryway1,
     readTime: "3 min read",
-  },
-  {
-    slug: "furniture-storage-units",
-    title: `Finding The Furniture Storage Units For Long-Term and Short-Term Storage`,
-    date: "March 21, 2024",
-    category: "Moving Tips & Guides",
-    excerpt: `When moving, furniture storage units are an excellent way to keep your furniture accessible, safe, and secure. Contact On The Go Moving, for professional assist`,
-    image: BRAND_IMAGES.crewCarryingFurniture,
-    readTime: "3 min read",
-  },
-  {
-    slug: "top-7-tips-for-a-smooth-move-a-moving-companys-recommendations-for-your-moving-day",
-    title: `Top 7 Moving Day Tips: How To Enjoy Your Moving Day`,
-    date: "March 16, 2015",
-    category: "Moving Tips & Guides",
-    excerpt: `When it comes to your moving day, you need all the help you can get. In this article we offer great moving tips from the pros on packing, moving`,
-    image: BRAND_IMAGES.crewLoadingTruckRamp,
-    readTime: "5 min read",
-  },
-  {
+  },  {
     slug: "best-things-to-do-in-everett-wa",
     title: `10 Exciting Things To Do In Everett In 2021`,
     date: "January 1, 2021",
@@ -645,17 +587,7 @@ export const BLOG_POSTS: BlogIndexPost[] = [
     excerpt: `Need to know which is the best time to rent an apartment? Read this article from On The Go Moving and learn more.`,
     image: BRAND_IMAGES.crewLoadingTruckRamp,
     readTime: "3 min read",
-  },
-  {
-    slug: "how-to-fold-for-packing",
-    title: `How to Fold Clothes for Packing: Best Way to Fold for Suitcases`,
-    date: "March 26, 2023",
-    category: "Moving Tips & Guides",
-    excerpt: `Figuring how to fold clothes for packing is important to avoid wrinkles. Find out how to fold, roll & arrange clothes to save space when you travel!`,
-    image: BRAND_IMAGES.truckSeattleSkyline,
-    readTime: "3 min read",
-  },
-  {
+  },  {
     slug: "essential-tools-needed-for-a-smooth-move",
     title: `Essential Tools Needed for a Smooth Move`,
     date: "August 22, 2024",
@@ -708,17 +640,7 @@ export const BLOG_POSTS: BlogIndexPost[] = [
     excerpt: `Want to know what living on Mercer Island is like? Lucky for you, residents that live in Mercer Island Washington have great things to say about their community`,
     image: BRAND_IMAGES.truckBellevueSkyline,
     readTime: "3 min read",
-  },
-  {
-    slug: "green-moving-eco-friendly-10-tips",
-    title: `Green Moving: 10 Tips How To Make Your Next Move Eco-Friendly for Earth Day 2021`,
-    date: "January 7, 2021",
-    category: "Moving Tips & Guides",
-    excerpt: `Learn 10 actionable eco-friendly moving tips to reduce waste and carbon footprint during your next relocation.`,
-    image: BRAND_IMAGES.truckKirklandHouse,
-    readTime: "4 min read",
-  },
-  {
+  },  {
     slug: "things-to-do-in-lynnwood-wa",
     title: `Things to Do in Lynnwood WA`,
     date: "September 2, 2021",
@@ -771,17 +693,7 @@ export const BLOG_POSTS: BlogIndexPost[] = [
     excerpt: `Looking for things to do in Kirkland, WA? Explore waterfront parks, dining, shopping, outdoor activities, and local attractions for all ages.`,
     image: BRAND_IMAGES.truckKirklandHouse,
     readTime: "4 min read",
-  },
-  {
-    slug: "things-to-do-in-woodinville",
-    title: `Things to Do in Woodinville`,
-    date: "March 3, 2021",
-    category: "Local Guides",
-    excerpt: `If you are planning to move or visit to Woodinville WA soon, then find out the things to do in while there? When moving across the country to Woodinville or fro`,
-    image: BRAND_IMAGES.truckKirklandHouse,
-    readTime: "5 min read",
-  },
-  {
+  },  {
     slug: "fun-things-to-do-in-bothell-wa",
     title: `10 Fun Things To Do In Bothell WA in 2021 | Plus Free Things To Do With Kids`,
     date: "January 6, 2021",
@@ -1005,17 +917,7 @@ export const BLOG_POSTS: BlogIndexPost[] = [
     excerpt: `Moving your piano can be daunting task. Here are our expert tips to make sure your piano and your back both remain intact throughout the process.`,
     image: BRAND_IMAGES.crewRamp,
     readTime: "4 min read",
-  },
-  {
-    slug: "when-is-the-best-time-to-move-into-an-apartment",
-    title: `When Is the Best Time to Move Into an Apartment?`,
-    date: "November 2, 2022",
-    category: "Renting & Apartments",
-    excerpt: `Need to know which is the best time to move into an apartment? Read this article from On The Go Moving and learn more.`,
-    image: BRAND_IMAGES.crewDoorway2,
-    readTime: "4 min read",
-  },
-  {
+  },  {
     slug: "office-moving-tips",
     title: `How To Keep Your Office Moving Organized And Easy`,
     date: "August 1, 2017",
@@ -1032,17 +934,7 @@ export const BLOG_POSTS: BlogIndexPost[] = [
     excerpt: `Struggling to keep your office organized? Follow our eight easy steps to arrange your space into a system that works for you and your team.`,
     image: BRAND_IMAGES.officeMoveAction,
     readTime: "4 min read",
-  },
-  {
-    slug: "things-to-do-in-downtown-seattle-washington",
-    title: `Things to Do in Downtown Seattle WA`,
-    date: "February 22, 2022",
-    category: "Local Guides",
-    excerpt: `Wondering what to do in Seattle, WA? Check out these exciting and fun things to do in Downtown Seattle, WA for an epic travel adventure.`,
-    image: BRAND_IMAGES.truckSeattleSkyline,
-    readTime: "4 min read",
-  },
-  {
+  },  {
     slug: "residential-moving-services-guide",
     title: `What's Included in a Residential Move? A Plain-English Guide for Seattle Homeowners`,
     date: "November 28, 2023",
