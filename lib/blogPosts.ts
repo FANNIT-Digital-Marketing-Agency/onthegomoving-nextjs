@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "moving-insurance-what-it-covers-and-what-it-doesnt",
+    title: `Moving Insurance: What It Covers and What It Doesn't`,
+    date: "August 5, 2026",
+    category: "Moving Tips & Guides",
+    excerpt: `Most people assume their belongings are fully protected during a move. Most people are wrong. Here is what moving insurance actually covers, what it doesn't, and how to make sure you're not left with a claim that pays pennies on the dollar.`,
+    image: BRAND_IMAGES.crewWrappingFurniture,
+    readTime: "10 min read",
+  },
+  {
     slug: "how-to-choose-a-moving-company-10-questions-to-ask",
     title: "How to Choose a Moving Company: 10 Questions to Ask",
     excerpt: "Not sure how to choose a moving company you can actually trust? These 10 questions help Eastside homeowners find a licensed, reliable mover and avoid costly surprises on move day.",
