@@ -407,10 +407,10 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
                         style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
                       >
                         {section.heading}
-                      </h3>
-                    )}
-                    <p
-                      className="text-gray-600 leading-relaxed"
+                    </h3>
+                  )}
+                    <div
+                      className="text-gray-600 leading-relaxed space-y-3 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-1.5 [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:space-y-1.5 [&_li]:leading-relaxed [&_strong]:font-semibold [&_strong]:text-gray-800"
                       dangerouslySetInnerHTML={{ __html: linkifyContent(section.body, linkedUrls, skipUrl) }}
                     />
                   </div>
