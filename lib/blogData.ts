@@ -5397,8 +5397,10 @@ Finally, remember that the goal is not to maximize the dollar return on every it
     metaTitle: `Commercial Moving Timeline: What to Expect | On The Go Moving`,
     metaDescription: `A practical commercial moving timeline for Eastside businesses. Covers the pre-planning phase, final prep, and move day with no surprises.`,
     date: "July 31, 2026",
-    readTime: "6 min read",
+    dateISO: "2026-07-31",
     category: "Corporate and Office Moving",
+    readTime: "6 min read",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.customerHandshake,
     intro: `A week-by-week commercial moving timeline for Eastside businesses. Learn what happens at every stage of an office relocation, from the initial onsite visit to move day.`,
     sections: [
