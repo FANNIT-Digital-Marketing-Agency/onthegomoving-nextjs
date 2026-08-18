@@ -823,6 +823,9 @@ export default function BestMovingCompaniesBellevue() {
           <p className="text-gray-700 text-sm leading-relaxed">
             On The Go Moving ranked #1 because they combine the most transparent pricing structure in the Eastside market (true hourly billing with no add-on fees), the highest verified review volume among local independent movers (1,562+ Google reviews), Eastside-based operations that minimize travel time charges for Bellevue moves, and W-2 employee crews that deliver consistent quality. Their 4.8-star average across 1,562+ reviews is the strongest verified signal in the Bellevue moving market.
           </p>
+          <p className="text-gray-700 text-sm leading-relaxed mt-3">
+            Planning your own move? Visit <Link href="/bellevue-movers/" className="font-semibold text-[#4b7f14] hover:underline">On The Go Moving&apos;s Bellevue movers page</Link> for service details, a free quote, and local move-planning support.
+          </p>
         </section>
 
         {/* What to look for section */}

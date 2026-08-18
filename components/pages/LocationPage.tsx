@@ -819,6 +819,28 @@ export default function LocationPage({ slug }: LocationPageProps) {
                 10 Best Moving Companies in Seattle (2026)
               </a>
             )}
+            {data.slug === "bellevue-movers" && (
+              <>
+                <a
+                  href="/moving-to-bellevue/"
+                  className="inline-flex items-center gap-2 bg-white border border-gray-200 text-brand-forest font-semibold text-sm px-4 py-2 rounded-full hover:border-brand-forest hover:shadow-sm transition-all"
+                >
+                  Moving to Bellevue
+                </a>
+                <a
+                  href="/first-time-homebuyer-guide-eastside-seattle/"
+                  className="inline-flex items-center gap-2 bg-white border border-gray-200 text-brand-forest font-semibold text-sm px-4 py-2 rounded-full hover:border-brand-forest hover:shadow-sm transition-all"
+                >
+                  Eastside First-Time Homebuyer Guide
+                </a>
+                <a
+                  href="/how-to-time-your-move-mortgage-closing-date/"
+                  className="inline-flex items-center gap-2 bg-white border border-gray-200 text-brand-forest font-semibold text-sm px-4 py-2 rounded-full hover:border-brand-forest hover:shadow-sm transition-all"
+                >
+                  Time Your Move Around Closing
+                </a>
+              </>
+            )}
             <a
               href="/faq/"
               className="inline-flex items-center gap-2 bg-white border border-gray-200 text-brand-forest font-semibold text-sm px-4 py-2 rounded-full hover:border-brand-forest hover:shadow-sm transition-all"
