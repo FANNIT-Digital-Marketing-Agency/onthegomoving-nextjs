@@ -16,6 +16,24 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "redmond-move-day-planning-checklist",
+    title: `Redmond Moving Checklist: Parking, Loading Access, and Move-Day Planning`,
+    excerpt: `A smooth Redmond move day starts before the truck arrives. The most useful preparation is not a last-minute rush. It is a clear plan for parking, entry, loading, packed boxes, and the person who can answer questions...`,
+    image: BRAND_IMAGES.crewEntryway4,
+    date: "August 20, 2026",
+    category: "Moving Tips & Guides",
+    readTime: "11 min read",
+  },
+  {
+    slug: "bellevue-moving-estimate-checklist",
+    title: `Bellevue Moving Estimate Checklist: How to Get a More Accurate Quote`,
+    excerpt: `A useful moving estimate is not just a number. It is a plan based on what you are moving, where the crew needs to work, and what help you need along the way. For a local Bellevue move, the clearest quote usually...`,
+    image: BRAND_IMAGES.crewCarryingOut,
+    date: "August 18, 2026",
+    category: "Moving Tips & Guides",
+    readTime: "12 min read",
+  },
+  {
     slug: "moving-insurance-what-it-covers-and-what-it-doesnt",
     title: `Moving Insurance: What It Covers and What It Doesn't`,
     date: "August 5, 2026",

@@ -3058,7 +3058,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
       { type: "h3", heading: `9. The Winters Require Adjustment`, body: `The <strong>first winter</strong> in Redmond is the hardest. This is the consistent advice from Reddit veterans.\n\nCloud cover and overcast skies for approximately 164 days per year are a real adjustment. This is especially true for people coming from sunny climates.\n\nThe practical advice from locals:\n\n<ul> <li>Buy proper rain gear — a hat is considered more important than an umbrella, locals don't use umbrellas</li> <li>Take Vitamin D supplements</li> <li>Plan trips away during the darkest months</li> <li>Get outside even in the rain</li> </ul>\n\nThe misty rain is actually beautiful once you adjust to it.\n\nThe <strong>summers</strong>, by contrast, are genuinely spectacular.` },
       { type: "h3", heading: `10. Umbrellas Are a Newcomer Tell`, body: `This is a small but telling piece of local culture: <strong>Redmond</strong> (and Eastside) locals almost never use umbrellas. Rain gear means a good <strong>waterproof jacket</strong> and a hat. Pulling out an umbrella is a reliable signal that you're new. It's not a judgment, just a cultural observation that reflects how locals have adapted to the weather.` },
       { type: "h3", heading: `11. Redmond Has Events Worth Knowing About`, body: `Derby Days in July is the biggest community event of the year, a multi-day festival with a parade, carnival, and community activities that draws the whole city. The Light event in December is a winter celebration that helps break up the dark season. The Redmond Saturday Market runs from May through October. These events give Redmond a genuine community feel that distinguishes it from more anonymous suburbs.` },
-      { type: "h2", heading: `Making the Move to Redmond`, body: `<strong>On The Go Moving &amp; Storage</strong> is based right here in <strong>Redmond, WA</strong>, we know the city better than any other moving company on the Eastside.\n\nFrom Overlake tech campuses to Education Hill neighborhoods, our crews handle every type of Redmond move.\n\nWe offer: <ul> <li>residential moving</li> <li>professional packing services</li> <li>storage services at our Redmond facility</li> <li>commercial moving for businesses of all sizes</li> </ul>\n\nCall us at 425-761-8500 for a free quote or visit our Redmond movers page for full details.\n\nAlso exploring nearby cities? Read our guides on: <ul> <li><a href="/moving-to-bellevue/">moving to Bellevue</a></li> <li><a href="/moving-to-kirkland/">moving to Kirkland</a></li> <li><a href="/moving-to-seattle/">moving to Seattle</a></li> </ul>\n\nPlanning your move? Our <a href="/moving-timeline-for-home-buyers/">home buyer moving timeline</a> and <a href="/moving-out-after-selling-your-home/">home seller moving checklist</a> cover every step of the process.` }
+      { type: "h2", heading: `Making the Move to Redmond`, body: `<strong>On The Go Moving &amp; Storage</strong> is based right here in <strong>Redmond, WA</strong>, we know the city better than any other moving company on the Eastside.\n\nFrom Overlake tech campuses to Education Hill neighborhoods, our crews handle every type of Redmond move.\n\nWe offer: <ul> <li>residential moving</li> <li>professional packing services</li> <li>storage services at our Redmond facility</li> <li>commercial moving for businesses of all sizes</li> </ul>\n\nCall us at 425-761-8500 for a free quote or visit our Redmond movers page for full details.\n\nAlso exploring nearby cities? Read our guides on: <ul> <li><a href="/moving-to-bellevue/">moving to Bellevue</a></li> <li><a href="/moving-to-kirkland/">moving to Kirkland</a></li> <li><a href="/moving-to-seattle/">moving to Seattle</a></li> </ul>\n\nPlanning your move? Our <a href="/moving-timeline-for-home-buyers/">home buyer moving timeline</a> and <a href="/moving-out-after-selling-your-home/">home seller moving checklist</a> cover every step of the process. For a final parking, access, and arrival review, use our <a href="/redmond-move-day-planning-checklist/">Redmond move-day planning checklist</a> before the truck arrives.` }
     ],
     faqs: [
       { q: `Is Redmond WA a good place to live in 2026?`, a: `Yes, Redmond offers exceptional bikeability, top-rated schools, low crime, excellent outdoor access, and proximity to Microsoft and other major tech employers. The main challenges are high cost of living, limited nightlife and dining options compared to Kirkland or Bellevue, a social scene that skews heavily toward tech workers, and the long gray winter season. For families and outdoor enthusiasts, it's an excellent choice.` },
@@ -5566,7 +5566,7 @@ This guide takes a different approach from the typical "red flags to watch for" 
       {
         type: "h2",
         heading: `Question 4: What Is Included in the Base Rate?`,
-        body: `Moving company pricing can be surprisingly opaque. The base rate typically covers labor and transportation, but many companies charge separately for additional services.\n\n<strong>Common add-on charges to ask about:</strong>\n\n<ul><li>Fuel surcharge</li><li>Stairs (per flight, per direction)</li><li>Long carry (when the truck cannot park close to the entrance)</li><li>Elevator use</li><li>Packing materials (boxes, tape, wrapping)</li><li>Disassembly and reassembly of furniture</li></ul>\n\n<strong>What to ask:</strong> "Can you give me an itemized breakdown of what is and is not included in the quoted price?" Ask specifically about the items most likely to apply to your move. If you live in a building with stairs and no elevator, ask about stair charges before you commit.`
+        body: `Moving company pricing can be surprisingly opaque. The base rate typically covers labor and transportation, but many companies charge separately for additional services.\n\n<strong>Common add-on charges to ask about:</strong>\n\n<ul><li>Fuel surcharge</li><li>Stairs (per flight, per direction)</li><li>Long carry (when the truck cannot park close to the entrance)</li><li>Elevator use</li><li>Packing materials (boxes, tape, wrapping)</li><li>Disassembly and reassembly of furniture</li></ul>\n\n<strong>What to ask:</strong> "Can you give me an itemized breakdown of what is and is not included in the quoted price?" Ask specifically about the items most likely to apply to your move. If you live in a building with stairs and no elevator, ask about stair charges before you commit. If you are planning a local move in Bellevue, use our <a href="/bellevue-moving-estimate-checklist/">Bellevue moving estimate checklist</a> to gather the inventory, building-access, and timing details that make a quote easier to compare.`
       },
       {
         type: "h2",
@@ -5708,6 +5708,443 @@ This guide takes a different approach from the typical "red flags to watch for" 
         a: `Items packed by the owner (if the box arrives intact), mechanical or electrical derangement without physical damage, jewelry and collectibles above standard limits unless separately declared, and damage from acts of God are typically excluded from moving liability. Cash, documents, and irreplaceable items should never be packed in a moving truck regardless of coverage — keep them with you during the move.`
       }
     ]
-  }
+  },
+  "bellevue-moving-estimate-checklist": {
+    slug: "bellevue-moving-estimate-checklist",
+    title: `Bellevue Moving Estimate Checklist: How to Get a More Accurate Quote`,
+    metaTitle: `Bellevue Moving Estimate Checklist: Get a Better Quote | On The Go Moving`,
+    metaDescription: `Getting moving quotes in Bellevue? Use this practical checklist to explain your inventory, building access, services, and timeline so your estimate reflects the move you are actually planning.`,
+    date: "August 18, 2026",
+    dateISO: "2026-08-18",
+    category: "Moving Tips & Guides",
+    readTime: "12 min read",
+    author: "On The Go Moving",
+    heroImage: BRAND_IMAGES.crewCarryingOut,
+    intro: `<p>A useful moving estimate is not just a number. It is a plan based on what you are moving, where the crew needs to work, and what help you need along the way.</p>
 
+<p>For a local Bellevue move, the clearest quote usually starts with a clear conversation. When you give each mover the same details, you can compare the scope of each estimate instead of comparing one total that may leave out important work.</p>
+
+<p>This checklist explains what to gather before you request quotes. It also shows which questions can help you avoid a surprise on move day.</p>`,
+    relatedService: "Residential Moving",
+    relatedServiceHref: "/residential-moving/",
+    sections: [
+      {
+        type: "h2",
+        heading: `Start With the Basic Move Details`,
+        body: `<p>Begin with the facts that define the move. A mover needs the old address, the new address, the preferred move date, and a simple description of each home. These details sound basic, but they shape the crew plan before anyone starts counting boxes.</p>
+
+<p>Tell the company whether you are moving from a studio, apartment, condo, townhouse, or house. Include the number of bedrooms, but do not stop there. Two homes with the same bedroom count can require very different amounts of work.</p>
+
+<p>For example, a lightly furnished two-bedroom apartment is different from a two-bedroom home with a full garage, patio furniture, a storage room, and several large pieces. The goal is not to make a perfect inventory from memory. The goal is to give an honest picture of the move.</p>
+
+<p>Have these details ready before you call or complete a quote form:</p>
+
+<ul>
+  <li>Both move addresses and the date or date range you are considering.</li>
+  <li>The type of home at each address and the number of levels.</li>
+  <li>Whether you will be fully packed, partly packed, or need packing help.</li>
+  <li>Any storage unit, garage, basement, patio, or separate pickup location.</li>
+  <li>Any large, delicate, or unusually heavy item you expect the crew to move.</li>
+</ul>
+
+<p>If your dates are still flexible, say so. A mover can tell you what information they need to check availability, but a professional estimate should still be based on the actual move conditions you describe.</p>
+
+<p>People often focus on the distance between two Bellevue addresses. Distance matters, but it is only one part of the plan. The work at each end of the move often tells more of the story.</p>
+
+<p>It also helps to identify who can answer questions about the move. If you share a home with a partner, roommate, or family member, compare notes before asking for estimates. One person may remember the storage cage while another remembers the large patio set or the desk that needs to be taken apart. A five-minute conversation can make the scope much clearer.</p>
+
+<p>Do not hide a complicated detail because you worry it will make the quote harder to request. A clear description is better for everyone. The moving company can explain what it needs to plan, and you can decide whether that plan feels right before the date is locked in.</p>`
+      },
+      {
+        type: "h2",
+        heading: `Make Your Inventory Easy to Understand`,
+        body: `<p>A detailed inventory helps a mover choose the right crew, truck, and amount of time for your move. You do not need to list every fork and towel. Instead, identify the items that affect space, handling, or preparation.</p>
+
+<p>Start with large furniture. Include beds, dressers, sofas, sectionals, dining tables, desks, bookcases, exercise equipment, and appliances. Mention if a piece needs to be taken apart, if it has fragile glass, or if it must travel from an upper floor.</p>
+
+<p>Then describe the rest of the home in plain language. “About 35 packed boxes, a furnished living room, two bedrooms, and a small storage cage” is more useful than “a two-bedroom apartment” on its own.</p>
+
+<p>Give special attention to items that need extra planning:</p>
+
+<ul>
+  <li>Large mirrors, artwork, or glass-top furniture.</li>
+  <li>Pianos, safes, large appliances, or heavy fitness equipment.</li>
+  <li>Sectional sofas that may need to be separated.</li>
+  <li>Furniture that needs disassembly and reassembly.</li>
+  <li>Items going to a different address, donation site, or storage location.</li>
+</ul>
+
+<p>Photos or a video walkthrough can help when a company offers that option. They are especially useful when there are many pieces, tight spaces, or items stored outside the main living area. Ask the mover what format is most helpful and make sure every large item is visible.</p>
+
+<p>Be direct about changes. If you plan to donate a sofa before move day, say that it is not part of the move. If you might add a storage unit pickup, mention that early. A quote is only as useful as the scope behind it.</p>
+
+<p>Good inventory details do not lock you into one plan. They give you a starting point. If your list changes, notify the mover and ask how the change affects the crew plan, timing, or estimate before move day.</p>
+
+<p>A room-by-room note can make this process easier. Write down the major pieces in the living room, bedrooms, dining area, storage spaces, and outdoor areas. Mark anything that is staying behind. This simple note is also useful when you compare two estimates later because you can confirm that both companies planned for the same belongings.</p>
+
+<p>If you are not fully packed yet, give a realistic estimate of what remains. A mover does not need you to predict the exact number of boxes weeks in advance. It does need to know whether your belongings will be packed and ready, whether you want help with selected rooms, or whether you are still deciding.</p>`
+      },
+      {
+        type: "h2",
+        heading: `Explain Access at Both Addresses`,
+        body: `<p>Access is often the missing detail in a moving estimate. A mover needs to know not only what is inside each home, but how the crew will reach it. Parking, stairs, elevators, hallways, loading areas, and walking distance all affect the work.</p>
+
+<p>For a house, note the driveway, front steps, side entrance, steep walk, or long path from the curb. For an apartment or condo, note the floor, elevator, hallway length, parking location, and whether a loading area is available.</p>
+
+<p>Managed buildings can have their own move procedures. Your building <strong>may</strong> require a reserved elevator, a specific move window, proof of insurance from a vendor, a loading-area plan, or an advance form. Ask the property manager what applies to your address. Do not assume that the rules at your old building match the rules at your new one.</p>
+
+<p>Use this access checklist for both locations:</p>
+
+<ul>
+  <li>What floor is the home on, and is there an elevator?</li>
+  <li>How far is the closest legal truck parking from the entrance?</li>
+  <li>Are there stairs, tight turns, narrow hallways, or low-clearance areas?</li>
+  <li>Does building management require a reservation, move window, or paperwork?</li>
+  <li>Is there a loading dock or designated loading area, and how is it reserved?</li>
+  <li>Are there gates, call boxes, security procedures, or access codes to coordinate?</li>
+</ul>
+
+<p>Bellevue streets can include parking restrictions and residential parking zones. Confirm the parking plan in advance rather than expecting the crew to find space after arrival. If the move uses a managed building, confirm the building plan with the manager and share it with the mover.</p>
+
+<p>Ask the manager for the information in one message if possible. You may need the move date and time window, the location of the loading area, the process for reserving it, and the contact person for move day. If a form, certificate, or security instruction is required, ask when it is due and forward it to the mover with enough time for questions.</p>
+
+<p>Access details are not only for high-rise buildings. A townhouse with multiple flights of stairs, a condo with a long interior corridor, or a house with a steep entry can all benefit from an early conversation. The point is not to predict an extra charge. It is to help the crew understand the physical work before it arrives.</p>
+
+<p>Clear access protects the estimate from guesswork. It also helps the crew arrive prepared for the conditions they will actually face. If you are moving from or into a building, an <a href="/apartment-moving/">apartment moving service</a> can be a useful fit when access coordination is a major part of the move.</p>`
+      },
+      {
+        type: "h2",
+        heading: `Decide Which Services Need to Be Included`,
+        body: `<p>Before comparing quotes, decide what work you want the moving company to handle. Some people need loading, transportation, and unloading only. Others need help packing, preparing furniture, moving items into storage, or placing items in a new home.</p>
+
+<p>It is easy to compare two estimates that look different because they include different services. One quote may assume every box is packed and every bed frame is ready to move. Another may include packing time, materials, and furniture setup. Neither approach is automatically wrong, but the scope should be clear.</p>
+
+<p>Ask each company to confirm which of these services are included, optional, or excluded:</p>
+
+<ul>
+  <li>Loading, transport, and unloading.</li>
+  <li>Basic furniture disassembly and reassembly.</li>
+  <li>Packing supplies and packing labor.</li>
+  <li>Protection for furniture, floors, doorways, and fragile items.</li>
+  <li>Extra stops, storage moves, or pickup from a storage unit.</li>
+  <li>Handling for specialty or oversized items.</li>
+</ul>
+
+<p>This is also the time to talk about what you will handle yourself. If you plan to move personal documents, medications, jewelry, or fragile items in your own car, say so. If you expect a mover to pack certain fragile items, make that part of the written scope.</p>
+
+<p>Most household moves fall under <a href="/residential-moving/">local residential moving</a>, but the right plan depends on the work required, not the label alone. A clear scope gives the company a chance to recommend the right crew and lets you decide whether the services match your needs.</p>
+
+<p>Do not be embarrassed to ask for a plain-language explanation. If a service is important to you, it should be named in the estimate or confirmed in writing before you book.</p>`
+      },
+      {
+        type: "h2",
+        heading: `Talk Through Timing and Move-Day Constraints`,
+        body: `<p>Your move date is more than a calendar entry. It affects when you need access to each home, when the crew can arrive, how long a building allows the move to run, and how much flexibility you have if closing or lease dates change.</p>
+
+<p>Tell the mover whether your move depends on a lease end date, key pickup, home closing, elevator reservation, storage access, or another appointment. A crew cannot plan around a restriction it does not know about.</p>
+
+<p>Ask these questions while you are reviewing the estimate:</p>
+
+<ul>
+  <li>What arrival window is being discussed, and when will it be confirmed?</li>
+  <li>How should I tell you if my move date changes?</li>
+  <li>What should I do if my building gives me a limited elevator or loading window?</li>
+  <li>When do you need the final inventory and access details?</li>
+  <li>Who should the crew contact if there is an access issue on move day?</li>
+</ul>
+
+<p>Good timing information helps the crew work within the schedule you have. It also gives you a reason to raise concerns early, while there is still time to adjust the plan.</p>
+
+<p>If you are not sure where to start, build a short move-day timeline. Include your packing deadline, building reservation date, key handoff, and the point when the mover needs final details. Then use that timeline when you request quotes.</p>
+
+<p>After you book, our guide on how to <a href="/how-to-prepare-for-movers/">prepare for movers before move day</a> can help you turn that quote plan into a calmer move-day setup.</p>`
+      },
+      {
+        type: "h2",
+        heading: `Compare Estimates by Scope, Not Only by the Total`,
+        body: `<p>When two estimates show different totals, the answer is not always that one company is more expensive. The estimates may be based on different inventory, access, travel, crew, or service assumptions.</p>
+
+<p>Put the estimates side by side and compare the details. Start by checking whether both companies received the same description of the move. If one company saw a full inventory and the other received only a bedroom count, the totals are not truly comparable.</p>
+
+<p>Then look for the questions that affect the final scope:</p>
+
+<ul>
+  <li>What inventory and access conditions does the estimate assume?</li>
+  <li>What crew size and truck plan are included?</li>
+  <li>Which services are included, and which need separate approval?</li>
+  <li>How is time tracked if the move conditions differ from the original description?</li>
+  <li>What information needs to be updated before move day?</li>
+</ul>
+
+<p>A good estimate should make it easy to understand the plan. If a line is unclear, ask before you book. You are not creating a problem by asking for an explanation. You are making sure the mover understands what you need.</p>
+
+<p>It can help to make a short comparison sheet of your own. List the crew plan, assumed inventory, access notes, included services, and open questions for each estimate. You are not trying to turn the move into a complicated project. You are giving yourself a way to see whether one quote omitted a storage stop, furniture work, or building requirement that another one included.</p>
+
+<p>Keep the written estimate with the notes you gave the company. If a detail changes, you can point to the original information and ask for an updated explanation. That is much easier than trying to reconstruct a phone call a week before the move.</p>
+
+<p>This article is about preparing the move details. Once you are ready to evaluate the company behind the quote, use our guide to <a href="/how-to-choose-a-moving-company-10-questions-to-ask/">questions to ask before choosing a moving company</a>. That guide covers a different part of the decision, including licensing, written terms, and how the company handles important customer protections.</p>
+
+<p>A lower total may still be the right fit, but only after you know that the scope matches your move. A clear plan is more useful than a quick number with unanswered questions behind it.</p>`
+      },
+      {
+        type: "h2",
+        heading: `Confirm the Plan Before Move Day`,
+        body: `<p>Once you select a mover, review the plan one more time. Send any new inventory details, confirm the addresses, and share the final access instructions. If you made an elevator or loading reservation, send the time and any building contact information.</p>
+
+<p>Keep the essentials in one place: the mover’s contact information, property manager contact, reservation details, access codes, and a copy of the estimate. You may never need to use every item, but having them ready removes stress if a question comes up.</p>
+
+<p>On move day, be ready to walk through both homes and point out anything unusual. Show the crew the storage unit, the separate pickup location, the tight hallway, or the item that needs special attention. A short walkthrough can prevent small details from becoming last-minute surprises.</p>
+
+<p>Use the final review to clarify where you want furniture and boxes placed at the new home. A room-label system is helpful, but you should also call out any room that has a narrow entrance, stairs, or a placement preference. Clear directions can make unloading more organized and reduce the number of decisions you need to make while the crew is working.</p>
+
+<p>If a building contact, gate code, or access instruction changes on the day of the move, share it immediately. Small changes happen. Prompt communication gives the crew the best chance to adjust without losing valuable time.</p>
+
+<p>If you are planning a Bellevue move and want a quote that reflects your actual scope, start with <a href="/bellevue-movers/">Bellevue moving services</a>. Share the inventory, access, service, and timing details from this checklist so the conversation begins with a practical plan.</p>`
+      }
+    ],
+    faqs: [
+      {
+        q: `What should I tell movers when I request an estimate?`,
+        a: `Tell the mover both addresses, your target date, home type, number of floors, large items, approximate box count, parking and access details, and any services you need. Mention storage units, elevators, stairs, long walks, and special items early.`
+      },
+      {
+        q: `Do I need a full inventory for a moving quote?`,
+        a: `You do not need to count every small item. You should provide a useful picture of the move, including large furniture, rough box count, storage areas, and anything heavy, fragile, or unusual. Ask the company how it prefers to review the inventory.`
+      },
+      {
+        q: `Why do apartment and condo details matter for an estimate?`,
+        a: `The mover needs to plan how the crew will access the home. Stairs, elevators, hallway length, parking distance, building reservations, and loading procedures can change the amount of work involved. Confirm the rules at both buildings before finalizing your move plan.`
+      },
+      {
+        q: `What if my inventory changes after I receive a quote?`,
+        a: `Tell the mover as soon as you know about the change. Adding a storage pickup, a large piece of furniture, or many more boxes can change the scope. Ask how the change affects the crew plan, timing, or estimate before move day.`
+      },
+      {
+        q: `Should I ask whether packing and furniture assembly are included?`,
+        a: `Yes. Ask what the estimate assumes about packed boxes, packing help, furniture disassembly, reassembly, and specialty items. A clear written scope makes it easier to compare estimates and prepare your home.`
+      },
+      {
+        q: `When should I request a moving estimate?`,
+        a: `Request estimates once you know the likely addresses, approximate move date, and basic inventory. If a date is not final, be clear about the range you are considering and ask what information the company needs as your plan becomes firm.`
+      }
+    ]
+  },
+  "redmond-move-day-planning-checklist": {
+    slug: "redmond-move-day-planning-checklist",
+    title: `Redmond Moving Checklist: Parking, Loading Access, and Move-Day Planning`,
+    metaTitle: `Redmond Moving Checklist: Parking, Access, and Move Day | On The Go Moving`,
+    metaDescription: `Moving in or out of Redmond? Use this practical checklist to coordinate parking, building entry, loading access, packing, and the final move-day plan before the crew arrives.`,
+    date: "August 20, 2026",
+    dateISO: "2026-08-20",
+    category: "Moving Tips & Guides",
+    readTime: "11 min read",
+    author: "On The Go Moving",
+    heroImage: BRAND_IMAGES.crewEntryway4,
+    intro: `<p>A smooth Redmond move day starts before the truck arrives. The most useful preparation is not a last-minute rush. It is a clear plan for parking, entry, loading, packed boxes, and the person who can answer questions at each address.</p>
+
+<p>Whether you are leaving a downtown apartment, moving into a townhouse, or changing homes elsewhere in Redmond, the crew needs the same basic things: legal access, a clear path, and a shared plan. This checklist helps you organize those details without guessing about your building or your street.</p>
+
+<p>Use it as a final review in the week before your move. Then share the important access and timing notes with your moving company before move day.</p>`,
+    relatedService: "Residential Moving",
+    relatedServiceHref: "/residential-moving/",
+    sections: [
+      {
+        type: "h2",
+        heading: `Build a One-Page Move-Day Plan`,
+        body: `<p>Put the main details in one place. A single note on your phone or a printed page works well. The goal is to avoid searching through emails while movers are waiting for a parking instruction, access code, or building contact.</p>
+
+<p>Start with both addresses, the moving company contact, your preferred arrival window, and the person who can make decisions if you are delayed. If you are moving with a roommate, partner, or family member, decide who will be at each address and who will speak with the crew.</p>
+
+<p>Your one-page plan should include:</p>
+
+<ul>
+  <li>Old and new addresses, including unit numbers and the best entrance to use.</li>
+  <li>The move date, arrival window, and the moving company’s contact information.</li>
+  <li>Parking or loading instructions for each location.</li>
+  <li>Building manager, concierge, or property contact information when applicable.</li>
+  <li>Gate codes, call-box instructions, elevator reservation details, or entry notes.</li>
+  <li>Any item, storage area, or separate pickup location that needs special attention.</li>
+</ul>
+
+<p>Keep the plan simple. It should give a crew member or building contact the information they need in a few seconds. You can add a photo of the entrance or loading area if that will make the access plan easier to understand.</p>
+
+<p>Do not assume that a friend, a leasing agent, or your building will communicate with the mover for you. Confirm who is responsible for each handoff. Clear ownership keeps small questions from becoming delays.</p>
+
+<p>Before the move starts, use the plan for a short walkthrough with the crew lead. Point out the entrance, the items outside the main rooms, and any detail that is different from the original plan. This helps you begin the day with shared information instead of trying to explain it after loading has already started.</p>
+
+<p>If your phone battery is low or your signal is poor in a garage or elevator, keep a printed copy of the key details. It is a small backup that can be helpful when you need to reach a building contact or confirm a unit number quickly.</p>`
+      },
+      {
+        type: "h2",
+        heading: `Confirm Parking and Truck Access`,
+        body: `<p>Truck access is one of the first details to settle. Before move day, walk or drive by both addresses at about the time your move is expected to begin. Look for the closest legal parking option, posted restrictions, tight turns, low branches, construction, and the actual walk from the curb to the door.</p>
+
+<p>For Redmond streets, check the signs where you expect the truck to park and use the <a href="https://www.redmond.gov/2524/Parking">City of Redmond parking information</a> to review the relevant area map. The city says parking time limits are actively enforced. That is a good reason to confirm the plan rather than rely on an open space you noticed on a different day.</p>
+
+<p>If the closest curb space is not an option, ask what alternatives are allowed. Your property manager may have a designated area, a loading location, or a process for arranging access. Do not block a fire lane, driveway, gate, or marked area unless the property has clearly authorized it.</p>
+
+<p>Check these parking and truck-access details:</p>
+
+<ul>
+  <li>Where the truck can legally stop and which side of the street makes the most sense.</li>
+  <li>Whether the route has a tight driveway, low clearance, steep grade, or narrow turn.</li>
+  <li>How far the crew will need to walk from the truck to the entrance.</li>
+  <li>Whether another vehicle, delivery, or construction activity may affect access.</li>
+  <li>Who will meet the crew if a gate, garage, or loading area needs to be opened.</li>
+</ul>
+
+<p>Tell the mover what you find. A quick note such as “parking is on the east side of the building, about one driveway past the main entrance” can be much more useful than assuming the crew will see the same route you have in mind.</p>
+
+<p>Parking is part of the move plan, not an afterthought. Clear access helps everyone start with the right information and gives you time to solve a problem before the move date.</p>
+
+<p>Keep your own vehicle out of the loading path if possible. You may need it for personal items, but it should not block the entrance, the truck route, or a space the crew needs to use. Decide where each driver will park before the truck arrives, especially if the move involves a shared driveway or busy apartment area.</p>
+
+<p>Weather can also change how the route feels on move day. If rain, wind, or another condition affects the walking path, clear loose items and look for areas that may become slippery. The goal is not to create a new plan at the last minute. It is to make the planned route as safe and usable as possible.</p>`
+      },
+      {
+        type: "h2",
+        heading: `Coordinate Building Entry, Elevators, and Loading Areas`,
+        body: `<p>Apartment and condo moves often have an extra layer of planning. Each property can set its own rules for entry, elevators, loading areas, move hours, vendor paperwork, and shared spaces. Ask your building manager what applies to your move. Do not assume the old and new buildings use the same process.</p>
+
+<p>Some buildings may ask residents to reserve an elevator or loading area. Others may give you a contact person, a moving window, or instructions for secured entry. If the building requires a document from the mover, ask what it is, when it is due, and where it should be sent.</p>
+
+<p>It is also important to plan for the real path through the building. The route may include a locked entry, a lobby, an elevator, a long hallway, a stairwell, or a service corridor. Mention each step when you speak with the mover.</p>
+
+<p>Use this building-access check before the move:</p>
+
+<ul>
+  <li>Confirm the move-in or move-out rules with the property manager.</li>
+  <li>Reserve any elevator, loading area, or building time slot that your property requires.</li>
+  <li>Ask whether secured entry needs a resident, concierge, or call-box instruction.</li>
+  <li>Confirm the route from the loading area to your unit, including stairs and tight turns.</li>
+  <li>Share any required forms or vendor instructions with the mover before the due date.</li>
+  <li>Ask where boxes and furniture may wait if the crew needs a short pause, rather than using a common area without permission.</li>
+</ul>
+
+<p>Building details are easier to handle early. Give the mover the information as soon as you receive it, then keep the final instructions in your one-page move-day plan.</p>
+
+<p>Ask the manager what should happen if the elevator is delayed or a loading space is unexpectedly occupied. You may not be able to control those events, but you can know who to call and whether there is an approved alternative. That is better than asking the crew to make a building decision without guidance.</p>
+
+<p>Be considerate of the shared space. Keep common doors closed when required, follow the building’s instructions for protecting walls or elevator interiors, and avoid leaving boxes where residents need to walk. A calm building plan is helpful for your move and respectful of your neighbors.</p>
+
+<p>If your move involves shared hallways, elevators, or property-manager coordination, an <a href="/apartment-moving/">apartment moving service</a> can help you plan for the access details that make these moves different from a simple driveway-to-driveway move.</p>`
+      },
+      {
+        type: "h2",
+        heading: `Finish Packing and Protect the Essentials`,
+        body: `<p>The final packing step is about readiness, not perfection. By the time the crew arrives, the items that are going on the truck should be packed, labeled, and easy to identify. Loose items slow down loading and make it harder to keep track of what belongs in each room.</p>
+
+<p>Walk through the home the night before. Look for open drawers, unpacked closets, items under beds, garage shelves, balcony storage, and items that are easy to forget. Separate what will travel with you from what should go on the truck.</p>
+
+<p>Keep these essentials out of the moving load:</p>
+
+<ul>
+  <li>Keys, identification, lease or closing documents, and building paperwork.</li>
+  <li>Medications, wallets, personal electronics, and valuable small items.</li>
+  <li>A phone charger, water, snacks, and basic cleaning supplies.</li>
+  <li>Items you need the first night, including bedding, toiletries, and pet supplies.</li>
+  <li>Any access instructions or contact numbers you may need during the day.</li>
+</ul>
+
+<p>Label boxes with the destination room and a simple note such as “fragile,” “open first,” or “garage.” A clear label makes it easier to direct the crew at the new home. It also helps you see if something is missing before the truck leaves the first address.</p>
+
+<p>If you need more help with the earlier preparation steps, our guide on how to <a href="/how-to-prepare-for-movers/">prepare your home for movers</a> covers the broader packing, pathway, and pre-move tasks. The Redmond checklist stays focused on the final access and move-day handoff.</p>`
+      },
+      {
+        type: "h2",
+        heading: `Prepare the Old Home for an Efficient Departure`,
+        body: `<p>Before the crew arrives, make the path from each room to the exit as simple as possible. Clear small obstacles from hallways, stairs, and doorways. Move rugs, bins, shoes, or plants that could create a tripping hazard or block the walking route.</p>
+
+<p>Open the spaces the crew needs to see. If a storage cage, garage, closet, or patio is part of the move, make sure it is unlocked and accessible. Tell the crew about any furniture that is staying behind, any room that is off limits, and any item that needs special handling.</p>
+
+<p>A short walkthrough at the start helps everyone begin with the same picture. Point out the large items, the fragile pieces, the parking route, and the final areas you want checked before departure.</p>
+
+<p>Before leaving the old home, use a final departure list:</p>
+
+<ul>
+  <li>Check every closet, cabinet, drawer, storage area, and outdoor space.</li>
+  <li>Confirm that parking, elevator, and access arrangements are still in place.</li>
+  <li>Take photos of the empty home if your lease, sale, or property manager requires them.</li>
+  <li>Set aside remotes, keys, garage openers, and items that must be returned.</li>
+  <li>Make sure pets and children have a safe plan away from active carrying paths.</li>
+</ul>
+
+<p>Do not rush the final check because the truck is ready to leave. A careful five-minute walk through can prevent a forgotten box, a missed closet, or an avoidable return trip.</p>
+
+<p>For a house, townhouse, or condo move, a <a href="/residential-moving/">local residential move</a> plan should also include the driveway, entrances, and any outdoor furniture or storage that the crew will handle.</p>
+
+<p>Use a small “do not load” area near the exit for the items that stay with you. This is useful for cleaning supplies, keys, personal bags, and anything you need before you leave. Let everyone in the household know that the area is not part of the moving load.</p>`
+      },
+      {
+        type: "h2",
+        heading: `Set Up the Arrival Plan at the New Home`,
+        body: `<p>The new address needs as much planning as the old one. Confirm where the truck will park, who will meet the crew, and how the crew will enter. If keys are being handed off that day, decide what happens if the timing changes.</p>
+
+<p>Make the first rooms easy to find. You do not need to create a detailed floor plan, but you should know where major furniture belongs and which boxes need to be opened first. Put room labels on doors or use simple notes if the home has several similar spaces.</p>
+
+<p>Before unloading begins, walk through the new home with the crew and point out:</p>
+
+<ul>
+  <li>The entry route, stairs, elevators, hallways, and any room with a tight turn.</li>
+  <li>The location for large furniture, mattresses, and boxes marked “open first.”</li>
+  <li>Any area that should stay clear for a pet, child, contractor, or building staff member.</li>
+  <li>Where empty boxes, wrapping, or packing materials should be placed during the move.</li>
+  <li>Any building or neighborhood instruction that affects the unloading route.</li>
+</ul>
+
+<p>Give directions as the work happens. It is much easier to direct a box to the correct room when it comes off the truck than to move it again after it is stacked in the wrong place.</p>
+
+<p>Keep your essentials bag and important documents with you until the move is complete. That way, you have what you need even if unpacking takes a few days.</p>
+
+<p>Plan one clear space for the first items you will need. A kitchen counter, a bedroom corner, or a table near the entry can work. Keep it open for bedding, chargers, medications, and basic supplies so you do not have to search through a stack of boxes after the crew leaves.</p>`
+      },
+      {
+        type: "h2",
+        heading: `Run a Final 24-Hour Confirmation`,
+        body: `<p>Use the day before the move for a short confirmation routine. You do not need to call every person twice. You do need to make sure the few details that affect access have not changed.</p>
+
+<p>Contact your moving company if the inventory, parking plan, access code, building contact, elevator reservation, or move time is different from what you discussed. Give the property manager the mover’s information if the building requires it.</p>
+
+<p>Then check your own readiness:</p>
+
+<ul>
+  <li>Boxes are sealed and labeled, with essentials set aside.</li>
+  <li>Parking and building directions are written down and shared.</li>
+  <li>Keys, documents, and contact information are with you, not packed away.</li>
+  <li>Someone is assigned to answer access questions at both addresses.</li>
+  <li>You know where pets, children, and personal vehicles will be during loading and unloading.</li>
+</ul>
+
+<p>A final confirmation is not about expecting problems. It is about removing avoidable uncertainty. When the crew arrives, you can focus on the walkthrough and the move instead of trying to rebuild the plan in the parking lot.</p>
+
+<p>If you are arranging a local move and want help coordinating the physical details, start with <a href="/redmond-movers/">Redmond moving services</a>. Share your parking, access, building, and timing notes so the move conversation begins with a plan that fits both addresses.</p>`
+      }
+    ],
+    faqs: [
+      {
+        q: `Where should a moving truck park in Redmond?`,
+        a: `Choose the closest legal and practical option at each address. Check posted restrictions, confirm the route to the entrance, and ask your property manager about any designated loading area. If your move is near Downtown, Overlake, or Marymoor Village, review the relevant City of Redmond parking map before move day.`
+      },
+      {
+        q: `Do I need to reserve an elevator or loading area?`,
+        a: `It depends on your building. Ask the property manager well before the move date whether you need a reservation, a move window, a form, or other access instructions. Share those requirements with the mover as soon as you receive them.`
+      },
+      {
+        q: `What should I tell movers about apartment access?`,
+        a: `Tell the mover the unit floor, elevator or stair access, entry process, parking location, hallway distance, loading area, and any building contact or deadline. Mention secured entry, low-clearance areas, or tight turns before move day.`
+      },
+      {
+        q: `What should I keep with me instead of packing on the truck?`,
+        a: `Keep keys, documents, medications, identification, valuable small items, electronics, chargers, and your first-night essentials with you. Also keep access codes, building contacts, and parking instructions available throughout the day.`
+      },
+      {
+        q: `What if my parking or building instructions change at the last minute?`,
+        a: `Tell the mover as soon as you know. A new parking location, access code, elevator time, or building contact can affect the plan. Quick communication gives everyone the best chance to adjust before the crew arrives.`
+      },
+      {
+        q: `How can I make unloading go faster at my new home?`,
+        a: `Confirm the entry route, parking plan, and room layout before unloading. Label boxes by room, point out large furniture locations during the walkthrough, and keep the most important rooms clear so the crew can place items without moving them twice.`
+      }
+    ]
+  }
 };
