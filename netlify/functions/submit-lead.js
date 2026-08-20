@@ -19,8 +19,10 @@
 import crypto from "crypto";
 import mysql from "mysql2/promise";
 import seattleHouseDestinationModule from "../../lib/seattleHouseDestinations.js";
+import supermoveResponseModule from "../../lib/supermoveResponse.js";
 
 const { applySeattleHouseDestination, isSeattleHouseDestinationRequest } = seattleHouseDestinationModule;
+const { getSupermoveValidationError } = supermoveResponseModule;
 
 // ── FB Pixel ID (public, safe to hardcode) ──────────────────────────────────
 const FB_PIXEL_ID = "129153980771695";
@@ -314,8 +316,9 @@ export const handler = async (event) => {
   } else {
     const smResponse = supermoveResult.value;
     const smText = await smResponse.text().catch(() => "");
-    if (!smResponse.ok) {
-      console.error("[submit-lead] SuperMove error:", smResponse.status, smText);
+    const validationError = getSupermoveValidationError(smText);
+    if (!smResponse.ok || validationError) {
+      console.error("[submit-lead] SuperMove error:", smResponse.status, validationError || smText);
       webhookStatus = "failed";
     }
   }
