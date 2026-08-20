@@ -1,9 +1,11 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import {
+import seattleHouseDestinationModule from "../lib/seattleHouseDestinations.js";
+
+const {
   applySeattleHouseDestination,
   isSeattleHouseDestinationRequest,
-} from "../lib/seattleHouseDestinations.mjs";
+} = seattleHouseDestinationModule;
 
 test("maps the North Tower key to the verified address and tags", () => {
   const lead = applySeattleHouseDestination({
