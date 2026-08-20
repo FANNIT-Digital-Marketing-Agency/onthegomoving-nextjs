@@ -8,7 +8,7 @@
     "build": "NODE_ENV=production next build",
     "start": "next start",
     "lint": "next lint",
-    "test:seattle-house": "node --test netlify/functions/seattle-house-destinations.test.mjs",
+    "test:seattle-house": "node --test tests/seattle-house-destinations.test.mjs",
     "db:push": "drizzle-kit push"
   },
   "keywords": [],

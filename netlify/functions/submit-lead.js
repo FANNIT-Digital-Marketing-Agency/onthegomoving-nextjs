@@ -18,7 +18,7 @@
 
 import crypto from "crypto";
 import mysql from "mysql2/promise";
-import { applySeattleHouseDestination, isSeattleHouseDestinationRequest } from "./seattle-house-destinations.mjs";
+import { applySeattleHouseDestination, isSeattleHouseDestinationRequest } from "../../lib/seattleHouseDestinations.mjs";
 
 // ── FB Pixel ID (public, safe to hardcode) ──────────────────────────────────
 const FB_PIXEL_ID = "129153980771695";

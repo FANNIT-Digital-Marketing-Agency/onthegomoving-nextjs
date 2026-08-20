@@ -3,7 +3,7 @@ import test from "node:test";
 import {
   applySeattleHouseDestination,
   isSeattleHouseDestinationRequest,
-} from "./seattle-house-destinations.mjs";
+} from "../lib/seattleHouseDestinations.mjs";
 
 test("maps the North Tower key to the verified address and tags", () => {
   const lead = applySeattleHouseDestination({
