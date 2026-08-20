@@ -27,6 +27,12 @@ interface QuoteFormProps {
   className?: string;
   /** Optional label to identify which page/section the form was submitted from */
   sourceLabel?: string;
+  /** Optional preset destinations for a partner page. The server validates every preset key. */
+  partnerDestinations?: Array<{ value: string; label: string }>;
+  /** Optional partner-specific thank-you path used after a successful submission. */
+  thankYouPath?: string;
+  /** Optional replacement for the standard quote-form submit button label. */
+  submitButtonLabel?: string;
   /** Pre-check the Free Storage checkbox (use on storage-related pages) */
   defaultFreeStorage?: boolean;
   /**
@@ -83,6 +89,9 @@ export default function QuoteForm({
   variant = "hero",
   className = "",
   sourceLabel,
+  partnerDestinations,
+  thankYouPath,
+  submitButtonLabel,
   defaultFreeStorage = false,
   defaultMoveType = "",
   isLandingPage = false,
@@ -104,6 +113,7 @@ export default function QuoteForm({
     moveDate: "",
     zipFrom: "",
     zipTo: "",
+    partnerDestination: "",
     moveType: defaultMoveType,  // "apartment" | "house" | "commercial"
     moveSize: "",               // Studio, 1 Bedroom, 2 Bedrooms … (apartment/house only)
     squareFeet: "",             // commercial only
@@ -144,6 +154,11 @@ export default function QuoteForm({
     // Require bedroom/unit size for residential moves before proceeding
     if ((formData.moveType === "house" || formData.moveType === "apartment") && !formData.moveSize) {
       toast.error("Please select your move size (number of bedrooms).");
+      return;
+    }
+
+    if (partnerDestinations?.length && !formData.partnerDestination) {
+      toast.error("Please choose your Seattle House tower.");
       return;
     }
 
@@ -195,6 +210,7 @@ export default function QuoteForm({
       netlifyFormData.append("moveDate", formData.moveDate || "");
       netlifyFormData.append("zipFrom", formData.zipFrom || "");
       netlifyFormData.append("zipTo", formData.zipTo || "");
+      netlifyFormData.append("partnerDestination", formData.partnerDestination || "");
       netlifyFormData.append("moveType", formData.moveType || "");
       netlifyFormData.append("moveSize", formData.moveSize || "");
       netlifyFormData.append("squareFeet", formData.squareFeet || "");
@@ -217,6 +233,7 @@ export default function QuoteForm({
             squareFeet: formData.squareFeet || undefined,
             fromZip: formData.zipFrom || undefined,
             toZip: formData.zipTo || undefined,
+            partnerDestination: formData.partnerDestination || undefined,
             wantsStorage: formData.freeStorage,
             sourcePage: window.location.pathname,
             sourceLabel: sourceLabel,
@@ -251,9 +268,9 @@ export default function QuoteForm({
       setSubmitted(true);
       setTimeout(() => {
         // Landing pages redirect to /get/thank-you/ for accurate paid conversion tracking
-        window.location.href = isLandingPage
+        window.location.href = thankYouPath || (isLandingPage
           ? "/get/thank-you/"
-          : "/thank-you-get-a-quote-services/";
+          : "/thank-you-get-a-quote-services/");
       }, 1500);
     } catch (err) {
       console.error("[QuoteForm] Submission error:", err);
@@ -319,6 +336,7 @@ export default function QuoteForm({
       <input type="hidden" name="form-name" value="quote-request" />
       <input type="hidden" name="sourcePage" value="" />
       <input type="hidden" name="sourceLabel" value="" />
+      <input type="hidden" name="partnerDestination" value="" />
 
       {variant === "hero" && (
         <div className="mb-5">
@@ -436,7 +454,7 @@ export default function QuoteForm({
           />
         </div>
 
-        {/* Row 3: Zip From | Zip To with swap button */}
+        {/* Row 3: Zip From | Zip To, or a partner destination selector */}
         <div className="sm:col-span-2 grid grid-cols-2 gap-4 relative">
           <div className={fieldWrap("zipFrom")}>
             {focused === "zipFrom" && (
@@ -459,38 +477,65 @@ export default function QuoteForm({
             />
           </div>
 
-          {/* Swap button, centered between the two zip fields */}
-          <button
-            type="button"
-            onClick={handleSwapZip}
-            aria-label="Swap zip codes"
-            tabIndex={-1}
-            className="absolute left-1/2 -translate-x-1/2 bottom-2 z-10 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110"
-            style={{ backgroundColor: "#fbc319", color: "#1a1a1a" }}
-          >
-            <ArrowLeftRight size={14} />
-          </button>
+          {partnerDestinations?.length ? (
+            <div className={fieldWrap("partnerDestination")}>
+              {focused === "partnerDestination" && (
+                <span className="absolute left-0 top-6 bottom-0 w-0.5 bg-[#75aa11] rounded-full" />
+              )}
+              <label className={`${labelClass} ${focused === "partnerDestination" ? "text-[#75aa11]" : ""}`}>
+                Seattle House Tower *
+              </label>
+              <select
+                name="partnerDestination"
+                required
+                value={formData.partnerDestination}
+                onChange={handleChange}
+                className={inputClass("partnerDestination")}
+                {...focusProps("partnerDestination")}
+              >
+                <option value="">Choose tower…</option>
+                {partnerDestinations.map((destination) => (
+                  <option key={destination.value} value={destination.value}>{destination.label}</option>
+                ))}
+              </select>
+              <p className="mt-1 text-xs text-gray-500">Your destination address is added automatically.</p>
+            </div>
+          ) : (
+            <>
+              {/* Swap button, centered between the two ZIP fields */}
+              <button
+                type="button"
+                onClick={handleSwapZip}
+                aria-label="Swap zip codes"
+                tabIndex={-1}
+                className="absolute left-1/2 -translate-x-1/2 bottom-2 z-10 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110"
+                style={{ backgroundColor: "#fbc319", color: "#1a1a1a" }}
+              >
+                <ArrowLeftRight size={14} />
+              </button>
 
-          <div className={fieldWrap("zipTo")}>
-            {focused === "zipTo" && (
-              <span className="absolute left-0 top-6 bottom-0 w-0.5 bg-[#75aa11] rounded-full" />
-            )}
-            <label className={`${labelClass} ${focused === "zipTo" ? "text-[#75aa11]" : ""}`}>
-              Zip Code (Moving To) *
-            </label>
-            <input
-              type="text"
-              name="zipTo"
-              required
-              autoComplete="off"
-              value={formData.zipTo}
-              onChange={handleChange}
-              placeholder="98101"
-              maxLength={10}
-              className={inputClass("zipTo")}
-              {...focusProps("zipTo")}
-            />
-          </div>
+              <div className={fieldWrap("zipTo")}>
+                {focused === "zipTo" && (
+                  <span className="absolute left-0 top-6 bottom-0 w-0.5 bg-[#75aa11] rounded-full" />
+                )}
+                <label className={`${labelClass} ${focused === "zipTo" ? "text-[#75aa11]" : ""}`}>
+                  Zip Code (Moving To) *
+                </label>
+                <input
+                  type="text"
+                  name="zipTo"
+                  required
+                  autoComplete="off"
+                  value={formData.zipTo}
+                  onChange={handleChange}
+                  placeholder="98101"
+                  maxLength={10}
+                  className={inputClass("zipTo")}
+                  {...focusProps("zipTo")}
+                />
+              </div>
+            </>
+          )}
         </div>
 
         {/* Row 4: Move Type (full width) */}
@@ -596,7 +641,7 @@ export default function QuoteForm({
           <Loader2 size={18} className="animate-spin" />
         ) : (
           <>
-            GET MY FREE QUOTE
+            {submitButtonLabel || "GET MY FREE QUOTE"}
             <ArrowRight size={18} className="transition-transform duration-200 group-hover:translate-x-1" />
           </>
         )}

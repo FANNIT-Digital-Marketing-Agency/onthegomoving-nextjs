@@ -18,6 +18,7 @@
 
 import crypto from "crypto";
 import mysql from "mysql2/promise";
+import { applySeattleHouseDestination, isSeattleHouseDestinationRequest } from "./seattle-house-destinations.mjs";
 
 // ── FB Pixel ID (public, safe to hardcode) ──────────────────────────────────
 const FB_PIXEL_ID = "129153980771695";
@@ -112,6 +113,7 @@ function buildSupermovePayload(lead) {
   const noteLines = [
     lead.wantsStorage ? "Interested in storage" : "",
     lead.squareFeet ? `Square feet: ${lead.squareFeet}` : "",
+    lead.partnerTowerName ? `Seattle House tower: ${lead.partnerTowerName}` : "",
     lead.sourceLabel ? `Source: ${lead.sourceLabel}` : "",
   ].filter(Boolean);
 
@@ -134,16 +136,17 @@ function buildSupermovePayload(lead) {
         date: lead.moveDate ?? "",
         locations: [
           ...(lead.fromZip ? [{ address: lead.fromZip }] : []),
-          ...(lead.toZip ? [{ address: lead.toZip }] : []),
+          ...(lead.toAddress || lead.toZip ? [{ address: lead.toAddress || lead.toZip }] : []),
         ],
         note_from_customer: noteLines.join(" | "),
       },
     ],
     referral_source: "Custom Website via A Supermove-Managed Integration",
-    tags: [
+    tags: Array.from(new Set([
       "WEBSITE_LEAD",
+      ...(lead.supermoveTags || []),
       ...(lead.sourceLabel === "landing-social-residential-movers" ? ["SOCIAL_MEDIA_LEAD"] : []),
-    ],
+    ])),
     ...(projectSize ? { values: { PROJECT_SIZE: projectSize } } : {}),
   };
 }
@@ -211,6 +214,17 @@ export const handler = async (event) => {
   const rawPhone = (lead.phone || "").replace(/\D/g, "");
   const cleanPhone = rawPhone.length === 11 && rawPhone.startsWith("1") ? rawPhone.slice(1) : rawPhone;
   lead.phone = cleanPhone;
+
+  if (isSeattleHouseDestinationRequest(lead.partnerDestination)) {
+    const mappedLead = applySeattleHouseDestination(lead);
+    if (!mappedLead) {
+      return {
+        statusCode: 400,
+        body: JSON.stringify({ error: "Please choose a valid Seattle House tower." }),
+      };
+    }
+    lead = mappedLead;
+  }
 
   if (!lead.fullName || !lead.phone || !lead.email) {
     return {
