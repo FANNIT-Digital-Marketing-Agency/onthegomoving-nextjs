@@ -88,15 +88,6 @@ export const BLOG_POSTS: BlogIndexPost[] = [
     image: BRAND_IMAGES.customerHandshake,
   },
   {
-    slug: "how-to-plan-office-move-without-disrupting-team",
-    title: "How to Plan an Office Move Without Disrupting Your Team",
-    excerpt: "A strategic guide to planning an office relocation on the Eastside. Covers the 90-day timeline, move team structure, IT transition, employee communication, and move day execution so your business keeps running.",
-    date: "July 30, 2026",
-    category: "Corporate and Office Moving",
-    readTime: "11 min read",
-    image: BRAND_IMAGES.crewCustomerCommercial,
-  },
-  {
     slug: "how-to-sell-belongings-before-moving",
     title: "How to Sell a Lifetime of Belongings Before Moving",
     excerpt: "Downsizing and need to sell furniture, collectibles, and household items? Learn which selling method works best for each item type — estate sales, online marketplaces, consignment, and more.",

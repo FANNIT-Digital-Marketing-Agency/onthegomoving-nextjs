@@ -3646,7 +3646,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
       },
       {
         q: `What is the biggest mistake companies make when moving offices?`,
-        a: `The most common and costly mistake is starting the planning process too late. Companies that begin planning 4 to 6 weeks before their move date consistently experience higher costs, more employee disruption, and more post-move problems than companies that start 3 to 6 months out. The second most common mistake is underestimating the complexity of IT relocation. IT infrastructure is the most time-consuming and highest-risk component of an office move, and it requires dedicated planning that begins at least 90 days before the move. Our guide on <a href="/how-to-plan-office-move-without-disrupting-team/">how to plan an office move without disrupting your team</a> covers the full 90-day planning framework in detail.`
+        a: `The most common and costly mistake is starting the planning process too late. Companies that begin planning 4 to 6 weeks before their move date can face higher costs, more employee disruption, and more post-move problems than companies that start 3 to 6 months out. Another common gap is waiting too long to reserve building access and create a clear move-day plan. Our <a href="/commercial-moving-timeline-what-to-expect/">commercial moving timeline</a> covers the key preparation steps in detail.`
       },
       {
         q: `How do I minimize downtime during an office move?`,

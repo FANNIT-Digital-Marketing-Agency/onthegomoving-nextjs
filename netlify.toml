@@ -301,6 +301,12 @@
   force = true
 
 [[redirects]]
+  from = "/how-to-plan-office-move-without-disrupting-team/"
+  to = "/commercial-moving-timeline-what-to-expect/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/office-relocation/"
   to = "/commercial-moving/"
   status = 301
