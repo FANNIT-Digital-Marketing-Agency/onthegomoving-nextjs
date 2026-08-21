@@ -28,7 +28,11 @@ interface QuoteFormProps {
   /** Optional label to identify which page/section the form was submitted from */
   sourceLabel?: string;
   /** Optional preset destinations for a partner page. The server validates every preset key. */
-  partnerDestinations?: Array<{ value: string; label: string }>;
+  partnerDestinations?: ReadonlyArray<{ value: string; label: string }>;
+  /** Optional partner-only service choices. Existing quote forms keep their standard move types. */
+  partnerMoveTypes?: ReadonlyArray<{ value: string; label: string }>;
+  /** Optional partner-only apartment-size choices. Existing quote forms keep their standard sizes. */
+  partnerMoveSizes?: readonly string[];
   /** Optional partner-specific thank-you path used after a successful submission. */
   thankYouPath?: string;
   /** Optional replacement for the standard quote-form submit button label. */
@@ -90,6 +94,8 @@ export default function QuoteForm({
   className = "",
   sourceLabel,
   partnerDestinations,
+  partnerMoveTypes,
+  partnerMoveSizes,
   thankYouPath,
   submitButtonLabel,
   defaultFreeStorage = false,
@@ -317,8 +323,9 @@ export default function QuoteForm({
   });
 
   // Determine which secondary field to show based on move type
-  const showMoveSize = formData.moveType === "apartment" || formData.moveType === "house";
-  const showSquareFeet = formData.moveType === "commercial";
+  const hasPartnerMoveOptions = Boolean(partnerMoveTypes?.length && partnerMoveSizes?.length);
+  const showMoveSize = hasPartnerMoveOptions || formData.moveType === "apartment" || formData.moveType === "house";
+  const showSquareFeet = !hasPartnerMoveOptions && formData.moveType === "commercial";
 
   return (
     <form
@@ -555,9 +562,17 @@ export default function QuoteForm({
             {...focusProps("moveType")}
           >
             <option value="">Select type…</option>
-            <option value="apartment">Apartment/Condo</option>
-            <option value="house">House</option>
-            <option value="commercial">Commercial</option>
+            {partnerMoveTypes?.length ? (
+              partnerMoveTypes.map((moveType) => (
+                <option key={moveType.value} value={moveType.value}>{moveType.label}</option>
+              ))
+            ) : (
+              <>
+                <option value="apartment">Apartment/Condo</option>
+                <option value="house">House</option>
+                <option value="commercial">Commercial</option>
+              </>
+            )}
           </select>
         </div>
 
@@ -577,9 +592,9 @@ export default function QuoteForm({
               onChange={handleChange}
               className={inputClass("moveSize")}
               {...focusProps("moveSize")}
-            >
-              <option value="">Select size…</option>
-              {MOVE_SIZES.map((size) => (
+              >
+                <option value="">Select size…</option>
+              {(partnerMoveSizes?.length ? partnerMoveSizes : MOVE_SIZES).map((size) => (
                 <option key={size} value={size}>{size}</option>
               ))}
             </select>

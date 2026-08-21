@@ -5,6 +5,7 @@ import seattleHouseDestinationModule from "../lib/seattleHouseDestinations.js";
 const {
   applySeattleHouseDestination,
   isSeattleHouseDestinationRequest,
+  isValidSeattleHouseMoveSelection,
 } = seattleHouseDestinationModule;
 
 test("maps the North Tower key to the verified address and tags", () => {
@@ -40,4 +41,11 @@ test("rejects an unknown Seattle House destination key", () => {
   );
   assert.equal(isSeattleHouseDestinationRequest("seattle-house-unknown-tower"), true);
   assert.equal(isSeattleHouseDestinationRequest("generic-landing-page"), false);
+});
+
+test("accepts only the approved Seattle House services and apartment sizes", () => {
+  assert.equal(isValidSeattleHouseMoveSelection("move", "Studio"), true);
+  assert.equal(isValidSeattleHouseMoveSelection("pack-and-move", "2 Bedrooms"), true);
+  assert.equal(isValidSeattleHouseMoveSelection("apartment", "1 Bedroom"), false);
+  assert.equal(isValidSeattleHouseMoveSelection("move", "3 Bedrooms"), false);
 });

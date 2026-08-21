@@ -21,7 +21,12 @@ import mysql from "mysql2/promise";
 import seattleHouseDestinationModule from "../../lib/seattleHouseDestinations.js";
 import supermoveResponseModule from "../../lib/supermoveResponse.js";
 
-const { applySeattleHouseDestination, isSeattleHouseDestinationRequest } = seattleHouseDestinationModule;
+const {
+  applySeattleHouseDestination,
+  getSeattleHouseMoveTypeLabel,
+  isSeattleHouseDestinationRequest,
+  isValidSeattleHouseMoveSelection,
+} = seattleHouseDestinationModule;
 const { getSupermoveValidationError } = supermoveResponseModule;
 
 // ── FB Pixel ID (public, safe to hardcode) ──────────────────────────────────
@@ -116,6 +121,7 @@ function buildSupermovePayload(lead) {
 
   const noteLines = [
     lead.wantsStorage ? "Interested in storage" : "",
+    lead.partnerTowerName ? `Seattle House service: ${getSeattleHouseMoveTypeLabel(lead.moveType)}` : "",
     lead.squareFeet ? `Square feet: ${lead.squareFeet}` : "",
     lead.partnerTowerName ? `Seattle House tower: ${lead.partnerTowerName}` : "",
     lead.sourceLabel ? `Source: ${lead.sourceLabel}` : "",
@@ -220,6 +226,12 @@ export const handler = async (event) => {
   lead.phone = cleanPhone;
 
   if (isSeattleHouseDestinationRequest(lead.partnerDestination)) {
+    if (!isValidSeattleHouseMoveSelection(lead.moveType, lead.moveSize)) {
+      return {
+        statusCode: 400,
+        body: JSON.stringify({ error: "Please choose a valid Seattle House move type and apartment size." }),
+      };
+    }
     const mappedLead = applySeattleHouseDestination(lead);
     if (!mappedLead) {
       return {

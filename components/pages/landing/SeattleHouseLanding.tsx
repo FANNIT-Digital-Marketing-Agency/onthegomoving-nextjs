@@ -3,12 +3,16 @@
 import QuoteForm, { pushPhoneClickEvent } from "@/components/QuoteForm";
 import { BRAND_IMAGES } from "@/lib/brandImages";
 import { COMPANY } from "@/lib/siteData";
+import seattleHouseDestinationModule from "@/lib/seattleHouseDestinations.js";
 import { Building2, CheckCircle2, Clock3, Phone, ShieldCheck, Star, Truck } from "lucide-react";
 
-const TOWER_OPTIONS = [
-  { value: "seattle-house-north-tower", label: "North Tower" },
-  { value: "seattle-house-south-tower", label: "South Tower" },
-];
+const {
+  SEATTLE_HOUSE_DESTINATIONS,
+  SEATTLE_HOUSE_MOVE_SIZES,
+  SEATTLE_HOUSE_MOVE_TYPES,
+} = seattleHouseDestinationModule;
+
+const TOWER_OPTIONS = Object.values(SEATTLE_HOUSE_DESTINATIONS).map(({ key, label }) => ({ value: key, label }));
 
 const MOVE_TIME_RANGES = [
   { homeSize: "Studio", range: "2 to 4 hours" },
@@ -58,11 +62,12 @@ export default function SeattleHouseLanding() {
               <QuoteForm
                 variant="inline"
                 sourceLabel="partner-seattle-house"
-                defaultMoveType="apartment"
                 isLandingPage={true}
                 thankYouPath="/seattle-house-moving/thank-you/"
                 submitButtonLabel="Claim My Resident Discount"
                 partnerDestinations={TOWER_OPTIONS}
+                partnerMoveTypes={SEATTLE_HOUSE_MOVE_TYPES}
+                partnerMoveSizes={SEATTLE_HOUSE_MOVE_SIZES}
               />
             </div>
           </div>
