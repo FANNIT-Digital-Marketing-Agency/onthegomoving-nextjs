@@ -140,7 +140,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
         email: COMPANY.email,
         address: {
           "@type": "PostalAddress",
-          streetAddress: data.gbp?.streetAddress ?? "14920 NE 95th St",
+          streetAddress: data.gbp?.streetAddress ?? "16625 Redmond Way #M365",
           addressLocality: data.gbp?.addressLocality ?? "Redmond",
           addressRegion: "WA",
           postalCode: data.gbp?.postalCode ?? "98052",
@@ -158,7 +158,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
         aggregateRating: {
           "@type": "AggregateRating",
           ratingValue: data.gbp?.ratingValue ?? "4.8",
-          reviewCount: data.gbp?.reviewCount ?? "1562",
+          reviewCount: data.gbp?.reviewCount ?? "393",
           bestRating: "5",
           worstRating: "1",
         },
@@ -265,7 +265,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
                   {[1,2,3,4,5].map(i => <Star key={i} size={12} fill="#fbc319" color="#fbc319" />)}
                 </div>
                 <span className="text-white font-semibold">4.8</span>
-                <span className="text-white/50">(1,562 reviews)</span>
+                <span className="text-white/50">(393 reviews)</span>
                 <span className="text-white/30 mx-1">·</span>
                 <Shield size={12} className="text-[#75aa11] flex-shrink-0" />
                 <span>Licensed &amp; Insured</span>
@@ -363,7 +363,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
                 className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
               />
               <div className="absolute -bottom-4 -left-4 bg-brand-gold text-brand-forest font-bold px-5 py-3 rounded-xl shadow-lg text-sm">
-                4.8 ★ · 1,562 Google Reviews
+                4.8 ★ · 393 Google Reviews
               </div>
             </div>
           </div>
@@ -511,7 +511,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
             <h2 className="font-display text-3xl lg:text-4xl font-black text-brand-forest mb-2">
               What {data.city} Customers Say
             </h2>
-            <p className="text-gray-500">4.8 stars · 1,562 verified Google reviews</p>
+            <p className="text-gray-500">4.8 stars · 393 verified Google reviews</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
