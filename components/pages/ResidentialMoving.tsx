@@ -207,9 +207,9 @@ export default function ResidentialMoving() {
           name: "On The Go Moving & Storage",
           telephone: "+14257618500",
           address: { "@type": "PostalAddress", addressLocality: "Redmond", addressRegion: "WA", postalCode: "98052", addressCountry: "US" },
-          aggregateRating: { "@type": "AggregateRating", ratingValue: "4.8", reviewCount: "393" },
+          aggregateRating: { "@type": "AggregateRating", ratingValue: "4.5", reviewCount: "497" },
         },
-        areaServed: { "@type": "GeoCircle", geoMidpoint: { "@type": "GeoCoordinates", latitude: 47.6740, longitude: -122.1215 }, geoRadius: "29000" },
+        areaServed: { "@type": "GeoCircle", geoMidpoint: { "@type": "GeoCoordinates", latitude: 47.6869, longitude: -122.1414 }, geoRadius: "29000" },
         offers: { "@type": "Offer", priceSpecification: { "@type": "UnitPriceSpecification", price: "100", priceCurrency: "USD", unitText: "per hour" } },
       },
       {

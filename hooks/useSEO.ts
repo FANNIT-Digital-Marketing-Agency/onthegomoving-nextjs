@@ -124,7 +124,7 @@ export const MOVING_COMPANY_SCHEMA = {
   email: "booking@onthegomoving.com",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "16625 Redmond Way #M365",
+    streetAddress: "14920 NE 95th St",
     addressLocality: "Redmond",
     addressRegion: "WA",
     postalCode: "98052",
@@ -132,13 +132,13 @@ export const MOVING_COMPANY_SCHEMA = {
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 47.6740,
-    longitude: -122.1215,
+    latitude: 47.6869,
+    longitude: -122.1414,
   },
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: "4.8",
-    reviewCount: "393",
+    ratingValue: "4.5",
+    reviewCount: "497",
     bestRating: "5",
     worstRating: "1",
   },
@@ -207,8 +207,8 @@ export function buildLocalBusinessSchema(city: string, state: string) {
     },
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "4.8",
-      reviewCount: "393",
+      ratingValue: "4.5",
+      reviewCount: "497",
       bestRating: "5",
     },
   };
@@ -246,7 +246,7 @@ export const CONTACT_POINT_SCHEMA = {
     email: "booking@onthegomoving.com",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "16625 Redmond Way #M365",
+      streetAddress: "14920 NE 95th St",
       addressLocality: "Redmond",
       addressRegion: "WA",
       postalCode: "98052",

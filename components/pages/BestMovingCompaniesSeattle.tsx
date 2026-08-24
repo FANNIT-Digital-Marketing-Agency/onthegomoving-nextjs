@@ -15,7 +15,7 @@ const COMPANIES = [
     phone: "(425) 761-8500",
     founded: "2009",
     googleRating: 4.8,
-    reviewCount: "393",
+    reviewCount: "405",
     hourlyRate: "$115–$155/hr (2-person crew)",
     threeHourMin: "$345–$465",
     twoBedEstimate: "$450–$900",
@@ -56,7 +56,7 @@ const COMPANIES = [
       aggregateRating: {
         "@type": "AggregateRating",
         ratingValue: "4.8",
-        reviewCount: "393",
+        reviewCount: "405",
       },
       sameAs: ["https://share.google/kOvPFtNuCbovRUD7T"],
     },

@@ -21,7 +21,7 @@ const organizationSchema = {
   },
   address: {
     "@type": "PostalAddress",
-    streetAddress: "16625 Redmond Way #M365",
+    streetAddress: "14920 NE 95th St",
     addressLocality: "Redmond",
     addressRegion: "WA",
     postalCode: "98052",
@@ -36,7 +36,7 @@ const organizationSchema = {
     "https://share.google/wz8Px2cowaHkprOAM",
   ],
   description:
-    "On The Go Moving & Storage is Seattle's most trusted local moving company, serving Seattle, Bellevue, Redmond, Kirkland, and all Eastside suburbs since 2009. Licensed, insured, and rated 4.8 stars across 393 Google reviews.",
+    "On The Go Moving & Storage is Seattle's most trusted local moving company, serving Seattle, Bellevue, Redmond, Kirkland, and all Eastside suburbs since 2009. Licensed, insured, and rated 4.5 stars across 497 Google reviews.",
 };
 
 const localBusinessSchema = {
@@ -51,7 +51,7 @@ const localBusinessSchema = {
   email: "booking@onthegomoving.com",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "16625 Redmond Way #M365",
+    streetAddress: "14920 NE 95th St",
     addressLocality: "Redmond",
     addressRegion: "WA",
     postalCode: "98052",
@@ -59,13 +59,13 @@ const localBusinessSchema = {
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 47.674,
-    longitude: -122.1215,
+    latitude: 47.6869,
+    longitude: -122.1414,
   },
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: "4.8",
-    reviewCount: "393",
+    ratingValue: "4.5",
+    reviewCount: "497",
     bestRating: "5",
     worstRating: "1",
   },
@@ -76,7 +76,7 @@ const localBusinessSchema = {
     { "@type": "OpeningHoursSpecification", dayOfWeek: ["Sunday"], opens: "07:00", closes: "19:00" },
   ],
   description:
-    "On The Go Moving & Storage is Seattle's most trusted local moving company, serving Seattle, Bellevue, Redmond, Kirkland, and all Eastside suburbs since 2009. Licensed, insured, and rated 4.8 stars across 393 Google reviews.",
+    "On The Go Moving & Storage is Seattle's most trusted local moving company, serving Seattle, Bellevue, Redmond, Kirkland, and all Eastside suburbs since 2009. Licensed, insured, and rated 4.5 stars across 497 Google reviews.",
   sameAs: [
     "https://www.facebook.com/onthegomoving",
     "https://www.instagram.com/onthegomoving",

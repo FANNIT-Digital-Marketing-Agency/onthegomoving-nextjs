@@ -8,10 +8,10 @@
 
 **Company:** On The Go Moving & Storage  
 **Website:** https://onthegomoving.com  
-**Business:** Seattle-area moving company, headquartered in Redmond, WA. Serves 30+ cities on the Eastside and greater Seattle area. Founded 2009. Licensed (HG-064180), USDOT 2120054. Rated 4.8 stars across 393 Google reviews.  
+**Business:** Seattle-area moving company, headquartered in Redmond, WA. Serves 30+ cities on the Eastside and greater Seattle area. Founded 2009. Licensed (HG-064180), USDOT 2120054. Three GBP listings, each with its own real rating/review count — Redmond (HQ): 4.5★/497, Seattle: 4.8★/405, Bellevue: 4.8★/163.  
 **Phone:** (425) 761-8500  
 **Email:** booking@onthegomoving.com  
-**Address:** 16625 Redmond Way #M365, Redmond, WA 98052
+**Address (HQ, Redmond):** 14920 NE 95th St, Redmond, WA 98052
 
 ---
 

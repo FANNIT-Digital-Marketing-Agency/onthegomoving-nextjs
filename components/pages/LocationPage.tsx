@@ -140,7 +140,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
         email: COMPANY.email,
         address: {
           "@type": "PostalAddress",
-          streetAddress: data.gbp?.streetAddress ?? "16625 Redmond Way #M365",
+          streetAddress: data.gbp?.streetAddress ?? "14920 NE 95th St",
           addressLocality: data.gbp?.addressLocality ?? "Redmond",
           addressRegion: "WA",
           postalCode: data.gbp?.postalCode ?? "98052",
@@ -148,8 +148,8 @@ export default function LocationPage({ slug }: LocationPageProps) {
         },
         geo: {
           "@type": "GeoCoordinates",
-          latitude: data.gbp?.latitude ?? 47.6740,
-          longitude: data.gbp?.longitude ?? -122.1215,
+          latitude: data.gbp?.latitude ?? 47.6869,
+          longitude: data.gbp?.longitude ?? -122.1414,
         },
         areaServed: [
           { "@type": "City", name: data.city, containedInPlace: { "@type": "State", name: "Washington" } },
@@ -157,8 +157,8 @@ export default function LocationPage({ slug }: LocationPageProps) {
         ],
         aggregateRating: {
           "@type": "AggregateRating",
-          ratingValue: data.gbp?.ratingValue ?? "4.8",
-          reviewCount: data.gbp?.reviewCount ?? "393",
+          ratingValue: data.gbp?.ratingValue ?? "4.5",
+          reviewCount: data.gbp?.reviewCount ?? "497",
           bestRating: "5",
           worstRating: "1",
         },

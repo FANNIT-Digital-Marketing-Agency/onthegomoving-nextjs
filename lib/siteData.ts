@@ -10,11 +10,11 @@ export const COMPANY = {
   phone: "(425) 761-8500",
   phoneHref: "tel:+14257618500",
   email: "booking@onthegomoving.com",
-  address: "16625 Redmond Way #M365, Redmond, WA 98052",
+  address: "14920 NE 95th St, Redmond, WA 98052",
   license: "HG-064180",
   usdot: "2120054",
-  googleReviewCount: 393,
-  googleRating: 4.8,
+  googleReviewCount: 497,
+  googleRating: 4.5,
   founded: 2009,
   tagline: "Seattle's Most Trusted Movers",
   heroTagline: "Moving Made Easy in the Pacific Northwest",
@@ -311,7 +311,7 @@ export const TESTIMONIALS = [
 
 export const STATS = [
   { value: "15+", label: "Years in Business" },
-  { value: "393", label: "5-Star Google Reviews" },
+  { value: "497", label: "5-Star Google Reviews" },
   { value: "25,000+", label: "Successful Moves" },
   { value: "4.8★", label: "Average Rating" },
 ];

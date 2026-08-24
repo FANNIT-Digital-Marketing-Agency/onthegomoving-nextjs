@@ -130,7 +130,7 @@ export default function Locations() {
           <div className="grid sm:grid-cols-3 gap-6">
             {[
               { stat: "18 mi", label: "Maximum distance from our Redmond warehouse to any city we serve" },
-              { stat: "393", label: "Verified 5-star Google reviews from local customers" },
+              { stat: "497", label: "Verified 5-star Google reviews from local customers" },
               { stat: "15+ yrs", label: "Serving the Greater Seattle Eastside since 2009" },
             ].map((item, i) => (
               <div key={i} className="bg-gray-50 rounded-xl p-6 border border-gray-100">

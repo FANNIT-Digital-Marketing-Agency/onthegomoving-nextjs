@@ -82,7 +82,7 @@ export default function ContactUs() {
                           <div className="flex items-start justify-between gap-2">
                             <div>
                               <div className="font-bold text-gray-900 text-sm">Redmond <span className="text-[10px] font-semibold text-white bg-[#75aa11] rounded px-1.5 py-0.5 ml-1">HQ</span></div>
-                              <div className="text-sm text-gray-600 mt-0.5">16625 Redmond Way #M365</div>
+                              <div className="text-sm text-gray-600 mt-0.5">14920 NE 95th St</div>
                               <div className="text-sm text-gray-600">Redmond, WA 98052</div>
                             </div>
                             <a
