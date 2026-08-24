@@ -52,8 +52,8 @@ const CREDENTIALS = [
   },
   {
     icon: Star,
-    title: "4.8-Star Google Rating, 1,562+ Reviews",
-    desc: "Jason's commitment to flat-rate pricing, on-time performance, and professional crews has earned On The Go Moving a 4.8-star average across more than 1,562 verified Google reviews.",
+    title: "4.8-Star Google Rating, 393 Reviews",
+    desc: "Jason's commitment to flat-rate pricing, on-time performance, and professional crews has earned On The Go Moving a 4.8-star average across more than 393 verified Google reviews.",
   },
   {
     icon: Award,
@@ -96,7 +96,7 @@ const TIMELINE = [
   {
     year: "2024",
     event:
-      "Over 25,000 moves completed. 1,562 five-star Google reviews and counting. Jason remains active in daily operations, customer escalations, and team development.",
+      "Over 25,000 moves completed. 393 five-star Google reviews and counting. Jason remains active in daily operations, customer escalations, and team development.",
   },
 ];
 

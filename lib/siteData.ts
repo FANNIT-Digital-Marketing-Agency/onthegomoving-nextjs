@@ -13,7 +13,7 @@ export const COMPANY = {
   address: "16625 Redmond Way #M365, Redmond, WA 98052",
   license: "HG-064180",
   usdot: "2120054",
-  googleReviewCount: 1562,
+  googleReviewCount: 393,
   googleRating: 4.8,
   founded: 2009,
   tagline: "Seattle's Most Trusted Movers",
@@ -311,7 +311,7 @@ export const TESTIMONIALS = [
 
 export const STATS = [
   { value: "15+", label: "Years in Business" },
-  { value: "1,562", label: "5-Star Google Reviews" },
+  { value: "393", label: "5-Star Google Reviews" },
   { value: "25,000+", label: "Successful Moves" },
   { value: "4.8★", label: "Average Rating" },
 ];

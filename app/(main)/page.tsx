@@ -45,8 +45,8 @@ const localBusinessSchema = {
   },
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: "4.5",
-    reviewCount: "483",
+    ratingValue: "4.8",
+    reviewCount: "393",
     bestRating: "5",
     worstRating: "1",
   },
