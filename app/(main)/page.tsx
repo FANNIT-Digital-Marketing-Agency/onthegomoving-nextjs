@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HomePageContent from "@/components/pages/Home";
+import { BRAND_IMAGES } from "@/lib/brandImages";
 
 export const metadata: Metadata = {
   title: {
@@ -154,8 +155,15 @@ const faqSchema = {
 };
 
 export default function HomePage() {
+  const heroWebp = BRAND_IMAGES.threeCrewLoadingTruck;
+  const heroAvif = heroWebp.replace(".webp", ".avif");
   return (
     <>
+      {/* LCP hero background — preloaded so the browser fetches it immediately
+       *  instead of discovering it only after CSS parses. `type` lets browsers
+       *  that can't decode AVIF skip straight to the WebP preload. */}
+      <link rel="preload" as="image" href={heroAvif} type="image/avif" fetchPriority="high" />
+      <link rel="preload" as="image" href={heroWebp} type="image/webp" fetchPriority="high" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

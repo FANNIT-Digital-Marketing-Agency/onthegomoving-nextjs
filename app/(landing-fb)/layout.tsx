@@ -42,11 +42,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Nunito+Sans:wght@400;500;600;700&display=swap"
         />
         <link
+          id="google-fonts-stylesheet"
           href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Nunito+Sans:wght@400;500;600;700&display=swap"
           rel="stylesheet"
           media="print"
-          // @ts-expect-error onLoad is valid HTML on link elements
-          onLoad="this.media='all'"
+          suppressHydrationWarning
+        />
+        {/* React can't attach a string as an onLoad handler (it must be a
+         *  function), so the media-swap has to happen via a plain script
+         *  instead of a JSX `onLoad` prop on the link above. Assigning the
+         *  `.onload` DOM property (not setting `media` directly) preserves
+         *  the non-render-blocking behavior: the swap only fires once the
+         *  stylesheet has actually finished downloading. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `document.getElementById('google-fonts-stylesheet').onload=function(){this.media='all';};`,
+          }}
         />
         <noscript>
           <link

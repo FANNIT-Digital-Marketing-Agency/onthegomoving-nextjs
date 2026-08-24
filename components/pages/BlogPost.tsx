@@ -6,7 +6,7 @@
 // Schema: Article + FAQPage + BreadcrumbList JSON-LD on every post
 // Data: 230 posts imported from /lib/blogData.ts (auto-generated from WordPress scrape)
 // ==========================================================================
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { BRAND_IMAGES } from "@/lib/brandImages";
@@ -170,10 +170,21 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
   const post = POSTS_DATA[slug];
   const meta = BLOG_POSTS.find(p => p.slug === slug);
 
-  // Shared link tracker for this post — ensures first-occurrence-only across all sections
-  const linkedUrls = new Set<string>();
   // Skip self-referential links (e.g. a packing post shouldn't link to /packing-services/ mid-article)
   const skipUrl = post?.relatedService ?? undefined;
+
+  // Linkify intro + every section body in one atomic pass, sharing a single
+  // link tracker so each internal link appears only once per post. Computing
+  // this upfront (rather than mutating a Set while React walks the JSX tree)
+  // keeps the render pure — the previous approach caused hydration mismatches
+  // across every blog post because the mutation order wasn't guaranteed to
+  // match between the server render and the client render.
+  const { introHtml, sectionsHtml } = useMemo(() => {
+    const linkedUrls = new Set<string>();
+    const introHtml = post ? linkifyContent(post.intro, linkedUrls, skipUrl) : "";
+    const sectionsHtml = post ? post.sections.map(section => linkifyContent(section.body, linkedUrls, skipUrl)) : [];
+    return { introHtml, sectionsHtml };
+  }, [post, skipUrl]);
 
   // Scroll to top on mount
   useEffect(() => {
@@ -384,11 +395,18 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
 
               {/* MAIN CONTENT */}
               <article className="max-w-none">
-                {/* Intro paragraph, AEO direct answer */}
-                <p
+                {/* Intro paragraph, AEO direct answer.
+                 *  This must be a <div>, not a <p> — post.intro is itself a
+                 *  string of one or more <p> tags, and nesting <p> inside <p>
+                 *  is invalid HTML. Browsers auto-close the outer tag when they
+                 *  hit the first inner one, which desyncs the parsed DOM from
+                 *  what React expects and throws a hydration mismatch on every
+                 *  blog post (section bodies already use a <div> for the same
+                 *  reason — see below). */}
+                <div
                   className="text-lg text-gray-700 leading-relaxed mb-8 font-medium border-l-4 pl-5"
                   style={{ borderColor: "#75aa11" }}
-                  dangerouslySetInnerHTML={{ __html: linkifyContent(post.intro, linkedUrls, skipUrl) }}
+                  dangerouslySetInnerHTML={{ __html: introHtml }}
                 />
 
                 {/* Sections */}
@@ -411,7 +429,7 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
                   )}
                     <div
                       className="text-gray-600 leading-relaxed space-y-3 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-1.5 [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:space-y-1.5 [&_li]:leading-relaxed [&_strong]:font-semibold [&_strong]:text-gray-800 [&_a]:text-[#4b7f14] [&_a]:font-semibold [&_a]:underline [&_a]:decoration-1 [&_a]:underline-offset-2 [&_a:hover]:text-[#1e3a0f] [&_a:hover]:decoration-2 [&_a:focus-visible]:outline [&_a:focus-visible]:outline-2 [&_a:focus-visible]:outline-offset-2 [&_a:focus-visible]:outline-[#1e3a0f] [&_a_strong]:text-[#4b7f14] [&_a:hover_strong]:text-[#1e3a0f]"
-                      dangerouslySetInnerHTML={{ __html: linkifyContent(section.body, linkedUrls, skipUrl) }}
+                      dangerouslySetInnerHTML={{ __html: sectionsHtml[i] }}
                     />
                   </div>
                 ))}

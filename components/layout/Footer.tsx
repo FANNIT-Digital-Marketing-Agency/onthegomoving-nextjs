@@ -181,7 +181,7 @@ export default function Footer() {
                 { label: "FAQ", href: "/faq/" },
                 { label: "Contact Us", href: "/contact-us/" },
               ].map((l) => (
-                <li key={l.href}>
+                <li key={l.label}>
                   <a
                     href={l.href}
                     className="text-white/75 hover:text-[#75aa11] text-sm transition-colors flex items-center gap-1.5"

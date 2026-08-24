@@ -92,13 +92,20 @@ export default function Home() {
       <section
         className="relative pt-[72px] min-h-[700px] flex items-center overflow-hidden bg-[#0a1e06]"
       >
-        {/* Static background, always visible as poster/fallback and on mobile */}
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `linear-gradient(to right, rgba(10,30,6,0.88) 48%, rgba(10,30,6,0.50) 100%), url(${BRAND_IMAGES.threeCrewLoadingTruck})`,
-          }}
-        />
+        {/* Static background, always visible as poster/fallback and on mobile.
+         *  AVIF is served to supporting browsers via image-set(); WebP is the
+         *  universal fallback so the rule still works with no @supports match. */}
+        <style>{`
+          .hero-bg-image {
+            background-image: linear-gradient(to right, rgba(10,30,6,0.88) 48%, rgba(10,30,6,0.50) 100%), url(${BRAND_IMAGES.threeCrewLoadingTruck});
+          }
+          @supports (background-image: image-set(url(x) type("image/webp"))) {
+            .hero-bg-image {
+              background-image: linear-gradient(to right, rgba(10,30,6,0.88) 48%, rgba(10,30,6,0.50) 100%), image-set(url(${BRAND_IMAGES.threeCrewLoadingTruck.replace(".webp", ".avif")}) type("image/avif"), url(${BRAND_IMAGES.threeCrewLoadingTruck}) type("image/webp"));
+            }
+          }
+        `}</style>
+        <div className="hero-bg-image absolute inset-0 bg-cover bg-center" />
         {/* Self-hosted hero video, desktop only, PageSpeed optimised
          *  - preload="none": browser does NOT fetch video bytes until page is
          *    interactive — static background image is the LCP element instead
