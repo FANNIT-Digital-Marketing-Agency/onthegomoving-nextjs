@@ -32,7 +32,7 @@ const localBusinessSchema = {
   email: "booking@onthegomoving.com",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "14920 NE 95th St",
+    streetAddress: "16625 Redmond Way #M365",
     addressLocality: "Redmond",
     addressRegion: "WA",
     postalCode: "98052",
@@ -40,8 +40,8 @@ const localBusinessSchema = {
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 47.6869,
-    longitude: -122.1414,
+    latitude: 47.674,
+    longitude: -122.1215,
   },
   aggregateRating: {
     "@type": "AggregateRating",
