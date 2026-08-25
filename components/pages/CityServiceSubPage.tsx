@@ -27,10 +27,13 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import QuoteForm from "@/components/QuoteForm";
-import { BRAND_IMAGES } from "@/lib/brandImages";
+import { BRAND_IMAGES, netlifyImg } from "@/lib/brandImages";
 import { COMPANY } from "@/lib/siteData";
 import { LOCATION_DATA } from "@/lib/locationData";
 import { TIER_A_CONTENT } from "@/lib/tierAContent";
+import primaryImages from "@/lib/primaryImages";
+
+const { absoluteImageUrl, getCityServicePrimaryImage } = primaryImages;
 
 // ---------------------------------------------------------------------------
 // Canonical service definitions
@@ -594,6 +597,7 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
 
   const cityData = LOCATION_DATA[`${citySlug}-movers`];
   const serviceDef = SERVICE_DEFS[serviceKey];
+  const primaryImage = getCityServicePrimaryImage(serviceKey);
 
   const city = cityData?.city || citySlug.split("-").map(w => w[0].toUpperCase() + w.slice(1)).join(" ");
   const cityMoverSlug = `${citySlug}-movers`;
@@ -615,6 +619,12 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
     setMeta("og:description", desc, true);
     setMeta("og:type", "website", true);
     setMeta("og:url", `https://onthegomoving.com/${cityMoverSlug}/${serviceKey}/`, true);
+    if (primaryImage) {
+      const primaryImageUrl = absoluteImageUrl(primaryImage.src);
+      setMeta("og:image", primaryImageUrl, true);
+      setMeta("twitter:card", "summary_large_image");
+      setMeta("twitter:image", primaryImageUrl);
+    }
 
     let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
     if (!canonical) { canonical = document.createElement("link"); canonical.rel = "canonical"; document.head.appendChild(canonical); }
@@ -632,6 +642,7 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
         "@type": ["MovingCompany", "LocalBusiness"],
         name: COMPANY.name,
         url: `https://onthegomoving.com/${cityMoverSlug}/${serviceKey}/`,
+        image: primaryImage ? absoluteImageUrl(primaryImage.src) : undefined,
         telephone: cityData?.gbp?.telephone ?? COMPANY.phone,
         address: {
           "@type": "PostalAddress",
@@ -655,6 +666,17 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
           acceptedAnswer: { "@type": "Answer", text: f.a },
         })),
       },
+      ...(primaryImage ? [{
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        url: `https://onthegomoving.com/${cityMoverSlug}/${serviceKey}/`,
+        name: title,
+        primaryImageOfPage: {
+          "@type": "ImageObject",
+          contentUrl: absoluteImageUrl(primaryImage.src),
+          caption: primaryImage.alt,
+        },
+      }] : []),
       {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
@@ -909,6 +931,19 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
                     </>
                   )}
                 </p>
+                {primaryImage && (
+                  <picture className="block mb-6 overflow-hidden rounded-xl border border-gray-100">
+                    <img
+                      src={netlifyImg(primaryImage.src, 82, 960)}
+                      srcSet={`${netlifyImg(primaryImage.src, 82, 640)} 640w, ${netlifyImg(primaryImage.src, 82, 960)} 960w, ${netlifyImg(primaryImage.src, 82, 1440)} 1440w`}
+                      sizes="(max-width: 1024px) 100vw, 66vw"
+                      alt={primaryImage.alt}
+                      className="w-full aspect-[16/9] object-cover"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                )}
                 {/* Cross-link to service hub, differentiates content intent */}
                 <div className="flex items-center gap-2 p-4 bg-green-50 border border-green-200 rounded-xl">
                   <ExternalLink className="w-4 h-4 text-brand-green flex-shrink-0" />

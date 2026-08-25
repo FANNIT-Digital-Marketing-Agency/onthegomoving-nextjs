@@ -17,8 +17,9 @@ const CDN = "https://d2xsxph8kpxj0f.cloudfront.net/310519663327875635/AXcVm6gUw3
  * Quality 82 balances visual fidelity with file size reduction (~30-60% smaller).
  * Only use for above-the-fold / LCP images where format matters most.
  */
-export function netlifyImg(url: string, quality = 82): string {
-  return `/.netlify/images?url=${encodeURIComponent(url)}&fm=webp&q=${quality}`;
+export function netlifyImg(url: string, quality = 82, width?: number): string {
+  const widthParameter = width ? `&w=${width}` : "";
+  return `/.netlify/images?url=${encodeURIComponent(url)}&fm=webp&q=${quality}${widthParameter}`;
 }
 
 export const BRAND_IMAGES = {

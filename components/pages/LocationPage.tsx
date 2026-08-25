@@ -13,7 +13,7 @@ import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import QuoteForm from "@/components/QuoteForm";
-import { BRAND_IMAGES } from "@/lib/brandImages";
+import { BRAND_IMAGES, netlifyImg } from "@/lib/brandImages";
 import { COMPANY } from "@/lib/siteData";
 import { LOCATION_DATA, ALL_LOCATION_SLUGS } from "@/lib/locationData";
 import primaryImages from "@/lib/primaryImages";
@@ -377,11 +377,17 @@ export default function LocationPage({ slug }: LocationPageProps) {
               </div>
             </div>
             <div className="relative">
-              <img
-                src={primaryImage.src}
-                alt={primaryImage.alt}
-                className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
-              />
+              <picture>
+                <img
+                  src={netlifyImg(primaryImage.src, 82, 960)}
+                  srcSet={`${netlifyImg(primaryImage.src, 82, 640)} 640w, ${netlifyImg(primaryImage.src, 82, 960)} 960w, ${netlifyImg(primaryImage.src, 82, 1440)} 1440w`}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  alt={primaryImage.alt}
+                  className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
               <div className="absolute -bottom-4 -left-4 bg-brand-gold text-brand-forest font-bold px-5 py-3 rounded-xl shadow-lg text-sm">
                 4.8 ★ · 393 Google Reviews
               </div>

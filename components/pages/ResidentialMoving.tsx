@@ -10,7 +10,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import QuoteForm from "@/components/QuoteForm";
 import { COMPANY, ALL_LOCATIONS, NAV_SERVICES } from "@/lib/siteData";
-import { BRAND_IMAGES } from "@/lib/brandImages";
+import { BRAND_IMAGES, netlifyImg } from "@/lib/brandImages";
 import primaryImages from "@/lib/primaryImages";
 import {
   CheckCircle, Phone, ArrowRight, Star, Shield, Clock,
@@ -369,13 +369,18 @@ export default function ResidentialMoving() {
               </div>
             </div>
             <div className="relative">
-              <img
-                src={BRAND_IMAGES.residentialMoving}
-                alt="On The Go Moving crew loading a residential move"
-                className="rounded-2xl shadow-xl w-full object-cover"
-                style={{ maxHeight: "440px" }}
-                loading="lazy"
-              />
+              <picture>
+                <img
+                  src={netlifyImg(BRAND_IMAGES.residentialMoving, 82, 960)}
+                  srcSet={`${netlifyImg(BRAND_IMAGES.residentialMoving, 82, 640)} 640w, ${netlifyImg(BRAND_IMAGES.residentialMoving, 82, 960)} 960w, ${netlifyImg(BRAND_IMAGES.residentialMoving, 82, 1440)} 1440w`}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  alt="On The Go Moving crew loading a residential move"
+                  className="rounded-2xl shadow-xl w-full object-cover"
+                  style={{ maxHeight: "440px" }}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
               {/* Floating stat card */}
               <div className="absolute -bottom-5 -left-5 bg-white rounded-xl shadow-lg px-5 py-4 border-l-4 border-brand-green">
                 <div className="text-3xl font-extrabold text-brand-green" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>25,000+</div>

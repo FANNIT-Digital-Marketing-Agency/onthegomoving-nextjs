@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LOCATION_DATA } from "@/lib/locationData";
 import CityServiceSubPage from "@/components/pages/CityServiceSubPage";
+import PrimaryImageSchema from "@/components/PrimaryImageSchema";
+import primaryImages from "@/lib/primaryImages";
+
+const { absoluteImageUrl, getCityServicePrimaryImage } = primaryImages;
 
 
 // All valid service keys
@@ -81,6 +85,7 @@ export async function generateMetadata({
 
   const title = `${pageTitle}`;
   const description = `Local ${descLabel} in ${city}, WA. Licensed & insured movers serving ${city} and the greater Seattle area. Free quotes, (425) 761-8500.`;
+  const primaryImage = getCityServicePrimaryImage(serviceKey);
 
   return {
     title,
@@ -90,7 +95,14 @@ export async function generateMetadata({
       title,
       description,
       url: canonical,
+      images: primaryImage ? [{ url: absoluteImageUrl(primaryImage.src) }] : undefined,
     },
+    twitter: primaryImage ? {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [absoluteImageUrl(primaryImage.src)],
+    } : undefined,
   };
 }
 
@@ -109,5 +121,20 @@ export default async function CityServiceSubPageRoute({
     .replace(/-moving-services$/, "")
     .replace(/^moving-/, "");
 
-  return <CityServiceSubPage citySlug={citySlug} serviceKey={serviceKey} />;
+  const primaryImage = getCityServicePrimaryImage(serviceKey);
+
+  return (
+    <>
+      {primaryImage && (
+        <PrimaryImageSchema
+          id="city-service-page-schema"
+          pageUrl={`https://onthegomoving.com/${cityMovers}/${serviceKey}/`}
+          pageName={`${locationData.city} ${primaryImage.label} | On The Go Moving & Storage`}
+          imageUrl={absoluteImageUrl(primaryImage.src)}
+          imageAlt={primaryImage.alt}
+        />
+      )}
+      <CityServiceSubPage citySlug={citySlug} serviceKey={serviceKey} />
+    </>
+  );
 }

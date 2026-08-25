@@ -13,7 +13,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import QuoteForm from "@/components/QuoteForm";
 import { COMPANY, ALL_LOCATIONS, NAV_SERVICES } from "@/lib/siteData";
-import { BRAND_IMAGES } from "@/lib/brandImages";
+import { BRAND_IMAGES, netlifyImg } from "@/lib/brandImages";
 import primaryImages from "@/lib/primaryImages";
 import {
   CheckCircle, Phone, ArrowRight, Star, Shield, Clock,
@@ -1074,13 +1074,18 @@ export default function ServicePage({ slug }: ServicePageProps) {
               </div>
             </div>
             <div className="relative">
-              <img
-                src={data.image}
-                alt={data.imageAlt}
-                className="rounded-2xl shadow-xl w-full object-cover"
-                style={{ maxHeight: "440px" }}
-                loading="lazy"
-              />
+              <picture>
+                <img
+                  src={netlifyImg(data.image, 82, 960)}
+                  srcSet={`${netlifyImg(data.image, 82, 640)} 640w, ${netlifyImg(data.image, 82, 960)} 960w, ${netlifyImg(data.image, 82, 1440)} 1440w`}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  alt={data.imageAlt}
+                  className="rounded-2xl shadow-xl w-full object-cover"
+                  style={{ maxHeight: "440px" }}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
               <div className="absolute -bottom-5 -left-5 bg-white rounded-xl shadow-lg px-5 py-4 border-l-4 border-brand-green">
                 <div className="text-3xl font-extrabold text-brand-green" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>{data.statValue}</div>
                 <div className="text-gray-600 text-xs font-medium">{data.statLabel}</div>

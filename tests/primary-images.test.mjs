@@ -4,6 +4,7 @@ import primaryImages from "../lib/primaryImages.js";
 
 const {
   absoluteImageUrl,
+  getCityServicePrimaryImage,
   getLocationPrimaryImage,
   getServicePrimaryImage,
 } = primaryImages;
@@ -24,6 +25,22 @@ test("priority service hubs resolve their approved first-party assets", () => {
   assert.equal(getServicePrimaryImage("residential-moving"), "/assets/residential-moving.webp");
   assert.equal(getServicePrimaryImage("apartment-moving"), "/assets/three-crew-ramp-loading.webp");
   assert.equal(getServicePrimaryImage("commercial-moving"), "/assets/commercial-fleet.webp");
+});
+
+test("city-service pages reuse only their relevant existing service-family image", () => {
+  assert.equal(
+    getCityServicePrimaryImage("apartment").src,
+    "/assets/three-crew-loading-truck.webp",
+  );
+  assert.equal(
+    getCityServicePrimaryImage("commercial").src,
+    "/assets/crew-wrapping-office.webp",
+  );
+  assert.equal(
+    getCityServicePrimaryImage("storage").src,
+    "/assets/storage-warehouse.webp",
+  );
+  assert.equal(getCityServicePrimaryImage("not-a-service"), undefined);
 });
 
 test("primary images resolve to absolute canonical site URLs", () => {
