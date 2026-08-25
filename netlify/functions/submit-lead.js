@@ -123,7 +123,7 @@ function buildSupermovePayload(lead) {
     lead.wantsStorage ? "Interested in storage" : "",
     lead.partnerTowerName ? `Seattle House service: ${getSeattleHouseMoveTypeLabel(lead.moveType)}` : "",
     lead.squareFeet ? `Square feet: ${lead.squareFeet}` : "",
-    lead.partnerTowerName ? `Seattle House tower: ${lead.partnerTowerName}` : "",
+    lead.partnerTowerName ? `Seattle House residence: ${lead.partnerTowerName}` : "",
     lead.sourceLabel ? `Source: ${lead.sourceLabel}` : "",
   ].filter(Boolean);
 

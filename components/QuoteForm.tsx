@@ -490,7 +490,7 @@ export default function QuoteForm({
                 <span className="absolute left-0 top-6 bottom-0 w-0.5 bg-[#75aa11] rounded-full" />
               )}
               <label className={`${labelClass} ${focused === "partnerDestination" ? "text-[#75aa11]" : ""}`}>
-                Seattle House Tower *
+                Seattle House Residence *
               </label>
               <select
                 name="partnerDestination"
@@ -500,7 +500,7 @@ export default function QuoteForm({
                 className={inputClass("partnerDestination")}
                 {...focusProps("partnerDestination")}
               >
-                <option value="">Choose tower…</option>
+                <option value="">Choose residence…</option>
                 {partnerDestinations.map((destination) => (
                   <option key={destination.value} value={destination.value}>{destination.label}</option>
                 ))}
