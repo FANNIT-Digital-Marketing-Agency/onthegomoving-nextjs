@@ -11,6 +11,7 @@ import Footer from "@/components/Footer";
 import QuoteForm from "@/components/QuoteForm";
 import { COMPANY, ALL_LOCATIONS, NAV_SERVICES } from "@/lib/siteData";
 import { BRAND_IMAGES } from "@/lib/brandImages";
+import primaryImages from "@/lib/primaryImages";
 import {
   CheckCircle, Phone, ArrowRight, Star, Shield, Clock,
   Home, Building2, Users, ChevronDown, ChevronUp, MapPin,
@@ -155,6 +156,9 @@ const INCLUDED = [
   "Floor runners & door frame protection",
 ];
 
+const { absoluteImageUrl, getServicePrimaryImage } = primaryImages;
+const RESIDENTIAL_PRIMARY_IMAGE = absoluteImageUrl(getServicePrimaryImage("residential-moving"));
+
 export default function ResidentialMoving() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
@@ -179,17 +183,16 @@ export default function ResidentialMoving() {
     };
     const RES_TITLE = "Seattle Residential Movers | On The Go Moving";
     const RES_DESC = "Professional residential movers in Seattle, Bellevue, Redmond & the Eastside. Flat-rate pricing, secure vault storage, licensed & insured. Free quote.";
-    const OG_IMAGE = "https://onthegomoving.com/wp-content/uploads/2021/01/on-the-go-moving-storage-truck.jpg";
     setOG("og:type", "website");
     setOG("og:title", RES_TITLE);
     setOG("og:description", RES_DESC);
     setOG("og:url", "https://onthegomoving.com/residential-moving/");
-    setOG("og:image", OG_IMAGE);
+    setOG("og:image", RESIDENTIAL_PRIMARY_IMAGE);
     setOG("og:site_name", "On The Go Moving & Storage");
     setMeta("twitter:card", "summary_large_image");
     setMeta("twitter:title", RES_TITLE);
     setMeta("twitter:description", RES_DESC);
-    setMeta("twitter:image", OG_IMAGE);
+    setMeta("twitter:image", RESIDENTIAL_PRIMARY_IMAGE);
 
     const schemaId = "residential-schema";
     document.getElementById(schemaId)?.remove();
@@ -202,6 +205,7 @@ export default function ResidentialMoving() {
         "@type": "Service",
         name: "Residential Moving Services",
         description: "Professional residential moving services for homes, apartments, and condos in Seattle, Bellevue, Redmond, and the Greater Seattle Eastside.",
+        image: RESIDENTIAL_PRIMARY_IMAGE,
         provider: {
           "@type": "MovingCompany",
           name: "On The Go Moving & Storage",
@@ -220,6 +224,17 @@ export default function ResidentialMoving() {
           name: faq.question,
           acceptedAnswer: { "@type": "Answer", text: faq.answer },
         })),
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        url: "https://onthegomoving.com/residential-moving/",
+        name: RES_TITLE,
+        primaryImageOfPage: {
+          "@type": "ImageObject",
+          contentUrl: RESIDENTIAL_PRIMARY_IMAGE,
+          caption: "On The Go Moving crew loading furniture onto a moving truck",
+        },
       },
       {
         "@context": "https://schema.org",

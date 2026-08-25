@@ -14,6 +14,7 @@ import Footer from "@/components/Footer";
 import QuoteForm from "@/components/QuoteForm";
 import { COMPANY, ALL_LOCATIONS, NAV_SERVICES } from "@/lib/siteData";
 import { BRAND_IMAGES } from "@/lib/brandImages";
+import primaryImages from "@/lib/primaryImages";
 import {
   CheckCircle, Phone, ArrowRight, Star, Shield, Clock,
   Home, Building2, Users, Package, Truck, DollarSign,
@@ -851,8 +852,11 @@ interface ServicePageProps {
   slug: string;
 }
 
+const { absoluteImageUrl } = primaryImages;
+
 export default function ServicePage({ slug }: ServicePageProps) {
   const data = SERVICE_DATA[slug];
+  const primaryImageUrl = data ? absoluteImageUrl(data.image) : "";
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   useEffect(() => {
@@ -875,17 +879,16 @@ export default function ServicePage({ slug }: ServicePageProps) {
       if (!el) { el = document.createElement("meta"); el.setAttribute("property", prop); document.head.appendChild(el); }
       el.setAttribute("content", content);
     };
-    const OG_IMAGE = "https://onthegomoving.com/wp-content/uploads/2021/01/on-the-go-moving-storage-truck.jpg";
     setOG("og:type", "website");
     setOG("og:title", data.metaTitle);
     setOG("og:description", data.metaDesc);
     setOG("og:url", data.canonical);
-    setOG("og:image", OG_IMAGE);
+    setOG("og:image", primaryImageUrl);
     setOG("og:site_name", "On The Go Moving & Storage");
     setMeta("twitter:card", "summary_large_image");
     setMeta("twitter:title", data.metaTitle);
     setMeta("twitter:description", data.metaDesc);
-    setMeta("twitter:image", OG_IMAGE);
+    setMeta("twitter:image", primaryImageUrl);
 
     const schemaId = "service-page-schema";
     document.getElementById(schemaId)?.remove();
@@ -898,6 +901,7 @@ export default function ServicePage({ slug }: ServicePageProps) {
         "@type": "Service",
         name: data.title,
         description: data.metaDesc,
+        image: primaryImageUrl,
         provider: {
           "@type": "MovingCompany",
           name: "On The Go Moving & Storage",
@@ -915,6 +919,17 @@ export default function ServicePage({ slug }: ServicePageProps) {
           name: faq.question,
           acceptedAnswer: { "@type": "Answer", text: faq.answer },
         })),
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        url: data.canonical,
+        name: data.metaTitle,
+        primaryImageOfPage: {
+          "@type": "ImageObject",
+          contentUrl: primaryImageUrl,
+          caption: data.imageAlt,
+        },
       },
       {
         "@context": "https://schema.org",

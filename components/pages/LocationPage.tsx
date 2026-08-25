@@ -16,6 +16,7 @@ import QuoteForm from "@/components/QuoteForm";
 import { BRAND_IMAGES } from "@/lib/brandImages";
 import { COMPANY } from "@/lib/siteData";
 import { LOCATION_DATA, ALL_LOCATION_SLUGS } from "@/lib/locationData";
+import primaryImages from "@/lib/primaryImages";
 import {
   CheckCircle,
   Phone,
@@ -92,11 +93,15 @@ const CANONICAL_SERVICES: { label: string; key: string; icon: string }[] = [
   { label: "Warehousing", key: "warehousing", icon: "🏭" },
 ];
 
+const { absoluteImageUrl, getLocationPrimaryImage } = primaryImages;
+
 // CITY_SERVICE_LINKS removed — dead code, was never rendered (used CANONICAL_SERVICES instead)
 // const CITY_SERVICE_LINKS = {
 
 export default function LocationPage({ slug }: LocationPageProps) {
   const data = LOCATION_DATA[slug];
+  const primaryImage = getLocationPrimaryImage(slug);
+  const primaryImageUrl = absoluteImageUrl(primaryImage.src);
   // Derive city prefix for service sub-page lookup (e.g. "redmond-movers" → "redmond")
   const cityPrefix = slug.replace(/-movers$|-moving-services$|-moving$/, "");
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -118,6 +123,9 @@ export default function LocationPage({ slug }: LocationPageProps) {
     setMeta("og:description", data.metaDescription, true);
     setMeta("og:type", "website", true);
     setMeta("og:url", `https://onthegomoving.com/${data.slug}/`, true);
+    setMeta("og:image", primaryImageUrl, true);
+    setMeta("twitter:card", "summary_large_image");
+    setMeta("twitter:image", primaryImageUrl);
 
     // Canonical
     let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
@@ -136,6 +144,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
         "@type": ["MovingCompany", "LocalBusiness"],
         name: COMPANY.name,
         url: `https://onthegomoving.com/${data.slug}/`,
+        image: primaryImageUrl,
         telephone: data.gbp?.telephone ?? COMPANY.phone,
         email: COMPANY.email,
         address: {
@@ -191,6 +200,17 @@ export default function LocationPage({ slug }: LocationPageProps) {
             text: f.a,
           },
         })),
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        url: `https://onthegomoving.com/${data.slug}/`,
+        name: data.metaTitle,
+        primaryImageOfPage: {
+          "@type": "ImageObject",
+          contentUrl: primaryImageUrl,
+          caption: primaryImage.alt,
+        },
       },
       {
         "@context": "https://schema.org",
@@ -358,8 +378,8 @@ export default function LocationPage({ slug }: LocationPageProps) {
             </div>
             <div className="relative">
               <img
-                src={BRAND_IMAGES.crewEntryway1}
-                alt={`On The Go Moving crew in ${data.city}, WA`}
+                src={primaryImage.src}
+                alt={primaryImage.alt}
                 className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
               />
               <div className="absolute -bottom-4 -left-4 bg-brand-gold text-brand-forest font-bold px-5 py-3 rounded-xl shadow-lg text-sm">

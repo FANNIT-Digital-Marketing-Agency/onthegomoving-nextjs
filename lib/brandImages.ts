@@ -96,8 +96,6 @@ export const BRAND_IMAGES = {
   // ---- New Photos from Google Drive (April 2026) ----
   /** #1 - OTGM box truck with Seattle skyline + Space Needle in background */
   truckSeattleSkyline: "/assets/truck-seattle-skyline.webp",
-  /** #2 - OTGM truck on street, Seattle skyline (2013) */
-  truckSeattle2013: "/assets/truck-seattle2013.webp",
   /** #3 - OTGM truck on residential street, Bellevue skyline across water */
   truckBellevueSkyline: "/assets/truck-bellevue-skyline.webp",
   /** #4 - Interior of moving truck packed with blanket-wrapped furniture */

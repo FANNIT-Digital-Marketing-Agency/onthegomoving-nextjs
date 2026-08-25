@@ -4,6 +4,10 @@ import { LOCATION_DATA } from "@/lib/locationData";
 import { POSTS_DATA } from "@/lib/blogData";
 import LocationPage from "@/components/pages/LocationPage";
 import BlogPost from "@/components/pages/BlogPost";
+import PrimaryImageSchema from "@/components/PrimaryImageSchema";
+import primaryImages from "@/lib/primaryImages";
+
+const { absoluteImageUrl, getLocationPrimaryImage } = primaryImages;
 
 // Slugs that have dedicated static routes at a higher priority — exclude from
 // dynamic generation to avoid conflicts.
@@ -67,6 +71,7 @@ export async function generateMetadata({
   const locationData = LOCATION_DATA[cityMovers];
   if (locationData) {
     const canonical = `https://onthegomoving.com/${locationData.slug}/`;
+    const primaryImage = absoluteImageUrl(getLocationPrimaryImage(locationData.slug).src);
     return {
       title: locationData.metaTitle,
       description: locationData.metaDescription,
@@ -75,6 +80,13 @@ export async function generateMetadata({
         title: locationData.metaTitle,
         description: locationData.metaDescription,
         url: canonical,
+        images: [{ url: primaryImage }],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: locationData.metaTitle,
+        description: locationData.metaDescription,
+        images: [primaryImage],
       },
     };
   }
@@ -108,8 +120,21 @@ export default async function DynamicRootRoute({
   const { cityMovers } = await params;
 
   // Location page takes priority
-  if (LOCATION_DATA[cityMovers]) {
-    return <LocationPage slug={cityMovers} />;
+  const locationData = LOCATION_DATA[cityMovers];
+  if (locationData) {
+    const primaryImage = getLocationPrimaryImage(locationData.slug);
+    return (
+      <>
+        <PrimaryImageSchema
+          id="location-schema"
+          pageUrl={`https://onthegomoving.com/${locationData.slug}/`}
+          pageName={locationData.metaTitle}
+          imageUrl={absoluteImageUrl(primaryImage.src)}
+          imageAlt={primaryImage.alt}
+        />
+        <LocationPage slug={cityMovers} />
+      </>
+    );
   }
 
   // Blog post at root level (matching live site URL structure)
