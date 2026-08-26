@@ -199,6 +199,14 @@ export default function QuoteForm({
         gclid:       getAttr("gclid"),
         fbclid:      getAttr("fbclid"),
       };
+      const currentPath = `${window.location.pathname}${window.location.search}`;
+      if (!sessionStorage.getItem("otgm_first_landing_page")) {
+        sessionStorage.setItem("otgm_first_landing_page", currentPath);
+        sessionStorage.setItem("otgm_first_touch_at", new Date().toISOString());
+      }
+      const firstLandingPage = sessionStorage.getItem("otgm_first_landing_page") || currentPath;
+      const firstTouchAt = sessionStorage.getItem("otgm_first_touch_at") || new Date().toISOString();
+      const referrer = document.referrer || "";
 
       // Generate a unique event_id for FB Pixel + CAPI deduplication
       // Same ID is sent to CAPI server-side and stored for the pixel browser-side
@@ -223,6 +231,9 @@ export default function QuoteForm({
       netlifyFormData.append("wantsStorage", formData.freeStorage ? "yes" : "no");
       netlifyFormData.append("sourcePage", window.location.pathname);
       netlifyFormData.append("sourceLabel", sourceLabel || "");
+      netlifyFormData.append("referrer", referrer);
+      netlifyFormData.append("firstLandingPage", firstLandingPage);
+      netlifyFormData.append("firstTouchAt", firstTouchAt);
 
       // Fire both in parallel: SuperMove (via function) + Netlify Forms (browser POST)
       const [supermoveRes] = await Promise.allSettled([
@@ -243,6 +254,9 @@ export default function QuoteForm({
             wantsStorage: formData.freeStorage,
             sourcePage: window.location.pathname,
             sourceLabel: sourceLabel,
+            referrer,
+            firstLandingPage,
+            firstTouchAt,
             fbEventId,
             clientIp: undefined, // server will use Netlify's x-forwarded-for header
             clientUserAgent: navigator.userAgent,

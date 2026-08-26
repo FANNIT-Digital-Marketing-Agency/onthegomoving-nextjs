@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, Fragment } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -12,7 +12,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { RefreshCw, Search, Download, Lock, Trash2 } from "lucide-react";
+import { RefreshCw, Search, Download, Lock, Trash2, ChevronDown, ChevronUp } from "lucide-react";
 import { toast } from "sonner";
 
 const ADMIN_KEY = "otgm-admin-2025";
@@ -37,7 +37,17 @@ interface Lead {
   utmTerm: string | null;
   gclid: string | null;
   fbclid: string | null;
+  message?: string | null;
+  referrer?: string | null;
+  firstLandingPage?: string | null;
+  firstTouchAt?: string | null;
   source?: "db" | "netlify-forms";
+}
+
+function fullSiteUrl(pathOrUrl?: string | null) {
+  if (!pathOrUrl) return "";
+  if (/^https?:\/\//i.test(pathOrUrl)) return pathOrUrl;
+  return `https://onthegomoving.com${pathOrUrl.startsWith("/") ? pathOrUrl : `/${pathOrUrl}`}`;
 }
 
 // Labels that indicate FB/Meta paid traffic
@@ -114,6 +124,7 @@ export default function AdminLeads() {
   const [keyError, setKeyError] = useState(false);
   const [deletingId, setDeletingId] = useState<string | null>(null);
   const [confirmDeleteId, setConfirmDeleteId] = useState<string | null>(null);
+  const [expandedLeadId, setExpandedLeadId] = useState<string | null>(null);
 
   const fetchLeads = useCallback(async () => {
     setIsLoading(true);
@@ -322,7 +333,7 @@ export default function AdminLeads() {
         <div className="relative">
           <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
           <Input
-            placeholder="Search by name, email, phone, move type, or source..."
+            placeholder="Search by name, email, phone, source, campaign, or keyword..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="pl-9"
@@ -342,22 +353,41 @@ export default function AdminLeads() {
             </div>
           ) : (
             <div className="overflow-x-auto">
-              <Table className="min-w-[1080px] table-fixed">
+              <Table className="min-w-[1240px] table-fixed">
                 <TableHeader>
                   <TableRow className="bg-gray-50">
-                    <TableHead className="w-[16%] text-xs font-semibold text-gray-600 uppercase tracking-wide">Name</TableHead>
+                    <TableHead className="w-10" aria-label="Lead details" />
+                    <TableHead className="w-[15%] text-xs font-semibold text-gray-600 uppercase tracking-wide">Name</TableHead>
                     <TableHead className="w-[17%] text-xs font-semibold text-gray-600 uppercase tracking-wide">Contact</TableHead>
-                    <TableHead className="w-[18%] text-xs font-semibold text-gray-600 uppercase tracking-wide">Move Details</TableHead>
-                    <TableHead className="w-[27%] text-xs font-semibold text-gray-600 uppercase tracking-wide">Ad Source</TableHead>
-                    <TableHead className="w-[14%] text-xs font-semibold text-gray-600 uppercase tracking-wide">Submitted</TableHead>
-                    <TableHead className="w-[8%] text-xs font-semibold text-gray-600 uppercase tracking-wide">Record</TableHead>
+                    <TableHead className="w-[22%] text-xs font-semibold text-gray-600 uppercase tracking-wide">Message</TableHead>
+                    <TableHead className="w-[12%] text-xs font-semibold text-gray-600 uppercase tracking-wide">Ad Source</TableHead>
+                    <TableHead className="w-[18%] text-xs font-semibold text-gray-600 uppercase tracking-wide">Attribution</TableHead>
+                    <TableHead className="w-[10%] text-xs font-semibold text-gray-600 uppercase tracking-wide">Submitted</TableHead>
+                    <TableHead className="w-[6%] text-xs font-semibold text-gray-600 uppercase tracking-wide">Record</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
-                  {filtered.map((lead) => (
-                    <TableRow key={lead.id} className="hover:bg-gray-50 transition-colors">
+                  {filtered.map((lead) => {
+                    const isExpanded = expandedLeadId === lead.id;
+                    const message = lead.message || (lead.moveType
+                      ? `${lead.moveType}${lead.moveSize ? `, ${lead.moveSize}` : ""}${lead.zipFrom || lead.zipTo ? `: ${lead.zipFrom || "—"} → ${lead.zipTo || "—"}` : ""}${lead.moveDate ? ` on ${lead.moveDate}` : ""}`
+                      : "No message captured with this form submission.");
+                    return (
+                    <Fragment key={lead.id}>
+                    <TableRow className="hover:bg-gray-50 transition-colors">
+                      <TableCell className="whitespace-normal">
+                        <Button
+                          type="button"
+                          variant="ghost"
+                          size="sm"
+                          className="h-8 w-8 p-0 text-gray-500"
+                          onClick={() => setExpandedLeadId(isExpanded ? null : lead.id)}
+                          aria-label={isExpanded ? `Collapse ${lead.fullName}` : `Expand ${lead.fullName}`}
+                        >
+                          {isExpanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+                        </Button>
+                      </TableCell>
 
-                      {/* Name */}
                       <TableCell className="whitespace-normal">
                         <div className="font-medium text-gray-900">{lead.fullName}</div>
                         <div className="text-xs text-gray-400">#{lead.id}</div>
@@ -369,97 +399,67 @@ export default function AdminLeads() {
                         <div className="text-xs text-gray-500">{lead.email}</div>
                       </TableCell>
 
-                      {/* Move Details */}
                       <TableCell className="whitespace-normal">
-                        <div className="text-sm text-gray-700 capitalize">{lead.moveType || "-"}</div>
-                        {lead.moveSize && (
-                          <div className="text-xs text-gray-500">{lead.moveSize}</div>
-                        )}
-                        <div className="text-xs text-gray-500">
-                          {lead.zipFrom && lead.zipTo
-                            ? `${lead.zipFrom} → ${lead.zipTo}`
-                            : lead.zipFrom || lead.zipTo || ""}
-                        </div>
-                        {lead.moveDate && (
-                          <div className="text-xs text-gray-400">{lead.moveDate}</div>
-                        )}
+                        <p className="text-sm leading-5 text-gray-700 line-clamp-3">{message}</p>
                       </TableCell>
 
-                      {/* Ad Source */}
                       <TableCell className="whitespace-normal">
-                        <div className="mb-1">
-                          <AdSourceBadge lead={lead} />
-                        </div>
-                        {lead.sourceLabel && (
-                          <div className="text-xs text-gray-600 font-medium">{lead.sourceLabel}</div>
-                        )}
-                        <div className="text-xs text-gray-400 break-all" title={lead.sourcePage}>
-                          {lead.sourcePage}
-                        </div>
-                        {lead.utmCampaign && (
-                          <div className="text-xs text-gray-400 truncate max-w-[180px]" title={lead.utmCampaign}>
-                            Campaign: {lead.utmCampaign}
-                          </div>
-                        )}
-                        {lead.utmTerm && (
-                          <div className="text-xs text-gray-400 truncate max-w-[180px]" title={lead.utmTerm}>
-                            Keyword: {lead.utmTerm}
-                          </div>
-                        )}
+                        <AdSourceBadge lead={lead} />
                       </TableCell>
 
-                      {/* Submitted */}
                       <TableCell className="whitespace-normal">
-                        <div className="text-sm text-gray-700">
-                          {new Date(lead.createdAt).toLocaleDateString()}
-                        </div>
-                        <div className="text-xs text-gray-400">
-                          {new Date(lead.createdAt).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
-                        </div>
+                        <div className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Page</div>
+                        <div className="text-xs text-gray-700 break-all">{lead.sourcePage || "Not captured"}</div>
+                        {(lead.utmSource || lead.utmMedium) && (
+                          <div className="mt-1 text-xs text-gray-400">{lead.utmSource || ""}{lead.utmSource && lead.utmMedium ? " / " : ""}{lead.utmMedium || ""}</div>
+                        )}
+                        <button type="button" onClick={() => setExpandedLeadId(isExpanded ? null : lead.id)} className="mt-1 text-xs font-medium text-blue-600 hover:underline">
+                          {isExpanded ? "▲ less" : "▼ full details"}
+                        </button>
                       </TableCell>
 
-                      {/* Delete */}
+                      <TableCell className="whitespace-normal">
+                        <div className="text-sm text-gray-700">{new Date(lead.createdAt).toLocaleDateString()}</div>
+                        <div className="text-xs text-gray-400">{new Date(lead.createdAt).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}</div>
+                      </TableCell>
+
                       <TableCell className="whitespace-normal">
                         {lead.source === "netlify-forms" ? (
                           <span className="text-xs text-gray-400">Form record</span>
                         ) : confirmDeleteId === lead.id ? (
                           <div className="flex items-center gap-1">
-                            <Button
-                              size="sm"
-                              variant="destructive"
-                              className="h-7 px-2 text-xs"
-                              onClick={() => handleDelete(lead.id)}
-                              disabled={deletingId === lead.id}
-                            >
-                              Confirm
-                            </Button>
-                            <Button
-                              size="sm"
-                              variant="outline"
-                              className="h-7 px-2 text-xs"
-                              onClick={() => setConfirmDeleteId(null)}
-                            >
-                              Cancel
-                            </Button>
+                            <Button size="sm" variant="destructive" className="h-7 px-2 text-xs" onClick={() => handleDelete(lead.id)} disabled={deletingId === lead.id}>Confirm</Button>
+                            <Button size="sm" variant="outline" className="h-7 px-2 text-xs" onClick={() => setConfirmDeleteId(null)}>Cancel</Button>
                           </div>
                         ) : (
-                          <Button
-                            size="sm"
-                            variant="ghost"
-                            className="h-7 w-7 p-0 text-gray-400 hover:text-red-500 hover:bg-red-50"
-                            onClick={() => handleDelete(lead.id)}
-                            disabled={deletingId === lead.id}
-                            title="Delete lead"
-                          >
-                            {deletingId === lead.id
-                              ? <RefreshCw size={13} className="animate-spin" />
-                              : <Trash2 size={13} />}
+                          <Button size="sm" variant="ghost" className="h-7 w-7 p-0 text-gray-400 hover:text-red-500 hover:bg-red-50" onClick={() => handleDelete(lead.id)} disabled={deletingId === lead.id} title="Delete lead">
+                            {deletingId === lead.id ? <RefreshCw size={13} className="animate-spin" /> : <Trash2 size={13} />}
                           </Button>
                         )}
                       </TableCell>
-
                     </TableRow>
-                  ))}
+
+                    {isExpanded && (
+                      <TableRow className="bg-slate-50 hover:bg-slate-50">
+                        <TableCell colSpan={8} className="p-0">
+                          <div className="grid grid-cols-2 gap-x-8 gap-y-5 border-y border-slate-100 px-10 py-6 text-sm lg:grid-cols-4">
+                            <div><p className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Source</p><p className="mt-1 break-all text-gray-700">{lead.utmSource || "Not captured"}</p></div>
+                            <div><p className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Medium</p><p className="mt-1 break-all text-gray-700">{lead.utmMedium || "Not captured"}</p></div>
+                            <div><p className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Campaign</p><p className="mt-1 break-all text-gray-700">{lead.utmCampaign || "Not captured"}</p></div>
+                            <div><p className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Keyword</p><p className="mt-1 break-all text-gray-700">{lead.utmTerm || "Not captured"}</p></div>
+                            <div><p className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Google Click ID</p><p className="mt-1 break-all text-gray-700">{lead.gclid || "Not captured"}</p></div>
+                            <div><p className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Meta Click ID</p><p className="mt-1 break-all text-gray-700">{lead.fbclid || "Not captured"}</p></div>
+                            <div><p className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">First landing URL</p><p className="mt-1 break-all text-blue-700">{fullSiteUrl(lead.firstLandingPage || lead.sourcePage) || "Not captured"}</p></div>
+                            <div><p className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Referrer</p><p className="mt-1 break-all text-gray-700">{lead.referrer || "Not captured"}</p></div>
+                            <div><p className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">First touch</p><p className="mt-1 text-gray-700">{lead.firstTouchAt ? new Date(lead.firstTouchAt).toLocaleString() : "Not captured"}</p></div>
+                            <div><p className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Move details</p><p className="mt-1 text-gray-700">{lead.moveType || "Not captured"}{lead.moveSize ? ` · ${lead.moveSize}` : ""}{lead.moveDate ? ` · ${lead.moveDate}` : ""}</p></div>
+                          </div>
+                        </TableCell>
+                      </TableRow>
+                    )}
+                    </Fragment>
+                    );
+                  })}
                 </TableBody>
               </Table>
             </div>
