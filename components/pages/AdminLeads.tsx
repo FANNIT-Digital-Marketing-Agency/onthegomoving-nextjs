@@ -18,7 +18,7 @@ import { toast } from "sonner";
 const ADMIN_KEY = "otgm-admin-2025";
 
 interface Lead {
-  id: number;
+  id: string;
   createdAt: string;
   fullName: string;
   phone: string;
@@ -37,6 +37,7 @@ interface Lead {
   utmTerm: string | null;
   gclid: string | null;
   fbclid: string | null;
+  source?: "db" | "netlify-forms";
 }
 
 // Labels that indicate FB/Meta paid traffic
@@ -111,8 +112,8 @@ export default function AdminLeads() {
   const [authed, setAuthed] = useState(false);
   const [keyInput, setKeyInput] = useState("");
   const [keyError, setKeyError] = useState(false);
-  const [deletingId, setDeletingId] = useState<number | null>(null);
-  const [confirmDeleteId, setConfirmDeleteId] = useState<number | null>(null);
+  const [deletingId, setDeletingId] = useState<string | null>(null);
+  const [confirmDeleteId, setConfirmDeleteId] = useState<string | null>(null);
 
   const fetchLeads = useCallback(async () => {
     setIsLoading(true);
@@ -142,7 +143,7 @@ export default function AdminLeads() {
     if (authed) fetchLeads();
   }, [authed, fetchLeads]);
 
-  const handleDelete = async (id: number) => {
+  const handleDelete = async (id: string) => {
     if (confirmDeleteId !== id) {
       setConfirmDeleteId(id);
       return;
@@ -284,7 +285,7 @@ export default function AdminLeads() {
             <h1 className="text-xl font-bold text-gray-900" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
               Lead Submissions
             </h1>
-            <p className="text-sm text-gray-500 mt-0.5">All quote form submissions — On The Go Moving</p>
+            <p className="text-sm text-gray-500 mt-0.5">All quote form submissions with move, source, and campaign tracking</p>
           </div>
           <div className="flex items-center gap-2">
             <Button variant="outline" size="sm" onClick={fetchLeads} disabled={isLoading} className="gap-1.5">
@@ -341,15 +342,15 @@ export default function AdminLeads() {
             </div>
           ) : (
             <div className="overflow-x-auto">
-              <Table>
+              <Table className="min-w-[1080px] table-fixed">
                 <TableHeader>
                   <TableRow className="bg-gray-50">
-                    <TableHead className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Name</TableHead>
-                    <TableHead className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Contact</TableHead>
-                    <TableHead className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Move Details</TableHead>
-                    <TableHead className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Ad Source</TableHead>
-                    <TableHead className="text-xs font-semibold text-gray-600 uppercase tracking-wide">Submitted</TableHead>
-                    <TableHead className="text-xs font-semibold text-gray-600 uppercase tracking-wide w-16"></TableHead>
+                    <TableHead className="w-[16%] text-xs font-semibold text-gray-600 uppercase tracking-wide">Name</TableHead>
+                    <TableHead className="w-[17%] text-xs font-semibold text-gray-600 uppercase tracking-wide">Contact</TableHead>
+                    <TableHead className="w-[18%] text-xs font-semibold text-gray-600 uppercase tracking-wide">Move Details</TableHead>
+                    <TableHead className="w-[27%] text-xs font-semibold text-gray-600 uppercase tracking-wide">Ad Source</TableHead>
+                    <TableHead className="w-[14%] text-xs font-semibold text-gray-600 uppercase tracking-wide">Submitted</TableHead>
+                    <TableHead className="w-[8%] text-xs font-semibold text-gray-600 uppercase tracking-wide">Record</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
@@ -357,19 +358,19 @@ export default function AdminLeads() {
                     <TableRow key={lead.id} className="hover:bg-gray-50 transition-colors">
 
                       {/* Name */}
-                      <TableCell>
+                      <TableCell className="whitespace-normal">
                         <div className="font-medium text-gray-900">{lead.fullName}</div>
                         <div className="text-xs text-gray-400">#{lead.id}</div>
                       </TableCell>
 
                       {/* Contact */}
-                      <TableCell>
+                      <TableCell className="whitespace-normal">
                         <div className="text-sm text-gray-700">{lead.phone}</div>
                         <div className="text-xs text-gray-500">{lead.email}</div>
                       </TableCell>
 
                       {/* Move Details */}
-                      <TableCell>
+                      <TableCell className="whitespace-normal">
                         <div className="text-sm text-gray-700 capitalize">{lead.moveType || "-"}</div>
                         {lead.moveSize && (
                           <div className="text-xs text-gray-500">{lead.moveSize}</div>
@@ -385,14 +386,14 @@ export default function AdminLeads() {
                       </TableCell>
 
                       {/* Ad Source */}
-                      <TableCell>
+                      <TableCell className="whitespace-normal">
                         <div className="mb-1">
                           <AdSourceBadge lead={lead} />
                         </div>
                         {lead.sourceLabel && (
                           <div className="text-xs text-gray-600 font-medium">{lead.sourceLabel}</div>
                         )}
-                        <div className="text-xs text-gray-400 truncate max-w-[180px]" title={lead.sourcePage}>
+                        <div className="text-xs text-gray-400 break-all" title={lead.sourcePage}>
                           {lead.sourcePage}
                         </div>
                         {lead.utmCampaign && (
@@ -408,7 +409,7 @@ export default function AdminLeads() {
                       </TableCell>
 
                       {/* Submitted */}
-                      <TableCell>
+                      <TableCell className="whitespace-normal">
                         <div className="text-sm text-gray-700">
                           {new Date(lead.createdAt).toLocaleDateString()}
                         </div>
@@ -418,8 +419,10 @@ export default function AdminLeads() {
                       </TableCell>
 
                       {/* Delete */}
-                      <TableCell>
-                        {confirmDeleteId === lead.id ? (
+                      <TableCell className="whitespace-normal">
+                        {lead.source === "netlify-forms" ? (
+                          <span className="text-xs text-gray-400">Form record</span>
+                        ) : confirmDeleteId === lead.id ? (
                           <div className="flex items-center gap-1">
                             <Button
                               size="sm"

@@ -21,12 +21,26 @@ test("normalizes a Netlify form lead for the dashboard", () => {
       moveType: "apartment",
       moveSize: "2 Bedrooms",
       sourcePage: "/seattle-movers/",
+      utm_source: "google",
+      utm_medium: "cpc",
+      utm_campaign: "residential-search",
+      utm_content: "responsive-ad",
+      utm_term: "residential movers seattle",
+      gclid: "google-click-id",
+      fbclid: "",
     },
   });
   assert.equal(lead.id, "form-123");
   assert.equal(lead.moveSize, "2 Bedrooms");
   assert.equal(lead.source, "netlify-forms");
   assert.equal(lead.webhookStatus, "form-recorded");
+  assert.equal(lead.utmSource, "google");
+  assert.equal(lead.utmMedium, "cpc");
+  assert.equal(lead.utmCampaign, "residential-search");
+  assert.equal(lead.utmContent, "responsive-ad");
+  assert.equal(lead.utmTerm, "residential movers seattle");
+  assert.equal(lead.gclid, "google-click-id");
+  assert.equal(lead.fbclid, "");
 });
 
 test("filters and sorts recent Netlify form leads without losing normalized fields", () => {
