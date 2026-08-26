@@ -183,11 +183,10 @@ export default function AdminLeads() {
     total: leads.length,
     googleAds: leads.filter((l) => classifyLeadAttribution(l) === "google").length,
     metaAds: leads.filter((l) => classifyLeadAttribution(l) === "meta").length,
-    tagged: leads.filter((l) => classifyLeadAttribution(l) === "tagged").length,
     unattributed: leads.filter((l) => classifyLeadAttribution(l) === "unattributed").length,
   };
 
-  const taggedOtherBreakdown = Object.entries(
+  const directSourceBreakdown = Object.entries(
     leads
       .filter((lead) => classifyLeadAttribution(lead) === "tagged")
       .reduce<Record<string, number>>((counts, lead) => {
@@ -292,12 +291,11 @@ export default function AdminLeads() {
 
       <div className="max-w-7xl mx-auto px-6 py-6 space-y-6">
         {/* Stats */}
-        <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
           {[
             { label: "Total Leads", value: stats.total, color: "text-gray-900" },
             { label: "Google Ads", value: stats.googleAds, color: "text-blue-700" },
             { label: "Meta Ads", value: stats.metaAds, color: "text-indigo-700" },
-            { label: "Tagged Other", value: stats.tagged, color: "text-purple-700" },
             { label: "Unattributed", value: stats.unattributed, color: "text-gray-700" },
           ].map((s) => (
             <div key={s.label} className="bg-white rounded-lg border border-gray-200 p-4">
@@ -309,19 +307,19 @@ export default function AdminLeads() {
           ))}
         </div>
 
-        {taggedOtherBreakdown.length > 0 && (
-          <section aria-labelledby="tagged-other-heading" className="rounded-lg border border-purple-100 bg-purple-50/40 p-5">
+        {directSourceBreakdown.length > 0 && (
+          <section aria-labelledby="direct-source-heading" className="rounded-lg border border-purple-100 bg-purple-50/40 p-5">
             <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
               <div>
-                <h2 id="tagged-other-heading" className="text-base font-bold text-gray-900" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-                  Tagged Other Breakdown
+                <h2 id="direct-source-heading" className="text-base font-bold text-gray-900" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
+                  Direct Source Breakdown
                 </h2>
                 <p className="mt-1 text-xs text-gray-600">Direct UTM source / medium values only. Landing pages and source labels are not used for this grouping.</p>
               </div>
-              <span className="text-xs font-medium text-purple-700">{stats.tagged} tagged records</span>
+              <span className="text-xs font-medium text-purple-700">{directSourceBreakdown.reduce((total, group) => total + group.count, 0)} direct-source records</span>
             </div>
             <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-              {taggedOtherBreakdown.map(({ sourceMedium, count }) => (
+              {directSourceBreakdown.map(({ sourceMedium, count }) => (
                 <div key={sourceMedium} className="rounded-md border border-purple-100 bg-white px-3 py-2.5">
                   <p className="break-all text-xs font-medium text-gray-700">{sourceMedium}</p>
                   <p className="mt-1 text-lg font-bold text-purple-700" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>{count}</p>

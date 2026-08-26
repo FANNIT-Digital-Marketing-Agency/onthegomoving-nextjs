@@ -7,6 +7,7 @@ const { attributionLabel, classifyLeadAttribution } = leadAttribution;
 test("classifies Google Ads only from a gclid or Google source plus paid medium", () => {
   assert.equal(classifyLeadAttribution({ gclid: "google-click-id" }), "google");
   assert.equal(classifyLeadAttribution({ utmSource: "google", utmMedium: "cpc" }), "google");
+  assert.equal(classifyLeadAttribution({ utmSource: "google", utmMedium: "ad" }), "google");
   assert.equal(classifyLeadAttribution({ utmSource: "google", utmMedium: "organic" }), "tagged");
 });
 
