@@ -14,6 +14,9 @@ import {
 } from "@/components/ui/table";
 import { RefreshCw, Search, Download, Lock, Trash2, ChevronDown, ChevronUp } from "lucide-react";
 import { toast } from "sonner";
+import leadAttributionModule from "@/lib/leadAttribution.js";
+
+const { attributionLabel, classifyLeadAttribution } = leadAttributionModule;
 
 const ADMIN_KEY = "otgm-admin-2025";
 
@@ -50,67 +53,33 @@ function fullSiteUrl(pathOrUrl?: string | null) {
   return `https://onthegomoving.com${pathOrUrl.startsWith("/") ? pathOrUrl : `/${pathOrUrl}`}`;
 }
 
-// Labels that indicate FB/Meta paid traffic
-const FB_LABELS = ["landing-fb-residential-movers", "landing-social-residential-movers"];
-// Labels that indicate Google/paid traffic (non-FB)
-const GOOGLE_LABELS = [
-  "landing-residential-movers",
-  "landing-same-day-movers",
-  "landing-commercial-moving",
-  "landing-storage-services",
-  "landing-quote",
-];
-
 const AdSourceBadge = ({ lead }: { lead: Lead }) => {
-  const hasGclid = !!lead.gclid;
-  const hasFbclid = !!lead.fbclid;
-  const src = (lead.utmSource || "").toLowerCase();
-  const med = (lead.utmMedium || "").toLowerCase();
-  const label = (lead.sourceLabel || "").toLowerCase();
-  const page = (lead.sourcePage || "").toLowerCase();
-
-  // --- Definitive signals (tracking params present) ---
-  if (hasGclid || src.includes("google") || med === "cpc" || med === "ppc") {
+  const classification = classifyLeadAttribution(lead);
+  if (classification === "google") {
     return (
       <Badge className="bg-blue-100 text-blue-800 border-blue-200 text-xs font-semibold">
         Google Ads
       </Badge>
     );
   }
-  if (hasFbclid || src.includes("meta") || src.includes("facebook") || src.includes("instagram") || med === "paid_social") {
+  if (classification === "meta") {
     return (
       <Badge className="bg-indigo-100 text-indigo-800 border-indigo-200 text-xs font-semibold">
         Meta Ads
       </Badge>
     );
   }
-  if (src && med) {
+  if (classification === "tagged") {
     return (
       <Badge className="bg-purple-100 text-purple-800 border-purple-200 text-xs font-semibold">
-        {src}/{med}
-      </Badge>
-    );
-  }
-
-  // --- Inferred signals (from landing page label / URL) ---
-  if (FB_LABELS.includes(label) || page.includes("/get/fb-") || page.includes("/get/social-") || label.includes("fb") || label.includes("social")) {
-    return (
-      <Badge className="bg-indigo-50 text-indigo-600 border-indigo-200 text-xs">
-        Meta Ads (inferred)
-      </Badge>
-    );
-  }
-  if (GOOGLE_LABELS.includes(label) || page.startsWith("/get/")) {
-    return (
-      <Badge className="bg-blue-50 text-blue-600 border-blue-200 text-xs">
-        Google Ads (inferred)
+        Tagged campaign
       </Badge>
     );
   }
 
   return (
-    <Badge className="bg-gray-50 text-gray-400 border-gray-200 text-xs">
-      Organic
+    <Badge className="bg-gray-50 text-gray-500 border-gray-200 text-xs">
+      Unattributed
     </Badge>
   );
 };
@@ -194,31 +163,23 @@ export default function AdminLeads() {
       lead.email.toLowerCase().includes(q) ||
       lead.phone.includes(q) ||
       (lead.sourceLabel ?? "").toLowerCase().includes(q) ||
-      (lead.moveType ?? "").toLowerCase().includes(q)
+      (lead.moveType ?? "").toLowerCase().includes(q) ||
+      (lead.utmSource ?? "").toLowerCase().includes(q) ||
+      (lead.utmMedium ?? "").toLowerCase().includes(q) ||
+      (lead.utmCampaign ?? "").toLowerCase().includes(q) ||
+      (lead.utmContent ?? "").toLowerCase().includes(q) ||
+      (lead.utmTerm ?? "").toLowerCase().includes(q) ||
+      (lead.gclid ?? "").toLowerCase().includes(q) ||
+      (lead.fbclid ?? "").toLowerCase().includes(q)
     );
   });
 
-  const classifyLead = (l: Lead): "google" | "meta" | "organic" => {
-    const src = (l.utmSource || "").toLowerCase();
-    const med = (l.utmMedium || "").toLowerCase();
-    const label = (l.sourceLabel || "").toLowerCase();
-    const page = (l.sourcePage || "").toLowerCase();
-    // Definitive Google
-    if (!!l.gclid || src.includes("google") || med === "cpc" || med === "ppc") return "google";
-    // Definitive Meta
-    if (!!l.fbclid || ["meta","facebook","instagram"].some(s => src.includes(s)) || med === "paid_social") return "meta";
-    // Inferred Meta
-    if (FB_LABELS.includes(label) || page.includes("/get/fb-") || page.includes("/get/social-") || label.includes("fb") || label.includes("social")) return "meta";
-    // Inferred Google
-    if (GOOGLE_LABELS.includes(label) || page.startsWith("/get/")) return "google";
-    return "organic";
-  };
-
   const stats = {
     total: leads.length,
-    googleAds: leads.filter((l) => classifyLead(l) === "google").length,
-    metaAds: leads.filter((l) => classifyLead(l) === "meta").length,
-    organic: leads.filter((l) => classifyLead(l) === "organic").length,
+    googleAds: leads.filter((l) => classifyLeadAttribution(l) === "google").length,
+    metaAds: leads.filter((l) => classifyLeadAttribution(l) === "meta").length,
+    tagged: leads.filter((l) => classifyLeadAttribution(l) === "tagged").length,
+    unattributed: leads.filter((l) => classifyLeadAttribution(l) === "unattributed").length,
   };
 
   const exportCSV = () => {
@@ -226,7 +187,7 @@ export default function AdminLeads() {
     const headers = [
       "ID", "Name", "Phone", "Email", "Move Date", "Move Type", "Move Size",
       "From Zip", "To Zip", "Source", "Source Label", "Source Page",
-      "UTM Source", "UTM Medium", "UTM Campaign", "UTM Term", "GCLID", "FBCLID",
+      "UTM Source", "UTM Medium", "UTM Campaign", "UTM Content", "UTM Term", "GCLID", "FBCLID",
       "Submitted At"
     ];
     const rows = filtered.map((l) => [
@@ -239,12 +200,13 @@ export default function AdminLeads() {
       l.moveSize ?? "",
       l.zipFrom ?? "",
       l.zipTo ?? "",
-      l.gclid ? "Google Ads" : l.fbclid ? "Meta Ads" : l.utmSource ?? "Organic",
+      attributionLabel(l),
       `"${l.sourceLabel ?? ""}"`,
       `"${l.sourcePage ?? ""}"`,
       l.utmSource ?? "",
       l.utmMedium ?? "",
       l.utmCampaign ?? "",
+      l.utmContent ?? "",
       l.utmTerm ?? "",
       l.gclid ?? "",
       l.fbclid ?? "",
@@ -313,12 +275,13 @@ export default function AdminLeads() {
 
       <div className="max-w-7xl mx-auto px-6 py-6 space-y-6">
         {/* Stats */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
           {[
             { label: "Total Leads", value: stats.total, color: "text-gray-900" },
             { label: "Google Ads", value: stats.googleAds, color: "text-blue-700" },
             { label: "Meta Ads", value: stats.metaAds, color: "text-indigo-700" },
-            { label: "Organic", value: stats.organic, color: "text-green-700" },
+            { label: "Tagged Other", value: stats.tagged, color: "text-purple-700" },
+            { label: "Unattributed", value: stats.unattributed, color: "text-gray-700" },
           ].map((s) => (
             <div key={s.label} className="bg-white rounded-lg border border-gray-200 p-4">
               <p className="text-xs text-gray-500 uppercase tracking-wide">{s.label}</p>
@@ -446,6 +409,7 @@ export default function AdminLeads() {
                             <div><p className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Source</p><p className="mt-1 break-all text-gray-700">{lead.utmSource || "Not captured"}</p></div>
                             <div><p className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Medium</p><p className="mt-1 break-all text-gray-700">{lead.utmMedium || "Not captured"}</p></div>
                             <div><p className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Campaign</p><p className="mt-1 break-all text-gray-700">{lead.utmCampaign || "Not captured"}</p></div>
+                            <div><p className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Content</p><p className="mt-1 break-all text-gray-700">{lead.utmContent || "Not captured"}</p></div>
                             <div><p className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Keyword</p><p className="mt-1 break-all text-gray-700">{lead.utmTerm || "Not captured"}</p></div>
                             <div><p className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Google Click ID</p><p className="mt-1 break-all text-gray-700">{lead.gclid || "Not captured"}</p></div>
                             <div><p className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Meta Click ID</p><p className="mt-1 break-all text-gray-700">{lead.fbclid || "Not captured"}</p></div>

@@ -22,6 +22,27 @@ import { useState, useEffect } from "react";
 import { ArrowLeftRight, ArrowRight, CheckCircle, Loader2, Lock, Zap } from "lucide-react";
 import { toast } from "sonner";
 
+const ATTRIBUTION_QUERY_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "gclid", "fbclid"] as const;
+
+function captureFirstTouchAttribution() {
+  if (typeof window === "undefined") return;
+
+  const params = new URLSearchParams(window.location.search);
+  ATTRIBUTION_QUERY_KEYS.forEach((key) => {
+    const value = params.get(key);
+    // First touch wins within the browsing session; do not overwrite a stored
+    // click ID or UTM value after the visitor has navigated to another page.
+    if (value && !sessionStorage.getItem(`otgm_${key}`)) {
+      sessionStorage.setItem(`otgm_${key}`, value);
+    }
+  });
+
+  if (!sessionStorage.getItem("otgm_first_landing_page")) {
+    sessionStorage.setItem("otgm_first_landing_page", `${window.location.pathname}${window.location.search}`);
+    sessionStorage.setItem("otgm_first_touch_at", new Date().toISOString());
+  }
+}
+
 interface QuoteFormProps {
   variant?: "hero" | "sidebar" | "inline";
   className?: string;
@@ -112,6 +133,12 @@ export default function QuoteForm({
     setToday(new Date().toISOString().split("T")[0]);
   }, []);
 
+  // Capture the landing URL as soon as the form mounts, rather than waiting
+  // until submit. The same first-touch values are also checked at submit time.
+  useEffect(() => {
+    captureFirstTouchAttribution();
+  }, []);
+
   const [formData, setFormData] = useState({
     fullName: "",
     phone: "",
@@ -179,16 +206,9 @@ export default function QuoteForm({
     setLoading(true);
 
     try {
-      // Capture ad attribution params from URL — persist in sessionStorage so attribution
-      // survives multi-page browsing (user clicks ad on /seattle-movers/, fills form on /)
-      const captureAttribution = () => {
-        const params = new URLSearchParams(window.location.search);
-        const keys = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "gclid", "fbclid"];
-        keys.forEach((k) => {
-          if (params.has(k)) sessionStorage.setItem(`otgm_${k}`, params.get(k)!);
-        });
-      };
-      captureAttribution();
+      // Preserve the first landing URL's direct campaign parameters across
+      // multi-page browsing before this form is submitted.
+      captureFirstTouchAttribution();
       const getAttr = (k: string) => sessionStorage.getItem(`otgm_${k}`) || undefined;
       const attribution = {
         utmSource:   getAttr("utm_source"),
@@ -234,6 +254,15 @@ export default function QuoteForm({
       netlifyFormData.append("referrer", referrer);
       netlifyFormData.append("firstLandingPage", firstLandingPage);
       netlifyFormData.append("firstTouchAt", firstTouchAt);
+      // Netlify Forms is the durable dashboard fallback, so persist the exact
+      // same canonical camelCase attribution fields sent to SuperMove.
+      netlifyFormData.append("utmSource", attribution.utmSource || "");
+      netlifyFormData.append("utmMedium", attribution.utmMedium || "");
+      netlifyFormData.append("utmCampaign", attribution.utmCampaign || "");
+      netlifyFormData.append("utmContent", attribution.utmContent || "");
+      netlifyFormData.append("utmTerm", attribution.utmTerm || "");
+      netlifyFormData.append("gclid", attribution.gclid || "");
+      netlifyFormData.append("fbclid", attribution.fbclid || "");
 
       // Fire both in parallel: SuperMove (via function) + Netlify Forms (browser POST)
       const [supermoveRes] = await Promise.allSettled([
@@ -358,6 +387,16 @@ export default function QuoteForm({
       <input type="hidden" name="sourcePage" value="" />
       <input type="hidden" name="sourceLabel" value="" />
       <input type="hidden" name="partnerDestination" value="" />
+      <input type="hidden" name="firstLandingPage" value="" />
+      <input type="hidden" name="firstTouchAt" value="" />
+      <input type="hidden" name="referrer" value="" />
+      <input type="hidden" name="utmSource" value="" />
+      <input type="hidden" name="utmMedium" value="" />
+      <input type="hidden" name="utmCampaign" value="" />
+      <input type="hidden" name="utmContent" value="" />
+      <input type="hidden" name="utmTerm" value="" />
+      <input type="hidden" name="gclid" value="" />
+      <input type="hidden" name="fbclid" value="" />
 
       {variant === "hero" && (
         <div className="mb-5">

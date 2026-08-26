@@ -43,6 +43,28 @@ test("normalizes a Netlify form lead for the dashboard", () => {
   assert.equal(lead.fbclid, "");
 });
 
+test("preserves canonical camelCase UTM and case-sensitive Meta click-ID fields", () => {
+  const lead = normalizeNetlifySubmission({
+    id: "form-meta-456",
+    created_at: "2026-08-26T15:00:00.000Z",
+    data: {
+      fullName: "Meta Test",
+      utmSource: "facebook",
+      utmMedium: "paid_social",
+      utmCampaign: "seattle-apartments",
+      utmContent: "carousel-a",
+      utmTerm: "apartment movers",
+      fbclid: "AbCdEfMetaClickId",
+    },
+  });
+  assert.equal(lead.utmSource, "facebook");
+  assert.equal(lead.utmMedium, "paid_social");
+  assert.equal(lead.utmCampaign, "seattle-apartments");
+  assert.equal(lead.utmContent, "carousel-a");
+  assert.equal(lead.utmTerm, "apartment movers");
+  assert.equal(lead.fbclid, "AbCdEfMetaClickId");
+});
+
 test("filters and sorts recent Netlify form leads without losing normalized fields", () => {
   const now = new Date();
   const recent = new Date(now.getTime() - 2 * 24 * 60 * 60 * 1000).toISOString();
