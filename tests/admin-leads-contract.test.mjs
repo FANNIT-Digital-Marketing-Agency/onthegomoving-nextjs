@@ -27,6 +27,14 @@ test("dashboard source display uses direct attribution instead of landing-page o
   assert.doesNotMatch(source, /page\.startsWith\("\/get\/"\)/);
 });
 
+test("dashboard exposes a direct UTM source and medium breakdown for Tagged Other leads", () => {
+  assert.match(source, /taggedOtherBreakdown/);
+  assert.match(source, /Tagged Other Breakdown/);
+  assert.match(source, /Direct UTM source \/ medium values only/);
+  assert.match(source, /attributionPart\(lead\.utmSource\)/);
+  assert.match(source, /attributionPart\(lead\.utmMedium\)/);
+});
+
 test("Netlify Forms records are not offered a database-only delete action", () => {
   assert.match(source, /lead\.source === "netlify-forms"/);
   assert.match(source, /Form record/);
