@@ -14,6 +14,7 @@ test("the compact dashboard preserves requested summary columns and expandable d
   assert.match(source, /Referrer/);
   assert.match(source, /UTM Content/);
   assert.match(source, />Content</);
+  assert.match(source, /Attribution evidence/);
   assert.match(source, /min-w-\[1240px\] table-fixed/);
 });
 

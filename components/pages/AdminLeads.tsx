@@ -44,6 +44,7 @@ interface Lead {
   referrer?: string | null;
   firstLandingPage?: string | null;
   firstTouchAt?: string | null;
+  attributionEvidence?: "Stored form fields" | "Captured URL query" | "Not captured";
   source?: "db" | "netlify-forms";
 }
 
@@ -413,6 +414,7 @@ export default function AdminLeads() {
                             <div><p className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Keyword</p><p className="mt-1 break-all text-gray-700">{lead.utmTerm || "Not captured"}</p></div>
                             <div><p className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Google Click ID</p><p className="mt-1 break-all text-gray-700">{lead.gclid || "Not captured"}</p></div>
                             <div><p className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Meta Click ID</p><p className="mt-1 break-all text-gray-700">{lead.fbclid || "Not captured"}</p></div>
+                            <div><p className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Attribution evidence</p><p className="mt-1 break-all text-gray-700">{lead.attributionEvidence || "Not captured"}</p></div>
                             <div><p className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">First landing URL</p><p className="mt-1 break-all text-blue-700">{fullSiteUrl(lead.firstLandingPage || lead.sourcePage) || "Not captured"}</p></div>
                             <div><p className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">Referrer</p><p className="mt-1 break-all text-gray-700">{lead.referrer || "Not captured"}</p></div>
                             <div><p className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">First touch</p><p className="mt-1 text-gray-700">{lead.firstTouchAt ? new Date(lead.firstTouchAt).toLocaleString() : "Not captured"}</p></div>

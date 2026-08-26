@@ -41,6 +41,7 @@ test("normalizes a Netlify form lead for the dashboard", () => {
   assert.equal(lead.utmTerm, "residential movers seattle");
   assert.equal(lead.gclid, "google-click-id");
   assert.equal(lead.fbclid, "");
+  assert.equal(lead.attributionEvidence, "Stored form fields");
 });
 
 test("preserves canonical camelCase UTM and case-sensitive Meta click-ID fields", () => {
@@ -63,6 +64,25 @@ test("preserves canonical camelCase UTM and case-sensitive Meta click-ID fields"
   assert.equal(lead.utmContent, "carousel-a");
   assert.equal(lead.utmTerm, "apartment movers");
   assert.equal(lead.fbclid, "AbCdEfMetaClickId");
+});
+
+test("uses directly retained query parameters in historic captured URLs without page-path inference", () => {
+  const lead = normalizeNetlifySubmission({
+    id: "form-historic-789",
+    created_at: "2026-08-26T16:00:00.000Z",
+    data: {
+      fullName: "Historic Test",
+      sourceLabel: "landing-social-residential-movers",
+      sourcePage: "/get/fb-residential-movers/",
+      referrer: "https://onthegomoving.com/get/fb-residential-movers/?utm_source=facebook&utm_medium=paid_social&utm_campaign=apartment-moves&utm_content=feed&fbclid=AbCdEfHistoricClickId",
+    },
+  });
+  assert.equal(lead.utmSource, "facebook");
+  assert.equal(lead.utmMedium, "paid_social");
+  assert.equal(lead.utmCampaign, "apartment-moves");
+  assert.equal(lead.utmContent, "feed");
+  assert.equal(lead.fbclid, "AbCdEfHistoricClickId");
+  assert.equal(lead.attributionEvidence, "Captured URL query");
 });
 
 test("filters and sorts recent Netlify form leads without losing normalized fields", () => {
