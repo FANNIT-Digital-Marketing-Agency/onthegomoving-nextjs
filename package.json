@@ -10,6 +10,7 @@
     "lint": "next lint",
     "test:seattle-house": "node --test tests/seattle-house-destinations.test.mjs tests/supermove-response.test.mjs",
     "test:image-seo": "node --test tests/primary-images.test.mjs",
+    "test:leads-dashboard": "node --test tests/netlify-forms-leads.test.mjs",
     "db:push": "drizzle-kit push"
   },
   "keywords": [],

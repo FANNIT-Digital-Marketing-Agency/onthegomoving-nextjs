@@ -6,6 +6,9 @@
 // GET /.netlify/functions/get-leads?key=<ADMIN_KEY>&page=1&per_page=100&days=30
 // ============================================================
 import mysql from "mysql2/promise";
+import netlifyFormsLeadModule from "../../lib/netlifyFormsLeads.js";
+
+const { fetchAllNetlifyFormSubmissions, recentNormalizedSubmissions } = netlifyFormsLeadModule;
 
 const NETLIFY_API_TOKEN = process.env.NETLIFY_API_TOKEN || "nfp_TBPuSHsYiBk694ebCvcGUbXD8iDphJfQcfb5";
 const FORM_ID = process.env.NETLIFY_FORM_ID || "69e79d1e5a0b680008ea12ab";
@@ -14,7 +17,7 @@ const ADMIN_KEY = process.env.ADMIN_DASHBOARD_KEY || "otgm-admin-2025";
 export const handler = async (event) => {
   const headers = {
     "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Headers": "Content-Type",
+    "Access-Control-Allow-Headers": "Content-Type, X-Admin-Key",
     "Content-Type": "application/json",
   };
 
@@ -22,7 +25,7 @@ export const handler = async (event) => {
     return { statusCode: 200, headers, body: "" };
   }
 
-  const providedKey = event.queryStringParameters?.key || "";
+  const providedKey = event.headers?.["x-admin-key"] || event.headers?.["X-Admin-Key"] || event.queryStringParameters?.key || "";
   if (providedKey !== ADMIN_KEY) {
     return { statusCode: 401, headers, body: JSON.stringify({ error: "Unauthorized" }) };
   }
@@ -117,18 +120,8 @@ export const handler = async (event) => {
     } catch (err) {
       console.error("[get-leads] DB error:", err.message, err.code);
       try { if (conn) await conn.end(); } catch {}
-      // Expose DB error in response for debugging
-      return {
-        statusCode: 200,
-        headers,
-        body: JSON.stringify({ 
-          source: "db-error", 
-          error: err.message, 
-          code: err.code,
-          submissions: [], 
-          total: 0 
-        }),
-      };
+      // The form system is the durable operational fallback. Do not expose
+      // database connection details to the client, and do not hide valid form leads.
     }
   } else {
     console.warn("[get-leads] DATABASE_URL not set, using Netlify Forms fallback");
@@ -136,42 +129,16 @@ export const handler = async (event) => {
 
   // ── Fallback: Netlify Forms API ────────────────────────────────────────────
   try {
-    const url = `https://api.netlify.com/api/v1/forms/${FORM_ID}/submissions?page=${page}&per_page=${perPage}`;
-    const response = await fetch(url, {
-      headers: { Authorization: `Bearer ${NETLIFY_API_TOKEN}` },
+    const raw = await fetchAllNetlifyFormSubmissions({
+      formId: FORM_ID,
+      token: NETLIFY_API_TOKEN,
     });
-    if (!response.ok) throw new Error(`Netlify API error: ${response.status}`);
-    const raw = await response.json();
-
-    const submissions = raw.map((sub) => {
-      const data = sub.data || {};
-      let sourcePage = data.sourcePage || "";
-      if (!sourcePage && data.referrer) {
-        try { sourcePage = new URL(data.referrer).pathname; } catch { sourcePage = data.referrer; }
-      }
-      return {
-        id:           sub.id,
-        createdAt:    sub.created_at,
-        fullName:     data.fullName    || "",
-        phone:        data.phone       || "",
-        email:        data.email       || "",
-        moveDate:     data.moveDate    || "",
-        zipFrom:      data.zipFrom     || "",
-        zipTo:        data.zipTo       || "",
-        moveType:     data.moveType    || "",
-        moveSize:     data.moveSize || data.squareFeet || "",
-        wantsStorage: data.wantsStorage || data.freeStorage || "",
-        sourcePage:   sourcePage || "/",
-        sourceLabel:  data.sourceLabel || "",
-        webhookStatus: "unknown",
-        source:       "netlify-forms",
-      };
-    });
+    const submissions = recentNormalizedSubmissions(raw, days);
 
     return {
       statusCode: 200,
       headers,
-      body: JSON.stringify({ submissions, total: submissions.length, source: "netlify-forms", page, perPage }),
+      body: JSON.stringify({ submissions, total: submissions.length, source: "netlify-forms", page: 1, perPage: submissions.length }),
     };
   } catch (err) {
     console.error("[get-leads] Fallback error:", err);

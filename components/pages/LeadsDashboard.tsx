@@ -460,7 +460,8 @@ export default function LeadsDashboard() {
 
       do {
         const res = await fetch(
-          `/.netlify/functions/get-leads?key=${encodeURIComponent(key)}&per_page=${PER_PAGE}&page=${page}&days=${days}`
+          `/.netlify/functions/get-leads?per_page=${PER_PAGE}&page=${page}&days=${days}`,
+          { headers: { "X-Admin-Key": key } }
         );
         if (res.status === 401) {
           setError("Invalid admin key.");
@@ -473,6 +474,7 @@ export default function LeadsDashboard() {
         const batch = data.submissions || [];
         total = data.total || 0;
         allLeads = allLeads.concat(batch);
+        if (data.source === "netlify-forms") break;
         if (batch.length < PER_PAGE) break; // last page
         page++;
       } while (allLeads.length < total && page <= 20); // safety cap at 20 pages
