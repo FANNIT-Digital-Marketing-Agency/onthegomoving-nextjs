@@ -483,8 +483,8 @@ export default function Partners() {
           <div className="flex flex-wrap justify-center items-center gap-10 lg:gap-16">
             <a href="https://www.bennettfoundation.org/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
               <img
-                src="/assets/bennett-foundation.png"
-                alt="The Bennett Foundation"
+                src="/assets/bennett-foundation.webp"
+                alt="Bennett Family Foundation"
                 className="h-14 object-contain"
               />
             </a>
@@ -505,7 +505,7 @@ export default function Partners() {
             <a href="https://www.seattlechildrens.org/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
               <img
                 src="/assets/seattle-childrens.png"
-                alt="Seattle Children's Hospital"
+                alt="Seattle Children’s Hospital, Research, and Foundation"
                 className="h-14 object-contain"
               />
             </a>
