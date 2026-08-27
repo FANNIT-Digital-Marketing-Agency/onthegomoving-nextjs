@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "when-to-book-movers-bellevue",
+    title: `When to Book Movers for a Bellevue Move: A Practical Timing Guide`,
+    excerpt: `The best time to contact a moving company is usually before every detail of your move is final. If you know the month you expect to move, the general size of your home, and the areas you are moving between...`,
+    image: BRAND_IMAGES.truckBellevueSkyline,
+    date: "August 24, 2026",
+    category: "Moving Tips & Guides",
+    readTime: "10 min read",
+  },
+  {
     slug: "redmond-move-day-planning-checklist",
     title: `Redmond Moving Checklist: Parking, Loading Access, and Move-Day Planning`,
     excerpt: `A smooth Redmond move day starts before the truck arrives. The most useful preparation is not a last-minute rush. It is a clear plan for parking, entry, loading, packed boxes, and the person who can answer questions...`,
