@@ -42,6 +42,11 @@ const KEYWORD_MAP: Array<{ pattern: RegExp; url: string; label: string }> = [
 
 const MAX_LINKS_PER_POST = 6;
 
+// Applies only to links inside authored article content. Keep the persistent
+// underline and contrast treatment so readers can identify editorial links
+// without relying on hover, including links in intros and FAQ answers.
+const ARTICLE_CONTENT_LINK_CLASSES = "[&_a]:font-semibold [&_a]:text-[#4b7f14] [&_a]:underline [&_a]:decoration-2 [&_a]:decoration-[#4b7f14] [&_a]:underline-offset-4 [&_a]:transition-colors [&_a:hover]:text-[#1e3a0f] [&_a:hover]:decoration-[#1e3a0f] [&_a:focus-visible]:outline [&_a:focus-visible]:outline-2 [&_a:focus-visible]:outline-offset-2 [&_a:focus-visible]:outline-[#1e3a0f]";
+
 /**
  * Returns true if the position `index` in `text` is inside an existing <a>...</a> tag.
  * Prevents the auto-linker from creating nested anchors over manually-written links.
@@ -404,7 +409,7 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
                  *  blog post (section bodies already use a <div> for the same
                  *  reason — see below). */}
                 <div
-                  className="text-lg text-gray-700 leading-relaxed mb-8 font-medium border-l-4 pl-5"
+                  className={`text-lg text-gray-700 leading-relaxed mb-8 font-medium border-l-4 pl-5 ${ARTICLE_CONTENT_LINK_CLASSES}`}
                   style={{ borderColor: "#75aa11" }}
                   dangerouslySetInnerHTML={{ __html: introHtml }}
                 />
@@ -428,7 +433,7 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
                     </h3>
                   )}
                     <div
-                      className="text-gray-600 leading-relaxed space-y-3 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-1.5 [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:space-y-1.5 [&_li]:leading-relaxed [&_strong]:font-semibold [&_strong]:text-gray-800 [&_a]:text-[#4b7f14] [&_a]:font-semibold [&_a]:underline [&_a]:decoration-1 [&_a]:underline-offset-2 [&_a:hover]:text-[#1e3a0f] [&_a:hover]:decoration-2 [&_a:focus-visible]:outline [&_a:focus-visible]:outline-2 [&_a:focus-visible]:outline-offset-2 [&_a:focus-visible]:outline-[#1e3a0f] [&_a_strong]:text-[#4b7f14] [&_a:hover_strong]:text-[#1e3a0f]"
+                      className={`text-gray-600 leading-relaxed space-y-3 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-1.5 [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:space-y-1.5 [&_li]:leading-relaxed [&_strong]:font-semibold [&_strong]:text-gray-800 ${ARTICLE_CONTENT_LINK_CLASSES}`}
                       dangerouslySetInnerHTML={{ __html: sectionsHtml[i] }}
                     />
                   </div>
@@ -512,7 +517,10 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
                       {post.faqs.map((faq, i) => (
                         <div key={i} className="border border-gray-100 rounded-xl p-5 bg-[#fafafa]">
                           <h3 className="font-bold text-gray-900 mb-2 text-base">{faq.q}</h3>
-                          <p className="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
+                          <div
+                            className={`text-gray-600 text-sm leading-relaxed ${ARTICLE_CONTENT_LINK_CLASSES}`}
+                            dangerouslySetInnerHTML={{ __html: faq.a }}
+                          />
                         </div>
                       ))}
                     </div>
