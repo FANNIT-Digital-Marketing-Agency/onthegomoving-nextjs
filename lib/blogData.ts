@@ -2931,7 +2931,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     intro: `Apartment moves have unique challenges compared to house moves: narrow hallways, elevator reservations, parking restrictions, and building rules about move-in hours. Whether you're moving into a high-rise in Bellevue or a walk-up in Capitol Hill, the key to a smooth apartment move is preparation, starting at least two weeks before your move date.`,
     sections: [
       { type: "h2", heading: `12 Best Apartment Moving Tips: How To Move Into A New Apartment`, body: `Before you move into your new apartment, take some time to review these fun and simple moving tricks and tips.` },
-      { type: "h3", heading: `1. Make Arrangements Early`, body: `Procrastination is your worst enemy. Hands down. Begin making moving arrangements months before your scheduled move. Contact a moving company, schedule a sitter for your pets and/or children, find new schools for your kids, and don’t forget to ask your local doctors for copies of your medical records. The more you get done early, the less cramming and craziness will fill the final days before your move. Read more here for a checklist if this is your first time moving out .` },
+      { type: "h3", heading: `1. Make Arrangements Early`, body: `Procrastination is your worst enemy. Hands down. Begin making moving arrangements months before your scheduled move. Contact a moving company, schedule a sitter for your pets and/or children, find new schools for your kids, and don’t forget to ask your local doctors for copies of your medical records. The more you get done early, the less cramming and craziness will fill the final days before your move. If you are preparing an apartment quote in Redmond, use our <a href="/redmond-apartment-moving-estimate/">Redmond apartment moving estimate guide</a> to gather the inventory and access details a mover needs before giving you a useful scope. Read more here for a checklist if this is your first time moving out .` },
       { type: "h3", heading: `2. Know the Size of Your New Space`, body: `When you’re discussing the move with the moving company, it’s important to give them an idea of the size of space they will be moving you out of and into. Let’s say that you’re moving out of a very tiny space, maybe a studio apartment that’s a few stories up some stairs with no elevator. Even if you have a lot of belongings inside your place, having too many people on the moving crew is going to cause more pain than gain. Too many people in and out of a small space and trying to work around each other on the stairs is going to cause a lot of misused time spent dancing around each other....` },
       { type: "h3", heading: `3. When In Doubt Choose Three`, body: `If you’ve got more space in the apartment, you may not be sure how many movers to hire . It may feel counterintuitive because many of us are looking for the best savings, but often if you are unsure whether it’s a job for two or three, then it’s a job for three. Usually, the only way to save money by hiring two movers is if they can get the job done in four or fewer hours. Adding the third mover increases their efficiency by double, rather than just 33%. That means a two-man crew takes around eight hours to accomplish what a three-man crew can get done in half the time. With a three-person...` },
       { type: "h3", heading: `4. Pack in Advance`, body: `Another anti-procrastination tip, start packing months ahead of time. I know when your moving day is still months away, it seems like you’ve got loads of time. And what if you pack something that you end up needing? You would be surprised at the number of items you can pack ahead of time and not need (not even once!) before you move. Little-used items, decorations, and seasonal items can get be carefully sorted and stashed in labeled bins. Unless you’re planning to store items for some time, don’t bother investing in high-quality plastic or thick cardboard moving boxes. You can find good...` },
@@ -6347,6 +6347,158 @@ This guide takes a different approach from the typical "red flags to watch for" 
       {
         q: `What should I confirm during the final week before my move?`,
         a: `<p>Confirm the arrival window, addresses, building instructions, parking plan, access codes, key contact, and any updated inventory or service needs. Keep personal essentials separate and make sure the mover has the final access notes before the crew arrives.</p>`
+      }
+    ]
+  },
+  "redmond-apartment-moving-estimate": {
+    slug: "redmond-apartment-moving-estimate",
+    title: `What to Tell Movers When You Request a Redmond Apartment Moving Estimate`,
+    metaTitle: `Redmond Apartment Moving Estimate: What to Tell Movers`,
+    metaDescription: `Requesting a moving estimate for a Redmond apartment? Use this practical guide to share inventory, access, packing, and building details that make your quote conversation more useful.`,
+    date: "August 26, 2026",
+    dateISO: "2026-08-26",
+    category: "Renting & Apartments",
+    readTime: "13 min read",
+    author: "On The Go Moving",
+    heroImage: BRAND_IMAGES.crewCarryingUpRamp,
+    intro: `<p>Moving into or out of an apartment in Redmond can look simple from the outside. You have a date, an address, and a list of furniture. The estimate conversation gets much more useful when you can also explain how the crew will reach each apartment, what is actually being moved, and where the plan is still uncertain.</p>
+
+<p>You do not need every box packed or every building question answered before you request a quote. You do need a clear starting point. A good first conversation lets the mover understand the job, flag what needs follow-up, and explain what information will make the estimate more accurate.</p>
+
+<p>If you are ready to compare local options, use this guide to collect the details you should share with <a href="/redmond-movers/">our Redmond movers</a>. It is designed for the quote stage. For the final access, parking, and move-day handoff after you have chosen a mover, use the separate Redmond move-day checklist.</p>`,
+    relatedService: "Apartment Moving",
+    relatedServiceHref: "/apartment-moving/",
+    sections: [
+      {
+        type: "h2",
+        heading: `Start With the Two Addresses, Not Just the Move Date`,
+        body: `<p>The date matters, but it does not describe the work by itself. Start by writing down the current and new addresses, unit numbers, and the best way to reach each entrance. If one address is a house and the other is an apartment, say that clearly. The crew may have a different route, parking plan, and carrying distance at each end of the move.</p>
+
+<p>Include the floor for both units. A first-floor apartment can still involve a long hallway, a flight of stairs from the parking area, or a door that is far from the most practical entrance. A higher-floor unit may use an elevator, a stairwell, or a combination of both. Do not guess if you are not certain. Tell the mover which details you still need to confirm.</p>
+
+<p>Before you request an estimate, make a short two-address note with these basics:</p>
+
+<ul><li>Current and new street addresses, unit numbers, and move date.</li><li>Whether each home is an apartment, condo, townhouse, or house.</li><li>Floor number, elevator access, stairs, and the entrance you expect the crew to use.</li><li>The nearest legal place you believe a truck could stop or park.</li><li>The name and contact method for a property manager, concierge, or leasing office when one is involved.</li><li>Any uncertain item, such as an elevator reservation, gate code, loading area, or key handoff.</li></ul>
+
+<p>This note is not a contract and it does not replace an onsite or virtual estimate. It gives the mover enough context to ask better questions. It also prevents the common problem of describing only the apartment you are leaving while forgetting that the destination may be the harder side of the move.</p>`
+      },
+      {
+        type: "h2",
+        heading: `Tell the Mover How the Crew Will Reach Each Unit`,
+        body: `<p>Apartment moves are shaped by the route between the truck and the home. A quote can be more accurate when the mover knows about the route early, rather than discovering it when the crew arrives.</p>
+
+<p>Describe the path in plain language. For example, you might say that the truck would park on the street, the entrance is around the side of the building, the lobby requires a call box, and the unit is on the fourth floor near the end of the hall. A few concrete details are more helpful than saying the building is “easy to access.”</p>
+
+<p>Ask your property manager what applies to your move. Buildings set their own rules for move windows, elevators, loading areas, vendor paperwork, wall protection, and shared-space use. Do not assume your old apartment and new apartment follow the same process.</p>
+
+<p>For public-street questions, check the posted signs at the address and review the City of Redmond’s parking information. The city says time limits are actively enforced and provides separate resources for areas such as Downtown, Overlake, and Marymoor Village. That does not mean every move needs a special arrangement. It means the curb and access plan should be verified instead of assumed.<a href="https://www.redmond.gov/2524/Parking" target="_blank" rel="noopener noreferrer">[1]</a></p>
+
+<p>When you request an estimate, tell the mover whether you know the answers to these questions:</p>
+
+<ul><li>Is there a service elevator, and does the building require a reservation?</li><li>Is there a designated loading area, garage entrance, or delivery route?</li><li>Does someone need to let the crew through a locked door, gate, or garage?</li><li>Are there stairs, a long hallway, tight turns, or a distance from the elevator to the unit?</li><li>Does the property require a certificate of insurance or another vendor document?</li><li>Is there a building contact who can confirm the final instructions?</li></ul>
+
+<p>If your move has shared hallways, an elevator, or a property-management handoff, an <a href="/apartment-moving/">apartment moving service</a> can help you think through what information the crew needs. The estimate stage is the right time to identify open questions. You do not need to solve them alone before you call.</p>`
+      },
+      {
+        type: "h2",
+        heading: `Build a Simple Inventory That Represents the Real Job`,
+        body: `<p>An inventory is not just a count of rooms. It is a working picture of what the crew will carry, protect, disassemble, load, and unload. A studio can be quick when it has a modest amount of furniture and easy access. A one-bedroom can require more planning when it includes a large sectional, a packed storage unit, several flights of stairs, or a long route through the building.</p>
+
+<p>Walk through every space that is part of the move. Include closets, balconies, storage cages, garages, and off-site items. It is easy to remember the couch and bed, then forget the desk, patio furniture, box stack, exercise equipment, or items in a storage locker. Those omissions can make a preliminary estimate less useful.</p>
+
+<p>You do not need to measure every book or list every kitchen utensil. Group ordinary packed boxes by room and call out the pieces that are large, fragile, unusually heavy, or difficult to move through a building. Photos and a short video walkthrough can be helpful when the mover offers a virtual estimate, especially for access paths and larger furniture.</p>
+
+<p>Make the photos practical rather than polished. A few clear images of the largest furniture, packed storage area, building entrance, elevator door, hallway turn, and parking approach can answer the questions that are hard to explain in a short form. If you use a video, walk through the home at a normal pace and mention rooms, large pieces, and access changes as you go. You do not need to include personal documents, access codes, or items you will keep with you.</p>
+
+<p>Use this inventory outline before the quote conversation:</p>
+
+<ul><li>Main furniture in each room, including beds, dressers, sofas, dining tables, desks, and shelves.</li><li>Approximate number of packed boxes, bags, bins, and loose items by room.</li><li>Items in a balcony, garage, storage unit, or separate pickup location.</li><li>Furniture that may need disassembly and reassembly, such as bed frames or large tables.</li><li>Fragile, oversized, or specialty items that need to be discussed separately.</li><li>Items that are staying behind, being donated, or moving with you instead of on the truck.</li></ul>
+
+<p>Be honest about what is not packed yet. A mover can explain whether the estimate assumes completed packing, partial packing, or time for the crew to pack certain areas. Trying to make the inventory sound smaller usually does not save time. It only leaves more to clarify later.</p>`
+      },
+      {
+        type: "h2",
+        heading: `Separate Packing Help From Moving Labor`,
+        body: `<p>Many renters are deciding two things at once: who will move the furniture and who will prepare the belongings. Keeping those decisions separate makes the quote conversation easier to follow.</p>
+
+<p>You may be fully packed and only need loading, transportation, and unloading. You may need help with a few rooms, fragile items, or a tight timeline. Or you may want the crew to handle most of the packing. Explain which of those situations describes you now. If you are still deciding, say that too.</p>
+
+<p>Packing affects the job because it changes the scope of work and the number of loose items that must be protected before loading. If packing time is your biggest unknown, ask about <a href="/packing-services/">professional packing help</a> instead of treating it as an afterthought. The mover can explain what is included, what you would pack yourself, and what needs to be ready before move day.</p>
+
+<p>Make a short packing-status list:</p>
+
+<ul><li>Rooms that are packed and ready to move.</li><li>Rooms that are partly packed or still being used every day.</li><li>Fragile items you want help preparing.</li><li>Boxes and supplies you already have.</li><li>Items you will move yourself, such as medications, documents, keys, or valuables.</li><li>The latest date when you expect the remaining packing to be complete.</li></ul>
+
+<p>This information helps you compare like-for-like scopes. One quote may assume a fully packed home while another includes packing time. Neither approach is automatically better. What matters is that you understand the assumption before you choose.</p>`
+      },
+      {
+        type: "h2",
+        heading: `Explain Timing, Access, and Handoffs That Could Change the Scope`,
+        body: `<p>The best estimate conversations leave room for details that are not final. A lease handoff, elevator reservation, building contact, or access code may still be pending. Tell the mover what you know, what you expect, and when you will confirm the rest.</p>
+
+<p>For example, if your new building gives move-in instructions one week before the move, say so. If your current building requires a resident to be present for garage entry, include that. If you are waiting for keys, clarify whether the move date is firm or whether there is a backup plan.</p>
+
+<p>The important distinction is between a possible issue and a hidden issue. A possible issue is something you have identified and are working to confirm. A hidden issue is something no one discusses until the truck arrives. The first can usually be planned for. The second can create an avoidable delay.</p>
+
+<p>Share these timing details during the estimate:</p>
+
+<ul><li>Your preferred move date and the time window you have been given.</li><li>Whether a building has assigned a reservation or has not yet opened reservations.</li><li>Any deadline for move-in, move-out, key return, or elevator paperwork.</li><li>Whether a roommate, landlord, concierge, or family member must be present.</li><li>Any reason the inventory or access plan may change before the move.</li></ul>
+
+<p>Keep the final move-day steps in the <a href="/redmond-move-day-planning-checklist/">Redmond move-day planning checklist</a>. That guide is where you will confirm parking, access, packing readiness, and the person who can answer questions when the crew arrives. This estimate guide has a different job: help you begin the quote process with a realistic picture of the move.</p>`
+      },
+      {
+        type: "h2",
+        heading: `Ask What the Estimate Assumes Before You Compare Prices`,
+        body: `<p>An estimate is useful when you know what it includes. Do not compare one number against another without asking what each company assumes about the inventory, building access, parking distance, packing, travel, and timing.</p>
+
+<p>Start with a few direct questions. Ask whether the quote is based on an onsite visit, a video walkthrough, or the details you provided. Ask what happens if the inventory changes. Ask whether packing, materials, stairs, long carries, or access constraints are part of the current scope or require an update once confirmed.</p>
+
+<p>This is not about trying to predict every charge. It is about making sure the estimate matches the job you are actually planning. A clear conversation now makes it easier to decide what help you need and what you should still verify with the building.</p>
+
+<p>If two estimates look different, bring the questions back to the written scope. One company may have included a longer carry from the garage, time for packing, or a larger amount of furniture. Another may need a better inventory before it can explain the difference. Ask both companies to clarify the assumptions in words you understand. The useful comparison is not just the starting price. It is whether each estimate describes the same apartment, route, packing status, and planned moving help.</p>
+
+<p>Use this quote-comparison list:</p>
+
+<ul><li>What inventory and access details did the company use?</li><li>Does the estimate assume you are fully packed?</li><li>What packing or material work, if any, is included?</li><li>What information should you provide if the building instructions change?</li><li>Is there anything in the route or furniture list the estimator wants to see more clearly?</li><li>When will the scope be revisited if you add items, change buildings, or change the move date?</li></ul>
+
+<p>For a broader guide to preparing information for an accurate local quote, review the <a href="/bellevue-moving-estimate-checklist/">moving-estimate checklist</a>. The Bellevue guide focuses on the estimate process generally. This Redmond guide focuses on how a renter can describe apartment inventory and access before the quote is built.</p>`
+      },
+      {
+        type: "h2",
+        heading: `Make the Follow-Up Easy for Your Building and Your Mover`,
+        body: `<p>Once you have requested estimates, keep one note with the questions you still need to answer. That note can include the building contact, elevator information, parking observations, final inventory changes, and the date you expect to receive move-in instructions.</p>
+
+<p>Send updates as you get them. If a building gives you a move window, a service-elevator rule, or a loading instruction after the estimate conversation, forward it promptly. If you buy a large piece of furniture or decide to add packing help, tell the mover before move day. Small updates are much easier to address when everyone has time to plan.</p>
+
+<p>Your goal is not to become a moving expert. It is to give the mover a usable picture of the work and give yourself a fair basis for comparing the help available. A short, accurate access-and-inventory brief is more valuable than a long message with missing details.</p>
+
+<p>For broader renter planning before the move is underway, use our <a href="/apartment-moving-tips/">apartment move preparation guide</a>. Then return to this guide when you are ready to request an estimate and share the details that make your Redmond apartment move easier to scope.</p>`
+      }
+    ],
+    faqs: [
+      {
+        q: `What should I tell movers when I request a Redmond apartment moving estimate?`,
+        a: `<p>Share both addresses, unit numbers, floors, stairs or elevator access, expected parking or loading route, major furniture, box count, storage items, packing status, and any building contact or pending rule. You do not need every detail final. Be clear about what still needs confirmation.</p>`
+      },
+      {
+        q: `Do I need a complete inventory before I ask for an estimate?`,
+        a: `<p>No. A useful preliminary inventory covers the furniture, approximate boxes, storage items, and any oversized or fragile pieces. Tell the mover what is not packed yet and what may change. A virtual or onsite estimate can help refine the scope when needed.</p>`
+      },
+      {
+        q: `Should I ask my apartment building questions before calling movers?`,
+        a: `<p>Call when you have the basic details, then ask the building about its move window, elevator, access, loading, and vendor requirements. If the answers are pending, tell the mover when you expect them. Do not wait until the final days if you can begin the quote conversation earlier.</p>`
+      },
+      {
+        q: `Does apartment access affect a moving estimate?`,
+        a: `<p>It can. The route, stairs, elevator, hallway distance, parking location, and building procedures help a mover understand the work involved. Providing that information early gives the company a clearer basis for explaining its estimate and any details that need follow-up.</p>`
+      },
+      {
+        q: `Should I get packing help for an apartment move?`,
+        a: `<p>It depends on your time, the number of belongings, and what you want to handle yourself. Tell the mover which rooms are packed, which are not, and whether you want help only with fragile items or with broader packing. That makes it easier to compare the scope of each quote.</p>`
+      },
+      {
+        q: `What should I do after I choose a mover?`,
+        a: `<p>Confirm building instructions, access, parking, elevator reservations, packing readiness, and the person who will answer questions on move day. Use the Redmond move-day planning checklist to organize those final details after the estimate and booking decisions are complete.</p>`
       }
     ]
   }

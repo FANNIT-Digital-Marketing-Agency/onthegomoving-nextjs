@@ -25,6 +25,15 @@ export const BLOG_POSTS: BlogIndexPost[] = [
     readTime: "10 min read",
   },
   {
+    slug: "redmond-apartment-moving-estimate",
+    title: `What to Tell Movers When You Request a Redmond Apartment Moving Estimate`,
+    excerpt: `A Redmond apartment estimate guide that helps renters share the inventory, access, packing, and building details that make a moving quote easier to understand.`,
+    image: BRAND_IMAGES.crewCarryingUpRamp,
+    date: "August 26, 2026",
+    category: "Renting & Apartments",
+    readTime: "13 min read",
+  },
+  {
     slug: "redmond-move-day-planning-checklist",
     title: `Redmond Moving Checklist: Parking, Loading Access, and Move-Day Planning`,
     excerpt: `A smooth Redmond move day starts before the truck arrives. The most useful preparation is not a last-minute rush. It is a clear plan for parking, entry, loading, packed boxes, and the person who can answer questions...`,
