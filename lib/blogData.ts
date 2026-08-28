@@ -5238,7 +5238,7 @@ This guide covers every practical option available to Eastside downsizers — fr
       {
         type: "h2",
         heading: `Phase 2: Final Prep (1 to 2 Weeks Before the Move)`,
-        body: `The week or two before the move is about getting the physical space ready so move day runs without delays.\n\n<strong>Building logistics checklist:</strong>\n\n<ul><li>Reserve the freight elevator for move day at both the origin and destination buildings</li><li>Confirm loading dock availability and any restrictions on move hours — many commercial buildings in Bellevue, Redmond, and Kirkland only allow moves on weekends or after business hours</li><li>Check what size trucks can access the loading dock at both locations</li><li>Confirm whether the building requires a certificate of insurance from the moving company (we provide this on request)</li></ul>\n\n<strong>Packing and labeling checklist:</strong>\n\n<ul><li>Complete all remaining packing — every item not needed for daily operations should be packed before move day</li><li>Label all boxes and furniture with the destination room number so the crew knows exactly where everything goes</li><li>Set aside anything that is not moving (donations, disposal, separate storage) so the crew does not load it by mistake</li></ul>\n\nThe day before the move, the move coordinator should do a final walkthrough of both buildings to confirm access, elevator reservations, and any building-specific requirements.`
+        body: `The week or two before the move is about getting the physical space ready so move day runs without delays.\n\n<strong>Building logistics checklist:</strong>\n\n<ul><li>Reserve the freight elevator for move day at both the origin and destination buildings</li><li>Confirm loading dock availability and any restrictions on move hours — many commercial buildings in Bellevue, Redmond, and Kirkland only allow moves on weekends or after business hours</li><li>Check what size trucks can access the loading dock at both locations</li><li>Confirm whether the building requires a certificate of insurance from the moving company (we provide this on request)</li></ul>\n\n<strong>Packing and labeling checklist:</strong>\n\n<ul><li>Complete all remaining packing — every item not needed for daily operations should be packed before move day</li><li>Label all boxes and furniture with the destination room number so the crew knows exactly where everything goes</li><li>Set aside anything that is not moving (donations, disposal, separate storage) so the crew does not load it by mistake</li></ul>\n\nThe day before the move, the move coordinator should do a final walkthrough of both buildings to confirm access, elevator reservations, and any building-specific requirements. The <a href="/seattle-office-building-access-worksheet/">Seattle office building access worksheet</a> gives the person coordinating a Seattle move one place to record building contacts, access instructions, reservations, and remaining questions before that walkthrough.`
       },
       {
         type: "h2",
@@ -6499,6 +6499,163 @@ This guide takes a different approach from the typical "red flags to watch for" 
       {
         q: `What should I do after I choose a mover?`,
         a: `<p>Confirm building instructions, access, parking, elevator reservations, packing readiness, and the person who will answer questions on move day. Use the Redmond move-day planning checklist to organize those final details after the estimate and booking decisions are complete.</p>`
+      }
+    ]
+  },
+  "seattle-office-building-access-worksheet": {
+    slug: "seattle-office-building-access-worksheet",
+    title: `Seattle Office Building Access Worksheet: What to Confirm With Your Property Manager Before Movers Arrive`,
+    metaTitle: `Seattle Office Building Access Worksheet | On The Go Moving`,
+    metaDescription: `A practical Seattle office building-access worksheet for confirming property-manager contacts, loading routes, elevator reservations, curb plans, and vendor paperwork before movers arrive.`,
+    date: "August 28, 2026",
+    dateISO: "2026-08-28",
+    category: "Corporate and Office Moving",
+    readTime: "13 min read",
+    author: "Jason Sexton",
+    heroImage: BRAND_IMAGES.officeMoveAction,
+    intro: `Moving an office in Seattle is easier to scope when the mover receives a clear picture of both buildings before move day. A date and an address are useful, but they do not show where the truck can wait, who opens the loading door, how the freight elevator is reserved, or what paperwork the property manager needs.
+
+This worksheet gives the person coordinating the move a practical way to collect those answers. It is meant for the conversation with the property manager or building operations team, then for sharing the same information with your mover. If you are comparing local help, your <a href="/seattle-movers/">Seattle moving team</a> can use these details to ask better questions about the physical move.
+
+It is not a full office relocation plan. Use it to create one clear building-access record for the current office and one for the new office. Then use the answers to decide what still needs follow-up before the crew arrives.`,
+    sections: [
+      {
+        type: "h2",
+        heading: `Start With One Building Contact at Each Address`,
+        body: `The most useful first step is identifying one person who can answer building questions for the current office and one for the destination. That may be a property manager, building engineer, concierge, loading-dock coordinator, or facilities contact. Do not assume the front desk is responsible for move approvals. Ask who owns the answer for freight elevator, loading, vendor paperwork, and after-hours access questions.
+
+Write down the person’s name, direct phone number, email address, and hours. Ask whether someone else must approve a move request or whether the contact can sign off directly. If the building has an online portal, ask whether move reservations, insurance documents, or delivery instructions must be submitted there rather than by email.
+
+Use a separate line for the origin and the destination. A move can become difficult when the old building is easy to leave but the new building has a narrow move window, a separate service entrance, or a required reservation. Your <a href="/commercial-moving/">commercial moving services</a> team needs both sides of the route to understand the job.
+
+Add these details to each building contact line:
+
+<ul><li>Building name, full address, suite or floor, and the best service entrance.</li><li>Name, title, phone number, and email for the move-day building contact.</li><li>Backup contact and the hours when each person can answer access questions.</li><li>Whether the property manager, security desk, engineer, or tenant coordinator approves the move.</li><li>How the building wants move instructions, insurance documents, and reservation requests delivered.</li></ul>
+
+This list does not replace the building’s written instructions. It makes sure everyone knows where those instructions will come from and who can clarify them before the move is on the calendar.`
+      },
+      {
+        type: "h2",
+        heading: `Map the Truck Route From the Street to the Suite`,
+        body: `Ask the building contact to describe the route the crew should use from the truck to the office. The answer should cover more than a street address. A downtown office may have a loading alley, a garage entrance, a building entrance that closes at a certain hour, or a delivery route that is different from the visitor entrance.
+
+Record the street name, nearest cross street, garage or alley entrance, and any directions a driver needs before arriving. If the truck must use a loading dock, ask where the driver checks in and whether the dock has a height, length, or scheduling limit. If the crew must use a lobby door or a freight corridor, ask who unlocks it and whether security needs the moving company’s name in advance.
+
+The route inside the building matters as much as the vehicle approach. Note the distance from the elevator to the suite, tight turns, double doors, ramps, stairs, and any shared hallways that must stay open. These details help the crew prepare the right moving equipment and reduce day-of surprises.
+
+Make the route note practical:
+
+<ul><li>Where a truck should arrive and who confirms it is in the correct place.</li><li>Whether the route uses an alley, garage, dock, service entrance, lobby, or shared corridor.</li><li>Any height, vehicle-size, timing, or check-in limits the building has provided.</li><li>The distance and path between the entrance, freight elevator, and office suite.</li><li>Doors, turns, ramps, stairs, or security points that affect the physical carrying route.</li></ul>
+
+If one of these facts is not known yet, mark it as open. A good worksheet is not pretending every detail is settled. It identifies what the property manager needs to confirm before your <a href="/office-moving/">office moving team</a> finalizes the move plan.`
+      },
+      {
+        type: "h2",
+        heading: `Reserve the Freight Elevator With the Exact Details`,
+        body: `“Freight elevator reserved” is not enough information on its own. Ask for the reservation number or confirmation email, the allowed start and end times, the elevator location, and any procedure for collecting keys or access cards. Some buildings need a building representative to operate the elevator or to unlock the service route. Others ask tenants to protect floors, walls, or elevator surfaces during a move.
+
+Ask how long the building will hold the elevator. A reservation may cover only the elevator, not the loading dock or the street space outside. Confirm whether the time window applies to arrival, loading, unloading, or all activity. If the current office and new office have different windows, record both so the move plan reflects the tighter side.
+
+You should also ask who has authority to extend the reservation if the crew is still unloading when the window ends. It is better to understand the process early than to expect the mover to negotiate an unplanned extension on move day.
+
+Put these fields under the elevator section of the worksheet:
+
+<ul><li>Reservation date, start time, end time, confirmation number, and building contact.</li><li>Freight elevator location, access route, and whether the elevator is dedicated to the move.</li><li>Who unlocks the service doors and whether an escort, key, fob, or security check-in is required.</li><li>Any protective materials, padding, floor covering, or building procedure the tenant must arrange.</li><li>What happens if the move needs more time and who can approve an extension.</li></ul>
+
+For the broader sequence from initial scope to move day, keep this worksheet alongside the <a href="/commercial-moving-timeline-what-to-expect/">commercial moving timeline</a>. The timeline covers the full relocation process. This worksheet holds the building facts that need to be collected before that process reaches its final logistics stage.`
+      },
+      {
+        type: "h2",
+        heading: `Confirm the Curb, Parking, and Loading Plan Instead of Guessing`,
+        body: `Seattle curb rules can differ by block, time, and type of space. Do not assume that a nearby commercial loading area is available for a moving truck or that a regular space can simply be held on move morning. Start by asking the property manager whether the building has a designated loading location, garage procedure, or approved truck arrival point.
+
+If the plan depends on a curb space, review the signs at the address and check the applicable Seattle rules. Seattle Department of Transportation explains that a Temporary No Parking Zone may be used to provide curb space for moving vans or access. It also states that already-restricted spaces, including Truck Only and Load/Unload Only areas, cannot be reserved through that process. A moving truck that needs access to a Temporary No Parking Zone may require a Restricted Area Parking permit. Review the current <a href="https://www.seattle.gov/transportation/permits-and-services/permits/parking-permits/temporary-no-parking-permits" target="_blank" rel="noopener noreferrer">Seattle Temporary No Parking guidance</a> and confirm the actual curb plan with the building rather than treating one general rule as a building approval.
+
+Write down what is confirmed and what still needs a decision. If the building says it coordinates the loading dock, ask whether the tenant still needs a permit or truck permit for a public-street approach. If the answer is not clear, record the responsible contact and the date by which it must be resolved.
+
+Your curb and loading fields should include:
+
+<ul><li>The confirmed truck arrival point and whether it is private building space or public curb space.</li><li>The building’s loading-dock reservation, check-in procedure, and any vehicle restrictions.</li><li>Relevant signs, paid-parking conditions, restricted-space details, or permit questions to verify.</li><li>The person responsible for arranging a temporary no-parking zone or truck permit if one is needed.</li><li>A fallback plan if the approved loading position is unavailable or the street condition changes.</li></ul>
+
+The goal is not to turn the office manager into a permit expert. It is to make sure the crew receives a confirmed access plan instead of a vague direction to “park near the building.”`
+      },
+      {
+        type: "h2",
+        heading: `Ask for Vendor Paperwork and Building Protection Requirements Early`,
+        body: `Many office buildings have a process for outside vendors. Ask the property manager what they require from the moving company and when they need it. The answer may involve a certificate of insurance, a vendor registration, a move request form, named contacts, or proof of an elevator reservation. Requirements can differ between buildings, even when both are in Seattle.
+
+Ask for the written form, sample certificate language, deadline, and delivery method. If the building requires the moving company to be named in a particular way or needs particular insurance language, get those instructions in writing. Do not summarize the requirement from memory. Forward the building’s actual request to the mover and confirm receipt.
+
+This is also the time to ask about protection of common areas. The building may state who provides elevator pads, wall protection, door protection, or floor covering. Make the responsibility clear before the move, especially when multiple vendors will be working near the same route.
+
+Use this vendor-paperwork checklist:
+
+<ul><li>Certificate of insurance requirement, exact requested wording, recipient, and deadline.</li><li>Vendor registration, loading-dock form, elevator form, or security list the building requires.</li><li>Who submits each document and how the building confirms approval.</li><li>Responsibility for elevator pads, hallway protection, door protection, and floor covering.</li><li>Any building charge, refundable deposit, or after-hours staffing question that needs confirmation.</li></ul>
+
+If you are still comparing office locations or reviewing obligations before a lease is final, use the <a href="/what-to-consider-before-signing-office-lease-eastside/">office lease planning guide</a> for a broader decision framework. This worksheet is for documenting the move-access requirements at the buildings you have already selected.`
+      },
+      {
+        type: "h2",
+        heading: `Give the Mover One Clean Handoff Instead of Scattered Emails`,
+        body: `Once the property-manager answers are collected, combine them into one handoff. Include both addresses, the two building contacts, truck route, elevator reservations, loading plan, vendor paperwork, and unresolved questions. A clean handoff lets the mover review the route as one complete picture rather than search through messages sent across several weeks.
+
+Separate confirmed facts from open questions. For example, an elevator reservation may be confirmed while the building has not yet issued a final loading-dock instruction. Mark the owner and due date for each open item. The mover can then tell you which unknowns affect the scope and which can be confirmed later.
+
+Send updates when you receive them. If the building shifts an elevator window, changes the delivery entrance, or adds a paperwork request, pass it to the mover promptly. Do not wait until the crew is on the way. Physical moving plans are easier to adjust when everyone has time to make the change.
+
+Your final handoff should contain:
+
+<ul><li>A one-page origin and destination access summary.</li><li>Building contacts and the person who will be reachable during the move.</li><li>Freight elevator and loading-dock confirmations.</li><li>Truck arrival and curb or garage instructions.</li><li>Approved vendor paperwork and any building-protection responsibilities.</li><li>Open items, the owner for each item, and the date each answer is due.</li></ul>
+
+For the wider set of lease-to-move-in tasks, use the <a href="/office-relocation-checklist-lease-to-move-in/">office relocation checklist</a>. The next action for this worksheet is simpler: give the building facts to the mover, confirm remaining questions, and keep one contact available when the move begins.`
+      },
+      {
+        type: "h2",
+        heading: `Use a Short Reconfirmation Before Move Day`,
+        body: `Building information can change after the first conversation. A loading dock may be booked by another tenant, a security contact may be out, or a building may ask for a document that was not mentioned during the initial call. Plan one short reconfirmation before move day with the property manager and the mover.
+
+The reconfirmation should not restart the whole planning process. Read through the one-page worksheet and verify the items that can cause an immediate access delay: time window, elevator, dock or curb plan, contact, entry route, and paperwork. If anything has changed, note the new direction and send it to everyone who needs it.
+
+Ask the building contact to confirm these final points:
+
+<ul><li>The freight elevator or service route is still reserved for the recorded time.</li><li>The loading dock, garage, or curb approach still matches the planned truck arrival.</li><li>Security knows the moving company and move-day contact, if advance notice is required.</li><li>All required vendor documents have been accepted, not merely sent.</li><li>The person who can answer a day-of building question is reachable during the move window.</li></ul>
+
+That final check protects the move from the most common kind of building-access confusion: a detail that was discussed weeks ago but never confirmed after circumstances changed.`
+      },
+      {
+        type: "h2",
+        heading: `Keep the Worksheet Useful on Move Day`,
+        body: `Bring the worksheet to the move. Give the crew lead and the person representing the business the same version. It should be a working reference, not a file buried in an email thread. Use it to confirm the correct entrance, contact the right person, and identify what has already been approved.
+
+If the building instructions change at the door, note who gave the new instruction and tell the crew lead. If the new direction affects the route, timing, or access, pause long enough to make sure the appropriate building contact and business representative agree on the adjustment. That helps the physical move stay organized without asking the crew to guess.
+
+After the move, keep the worksheet with your relocation records. It can help explain building procedures during a final walkthrough, clarify who approved a route or reservation, and make a future office move easier to plan. The document is simple by design: it turns a set of building details into a usable handoff before the movers arrive.`
+      }
+    ],
+    faqs: [
+      {
+        q: `What should I ask a Seattle property manager before office movers arrive?`,
+        a: `Ask for the correct building contact, service entrance, freight elevator reservation details, loading-dock or truck-arrival instructions, approved move hours, vendor paperwork, common-area protection rules, and the person who can answer questions during the move. Record answers separately for the old and new buildings.`
+      },
+      {
+        q: `Do all Seattle office moves need a temporary no-parking zone?`,
+        a: `No. Whether a temporary zone or another arrangement is needed depends on the actual curb space, building loading procedure, and truck plan. Check the address, building instructions, and current Seattle guidance rather than assuming the same approach applies to every block.`
+      },
+      {
+        q: `Can a moving truck use any loading zone near an office building?`,
+        a: `No. Do not assume a truck-only, passenger-load, or load/unload space can be reserved or used for a specific move. Confirm the route and curb plan with the building and check the applicable posted signs and City guidance before move day.`
+      },
+      {
+        q: `When should I request a certificate of insurance from my mover?`,
+        a: `Ask the building what it requires as soon as the move is being planned. Get the exact written request, recipient, and deadline, then share it with the mover early enough to confirm the building accepted the document.`
+      },
+      {
+        q: `What is the difference between a move worksheet and an office relocation checklist?`,
+        a: `A building-access worksheet gathers the operational details from the property manager, such as access route, elevator, dock, contacts, and paperwork. An office relocation checklist covers the wider project, including the planning tasks that happen before and after access details are collected.`
+      },
+      {
+        q: `Who should be available from the business on office move day?`,
+        a: `The business should designate a person who knows the building contacts, access plan, item-placement priorities, and authority for questions. That person does not need to manage every physical task, but should be reachable while the crew is arriving, loading, and unloading.`
       }
     ]
   }

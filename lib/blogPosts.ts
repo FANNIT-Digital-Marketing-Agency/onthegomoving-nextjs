@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "seattle-office-building-access-worksheet",
+    title: `Seattle Office Building Access Worksheet: What to Confirm With Your Property Manager Before Movers Arrive`,
+    excerpt: `A Seattle office building-access worksheet for collecting the contacts, freight-elevator, loading, curb, and vendor details a mover needs before move day.`,
+    image: BRAND_IMAGES.officeMoveAction,
+    date: "August 28, 2026",
+    category: "Corporate and Office Moving",
+    readTime: "13 min read",
+  },
+  {
     slug: "when-to-book-movers-bellevue",
     title: `When to Book Movers for a Bellevue Move: A Practical Timing Guide`,
     excerpt: `The best time to contact a moving company is usually before every detail of your move is final. If you know the month you expect to move, the general size of your home, and the areas you are moving between...`,
