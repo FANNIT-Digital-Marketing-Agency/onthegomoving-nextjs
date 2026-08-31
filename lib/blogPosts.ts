@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "bellevue-move-out-checklist-apartments-condos",
+    title: `Bellevue Move-Out Checklist for Apartments and Condos`,
+    excerpt: `Moving out of a Bellevue apartment or condo? Use this practical checklist to organize notice, building access, cleaning, condition records, keys, and the final handoff.`,
+    image: BRAND_IMAGES.crewCarryingFurniture,
+    date: "August 31, 2026",
+    category: "Renting & Apartments",
+    readTime: "13 min read",
+  },
+  {
     slug: "seattle-office-building-access-worksheet",
     title: `Seattle Office Building Access Worksheet: What to Confirm With Your Property Manager Before Movers Arrive`,
     excerpt: `A Seattle office building-access worksheet for collecting the contacts, freight-elevator, loading, curb, and vendor details a mover needs before move day.`,
