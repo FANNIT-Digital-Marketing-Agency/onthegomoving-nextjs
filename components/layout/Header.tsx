@@ -524,15 +524,31 @@ export default function Header() {
           scrolled ? "bg-white shadow-md" : "bg-white/95 backdrop-blur-sm"
         }`}
       >
-        {/* Top bar, hidden on mobile, visible sm+ */}
+        {/* Storage-linked moving offer; the desktop row keeps the existing header height. */}
+        <div className="sm:hidden bg-[#fbc319] px-3 py-1.5 text-center">
+          <a
+            href="/storage-services/#storage-discount"
+            className="text-xs font-extrabold text-[#1e3a0f] underline decoration-2 underline-offset-2"
+          >
+            Store with us and get 10% off your move
+          </a>
+        </div>
+
+        {/* Top bar, visible sm+ */}
         <div style={{ backgroundColor: "#1e3a0f" }} className="hidden sm:block py-1.5 px-4">
-          <div className="container flex items-center justify-between">
-            <p className="text-white/80 text-xs hidden sm:block">
-              Seattle's Most Trusted Movers, Licensed &amp; Insured | HG-064180 | USDOT# 2120054
+          <div className="container flex items-center justify-between gap-3">
+            <a
+              href="/storage-services/#storage-discount"
+              className="text-xs font-extrabold text-[#fbc319] underline decoration-2 underline-offset-2 hover:text-white transition-colors"
+            >
+              Store with us and get 10% off your move
+            </a>
+            <p className="hidden xl:block text-white/80 text-xs text-center">
+              Licensed &amp; Insured | HG-064180 | USDOT# 2120054
             </p>
             <a
               href={COMPANY.phoneHref}
-              className="flex items-center gap-1.5 text-white font-bold text-sm ml-auto hover:text-yellow-300 transition-colors"
+              className="flex items-center gap-1.5 text-white font-bold text-sm ml-auto hover:text-yellow-300 transition-colors whitespace-nowrap"
               style={{ fontFamily: "'Barlow Condensed', sans-serif", letterSpacing: "0.04em" }}
             >
               <Phone size={14} />

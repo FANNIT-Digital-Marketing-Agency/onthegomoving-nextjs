@@ -60,6 +60,8 @@ interface QuoteFormProps {
   submitButtonLabel?: string;
   /** Pre-check the Free Storage checkbox (use on storage-related pages) */
   defaultFreeStorage?: boolean;
+  /** Hide the storage-linked moving offer on partner flows with a separate discount. */
+  showStorageOffer?: boolean;
   /**
    * Pre-select the Move Type dropdown.
    * "apartment" | "house" | "commercial"
@@ -120,6 +122,7 @@ export default function QuoteForm({
   thankYouPath,
   submitButtonLabel,
   defaultFreeStorage = false,
+  showStorageOffer = true,
   defaultMoveType = "",
   isLandingPage = false,
 }: QuoteFormProps) {
@@ -677,7 +680,28 @@ export default function QuoteForm({
           </div>
         )}
 
-        {/* Row 6: Free Storage checkbox, HIDDEN (temporarily disabled, re-enable when promotion is active) */}
+        {/* Row 6: storage-linked moving discount. The existing wantsStorage field remains the lead-flow signal. */}
+        {showStorageOffer && (
+          <div className="sm:col-span-2 rounded-lg border border-[#75aa11]/30 bg-[#f0f8e8] px-3 py-3">
+            <label className="flex items-start gap-3 cursor-pointer">
+              <input
+                type="checkbox"
+                name="freeStorage"
+                checked={formData.freeStorage}
+                onChange={handleChange}
+                className="mt-1 h-4 w-4 rounded border-gray-300 text-[#75aa11] focus:ring-[#75aa11]"
+              />
+              <span>
+                <span className="block text-sm font-extrabold text-[#1e3a0f]">
+                  Store with us and get 10% off your move
+                </span>
+                <span className="mt-0.5 block text-xs leading-relaxed text-gray-600">
+                  Requires at least one month of storage. Applies to moving services only and cannot be combined with another offer.
+                </span>
+              </span>
+            </label>
+          </div>
+        )}
 
       </div>
 
