@@ -120,7 +120,9 @@ function buildSupermovePayload(lead) {
   }
 
   const noteLines = [
-    lead.wantsStorage ? "Interested in storage" : "",
+    lead.wantsStorage
+      ? "Storage offer requested: Store with us for at least one month and get 10% off your move (moving services only; cannot be combined with another offer)"
+      : "",
     lead.partnerTowerName ? `Seattle House service: ${getSeattleHouseMoveTypeLabel(lead.moveType)}` : "",
     lead.squareFeet ? `Square feet: ${lead.squareFeet}` : "",
     lead.partnerTowerName ? `Seattle House residence: ${lead.partnerTowerName}` : "",

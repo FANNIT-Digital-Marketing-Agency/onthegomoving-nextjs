@@ -68,6 +68,7 @@ export default function SeattleHouseLanding() {
                 partnerDestinations={TOWER_OPTIONS}
                 partnerMoveTypes={SEATTLE_HOUSE_MOVE_TYPES}
                 partnerMoveSizes={SEATTLE_HOUSE_MOVE_SIZES}
+                showStorageOffer={false}
               />
             </div>
           </div>

@@ -138,7 +138,7 @@ export default function StorageServicesLanding() {
                 variant="inline"
                 sourceLabel="landing-storage-services"
                 defaultMoveType="house"
-                defaultFreeStorage={false}
+                defaultFreeStorage={true}
                 isLandingPage={true}
               />
             </div>

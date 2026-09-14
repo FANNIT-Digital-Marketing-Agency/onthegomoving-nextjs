@@ -991,6 +991,19 @@ export default function ServicePage({ slug }: ServicePageProps) {
               <p className="text-green-100 text-lg leading-relaxed mb-6 max-w-lg">
                 {data.intro}
               </p>
+              {slug === "storage-services" && (
+                <div
+                  id="storage-discount"
+                  className="mb-6 max-w-lg rounded-xl border border-[#fbc319]/70 bg-[#1e3a0f]/85 px-4 py-3 shadow-lg"
+                >
+                  <p className="text-base font-extrabold text-[#fbc319]">
+                    Store with us and get 10% off your move
+                  </p>
+                  <p className="mt-1 text-sm leading-relaxed text-white/90">
+                    Requires at least one month of storage. The discount applies to moving services only and cannot be combined with another offer.
+                  </p>
+                </div>
+              )}
               {/* Trust strip, single line, plain text style */}
               <div className="flex items-center gap-1.5 mb-6 text-xs sm:text-sm text-white/80 flex-wrap">
                 <div className="flex items-center gap-1">
