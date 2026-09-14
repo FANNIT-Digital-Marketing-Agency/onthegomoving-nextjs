@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "bellevue-portable-storage-container-move-guide",
+    title: `Using a Portable Storage Container for a Bellevue Move: Placement, Timing, and Alternatives`,
+    excerpt: `A Bellevue guide to portable storage container placement, delivery timing, building approval, City right-of-way rules, packing access, and alternatives before booking.`,
+    image: BRAND_IMAGES.truckBellevueSkyline,
+    date: "September 7, 2026",
+    category: "Moving Tips & Guides",
+    readTime: "14 min read",
+  },
+  {
     slug: "redmond-home-renovation-moving-storage",
     title: `How to Clear a Redmond Home for Renovation: A Moving and Storage Plan`,
     excerpt: `A Redmond renovation clear-out plan for sorting rooms, protecting furniture, choosing temporary storage, keeping contractor access open, and preparing for the return move.`,
