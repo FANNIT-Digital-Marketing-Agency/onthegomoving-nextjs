@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "moving-in-seattle-rain-practical-move-day-plan",
+    title: `Moving in Seattle Rain: A Practical Move-Day Plan for Homes and Apartments`,
+    excerpt: `A practical Seattle rain-move guide for checking the forecast, preparing access and packing, protecting loading routes, and making a clear move-day plan.`,
+    image: BRAND_IMAGES.crewHoodieAtTruck,
+    date: "September 11, 2026",
+    category: "Moving Tips & Guides",
+    readTime: "14 min read",
+  },
+  {
     slug: "bellevue-portable-storage-container-move-guide",
     title: `Using a Portable Storage Container for a Bellevue Move: Placement, Timing, and Alternatives`,
     excerpt: `A Bellevue guide to portable storage container placement, delivery timing, building approval, City right-of-way rules, packing access, and alternatives before booking.`,
