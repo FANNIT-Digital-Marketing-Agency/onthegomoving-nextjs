@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "redmond-home-renovation-moving-storage",
+    title: `How to Clear a Redmond Home for Renovation: A Moving and Storage Plan`,
+    excerpt: `A Redmond renovation clear-out plan for sorting rooms, protecting furniture, choosing temporary storage, keeping contractor access open, and preparing for the return move.`,
+    image: BRAND_IMAGES.storageWarehouse,
+    date: "September 2, 2026",
+    category: "Moving Tips & Guides",
+    readTime: "13 min read",
+  },
+  {
     slug: "bellevue-move-out-checklist-apartments-condos",
     title: `Bellevue Move-Out Checklist for Apartments and Condos`,
     excerpt: `Moving out of a Bellevue apartment or condo? Use this practical checklist to organize notice, building access, cleaning, condition records, keys, and the final handoff.`,
