@@ -16,6 +16,15 @@ export interface BlogIndexPost {
 
 export const BLOG_POSTS: BlogIndexPost[] = [
   {
+    slug: "bellevue-townhome-move-stairs-access-plan",
+    title: `Planning a Bellevue Townhome Move: Stairs, Split-Level Layouts, and Access`,
+    excerpt: `A Bellevue townhome move guide for stair turns, furniture fit, shared-drive access, parking, packing, and a clear truck-to-room plan.`,
+    image: BRAND_IMAGES.crewStaircaseCarrying,
+    date: "September 14, 2026",
+    category: "Moving Tips & Guides",
+    readTime: "14 min read",
+  },
+  {
     slug: "moving-in-seattle-rain-practical-move-day-plan",
     title: `Moving in Seattle Rain: A Practical Move-Day Plan for Homes and Apartments`,
     excerpt: `A practical Seattle rain-move guide for checking the forecast, preparing access and packing, protecting loading routes, and making a clear move-day plan.`,
