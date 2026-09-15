@@ -11,7 +11,7 @@ const [header, quoteForm, servicePage, storageLanding, seattleHouse, submitLead]
   readFile(new URL("../netlify/functions/submit-lead.js", import.meta.url), "utf8"),
 ]);
 
-const offer = "Store with us and get 10% off your move";
+const offer = "Store with us and get 15% off your move";
 const conditions = "Requires at least one month of storage. Applies to moving services only and cannot be combined with another offer.";
 
 test("storage discount appears in the header and canonical storage page with the approved conditions", () => {
@@ -35,7 +35,7 @@ test("quote form reuses the existing storage field and retains transparent eligi
 
 test("partner discount flow does not silently stack the storage offer and SuperMove receives an explicit note", () => {
   assert.match(seattleHouse, /showStorageOffer=\{false\}/);
-  assert.match(submitLead, /Storage offer requested: Store with us for at least one month and get 10% off your move/);
+  assert.match(submitLead, /Storage offer requested: Store with us for at least one month and get 15% off your move/);
   assert.match(submitLead, /WEBSITE_LEAD/);
   assert.match(submitLead, /\.\.\.\(lead\.supermoveTags \|\| \[\]\)/);
 });

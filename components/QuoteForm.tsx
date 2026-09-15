@@ -693,7 +693,7 @@ export default function QuoteForm({
               />
               <span>
                 <span className="block text-sm font-extrabold text-[#1e3a0f]">
-                  Store with us and get 10% off your move
+                  Store with us and get 15% off your move
                 </span>
                 <span className="mt-0.5 block text-xs leading-relaxed text-gray-600">
                   Requires at least one month of storage. Applies to moving services only and cannot be combined with another offer.

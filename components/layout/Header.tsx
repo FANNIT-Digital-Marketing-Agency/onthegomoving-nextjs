@@ -530,7 +530,7 @@ export default function Header() {
             href="/storage-services/#storage-discount"
             className="text-xs font-extrabold text-[#1e3a0f] underline decoration-2 underline-offset-2"
           >
-            Store with us and get 10% off your move
+            Store with us and get 15% off your move
           </a>
         </div>
 
@@ -541,7 +541,7 @@ export default function Header() {
               href="/storage-services/#storage-discount"
               className="text-xs font-extrabold text-[#fbc319] underline decoration-2 underline-offset-2 hover:text-white transition-colors"
             >
-              Store with us and get 10% off your move
+              Store with us and get 15% off your move
             </a>
             <p className="hidden xl:block text-white/80 text-xs text-center">
               Licensed &amp; Insured | HG-064180 | USDOT# 2120054

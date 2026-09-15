@@ -997,7 +997,7 @@ export default function ServicePage({ slug }: ServicePageProps) {
                   className="mb-6 max-w-lg rounded-xl border border-[#fbc319]/70 bg-[#1e3a0f]/85 px-4 py-3 shadow-lg"
                 >
                   <p className="text-base font-extrabold text-[#fbc319]">
-                    Store with us and get 10% off your move
+                    Store with us and get 15% off your move
                   </p>
                   <p className="mt-1 text-sm leading-relaxed text-white/90">
                     Requires at least one month of storage. The discount applies to moving services only and cannot be combined with another offer.
